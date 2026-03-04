@@ -217,14 +217,14 @@ const Index = () => {
       </section>
 
       {/* PORTFOLIO — Before & After */}
-      <section className="bg-cream py-20 md:py-28">
+      <section className="bg-navy py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
-            <h2 className="font-serif text-3xl md:text-4xl text-text-dark">
+            <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground">
               See the<br />Difference
             </h2>
             <div>
-              <p className="text-text-dark/70 text-lg leading-relaxed mb-4">
+              <p className="text-secondary-foreground/70 text-lg leading-relaxed mb-4">
                 From neglected yards to breathtaking outdoor spaces — our expert design and craftsmanship transforms your property into something truly extraordinary.
               </p>
               <Link
