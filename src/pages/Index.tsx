@@ -144,7 +144,7 @@ const Index = () => {
                     to={`/services/${service.slug}`}
                     className="group block"
                   >
-                    <div className="w-full aspect-[4/3] bg-secondary-foreground/5 rounded-lg mb-4 overflow-hidden">
+                    <div className="w-full aspect-[3/4] bg-secondary-foreground/5 rounded-lg mb-4 overflow-hidden">
                       <img
                         src={service.image}
                         alt={service.name}
