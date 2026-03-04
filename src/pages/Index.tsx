@@ -5,7 +5,7 @@ import { services } from "@/data/services";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroBg from "@/assets/hero-bg.jpg";
-import landscapePhoto from "@/assets/landscape-photo.jpg";
+import introBg from "@/assets/intro-bg.jpg";
 import SCMap from "@/components/SCMap";
 
 const Index = () => {
@@ -81,7 +81,7 @@ const Index = () => {
 
       {/* INTRO */}
       <section className="relative overflow-hidden bg-cream py-20 md:py-28">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${landscapePhoto})` }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${introBg})` }} />
         <div className="absolute inset-0 bg-cream/90" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-8">
