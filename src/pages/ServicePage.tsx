@@ -1,0 +1,204 @@
+import { useParams, Link } from "react-router-dom";
+import { ArrowRight, Shield, Star, Phone, CheckCircle } from "lucide-react";
+import { getServiceBySlug, getRelatedServices, services } from "@/data/services";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import heroBg from "@/assets/hero-bg.jpg";
+import NotFound from "./NotFound";
+
+const ServicePage = () => {
+  const { slug } = useParams<{ slug: string }>();
+  const service = slug ? getServiceBySlug(slug) : undefined;
+
+  if (!service) return <NotFound />;
+
+  const relatedServices = getRelatedServices(service.relatedSlugs);
+
+  return (
+    <div className="min-h-screen">
+      <Navbar />
+
+      {/* Hero */}
+      <section className="relative min-h-[70vh] flex items-center">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroBg})` }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/50" />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-secondary-foreground leading-tight mb-6">
+            {service.h1}
+          </h1>
+          <p className="text-lg text-secondary-foreground/80 mb-8 max-w-2xl leading-relaxed">
+            {service.subheadline}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a href="#contact" className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider text-center">
+              Schedule a Consultation
+            </a>
+            <a href="#learn-more" className="inline-block border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider text-center">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Body Copy */}
+      <section id="learn-more" className="bg-cream py-20 md:py-28">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-6">
+            {service.bodyParagraphs.map((p, i) => (
+              <p key={i} className="text-text-dark/70 text-lg leading-relaxed">{p}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Signals */}
+      <section className="bg-navy py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Why Choose Elevation Landscapes</h2>
+            <div className="w-16 h-0.5 bg-gold mx-auto" />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            {service.trustSignals.map((signal, i) => (
+              <div key={i} className="text-center p-6 border border-secondary-foreground/10 rounded-lg">
+                <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-5 w-5 text-gold" />
+                </div>
+                <h3 className="font-serif text-gold text-sm mb-2">{signal.title}</h3>
+                <p className="text-secondary-foreground/60 text-xs leading-relaxed">{signal.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="bg-cream py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">How We Work</h2>
+            <div className="w-16 h-0.5 bg-gold mx-auto" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { num: "01", title: "Consultation & Assessment", desc: "On-site evaluation of your property, understanding your vision and establishing project objectives." },
+              { num: "02", title: "Custom Design & Planning", desc: "Detailed plans with material specifications, timelines, and transparent pricing tailored to your project." },
+              { num: "03", title: "Expert Execution", desc: "Our in-house craftsmen bring the vision to life with meticulous attention to every detail." },
+            ].map((step, i) => (
+              <div key={i} className="text-center">
+                <div className="w-16 h-16 rounded-full border-2 border-gold flex items-center justify-center mx-auto mb-6">
+                  <span className="font-serif text-gold text-lg">{step.num}</span>
+                </div>
+                <h3 className="font-serif text-xl text-text-dark mb-3">{step.title}</h3>
+                <p className="text-text-dark/60 text-sm leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-cream-alt py-20 md:py-28">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">Frequently Asked Questions</h2>
+            <div className="w-16 h-0.5 bg-gold mx-auto" />
+          </div>
+          <Accordion type="single" collapsible className="space-y-3">
+            {service.faqs.map((faq, i) => (
+              <AccordionItem
+                key={i}
+                value={`faq-${i}`}
+                className="border border-border rounded-lg px-6 bg-popover"
+              >
+                <AccordionTrigger className="font-serif text-text-dark text-left hover:no-underline hover:text-gold transition-colors">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-text-dark/70 leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Testimonial */}
+      <section className="bg-cream py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex justify-center gap-1 mb-6">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="h-5 w-5 fill-gold text-gold" />
+            ))}
+          </div>
+          <p className="font-serif text-2xl text-text-dark italic mb-6 leading-relaxed">
+            "Elevation Landscapes exceeded every expectation. Their professionalism, craftsmanship, and genuine care for our property made all the difference."
+          </p>
+          <p className="text-text-dark font-semibold">— Greenville Homeowner</p>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id="contact" className="bg-navy py-20 md:py-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+              <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">
+                Ready to Get Started?
+              </h2>
+              <div className="w-16 h-0.5 bg-gold mb-6" />
+              <p className="text-secondary-foreground/70 text-lg leading-relaxed mb-8">
+                {service.ctaText}
+              </p>
+              <a href="tel:+18641234567" className="flex items-center gap-3 text-gold text-xl font-serif hover:text-gold-light transition-colors">
+                <Phone className="h-5 w-5" />
+                (864) 123-4567
+              </a>
+            </div>
+            <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
+              <input type="text" placeholder="Full Name" className="w-full bg-secondary-foreground/5 border border-secondary-foreground/20 rounded px-4 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-gold transition-colors" />
+              <input type="email" placeholder="Email Address" className="w-full bg-secondary-foreground/5 border border-secondary-foreground/20 rounded px-4 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-gold transition-colors" />
+              <input type="tel" placeholder="Phone Number" className="w-full bg-secondary-foreground/5 border border-secondary-foreground/20 rounded px-4 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-gold transition-colors" />
+              <textarea placeholder="Tell us about your project" rows={4} className="w-full bg-secondary-foreground/5 border border-secondary-foreground/20 rounded px-4 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-gold transition-colors resize-none" />
+              <button type="submit" className="w-full bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider">
+                Submit Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="bg-cream py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl text-text-dark mb-4">Related Services</h2>
+            <div className="w-16 h-0.5 bg-gold mx-auto" />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {relatedServices.map((rs) => (
+              <Link
+                key={rs.slug}
+                to={`/services/${rs.slug}`}
+                className="group border border-border rounded-lg p-6 bg-popover hover:border-gold/60 transition-all duration-300 hover:-translate-y-1"
+              >
+                <h3 className="font-serif text-xl text-text-dark group-hover:text-gold transition-colors mb-2">
+                  {rs.name}
+                </h3>
+                <p className="text-sm text-text-dark/60 mb-4">{rs.tagline}</p>
+                <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Learn More <ArrowRight className="h-3 w-3" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default ServicePage;
