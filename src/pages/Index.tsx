@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroBg from "@/assets/hero-bg.jpg";
 import introBg from "@/assets/intro-bg.jpg";
+import introPhoto from "@/assets/intro-photo.jpg";
 import SCMap from "@/components/SCMap";
 import portfolioBefore from "@/assets/portfolio-before.jpg";
 import portfolioAfter from "@/assets/portfolio-after.jpg";
@@ -83,26 +84,47 @@ const Index = () => {
       </section>
 
       {/* INTRO */}
-      <section className="relative overflow-hidden bg-cream py-20 md:py-28">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${introBg})` }} />
-        <div className="absolute inset-0 bg-cream/80" />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-8">
-            The Standard Your Property Deserves
-          </h2>
-          <div className="w-16 h-0.5 bg-gold mx-auto mb-8" />
-          <p className="text-text-dark/70 text-lg leading-relaxed mb-6">
-            Elevation Landscapes exists for a singular purpose: to create outdoor environments that reflect the
-            same uncompromising quality as the homes they surround. We are not a lawn care company. We are a
-            luxury landscape design and hardscape firm serving exclusively residential clients across Greenville
-            and Upstate South Carolina.
-          </p>
-          <p className="text-text-dark/70 text-lg leading-relaxed">
-            Our principals are personally involved in every project — from the initial consultation through
-            final walkthrough. We bring decades of deep Upstate SC expertise to every decision, from soil
-            composition to stone selection to seasonal planting. The result is a landscape that performs as
-            beautifully in its tenth year as it does on completion day.
-          </p>
+      <section className="bg-cream py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left — Text */}
+            <div>
+              <p className="text-gold font-sans text-sm tracking-wider uppercase mb-4">Greenville's Premier Landscape Firm</p>
+              <h2 className="font-serif text-3xl md:text-4xl text-text-dark leading-tight mb-8">
+                The Standard Your Property Deserves
+              </h2>
+              <p className="text-text-dark/70 text-lg leading-relaxed mb-6">
+                Elevation Landscapes exists for a singular purpose: to create outdoor environments that reflect the
+                same uncompromising quality as the homes they surround. We are not a lawn care company. We are a
+                luxury landscape design and hardscape firm serving exclusively residential clients across Greenville
+                and Upstate South Carolina.
+              </p>
+              <p className="text-text-dark/70 text-lg leading-relaxed mb-8">
+                Our principals are personally involved in every project — from the initial consultation through
+                final walkthrough. The result is a landscape that performs as beautifully in its tenth year as it does on completion day.
+              </p>
+              <a
+                href="#contact"
+                className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider"
+              >
+                Schedule a Consultation
+              </a>
+            </div>
+            {/* Right — Photo with overlapping quote */}
+            <div className="relative">
+              <div className="rounded-xl overflow-hidden">
+                <img src={introPhoto} alt="Expert landscape craftsman at work" className="w-full h-auto object-cover" />
+              </div>
+              {/* Overlapping quote card */}
+              <div className="relative lg:absolute lg:-bottom-8 lg:-left-12 bg-popover border border-border rounded-xl p-6 shadow-lg mt-6 lg:mt-0 max-w-sm">
+                <span className="font-serif text-gold text-4xl leading-none block mb-2">"</span>
+                <p className="text-text-dark/80 italic text-sm leading-relaxed mb-3">
+                  We take the time to understand each property's unique character and our clients' vision to ensure the finished landscape exceeds every expectation.
+                </p>
+                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Principal, Elevation Landscapes</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
