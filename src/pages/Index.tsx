@@ -24,10 +24,10 @@ const Index = () => {
   ];
 
   const processSteps = [
-    { num: "01", title: "Private Consultation", desc: "We begin with an on-site meeting to understand your vision, evaluate your property, and discuss possibilities." },
-    { num: "02", title: "Custom Design", desc: "Our team develops a detailed design tailored to your architecture, lifestyle, and the unique characteristics of your land." },
-    { num: "03", title: "Expert Installation", desc: "Our in-house crews execute with precision, managing every detail from materials to timing to final finishing." },
-    { num: "04", title: "Lasting Relationship", desc: "Your landscape is a living investment. We provide ongoing guidance and maintenance to ensure it thrives." },
+    { icon: Phone, title: "Private Consultation", desc: "We begin with an on-site meeting to understand your vision, evaluate your property, and discuss possibilities." },
+    { icon: Gem, title: "Custom Design", desc: "Our team develops a detailed design tailored to your architecture, lifestyle, and the unique characteristics of your land." },
+    { icon: Shield, title: "Expert Installation", desc: "Our in-house crews execute with precision, managing every detail from materials to timing to final finishing." },
+    { icon: Handshake, title: "Lasting Relationship", desc: "Your landscape is a living investment. We provide ongoing guidance and maintenance to ensure it thrives." },
   ];
 
   const testimonials = [
@@ -208,7 +208,7 @@ const Index = () => {
                 {processSteps.map((step, i) => (
                   <div key={i} className="flex gap-5 items-start">
                     <div className="w-14 h-14 rounded-full border-2 border-gold flex items-center justify-center flex-shrink-0 bg-navy">
-                      <span className="font-serif text-gold text-lg">{step.num}</span>
+                      <step.icon className="h-5 w-5 text-gold" />
                     </div>
                     <div>
                       <h3 className="font-serif text-lg text-gold mb-2">{step.title}</h3>
