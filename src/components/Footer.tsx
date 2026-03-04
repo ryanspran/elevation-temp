@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Elevation Landscapes" className="w-auto mb-4" style={{ height: '3.85rem' }} />
+            <img src={logo} alt="Elevation Landscapes" className="w-auto mb-4" style={{ height: '4.24rem' }} />
             <p className="text-gold-light font-serif text-sm italic mb-4">
               Luxury Landscape & Hardscape — Greenville, SC
             </p>
