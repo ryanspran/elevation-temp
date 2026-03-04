@@ -1,7 +1,25 @@
+import gradingSolutions from "@/assets/services/grading-solutions.jpg";
+import undergroundDrainage from "@/assets/services/underground-drainage.jpg";
+import irrigation from "@/assets/services/irrigation.jpg";
+import landscapeRemediation from "@/assets/services/landscape-remediation.jpg";
+import waterFeatures from "@/assets/services/water-features.jpg";
+import stoneStaircases from "@/assets/services/stone-staircases.jpg";
+import stonePathways from "@/assets/services/stone-pathways.jpg";
+import boulderWalls from "@/assets/services/boulder-walls.jpg";
+import blockWalls from "@/assets/services/block-walls.jpg";
+import paverPatios from "@/assets/services/paver-patios.jpg";
+import poolDecks from "@/assets/services/pool-decks.jpg";
+import outdoorKitchens from "@/assets/services/outdoor-kitchens.jpg";
+import firePits from "@/assets/services/fire-pits.jpg";
+import plantInstallation from "@/assets/services/plant-installation.jpg";
+import sodSeeding from "@/assets/services/sod-seeding.jpg";
+import landscapeLighting from "@/assets/services/landscape-lighting.jpg";
+
 export interface ServiceData {
   slug: string;
   name: string;
   tagline: string;
+  image: string;
   seoTitle: string;
   h1: string;
   subheadline: string;
@@ -17,6 +35,7 @@ export const services: ServiceData[] = [
     slug: "grading-solutions",
     name: "Grading Solutions",
     tagline: "Precision site engineering for exceptional estates",
+    image: gradingSolutions,
     seoTitle: "Luxury Grading Services Greenville SC | Elevation Landscapes",
     h1: "Luxury Grading Services in Greenville, SC — Precision Site Engineering for the Discerning Estate",
     subheadline: "The landscape you envision begins beneath the surface. Elevation Landscapes delivers professional grading solutions engineered to perform with the same exactitude your property reflects above ground.",
@@ -49,6 +68,7 @@ export const services: ServiceData[] = [
     slug: "underground-drainage-solutions",
     name: "Underground Drainage",
     tagline: "Engineering that protects what you've built",
+    image: undergroundDrainage,
     seoTitle: "Underground Drainage Solutions Greenville SC | Elevation Landscapes",
     h1: "Underground Drainage Solutions in Greenville, SC — Engineering That Protects What You've Built",
     subheadline: "Precision-engineered French drain systems and stormwater management for Greenville's most distinguished residential properties.",
@@ -81,6 +101,7 @@ export const services: ServiceData[] = [
     slug: "irrigation-installation-repair",
     name: "Irrigation Install & Repair",
     tagline: "Engineered for the landscape you've built",
+    image: irrigation,
     seoTitle: "Irrigation Installation Greenville SC | Elevation Landscapes",
     h1: "Irrigation Installation in Greenville SC Engineered for the Landscape You Have Built",
     subheadline: "Precision irrigation systems for discerning homeowners — because an extraordinary landscape demands water management that performs to the same exacting standard.",
@@ -113,6 +134,7 @@ export const services: ServiceData[] = [
     slug: "landscape-remediation",
     name: "Landscape Remediation",
     tagline: "Restoring the standard your property deserves",
+    image: landscapeRemediation,
     seoTitle: "Landscape Remediation Greenville SC | Elevation Landscapes",
     h1: "Landscape Remediation in Greenville, SC — Restoring the Standard Your Property Deserves",
     subheadline: "When a landscape falls short of its potential, the right firm reimagines it. Surgical precision and refined design sensibility for every restoration across Greenville and Upstate SC.",
@@ -145,6 +167,7 @@ export const services: ServiceData[] = [
     slug: "custom-water-features",
     name: "Custom Water Features",
     tagline: "Designed for properties that demand something extraordinary",
+    image: waterFeatures,
     seoTitle: "Custom Water Features Greenville SC | Elevation Landscapes",
     h1: "Custom Water Features Greenville SC — Designed for Properties That Demand Something Extraordinary",
     subheadline: "Bespoke water features — from natural stone waterfalls to custom koi ponds — bringing enduring beauty, movement, and refinement to the finest properties in Greenville and Upstate SC.",
@@ -177,6 +200,7 @@ export const services: ServiceData[] = [
     slug: "natural-stone-staircases",
     name: "Natural Stone Staircases",
     tagline: "Crafted for the exceptional home",
+    image: stoneStaircases,
     seoTitle: "Natural Stone Staircases Greenville SC | Elevation Landscapes",
     h1: "Natural Stone Staircases in Greenville, SC Crafted for the Exceptional Home",
     subheadline: "Custom stone staircases combining the permanence of master masonry with materials sourced for beauty, character, and longevity.",
@@ -209,6 +233,7 @@ export const services: ServiceData[] = [
     slug: "custom-stone-pathways",
     name: "Custom Stone Pathways",
     tagline: "Crafted for properties that demand more",
+    image: stonePathways,
     seoTitle: "Custom Stone Pathways Greenville SC | Elevation Landscapes",
     h1: "Custom Stone Pathways Greenville SC — Crafted for Properties That Demand More",
     subheadline: "Bespoke natural stone pathways for Greenville and Upstate SC's most distinguished residences — where every step reflects the character and quality of the home it serves.",
@@ -241,6 +266,7 @@ export const services: ServiceData[] = [
     slug: "boulder-retaining-walls",
     name: "Boulder Retaining Walls",
     tagline: "Engineered for the land, built to last generations",
+    image: boulderWalls,
     seoTitle: "Boulder Retaining Walls Greenville SC | Elevation Landscapes",
     h1: "Boulder Retaining Walls Greenville SC — Engineered for the Land, Built to Last Generations",
     subheadline: "Natural boulder retaining walls for discerning homeowners — where structural integrity and refined craftsmanship are never mutually exclusive.",
@@ -273,6 +299,7 @@ export const services: ServiceData[] = [
     slug: "block-retaining-walls",
     name: "Block Retaining Walls",
     tagline: "Engineered precision, refined by design",
+    image: blockWalls,
     seoTitle: "Block Retaining Walls Greenville SC | Elevation Landscapes",
     h1: "Block Retaining Walls Greenville SC — Engineered Precision, Refined by Design",
     subheadline: "Block retaining walls that resolve the land's challenges and redefine what your outdoor environment can become.",
@@ -305,6 +332,7 @@ export const services: ServiceData[] = [
     slug: "paver-patios",
     name: "Paver Patios",
     tagline: "Crafted for the way you live outdoors",
+    image: paverPatios,
     seoTitle: "Paver Patios Greenville SC | Elevation Landscapes",
     h1: "Custom Paver Patios in Greenville, SC — Crafted for the Way You Live Outdoors",
     subheadline: "Bespoke paver patios where meticulous engineering and exceptional materials converge to create outdoor spaces that endure as beautifully as they are built.",
@@ -337,6 +365,7 @@ export const services: ServiceData[] = [
     slug: "pool-decks-pool-coping",
     name: "Pool Decks & Coping",
     tagline: "Crafted for the exceptional home",
+    image: poolDecks,
     seoTitle: "Pool Deck Installation Greenville SC | Elevation Landscapes",
     h1: "Pool Deck Installation in Greenville, SC — Crafted for the Exceptional Home",
     subheadline: "Luxury pool decks and pool coping that transform the space around your pool into an environment as refined as the home it surrounds.",
@@ -369,6 +398,7 @@ export const services: ServiceData[] = [
     slug: "outdoor-kitchens",
     name: "Outdoor Kitchens",
     tagline: "Custom design and master craftsmanship",
+    image: outdoorKitchens,
     seoTitle: "Outdoor Kitchens Greenville SC | Elevation Landscapes",
     h1: "Outdoor Kitchens Greenville SC — Custom Design and Master Craftsmanship",
     subheadline: "From hand-selected natural stone to commercial-grade stainless steel appliances, outdoor kitchens that redefine what outdoor living means for your home.",
@@ -401,6 +431,7 @@ export const services: ServiceData[] = [
     slug: "outdoor-gas-fire-pits",
     name: "Gas Fire Pits",
     tagline: "Designed for the way you live",
+    image: firePits,
     seoTitle: "Outdoor Gas Fire Pits Greenville SC | Elevation Landscapes",
     h1: "Custom Outdoor Gas Fire Pits in Greenville, SC — Designed for the Way You Live",
     subheadline: "Bespoke gas fire features where master craftsmanship, enduring materials, and site-specific design define your outdoor living experience.",
@@ -433,6 +464,7 @@ export const services: ServiceData[] = [
     slug: "new-plant-installation",
     name: "New Plant Installation",
     tagline: "Crafted for the exceptional residential property",
+    image: plantInstallation,
     seoTitle: "New Plant Installation Greenville SC | Elevation Landscapes",
     h1: "New Plant Installation in Greenville, SC — Crafted for the Exceptional Residential Property",
     subheadline: "Horticultural precision and refined aesthetic vision transforming Greenville properties into landscapes of enduring distinction.",
@@ -465,6 +497,7 @@ export const services: ServiceData[] = [
     slug: "sod-and-seeding",
     name: "Sod & Seeding",
     tagline: "Precision turf craftsmanship for the discerning homeowner",
+    image: sodSeeding,
     seoTitle: "Sod Installation Greenville SC | Elevation Landscapes",
     h1: "Sod Installation in Greenville, SC — Precision Turf Craftsmanship for the Discerning Homeowner",
     subheadline: "Uncompromising standards delivering lush, expertly established turf that transforms the entire character of your property.",
@@ -497,6 +530,7 @@ export const services: ServiceData[] = [
     slug: "landscape-lighting",
     name: "Landscape Lighting",
     tagline: "Architectural illumination for exceptional homes",
+    image: landscapeLighting,
     seoTitle: "Landscape Lighting Greenville SC | Elevation Landscapes",
     h1: "Landscape Lighting Greenville SC — Architectural Illumination Designed for Exceptional Homes",
     subheadline: "Your property represents years of vision and investment. After dark, it should be no different. Luxury outdoor lighting revealing the full character of your home and grounds, night after night.",
