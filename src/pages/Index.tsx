@@ -9,6 +9,7 @@ import introBg from "@/assets/intro-bg.jpg";
 import SCMap from "@/components/SCMap";
 import portfolioBefore from "@/assets/portfolio-before.jpg";
 import portfolioAfter from "@/assets/portfolio-after.jpg";
+import whyUsPhoto from "@/assets/why-us-photo.jpg";
 
 const Index = () => {
   const whyUsItems = [
@@ -153,13 +154,18 @@ const Index = () => {
             </h2>
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {whyUsItems.map((item, i) => (
-              <div key={i} className="text-center p-6">
-                <div className="w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-4">
-                  <item.icon className="h-6 w-6 text-gold" />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {/* Large image on the left */}
+            <div className="lg:row-span-2 rounded-xl overflow-hidden">
+              <img src={whyUsPhoto} alt="Luxury landscape design" className="w-full h-full object-cover" />
+            </div>
+            {/* 4 cards in 2x2 grid on the right */}
+            {whyUsItems.slice(0, 4).map((item, i) => (
+              <div key={i} className="bg-popover rounded-xl p-8 border border-border">
+                <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-5">
+                  <item.icon className="h-5 w-5 text-gold" />
                 </div>
-                <h3 className="font-serif text-xl text-text-dark mb-3">{item.title}</h3>
+                <h3 className="font-serif text-lg text-text-dark font-semibold mb-3">{item.title}</h3>
                 <p className="text-text-dark/60 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
