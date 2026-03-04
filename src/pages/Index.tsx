@@ -116,9 +116,11 @@ const Index = () => {
                     className="group block"
                   >
                     <div className="w-full aspect-[4/3] bg-secondary-foreground/5 rounded-lg mb-4 overflow-hidden">
-                      <div className="w-full h-full bg-gradient-to-br from-gold/10 to-gold/5 flex items-center justify-center group-hover:from-gold/20 group-hover:to-gold/10 transition-all duration-500">
-                        <TreePine className="h-12 w-12 text-gold/40 group-hover:text-gold/60 transition-colors" />
-                      </div>
+                      <img
+                        src={service.image}
+                        alt={service.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
                     </div>
                     <h3 className="font-serif text-xl text-secondary-foreground group-hover:text-gold transition-colors mb-2">
                       {service.name}
