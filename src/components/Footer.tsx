@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer className="bg-navy text-secondary-foreground">
       {/* CTA banner */}
-      <div className="border-b border-gold/20">
+      <div className="border-b border-gold/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
           <h3 className="font-serif text-2xl md:text-3xl text-gold mb-4">
             Schedule Your Consultation
