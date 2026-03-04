@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { Star, ArrowRight, Shield, TreePine, Users, Gem, Handshake, Award, Phone } from "lucide-react";
+import { Star, ArrowRight, Shield, TreePine, Users, Gem, Handshake, Award, Phone, MapPin } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { services } from "@/data/services";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroBg from "@/assets/hero-bg.jpg";
+import SCMap from "@/components/SCMap";
 
 const Index = () => {
   const whyUsItems = [
@@ -244,20 +245,34 @@ const Index = () => {
 
       {/* SERVICE AREA */}
       <section className="bg-cream py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">
-            Serving Greenville & Upstate South Carolina
-          </h2>
-          <div className="w-16 h-0.5 bg-gold mx-auto mb-12" />
-          <div className="flex flex-wrap justify-center gap-3">
-            {serviceAreas.map((area) => (
-              <span
-                key={area}
-                className="px-5 py-2 bg-popover border border-border rounded-full text-sm text-text-dark/70 font-sans"
-              >
-                {area}
-              </span>
-            ))}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">
+                Areas We Cover
+              </h2>
+              <p className="text-text-dark/70 text-lg mb-10">
+                Elevation Landscapes proudly serves homeowners across Upstate South Carolina, including:
+              </p>
+              <div className="grid grid-cols-2 gap-x-8 gap-y-5 mb-10">
+                {serviceAreas.map((area) => (
+                  <div key={area} className="flex items-center gap-3">
+                    <MapPin className="h-5 w-5 text-gold flex-shrink-0" />
+                    <span className="text-text-dark font-sans text-base">{area}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-text-dark/60 text-sm leading-relaxed">
+                If you have a project in mind and would like to know whether we cover your area, please{" "}
+                <a href="#contact" className="text-gold hover:text-gold-light underline transition-colors">
+                  contact our team
+                </a>{" "}
+                who will be happy to assist.
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <SCMap />
+            </div>
           </div>
         </div>
       </section>
