@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Star, ArrowRight, Shield, TreePine, Users, Gem, Handshake, Award, Phone, MapPin } from "lucide-react";
+import { Star, ArrowRight, Shield, TreePine, Users, Gem, Handshake, Award, Phone, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { services } from "@/data/services";
 import Navbar from "@/components/Navbar";
@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import heroBg from "@/assets/hero-bg.jpg";
 import introBg from "@/assets/intro-bg.jpg";
 import SCMap from "@/components/SCMap";
+import portfolioBefore from "@/assets/portfolio-before.jpg";
+import portfolioAfter from "@/assets/portfolio-after.jpg";
 
 const Index = () => {
   const whyUsItems = [
@@ -214,33 +216,45 @@ const Index = () => {
         </div>
       </section>
 
-      {/* PORTFOLIO */}
-      <section className="bg-navy py-20 md:py-28">
+      {/* PORTFOLIO — Before & After */}
+      <section className="bg-cream py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">See the Difference</h2>
-            <div className="w-16 h-0.5 bg-gold mx-auto" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl text-text-dark">
+              See the<br />Difference
+            </h2>
+            <div>
+              <p className="text-text-dark/70 text-lg leading-relaxed mb-4">
+                From neglected yards to breathtaking outdoor spaces — our expert design and craftsmanship transforms your property into something truly extraordinary.
+              </p>
+              <Link
+                to="/portfolio"
+                className="inline-flex items-center gap-1 text-gold hover:text-gold-light transition-colors font-sans text-sm tracking-wider"
+              >
+                View Full Portfolio <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {portfolioItems.map((item, i) => (
-              <div key={i} className="relative group overflow-hidden rounded-lg aspect-[4/3]">
-                <div className="w-full h-full bg-gradient-to-br from-gold/15 to-gold/5" />
-                <div className="absolute inset-0 bg-navy/60 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="font-serif text-secondary-foreground text-lg">{item}</p>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="font-serif text-secondary-foreground/40 text-sm">{item}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link
-              to="/portfolio"
-              className="inline-flex items-center gap-2 border border-gold text-gold px-8 py-3 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider font-sans"
-            >
-              View Full Portfolio <ArrowRight className="h-4 w-4" />
-            </Link>
+          <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Before */}
+            <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
+              <img src={portfolioBefore} alt="Before landscaping" className="w-full h-full object-cover" />
+              <span className="absolute bottom-4 left-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
+                Before
+              </span>
+            </div>
+            {/* After */}
+            <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
+              <img src={portfolioAfter} alt="After landscaping" className="w-full h-full object-cover" />
+              <span className="absolute top-4 right-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
+                After
+              </span>
+            </div>
+            {/* Center nav arrows */}
+            <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-gold rounded-full p-2 gap-1 shadow-lg">
+              <ChevronLeft className="h-5 w-5 text-navy" />
+              <ChevronRight className="h-5 w-5 text-navy" />
+            </div>
           </div>
         </div>
       </section>
