@@ -10,9 +10,7 @@ const Footer = () => {
   ];
 
   const serviceAreas = [
-    "Greenville", "Travelers Rest", "Simpsonville", "Greer",
-    "Spartanburg", "Anderson", "Clemson", "Lake Keowee",
-    "Lake Hartwell", "The Cliffs", "Thornblade", "Chanticleer"
+    "Greenville", "Travelers Rest", "Greer", "Simpsonville"
   ];
 
   return (
