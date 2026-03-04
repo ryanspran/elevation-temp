@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Star, ArrowRight, Shield, TreePine, Users, Gem, Handshake, Award, Phone } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { services } from "@/data/services";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -106,28 +107,33 @@ const Index = () => {
             <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Our Services</h2>
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service) => (
-              <Link
-                key={service.slug}
-                to={`/services/${service.slug}`}
-                className="group border border-secondary-foreground/10 rounded-lg p-6 hover:border-gold/60 transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="w-full h-32 bg-secondary-foreground/5 rounded mb-4 overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-gold/10 to-gold/5 flex items-center justify-center">
-                    <TreePine className="h-8 w-8 text-gold/40" />
-                  </div>
-                </div>
-                <h3 className="font-serif text-lg text-secondary-foreground group-hover:text-gold transition-colors mb-2">
-                  {service.name}
-                </h3>
-                <p className="text-sm text-secondary-foreground/60 mb-3">{service.tagline}</p>
-                <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Learn More <ArrowRight className="h-3 w-3" />
-                </span>
-              </Link>
-            ))}
-          </div>
+          <Carousel opts={{ align: "start", loop: true }} className="w-full">
+            <CarouselContent className="-ml-4">
+              {services.map((service) => (
+                <CarouselItem key={service.slug} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <Link
+                    to={`/services/${service.slug}`}
+                    className="group block"
+                  >
+                    <div className="w-full aspect-[4/3] bg-secondary-foreground/5 rounded-lg mb-4 overflow-hidden">
+                      <div className="w-full h-full bg-gradient-to-br from-gold/10 to-gold/5 flex items-center justify-center group-hover:from-gold/20 group-hover:to-gold/10 transition-all duration-500">
+                        <TreePine className="h-12 w-12 text-gold/40 group-hover:text-gold/60 transition-colors" />
+                      </div>
+                    </div>
+                    <h3 className="font-serif text-xl text-secondary-foreground group-hover:text-gold transition-colors mb-2">
+                      {service.name}
+                    </h3>
+                    <p className="text-sm text-secondary-foreground/60 mb-3 line-clamp-2">{service.tagline}</p>
+                    <span className="text-gold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                      Learn More <ArrowRight className="h-3 w-3" />
+                    </span>
+                  </Link>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-4 lg:-left-6 h-10 w-10 border-gold/40 bg-navy text-gold hover:bg-gold hover:text-navy" />
+            <CarouselNext className="hidden md:flex -right-4 lg:-right-6 h-10 w-10 border-gold/40 bg-navy text-gold hover:bg-gold hover:text-navy" />
+          </Carousel>
         </div>
       </section>
 
