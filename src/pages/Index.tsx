@@ -11,6 +11,7 @@ import SCMap from "@/components/SCMap";
 import portfolioBefore from "@/assets/portfolio-before.jpg";
 import portfolioAfter from "@/assets/portfolio-after.jpg";
 import whyUsPhoto from "@/assets/why-us-photo.jpg";
+import processPhoto from "@/assets/process-photo.jpg";
 
 const Index = () => {
   const whyUsItems = [
@@ -197,26 +198,44 @@ const Index = () => {
 
       {/* PROCESS */}
       <section className="bg-navy py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Our Proven Process</h2>
-            <div className="w-16 h-0.5 bg-gold mx-auto" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-            {/* Connecting line */}
-            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-px bg-gold/30" />
-            {processSteps.map((step, i) => (
-              <div key={i} className="text-center relative">
-                <div className="w-16 h-16 rounded-full border-2 border-gold flex items-center justify-center mx-auto mb-6 bg-navy relative z-10">
-                  <span className="font-serif text-gold text-lg">{step.num}</span>
-                </div>
-                <h3 className="font-serif text-lg text-gold mb-3">{step.title}</h3>
-                <p className="text-secondary-foreground/60 text-sm leading-relaxed">{step.desc}</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left — Process steps */}
+            <div>
+              <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Our Proven Process</h2>
+              <div className="w-16 h-0.5 bg-gold mb-12" />
+              <div className="space-y-8">
+                {processSteps.map((step, i) => (
+                  <div key={i} className="flex gap-5 items-start">
+                    <div className="w-14 h-14 rounded-full border-2 border-gold flex items-center justify-center flex-shrink-0 bg-navy">
+                      <span className="font-serif text-gold text-lg">{step.num}</span>
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-lg text-gold mb-2">{step.title}</h3>
+                      <p className="text-secondary-foreground/60 text-sm leading-relaxed">{step.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            {/* Right — Photo with overlapping quote */}
+            <div className="relative">
+              <div className="rounded-xl overflow-hidden">
+                <img src={processPhoto} alt="Landscape design consultation" className="w-full h-auto object-cover" />
+              </div>
+              <div className="relative lg:absolute lg:-bottom-8 lg:-left-12 bg-popover border border-border rounded-xl p-6 shadow-lg mt-6 lg:mt-0 max-w-sm">
+                <span className="font-serif text-gold text-4xl leading-none block mb-2">"</span>
+                <p className="text-text-dark/80 italic text-sm leading-relaxed mb-3">
+                  Every great landscape begins with listening. We don't impose a style — we reveal what your property is meant to become.
+                </p>
+                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Principal, Elevation Landscapes</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+
 
       {/* TESTIMONIALS */}
       <section className="bg-cream py-20 md:py-28">
