@@ -663,29 +663,42 @@ export const services: ServiceData[] = ([
     h1: "Landscape Lighting Greenville SC — Architectural Illumination Designed for Exceptional Homes",
     subheadline: "Your property represents years of vision and investment. After dark, it should be no different. Luxury outdoor lighting revealing the full character of your home and grounds, night after night.",
     bodyParagraphs: [
-      "Just after dusk, a property either retreats into darkness or reveals itself in entirely new light. We approach luxury outdoor lighting in Greenville as foundational, not afterthought — a design layer that transforms every element of your landscape after the sun sets.",
-      "Every project starts with comprehensive site evaluation — architecture, plantings, hardscape elements, natural sightlines, and security considerations — then a layered lighting plan as deliberate and refined as the landscape itself. LED landscape lighting in Upstate SC must account for the region's dense canopy, seasonal foliage changes, and varied terrain.",
-      "We specify professional-grade LED fixtures: solid brass and cast aluminum housings, architectural-grade luminaires unavailable at consumer retail levels. Our low-voltage lighting contractor approach uses properly engineered transformer and wiring infrastructure, sized and zoned for today's installation with room for future expansion.",
-      "We employ moonlighting techniques — fixtures positioned high in mature tree canopies casting soft, dappled light that mimics natural moonlight filtering through leaves. Combined with uplighting on specimen trees and architectural elements, plus subtle pathway lighting, the effect is both dramatic and natural.",
-      "Upstate SC's humidity, thunderstorms, and temperature swings require exacting weatherproofing at every component — wet-location-rated fixtures, direct-burial cable, and sealed connections throughout. Architectural lighting design in SC demands this level of attention to ensure lasting performance."
+      "Just after dusk, a property either retreats into darkness or reveals itself in entirely new light. For Greenville and Upstate South Carolina homeowners who have invested in exceptional architecture and curated landscaping, that moment deserves to be extraordinary. Our architectural lighting design process ensures it is.",
+      "We approach landscape lighting as foundational, not afterthought. Every project begins with site evaluation — architectural character, plantings, hardscape, and the sightlines defining your property. From there we develop a layered lighting plan as deliberate as the landscape itself.",
+      "Installations are built around professional-grade LED fixtures in solid brass and cast aluminum — architectural-grade luminaires unavailable at the consumer level. They resist corrosion and hold integrity through Upstate SC's full seasonal range. These are investments in permanence, not products from a home improvement store.",
+      "The backbone is a properly engineered transformer and low-voltage infrastructure, sized and zoned for today with room for expansion. Our low-voltage expertise delivers peak efficiency without energy waste or the maintenance burden of undersized systems.",
+      "Technique matters as much as equipment. We employ moonlighting — fixtures high in mature canopies casting soft dappled light mirroring natural moonlight. Combined with uplighting on specimen trees and architecture, plus subtle pathway lighting guiding movement without harsh interruption, the result commands attention across Greenville's finest neighborhoods.",
+      "Upstate SC's humidity, thunderstorms, and temperature swings require exacting weatherproofing at every component. The difference between a system lasting fifteen years and one failing in eighteen months lives entirely in installation quality — and our teams are trained to that detail."
     ],
     trustSignals: [
-      { title: "Exclusive Focus", description: "Over a decade of exclusive luxury residential focus" },
-      { title: "Trade-Only Fixtures", description: "Architectural-grade LED fixtures and transformers unavailable at retail" },
-      { title: "Prestigious Portfolio", description: "Portfolio across Greenville's most prestigious neighborhoods" },
-      { title: "Comprehensive Warranty", description: "Workmanship warranty and structured maintenance programs" },
-      { title: "Climate Expertise", description: "Deep Upstate SC climate familiarity for lasting durability" },
+      { title: "Decade of Luxury Focus", description: "Exclusive residential projects throughout Greenville and Upstate SC" },
+      { title: "Trade-Only Fixtures", description: "Architectural-grade LED and transformers unavailable at retail" },
+      { title: "Prestigious Portfolio", description: "Installations across Greenville's most distinguished neighborhoods and lake communities" },
+      { title: "Comprehensive Warranty", description: "Materials, workmanship, and structured maintenance programs" },
+      { title: "Climate-Engineered", description: "Deep Upstate SC familiarity for lasting durability" },
       { title: "Future-Ready Design", description: "Transformer and wiring infrastructure sized for expansion as your landscape evolves" }
     ],
-    faqs: [
-      { question: "What is the design process?", answer: "On-site consultation, layered lighting plan incorporating uplighting, moonlighting, and pathway techniques, fixture selections with samples, and a detailed proposal." },
-      { question: "What fixture types do you use?", answer: "Professional-grade LED fixtures in solid brass, cast aluminum, and marine-grade materials sourced exclusively from trade-only manufacturers." },
-      { question: "How does low-voltage lighting work?", answer: "A 12-volt system powered through a professional transformer — significantly more energy-efficient, longer-lasting, and safer than line-voltage alternatives." },
-      { question: "How does Upstate SC's climate affect lighting?", answer: "Wet-location-rated fixtures, direct-burial cable, and professionally weatherproofed connections at every point ensure reliable performance through all conditions." },
-      { question: "What is moonlighting?", answer: "Fixtures positioned high in tree canopies aimed downward, recreating the soft, diffused quality of natural moonlight — one of our most transformative and sought-after techniques." },
-      { question: "What warranty and maintenance do you offer?", answer: "Comprehensive warranty on materials and workmanship, plus scheduled maintenance programs for seasonal adjustments, bulb replacement, and system optimization." }
+    processSteps: [
+      { num: "01", title: "Evening Site Evaluation", desc: "Architecture, plantings, hardscape, and sightlines assessed to understand your property's full potential after dark." },
+      { num: "02", title: "Layered Lighting Plan", desc: "Uplighting, moonlighting, pathway, and accent techniques composed into a cohesive design." },
+      { num: "03", title: "Precision Installation", desc: "Weatherproofed connections, direct-burial cable, and proper transformer sizing for lasting performance." },
+      { num: "04", title: "Nighttime Reveal", desc: "Walk the property after dark together, fine-tuning every angle until every detail is perfect." }
     ],
-    ctaText: "Call us today to schedule a private consultation and discover what's possible when landscape lighting is elevated to the level of true design.",
+    testimonial: {
+      quote: "Our property looks like a different place after dark. The moonlighting through our oaks is breathtaking. Elevation's detail is unmatched.",
+      attribution: "Stephen & Claire D., Lake Keowee"
+    },
+    faqs: [
+      { question: "What does your lighting design process look like?", answer: "On-site consultation assessing architecture, landscape, and evening use. A layered plan with uplighting, moonlighting, and pathway techniques, fixture selections, and detailed proposal. Nothing installed until you approve every element." },
+      { question: "What LED fixtures do you use?", answer: "Solid brass, cast aluminum, and marine-grade from trade-only manufacturers. Superior color rendering, longer lifespans, and construction built for Upstate SC's humid climate. The gap from consumer-grade is visible within a few years." },
+      { question: "How does low-voltage lighting work?", answer: "12-volt system via a transformer — more energy-efficient and safer than line voltage. We engineer capacity and wiring zones for your property with room for future expansion." },
+      { question: "How does Upstate SC's climate affect installation?", answer: "Humidity, heavy rain, and temperature swings demand wet-location fixtures, direct-burial cable, and weatherproofing at every connection. This detail separates systems lasting decades from those needing constant repair." },
+      { question: "What is moonlighting?", answer: "Fixtures high in tree canopies aimed downward, recreating soft diffused light through branches. Adds depth and organic quality uplighting alone cannot. On properties with mature trees — common in Greenville — it is our most transformative technique." },
+      { question: "Warranty and maintenance?", answer: "Warranty on materials and workmanship plus scheduled maintenance for seasonal adjustments as plantings grow. Prompt service calls between visits as needed." }
+    ],
+    ctaHeading: "Ready to Experience Your Property the Way It Was Meant to Be Seen?",
+    ctaText: "Every lighting system we design is composed for the specific property it serves. Schedule a private consultation to discover what's possible after dark.",
+    urgencyText: "Select number of clients each season — call today for your consultation.",
     relatedSlugs: ["custom-water-features", "outdoor-kitchens", "paver-patios"]
   }
 ] as ServiceData[]).sort((a, b) => a.name.localeCompare(b.name));
