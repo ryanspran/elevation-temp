@@ -27,19 +27,17 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Photo */}
-            <div className="relative">
+            <div className="grid grid-cols-2 gap-4">
               <img
                 src={ownerPhoto1}
                 alt="Owner of Elevation Landscapes"
-                className="w-full rounded-lg shadow-xl"
+                className="w-full aspect-[3/4] object-cover rounded-lg shadow-xl"
               />
-              <div className="absolute -bottom-6 -right-6 w-2/3 rounded-lg shadow-xl border-4 border-background overflow-hidden hidden md:block">
-                <img
-                  src={ownerPhoto2}
-                  alt="Consulting on a landscape project"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <img
+                src={ownerPhoto2}
+                alt="Consulting on a landscape project"
+                className="w-full aspect-[3/4] object-cover rounded-lg shadow-xl"
+              />
             </div>
 
             {/* Copy */}
