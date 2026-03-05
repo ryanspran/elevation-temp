@@ -1,19 +1,46 @@
 
 
-## Observation
+## Generate 15 Hero Images for Service Pages
 
-The block-retaining-walls service has 6 trust signals, while all other services have 5. The current 2-column card grid works perfectly with 6 (3x2) but leaves an uneven row with 5.
+Each of the 15 services (excluding Block Retaining Walls, which already has one) needs a high-quality hero image. I will use Lovable AI's image generation model (`google/gemini-3-pro-image-preview`) to create photorealistic landscape/hardscape images for each service.
 
-Two options:
+### Workflow
 
-1. **Remove the 6th card** from block-retaining-walls to match the other pages (all have 5).
-2. **Add a 6th card** to every other service so they all have 6.
+1. **Create an edge function** (`generate-service-image`) that calls the Lovable AI image generation endpoint, generates an image, and uploads it to the `site-assets` storage bucket.
 
-Since your screenshot shows all 6 cards looking great in the 2x3 grid, the cleanest approach is to **add a 6th trust signal to each of the other services** so they all fill the grid evenly. Each service would get a contextually relevant 6th card (e.g., "Lasting Warranty", "Post-Install Support", etc.).
+2. **Create a one-time script/page** (or run sequentially) that generates images for these 15 services with tailored prompts:
 
-### Changes
+| Service | Prompt Theme |
+|---|---|
+| Grading Solutions | Heavy equipment grading a residential hillside, red clay SC soil |
+| Underground Drainage | French drain installation in a lush green yard |
+| Irrigation Install & Repair | Sprinkler system watering a manicured lawn at golden hour |
+| Landscape Remediation | Before/after eroded hillside being restored with retaining and plantings |
+| Custom Water Features | Elegant natural stone water feature/fountain in upscale backyard |
+| Natural Stone Staircases | Flagstone staircase winding through landscaped hillside |
+| Custom Stone Pathways | Curved natural stone pathway through garden beds |
+| Boulder Retaining Walls | Large boulder retaining wall on sloped residential property |
+| Paver Patios | Expansive paver patio with outdoor furniture, evening light |
+| Pool Decks & Coping | Travertine pool deck surrounding a blue pool |
+| Outdoor Kitchens | Built-in stone outdoor kitchen with grill and counter |
+| Gas Fire Pits | Stone gas fire pit with seating area at dusk |
+| New Plant Installation | Fresh professional plantings — shrubs, ornamental grasses, mulch beds |
+| Sod & Seeding | Freshly laid sod on a large residential lawn |
+| Landscape Lighting | Dramatic low-voltage landscape lighting illuminating a home exterior at night |
 
-**`src/data/services.ts`**: Add a 6th `trustSignals` entry to every service that currently has only 5. Each will be tailored to the service but follow a similar pattern (warranty, transparency, or post-install support).
+3. **Upload each generated image** to the `site-assets` storage bucket under a `heroes/` folder.
 
-This is a data-only change — no template or layout changes needed.
+4. **Update `src/data/services.ts`** to import and assign each new hero image URL to the corresponding service's `heroImage` field.
+
+### Technical Details
+
+- Model: `google/gemini-3-pro-image-preview` (higher quality image generation)
+- Each prompt will specify: photorealistic, wide landscape orientation, Greenville SC upstate setting, luxury residential, no text/watermarks
+- Images stored in storage bucket so they persist and load fast
+- The edge function handles generation + upload; frontend code just references the public URLs
+
+### Files Changed
+
+- **New**: `supabase/functions/generate-service-image/index.ts` — edge function to generate and store images
+- **Modified**: `src/data/services.ts` — add `heroImage` URLs for all 15 services after images are generated and uploaded
 
