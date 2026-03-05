@@ -1,8 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import ownerPhoto1 from "@/assets/about-owner-1.jpg";
-import ownerPhoto2 from "@/assets/about-owner-2.jpg";
+import ownerPhoto from "@/assets/about-owner.jpg";
 import teamPhoto from "@/assets/about-team.jpg";
 
 const About = () => {
