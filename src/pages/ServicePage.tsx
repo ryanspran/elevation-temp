@@ -31,9 +31,9 @@ const ServicePage = () => {
             {service.subheadline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#contact" className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider text-center">
+            <Link to="/contact" className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider text-center">
               Schedule a Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -60,11 +60,11 @@ const ServicePage = () => {
               <img
                 src={service.heroImage ?? heroBg}
                 alt={service.name}
-                className="w-full h-64 lg:h-full object-cover rounded-2xl"
+                className="w-full h-80 lg:h-full lg:min-h-[500px] object-cover rounded-2xl"
               />
             </div>
             {/* Right: Cards */}
-            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-5">
               {service.trustSignals.map((signal, i) => {
                 const icons = [Diamond, Mountain, Users, Shield, Eye, Award];
                 const Icon = icons[i % icons.length];
