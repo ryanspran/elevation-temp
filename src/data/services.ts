@@ -703,32 +703,46 @@ export const services: ServiceData[] = ([
     image: sodSeeding,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/sod-seeding.png",
     seoTitle: "Sod Installation Greenville SC | Elevation Landscapes",
+    seoDescription: "Premium sod and seeding for Greenville & Upstate SC luxury properties. Bermuda, Zoysia, hydroseeding, expert soil preparation. Schedule a consultation.",
     h1: "Sod Installation in Greenville, SC — Precision Turf Craftsmanship for the Discerning Homeowner",
     subheadline: "Uncompromising standards delivering lush, expertly established turf that transforms the entire character of your property.",
     bodyParagraphs: [
-      "A truly exceptional lawn is not the result of simply laying sod — it results from deliberate decisions about soil chemistry, turf variety, grade preparation, drainage patterns, and installation timing. Luxury lawn installation in Greenville begins with understanding that what's beneath the surface determines everything above it.",
-      "We begin every project with comprehensive soil analysis — testing compaction levels, pH balance, organic matter content, and drainage patterns. This isn't optional; it's the foundation of every successful turf installation.",
-      "Bermuda and Zoysia are the most sought-after turf varieties in Upstate SC. Bermuda delivers dense, resilient coverage with excellent drought tolerance — ideal for open, sun-drenched lawns. Zoysia offers a lush, carpet-like texture with deep green color that holds beautifully through Greenville's transition zone climate.",
-      "For larger properties or sloped terrain, our hydroseeding programs provide uniform coverage with professional-grade seed blends. Premium turf installation in Greenville demands proper soil preparation as the non-negotiable first step — thorough grading, amendment, and compaction correction before any turf arrives on site.",
-      "Installation is only as good as the preparation — seams carefully offset, edges cleanly cut against hardscape and beds, every roll firmed for root contact and irrigated precisely. Our professional seeding contractor standards ensure results that hold season after season."
+      "A truly exceptional lawn does not happen by chance. It results from deliberate decisions about soil chemistry, turf variety, grade, drainage, and timing. We approach sod installation and professional seeding with the same precision that goes into every element of a luxury property.",
+      "Upstate South Carolina's climate presents distinct opportunities and demands. Long humid summers and mild winters create ideal conditions for warm-season grasses, but only when paired with the right soil profile and planted at the right moment. We begin every project with comprehensive soil analysis — compaction, pH, organic matter, and drainage — before a single roll arrives.",
+      "We select the turf variety best suited to your conditions, aesthetics, and maintenance expectations. Bermuda offers dense, resilient surface with outstanding drought tolerance for expansive open lawns. Zoysia delivers lush, carpet-like texture with deep green color holding exceptionally in Greenville's transition zone. Both are among the most sought-after varieties across Upstate SC.",
+      "For larger properties, slopes, or areas where conventional sod is less practical, our hydroseeding programs provide beautifully uniform results — a slurry of seed, mulch, and fertilizer promoting fast germination across irregular or expansive terrain.",
+      "Installation is only as good as preparation. Our crews perform thorough grading and soil amendment prior to laying sod — proper drainage slope, even surface finish. Seams offset, edges cleanly cut, every roll firmed and irrigated with precision. This attention is not industry standard. It is our standard.",
+      "The outcome is a lawn serving as foundation for the entire landscape — enhancing architectural presence, framing hardscape, and creating an inviting environment reflecting your investment. Greenville homeowners choosing us are investing in lasting transformation by a team holding every detail to the highest standard."
     ],
     trustSignals: [
-      { title: "Exclusive Residential", description: "Exclusively high-end residential landscapes in Greenville and Upstate SC" },
-      { title: "Soil Analysis", description: "Comprehensive laboratory soil analysis on every project" },
-      { title: "Premium Turf", description: "Premium Bermuda and Zoysia from vetted high-grade turf farms" },
-      { title: "Full-Service", description: "Full-service from soil prep through final edging and irrigation setup" },
-      { title: "Lasting Results", description: "Exceptional craftsmanship with results that hold season after season" },
+      { title: "Exclusively Luxury Residential", description: "High-end landscapes across Greenville and Upstate SC" },
+      { title: "Soil Science First", description: "Comprehensive analysis and amendment on every project" },
+      { title: "Premium Turf Sources", description: "Bermuda and Zoysia from vetted high-grade farms" },
+      { title: "Full-Service Installation", description: "Soil prep through final edging and irrigation" },
+      { title: "Proven Results", description: "Craftsmanship and quality that hold season after season" },
       { title: "Irrigation Coordination", description: "Seamless integration with irrigation systems for optimal turf establishment" }
     ],
-    faqs: [
-      { question: "What sod is best for Greenville?", answer: "Zoysia for dense, refined texture in mixed sun/shade; Bermuda for sun-drenched areas requiring durability and drought tolerance." },
-      { question: "What does soil prep involve?", answer: "Laboratory soil analysis, professional amendment based on results, precision grading, and compaction correction before any turf is installed." },
-      { question: "When is hydroseeding better than sod?", answer: "For larger properties, slopes, or areas where conventional sod installation is less practical — hydroseeding provides uniform professional-grade coverage." },
-      { question: "What maintenance is needed after installation?", answer: "Consistent watering for the first 2-3 weeks is critical for root establishment. After that, warm-season grasses are remarkably low-maintenance." },
-      { question: "When is the best time of year?", answer: "Late spring through early summer for sod installation; late summer into early fall for seeding — aligning with optimal growing conditions." },
-      { question: "Where do you source your sod?", answer: "Exclusively from premium turf farms meeting our standards for variety purity, density, root depth, and pest-free certification." }
+    processSteps: [
+      { num: "01", title: "Soil Analysis", desc: "Compaction, pH, organic matter, drainage — comprehensive evaluation before any work begins." },
+      { num: "02", title: "Variety Selection", desc: "Bermuda, Zoysia, or seeding matched to your property's conditions, aesthetics, and maintenance expectations." },
+      { num: "03", title: "Site Preparation", desc: "Grading, amendment, compaction correction — building the invisible foundation for lasting results." },
+      { num: "04", title: "Precision Installation", desc: "Offset seams, clean edges, immediate irrigation — every detail executed to the highest standard." }
     ],
-    ctaText: "Contact us today. Exceptional outdoor environments begin with a single conversation.",
+    testimonial: {
+      quote: "Elevation prepped our soil meticulously before laying Zoysia across the property. Six months later it looks like it has been there for years.",
+      attribution: "Kevin & Amy R., Greer"
+    },
+    faqs: [
+      { question: "What sod is best for Greenville properties?", answer: "Zoysia for dense refined texture and transition zone performance. Bermuda for sun-drenched lawns needing durability and rapid establishment. We recommend based on your specific site evaluation." },
+      { question: "What does soil preparation involve?", answer: "Detailed analysis then amendment, grading, and compaction correction. Proper prep ensures root establishment, accurate drainage, and uniform appearance holding over time." },
+      { question: "When is hydroseeding better than sod?", answer: "For larger properties, slopes, or irregular areas. Fast even germination across expansive terrain at a fraction of full sod cost." },
+      { question: "Maintenance after installation?", answer: "Consistent watering for two to three weeks, then warm-season grasses are low-maintenance and well-adapted to Upstate SC. We provide a care schedule for your variety and season." },
+      { question: "Best time of year?", answer: "Late spring through early summer for sod. Late summer into early fall for seeding. We plan around the calendar and your property's microclimate." },
+      { question: "Where do you source sod?", answer: "Exclusively from premium turf farms meeting our standards for variety consistency, density, and root depth. Long-term performance depends on material quality and we never cut corners." }
+    ],
+    ctaHeading: "Ready to Elevate Your Lawn to the Standard Your Home Deserves?",
+    ctaText: "Your lawn is the foundation of your entire landscape. Schedule a private consultation to discuss soil preparation, turf variety, and the timeline for transforming your property.",
+    urgencyText: "Exceptional lawns begin with a single conversation — call today.",
     relatedSlugs: ["grading-solutions", "irrigation-installation-repair", "new-plant-installation"]
   },
   {
