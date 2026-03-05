@@ -619,29 +619,42 @@ export const services: ServiceData[] = ([
     h1: "New Plant Installation in Greenville, SC — Crafted for the Exceptional Residential Property",
     subheadline: "Horticultural precision and refined aesthetic vision transforming Greenville properties into landscapes of enduring distinction.",
     bodyParagraphs: [
-      "We don't simply dig a hole and place a plant. Luxury landscape planting in Greenville is a design discipline requiring comprehensive site assessment — soil composition, drainage capacity, sun exposure mapping, and microclimate conditions unique to each property.",
-      "We curate plant palettes that are visually extraordinary and ecologically intelligent. Custom garden design in Upstate SC must account for the region's clay soils, humidity patterns, late frost potential, and intense summer heat — factors that determine whether a planting thrives or merely survives.",
-      "Premium ornamental plant installation in SC uses material sourced from specialty growers: specimen trees with established canopies, rare ornamental shrubs, and refined native cultivars suited to the Piedmont climate. These aren't retail garden center plants — they're investment-grade selections chosen for form, scale, and character.",
-      "Specimen tree planting in Greenville is among our most transformative services. A single well-chosen tree — a mature Japanese maple framing a motor court, a centuries-old live oak anchoring a rear vista — can redefine a property's entire character.",
-      "Every installation follows rigorous root ball preparation protocols, proper soil amendment based on laboratory analysis, and seasonal planting schedules optimized for establishment success. Native cultivars and premium ornamentals receive the same meticulous attention to ensure lasting performance."
+      "We do not simply dig a hole and place a plant. Every installation begins with comprehensive site assessment — soil composition, drainage, sun exposure, and microclimate conditions specific to your property. This knowledge informs every decision, from species selection to root ball preparation to seasonal planting schedules ensuring year-round performance.",
+      "Our luxury landscape planting centers on curating a palette that is visually extraordinary and ecologically intelligent. We source premium ornamental plant material from specialty growers — specimen trees with established canopies, rare ornamental shrubs, and refined native cultivars suited to the Piedmont climate. These are not retail plants. They are investment-grade selections chosen for form, scale, and enduring character.",
+      "Specimen tree planting is among our most transformative services. A single well-chosen tree — a mature Japanese maple framing a motor court, a sculptural serviceberry anchoring a garden border — can redefine a property's character. Our crews handle precision root ball preparation and backfill protocols promoting establishment and long-term vitality.",
+      "For comprehensive custom garden design, our team collaborates through every phase. We understand Upstate SC's seasonal rhythms, the late-spring heat arriving earlier than anticipated, and the importance of material resilient enough to thrive in Greenville's distinctive climate.",
+      "The landscape surrounding your home is a living extension of how you live and what you value. Every plant we install is a permanent architectural decision, not a temporary aesthetic choice. The result deepens in beauty each passing season.",
+      "Our clients are not looking for a contractor — they want a trusted partner bringing expertise, aesthetic sensibility, and genuine investment in long-term success. That is precisely what we deliver on every project."
     ],
     trustSignals: [
-      { title: "High-End Experience", description: "Over a decade of exclusive high-end residential experience" },
-      { title: "Specialty Sourcing", description: "Premium sourcing from specialty growers — rare specimens unavailable at retail" },
-      { title: "Rigorous Installation", description: "Professional root ball preparation and laboratory-based soil amendment" },
-      { title: "Seasonal Planning", description: "Dedicated seasonal planting schedules and post-installation care programs" },
-      { title: "Referral-Built", description: "Reputation built entirely on referrals from discerning homeowners" },
+      { title: "Decade of Luxury Focus", description: "Exclusive high-end residential across Greenville and Upstate SC" },
+      { title: "Specialty Sourcing", description: "Rare specimens and native cultivars from wholesale growers unavailable at retail" },
+      { title: "Rigorous Installation", description: "Professional root ball preparation, soil amendment, precision placement" },
+      { title: "Seasonal Planning", description: "Dedicated schedules and post-installation care programs" },
+      { title: "Referral-Built Trust", description: "Reputation earned through results on discerning properties" },
       { title: "Establishment Warranty", description: "Comprehensive plant warranty with ongoing care guidance for lasting health" }
     ],
-    faqs: [
-      { question: "What is your planting process?", answer: "Site evaluation, curated plant palette selection, and a precise installation plan including soil amendment, root ball preparation, and optimal seasonal scheduling." },
-      { question: "Where do you source plants?", answer: "Specialty growers who cultivate premium ornamentals, rare specimen trees, and refined native cultivars unavailable through retail garden centers." },
-      { question: "How does Greenville expertise improve outcomes?", answer: "We select material specifically for Piedmont clay soils, high humidity, late frost potential, and early summer heat — ensuring every plant thrives in its specific location." },
-      { question: "Can you install large mature specimens?", answer: "Absolutely — specimen tree planting is among our most transformative services. A single mature tree can dramatically elevate a luxury property's character." },
-      { question: "When is the best time to plant?", answer: "Early spring or fall for moderate temperatures and optimal root establishment. We design planting schedules accommodating multiple installation phases throughout the year." },
-      { question: "What warranty do you offer?", answer: "Comprehensive warranty coverage and ongoing care guidance. Every project is the beginning of a lasting relationship with your landscape." }
+    processSteps: [
+      { num: "01", title: "Site Assessment", desc: "Soil, drainage, sun exposure, and microclimate analysis to inform every planting decision." },
+      { num: "02", title: "Plant Curation", desc: "Species matched to architecture, climate zone, and your vision for the property." },
+      { num: "03", title: "Precision Installation", desc: "Root ball prep, soil amendment, and expert placement for optimal establishment." },
+      { num: "04", title: "Establishment Care", desc: "Seasonal schedule, warranty, and ongoing guidance ensuring long-term success." }
     ],
-    ctaText: "Call us today to schedule a private consultation.",
+    testimonial: {
+      quote: "Elevation sourced specimen Japanese maples we couldn't find anywhere. Two years later they're thriving and the garden looks better every season.",
+      attribution: "Elizabeth & Richard G., North Main"
+    },
+    faqs: [
+      { question: "What does the installation process look like?", answer: "Site evaluation of soil, drainage, sun, and landscape character. Then curated selection with root ball preparation, soil amendment, and seasonal planting schedule for long-term success." },
+      { question: "Where do you source plant material?", answer: "Specialty wholesale growers cultivating premium ornamentals, rare specimen trees, and refined native cultivars unavailable at retail. Every plant meets our standards for size, form, and quality." },
+      { question: "How does Greenville expertise benefit my project?", answer: "Piedmont clay, humidity, late frosts, and early summer heat are variables we design around. Material is selected specifically for these conditions so your landscape thrives year after year." },
+      { question: "Can you install large mature specimen trees?", answer: "Absolutely — one of our most requested services. A single properly placed mature tree can dramatically elevate a luxury property's presence and value." },
+      { question: "When is the best time for planting in Greenville?", answer: "Early spring or fall for moderate temperatures and root establishment before summer heat. We design schedules for successful installation across multiple seasonal windows." },
+      { question: "Warranty and post-installation support?", answer: "Warranty coverage and care guidance on every project. We view each installation as the beginning of a relationship, not end of a transaction." }
+    ],
+    ctaHeading: "Ready for a Landscape That Reflects Everything Your Home Represents?",
+    ctaText: "Every planting we design is curated for the specific property it serves. Schedule a consultation to explore what's possible.",
+    urgencyText: "Limited new clients each season — call today for your consultation.",
     relatedSlugs: ["landscape-remediation", "sod-and-seeding", "irrigation-installation-repair"]
   },
   {
