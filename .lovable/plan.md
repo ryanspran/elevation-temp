@@ -1,46 +1,25 @@
 
 
-## Generate 15 Hero Images for Service Pages
+## Update Boulder Retaining Walls Service Page Copy
 
-Each of the 15 services (excluding Block Retaining Walls, which already has one) needs a high-quality hero image. I will use Lovable AI's image generation model (`google/gemini-3-pro-image-preview`) to create photorealistic landscape/hardscape images for each service.
+The boulder-retaining-walls entry in `src/data/services.ts` (lines 288-321) needs to be updated with the user's new copy.
 
-### Workflow
+### Changes to `src/data/services.ts` — boulder-retaining-walls entry
 
-1. **Create an edge function** (`generate-service-image`) that calls the Lovable AI image generation endpoint, generates an image, and uploads it to the `site-assets` storage bucket.
+**Fields to update:**
 
-2. **Create a one-time script/page** (or run sequentially) that generates images for these 15 services with tailored prompts:
+- **seoTitle** — already matches, no change needed
+- **h1** — already matches, no change needed  
+- **subheadline** — update to the new longer version mentioning "Greenville and Upstate South Carolina"
+- **bodyParagraphs** — replace with the 6 new paragraphs (currently has 5)
+- **trustSignals** — replace all 6 with the new 5 provided + need a 6th to keep grid even. User provided only 5, so I will add a contextually appropriate 6th (e.g., "Post-Completion Walkthrough" or similar) to maintain the 3x2 grid consistency we just established
+- **faqs** — replace all 6 with the new 6 FAQs
+- **processSteps** — add the 4 process steps (currently not set, uses defaults)
+- **testimonial** — add the new quote and attribution
+- **ctaHeading** — set to "Ready to Transform Your Terrain into Something Extraordinary?"
+- **ctaText** — update CTA body text
+- **urgencyText** — set to "Our calendar fills well in advance — contact us today."
+- **relatedSlugs** — update to block-retaining-walls, grading-solutions, natural-stone-staircases (already matches)
 
-| Service | Prompt Theme |
-|---|---|
-| Grading Solutions | Heavy equipment grading a residential hillside, red clay SC soil |
-| Underground Drainage | French drain installation in a lush green yard |
-| Irrigation Install & Repair | Sprinkler system watering a manicured lawn at golden hour |
-| Landscape Remediation | Before/after eroded hillside being restored with retaining and plantings |
-| Custom Water Features | Elegant natural stone water feature/fountain in upscale backyard |
-| Natural Stone Staircases | Flagstone staircase winding through landscaped hillside |
-| Custom Stone Pathways | Curved natural stone pathway through garden beds |
-| Boulder Retaining Walls | Large boulder retaining wall on sloped residential property |
-| Paver Patios | Expansive paver patio with outdoor furniture, evening light |
-| Pool Decks & Coping | Travertine pool deck surrounding a blue pool |
-| Outdoor Kitchens | Built-in stone outdoor kitchen with grill and counter |
-| Gas Fire Pits | Stone gas fire pit with seating area at dusk |
-| New Plant Installation | Fresh professional plantings — shrubs, ornamental grasses, mulch beds |
-| Sod & Seeding | Freshly laid sod on a large residential lawn |
-| Landscape Lighting | Dramatic low-voltage landscape lighting illuminating a home exterior at night |
-
-3. **Upload each generated image** to the `site-assets` storage bucket under a `heroes/` folder.
-
-4. **Update `src/data/services.ts`** to import and assign each new hero image URL to the corresponding service's `heroImage` field.
-
-### Technical Details
-
-- Model: `google/gemini-3-pro-image-preview` (higher quality image generation)
-- Each prompt will specify: photorealistic, wide landscape orientation, Greenville SC upstate setting, luxury residential, no text/watermarks
-- Images stored in storage bucket so they persist and load fast
-- The edge function handles generation + upload; frontend code just references the public URLs
-
-### Files Changed
-
-- **New**: `supabase/functions/generate-service-image/index.ts` — edge function to generate and store images
-- **Modified**: `src/data/services.ts` — add `heroImage` URLs for all 15 services after images are generated and uploaded
+This is a data-only change to a single service entry. No template or layout modifications needed.
 
