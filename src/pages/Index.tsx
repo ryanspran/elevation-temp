@@ -120,19 +120,21 @@ const Index = () => {
                 Our principals are personally involved in every project — from the initial consultation through
                 final walkthrough. The result is a landscape that performs as beautifully in its tenth year as it does on completion day.
               </p>
-              <Link
-                to="/contact"
-                className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider"
-              >
-                Schedule a Consultation
-              </Link>
-              <a
-                href="tel:+18641234567"
-                className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider"
-              >
-                <Phone className="h-4 w-4" />
-                Call Now
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider text-center"
+                >
+                  Schedule a Consultation
+                </Link>
+                <a
+                  href="tel:+18641234567"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider"
+                >
+                  <Phone className="h-4 w-4" />
+                  Call Now
+                </a>
+              </div>
             </div>
             {/* Right — Photo with overlapping quote */}
             <div className="relative">
