@@ -1,19 +1,31 @@
 
 
-## Add Mac Dock-Style Zoom Effect to Testimonials Carousel
+## Beef Up SEO Copy in "Areas We Cover" Section
 
-Use Embla's API to track the active/centered slide and apply a CSS scale transform with smooth transitions. The centered slide scales up (e.g., `scale(1.08)`) while non-centered slides stay at `scale(0.9)` with reduced opacity — mimicking macOS dock magnification.
+The current section is thin — just a title, one sentence, four city names, and a contact prompt. Adding keyword-rich copy will improve local SEO for landscaping-related searches in Upstate SC.
 
-### Technical Approach
+### Changes
 
-**`src/pages/Index.tsx`** — Testimonials section (~lines 257-278):
+**`src/pages/Index.tsx`** — Service Area section (lines 338-369):
 
-1. Extract the carousel API using `setApi` prop on `<Carousel>`
-2. Add a `useState` for `activeIndex` and listen to Embla's `select` event to track the centered slide
-3. On each `CarouselItem`, conditionally apply:
-   - Active (centered): `scale-105 opacity-100` with `transition-all duration-300`
-   - Inactive: `scale-90 opacity-60` with same transition
-4. Apply the transform on the inner card `div` so the carousel layout isn't affected
+1. **Expand the service areas list** from 4 to 8-10 cities: add Mauldin, Easley, Taylors, Spartanburg, Anderson, Fountain Inn
+2. **Add an SEO-rich paragraph** below the city grid describing the types of services offered in these areas, naturally weaving in keywords like:
+   - "landscape design Greenville SC"
+   - "hardscaping contractor Upstate South Carolina"
+   - "outdoor living spaces Greer SC"
+   - "retaining walls Simpsonville"
+   - "paver patios Travelers Rest"
+   - "luxury landscaping near me"
+   - "residential landscape architecture"
+   - "custom outdoor kitchens Greenville"
+   - "drainage solutions Upstate SC"
+3. **Add a second descriptive paragraph** mentioning the premium/bespoke nature of the work, targeting long-tail keywords like "high-end landscape contractor Greenville" and "custom stone work Upstate South Carolina"
 
-This creates the "pulled forward" dock-like effect with smooth spring-like transitions as slides change.
+**`src/components/Footer.tsx`** — Update the footer's service areas list to match the expanded cities.
+
+### Example Copy Direction
+
+> From custom stone patios and retaining walls in Greenville to landscape lighting installations in Greer and full outdoor kitchen builds in Simpsonville, our team delivers premium hardscaping and softscaping solutions tailored to the unique terrain and climate of Upstate South Carolina. Whether you need expert grading, underground drainage, or a complete landscape transformation, Elevation Landscapes is the trusted residential landscape architect for discerning homeowners throughout the region.
+
+This keeps copy natural and informative while targeting high-value local search terms.
 
