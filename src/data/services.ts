@@ -28,6 +28,10 @@ export interface ServiceData {
   faqs: { question: string; answer: string }[];
   ctaText: string;
   relatedSlugs: string[];
+  processSteps?: { num: string; title: string; desc: string }[];
+  testimonial?: { quote: string; attribution: string };
+  ctaHeading?: string;
+  urgencyText?: string;
 }
 
 export const services: ServiceData[] = ([
@@ -302,31 +306,41 @@ export const services: ServiceData[] = ([
     image: blockWalls,
     seoTitle: "Block Retaining Walls Greenville SC | Elevation Landscapes",
     h1: "Block Retaining Walls Greenville SC — Engineered Precision, Refined by Design",
-    subheadline: "Block retaining walls that resolve the land's challenges and redefine what your outdoor environment can become.",
+    subheadline: "Elevation Landscapes designs and installs block retaining walls across Greenville and Upstate South Carolina that resolve the land's challenges and redefine what your outdoor environment can become.",
     bodyParagraphs: [
-      "When elevation shifts demand a structural solution with design versatility, segmental retaining walls in Greenville offer engineering precision married with aesthetic intention. Premium block systems provide consistency, durability, and design breadth that natural stone alone cannot always achieve.",
-      "We assess soil bearing capacity, drainage patterns, and load requirements before a single block is set. Decorative block walls in Upstate SC must account for the region's expansive clay, heavy rainfall, and temperature extremes — factors that generic installations routinely fail to address.",
-      "For walls of significant height or facing hydraulic pressure, we incorporate geogrid reinforcement creating mechanically stabilized earth systems. This retaining wall installation contractor approach ensures structural integrity far exceeding basic gravity wall construction.",
-      "Terraced design transforms unusable hillside into purposeful spaces — planting beds, level lawn panels, stone-accented steps connecting levels, and flat areas for outdoor living. A landscape block wall in Greenville becomes the organizing structure around which the entire outdoor experience is designed.",
-      "We source decorative block systems that endure Upstate SC's humidity, freeze-thaw cycles, and clay soil conditions. Every system is selected for both structural performance and visual refinement — because engineering and aesthetics must coexist."
+      "Greenville and Upstate South Carolina's rolling terrain, mature hardwoods, and characteristic grade changes create both opportunity and complexity. When elevation shifts demand a structural solution, block retaining walls offer a seamless marriage of engineering precision and aesthetic intention.",
+      "We approach every retaining wall installation as a design problem first — not simply how to hold back earth, but how to shape land to elevate the entire property. We work exclusively with premium segmental block systems selected for consistency, durability, and design breadth — clean contemporary geometry or textured traditional warmth.",
+      "Structural integrity is non-negotiable. We assess soil composition, drainage patterns, and load requirements before a single block is set. For walls of significant height or hydraulic pressure, we incorporate geogrid reinforcement layers creating a mechanically stabilized earth system that performs for decades.",
+      "Terraced design is where our expertise creates genuine value. Rather than treating a sloped lot as a liability, we create layered outdoor living — planting beds framed with precision, level lawn panels, and stone-accented steps moving visitors gracefully through the landscape.",
+      "We source decorative block wall systems that endure Upstate SC's humidity, freeze-thaw cycles, and clay-heavy soils. Our team understands how light moves across textured block, how cap selections shift perceived style, and how integration with plantings, drainage, and lighting makes a wall feel intentional.",
+      "Every installation begins with detailed consultation and concludes with a finished product as considered as every detail on your property. We do not subcontract — the craftsmen who pour footings set the final capstone."
     ],
     trustSignals: [
-      { title: "Luxury Focus", description: "Exclusive luxury residential hardscape focus" },
-      { title: "Engineered Solutions", description: "Site-specific engineering with drainage and geogrid reinforcement" },
-      { title: "Premium Systems", description: "Premium segmental block systems for structural integrity and refinement" },
-      { title: "Consistent Crews", description: "No subcontracting — same craftsmen from start to finish" },
-      { title: "Transparent Process", description: "Detailed proposals, transparent timelines, post-installation support" }
+      { title: "Exclusive Luxury Focus", description: "High-end residential only" },
+      { title: "Engineered to Your Site", description: "Soil assessment, drainage, geogrid where required" },
+      { title: "Premium Materials", description: "Segmental block for integrity and refinement" },
+      { title: "Zero Subcontracting", description: "Same craftsmen start to finish" },
+      { title: "Full Transparency", description: "Detailed proposals, timelines, post-install support" }
     ],
     faqs: [
-      { question: "What does a block retaining wall cost?", answer: "Several thousand for smaller walls to significantly higher for multi-tiered complex systems with integrated drainage, geogrid, and finishing elements." },
-      { question: "Segmental block vs poured concrete?", answer: "Segmental offers significantly more design flexibility, better performance in clay soils, and easier integration with landscape elements than poured concrete." },
-      { question: "What challenges are specific to Greenville?", answer: "Expansive clay soil, heavy seasonal rainfall, and freeze-thaw cycles require drainage aggregate, weep systems, and geogrid reinforcement for lasting performance." },
-      { question: "What maintenance is required?", answer: "Minimal — periodic inspection for movement, clearing weep holes, and ensuring drainage systems remain unobstructed." },
-      { question: "Can walls integrate with lighting and steps?", answer: "Yes — we frequently build terraced walls with built-in landscape lighting, integrated planting beds, and natural stone steps connecting levels." },
-      { question: "Are permits required?", answer: "Walls over 4 feet typically require permits and may need engineering certification. We handle the entire permitting process for you." }
+      { question: "What does a block retaining wall cost in Greenville, SC?", answer: "Several thousand for smaller decorative walls to significantly higher for multi-tiered systems. Factors: wall height, footage, materials, site access, geogrid needs. Detailed proposals after site assessment." },
+      { question: "What is the difference between a segmental retaining wall and poured concrete?", answer: "Segmental walls use interlocking block with geogrid reinforcement, offering superior design flexibility and better clay-soil performance vs monolithic concrete. Best structure-plus-aesthetics combo for Upstate SC luxury properties." },
+      { question: "Are there specific challenges to retaining walls in Greenville and Upstate SC?", answer: "Expansive clay soils shifting with moisture, heavy rainfall, and freeze-thaw cycles stress improperly built walls. We incorporate drainage aggregate, weep systems, and geogrid reinforcement for long-term Greenville-climate integrity." },
+      { question: "How much maintenance does a block retaining wall require?", answer: "Minimal when properly installed. Periodic inspection of wall face and drainage outlets, clearing weep holes, monitoring for settlement. We provide care guidelines specific to your installation." },
+      { question: "Can a block retaining wall include built-in lighting, plantings, or steps?", answer: "Yes — our most compelling Greenville projects feature terraced systems with lighting along caps, planting beds at each tier, and natural stone steps through levels. All designed together, never as afterthoughts." },
+      { question: "Do I need a permit for a retaining wall in Greenville?", answer: "Walls over four feet of exposed height typically require a permit. Greenville County and City each have requirements. We navigate the full permitting process on your behalf." }
     ],
-    ctaText: "Call us today or submit a project inquiry. Our calendar fills seasonally — start the conversation now.",
-    relatedSlugs: ["boulder-retaining-walls", "grading-solutions", "paver-patios"]
+    ctaText: "Contact us today to schedule a private consultation and discover how a precision-engineered block retaining wall can transform your Greenville property.",
+    relatedSlugs: ["boulder-retaining-walls", "grading-solutions", "paver-patios"],
+    processSteps: [
+      { num: "01", title: "Site Assessment", desc: "Soil, grade, drainage, and vision — we evaluate every factor before recommending a solution." },
+      { num: "02", title: "Custom Engineering", desc: "Wall system designed with drainage integration and geogrid reinforcement where required." },
+      { num: "03", title: "Precision Installation", desc: "In-house crews execute from foundation to capstone with meticulous attention to detail." },
+      { num: "04", title: "Final Walkthrough", desc: "We inspect every detail together, ensuring the finished product meets our shared standard." }
+    ],
+    testimonial: { quote: "The terraced wall system transformed our slope into usable outdoor living space. Engineering expertise and detail were evident from day one.", attribution: "James R., Thornblade" },
+    ctaHeading: "Ready for a Retaining Wall That Performs and Elevates?",
+    urgencyText: "Spring and summer slots filling — reach out today."
   },
   {
     slug: "paver-patios",

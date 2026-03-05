@@ -80,12 +80,12 @@ const ServicePage = () => {
             <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">How We Work</h2>
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
+          <div className={`grid grid-cols-1 ${(service.processSteps?.length ?? 3) === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3'} gap-8`}>
+            {(service.processSteps ?? [
               { num: "01", title: "Consultation & Assessment", desc: "On-site evaluation of your property, understanding your vision and establishing project objectives." },
               { num: "02", title: "Custom Design & Planning", desc: "Detailed plans with material specifications, timelines, and transparent pricing tailored to your project." },
               { num: "03", title: "Expert Execution", desc: "Our in-house craftsmen bring the vision to life with meticulous attention to every detail." },
-            ].map((step, i) => (
+            ]).map((step, i) => (
               <div key={i} className="text-center">
                 <div className="w-16 h-16 rounded-full border-2 border-gold flex items-center justify-center mx-auto mb-6">
                   <span className="font-serif text-gold text-lg">{step.num}</span>
@@ -133,9 +133,9 @@ const ServicePage = () => {
             ))}
           </div>
           <p className="font-serif text-2xl text-text-dark italic mb-6 leading-relaxed">
-            "Elevation Landscapes exceeded every expectation. Their professionalism, craftsmanship, and genuine care for our property made all the difference."
+            "{service.testimonial?.quote ?? "Elevation Landscapes exceeded every expectation. Their professionalism, craftsmanship, and genuine care for our property made all the difference."}"
           </p>
-          <p className="text-text-dark font-semibold">— Greenville Homeowner</p>
+          <p className="text-text-dark font-semibold">— {service.testimonial?.attribution ?? "Greenville Homeowner"}</p>
         </div>
       </section>
 
@@ -145,7 +145,7 @@ const ServicePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">
-                Ready to Get Started?
+                {service.ctaHeading ?? "Ready to Get Started?"}
               </h2>
               <div className="w-16 h-0.5 bg-gold mb-6" />
               <p className="text-secondary-foreground/70 text-lg leading-relaxed mb-8">
@@ -164,6 +164,9 @@ const ServicePage = () => {
               <button type="submit" className="w-full bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider">
                 Submit Inquiry
               </button>
+              {service.urgencyText && (
+                <p className="text-gold/80 text-sm text-center mt-3 italic">{service.urgencyText}</p>
+              )}
             </form>
           </div>
         </div>
