@@ -158,6 +158,16 @@ const Contact = () => {
                         </span>
                       </label>
                     ))}
+                    <label className="flex items-center gap-3 cursor-pointer group">
+                      <Checkbox
+                        checked={selectedServices.includes("Other")}
+                        onCheckedChange={() => toggleService("Other")}
+                        className="border-border data-[state=checked]:bg-gold data-[state=checked]:border-gold"
+                      />
+                      <span className="text-text-dark/80 text-sm group-hover:text-text-dark transition-colors">
+                        Other
+                      </span>
+                    </label>
                   </div>
                 </div>
 
@@ -230,13 +240,6 @@ const Contact = () => {
 
             {/* Right sidebar — image + contact info */}
             <div className="lg:col-span-2 space-y-8">
-              <div className="rounded-xl overflow-hidden">
-                <img
-                  src={landscapePhoto}
-                  alt="Beautiful landscape design by Elevation Landscapes"
-                  className="w-full h-64 lg:h-80 object-cover"
-                />
-              </div>
 
               <div className="bg-navy rounded-xl p-8">
                 <h3 className="font-serif text-xl text-secondary-foreground mb-6">
