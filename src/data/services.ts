@@ -519,29 +519,42 @@ export const services: ServiceData[] = ([
     h1: "Custom Outdoor Gas Fire Pits in Greenville, SC — Designed for the Way You Live",
     subheadline: "Bespoke gas fire features where master craftsmanship, enduring materials, and site-specific design define your outdoor living experience.",
     bodyParagraphs: [
-      "As dusk settles over the Blue Ridge foothills, a well-designed outdoor space transforms from beautiful to unforgettable. A custom gas fire pit in Greenville extends your outdoor living season deep into fall and winter, creates a natural gathering point, and elevates your entire exterior environment.",
-      "Every built-in fire pit begins with site-specific design consultation — evaluating existing architecture, masonry palette, gas infrastructure, and how your family actually uses the outdoor space. Nothing is templated. Every luxury fire feature in Upstate SC is conceived and crafted for the specific property it serves.",
-      "We specify premium natural gas burners engineered for clean, responsive flames and years of reliable operation. Materials are selected with the same discernment we bring to every project: natural bluestone, travertine, granite, and custom mortars matched to your home's existing palette.",
-      "Fire glass media creates contemporary luminous effects — decorative tempered glass that refracts light for a vivid, dimensional flame presentation. All gas work is performed by licensed professionals, meeting or exceeding South Carolina code requirements.",
-      "We do NOT install prefabricated or kit-based products. Every stone fire pit installation in Greenville is custom-designed, custom-built, and backed by our full weather-resistant construction warranty."
+      "There is a moment, as dusk settles over the Blue Ridge foothills, when a well-designed outdoor space transforms from beautiful to unforgettable. At Elevation Landscapes, we engineer that moment — and a custom outdoor gas fire pit is often at its center.",
+      "Greenville homeowners who expect excellence understand fire features are an architectural statement, not an accessory. A built-in fire pit extends your outdoor living season into cool Upstate South Carolina evenings, creates a natural gathering point, and elevates your entire exterior environment.",
+      "What separates an exceptional gas fire pit from a manufactured product is the integrity behind it. Every built-in fire pit we install begins with site-specific consultation — your architecture, masonry palette, gas infrastructure, and how your family uses the space. Nothing templated. Everything considered.",
+      "Our installations incorporate premium natural gas burners for consistent, clean flames responding immediately in any season. We work with natural bluestone, travertine, granite, and custom-blended mortars — sourced for refinement and durability in South Carolina's climate. For contemporary spaces, fire glass media in a range of hues produces a luminous, jewel-like effect striking in evening hours.",
+      "All gas line work is coordinated with licensed professionals, and every stone fire pit installation meets or exceeds South Carolina code — no questions about safety, performance, or permitting.",
+      "We do not install prefabricated or kit-based products. Every fire feature is custom and site-specific — ensuring design coherence with your architecture and a finished product that reads as a permanent, intentional part of the landscape rather than an afterthought."
     ],
     trustSignals: [
-      { title: "High-End Experience", description: "Over a decade of exclusive high-end residential experience" },
-      { title: "Licensed Gas Work", description: "All installations with licensed gas professionals, fully code-compliant" },
-      { title: "Curated Portfolio", description: "Curated portfolio of luxury fire feature projects across Greenville" },
-      { title: "Premium Materials", description: "Bluestone, travertine, granite — weather-resistant premium systems" },
-      { title: "Limited Acceptance", description: "Limited-acceptance model for focused senior-level craftsmanship" },
+      { title: "Decade of Luxury Experience", description: "Exclusive high-end residential across Greenville and Upstate SC" },
+      { title: "Code-Compliant Gas Work", description: "Licensed professionals, fully SC compliant" },
+      { title: "Curated Portfolio", description: "Custom stone fire pits, integrated kitchen features, courtyard installations" },
+      { title: "Premium Materials Only", description: "Bluestone, travertine, granite, weather-resistant systems" },
+      { title: "Limited-Acceptance Model", description: "Senior-level craftsmanship and focused attention on every project" },
       { title: "Weather-Resistant Build", description: "Full construction warranty with professional sealers for year-round durability" }
     ],
-    faqs: [
-      { question: "Gas vs wood-burning?", answer: "Gas fire pits produce no wood smoke, ash, or airborne sparks. They ignite at a valve turn or remote touch — clean, controlled, and effortless every time." },
-      { question: "How do they hold up in Upstate SC's climate?", answer: "Weather-resistant materials and professional sealers are engineered for exterior longevity — delivering decades of reliable performance through all seasons." },
-      { question: "What is the typical timeline?", answer: "6-12 weeks from initial consultation to completion, depending on design complexity and material lead times." },
-      { question: "What is fire glass media?", answer: "Decorative tempered glass pieces that refract light to create a vivid, dimensional flame effect. Easy to clean, doesn't degrade, and adds contemporary visual depth." },
-      { question: "Does a fire pit add property value?", answer: "Consistently — a custom fire feature distinguishes properties in Greenville's luxury real estate market and enhances the outdoor living experience significantly." },
-      { question: "Can I buy a prefab unit and have you install it?", answer: "No — every fire feature we create is custom-designed and custom-built for the specific property. We do not install kit-based or prefabricated products." }
+    processSteps: [
+      { num: "01", title: "Site Consultation", desc: "Architecture, masonry palette, gas infrastructure, and lifestyle evaluated to inform every design decision." },
+      { num: "02", title: "Custom Design", desc: "Materials, burner spec, fire glass or stone media selection — all matched to your architecture and preferences." },
+      { num: "03", title: "Expert Build", desc: "Masonry construction with licensed gas integration, executed with precision and full code compliance." },
+      { num: "04", title: "Final Ignition", desc: "Walk every detail, demonstrate operation, and deliver your comprehensive care guide." }
     ],
-    ctaText: "Reach out today to schedule your private design consultation.",
+    testimonial: {
+      quote: "The fire pit is where every evening ends now. Stone work matches our patio perfectly and the flame is stunning.",
+      attribution: "David & Laura T., Alta Vista"
+    },
+    faqs: [
+      { question: "Why choose a gas fire pit over wood-burning?", answer: "No wood, smoke, or ash. Natural gas ignites at a valve turn or remote touch with consistent, clean flame. For frequent entertainers, gas offers unmatched convenience." },
+      { question: "How does a built-in fire pit hold up to Greenville's climate?", answer: "We use weather-resistant materials and sealers engineered for Upstate SC's humidity, temperature swings, and freezing. Properly built, it performs beautifully for decades." },
+      { question: "How long does design and installation take?", answer: "Six to twelve weeks from consultation to completion depending on complexity and material lead times. We recommend reaching out well ahead of your target season." },
+      { question: "What is fire glass media?", answer: "Decorative tempered glass above the burner refracting light for a vivid dimensional flame effect. Does not degrade with heat, easy to clean, and can be refreshed as preferences change." },
+      { question: "Will a custom fire pit add value to my home?", answer: "Custom fire features consistently distinguish properties in Greenville's luxury market, contributing to perceived value and speed of sale." },
+      { question: "Can I buy a prefab fire pit and have you install it?", answer: "No — every feature we build is custom and site-specific, ensuring design coherence and a result that reads as permanent architecture, not an add-on." }
+    ],
+    ctaHeading: "Ready for a Fire Feature That Defines Your Evenings?",
+    ctaText: "Every fire feature we build is custom-designed for the property it serves. Schedule a private consultation to explore what's possible for your outdoor living space.",
+    urgencyText: "Spring and fall demand is highest — reach out today to secure your spot.",
     relatedSlugs: ["outdoor-kitchens", "paver-patios", "landscape-lighting"]
   },
   {
