@@ -162,7 +162,7 @@ const ServicePage = () => {
 
       {/* Testimonial */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${service.heroImage ?? heroBg})` }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${service.testimonialImage ?? service.heroImage ?? heroBg})` }} />
         <div className="absolute inset-0 bg-navy/70" />
         <div className="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-secondary-foreground/10 backdrop-blur-xl border border-secondary-foreground/20 rounded-2xl p-10 md:p-14 text-center">

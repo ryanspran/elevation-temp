@@ -8,6 +8,7 @@ import stonePathways from "@/assets/services/stone-pathways.jpg";
 import boulderWalls from "@/assets/services/boulder-walls.jpg";
 import blockWalls from "@/assets/services/block-walls.jpg";
 import blockWallsHero from "@/assets/services/block-walls-hero.jpg";
+import blockWallsTestimonial from "@/assets/services/block-walls-testimonial.jpg";
 import paverPatios from "@/assets/services/paver-patios.jpg";
 import poolDecks from "@/assets/services/pool-decks.jpg";
 import outdoorKitchens from "@/assets/services/outdoor-kitchens.jpg";
@@ -34,6 +35,7 @@ export interface ServiceData {
   ctaHeading?: string;
   urgencyText?: string;
   heroImage?: string;
+  testimonialImage?: string;
 }
 
 export const services: ServiceData[] = ([
@@ -307,6 +309,7 @@ export const services: ServiceData[] = ([
     tagline: "Engineered precision, refined by design",
     image: blockWalls,
     heroImage: blockWallsHero,
+    testimonialImage: blockWallsTestimonial,
     seoTitle: "Block Retaining Walls Greenville SC | Elevation Landscapes",
     h1: "Block Retaining Walls Greenville SC — Engineered Precision, Refined by Design",
     subheadline: "Elevation Landscapes designs and installs block retaining walls across Greenville and Upstate South Carolina that resolve the land's challenges and redefine what your outdoor environment can become.",
