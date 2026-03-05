@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Star, ArrowRight, Shield, TreePine, Users, Gem, Handshake, Award, Phone, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, type CarouselApi } from "@/components/ui/carousel";
 import { services } from "@/data/services";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -15,7 +16,18 @@ import processPhoto from "@/assets/process-photo.jpg";
 import landscapePhoto from "@/assets/landscape-photo.jpg";
 import testimonialsBg from "@/assets/testimonials-bg.jpg";
 
+
 const Index = () => {
+  const [testimonialApi, setTestimonialApi] = useState<CarouselApi>();
+  const [activeTestimonial, setActiveTestimonial] = useState(0);
+
+  useEffect(() => {
+    if (!testimonialApi) return;
+    const onSelect = () => setActiveTestimonial(testimonialApi.selectedScrollSnap());
+    testimonialApi.on("select", onSelect);
+    onSelect();
+    return () => { testimonialApi.off("select", onSelect); };
+  }, [testimonialApi]);
   const whyUsItems = [
     { icon: Gem, title: "Exclusive Luxury Focus", desc: "We serve only residential clients who demand the absolute finest in landscape design and craftsmanship." },
     { icon: TreePine, title: "Deep Upstate SC Expertise", desc: "Decades of experience with Piedmont soils, regional climate, and the nuances that define successful landscapes here." },
@@ -254,11 +266,11 @@ const Index = () => {
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
 
-          <Carousel opts={{ align: "center", loop: true }} className="w-full">
+          <Carousel opts={{ align: "center", loop: true }} setApi={setTestimonialApi} className="w-full">
             <CarouselContent className="-ml-4">
               {testimonials.map((t, i) => (
                 <CarouselItem key={i} className="pl-4 basis-[85%] md:basis-[60%] lg:basis-[40%]">
-                  <div className="backdrop-blur-md bg-white/10 border border-white/20 p-8 md:p-10 rounded-2xl h-full">
+                  <div className={`backdrop-blur-md bg-white/10 border border-white/20 p-8 md:p-10 rounded-2xl h-full transition-all duration-300 ${i === activeTestimonial ? 'scale-105 opacity-100' : 'scale-90 opacity-60'}`}>
                     <div className="flex gap-1 mb-5">
                       {[...Array(5)].map((_, j) => (
                         <Star key={j} className="h-4 w-4 fill-gold text-gold" />
