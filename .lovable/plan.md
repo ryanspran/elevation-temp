@@ -1,31 +1,32 @@
 
 
-## Beef Up SEO Copy in "Areas We Cover" Section
+## Create Contact Page
 
-The current section is thin — just a title, one sentence, four city names, and a contact prompt. Adding keyword-rich copy will improve local SEO for landscaping-related searches in Upstate SC.
+### Overview
+Build a dedicated `/contact` route with a styled contact form featuring service interest checkboxes, budget range dropdown, timeframe dropdown, and landscape imagery — consistent with the site's luxury navy/gold aesthetic. Update all "Contact" links across the site to point to it.
 
-### Changes
+### New File: `src/pages/Contact.tsx`
+- Full-page layout with Navbar and Footer
+- Hero banner section with a landscape background image (reuse `hero-bg.jpg` or `landscape-photo.jpg`) and overlay, similar to service pages
+- Form section with two-column layout on desktop (form left, decorative image right)
+- Form fields:
+  - **Name** (text input)
+  - **Email** (email input)
+  - **Phone** (tel input)
+  - **Services Interested In** — checkbox group using the service names from `services` data (Grading Solutions, Underground Drainage, Paver Patios, etc.)
+  - **Budget Range** — Select dropdown with options: "Under $10,000", "$10,000 – $25,000", "$25,000 – $50,000", "$50,000 – $100,000", "$100,000+"
+  - **Timeframe** — Select dropdown with options: "As soon as possible", "Within 1–3 months", "3–6 months", "6–12 months", "Just exploring options"
+  - **Message** (textarea)
+  - **Submit button** styled with gold/navy theme
+- On submit: show a success toast (no backend needed yet)
+- Styled with the existing navy, gold, cream palette and Playfair Display headings
 
-**`src/pages/Index.tsx`** — Service Area section (lines 338-369):
+### Edit: `src/App.tsx`
+- Import `Contact` page and add route: `<Route path="/contact" element={<Contact />} />`
 
-1. **Expand the service areas list** from 4 to 8-10 cities: add Mauldin, Easley, Taylors, Spartanburg, Anderson, Fountain Inn
-2. **Add an SEO-rich paragraph** below the city grid describing the types of services offered in these areas, naturally weaving in keywords like:
-   - "landscape design Greenville SC"
-   - "hardscaping contractor Upstate South Carolina"
-   - "outdoor living spaces Greer SC"
-   - "retaining walls Simpsonville"
-   - "paver patios Travelers Rest"
-   - "luxury landscaping near me"
-   - "residential landscape architecture"
-   - "custom outdoor kitchens Greenville"
-   - "drainage solutions Upstate SC"
-3. **Add a second descriptive paragraph** mentioning the premium/bespoke nature of the work, targeting long-tail keywords like "high-end landscape contractor Greenville" and "custom stone work Upstate South Carolina"
+### Edit: `src/components/Navbar.tsx`
+- The desktop and mobile "Contact" links already point to `/contact` — no change needed (they're already `<Link to="/contact">`)
 
-**`src/components/Footer.tsx`** — Update the footer's service areas list to match the expanded cities.
-
-### Example Copy Direction
-
-> From custom stone patios and retaining walls in Greenville to landscape lighting installations in Greer and full outdoor kitchen builds in Simpsonville, our team delivers premium hardscaping and softscaping solutions tailored to the unique terrain and climate of Upstate South Carolina. Whether you need expert grading, underground drainage, or a complete landscape transformation, Elevation Landscapes is the trusted residential landscape architect for discerning homeowners throughout the region.
-
-This keeps copy natural and informative while targeting high-value local search terms.
+### Edit: `src/pages/Index.tsx`
+- Update any CTA buttons/links that reference contact to use `<Link to="/contact">` instead of anchor links or phone numbers where appropriate
 
