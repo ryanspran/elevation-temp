@@ -292,31 +292,44 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/boulder-walls.png",
     seoTitle: "Boulder Retaining Walls Greenville SC | Elevation Landscapes",
     h1: "Boulder Retaining Walls Greenville SC — Engineered for the Land, Built to Last Generations",
-    subheadline: "Natural boulder retaining walls for discerning homeowners — where structural integrity and refined craftsmanship are never mutually exclusive.",
+    subheadline: "Natural boulder retaining walls for discerning homeowners across Greenville and Upstate South Carolina — where structural integrity and refined craftsmanship are never mutually exclusive.",
     bodyParagraphs: [
-      "Greenville's rolling grades, wooded slopes, and dramatic elevation changes define the region's most prestigious properties — but unmanaged terrain erodes value and undermines investments. Natural boulder wall installation in Greenville transforms these challenges into defining landscape features.",
-      "We engineer boulder walls that become the most compelling elements of a property — massive structures of carefully selected natural stone that speak to permanence, strength, and belonging. Every installation is grounded in gravity wall engineering principles adapted to site-specific conditions.",
-      "Boulders are sourced for character, scale, and geological integrity — stones with weathered surfaces and natural presence suggesting they've always belonged in that exact position. Our luxury retaining wall contractor crews read stone — understanding which face belongs forward, how weight distributes across bearing surfaces, and where negative space adds compositional depth.",
-      "A well-designed large stone retaining wall in SC creates usable terraced space from previously unusable hillside, establishes visual anchors for plantings, and frames outdoor living areas with natural authority. Hillside boulder wall construction in Greenville is both engineering and artistry.",
-      "Natural stone placement and slope stabilization at this level require understanding soil mechanics, water management, and aesthetic composition simultaneously. The result is a wall that performs structurally while appearing as though nature placed every stone."
+      "In Greenville and across Upstate South Carolina, rolling grades, wooded slopes, and dramatic elevation changes define the area's most prestigious properties. But unmanaged terrain erodes, shifts, and quietly undermines the landscape investment you have worked to build.",
+      "We engineer and install boulder retaining walls that become defining features of the property — massive, ancient-looking structures of carefully selected natural stone that speak to permanence and craftsmanship rarely seen in residential work.",
+      "Every natural boulder wall installation begins with thorough site study — soil composition, drainage patterns, grade elevation, and visual landscape flow. Each is grounded in gravity wall engineering principles, ensuring the mass and placement of every stone contributes to a structure as functionally stable as it is visually striking.",
+      "The boulders we source are chosen for character, scale, and geological integrity. Our teams read each stone — which face belongs forward, how weight distributes, where negative space adds to the composition. The result is a hillside boulder wall that looks less installed and more discovered.",
+      "Slope stabilization is often the catalyst, but rarely the only reason clients invest. A well-designed boulder wall creates usable terraced space from unusable slope, anchors surrounding plantings and outdoor living areas, and adds architectural permanence to Greenville's most sought-after estate communities.",
+      "We take a limited number of projects annually, ensuring every installation receives our most experienced craftsmen from site evaluation through final stone placement. When we leave, the wall is finished — not nearly finished."
     ],
     trustSignals: [
-      { title: "Proven Experience", description: "Over a decade of exclusive luxury residential experience" },
-      { title: "Engineered Solutions", description: "Gravity wall engineering with site-specific drainage planning" },
-      { title: "Premium Materials", description: "Premium natural boulders selected for geological integrity and character" },
-      { title: "Dedicated Attention", description: "Deliberately limited client roster for dedicated attention to each project" },
-      { title: "Lasting Support", description: "Craftsmanship guarantee with post-completion support" },
-      { title: "Drainage Integration", description: "Every wall engineered with proper water management for long-term stability" }
+      { title: "Estate-Scale Experience", description: "Over a decade of exclusive luxury residential work" },
+      { title: "Gravity Wall Engineering", description: "Site-specific drainage and soil assessment before any stone is placed" },
+      { title: "Hand-Selected Stone", description: "Premium boulders chosen for integrity, scale, and character" },
+      { title: "Dedicated Attention", description: "Limited roster ensuring our top team on your project" },
+      { title: "Craftsmanship Guarantee", description: "Warranty with ongoing post-completion support" },
+      { title: "Post-Completion Walkthrough", description: "Every project concludes with a detailed on-site review to ensure complete satisfaction" }
     ],
+    processSteps: [
+      { num: "01", title: "Site Study", desc: "Soil, drainage, grade, and landscape flow" },
+      { num: "02", title: "Stone Sourcing", desc: "Hand-select boulders for character and structural fit" },
+      { num: "03", title: "Expert Placement", desc: "Gravity engineering with veteran crews" },
+      { num: "04", title: "Final Inspection", desc: "Walk every detail together" }
+    ],
+    testimonial: {
+      quote: "The boulder wall looks like it has been part of our hillside forever. Scale and craftsmanship are extraordinary.",
+      attribution: "Patricia W., Paris Mountain"
+    },
     faqs: [
-      { question: "How long does installation take?", answer: "1-3 weeks for most installations; larger multi-tiered projects with integrated plantings and drainage may extend the timeline." },
-      { question: "How long do boulder walls last?", answer: "Routinely lasting several decades with proper engineering — these are among the most permanent landscape structures available." },
-      { question: "What challenges are specific to Upstate SC?", answer: "Clay soils, variable rainfall intensity, and freeze-thaw cycles all require specific engineering for proper drainage, stone bedding, and long-term stability." },
-      { question: "What does a boulder wall cost?", answer: "Varies significantly by wall dimensions, stone selection, site conditions, and engineering complexity. Detailed proposals follow site consultation." },
-      { question: "Does a boulder wall add property value?", answer: "Consistently adds measurable value to high-end properties — both in usable space creation and aesthetic distinction." },
-      { question: "Can walls integrate with other features?", answer: "We regularly incorporate plantings, landscape lighting, water features, and outdoor living elements into wall designs for cohesive compositions." }
+      { question: "How long does boulder retaining wall installation take?", answer: "Most residential projects run one to three weeks. Larger estates with multiple tiers may extend further. Detailed schedule provided during consultation." },
+      { question: "How long will a natural boulder wall last?", answer: "Among the most durable residential landscape structures — routinely lasting decades. Sound gravity wall engineering, proper drainage, and quality stone are the keys, all central to our process." },
+      { question: "Are there specific considerations for Upstate South Carolina?", answer: "Clay-heavy soils, variable rainfall, and freeze-thaw cycles require thoughtful drainage planning and proper stone bedding. Our methods are calibrated to these specific regional conditions." },
+      { question: "What does a boulder retaining wall cost?", answer: "Varies by dimensions, stone sourcing, site conditions, and engineering. Clients should expect a meaningful investment reflecting premium materials and craftsmanship. Fully transparent pricing at consultation." },
+      { question: "Will it increase my property value?", answer: "Consistently adds measurable value. Beyond stabilization, these structures bring architectural quality and visual distinction that carry significant weight in Greenville's luxury market." },
+      { question: "Can it integrate with other landscape features?", answer: "Absolutely — we regularly incorporate plantings, lighting, water features, and outdoor living elements into or adjacent to boulder walls as part of a cohesive landscape composition." }
     ],
-    ctaText: "Our project calendar fills well in advance. Call today to schedule a private site consultation.",
+    ctaHeading: "Ready to Transform Your Terrain into Something Extraordinary?",
+    ctaText: "Contact us today to schedule your private site consultation and discover how a boulder retaining wall can redefine your property.",
+    urgencyText: "Our calendar fills well in advance — contact us today.",
     relatedSlugs: ["block-retaining-walls", "grading-solutions", "natural-stone-staircases"]
   },
   {
