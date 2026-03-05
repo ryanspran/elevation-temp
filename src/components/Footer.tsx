@@ -10,7 +10,8 @@ const Footer = () => {
   ];
 
   const serviceAreas = [
-    "Greenville", "Travelers Rest", "Greer", "Simpsonville"
+    "Greenville", "Travelers Rest", "Greer", "Simpsonville",
+    "Mauldin", "Easley", "Taylors", "Spartanburg", "Anderson", "Fountain Inn"
   ];
 
   return (
