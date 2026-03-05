@@ -161,17 +161,21 @@ const ServicePage = () => {
       </section>
 
       {/* Testimonial */}
-      <section className="bg-cream py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center gap-1 mb-6">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="h-5 w-5 fill-gold text-gold" />
-            ))}
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${service.heroImage ?? heroBg})` }} />
+        <div className="absolute inset-0 bg-navy/70" />
+        <div className="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-secondary-foreground/10 backdrop-blur-xl border border-secondary-foreground/20 rounded-2xl p-10 md:p-14 text-center">
+            <div className="flex justify-center gap-1 mb-6">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-5 w-5 fill-gold text-gold" />
+              ))}
+            </div>
+            <p className="font-serif text-xl md:text-2xl text-secondary-foreground italic mb-6 leading-relaxed">
+              "{service.testimonial?.quote ?? "Elevation Landscapes exceeded every expectation. Their professionalism, craftsmanship, and genuine care for our property made all the difference."}"
+            </p>
+            <p className="text-secondary-foreground font-semibold">— {service.testimonial?.attribution ?? "Greenville Homeowner"}</p>
           </div>
-          <p className="font-serif text-2xl text-text-dark italic mb-6 leading-relaxed">
-            "{service.testimonial?.quote ?? "Elevation Landscapes exceeded every expectation. Their professionalism, craftsmanship, and genuine care for our property made all the difference."}"
-          </p>
-          <p className="text-text-dark font-semibold">— {service.testimonial?.attribution ?? "Greenville Homeowner"}</p>
         </div>
       </section>
 
