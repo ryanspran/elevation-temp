@@ -377,6 +377,21 @@ const Index = () => {
                 </Link>{" "}
                 who will be happy to assist.
               </p>
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                <Link
+                  to="/contact"
+                  className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider text-center"
+                >
+                  Schedule a Consultation
+                </Link>
+                <a
+                  href="tel:+18641234567"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider"
+                >
+                  <Phone className="h-4 w-4" />
+                  Call Now
+                </a>
+              </div>
             </div>
             <div className="flex justify-center lg:justify-end">
               <SCMap />
