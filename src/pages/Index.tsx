@@ -89,10 +89,11 @@ const Index = () => {
                 Schedule a Consultation
               </Link>
               <a
-                href="#services"
-                className="inline-block border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider text-center"
+                href="tel:+18641234567"
+                className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider text-center"
               >
-                Explore Our Services
+                <Phone className="h-4 w-4" />
+                Call Now
               </a>
             </div>
           </div>
