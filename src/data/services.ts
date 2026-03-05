@@ -274,31 +274,44 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/stone-staircases.png",
     seoTitle: "Natural Stone Staircases Greenville SC | Elevation Landscapes",
     h1: "Natural Stone Staircases in Greenville, SC Crafted for the Exceptional Home",
-    subheadline: "Custom stone staircases combining the permanence of master masonry with materials sourced for beauty, character, and longevity.",
+    subheadline: "Custom stone staircases combining the permanence of master masonry with materials sourced for beauty, character, and longevity. Where landscape design becomes architecture.",
     bodyParagraphs: [
-      "Few architectural elements carry the quiet authority of a natural stone staircase. Where concrete crumbles and wood weathers, stone endures — gaining character with every passing season. Custom stone steps in Greenville represent a commitment to permanence that defines the homes they serve.",
-      "We work with bluestone treads offering refined charcoal tones ideal for estate entries, Appalachian fieldstone bringing the raw character of the Carolina foothills, and flagstone — Pennsylvania blue, Crab Orchard, Tennessee sandstone — each selected for the specific aesthetic and structural demands of the project.",
-      "Our materials are sourced selectively from respected domestic quarries for color consistency, structural integrity, and climate performance. Every piece is evaluated in person before specification. This level of luxury outdoor staircase craftsmanship in Upstate SC is simply not available through standard supplier channels.",
-      "Our masonry crews are veterans, not subcontractors — craftsmen who understand proper base depth, drainage management beneath treads, and mortaring techniques that accommodate seasonal expansion and contraction without failure.",
-      "The result is a flagstone staircase installation in SC that holds its form through decades of freeze-thaw cycles, heavy rains, and daily use — a stone stair that looks better at twenty years than it did at completion."
+      "Few landscape elements carry the quiet authority of a natural stone staircase. Where concrete crumbles and wood weathers, stone endures — becoming the first impression your property makes, the feature guests pause to admire, and the detail distinguishing a designed landscape from a merely maintained one.",
+      "Every project begins with conversation — how you move through your property, how you entertain, what the land asks for. Our designers study grades, sight lines, and architectural language before a stone is selected. This is bespoke craftsmanship applied to the outdoors.",
+      "The materials are among the finest available. Bluestone treads bring timeless formality with dense surface and refined charcoal tones. Appalachian fieldstone carries raw Carolina foothills character. Flagstone — Pennsylvania blue, Crab Orchard, Tennessee sandstone — offers range from rustic woodland warmth to contemporary precision. We source selectively, rejecting material failing our standards for color, integrity, and Upstate climate performance.",
+      "Our masonry crews are veterans, not subcontractors. They understand proper base depth, drainage management, and mortaring techniques moving with seasonal expansion rather than against it. The result holds form through decades of freeze-thaw, heavy rains, and daily use.",
+      "Greenville homeowners along Augusta Road, Paris Mountain, and the broader Upstate corridor recognize outdoor work that harmonizes with regional beauty. A flagstone staircase installation here is not an amenity — it is an investment in your property's coherence and the daily experience of living beautifully within it.",
+      "From site assessment through final inspection, we manage completely, coordinate with your architect when relevant, and do not consider work finished until the outcome exceeds expectations. That is our reputation, and we protect it on every job site."
     ],
     trustSignals: [
-      { title: "15+ Years Experience", description: "Over 15 years of exclusive luxury residential hardscape in Greenville and Upstate SC" },
-      { title: "Prestigious Portfolio", description: "Portfolio across Augusta Road, Paris Mountain, and greater Greenville" },
-      { title: "Quarry-Direct Sourcing", description: "Materials sourced from respected domestic quarries, selected in person" },
-      { title: "In-House Crews", description: "In-house masonry crews — no subcontracting of critical craftsmanship" },
-      { title: "Comprehensive Warranty", description: "Comprehensive installation warranty on materials and workmanship" },
+      { title: "15+ Years Luxury Hardscape", description: "Exclusive residential focus throughout Greenville and Upstate SC" },
+      { title: "Prestigious Portfolio", description: "Staircases across Augusta Road, Paris Mountain, and greater Greenville" },
+      { title: "Quarry-Direct Sourcing", description: "Domestic quarries, stones selected in person for integrity and performance" },
+      { title: "In-House Masonry", description: "Veteran crews, zero subcontracting" },
+      { title: "Installation Warranty", description: "Comprehensive coverage backed by referral-built reputation" },
       { title: "Structural Longevity", description: "Engineered bases and drainage systems ensuring decades of performance" }
     ],
-    faqs: [
-      { question: "How long does installation take?", answer: "1-3 weeks of on-site construction, plus 2-4 weeks for design development and material sourcing from our quarry partners." },
-      { question: "What stone do you recommend?", answer: "Bluestone for formal estates and entries, flagstone for design versatility, and fieldstone for naturalistic woodland settings. We guide selection based on your architecture." },
-      { question: "What maintenance is required?", answer: "Periodic inspection, light pressure washing as needed, and professional sealing every few years to maintain appearance and weather resistance." },
-      { question: "How do you handle Upstate SC's climate?", answer: "Deep compacted bases, proper sub-tread drainage, and flexible mortar formulations engineered specifically for our region's freeze-thaw cycles." },
-      { question: "What does a stone staircase cost?", answer: "Varies significantly by length, elevation change, and stone selection. We provide detailed proposals with material specifications after an on-site consultation." },
-      { question: "Can a staircase integrate with existing design?", answer: "Absolutely — integrated design connecting new staircases with existing pathways, walls, and gardens produces our most compelling and cohesive projects." }
+    processSteps: [
+      { num: "01", title: "Site & Architecture Study", desc: "Grades, sight lines, and material palette evaluated to inform every design decision." },
+      { num: "02", title: "Stone Selection", desc: "Bluestone, flagstone, and fieldstone options matched to your home's architecture and landscape character." },
+      { num: "03", title: "Master Masonry", desc: "Proper base, drainage, and mortaring for permanent integrity — executed by veteran in-house crews." },
+      { num: "04", title: "Final Walkthrough", desc: "Inspect every tread, joint, and transition together until every detail meets our shared standard." }
     ],
-    ctaText: "The conversation is complimentary. The craftsmanship is anything but ordinary. Schedule your consultation today.",
+    testimonial: {
+      quote: "The bluestone staircase from our motor court to the garden is the most commented-on feature of our property. Craftsmanship is extraordinary.",
+      attribution: "William & Diana P., Augusta Road"
+    },
+    faqs: [
+      { question: "How long does installation take?", answer: "One to three weeks on-site, plus two to four weeks for design and sourcing. We never rush masonry — the result is always worth proper time." },
+      { question: "What stone types do you recommend for Greenville?", answer: "Bluestone for formal entries. Flagstone varieties for versatility across traditional and contemporary architecture. Appalachian fieldstone for naturalistic settings integrating with Upstate SC's native landscape." },
+      { question: "How much maintenance is required?", answer: "Very little — periodic inspection, light pressure washing, sealing every few years. We provide a care guide specific to your materials." },
+      { question: "Are there climate considerations for Upstate SC?", answer: "Freeze-thaw cycles stress improperly installed stonework. We engineer deep compacted bases, incorporate drainage, and use flexible mortar formulations — a critical reason to choose a local stone stair contractor." },
+      { question: "What does a custom stone staircase cost?", answer: "Varies by length, elevation, stone, and site complexity. Detailed transparent proposals after consultation." },
+      { question: "Can it integrate with existing landscape design?", answer: "Integrated design produces our best work. Staircases connect terraces, walls, water features, and planting beds. We coordinate with architects and designers for seamless alignment." }
+    ],
+    ctaHeading: "Ready for a Staircase as Refined as the Home It Serves?",
+    ctaText: "Every staircase we build is crafted for the specific property it serves. Schedule a consultation to explore what's possible.",
+    urgencyText: "Limited projects each season — reach out today to begin.",
     relatedSlugs: ["custom-stone-pathways", "boulder-retaining-walls", "landscape-lighting"]
   },
   {
