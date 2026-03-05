@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowRight, Shield, Star, Phone, CheckCircle, Diamond, Mountain, Users, Eye, Award } from "lucide-react";
+import { ArrowRight, Shield, Star, Phone, CheckCircle, Diamond, Mountain, Users, Eye, Award, Gem, Handshake } from "lucide-react";
 import { getServiceBySlug, getRelatedServices, services } from "@/data/services";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
