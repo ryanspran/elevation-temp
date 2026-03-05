@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowRight, Shield, Star, Phone, CheckCircle } from "lucide-react";
+import { ArrowRight, Shield, Star, Phone, CheckCircle, Diamond, Mountain, Users, Eye } from "lucide-react";
 import { getServiceBySlug, getRelatedServices, services } from "@/data/services";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
@@ -52,20 +52,35 @@ const ServicePage = () => {
       {/* Trust Signals */}
       <section className="bg-navy py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Why Choose Elevation Landscapes</h2>
-            <div className="w-16 h-0.5 bg-gold mx-auto" />
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            {service.trustSignals.map((signal, i) => (
-              <div key={i} className="text-center p-6 border border-secondary-foreground/10 rounded-lg">
-                <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-4">
-                  <Shield className="h-5 w-5 text-gold" />
-                </div>
-                <h3 className="font-serif text-gold text-sm mb-2">{signal.title}</h3>
-                <p className="text-secondary-foreground/60 text-xs leading-relaxed">{signal.description}</p>
-              </div>
-            ))}
+          <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Why Choose Elevation Landscapes</h2>
+          <div className="w-16 h-0.5 bg-gold mb-12" />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-stretch">
+            {/* Left: Photo */}
+            <div className="lg:col-span-1">
+              <img
+                src={service.heroImage ?? heroBg}
+                alt={service.name}
+                className="w-full h-64 lg:h-full object-cover rounded-2xl"
+              />
+            </div>
+            {/* Right: Cards */}
+            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-5">
+              {service.trustSignals.map((signal, i) => {
+                const icons = [Diamond, Mountain, Users, Shield, Eye];
+                const Icon = icons[i % icons.length];
+                return (
+                  <div key={i} className="bg-popover rounded-xl p-6 flex gap-4 items-start">
+                    <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
+                      <Icon className="h-5 w-5 text-gold" />
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-text-dark font-semibold text-sm mb-1">{signal.title}</h3>
+                      <p className="text-text-dark/60 text-xs leading-relaxed">{signal.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
