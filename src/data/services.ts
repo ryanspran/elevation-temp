@@ -536,29 +536,42 @@ export const services: ServiceData[] = ([
     h1: "Outdoor Kitchens Greenville SC — Custom Design and Master Craftsmanship",
     subheadline: "From hand-selected natural stone to commercial-grade stainless steel appliances, outdoor kitchens that redefine what outdoor living means for your home.",
     bodyParagraphs: [
-      "There's a particular evening unique to Upstate South Carolina — warm air carrying the scent of the Blue Ridge foothills, people you care about gathered around a table, food prepared in an extraordinary outdoor space. Luxury outdoor kitchen design in Greenville creates the setting for these moments.",
-      "Every project is conceived from scratch for your specific architecture, property flow, and lifestyle. Natural stone veneer is hand-selected for color consistency and character. Outdoor cabinetry is engineered specifically for South Carolina's climate — the humidity, the temperature shifts, the years of daily use.",
-      "Built-in grill islands are anchored in structural frameworks designed for longevity — not lightweight shells that shift and crack. Custom outdoor kitchens in Upstate SC demand construction methods that account for the region's unique demands.",
-      "We specify commercial-grade stainless steel appliances: professional grills, refrigeration units, side burners, smokers, pizza ovens, and beverage centers from manufacturers whose names are synonymous with quality. All utility rough-in — gas line, electrical, and plumbing — is performed by licensed professionals.",
-      "Outdoor kitchen contractor projects in Greenville typically range from $40,000 to well over $150,000 depending on scope, finishes, and appliance specifications. This is not an expense — it is an investment in how you live."
+      "There is a particular evening unique to Upstate South Carolina — warm air, Blue Ridge foothills fading to violet, and people you care about gathered in an extraordinary space. At Elevation Landscapes, we design and build outdoor kitchens in Greenville worthy of those evenings.",
+      "Every project is conceived from scratch — tailored to your architecture, property flow, and how your family lives. No off-the-shelf solutions, no compromises. Our custom outdoor kitchen designs begin with one conviction: your outdoor space should match the refinement of the home it surrounds.",
+      "Materials are selected with discernment. Natural stone veneer, hand-selected for color and character, gives structures permanence manufactured alternatives cannot replicate. Outdoor cabinetry is engineered for South Carolina's climate — humidity, temperature shifts, years of use. Every built-in grill island is anchored in a structural framework for longevity, not just aesthetics.",
+      "We partner with manufacturers of commercial-grade stainless steel appliances — professional grills, refrigeration, side burners, smokers, pizza ovens, beverage centers. Each chosen for performance and design. All gas, electrical, and utility integration handled by licensed professionals to code.",
+      "Greenville and Upstate SC have seen remarkable growth in outdoor living. We understand North Main, Augusta Road, Travelers Rest, and the lake communities along Keowee and Hartwell. A well-designed outdoor kitchen transforms property value, curb appeal, and daily quality of life.",
+      "Our process is collaborative. We walk your property, study sight lines, evaluate breezes and sun, and present a design feeling inevitable. The results are spaces homeowners describe not as additions but transformations."
     ],
     trustSignals: [
-      { title: "Combined Experience", description: "Over two decades combined hardscape and luxury landscape experience" },
-      { title: "Exclusive Portfolio", description: "Portfolio across Greenville, Travelers Rest, and lake communities" },
-      { title: "Top Partnerships", description: "Partnerships with top natural stone and commercial appliance suppliers" },
-      { title: "Senior Design Team", description: "Senior design specialist and certified hardscape artisans on every project" },
-      { title: "Full Warranty", description: "Full structural warranty with licensed utility integration" },
+      { title: "Two Decades Combined Experience", description: "Luxury hardscape across Greenville and Upstate SC" },
+      { title: "Exclusive Portfolio", description: "Projects across Greenville, Travelers Rest, and lake communities" },
+      { title: "Premium Partnerships", description: "Top suppliers of stone veneer, masonry, and commercial appliances" },
+      { title: "Senior Design + Certified Artisans", description: "Dedicated specialist and craftsmen on every project" },
+      { title: "Full Structural Warranty", description: "Masonry coverage plus licensed utility integration" },
       { title: "Licensed Utilities", description: "All gas, electrical, and plumbing by licensed Upstate SC professionals" }
     ],
-    faqs: [
-      { question: "What does an outdoor kitchen cost?", answer: "$40,000 to well over $150,000 depending on scope, materials, appliance specifications, and the complexity of utility integration." },
-      { question: "How long does the build take?", answer: "6-14 weeks from groundbreaking to final walkthrough, depending on design complexity and material lead times." },
-      { question: "Can I use it year-round in Upstate SC?", answer: "Yes — Upstate SC's mild winters and extended warm season make outdoor kitchens a practical investment that extends your living space for the majority of the year." },
-      { question: "What warranty is provided?", answer: "Full structural warranty on all masonry construction, plus manufacturer warranties on all specified appliances." },
-      { question: "Can it integrate with my existing patio or pool?", answer: "Absolutely — unified design connecting outdoor kitchen, patio, pool area, and pergola produces the most cohesive and impressive result." },
-      { question: "What is the design process?", answer: "On-property consultation, collaborative concept development with material samples and renderings, detailed proposal, then expert execution by our in-house team." }
+    processSteps: [
+      { num: "01", title: "Property Consultation", desc: "Space, entertaining style, and architectural influences evaluated to shape your vision." },
+      { num: "02", title: "Collaborative Design", desc: "Material samples, appliance specs, and renderings refined together before a stone is laid." },
+      { num: "03", title: "Master Build", desc: "Stone, cabinetry, appliances, and licensed utility work executed with meticulous craftsmanship." },
+      { num: "04", title: "Final Walkthrough", desc: "Demonstrate all systems, deliver care instructions and warranty documentation." }
     ],
-    ctaText: "Call today and speak directly with a senior design specialist — no pressure, just an honest conversation about what's possible.",
+    testimonial: {
+      quote: "Our outdoor kitchen is where we spend every weekend. Stone work, appliance layout, the flow from the pool deck — Elevation thought of everything.",
+      attribution: "Greg & Michelle F., Lake Keowee"
+    },
+    faqs: [
+      { question: "What does a custom outdoor kitchen cost in Greenville?", answer: "$40,000 to well over $150,000 depending on size, complexity, appliances, and finishes. Fully itemized proposals after consultation — every line transparent." },
+      { question: "How long does the build take?", answer: "Six to fourteen weeks from groundbreaking to walkthrough. Detailed timeline at design phase with proactive communication throughout." },
+      { question: "Year-round use in Upstate SC?", answer: "Yes — mild winters and long warm seasons are ideal. We design with climate in mind, specifying materials, covers, and orientations for all-season comfort." },
+      { question: "Warranty?", answer: "Structural warranty on masonry plus manufacturer appliance warranties. We remain available long after completion for questions and future enhancements." },
+      { question: "Can you integrate with existing patio, pool, or pergola?", answer: "Absolutely. We connect kitchens seamlessly to patios, pergolas, fire pits, pool decks, and outdoor living rooms. Unified design always produces the best result." },
+      { question: "What does the design process look like?", answer: "Property consultation, then collaborative concept with material samples, appliance specs, and renderings refined together before a stone is laid." }
+    ],
+    ctaHeading: "Ready for an Outdoor Kitchen That Transforms How You Live?",
+    ctaText: "Every outdoor kitchen we build is custom-designed for the property and family it serves. Schedule a consultation to explore what's possible.",
+    urgencyText: "Building seasons fill quickly — call today to speak with a senior design specialist.",
     relatedSlugs: ["outdoor-gas-fire-pits", "paver-patios", "pool-decks-pool-coping"]
   },
   {
