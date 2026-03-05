@@ -13,7 +13,23 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   }
 
   if (!user) return <Navigate to="/admin/login" replace />;
-  if (!isAdmin) return <Navigate to="/" replace />;
+  
+  if (!isAdmin) {
+    return (
+      <div className="min-h-screen bg-navy flex items-center justify-center px-4">
+        <div className="text-center">
+          <h1 className="font-serif text-2xl text-secondary-foreground mb-4">Access Denied</h1>
+          <p className="text-secondary-foreground/60 mb-6">Your account does not have admin privileges.</p>
+          <button
+            onClick={() => window.location.reload()}
+            className="bg-gold text-navy font-semibold px-6 py-3 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider"
+          >
+            Retry
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return <>{children}</>;
 };
