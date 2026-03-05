@@ -256,7 +256,7 @@ const Index = () => {
         {/* Background image with dark overlay */}
         <div className="absolute inset-0 z-0">
           <img src={testimonialsBg} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-navy/80" />
+          <div className="absolute inset-0 bg-navy/50" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
