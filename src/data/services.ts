@@ -512,31 +512,44 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/pool-decks.png",
     seoTitle: "Pool Deck Installation Greenville SC | Elevation Landscapes",
     h1: "Pool Deck Installation in Greenville, SC — Crafted for the Exceptional Home",
-    subheadline: "Luxury pool decks and pool coping that transform the space around your pool into an environment as refined as the home it surrounds.",
+    subheadline: "Luxury pool decks and pool coping transforming the space around your pool into an environment as refined as the home it surrounds.",
     bodyParagraphs: [
-      "A pool is the centerpiece of outdoor living. The materials surrounding it — how they feel underfoot in July, how they age over a decade of sun and chlorine exposure — define whether the environment feels exceptional or merely adequate.",
-      "Travertine pool decks dissipate heat naturally while offering beautiful tonal variation that only improves with age. We also source thermal pavers and cool deck pavers with slip-resistant finishes engineered for the pool environment. Luxury pool coping in Greenville demands materials that perform as beautifully as they look.",
-      "Pool coping — the bullnose edge creating the finished transition between pool shell and deck surface — is one of the most technically precise elements in any hardscape project. We work with natural stone coping, porcelain, and pre-cast concrete coping profiles, each selected for the specific pool design and surrounding architecture.",
-      "Upstate SC's climate means significant temperature fluctuation, occasional frost events, and prolonged summer heat. We select materials and installation systems rated specifically for these regional conditions, with proper expansion joints allowing natural movement without cracking or displacement.",
-      "As a pool surround contractor serving SC, we coordinate with pool builders, electricians, and landscape designers to ensure the deck integrates seamlessly with the broader outdoor living environment."
+      "A pool is the centerpiece of outdoor living. The materials surrounding it — how they feel underfoot in July, how they age over a decade — define whether a pool environment feels exceptional or adequate. At Elevation Landscapes, we design and install pool decks and coping meeting the standard your property demands.",
+      "Travertine pool decks are our most requested installation. The naturally porous surface dissipates heat during peak summer while tonal variation gives each project a look no manufactured alternative can replicate. For a more uniform aesthetic, we source thermal pavers and cool deck pavers engineered for slip-resistant finishes without sacrificing refined appearance.",
+      "Pool coping is where we distinguish ourselves most clearly. Bullnose coping transitions pool shell to deck with a finished edge that is both functional and architectural. We work with natural stone, porcelain, and pre-cast concrete in profiles complementing your pool's geometry and home's design language. Our teams understand tolerances, drainage, and structural details determining whether coping stays flawless or shifts within seasons.",
+      "Every project starts with site assessment and consultation — pool shell, architectural style, landscape, lifestyle. A family entertaining frequently needs different design than a client wanting a tranquil resort retreat. We build toward your specific vision.",
+      "Upstate SC's climate means temperature fluctuation, occasional frost, and prolonged summer heat stressing materials and joints. We select grout systems, polymeric sands, and sealers rated for regional conditions, detailing expansion joints protecting the investment long-term.",
+      "We serve homeowners across Greenville, Travelers Rest, Simpsonville, and Spartanburg. Our portfolio includes estates, new builds, and full outdoor living renovations. We take on the right projects and execute each to a standard we are proud to stand behind."
     ],
     trustSignals: [
-      { title: "Luxury Projects Only", description: "Exclusively luxury residential projects" },
-      { title: "Premium Sourcing", description: "Travertine, natural stone, porcelain, and engineered paver sourcing" },
-      { title: "Regional Expertise", description: "Upstate SC climate, soil, and building code expertise" },
-      { title: "Single Point of Contact", description: "Comprehensive project management with dedicated oversight" },
-      { title: "Broad Portfolio", description: "Portfolio across Greenville, Travelers Rest, Simpsonville, Spartanburg" },
+      { title: "Exclusively Luxury Residential", description: "High-end projects only across Greenville and Upstate SC" },
+      { title: "Premium Materials", description: "Travertine, natural stone, porcelain, engineered pavers meeting strict standards" },
+      { title: "Regional Expertise", description: "Upstate SC climate, soil, and code knowledge" },
+      { title: "Single Point of Contact", description: "Full project management from consultation through sealing" },
+      { title: "Proven Portfolio", description: "Completed projects across Greenville, Travelers Rest, Simpsonville, Spartanburg" },
       { title: "Safety-First Design", description: "Slip-resistant materials and heat-dissipating surfaces engineered for pool environments" }
     ],
-    faqs: [
-      { question: "What materials do you recommend?", answer: "Travertine is most popular for natural heat dissipation. We also install porcelain, thermal bluestone, and cool deck pavers based on design preference and performance needs." },
-      { question: "What is bullnose coping?", answer: "A rounded-edge profile creating a finished, comfortable transition between the pool shell and the surrounding deck surface — both functional and aesthetic." },
-      { question: "How does climate affect installation?", answer: "Materials are rated for freeze-thaw performance, and proper expansion joints are installed to accommodate natural seasonal movement without cracking." },
-      { question: "How do you maintain travertine pool decks?", answer: "Resealing every 2-3 years with appropriate stone sealer and pH-neutral cleaning products to preserve appearance and weather resistance." },
-      { question: "What is the timeline and planning?", answer: "2-4 weeks of construction; we recommend engaging in late winter or early spring for optimal material procurement and scheduling." },
-      { question: "How is slip resistance ensured?", answer: "We use textured, industry-rated materials providing reliable traction when wet. No polished or smooth surfaces in pool areas — safety is non-negotiable." }
+    processSteps: [
+      { num: "01", title: "Design Consultation", desc: "Pool shell, architecture, landscape, and lifestyle evaluated to shape your vision." },
+      { num: "02", title: "Material Selection", desc: "Travertine, thermal pavers, and coping profiles matched to your pool and home." },
+      { num: "03", title: "Precision Installation", desc: "Setting materials, expansion joints, and slip-resistant finishes with expert craftsmanship." },
+      { num: "04", title: "Final Sealing & Walkthrough", desc: "Surface protection applied and every detail confirmed together." }
     ],
-    ctaText: "Our calendar fills quickly during planning season. Contact us today to schedule a design consultation.",
+    testimonial: {
+      quote: "Travertine deck and coping are stunning. Stays cool, looks incredible, craftsmanship evident in every edge.",
+      attribution: "Nicole & Brian W., Travelers Rest"
+    },
+    faqs: [
+      { question: "What materials for luxury pool decks in Greenville?", answer: "Travertine most popular for heat dissipation and beauty. Also porcelain pavers, thermal bluestone, and cool deck pavers. We walk through samples and performance during consultation." },
+      { question: "What is bullnose coping?", answer: "Rounded-edge profile overhanging the pool shell, directing splash water away while creating a finished architectural transition. We select profiles matching your pool geometry and design intent." },
+      { question: "How does Greenville's climate affect installation?", answer: "Temperature variation and frost stress hardscape. We specify freeze-thaw rated materials, appropriate setting systems, and expansion joints for natural movement without cracking." },
+      { question: "Travertine maintenance?", answer: "Resealing every two to three years, routine pH-neutral cleaning. We provide a tailored guide specific to your materials." },
+      { question: "Timeline and planning?", answer: "Two to four weeks construction. Engage in late winter or early spring to secure scheduling and materials ahead of peak season demand." },
+      { question: "How do you ensure slip resistance?", answer: "Textured travertine, brushed stone, and rated cool deck pavers providing traction when wet. We never install polished surfaces in pool applications. Slip resistance and refined aesthetics coexist." }
+    ],
+    ctaHeading: "Ready to Transform Your Pool Environment?",
+    ctaText: "Every pool deck we build is designed for the specific property and lifestyle it serves. Schedule a consultation to explore what's possible.",
+    urgencyText: "Calendar fills quickly during planning season — contact us today.",
     relatedSlugs: ["paver-patios", "outdoor-kitchens", "landscape-lighting"]
   },
   {
