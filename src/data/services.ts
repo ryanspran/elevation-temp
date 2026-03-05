@@ -466,29 +466,42 @@ export const services: ServiceData[] = ([
     h1: "Custom Paver Patios in Greenville, SC — Crafted for the Way You Live Outdoors",
     subheadline: "Bespoke paver patios where meticulous engineering and exceptional materials converge to create outdoor spaces that endure as beautifully as they are built.",
     bodyParagraphs: [
-      "For homeowners who refuse to compromise, a luxury paver patio in Greenville is a statement about how you choose to live outdoors. It's the foundation of entertaining, relaxation, and family life — and it deserves the same attention to detail as any room inside your home.",
-      "We work with natural travertine for Mediterranean warmth, Belgian block for old-world character, tumbled bluestone for understated elegance, and high-definition concrete pavers for contemporary precision. Custom patio design in Upstate SC begins with understanding your lifestyle, your architecture, and your outdoor vision.",
-      "Installation begins with methodical excavation and a properly engineered compacted aggregate base designed for your specific soil conditions. Upstate SC's clay requires deeper base preparation than many regions — a critical detail that separates lasting installations from those that settle and shift.",
-      "Interlocking pavers are set with precision, every joint finished with professional-grade polymeric sand that resists weed intrusion, inhibits insect activity, and locks the surface into a unified, stable whole. This hardscape patio contractor approach ensures decades of performance.",
-      "Whether creating a sprawling entertaining terrace, intimate courtyard, or multi-level hardscape cascading across a slope — travertine paver patios and premium installations define the outdoor experience for Greenville's most discerning homeowners."
+      "In Greenville and across Upstate South Carolina, outdoor living has become as carefully considered as a fine home's interior. For homeowners who refuse to compromise, a custom paver patio is a statement about how you choose to live.",
+      "Every project begins with design consultation — how you use the space, your home's architecture, the grade and character of your land. Only then do we translate conversation into hardscape that feels inevitable, as though it was always meant to be there.",
+      "Material selection is where vision becomes physical. We work with natural travertine, Belgian block, tumbled bluestone, and high-definition concrete pavers. Each travertine paver patio carries timeless warmth complementing Greenville's traditional and contemporary architecture. For modern refinement, large-format concrete pavers offer striking, low-maintenance surfaces performing through Upstate temperature swings.",
+      "What separates a patio that endures from one failing within seasons is invisible once complete. Installation begins with methodical excavation and a properly engineered compacted aggregate base matched to your soil and load. Interlocking pavers set with precision, every joint finished with polymeric sand resisting weeds, repelling moisture, and locking the surface into a unified whole.",
+      "The result extends your home's luxury into the landscape. Whether a sprawling terrace, intimate courtyard, or multi-level hardscape cascading across a slope, the space reflects intention and craftsmanship your home deserves.",
+      "Greenville's outdoor season is long and beautiful. We have built our reputation project by project across Travelers Rest, Simpsonville, and the Upstate — earning trust from homeowners who understand their outdoor environment reflects the standards they hold for everything else."
     ],
     trustSignals: [
-      { title: "Decade of Focus", description: "Over a decade of exclusive luxury residential hardscape focus" },
-      { title: "Premium Materials", description: "Travertine, Belgian block, and large-format concrete paver partnerships" },
-      { title: "Engineered Bases", description: "Every installation engineered with compacted aggregate base and polymeric sand" },
-      { title: "Prestigious Portfolio", description: "Curated portfolio across Greenville's most prestigious neighborhoods" },
-      { title: "Dedicated Management", description: "Workmanship warranty with dedicated project management" },
+      { title: "Decade of Luxury Hardscape", description: "Exclusive residential across Greenville and Upstate SC" },
+      { title: "Premium Material Access", description: "Travertine, Belgian block, large-format pavers unavailable through standard suppliers" },
+      { title: "Engineered Foundations", description: "Compacted aggregate base and polymeric sand on every project" },
+      { title: "Curated Portfolio", description: "High-end patios across Greenville's most prestigious neighborhoods" },
+      { title: "Workmanship Warranty", description: "Dedicated management from design through walkthrough" },
       { title: "Post-Install Support", description: "Sealing programs and maintenance guidance for lasting beauty" }
     ],
-    faqs: [
-      { question: "How long does patio installation take?", answer: "1-3 weeks for most installations, depending on size, design complexity, and material type." },
-      { question: "Travertine vs concrete pavers?", answer: "Travertine offers European warmth and natural tonal variation; concrete provides uniformity and a broader color range. Both perform well when properly installed." },
-      { question: "How do patios perform in Upstate SC's climate?", answer: "A properly engineered compacted aggregate base is the key — we design specifically for local soil conditions and climate demands." },
-      { question: "What is polymeric sand?", answer: "Specially formulated jointing material that resists washout, inhibits weed growth, and discourages insect activity between pavers." },
-      { question: "What maintenance is needed?", answer: "Periodic rinsing, sweeping, and professional sealer application every few years to maintain appearance and protect against staining." },
-      { question: "What does a paver patio cost?", answer: "Varies by size, design complexity, and material selection. We provide detailed proposals with material specifications after consultation." }
+    processSteps: [
+      { num: "01", title: "Design Consultation", desc: "Vision, architecture, grade, and lifestyle evaluated to shape every design decision." },
+      { num: "02", title: "Material Selection", desc: "Travertine, bluestone, and concrete paver options matched to your home and preferences." },
+      { num: "03", title: "Precision Installation", desc: "Engineered base, expert setting, and polymeric sand finish for lasting performance." },
+      { num: "04", title: "Final Walkthrough", desc: "Inspect every detail together and receive comprehensive care documentation." }
     ],
-    ctaText: "Call us today to schedule your private design consultation.",
+    testimonial: {
+      quote: "The travertine patio transformed our backyard into something rivaling any resort. Two years in, still flawless.",
+      attribution: "Andrew & Lisa C., Simpsonville"
+    },
+    faqs: [
+      { question: "How long does paver patio installation take?", answer: "One to three weeks for most residential projects. Multi-level or expansive designs may need more time. Detailed schedule at consultation." },
+      { question: "Travertine vs concrete pavers?", answer: "Travertine offers classic European warmth and organic texture. Concrete provides uniformity, color range, and easier maintenance. Both perform well in Upstate SC over a proper compacted aggregate base. We guide you through options." },
+      { question: "How do patios hold up in Greenville's climate?", answer: "Properly engineered base is the key — adequate compaction, appropriate aggregate, correct drainage slope. We engineer for local soil and climate so your patio stays stable and beautiful for years." },
+      { question: "What is polymeric sand?", answer: "Specialty jointing material creating a firm, flexible bond between pavers. Resists rain washout, inhibits weeds, discourages insects. Standard on every installation." },
+      { question: "What maintenance is required?", answer: "Minimal — periodic rinsing, occasional sweeping, professional sealer every few years for natural stone. Among the lowest-maintenance outdoor surfaces available." },
+      { question: "What does a luxury paver patio cost?", answer: "Varies by size, design complexity, and materials. Detailed proposals after consultation so you understand every dollar of the investment." }
+    ],
+    ctaHeading: "Ready for an Outdoor Space That Commands Attention?",
+    ctaText: "Every patio we build is custom-designed for the property and lifestyle it serves. Schedule a consultation to explore what's possible.",
+    urgencyText: "We are selective about projects — call today for your private design consultation.",
     relatedSlugs: ["pool-decks-pool-coping", "outdoor-kitchens", "outdoor-gas-fire-pits"]
   },
   {
