@@ -2,13 +2,22 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { services } from "@/data/services";
 
-// Use first 6 service images for the bento grid
-const photos = services.slice(0, 6).map((s) => ({
-  src: s.image,
-  alt: s.name,
-}));
+import paverPatio from "@/assets/portfolio/paver-patio-project.jpg";
+import stoneWall from "@/assets/portfolio/stone-wall-project.jpg";
+import outdoorKitchen from "@/assets/portfolio/outdoor-kitchen-project.jpg";
+import stonePathway from "@/assets/portfolio/stone-pathway-project.jpg";
+import firePit from "@/assets/portfolio/fire-pit-project.jpg";
+import poolDeck from "@/assets/portfolio/pool-deck-project.jpg";
+
+const photos = [
+  { src: paverPatio, alt: "Paver Patio with Fire Feature" },
+  { src: stoneWall, alt: "Stone Retaining Wall with Lighting" },
+  { src: firePit, alt: "Custom Fire Pit Area" },
+  { src: stonePathway, alt: "Natural Stone Pathway" },
+  { src: outdoorKitchen, alt: "Outdoor Kitchen" },
+  { src: poolDeck, alt: "Pool Deck with Stone Coping" },
+];
 
 const Portfolio = () => {
   return (
@@ -35,28 +44,28 @@ const Portfolio = () => {
             </Link>
           </div>
 
-          {/* Bento Grid — exact reference layout */}
+          {/* Bento Grid */}
           {/* Row 1: 1 large (60%) + 2 stacked (40%) */}
           <div className="grid grid-cols-1 md:grid-cols-5 gap-3 mb-3">
             <div className="md:col-span-3 overflow-hidden rounded-lg">
               <img
-                src={photos[0]?.src}
-                alt={photos[0]?.alt}
+                src={photos[0].src}
+                alt={photos[0].alt}
                 className="w-full h-[300px] md:h-[560px] object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
             <div className="md:col-span-2 grid grid-rows-2 gap-3">
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={photos[1]?.src}
-                  alt={photos[1]?.alt}
+                  src={photos[1].src}
+                  alt={photos[1].alt}
                   className="w-full h-[200px] md:h-[272px] object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="overflow-hidden rounded-lg">
                 <img
-                  src={photos[2]?.src}
-                  alt={photos[2]?.alt}
+                  src={photos[2].src}
+                  alt={photos[2].alt}
                   className="w-full h-[200px] md:h-[272px] object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
