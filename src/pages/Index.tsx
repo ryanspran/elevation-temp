@@ -13,6 +13,7 @@ import portfolioAfter from "@/assets/portfolio-after.jpg";
 import whyUsPhoto from "@/assets/why-us-photo.jpg";
 import processPhoto from "@/assets/process-photo.jpg";
 import landscapePhoto from "@/assets/landscape-photo.jpg";
+import testimonialsBg from "@/assets/testimonials-bg.jpg";
 
 const Index = () => {
   const whyUsItems = [
@@ -242,7 +243,7 @@ const Index = () => {
       <section className="relative py-24 md:py-32 overflow-hidden">
         {/* Background image with dark overlay */}
         <div className="absolute inset-0 z-0">
-          <img src={landscapePhoto} alt="" className="w-full h-full object-cover" />
+          <img src={testimonialsBg} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-navy/80" />
         </div>
 
