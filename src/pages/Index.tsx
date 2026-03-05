@@ -126,6 +126,13 @@ const Index = () => {
               >
                 Schedule a Consultation
               </Link>
+              <a
+                href="tel:+18641234567"
+                className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider"
+              >
+                <Phone className="h-4 w-4" />
+                Call Now
+              </a>
             </div>
             {/* Right — Photo with overlapping quote */}
             <div className="relative">
