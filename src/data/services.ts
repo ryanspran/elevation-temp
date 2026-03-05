@@ -257,31 +257,44 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/stone-pathways.png",
     seoTitle: "Custom Stone Pathways Greenville SC | Elevation Landscapes",
     h1: "Custom Stone Pathways Greenville SC — Crafted for Properties That Demand More",
-    subheadline: "Bespoke natural stone pathways for Greenville and Upstate SC's most distinguished residences — where every step reflects the character and quality of the home it serves.",
+    subheadline: "Bespoke natural stone pathways for Greenville and Upstate South Carolina's most distinguished residences — where every step reflects the character and quality of the home it serves.",
     bodyParagraphs: [
-      "A beautifully crafted stone pathway communicates intention, permanence, and refined taste before a visitor reaches the front door. A luxury stone walkway in Greenville is not simply a route — it is an architectural element that defines how a property is experienced.",
-      "We evaluate grade transitions, drainage requirements, natural sightlines, and pedestrian flow patterns. We study how morning light falls across stone surfaces, where curves create visual pause and invitation, and how materials connect to the home's existing architecture.",
-      "Materials are hand-selected: flagstone for organic warmth and natural variation, tumbled bluestone for understated elegance, Tennessee crab orchard for warm earth tones, and locally sourced quartzite for durability and regional character. Each natural stone path installation in Upstate SC reflects the specific aesthetic of the property.",
-      "Our flagstone pathway contractor teams build with compacted base layers and permeable jointing compounds or hand-packed polymeric sand — ensuring structural integrity, weed resistance, and natural drainage that protects the pathway and surrounding landscape.",
-      "The result is elevated curb presence, enriched outdoor living flow, and garden path design in Greenville with architectural sophistication that no concrete or manufactured paver can replicate. Dry-laid stone and landscape connectivity define our approach."
+      "There is a certain language spoken by a beautifully crafted stone pathway — one that communicates intention, permanence, and refined taste. At Elevation Landscapes, our custom stone pathways are designed for homeowners who understand the journey through a property is just as important as the destination.",
+      "We work exclusively with luxury residential clients across Greenville and Upstate SC, so every project receives our full creative and technical attention. A custom stone pathway from us is not a catalog selection — it is a considered collaboration between your landscape, your home's aesthetic, and the natural character of the stone itself.",
+      "Our design process begins with an in-depth site consultation. We evaluate grade transitions, drainage patterns, natural sightlines, and pedestrian flow across your property. We study how morning light falls across stone, how traffic naturally moves, and where a slight curve or material change creates visual pause. This landscape connectivity is the foundation of every pathway we design.",
+      "We source hand-selected flagstone, tumbled bluestone, Tennessee crab orchard, and locally sourced quartzite — chosen for texture, color depth, and durability in the Upstate climate. Whether you prefer rustic warmth of a dry-laid flagstone pathway through a naturalistic garden or precise geometry of cut bluestone in a formal entry, our team executes with exactness.",
+      "Technical excellence is embedded in everything we build. Pathways are constructed with properly compacted base layers and finished using permeable jointing compounds or hand-packed polymeric sand — ensuring structural integrity, weed resistance, and natural drainage without compromising refinement.",
+      "The result elevates the entire property — extending curb presence, enriching outdoor living flow, and adding architectural sophistication no poured concrete can replicate. For homeowners across Greenville, Travelers Rest, and Simpsonville investing in properties reflecting their highest standards, a natural stone path installation is one of the most enduring improvements you can make."
     ],
     trustSignals: [
-      { title: "15+ Years Experience", description: "Over 15 years of exclusive luxury hardscape experience" },
-      { title: "Certified Techniques", description: "Certified in traditional dry-laid stone and modern permeable jointing" },
-      { title: "Curated Sourcing", description: "Materials from premier natural stone quarries across the region" },
-      { title: "Prestigious Portfolio", description: "Portfolio spanning North Main, Augusta Road, and Cliffs communities" },
-      { title: "Craftsmanship Warranty", description: "Comprehensive craftsmanship warranty on every installation" },
+      { title: "15+ Years Luxury Hardscape", description: "Exclusive residential experience across Greenville and Upstate SC" },
+      { title: "Certified Professionals", description: "Trained in dry-laid stone and modern permeable jointing" },
+      { title: "Curated Stone Sourcing", description: "Premier quarries with selections unavailable through standard contractors" },
+      { title: "Prestigious Portfolio", description: "Projects spanning North Main, Augusta Road, and the Cliffs" },
+      { title: "Craftsmanship Warranty", description: "Comprehensive coverage on materials and workmanship" },
       { title: "Integrated Design", description: "Pathways designed to connect and unify your entire outdoor living environment" }
     ],
-    faqs: [
-      { question: "What stone types do you work with?", answer: "Flagstone, Tennessee crab orchard, tumbled bluestone, and Upstate SC quartzite — each selected for the specific aesthetic and performance needs of the project." },
-      { question: "How long does installation take?", answer: "3-10 business days of active installation, depending on pathway length, complexity, and site conditions." },
-      { question: "How do pathways hold up in Upstate SC's climate?", answer: "Properly compacted bases, appropriate stone thickness, and permeable jointing systems handle Upstate SC's temperature swings and heavy rainfall with ease." },
-      { question: "Dry-laid vs permeable jointing?", answer: "Dry-laid stone flexes naturally with ground movement; permeable jointing locks joints securely while still allowing water permeation through the pathway surface." },
-      { question: "What maintenance is needed?", answer: "Periodic sweeping, occasional rinsing, and jointing reapplication every few years to maintain appearance and structural integrity." },
-      { question: "Can pathways integrate with a larger design?", answer: "Many of our finest projects connect motor courts to gardens, pool terraces to guest structures, and entries to outdoor living spaces in a unified design." }
+    processSteps: [
+      { num: "01", title: "Design Consultation", desc: "Grade, drainage, sightlines, and pedestrian flow" },
+      { num: "02", title: "Material Selection", desc: "Premium stone options matched to your architecture" },
+      { num: "03", title: "Precision Installation", desc: "Compacted base, expert setting, permeable jointing" },
+      { num: "04", title: "Final Reveal", desc: "Walk the pathway together, confirm every detail" }
     ],
-    ctaText: "Call us today to schedule your private design consultation.",
+    testimonial: {
+      quote: "The flagstone pathway completely changed how we experience our property. Every curve and stone feels deliberate and beautiful.",
+      attribution: "Catherine L., Augusta Road"
+    },
+    faqs: [
+      { question: "What types of natural stone do you use for custom pathways?", answer: "Hand-selected flagstone, Tennessee crab orchard, tumbled bluestone, and locally sourced quartzite. The right material depends on your architecture, landscape, and use — we guide you through options at consultation." },
+      { question: "How long does a custom stone pathway installation take?", answer: "Most luxury installations range from three to ten business days depending on scope and complexity. We communicate timelines clearly before work begins." },
+      { question: "How do pathways hold up in Greenville's climate?", answer: "Engineered for summer heat, seasonal rain, and winter freezing — compacted gravel bases, appropriate stone thickness, and permeable jointing that allows drainage and resists frost movement." },
+      { question: "What is the difference between dry-laid stone and permeable jointing?", answer: "Dry-laid stone sits on compacted gravel without mortar, allowing natural flex and drainage. Permeable jointing locks joints while still allowing water permeation. Both suit luxury installations depending on design goals." },
+      { question: "How much maintenance does a stone pathway require?", answer: "Among the lowest-maintenance hardscape investments. Periodic sweeping, occasional rinsing, and jointing reapplication every several years." },
+      { question: "Can a pathway integrate into a larger landscape design?", answer: "Our most compelling projects connect motor courts to gardens, pool terraces to guest structures, and residences to outbuildings. Pathways designed with lighting, planting, and hardscape always achieve the most cohesive result." }
+    ],
+    ctaHeading: "Ready for a Pathway That Reflects Exactly Who You Are?",
+    ctaText: "Contact us today to schedule your private design consultation and discover how a custom stone pathway can transform your property.",
+    urgencyText: "We accept limited projects each season — reach out today.",
     relatedSlugs: ["natural-stone-staircases", "paver-patios", "landscape-lighting"]
   },
   {
