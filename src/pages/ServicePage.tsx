@@ -73,13 +73,13 @@ const ServicePage = () => {
                 const icons = [Diamond, Mountain, Users, Shield, Eye, Award];
                 const Icon = icons[i % icons.length];
                 return (
-                  <div key={i} className="bg-secondary-foreground/5 backdrop-blur-md border border-secondary-foreground/10 rounded-xl p-4 flex gap-3 items-start">
-                    <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
-                      <Icon className="h-5 w-5 text-gold" />
+                  <div key={i} className="bg-secondary-foreground/5 backdrop-blur-md border border-secondary-foreground/10 rounded-xl p-6 flex gap-4 items-start">
+                    <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
+                      <Icon className="h-6 w-6 text-gold" />
                     </div>
                     <div>
-                      <h3 className="font-serif text-secondary-foreground font-semibold text-sm mb-1">{signal.title}</h3>
-                      <p className="text-secondary-foreground/60 text-xs leading-relaxed">{signal.description}</p>
+                      <h3 className="font-serif text-secondary-foreground font-bold text-lg mb-2">{signal.title}</h3>
+                      <p className="text-secondary-foreground/60 text-sm leading-relaxed">{signal.description}</p>
                     </div>
                   </div>
                 );
