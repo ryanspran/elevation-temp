@@ -39,7 +39,7 @@ const ServicePage = () => {
       </section>
 
       {/* Body Copy */}
-      <section id="learn-more" className="bg-cream py-20 md:py-28">
+      <section id="learn-more" className="bg-cream pt-12 md:pt-16 pb-20 md:pb-28">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-6">
             {service.bodyParagraphs.map((p, i) => (
