@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowRight, Shield, Star, Phone, CheckCircle, Diamond, Mountain, Users, Eye } from "lucide-react";
+import { ArrowRight, Shield, Star, Phone, CheckCircle, Diamond, Mountain, Users, Eye, Award } from "lucide-react";
 import { getServiceBySlug, getRelatedServices, services } from "@/data/services";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
@@ -64,18 +64,18 @@ const ServicePage = () => {
               />
             </div>
             {/* Right: Cards */}
-            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {service.trustSignals.map((signal, i) => {
-                const icons = [Diamond, Mountain, Users, Shield, Eye];
+                const icons = [Diamond, Mountain, Users, Shield, Eye, Award];
                 const Icon = icons[i % icons.length];
                 return (
-                  <div key={i} className="bg-popover rounded-xl p-6 flex gap-4 items-start">
+                  <div key={i} className="bg-secondary-foreground/5 backdrop-blur-md border border-secondary-foreground/10 rounded-xl p-5 flex gap-4 items-start">
                     <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
                       <Icon className="h-5 w-5 text-gold" />
                     </div>
                     <div>
-                      <h3 className="font-serif text-text-dark font-semibold text-sm mb-1">{signal.title}</h3>
-                      <p className="text-text-dark/60 text-xs leading-relaxed">{signal.description}</p>
+                      <h3 className="font-serif text-secondary-foreground font-semibold text-sm mb-1">{signal.title}</h3>
+                      <p className="text-secondary-foreground/60 text-xs leading-relaxed">{signal.description}</p>
                     </div>
                   </div>
                 );
