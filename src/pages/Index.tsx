@@ -82,12 +82,12 @@ const Index = () => {
               for Upstate South Carolina's most discerning homeowners.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider text-center"
               >
                 Schedule a Consultation
-              </a>
+              </Link>
               <a
                 href="#services"
                 className="inline-block border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider text-center"
@@ -119,12 +119,12 @@ const Index = () => {
                 Our principals are personally involved in every project — from the initial consultation through
                 final walkthrough. The result is a landscape that performs as beautifully in its tenth year as it does on completion day.
               </p>
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider"
               >
                 Schedule a Consultation
-              </a>
+              </Link>
             </div>
             {/* Right — Photo with overlapping quote */}
             <div className="relative">
@@ -362,9 +362,9 @@ const Index = () => {
               </p>
               <p className="text-text-dark/60 text-sm leading-relaxed">
                 If you have a project in mind and would like to know whether we cover your area, please{" "}
-                <a href="#contact" className="text-gold hover:text-gold-light underline transition-colors">
+                <Link to="/contact" className="text-gold hover:text-gold-light underline transition-colors">
                   contact our team
-                </a>{" "}
+                </Link>{" "}
                 who will be happy to assist.
               </p>
             </div>
