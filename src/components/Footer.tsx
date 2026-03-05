@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="flex gap-3">
             <a href="#" className="text-secondary-foreground/50 hover:text-gold transition-colors"><Facebook className="h-5 w-5" /></a>
             <a href="#" className="text-secondary-foreground/50 hover:text-gold transition-colors"><Instagram className="h-5 w-5" /></a>
-            <a href="#" className="text-secondary-foreground/50 hover:text-gold transition-colors"><Linkedin className="h-5 w-5" /></a>
+            
           </div>
         </div>
       </div>
