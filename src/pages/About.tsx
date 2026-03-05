@@ -1,8 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import ownerPhoto1 from "@/assets/about-owner-1.jpg";
-import ownerPhoto2 from "@/assets/about-owner-2.jpg";
+import ownerPhoto from "@/assets/about-owner.jpg";
 import teamPhoto from "@/assets/about-team.jpg";
 
 const About = () => {
@@ -27,15 +26,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Photo */}
-            <div className="grid grid-cols-2 gap-4">
+            <div>
               <img
-                src={ownerPhoto1}
+                src={ownerPhoto}
                 alt="Owner of Elevation Landscapes"
-                className="w-full aspect-[3/4] object-cover rounded-lg shadow-xl"
-              />
-              <img
-                src={ownerPhoto2}
-                alt="Consulting on a landscape project"
                 className="w-full aspect-[3/4] object-cover rounded-lg shadow-xl"
               />
             </div>
