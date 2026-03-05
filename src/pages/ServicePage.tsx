@@ -110,7 +110,7 @@ const ServicePage = () => {
                       <StepIcon className="h-5 w-5 text-gold" />
                     </div>
                     <div>
-                      <h3 className="font-serif text-lg text-gold mb-2">{step.title}</h3>
+                      <h3 className="font-serif text-lg text-navy font-bold mb-2">{step.title}</h3>
                       <p className="text-text-dark/60 text-sm leading-relaxed">{step.desc}</p>
                     </div>
                   </div>
