@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { services } from "@/data/services";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
@@ -60,6 +61,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        page="contact"
+        fallbackTitle="Contact Elevation Landscapes | Schedule a Consultation Greenville SC"
+        fallbackDescription="Schedule a private consultation with Greenville's premier luxury landscape design firm. Tell us about your vision and we'll craft a landscape that exceeds every expectation."
+        path="/contact"
+      />
       <Navbar />
 
       {/* HERO */}

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 import paverPatio from "@/assets/portfolio/paver-patio-project.jpg";
 import stoneWall from "@/assets/portfolio/stone-wall-project.jpg";
@@ -22,6 +23,12 @@ const photos = [
 const Portfolio = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        page="portfolio"
+        fallbackTitle="Portfolio | Elevation Landscapes Greenville SC"
+        fallbackDescription="Explore our luxury landscape design portfolio — paver patios, stone walls, outdoor kitchens, fire pits, and more across Greenville and Upstate South Carolina."
+        path="/portfolio"
+      />
       <Navbar />
 
       <section className="pt-32 pb-16">
