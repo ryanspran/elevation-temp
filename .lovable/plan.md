@@ -1,32 +1,13 @@
 
 
-## Create Contact Page
+The SCMap component currently just renders a static PNG image. Since the star is baked into the image, we cannot animate it directly. Instead, we can overlay an animated glowing star on top of the map at the approximate location of the star in the image.
 
-### Overview
-Build a dedicated `/contact` route with a styled contact form featuring service interest checkboxes, budget range dropdown, timeframe dropdown, and landscape imagery — consistent with the site's luxury navy/gold aesthetic. Update all "Contact" links across the site to point to it.
+**Approach:**
+- Add a positioned `div` overlay on the map container at the star's location (roughly centered on Greenville area)
+- Use a pulsing glow effect with CSS animation — a radial gold glow that pulses in and out
+- Use Tailwind's `animate-ping` or a custom pulse animation with a gold color to create the glowing effect
+- Layer a solid gold dot on top of the ping animation for a clean look
 
-### New File: `src/pages/Contact.tsx`
-- Full-page layout with Navbar and Footer
-- Hero banner section with a landscape background image (reuse `hero-bg.jpg` or `landscape-photo.jpg`) and overlay, similar to service pages
-- Form section with two-column layout on desktop (form left, decorative image right)
-- Form fields:
-  - **Name** (text input)
-  - **Email** (email input)
-  - **Phone** (tel input)
-  - **Services Interested In** — checkbox group using the service names from `services` data (Grading Solutions, Underground Drainage, Paver Patios, etc.)
-  - **Budget Range** — Select dropdown with options: "Under $10,000", "$10,000 – $25,000", "$25,000 – $50,000", "$50,000 – $100,000", "$100,000+"
-  - **Timeframe** — Select dropdown with options: "As soon as possible", "Within 1–3 months", "3–6 months", "6–12 months", "Just exploring options"
-  - **Message** (textarea)
-  - **Submit button** styled with gold/navy theme
-- On submit: show a success toast (no backend needed yet)
-- Styled with the existing navy, gold, cream palette and Playfair Display headings
-
-### Edit: `src/App.tsx`
-- Import `Contact` page and add route: `<Route path="/contact" element={<Contact />} />`
-
-### Edit: `src/components/Navbar.tsx`
-- The desktop and mobile "Contact" links already point to `/contact` — no change needed (they're already `<Link to="/contact">`)
-
-### Edit: `src/pages/Index.tsx`
-- Update any CTA buttons/links that reference contact to use `<Link to="/contact">` instead of anchor links or phone numbers where appropriate
+**Changes:**
+1. **`src/components/SCMap.tsx`** — Add an absolutely positioned glowing dot overlay with a ping/pulse animation using Tailwind classes. Position it over where the star appears in the map image (will need to estimate coordinates as percentages).
 
