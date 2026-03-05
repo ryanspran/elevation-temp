@@ -323,7 +323,8 @@ export const services: ServiceData[] = ([
       { title: "Engineered to Your Site", description: "Soil assessment, drainage, geogrid where required" },
       { title: "Premium Materials", description: "Segmental block for integrity and refinement" },
       { title: "Zero Subcontracting", description: "Same craftsmen start to finish" },
-      { title: "Full Transparency", description: "Detailed proposals, timelines, post-install support" }
+      { title: "Full Transparency", description: "Detailed proposals, timelines, post-install support" },
+      { title: "Lasting Warranty", description: "Industry-leading warranty backed by our craftsmanship guarantee" }
     ],
     faqs: [
       { question: "What does a block retaining wall cost in Greenville, SC?", answer: "Several thousand for smaller decorative walls to significantly higher for multi-tiered systems. Factors: wall height, footage, materials, site access, geogrid needs. Detailed proposals after site assessment." },
