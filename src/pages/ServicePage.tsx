@@ -34,9 +34,6 @@ const ServicePage = () => {
             <a href="#contact" className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider text-center">
               Schedule a Consultation
             </a>
-            <a href="#learn-more" className="inline-block border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 transition-colors uppercase text-sm tracking-wider text-center">
-              Learn More
-            </a>
           </div>
         </div>
       </section>
