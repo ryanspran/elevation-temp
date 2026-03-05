@@ -208,7 +208,7 @@ const ServicePage = () => {
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {relatedServices.map((rs) => (
+            {relatedServices.filter((rs) => rs.slug !== slug).map((rs) => (
               <Link
                 key={rs.slug}
                 to={`/services/${rs.slug}`}
