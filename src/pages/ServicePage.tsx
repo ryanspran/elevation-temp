@@ -86,26 +86,50 @@ const ServicePage = () => {
       </section>
 
       {/* Process */}
-      <section className="bg-cream py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">How We Work</h2>
-            <div className="w-16 h-0.5 bg-gold mx-auto" />
-          </div>
-          <div className={`grid grid-cols-1 ${(service.processSteps?.length ?? 3) === 4 ? 'md:grid-cols-4' : 'md:grid-cols-3'} gap-8`}>
-            {(service.processSteps ?? [
-              { num: "01", title: "Consultation & Assessment", desc: "On-site evaluation of your property, understanding your vision and establishing project objectives." },
-              { num: "02", title: "Custom Design & Planning", desc: "Detailed plans with material specifications, timelines, and transparent pricing tailored to your project." },
-              { num: "03", title: "Expert Execution", desc: "Our in-house craftsmen bring the vision to life with meticulous attention to every detail." },
-            ]).map((step, i) => (
-              <div key={i} className="text-center">
-                <div className="w-16 h-16 rounded-full border-2 border-gold flex items-center justify-center mx-auto mb-6">
-                  <span className="font-serif text-gold text-lg">{step.num}</span>
-                </div>
-                <h3 className="font-serif text-xl text-text-dark mb-3">{step.title}</h3>
-                <p className="text-text-dark/60 text-sm leading-relaxed">{step.desc}</p>
+      <section className="bg-navy py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">How We Work</h2>
+          <div className="w-16 h-0.5 bg-gold mb-12" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Left: Steps */}
+            <div className="space-y-10">
+              {(service.processSteps ?? [
+                { num: "01", title: "Consultation & Assessment", desc: "On-site evaluation of your property, understanding your vision and establishing project objectives." },
+                { num: "02", title: "Custom Design & Planning", desc: "Detailed plans with material specifications, timelines, and transparent pricing tailored to your project." },
+                { num: "03", title: "Expert Execution", desc: "Our in-house craftsmen bring the vision to life with meticulous attention to every detail." },
+              ]).map((step, i) => {
+                const stepIcons = [Phone, Gem, Shield, Handshake];
+                const StepIcon = stepIcons[i % stepIcons.length];
+                return (
+                  <div key={i} className="flex gap-5 items-start">
+                    <div className="w-14 h-14 rounded-full border-2 border-gold flex items-center justify-center shrink-0">
+                      <StepIcon className="h-5 w-5 text-gold" />
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-lg text-gold mb-2">{step.title}</h3>
+                      <p className="text-secondary-foreground/60 text-sm leading-relaxed">{step.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            {/* Right: Photo with overlapping quote */}
+            <div className="relative pb-8">
+              <img
+                src={service.heroImage ?? heroBg}
+                alt={`${service.name} process`}
+                className="w-full h-[500px] object-cover rounded-2xl"
+              />
+              <div className="absolute -bottom-4 left-4 right-4 md:left-8 md:right-8 bg-popover rounded-xl p-6 shadow-lg">
+                <span className="text-gold font-serif text-2xl leading-none">"</span>
+                <p className="font-serif text-text-dark/80 italic text-sm leading-relaxed mt-1">
+                  {service.testimonial?.quote ?? "Every great landscape begins with listening. We don't impose a style — we reveal what your property is meant to become."}
+                </p>
+                <p className="text-text-dark font-semibold text-xs uppercase tracking-wider mt-3">
+                  — {service.testimonial?.attribution ?? "Principal, Elevation Landscapes"}
+                </p>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
