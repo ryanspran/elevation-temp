@@ -178,31 +178,44 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/landscape-remediation.png",
     seoTitle: "Landscape Remediation Greenville SC | Elevation Landscapes",
     h1: "Landscape Remediation in Greenville, SC — Restoring the Standard Your Property Deserves",
-    subheadline: "When a landscape falls short of its potential, the right firm reimagines it. Surgical precision and refined design sensibility for every restoration across Greenville and Upstate SC.",
+    subheadline: "When a landscape falls short, the right firm reimagines it. Surgical precision and refined design for every restoration across Greenville and Upstate South Carolina.",
     bodyParagraphs: [
-      "Some landscapes are built once and forgotten. Others are entrusted to firms like ours. Landscape renovation in Greenville is about restoring order, intention, and beauty to spaces that time, weather, or previous contractors left behind.",
-      "Greenville's long growing season accelerates overgrowth, root encroachment, and soil degradation at a pace that surprises even attentive homeowners. An existing landscape restoration in Upstate SC requires understanding what to preserve and what to remove — this is curatorial work, not demolition.",
-      "We begin with comprehensive site assessment — evaluate soil health, amend where needed, and identify the elements worth preserving: mature trees with structural integrity, hedgerows providing privacy, solid hardscape that anchors the design. Everything working against the property's potential is carefully removed.",
-      "Plant replacement is selected for long-term performance and seasonal cohesion — sourced from specialty growers, not retail garden centers. A luxury yard makeover isn't about trendy specimens; it's about creating a landscape that looks better in five years than it does on completion day.",
-      "Soil amendment is the cornerstone of every successful remediation project — based on actual laboratory analysis of pH, compaction, nutrients, and drainage capacity. Without addressing what's beneath the surface, even the finest plants and design will underperform."
+      "Some landscapes are built once and forgotten. Others are built once and then entrusted to us. Our remediation service restores order, intention, and enduring beauty to outdoor spaces that time, weather, or previous contractors left behind.",
+      "Greenville and Upstate South Carolina's climate is both gift and challenge. The long growing season that makes this region lush also accelerates overgrowth, root encroachment, and soil degradation. We understand how this climate behaves — humid summers, unexpected Upstate frosts — and make remediation decisions that hold long after our trucks leave.",
+      "Our process begins with comprehensive site assessment. We evaluate soil and amend where necessary, because no premium plantings perform on compromised ground. We identify what to preserve — mature trees, established hedgerows, solid hardscape — and remove what works against the property. This is not teardown. It is curatorial.",
+      "Our design team develops a restoration plan respecting your architecture, neighborhood character, and vision. Plant replacement decisions are made for long-term performance, seasonal interest, and cohesion — not what a supplier has that week. We source from specialty growers and install with care reflecting your investment.",
+      "Soil amendment is a cornerstone. Healthy soil is not incidental to a thriving landscape — it is the foundation. We conduct targeted amendments based on actual analysis and establish irrigation and drainage protecting that work for years.",
+      "The result is not a cleaner yard. It is a landscape that functions as it should, looks as it should, and reflects the home it surrounds. For luxury homeowners across Greenville, Travelers Rest, and Simpsonville, that standard is non-negotiable — and neither is ours."
     ],
     trustSignals: [
-      { title: "Proven Experience", description: "Over a decade of exclusive luxury residential experience" },
-      { title: "Curated Portfolio", description: "Curated portfolio of high-end remediation projects across Greenville" },
-      { title: "Expert Team", description: "Certified designers and horticulturists with deep Upstate SC knowledge" },
-      { title: "Premium Sourcing", description: "Premium plants from specialty growers with establishment warranty" },
-      { title: "Referral-Built", description: "Reputation built entirely on referrals from discerning homeowners" },
+      { title: "Decade of Luxury Experience", description: "Exclusive residential work across Greenville and Upstate SC" },
+      { title: "Curated Portfolio", description: "High-end remediation on the region's most distinguished residences" },
+      { title: "Certified Designers & Horticulturists", description: "Deep Upstate SC climate and soil knowledge" },
+      { title: "Specialty Plant Sourcing", description: "Premium material from vetted growers with establishment warranty" },
+      { title: "Referral-Built Reputation", description: "Trust earned entirely through results and repeat business" },
       { title: "Post-Project Care", description: "Ongoing maintenance agreements ensuring your investment continues to thrive" }
     ],
-    faqs: [
-      { question: "How long does remediation take?", answer: "Typically 1-4 weeks of active work, depending on the scope of restoration required and the size of the property." },
-      { question: "Will you remove everything and start over?", answer: "No — we preserve mature trees, specimen plants, and solid hardscape elements of value. Our approach is curative and intentional, not destructive." },
-      { question: "Why does local expertise matter for remediation?", answer: "Clay soils, specific pest pressures, and variable microclimates across Greenville all factor into plant selection, soil amendment, and design decisions." },
-      { question: "What does soil amendment involve?", answer: "Laboratory analysis of pH, compaction, nutrient levels, and drainage capacity — then professional-grade amendments tailored to what your specific soil needs." },
-      { question: "Do you offer a warranty after remediation?", answer: "Comprehensive plant establishment warranty and ongoing maintenance agreements to ensure your investment continues to perform." },
-      { question: "What does remediation cost?", answer: "Every project is different — accurate estimates are only possible after a proper site assessment. We provide detailed proposals with transparent pricing." }
+    processSteps: [
+      { num: "01", title: "Site Assessment", desc: "Soil analysis, drainage, plant and hardscape inventory to understand the full scope of restoration needed." },
+      { num: "02", title: "Curatorial Plan", desc: "What to preserve, remove, and introduce — a restoration plan respecting your architecture and vision." },
+      { num: "03", title: "Restoration & Planting", desc: "Amendment, specialty installation, and irrigation integration executed with meticulous care." },
+      { num: "04", title: "Establishment Support", desc: "Warranty, care guidance, and optional maintenance program to ensure long-term success." }
     ],
-    ctaText: "We're accepting a limited number of remediation projects this season. Call today for your private consultation.",
+    testimonial: {
+      quote: "Our yard was neglected for years. Elevation identified what was worth saving and completely transformed it. It finally matches the house.",
+      attribution: "Thomas & Sarah K., Chanticleer"
+    },
+    faqs: [
+      { question: "How long does landscape remediation take?", answer: "Most projects range one to four weeks of active work. Thorough assessment first so you have a detailed schedule before anything begins." },
+      { question: "Will you remove everything or preserve elements?", answer: "Preservation is a guiding principle. Mature trees, specimen plants, and solid hardscape often hold significant value. Our assessment distinguishes what stays from what goes." },
+      { question: "Why does local expertise matter for remediation?", answer: "Clay soils, specific pest pressures, and variable Upstate microclimates factor into every plant selection, soil amendment, and drainage decision. Regional experience means your landscape thrives here, not just survives." },
+      { question: "What does soil amendment involve?", answer: "Analysis of pH, compaction, nutrients, and drainage, then professional-grade amendments. This separates landscapes thriving for decades from those declining after one season." },
+      { question: "Warranty or ongoing maintenance?", answer: "Comprehensive plant establishment warranty plus maintenance agreements. Our remediated landscapes are designed to be self-sustaining with appropriate care." },
+      { question: "How is pricing determined?", answer: "Reflects scope, scale, and condition. Accurate estimates from proper assessment, not generic quotes. Clients consistently find it worthwhile for the transformation and long-term property value." }
+    ],
+    ctaHeading: "Ready to Restore the Landscape Your Property Deserves?",
+    ctaText: "Every remediation project we undertake is designed for the specific property it serves. Schedule a private consultation to discuss what your landscape needs.",
+    urgencyText: "Limited remediation projects each season — call today for your consultation.",
     relatedSlugs: ["new-plant-installation", "sod-and-seeding", "irrigation-installation-repair"]
   },
   {
