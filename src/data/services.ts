@@ -47,31 +47,44 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/grading-solutions.png",
     seoTitle: "Luxury Grading Services Greenville SC | Elevation Landscapes",
     h1: "Luxury Grading Services in Greenville, SC — Precision Site Engineering for the Discerning Estate",
-    subheadline: "The landscape you envision begins beneath the surface. Elevation Landscapes delivers professional grading solutions engineered to perform with the same exactitude your property reflects above ground.",
+    subheadline: "The landscape you envision begins beneath the surface. Professional grading solutions engineered to perform with the same exactitude your property reflects above ground.",
     bodyParagraphs: [
-      "The foundation of every extraordinary landscape lives beneath the surface. Professional landscape grading in Greenville is not merely earthwork — it is the invisible architecture upon which every visible element rests. Our grading services exist at the intersection of engineering precision and aesthetic vision, ensuring that every contour of your property serves both form and function.",
-      "Greenville's piedmont soils and clay-heavy terrain require specialized expertise that generic contractors simply cannot provide. The red clay that defines Upstate SC is both an asset and a challenge — beautiful in color, demanding in behavior. Professional grading begins with thorough site assessment: drainage patterns, soil composition, slope ratios, and the relationship between your home's foundation and the surrounding grade.",
-      "Our estate site preparation work encompasses soil stabilization, drainage engineering, and meticulous land leveling for pools, motor courts, outdoor living structures, and expansive lawn panels. Every project is approached with the understanding that this is a residential grading contractor serving Upstate SC's most distinguished properties.",
-      "We coordinate seamlessly with architects, civil engineers, and design teams — ensuring that grading integrates with the broader vision rather than existing as an isolated trade. This collaborative approach produces results that standalone contractors simply cannot achieve.",
-      "The value of proper grading shows in the years to come — retaining walls stay plumb, lawns drain without pooling, foundations remain protected, and the entire landscape performs as intended. Drainage engineering and soil stabilization are not expenses; they are investments in the longevity of everything built above them."
+      "The foundation of every extraordinary landscape is invisible — it lives beneath the surface, in the deliberate shaping of the land. Our luxury grading services exist at the intersection of engineering precision and aesthetic vision, transforming raw or problematic terrain into the seamless canvas your property deserves.",
+      "Greenville and Upstate South Carolina present unique topographical realities. From rolling piedmont soils near Travelers Rest to clay-heavy terrain in neighborhoods like Augusta Road and Verdae, every estate carries its own challenges. Our team reads the land with fluency from years of work across this geography — designing grading solutions in harmony with it.",
+      "Professional landscape grading begins with thorough site assessment — drainage patterns, soil composition, slope ratios, and intended use of every zone. That informs a precise grading plan accounting for water behavior during heavy Upstate rainfall, how land settles, and how future hardscape or softscape will perform for decades.",
+      "Our work encompasses soil stabilization, engineered drainage, and meticulous land leveling for pools, motor courts, outdoor living structures, and manicured lawns. We do not grade to code — we grade to the standard your property demands. Every slope calculated. Every transition refined.",
+      "Working exclusively in luxury residential, we bring intentionality to estate site preparation that general contractors rarely offer. We coordinate with your architect, civil engineer, and design team so the grading phase aligns with every downstream element. Nothing left to assumption.",
+      "The value shows in the years that follow — retaining walls remain plumb, lawns drain without pooling, hardscape holds grade, and foundations stay protected from erosive forces compromising so many Upstate SC properties. The quiet confidence of getting the groundwork right."
     ],
     trustSignals: [
-      { title: "Exclusive Luxury Focus", description: "Exclusively luxury residential — no commercial work" },
-      { title: "Piedmont Soil Expertise", description: "Decades of combined grading expertise specific to Greenville's piedmont soils" },
-      { title: "Principal-Led Projects", description: "Every project supervised by a senior team member accountable to the homeowner" },
-      { title: "Seamless Collaboration", description: "Seamless collaboration with Greenville's architects and engineers" },
-      { title: "Distinguished Portfolio", description: "Portfolio of luxury estates across Greenville's distinguished neighborhoods" },
+      { title: "Exclusive Luxury Focus", description: "Curated clientele, no commercial or production work" },
+      { title: "Regional Soil Expertise", description: "Decades with Greenville's piedmont soils and topography" },
+      { title: "Senior-Led Projects", description: "Every project managed by a senior member accountable to the homeowner" },
+      { title: "Design Team Integration", description: "Seamless collaboration with architects, engineers, and designers" },
+      { title: "Proven Portfolio", description: "Luxury estates across Greenville's most distinguished neighborhoods" },
       { title: "Lasting Guarantee", description: "Compaction verification and comprehensive grade integrity warranty" }
     ],
-    faqs: [
-      { question: "How long does grading take?", answer: "2-4 days for single-zone work, and several weeks for comprehensive estate preparation involving multiple areas, drainage integration, and coordination with other trades." },
-      { question: "Why does Greenville require specialized grading expertise?", answer: "Red clay soils are susceptible to erosion and compaction. Improper grading in these conditions causes drainage failures, foundation settling, and long-term structural issues that are far more costly to correct than to prevent." },
-      { question: "What warranty do you offer on grading work?", answer: "We provide compaction verification, erosion control measures, and a comprehensive project warranty covering grade integrity and drainage performance." },
-      { question: "Can you coordinate with my architect or engineer?", answer: "Yes — we regularly collaborate with design professionals and integrate grading with broader project plans, ensuring seamless execution across all disciplines." },
-      { question: "How does grading protect my foundation?", answer: "Correct slope ratios direct water away from structures, eliminating hydrostatic pressure, foundation stress, and erosion that compromise your home's structural integrity." },
-      { question: "Is grading only for new construction?", answer: "No — we perform corrective grading on established estates addressing shifted drainage patterns, preparation for new pools, additions, and outdoor living spaces." }
+    processSteps: [
+      { num: "01", title: "Site Assessment", desc: "Drainage, soil composition, slopes, and intended use evaluated to inform every grading decision." },
+      { num: "02", title: "Precision Plan", desc: "Engineered for water behavior, settling, and future installations — every slope and transition specified." },
+      { num: "03", title: "Expert Execution", desc: "Stabilization, drainage engineering, and meticulous leveling performed with senior-level oversight." },
+      { num: "04", title: "Verification", desc: "Compaction testing and grade confirmation before handoff — ensuring everything performs as designed." }
     ],
-    ctaText: "Contact us today to schedule a private site consultation — and take the first step toward a landscape built on a foundation as refined as the vision above it.",
+    testimonial: {
+      quote: "We had drainage issues for years. Elevation regraded our property and the difference is night and day — no pooling, no erosion. They understood exactly what our land needed.",
+      attribution: "Robert & Anne M., Verdae"
+    },
+    faqs: [
+      { question: "How long does professional grading take on a luxury property?", answer: "Two to four days for single-zone land leveling. Several weeks for comprehensive estate site preparation with drainage engineering and multi-phase grading. Detailed schedule at consultation." },
+      { question: "Why does Greenville grading require specialized expertise?", answer: "Upstate SC's piedmont soils — especially red clay — are highly susceptible to erosion and compaction. Improper grading causes drainage failures, foundation movement, and instability. We design for how local soils behave through wet winters and dry summers." },
+      { question: "What warranty do you offer?", answer: "Compaction verification, erosion control measures, and project warranty covering grade integrity and drainage performance. Proven stabilization methods with clear terms in every agreement." },
+      { question: "Can you coordinate with my architect or engineer?", answer: "Yes, and we recommend it. We regularly integrate grading plans with broader project documentation, eliminating redundant work and reducing change orders." },
+      { question: "How does grading protect my foundation?", answer: "Correct slope ratios direct water away from structures. With subsurface drainage where warranted, we eliminate conditions causing foundation stress, erosion, and hardscape failure." },
+      { question: "Is grading only for new construction?", answer: "No — we regularly perform corrective grading on established estates where drainage shifted, new construction altered hydrology, or homeowners are preparing for pools, guest houses, or outdoor living additions." }
+    ],
+    ctaHeading: "Ready to Build on a Foundation as Refined as Your Vision?",
+    ctaText: "Every grading project we undertake is engineered for the specific property it serves. Schedule a private site consultation to discuss what your land needs.",
+    urgencyText: "We limit our calendar to ensure every client gets the attention their property merits — contact us today.",
     relatedSlugs: ["underground-drainage-solutions", "sod-and-seeding", "boulder-retaining-walls"]
   },
   {
