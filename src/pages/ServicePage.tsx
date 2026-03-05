@@ -4,6 +4,7 @@ import { getServiceBySlug, getRelatedServices, services } from "@/data/services"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import heroBg from "@/assets/hero-bg.jpg";
 import NotFound from "./NotFound";
 
@@ -15,8 +16,41 @@ const ServicePage = () => {
 
   const relatedServices = getRelatedServices(service.relatedSlugs);
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: service.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.name,
+    description: service.subheadline,
+    provider: {
+      "@type": "LandscapingBusiness",
+      name: "Elevation Landscapes",
+      url: "https://elevationlandscapes.com",
+    },
+    areaServed: {
+      "@type": "Place",
+      name: "Greenville, SC and Upstate South Carolina",
+    },
+  };
+
   return (
     <div className="min-h-screen">
+      <SEOHead
+        page={`service-${slug}`}
+        fallbackTitle={service.seoTitle}
+        fallbackDescription={service.subheadline}
+        path={`/services/${slug}`}
+        jsonLd={[faqJsonLd, serviceJsonLd]}
+      />
       <Navbar />
 
       {/* Hero */}

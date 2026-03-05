@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import ownerPhoto from "@/assets/about-owner.jpg";
 import teamPhoto from "@/assets/about-team.jpg";
@@ -7,6 +8,12 @@ import teamPhoto from "@/assets/about-team.jpg";
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        page="about"
+        fallbackTitle="About Elevation Landscapes | Greenville SC Landscape Design"
+        fallbackDescription="Learn about Elevation Landscapes — Greenville's premier luxury landscape design firm serving Upstate South Carolina's most discerning homeowners."
+        path="/about"
+      />
       <Navbar />
 
       {/* Hero */}

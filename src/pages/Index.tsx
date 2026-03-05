@@ -5,6 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 import { services } from "@/data/services";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import heroBg from "@/assets/hero-bg.jpg";
 import introBg from "@/assets/intro-bg.jpg";
 import introPhoto from "@/assets/intro-photo.jpg";
@@ -16,6 +17,30 @@ import processPhoto from "@/assets/process-photo.jpg";
 import landscapePhoto from "@/assets/landscape-photo.jpg";
 import testimonialsBg from "@/assets/testimonials-bg.jpg";
 
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LandscapingBusiness",
+  name: "Elevation Landscapes",
+  description: "Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning homeowners.",
+  url: "https://elevationlandscapes.com",
+  telephone: "+18641234567",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Greenville",
+    addressRegion: "SC",
+    addressCountry: "US",
+  },
+  areaServed: [
+    "Greenville, SC", "Travelers Rest, SC", "Greer, SC", "Simpsonville, SC",
+    "Mauldin, SC", "Easley, SC", "Taylors, SC", "Spartanburg, SC", "Anderson, SC",
+  ],
+  priceRange: "$$$",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "3",
+  },
+};
 
 const Index = () => {
   const [testimonialApi, setTestimonialApi] = useState<CarouselApi>();
@@ -62,6 +87,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        page="home"
+        fallbackTitle="Elevation Landscapes | Luxury Landscape Design Greenville SC"
+        fallbackDescription="Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning homeowners."
+        path="/"
+        jsonLd={localBusinessJsonLd}
+      />
       <Navbar />
 
       {/* HERO */}
