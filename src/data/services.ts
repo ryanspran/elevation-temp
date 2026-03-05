@@ -30,7 +30,7 @@ export interface ServiceData {
   relatedSlugs: string[];
 }
 
-export const services: ServiceData[] = [
+export const services: ServiceData[] = ([
   {
     slug: "grading-solutions",
     name: "Grading Solutions",
@@ -559,7 +559,7 @@ export const services: ServiceData[] = [
     ctaText: "Call us today to schedule a private consultation and discover what's possible when landscape lighting is elevated to the level of true design.",
     relatedSlugs: ["custom-water-features", "outdoor-kitchens", "paver-patios"]
   }
-];
+] as ServiceData[]).sort((a, b) => a.name.localeCompare(b.name));
 
 export function getServiceBySlug(slug: string): ServiceData | undefined {
   return services.find(s => s.slug === slug);
