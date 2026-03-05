@@ -94,32 +94,46 @@ export const services: ServiceData[] = ([
     image: undergroundDrainage,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/underground-drainage.png",
     seoTitle: "Underground Drainage Solutions Greenville SC | Elevation Landscapes",
+    seoDescription: "French drain installation and stormwater management for Greenville & Upstate SC luxury properties. Custom drainage engineering. Schedule a consultation.",
     h1: "Underground Drainage Solutions in Greenville, SC — Engineering That Protects What You've Built",
     subheadline: "Precision-engineered French drain systems and stormwater management for Greenville's most distinguished residential properties.",
     bodyParagraphs: [
-      "Greenville's Piedmont climate doesn't forgive poorly managed stormwater. Heavy seasonal rains, naturally sloped terrain, and dense clay subsoils create conditions where chronic drainage failure isn't a possibility — it's an inevitability without professional intervention. French drain installation in Greenville requires understanding these unique regional challenges.",
-      "We treat water management as a foundational design discipline — integrating French drains, channel drainage, and subsurface water diversion into the landscape plan invisibly and permanently. Every project starts with comprehensive site analysis: topographic grade evaluation, soil composition testing, impervious surface ratios, and seasonal water flow patterns.",
-      "Our luxury property drainage systems use schedule-rated perforated pipe bedded in correct aggregate and wrapped in high-performance filter fabric. For complex properties, we design dry creek beds that double as landscape features, subsurface retention chambers for volume management, and pop-up emitters that discharge water away from living areas.",
-      "As a yard drainage contractor serving Upstate SC, our stormwater management systems are designed to handle the region's most demanding weather events while remaining completely invisible. Erosion prevention starts with proper engineering, not reactive measures.",
-      "The result is a property that performs flawlessly through every season — no pooling, no erosion, no foundation concerns. Just a landscape that looks extraordinary above ground because it's engineered with equal precision below."
+      "Your property is one of your most significant investments, and Greenville's Piedmont climate does not forgive poorly managed stormwater. Heavy rains, sloped terrain, and dense clay create chronic drainage failure — eroding landscapes, compromising foundations, and diminishing the value of even the most beautifully designed estates.",
+      "We treat water management as a foundational design discipline. French drain systems, channel drainage, and custom water diversion infrastructure are integrated into the landscape plan invisibly and permanently. Our approach is architectural, matching the precision defining every other aspect of your home.",
+      "Every project begins with thorough site analysis — topographic grade, soil composition, impervious surface ratios, and seasonal water flow evaluated before a trench is drawn. This rigor separates an Elevation installation from a commodity job. We solve the right problem, not the obvious one.",
+      "Our French drain installations use schedule-rated perforated pipe in correctly specified aggregate and filter fabric — materials chosen for performance. We engineer fall, outlet, and collection points with civil infrastructure precision. The result functions as designed for decades without heaving, blockages, or backflow.",
+      "For complex properties we design integrated stormwater management — dry creek beds engineered for volume, subsurface retention chambers, and pop-up emitters releasing water beyond foundations and planting zones. These systems are landscape architecture in the truest sense.",
+      "Underground drainage is invisible by design, but its absence is felt everywhere — saturated lawns, failed walls, eroded beds, water where it was never meant to go. We engineer solutions eliminating an entire category of concern from property ownership."
     ],
     trustSignals: [
-      { title: "Decade of Experience", description: "Over a decade of exclusive luxury residential drainage experience" },
-      { title: "Professional Materials", description: "Schedule-rated pipe, commercial aggregate, high-performance filter fabric" },
-      { title: "Custom Engineering", description: "Comprehensive site analysis and custom engineering on every project" },
-      { title: "Design-First Approach", description: "Integrating drainage seamlessly into landscape plans" },
-      { title: "Referral-Built Reputation", description: "Reputation built entirely on referrals from satisfied clients" },
+      { title: "Decade of Drainage Experience", description: "Exclusive residential across Greenville, Travelers Rest, Simpsonville, Upstate SC" },
+      { title: "Professional-Grade Materials", description: "Schedule-rated pipe, commercial aggregate, high-performance filter fabric" },
+      { title: "Custom Engineering", description: "Site analysis and design specific to your soil, grade, and volume" },
+      { title: "Design-First Approach", description: "Drainage integrated seamlessly, preserving visual integrity" },
+      { title: "Referral-Built Reputation", description: "We compete on outcome, and our work is its own credential" },
       { title: "Lasting Protection", description: "Comprehensive system warranty with post-installation performance verification" }
     ],
-    faqs: [
-      { question: "How long does French drain installation take?", answer: "1-3 days for most properties; larger estates with integrated stormwater systems may take longer depending on complexity and site conditions." },
-      { question: "What drainage challenges are specific to Greenville?", answer: "Piedmont clay resists water infiltration, causing rapid surface runoff and root zone saturation that damages plantings, erodes soil, and threatens foundations." },
-      { question: "How long does a drainage system last?", answer: "Decades with proper engineering and professional-grade materials. Our systems are designed for permanence, not temporary relief." },
-      { question: "Will installation disrupt my existing landscape?", answer: "No — systems are fully below grade with any surface elements integrated intentionally into the landscape design. We restore all disturbed areas to pristine condition." },
-      { question: "Can poor drainage affect my foundation?", answer: "Yes — hydrostatic pressure from saturated soil and poor surface drainage compromise footings and below-grade structures, leading to costly structural repairs." },
-      { question: "What's the first step?", answer: "A comprehensive site consultation and diagnostic assessment. We evaluate your property's specific conditions before recommending any solution." }
+    processSteps: [
+      { num: "01", title: "Diagnostic Analysis", desc: "Grade, soil, impervious surfaces, water flow — comprehensive evaluation before any design begins." },
+      { num: "02", title: "Custom Design", desc: "French drains, channel drainage, retention, outlet engineering — tailored to your property's specific challenges." },
+      { num: "03", title: "Professional Installation", desc: "Precision materials, engineered fall and collection points, schedule-rated pipe and commercial aggregate." },
+      { num: "04", title: "Invisible Integration", desc: "Below grade, landscape restored to pristine condition — the system disappears, the protection remains." }
     ],
-    ctaText: "Our project calendar fills quickly, especially in spring and fall. Reach out today to schedule a private consultation.",
+    testimonial: {
+      quote: "Standing water after every rain for years. Elevation's French drain system solved it completely — invisible and flawless.",
+      attribution: "Jonathan & Rebecca M., Augusta Road"
+    },
+    faqs: [
+      { question: "How long does French drain installation take?", answer: "One to three days for most properties. Larger estates with integrated stormwater systems may need more time. Detailed schedule at consultation." },
+      { question: "What drainage challenges are specific to Greenville?", answer: "Piedmont clay resists infiltration, causing rapid runoff and root zone saturation. Our systems are engineered for these conditions — aggregate specs, pipe sizing, and outlets designed for native Upstate soil." },
+      { question: "How long will an underground system last?", answer: "Decades. Schedule-rated pipe, correct aggregate, and commercial filter fabric prevent sediment and root intrusion. Unlike commodity installations, ours require no routine intervention." },
+      { question: "Will installation disrupt my landscape?", answer: "No — fully below grade. Surface elements like emitters, grates, or decorative dry creek beds are integrated into the design intentionally." },
+      { question: "Can poor drainage affect my foundation?", answer: "Directly. Undiverted water builds hydrostatic pressure against walls and saturates soil compromising footings. Engineered drainage is one of the most consequential investments in structural preservation." },
+      { question: "What is the first step?", answer: "Comprehensive site consultation and diagnostic — not a quote call. We evaluate grade, soil, hardscape, and flow before recommending anything. What we propose is what your property genuinely needs." }
+    ],
+    ctaHeading: "Ready to Eliminate Drainage Problems Permanently?",
+    ctaText: "Engineered drainage protects everything above it — your landscape, your hardscape, your foundation. Schedule a private consultation to discuss your property's specific challenges.",
+    urgencyText: "Calendar fills quickly in spring and fall — reach out today.",
     relatedSlugs: ["grading-solutions", "irrigation-installation-repair", "boulder-retaining-walls"]
   },
   {
