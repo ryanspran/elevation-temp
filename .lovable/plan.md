@@ -1,45 +1,22 @@
 
 
-## Plan: Update Block Retaining Walls Landing Page
+## Plan: Redesign Trust Signals Section
 
-The request involves two types of changes: updating the data for this specific service, and enhancing the shared template to support per-service customization (process steps, testimonial, CTA heading, urgency text).
+Redesign the "Why Choose Elevation Landscapes" section to match the reference screenshot layout: a large photo on the left taking up ~1/3 width, with trust signal cards in a 2-column grid on the right filling ~2/3 width. Keep the navy background.
 
-### Current Limitations
+### Layout
 
-The `ServicePage.tsx` template currently hardcodes:
-- 3 process steps (request asks for 4)
-- Generic testimonial quote and attribution
-- Generic CTA heading ("Ready to Get Started?")
-- No urgency text below the form
-
-The `ServiceData` interface lacks fields for: `processSteps`, `testimonial`, `ctaHeading`, `urgencyText`.
+- Two-column layout: `lg:grid-cols-3` with the image spanning 1 column and cards spanning 2 columns
+- Left: A tall photo (the service hero image or a generated block wall photo) with rounded corners, filling the full height of the section
+- Right: Cards in a 2x3 grid (or 3x2) to fit all 5 signals, each card with a small gold icon in a cream-toned square, bold serif title, and description text
+- Cards styled with `bg-popover` (white), rounded corners, padding, matching the reference aesthetic
+- On mobile: image stacks on top, cards go single column below
 
 ### Changes
 
-**1. Extend `ServiceData` interface** (`src/data/services.ts`)
-Add optional fields so existing services keep working with defaults:
-- `processSteps?: { num: string; title: string; desc: string }[]`
-- `testimonial?: { quote: string; attribution: string }`
-- `ctaHeading?: string`
-- `urgencyText?: string`
-
-**2. Update block-retaining-walls data** (`src/data/services.ts`)
-Replace the existing entry at lines 298-329 with all the user-provided content:
-- Updated subheadline (full version)
-- 6 body paragraphs (instead of current 5)
-- Updated trust signal descriptions
-- 6 updated FAQs with full answers
-- New `processSteps` (4 steps)
-- New `testimonial` (James R., Thornblade)
-- New `ctaHeading` ("Ready for a Retaining Wall That Performs and Elevates?")
-- New `ctaText` and `urgencyText`
-- Hero CTAs: "Schedule Your Free Consultation" + "Call (864) XXX-XXXX" -- these are already handled by the template
-
-**3. Update `ServicePage.tsx` template** to use per-service data with fallbacks
-- Process section: use `service.processSteps` if present, else fall back to current hardcoded 3 steps. Change grid to `md:grid-cols-4` when 4 steps, `md:grid-cols-3` when 3.
-- Testimonial: use `service.testimonial` if present, else current generic quote.
-- CTA heading: use `service.ctaHeading` if present, else "Ready to Get Started?"
-- Urgency text: render `service.urgencyText` below the submit button if present.
-
-No database or routing changes needed -- the `/services/block-retaining-walls` route already works via the dynamic `/:slug` pattern.
+**`src/pages/ServicePage.tsx`** (lines 52-71):
+- Replace the current centered 5-column icon grid with the new two-panel layout
+- Left panel: image using `service.heroImage` or a fallback
+- Right panel: 2-column grid of cards with varied icons (Diamond, Mountain, Users, Shield, Eye — from lucide) to differentiate each signal visually
+- Remove the centered heading/divider; place the section heading above the two-column layout instead
 
