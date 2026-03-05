@@ -7,7 +7,7 @@ import { services } from "@/data/services";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
-import landscapePhoto from "@/assets/landscape-photo.jpg";
+import contactSidebar from "@/assets/contact-sidebar.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const budgetOptions = [
@@ -275,17 +275,13 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Quote card */}
-              <div className="bg-popover border border-border rounded-xl p-6">
-                <span className="font-serif text-gold text-4xl leading-none block mb-2">
-                  "
-                </span>
-                <p className="text-text-dark/80 italic text-sm leading-relaxed mb-3">
-                  Every extraordinary landscape begins with a conversation. We look forward to hearing about your vision.
-                </p>
-                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">
-                  — Principal, Elevation Landscapes
-                </p>
+              {/* Vertical image */}
+              <div className="rounded-xl overflow-hidden">
+                <img
+                  src={contactSidebar}
+                  alt="Luxury landscape design at dusk"
+                  className="w-full object-cover rounded-xl"
+                />
               </div>
             </div>
           </div>
