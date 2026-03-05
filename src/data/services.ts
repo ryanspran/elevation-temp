@@ -59,7 +59,8 @@ export const services: ServiceData[] = ([
       { title: "Piedmont Soil Expertise", description: "Decades of combined grading expertise specific to Greenville's piedmont soils" },
       { title: "Principal-Led Projects", description: "Every project supervised by a senior team member accountable to the homeowner" },
       { title: "Seamless Collaboration", description: "Seamless collaboration with Greenville's architects and engineers" },
-      { title: "Distinguished Portfolio", description: "Portfolio of luxury estates across Greenville's distinguished neighborhoods" }
+      { title: "Distinguished Portfolio", description: "Portfolio of luxury estates across Greenville's distinguished neighborhoods" },
+      { title: "Lasting Guarantee", description: "Compaction verification and comprehensive grade integrity warranty" }
     ],
     faqs: [
       { question: "How long does grading take?", answer: "2-4 days for single-zone work, and several weeks for comprehensive estate preparation involving multiple areas, drainage integration, and coordination with other trades." },
@@ -92,7 +93,8 @@ export const services: ServiceData[] = ([
       { title: "Professional Materials", description: "Schedule-rated pipe, commercial aggregate, high-performance filter fabric" },
       { title: "Custom Engineering", description: "Comprehensive site analysis and custom engineering on every project" },
       { title: "Design-First Approach", description: "Integrating drainage seamlessly into landscape plans" },
-      { title: "Referral-Built Reputation", description: "Reputation built entirely on referrals from satisfied clients" }
+      { title: "Referral-Built Reputation", description: "Reputation built entirely on referrals from satisfied clients" },
+      { title: "Lasting Protection", description: "Comprehensive system warranty with post-installation performance verification" }
     ],
     faqs: [
       { question: "How long does French drain installation take?", answer: "1-3 days for most properties; larger estates with integrated stormwater systems may take longer depending on complexity and site conditions." },
@@ -125,7 +127,8 @@ export const services: ServiceData[] = ([
       { title: "Certified Professionals", description: "Certified irrigation professionals designing for Upstate SC climate" },
       { title: "Premium Equipment", description: "Professional-grade equipment from industry-leading manufacturers" },
       { title: "Meticulous Installation", description: "Restoring lawns to pristine condition after every installation" },
-      { title: "Ongoing Support", description: "Workmanship warranties and seasonal maintenance programs" }
+      { title: "Ongoing Support", description: "Workmanship warranties and seasonal maintenance programs" },
+      { title: "Smart Technology", description: "Weather-responsive controllers with real-time data for precision water management" }
     ],
     faqs: [
       { question: "How do you approach irrigation design?", answer: "Comprehensive on-site assessment of layout, plant material, soil composition, and sun patterns — then a custom zone plan engineered for your specific property." },
@@ -158,7 +161,8 @@ export const services: ServiceData[] = ([
       { title: "Curated Portfolio", description: "Curated portfolio of high-end remediation projects across Greenville" },
       { title: "Expert Team", description: "Certified designers and horticulturists with deep Upstate SC knowledge" },
       { title: "Premium Sourcing", description: "Premium plants from specialty growers with establishment warranty" },
-      { title: "Referral-Built", description: "Reputation built entirely on referrals from discerning homeowners" }
+      { title: "Referral-Built", description: "Reputation built entirely on referrals from discerning homeowners" },
+      { title: "Post-Project Care", description: "Ongoing maintenance agreements ensuring your investment continues to thrive" }
     ],
     faqs: [
       { question: "How long does remediation take?", answer: "Typically 1-4 weeks of active work, depending on the scope of restoration required and the size of the property." },
@@ -191,7 +195,8 @@ export const services: ServiceData[] = ([
       { title: "Premium Materials", description: "Premium natural stone and high-performance recirculating systems" },
       { title: "Integrated Design-Build", description: "Fully integrated from assessment through final stone placement" },
       { title: "Limited Project Model", description: "Limited project acceptance for undivided attention to each client" },
-      { title: "Full Warranty", description: "Warranty on all structural and mechanical components" }
+      { title: "Full Warranty", description: "Warranty on all structural and mechanical components" },
+      { title: "Seasonal Maintenance", description: "Comprehensive care programs for year-round water feature performance" }
     ],
     faqs: [
       { question: "What is the typical timeline?", answer: "4-8 weeks for refined fountains and water walls; 10-16 weeks for koi ponds or multi-tier natural stone waterfalls, including design, material sourcing, and construction." },
@@ -224,7 +229,8 @@ export const services: ServiceData[] = ([
       { title: "Prestigious Portfolio", description: "Portfolio across Augusta Road, Paris Mountain, and greater Greenville" },
       { title: "Quarry-Direct Sourcing", description: "Materials sourced from respected domestic quarries, selected in person" },
       { title: "In-House Crews", description: "In-house masonry crews — no subcontracting of critical craftsmanship" },
-      { title: "Comprehensive Warranty", description: "Comprehensive installation warranty on materials and workmanship" }
+      { title: "Comprehensive Warranty", description: "Comprehensive installation warranty on materials and workmanship" },
+      { title: "Structural Longevity", description: "Engineered bases and drainage systems ensuring decades of performance" }
     ],
     faqs: [
       { question: "How long does installation take?", answer: "1-3 weeks of on-site construction, plus 2-4 weeks for design development and material sourcing from our quarry partners." },
@@ -257,7 +263,8 @@ export const services: ServiceData[] = ([
       { title: "Certified Techniques", description: "Certified in traditional dry-laid stone and modern permeable jointing" },
       { title: "Curated Sourcing", description: "Materials from premier natural stone quarries across the region" },
       { title: "Prestigious Portfolio", description: "Portfolio spanning North Main, Augusta Road, and Cliffs communities" },
-      { title: "Craftsmanship Warranty", description: "Comprehensive craftsmanship warranty on every installation" }
+      { title: "Craftsmanship Warranty", description: "Comprehensive craftsmanship warranty on every installation" },
+      { title: "Integrated Design", description: "Pathways designed to connect and unify your entire outdoor living environment" }
     ],
     faqs: [
       { question: "What stone types do you work with?", answer: "Flagstone, Tennessee crab orchard, tumbled bluestone, and Upstate SC quartzite — each selected for the specific aesthetic and performance needs of the project." },
@@ -290,7 +297,8 @@ export const services: ServiceData[] = ([
       { title: "Engineered Solutions", description: "Gravity wall engineering with site-specific drainage planning" },
       { title: "Premium Materials", description: "Premium natural boulders selected for geological integrity and character" },
       { title: "Dedicated Attention", description: "Deliberately limited client roster for dedicated attention to each project" },
-      { title: "Lasting Support", description: "Craftsmanship guarantee with post-completion support" }
+      { title: "Lasting Support", description: "Craftsmanship guarantee with post-completion support" },
+      { title: "Drainage Integration", description: "Every wall engineered with proper water management for long-term stability" }
     ],
     faqs: [
       { question: "How long does installation take?", answer: "1-3 weeks for most installations; larger multi-tiered projects with integrated plantings and drainage may extend the timeline." },
@@ -369,7 +377,8 @@ export const services: ServiceData[] = ([
       { title: "Premium Materials", description: "Travertine, Belgian block, and large-format concrete paver partnerships" },
       { title: "Engineered Bases", description: "Every installation engineered with compacted aggregate base and polymeric sand" },
       { title: "Prestigious Portfolio", description: "Curated portfolio across Greenville's most prestigious neighborhoods" },
-      { title: "Dedicated Management", description: "Workmanship warranty with dedicated project management" }
+      { title: "Dedicated Management", description: "Workmanship warranty with dedicated project management" },
+      { title: "Post-Install Support", description: "Sealing programs and maintenance guidance for lasting beauty" }
     ],
     faqs: [
       { question: "How long does patio installation take?", answer: "1-3 weeks for most installations, depending on size, design complexity, and material type." },
@@ -402,7 +411,8 @@ export const services: ServiceData[] = ([
       { title: "Premium Sourcing", description: "Travertine, natural stone, porcelain, and engineered paver sourcing" },
       { title: "Regional Expertise", description: "Upstate SC climate, soil, and building code expertise" },
       { title: "Single Point of Contact", description: "Comprehensive project management with dedicated oversight" },
-      { title: "Broad Portfolio", description: "Portfolio across Greenville, Travelers Rest, Simpsonville, Spartanburg" }
+      { title: "Broad Portfolio", description: "Portfolio across Greenville, Travelers Rest, Simpsonville, Spartanburg" },
+      { title: "Safety-First Design", description: "Slip-resistant materials and heat-dissipating surfaces engineered for pool environments" }
     ],
     faqs: [
       { question: "What materials do you recommend?", answer: "Travertine is most popular for natural heat dissipation. We also install porcelain, thermal bluestone, and cool deck pavers based on design preference and performance needs." },
@@ -435,7 +445,8 @@ export const services: ServiceData[] = ([
       { title: "Exclusive Portfolio", description: "Portfolio across Greenville, Travelers Rest, and lake communities" },
       { title: "Top Partnerships", description: "Partnerships with top natural stone and commercial appliance suppliers" },
       { title: "Senior Design Team", description: "Senior design specialist and certified hardscape artisans on every project" },
-      { title: "Full Warranty", description: "Full structural warranty with licensed utility integration" }
+      { title: "Full Warranty", description: "Full structural warranty with licensed utility integration" },
+      { title: "Licensed Utilities", description: "All gas, electrical, and plumbing by licensed Upstate SC professionals" }
     ],
     faqs: [
       { question: "What does an outdoor kitchen cost?", answer: "$40,000 to well over $150,000 depending on scope, materials, appliance specifications, and the complexity of utility integration." },
@@ -468,7 +479,8 @@ export const services: ServiceData[] = ([
       { title: "Licensed Gas Work", description: "All installations with licensed gas professionals, fully code-compliant" },
       { title: "Curated Portfolio", description: "Curated portfolio of luxury fire feature projects across Greenville" },
       { title: "Premium Materials", description: "Bluestone, travertine, granite — weather-resistant premium systems" },
-      { title: "Limited Acceptance", description: "Limited-acceptance model for focused senior-level craftsmanship" }
+      { title: "Limited Acceptance", description: "Limited-acceptance model for focused senior-level craftsmanship" },
+      { title: "Weather-Resistant Build", description: "Full construction warranty with professional sealers for year-round durability" }
     ],
     faqs: [
       { question: "Gas vs wood-burning?", answer: "Gas fire pits produce no wood smoke, ash, or airborne sparks. They ignite at a valve turn or remote touch — clean, controlled, and effortless every time." },
@@ -501,7 +513,8 @@ export const services: ServiceData[] = ([
       { title: "Specialty Sourcing", description: "Premium sourcing from specialty growers — rare specimens unavailable at retail" },
       { title: "Rigorous Installation", description: "Professional root ball preparation and laboratory-based soil amendment" },
       { title: "Seasonal Planning", description: "Dedicated seasonal planting schedules and post-installation care programs" },
-      { title: "Referral-Built", description: "Reputation built entirely on referrals from discerning homeowners" }
+      { title: "Referral-Built", description: "Reputation built entirely on referrals from discerning homeowners" },
+      { title: "Establishment Warranty", description: "Comprehensive plant warranty with ongoing care guidance for lasting health" }
     ],
     faqs: [
       { question: "What is your planting process?", answer: "Site evaluation, curated plant palette selection, and a precise installation plan including soil amendment, root ball preparation, and optimal seasonal scheduling." },
@@ -534,7 +547,8 @@ export const services: ServiceData[] = ([
       { title: "Soil Analysis", description: "Comprehensive laboratory soil analysis on every project" },
       { title: "Premium Turf", description: "Premium Bermuda and Zoysia from vetted high-grade turf farms" },
       { title: "Full-Service", description: "Full-service from soil prep through final edging and irrigation setup" },
-      { title: "Lasting Results", description: "Exceptional craftsmanship with results that hold season after season" }
+      { title: "Lasting Results", description: "Exceptional craftsmanship with results that hold season after season" },
+      { title: "Irrigation Coordination", description: "Seamless integration with irrigation systems for optimal turf establishment" }
     ],
     faqs: [
       { question: "What sod is best for Greenville?", answer: "Zoysia for dense, refined texture in mixed sun/shade; Bermuda for sun-drenched areas requiring durability and drought tolerance." },
@@ -567,7 +581,8 @@ export const services: ServiceData[] = ([
       { title: "Trade-Only Fixtures", description: "Architectural-grade LED fixtures and transformers unavailable at retail" },
       { title: "Prestigious Portfolio", description: "Portfolio across Greenville's most prestigious neighborhoods" },
       { title: "Comprehensive Warranty", description: "Workmanship warranty and structured maintenance programs" },
-      { title: "Climate Expertise", description: "Deep Upstate SC climate familiarity for lasting durability" }
+      { title: "Climate Expertise", description: "Deep Upstate SC climate familiarity for lasting durability" },
+      { title: "Future-Ready Design", description: "Transformer and wiring infrastructure sized for expansion as your landscape evolves" }
     ],
     faqs: [
       { question: "What is the design process?", answer: "On-site consultation, layered lighting plan incorporating uplighting, moonlighting, and pathway techniques, fixture selections with samples, and a detailed proposal." },
