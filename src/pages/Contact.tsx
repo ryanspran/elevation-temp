@@ -8,7 +8,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
 import contactSidebar from "@/assets/contact-sidebar.jpg";
-import heroBg from "@/assets/hero-bg.jpg";
+import contactHero from "@/assets/contact-hero.jpg";
 
 const budgetOptions = [
   "Under $10,000",
@@ -66,7 +66,7 @@ const Contact = () => {
       <section className="relative py-32 md:py-40">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
+          style={{ backgroundImage: `url(${contactHero})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/50" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
