@@ -187,31 +187,44 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/water-features.png",
     seoTitle: "Custom Water Features Greenville SC | Elevation Landscapes",
     h1: "Custom Water Features Greenville SC — Designed for Properties That Demand Something Extraordinary",
-    subheadline: "Bespoke water features — from natural stone waterfalls to custom koi ponds — bringing enduring beauty, movement, and refinement to the finest properties in Greenville and Upstate SC.",
+    subheadline: "Bespoke water features — from natural stone waterfalls to custom koi ponds — bringing enduring beauty, movement, and refinement to the finest properties in Greenville and Upstate South Carolina.",
     bodyParagraphs: [
-      "The finest outdoor living spaces share a common element — the sound, movement, and visual depth of a masterfully designed water feature. Luxury waterfall design in Greenville is not about catalog products placed in a yard. It is about composing an experience with intentionality that honors both the terrain and the homeowner's vision.",
-      "We source premium natural stone — quartzite, bluestone, fieldstone, and Upstate SC granite — selecting each piece for visual character, tonal harmony, and structural integrity. Our custom fountains in Upstate SC feature recirculating systems engineered for efficiency, longevity, and near-silent operation.",
-      "Our process is comprehensive: site grading and preparation, structural basin construction, pump and filtration integration, water-adjacent planting design, and final hand-placement of every stone. Koi pond installation in Greenville requires proper depth, biological filtration, UV clarification, and supporting planting schemes.",
-      "Sloped properties become canvases for tiered natural stone waterfalls that cascade naturally through the landscape. Level lots suit reflecting pools, formal fountains, and contemporary water walls. Every backyard water feature contractor project is custom-designed for the specific site.",
-      "A custom water feature transforms a beautiful yard into a private retreat — a place where the sound of moving water replaces the noise of the world. Aquatic design at this level is both art and engineering."
+      "The finest outdoor living spaces share a common element — the sound, movement, and visual depth of a masterfully designed water feature. At Elevation Landscapes, we design and build custom water features that are not simply installed but composed, with intentionality honoring both terrain and the aesthetic vision of each homeowner.",
+      "Our approach begins long before the first stone is placed. We study how you live outdoors, how your property moves with light, and where water creates the greatest impact. Whether you envision a natural stone waterfall cascading into a recirculating pool, a custom fountain anchoring a formal garden, or a professionally designed koi pond, we bring the same depth of craft to every commission.",
+      "Material selection separates our work from the ordinary. We source premium quartzite, bluestone, fieldstone, and locally sourced Upstate SC granite — chosen for visual character and structural integrity. Every recirculating system is engineered for efficiency, longevity, and near-silent operation, so the only sound is water moving precisely as intended.",
+      "Our aquatic design process is comprehensive — site grading, structural basin construction, pump and filtration integration, water-adjacent planting design, and final hand-placement of every stone. Nothing templated. The water feature that emerges exists nowhere else in the world.",
+      "Greenville's four-season climate offers remarkable opportunity. Sloped properties become canvases for tiered waterfall sequences. Level lots suit reflecting pools and formal fountains commanding attention from every vantage. We design for your specific site so what we build looks as though it has always belonged there.",
+      "A custom water feature is the finishing element that transforms a beautiful yard into a private retreat. Moving water softens ambient noise, draws the eye, and creates the sensation of remove that distinguishes a truly exceptional outdoor environment from one that simply photographs well."
     ],
     trustSignals: [
-      { title: "Exclusive Focus", description: "Over a decade of exclusive luxury residential focus" },
-      { title: "Premium Materials", description: "Premium natural stone and high-performance recirculating systems" },
-      { title: "Integrated Design-Build", description: "Fully integrated from assessment through final stone placement" },
-      { title: "Limited Project Model", description: "Limited project acceptance for undivided attention to each client" },
-      { title: "Full Warranty", description: "Warranty on all structural and mechanical components" },
+      { title: "Decade of Luxury Focus", description: "Exclusive residential projects including the region's most distinguished estates" },
+      { title: "Premium Stone & Systems", description: "Natural stone and high-performance recirculating systems for longevity" },
+      { title: "Fully Integrated Build", description: "Site assessment through final stone placement under complete quality control" },
+      { title: "Limited Project Model", description: "Only projects we can execute with full attention" },
+      { title: "Comprehensive Warranty", description: "Written coverage on structural and mechanical components" },
       { title: "Seasonal Maintenance", description: "Comprehensive care programs for year-round water feature performance" }
     ],
-    faqs: [
-      { question: "What is the typical timeline?", answer: "4-8 weeks for refined fountains and water walls; 10-16 weeks for koi ponds or multi-tier natural stone waterfalls, including design, material sourcing, and construction." },
-      { question: "How does Upstate SC's climate affect water features?", answer: "We install freeze-resistant plumbing, proper drainage provisions, and provide seasonal maintenance guidance to ensure year-round performance and longevity." },
-      { question: "What is the investment range?", answer: "Mid five figures for refined features; significantly more for large-scale installations involving koi ponds, multi-tier waterfalls, or integrated landscape compositions." },
-      { question: "What maintenance is required?", answer: "Periodic filter cleaning, pump inspection, and water chemistry management for ponds. We offer comprehensive maintenance programs for all our installations." },
-      { question: "Do you build koi ponds?", answer: "Yes — with proper depth engineering, biological filtration, UV clarification, and carefully designed supporting planting schemes for a balanced ecosystem." },
-      { question: "Can a water feature integrate with existing hardscape?", answer: "Absolutely — we frequently integrate water features with patios, outdoor kitchens, pool surrounds, and gardens for a cohesive outdoor living experience." }
+    processSteps: [
+      { num: "01", title: "Vision Consultation", desc: "Lifestyle, light patterns, and design goals evaluated on-site to understand where water creates the greatest impact." },
+      { num: "02", title: "Aquatic Design", desc: "Basin, pump, filtration, and stone composition engineering — every element specified for your unique property." },
+      { num: "03", title: "Master Installation", desc: "Hand-place every stone, integrate planting and mechanical systems with meticulous craftsmanship." },
+      { num: "04", title: "Seasonal Guidance", desc: "Maintenance protocols for year-round performance so your water feature thrives across every season." }
     ],
-    ctaText: "Availability for new commissions is limited by design. Call today to schedule a private consultation.",
+    testimonial: {
+      quote: "The waterfall is the centerpiece of our backyard. The stone work, the sound, the way it catches evening light — genuinely extraordinary.",
+      attribution: "Michael & Karen S., Travelers Rest"
+    },
+    faqs: [
+      { question: "How long does it take to design and install a custom water feature?", answer: "Custom fountains or smaller features typically require four to eight weeks. Fully integrated koi ponds or multi-tier natural stone waterfalls may take ten to sixteen weeks." },
+      { question: "How does Greenville's climate affect a water feature?", answer: "We design all recirculating systems with freeze-resistant plumbing, properly specified pumps, and drainage provisions protecting your investment through Upstate SC's full seasonal range." },
+      { question: "What is the typical investment range?", answer: "Refined custom fountains typically begin in the mid five figures. Koi ponds, large-scale waterfalls, or multi-element installations may represent significantly more. Transparent pricing before work begins." },
+      { question: "How much maintenance is required?", answer: "Minimal for properly designed systems — periodic filter cleaning, pump inspection, and water chemistry for ponds. We offer ongoing maintenance programs." },
+      { question: "Do you design and install koi ponds?", answer: "Yes — with appropriate depth, biological filtration, UV clarification, and planting schemes supporting fish health and water clarity. A living ecosystem and one of the most dynamic outdoor features we create." },
+      { question: "Can a water feature integrate into existing hardscape?", answer: "We frequently integrate into patios, outdoor kitchens, pool surrounds, and formal gardens. Features designed in concert with surrounding hardscape achieve cohesion standalone installations cannot." }
+    ],
+    ctaHeading: "Ready to Discover What a Custom Water Feature Could Bring to Your Property?",
+    ctaText: "Every water feature we create is a one-of-a-kind composition — engineered for your property, your lifestyle, and the Upstate climate. Schedule a private consultation to explore what's possible.",
+    urgencyText: "Availability is limited by design — call today to schedule your consultation.",
     relatedSlugs: ["natural-stone-staircases", "landscape-lighting", "paver-patios"]
   },
   {
