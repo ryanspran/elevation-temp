@@ -1,9 +1,9 @@
 
 
-**Problem:** The services dropdown menu background is too transparent, making text hard to read against the page content behind it.
+**Problem:** The overlapping/stacked photo layout on the About page looks off.
 
-**Fix:** In `src/components/Navbar.tsx`, change the dropdown background from `bg-navy/98` to a fully opaque `bg-navy` (or near-opaque with a solid fallback) for both desktop and mobile menus.
+**Fix:** Replace the stacked photo layout with a side-by-side arrangement — two photos in a row, equal size, with rounded corners and shadow. This keeps it clean and simple.
 
 **Changes:**
-1. **`src/components/Navbar.tsx`** — Update the desktop services dropdown `div` class from `bg-navy/98 backdrop-blur-md` to `bg-navy` to make it fully opaque. Same for the mobile menu container.
+1. **`src/pages/About.tsx`** — Replace the relative-positioned overlapping photo layout with a simple two-column grid showing both owner photos side by side at equal size. Remove the absolute positioning and the `hidden md:block` logic.
 
