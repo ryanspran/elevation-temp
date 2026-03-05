@@ -54,9 +54,9 @@ const ServicePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Why Choose Elevation Landscapes</h2>
           <div className="w-16 h-0.5 bg-gold mb-12" />
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-stretch">
             {/* Left: Photo */}
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-2">
               <img
                 src={service.heroImage ?? heroBg}
                 alt={service.name}
@@ -64,12 +64,12 @@ const ServicePage = () => {
               />
             </div>
             {/* Right: Cards */}
-            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
               {service.trustSignals.map((signal, i) => {
                 const icons = [Diamond, Mountain, Users, Shield, Eye, Award];
                 const Icon = icons[i % icons.length];
                 return (
-                  <div key={i} className="bg-secondary-foreground/5 backdrop-blur-md border border-secondary-foreground/10 rounded-xl p-5 flex gap-4 items-start">
+                  <div key={i} className="bg-secondary-foreground/5 backdrop-blur-md border border-secondary-foreground/10 rounded-xl p-4 flex gap-3 items-start">
                     <div className="w-10 h-10 rounded-lg bg-gold/10 flex items-center justify-center shrink-0">
                       <Icon className="h-5 w-5 text-gold" />
                     </div>
