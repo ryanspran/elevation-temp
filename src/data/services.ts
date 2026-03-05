@@ -130,31 +130,44 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/irrigation.png",
     seoTitle: "Irrigation Installation Greenville SC | Elevation Landscapes",
     h1: "Irrigation Installation in Greenville SC Engineered for the Landscape You Have Built",
-    subheadline: "Precision irrigation systems for discerning homeowners — because an extraordinary landscape demands water management that performs to the same exacting standard.",
+    subheadline: "Precision irrigation for discerning homeowners — because an extraordinary landscape demands water management built to the same exacting standard.",
     bodyParagraphs: [
-      "A landscape is only as enduring as the system sustaining it. Smart irrigation systems in Greenville must account for the region's unique combination of humid summers, periodic drought stress, and heavy clay soils that resist even moisture distribution.",
-      "We begin with thorough site assessment — topography, soil composition, plant material requirements, sun exposure patterns, and seasonal water needs. We design custom zone management systems specifically for Greenville's rolling terrain and microclimates, ensuring every area receives precisely the water it needs.",
-      "For curated gardens and specimen plantings, we integrate custom drip irrigation delivering moisture directly to root zones with zero waste. These concealed low-flow emitters protect investment-grade plantings while conserving water — a critical consideration for luxury landscape irrigation in Upstate SC.",
-      "Our smart water controllers connect to local weather data, adjusting automatically for rainfall, evapotranspiration, and seasonal changes. The result is a system that thinks — responding to conditions rather than running on fixed schedules regardless of what's happening outside.",
-      "For underperforming existing systems, our sprinkler repair services in Greenville SC restore efficiency through targeted diagnostics and recalibration — often without requiring full system replacement. We identify coverage gaps, pressure issues, and component failures with precision."
+      "A beautifully designed landscape is only as enduring as the system sustaining it. Our irrigation installation services are engineered to protect that investment — delivering precision water management keeping every lawn, garden bed, and hardscape border in peak condition through every Greenville season.",
+      "Our approach begins with thorough site assessment — topography, soil composition, plant material, and sun exposure. Greenville's rolling terrain and varied microclimates demand more than a standard grid. We design custom zone management systems ensuring each area receives precisely the water it needs, no more, no less.",
+      "For curated gardens, mature specimens, or newly established beds, we integrate custom drip irrigation delivering moisture directly to root zones with zero waste. Nearly invisible once installed, these systems preserve the clean aesthetic luxury landscapes demand while extending the life of your plantings.",
+      "Our smart irrigation systems bring intelligence older timers cannot match. Smart water controllers connect to local weather data, adjusting run times for rainfall, evapotranspiration, and seasonal shifts. Never over-watered after a Greenville thunderstorm or left dry in a summer drought — the system adapts on your behalf.",
+      "When existing systems underperform, our sprinkler repair services restore efficiency without full replacement disruption. We diagnose pressure issues, failed heads, cracked laterals, and controller malfunctions with the same rigor as new installations — a luxury property deserves a fully functional system at every stage.",
+      "Every component is professional-grade — quiet operation, years of calibration, clean integration with any aesthetic. Our installation practices include precise trenching, exact head placement, and meticulous backfill restoring your lawn and beds to pristine condition."
     ],
     trustSignals: [
-      { title: "Exclusive Residential Focus", description: "Over a decade of exclusive luxury residential focus" },
-      { title: "Certified Professionals", description: "Certified irrigation professionals designing for Upstate SC climate" },
-      { title: "Premium Equipment", description: "Professional-grade equipment from industry-leading manufacturers" },
-      { title: "Meticulous Installation", description: "Restoring lawns to pristine condition after every installation" },
-      { title: "Ongoing Support", description: "Workmanship warranties and seasonal maintenance programs" },
+      { title: "Decade of Luxury Focus", description: "Exclusive residential landscapes across Greenville and Upstate SC" },
+      { title: "Certified Professionals", description: "Systems designed for Upstate SC's specific climate and soil" },
+      { title: "Professional-Grade Equipment", description: "Industry-leading manufacturers for durability and performance" },
+      { title: "Pristine Restoration", description: "Lawns and gardens returned to pre-work condition" },
+      { title: "Warranties & Maintenance", description: "Workmanship coverage plus seasonal service programs" },
       { title: "Smart Technology", description: "Weather-responsive controllers with real-time data for precision water management" }
     ],
-    faqs: [
-      { question: "How do you approach irrigation design?", answer: "Comprehensive on-site assessment of layout, plant material, soil composition, and sun patterns — then a custom zone plan engineered for your specific property." },
-      { question: "Why is smart irrigation important in Greenville?", answer: "Greenville's humid summers, drought stress periods, and heavy seasonal rainfall demand adaptive systems that respond to actual conditions." },
-      { question: "Smart vs conventional irrigation?", answer: "Smart systems use real-time weather data to auto-adjust watering schedules; conventional systems run fixed programs regardless of conditions, leading to waste and stress." },
-      { question: "Is drip irrigation good for mature plantings?", answer: "Ideal — delivers water directly to root zones through concealed low-flow emitters, protecting investment-grade specimens while conserving water." },
-      { question: "Do I need a full system replacement?", answer: "Often not — targeted repair and recalibration can restore performance and coverage to existing systems without the cost of full replacement." },
-      { question: "What warranty is offered?", answer: "Comprehensive workmanship warranty plus ongoing seasonal maintenance programs to ensure peak performance year-round." }
+    processSteps: [
+      { num: "01", title: "Site Assessment", desc: "Topography, soil, plants, sun exposure, and microclimates evaluated to inform every design decision." },
+      { num: "02", title: "Custom Zone Design", desc: "Drip, rotary, and smart controller integration — each zone calibrated for its specific conditions." },
+      { num: "03", title: "Expert Installation", desc: "Clean trenching, precise head placement, and full lawn and garden restoration." },
+      { num: "04", title: "Ongoing Support", desc: "Seasonal adjustments and responsive service keeping your system at peak performance." }
     ],
-    ctaText: "Contact us today to schedule a consultation — extraordinary properties require extraordinary stewardship.",
+    testimonial: {
+      quote: "Elevation redesigned our irrigation with smart controllers and drip zones. Water bill dropped and the landscape has never looked better.",
+      attribution: "Jennifer & Mark H., North Main"
+    },
+    faqs: [
+      { question: "How do you approach irrigation design for a luxury property?", answer: "Comprehensive on-site assessment of layout, plants, soil, and sun patterns, then a custom zone management plan integrating with your landscape and hardscape." },
+      { question: "Why is smart irrigation important in Greenville?", answer: "Humid summers, periodic drought, and heavy rainfall demand adaptive systems. Smart water controllers auto-adjust to conditions, reducing waste and preventing disease-causing overwatering." },
+      { question: "Smart vs conventional sprinkler system?", answer: "Smart systems pull real-time weather data to adjust schedules automatically. Conventional runs fixed regardless of conditions. Result: healthier landscape, lower water use, hands-off confidence." },
+      { question: "Is drip irrigation good for established gardens?", answer: "Ideal — delivers water directly to root zones through concealed low-flow emitters. Perfect for estate beds, ornamentals, and hedgerows with zero visual impact." },
+      { question: "My system underperforms — do I need full replacement?", answer: "Often not. Pressure problems, broken heads, and controller issues frequently resolve through targeted repair. We diagnose thoroughly and present the most effective path first." },
+      { question: "Warranty and maintenance?", answer: "Workmanship warranty on every installation plus seasonal service programs for peak efficiency through Greenville's warm and cool transitions." }
+    ],
+    ctaHeading: "Ready for Irrigation That Matches Your Landscape's Standard?",
+    ctaText: "Every irrigation system we design is engineered for the specific property it serves. Schedule a consultation to discuss what your landscape needs.",
+    urgencyText: "Contact us today — extraordinary properties require extraordinary stewardship.",
     relatedSlugs: ["sod-and-seeding", "new-plant-installation", "landscape-remediation"]
   },
   {
