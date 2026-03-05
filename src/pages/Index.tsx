@@ -56,7 +56,8 @@ const Index = () => {
   ];
 
   const serviceAreas = [
-    "Greenville", "Travelers Rest", "Greer", "Simpsonville"
+    "Greenville", "Travelers Rest", "Greer", "Simpsonville",
+    "Mauldin", "Easley", "Taylors", "Spartanburg", "Anderson", "Fountain Inn"
   ];
 
   return (
@@ -353,6 +354,12 @@ const Index = () => {
                   </div>
                 ))}
               </div>
+              <p className="text-text-dark/70 text-sm leading-relaxed mb-4">
+                From custom stone patios and retaining walls in Greenville to landscape lighting installations in Greer and full outdoor kitchen builds in Simpsonville, our team delivers premium hardscaping and softscaping solutions tailored to the unique terrain and climate of Upstate South Carolina. Whether you need expert grading, underground drainage, or a complete landscape transformation, Elevation Landscapes is the trusted residential landscape architect for discerning homeowners throughout the region.
+              </p>
+              <p className="text-text-dark/70 text-sm leading-relaxed mb-4">
+                As a high-end landscape contractor in Greenville, we specialize in custom stone work, paver patios in Travelers Rest, outdoor living spaces in Greer, and drainage solutions across Upstate SC. Our residential landscape architecture blends luxury design with lasting craftsmanship — from boulder retaining walls in Simpsonville to irrigation systems in Mauldin and beyond.
+              </p>
               <p className="text-text-dark/60 text-sm leading-relaxed">
                 If you have a project in mind and would like to know whether we cover your area, please{" "}
                 <a href="#contact" className="text-gold hover:text-gold-light underline transition-colors">
