@@ -153,34 +153,26 @@ const ServicePage = () => {
 
       {/* CTA */}
       <section id="contact" className="bg-navy py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <div>
-              <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">
-                {service.ctaHeading ?? "Ready to Get Started?"}
-              </h2>
-              <div className="w-16 h-0.5 bg-gold mb-6" />
-              <p className="text-secondary-foreground/70 text-lg leading-relaxed mb-8">
-                {service.ctaText}
-              </p>
-              <a href="tel:+18641234567" className="flex items-center gap-3 text-gold text-xl font-serif hover:text-gold-light transition-colors">
-                <Phone className="h-5 w-5" />
-                (864) 123-4567
-              </a>
-            </div>
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
-              <input type="text" placeholder="Full Name" className="w-full bg-secondary-foreground/5 border border-secondary-foreground/20 rounded px-4 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-gold transition-colors" />
-              <input type="email" placeholder="Email Address" className="w-full bg-secondary-foreground/5 border border-secondary-foreground/20 rounded px-4 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-gold transition-colors" />
-              <input type="tel" placeholder="Phone Number" className="w-full bg-secondary-foreground/5 border border-secondary-foreground/20 rounded px-4 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-gold transition-colors" />
-              <textarea placeholder="Tell us about your project" rows={4} className="w-full bg-secondary-foreground/5 border border-secondary-foreground/20 rounded px-4 py-3 text-secondary-foreground placeholder:text-secondary-foreground/40 focus:outline-none focus:border-gold transition-colors resize-none" />
-              <button type="submit" className="w-full bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider">
-                Submit Inquiry
-              </button>
-              {service.urgencyText && (
-                <p className="text-gold/80 text-sm text-center mt-3 italic">{service.urgencyText}</p>
-              )}
-            </form>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">
+            {service.ctaHeading ?? "Ready to Get Started?"}
+          </h2>
+          <div className="w-16 h-0.5 bg-gold mx-auto mb-6" />
+          <p className="text-secondary-foreground/70 text-lg leading-relaxed mb-8">
+            {service.ctaText}
+          </p>
+          <Link to="/contact" className="inline-block bg-gold text-navy font-sans font-semibold px-10 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider">
+            Schedule a Consultation
+          </Link>
+          <div className="mt-8">
+            <a href="tel:+18641234567" className="inline-flex items-center gap-3 text-gold text-xl font-serif hover:text-gold-light transition-colors">
+              <Phone className="h-5 w-5" />
+              (864) 123-4567
+            </a>
           </div>
+          {service.urgencyText && (
+            <p className="text-gold/80 text-sm mt-6 italic">{service.urgencyText}</p>
+          )}
         </div>
       </section>
 
