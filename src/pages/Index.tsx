@@ -12,6 +12,7 @@ import portfolioBefore from "@/assets/portfolio-before.jpg";
 import portfolioAfter from "@/assets/portfolio-after.jpg";
 import whyUsPhoto from "@/assets/why-us-photo.jpg";
 import processPhoto from "@/assets/process-photo.jpg";
+import landscapePhoto from "@/assets/landscape-photo.jpg";
 
 const Index = () => {
   const whyUsItems = [
@@ -238,28 +239,42 @@ const Index = () => {
 
 
       {/* TESTIMONIALS */}
-      <section className="bg-cream py-20 md:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        {/* Background image with dark overlay */}
+        <div className="absolute inset-0 z-0">
+          <img src={landscapePhoto} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-navy/80" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">What Our Clients Say</h2>
+            <p className="font-sans text-xs tracking-[0.3em] uppercase text-gold mb-3">Client Reviews</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">What Our Clients Say</h2>
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((t, i) => (
-              <div key={i} className="bg-popover p-8 rounded-lg shadow-sm border border-border">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="h-4 w-4 fill-gold text-gold" />
-                  ))}
-                </div>
-                <p className="text-text-dark/70 italic mb-6 leading-relaxed">"{t.text}"</p>
-                <div>
-                  <p className="font-serif text-text-dark font-semibold">{t.name}</p>
-                  <p className="text-sm text-muted-foreground">{t.location}, Greenville</p>
-                </div>
-              </div>
-            ))}
-          </div>
+
+          <Carousel opts={{ align: "center", loop: true }} className="w-full">
+            <CarouselContent className="-ml-4">
+              {testimonials.map((t, i) => (
+                <CarouselItem key={i} className="pl-4 basis-[85%] md:basis-[60%] lg:basis-[40%]">
+                  <div className="backdrop-blur-md bg-white/10 border border-white/20 p-8 md:p-10 rounded-2xl h-full">
+                    <div className="flex gap-1 mb-5">
+                      {[...Array(5)].map((_, j) => (
+                        <Star key={j} className="h-4 w-4 fill-gold text-gold" />
+                      ))}
+                    </div>
+                    <p className="text-white/90 italic mb-6 leading-relaxed text-base">"{t.text}"</p>
+                    <div>
+                      <p className="font-serif text-white font-semibold">{t.name}</p>
+                      <p className="text-sm text-white/60">{t.location}, Greenville</p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="-left-2 md:-left-4 lg:-left-6 h-10 w-10 border-gold/40 bg-navy/80 text-gold hover:bg-gold hover:text-navy" />
+            <CarouselNext className="-right-2 md:-right-4 lg:-right-6 h-10 w-10 border-gold/40 bg-navy/80 text-gold hover:bg-gold hover:text-navy" />
+          </Carousel>
         </div>
       </section>
 
