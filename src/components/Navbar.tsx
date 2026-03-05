@@ -57,7 +57,7 @@ const Navbar = () => {
               </button>
               {isServicesOpen && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
-                  <div className="bg-navy/98 backdrop-blur-md border border-gold/20 rounded-lg shadow-2xl p-4 w-[520px] grid grid-cols-2 gap-1">
+                  <div className="bg-navy border border-gold/20 rounded-lg shadow-2xl p-4 w-[520px] grid grid-cols-2 gap-1">
                     {services.map((service) => (
                       <Link
                         key={service.slug}
@@ -104,7 +104,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMobileOpen && (
-        <div className="lg:hidden bg-navy/98 backdrop-blur-md border-t border-gold/20">
+        <div className="lg:hidden bg-navy border-t border-gold/20">
           <div className="px-4 py-6 space-y-4 max-h-[80vh] overflow-y-auto">
             <Link to="/" className="block text-secondary-foreground hover:text-gold transition-colors uppercase text-sm tracking-wider">
               Home
