@@ -114,7 +114,7 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
         event.preventDefault();
 
         wheelDeltaRef.current += delta;
-        const threshold = 24;
+        const threshold = 80;
 
         while (wheelDeltaRef.current >= threshold) {
           api.scrollNext();
