@@ -39,7 +39,20 @@ function useCarousel() {
 }
 
 const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement> & CarouselProps>(
-  ({ orientation = "horizontal", opts, setApi, plugins, className, children, ...props }, ref) => {
+  (
+    {
+      orientation = "horizontal",
+      opts,
+      setApi,
+      plugins,
+      className,
+      children,
+      onKeyDownCapture,
+      onWheelCapture,
+      ...props
+    },
+    ref,
+  ) => {
     const [carouselRef, api] = useEmblaCarousel(
       {
         ...opts,
@@ -49,6 +62,7 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
     );
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
     const [canScrollNext, setCanScrollNext] = React.useState(false);
+    const wheelDeltaRef = React.useRef(0);
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -78,6 +92,41 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
         }
       },
       [scrollPrev, scrollNext],
+    );
+
+    const handleWheel = React.useCallback(
+      (event: React.WheelEvent<HTMLDivElement>) => {
+        if (orientation !== "horizontal" || !api) {
+          return;
+        }
+
+        const hasHorizontalIntent = event.shiftKey || Math.abs(event.deltaX) > Math.abs(event.deltaY);
+        if (!hasHorizontalIntent) {
+          return;
+        }
+
+        const delta = event.shiftKey && event.deltaX === 0 ? event.deltaY : event.deltaX;
+        const canScroll = delta > 0 ? api.canScrollNext() : api.canScrollPrev();
+        if (!canScroll) {
+          return;
+        }
+
+        event.preventDefault();
+
+        wheelDeltaRef.current += delta;
+        const threshold = 24;
+
+        while (wheelDeltaRef.current >= threshold) {
+          api.scrollNext();
+          wheelDeltaRef.current -= threshold;
+        }
+
+        while (wheelDeltaRef.current <= -threshold) {
+          api.scrollPrev();
+          wheelDeltaRef.current += threshold;
+        }
+      },
+      [api, orientation],
     );
 
     React.useEffect(() => {
@@ -117,7 +166,14 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
       >
         <div
           ref={ref}
-          onKeyDownCapture={handleKeyDown}
+          onKeyDownCapture={(event) => {
+            handleKeyDown(event);
+            onKeyDownCapture?.(event);
+          }}
+          onWheelCapture={(event) => {
+            handleWheel(event);
+            onWheelCapture?.(event);
+          }}
           className={cn("relative", className)}
           role="region"
           aria-roledescription="carousel"
