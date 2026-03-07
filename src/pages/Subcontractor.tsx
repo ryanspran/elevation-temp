@@ -38,6 +38,11 @@ const reasons = [
     title: "Quality That Reflects Well on Your Business",
     body: "We know that when our work looks great, you look great — and when it falls short, that falls on you. Every project we subcontract goes through a structured quality control process that includes base compaction verification, pattern review, and a formal punch walk before we ever call the work complete. We deliver scopes that pass inspection the first time.",
   },
+  {
+    icon: Handshake,
+    title: "Built for Repeat Partnerships",
+    body: "We don't chase one-off jobs — we build long-term relationships with contractors who need a reliable hardscape partner on every project. Our systems are designed for repeat collaboration: streamlined onboarding, consistent pricing structures, and a team that already knows how you operate. The more we work together, the smoother every project runs.",
+  },
 ];
 
 const Subcontractor = () => {
