@@ -16,24 +16,26 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 text-sm">
-            <a href="/#services" className="text-secondary-foreground/70 hover:text-gold transition-colors">
-              Services
-            </a>
-            <Link to="/contact" className="text-secondary-foreground/70 hover:text-gold transition-colors">
-              Contact
-            </Link>
+          <div className="flex flex-col gap-4 text-sm">
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
+              <a href="/#services" className="text-secondary-foreground/70 hover:text-gold transition-colors">
+                Services
+              </a>
+              <Link to="/contact" className="text-secondary-foreground/70 hover:text-gold transition-colors">
+                Contact
+              </Link>
+              <a href="tel:+18641234567" className="flex items-center gap-2 text-secondary-foreground/70 hover:text-gold transition-colors">
+                <Phone className="h-4 w-4 text-gold" />
+                (864) 123-4567
+              </a>
+              <span className="flex items-center gap-2 text-secondary-foreground/70">
+                <MapPin className="h-4 w-4 text-gold" />
+                Greenville, SC
+              </span>
+            </div>
             <Link to="/subcontractor" className="text-secondary-foreground/70 hover:text-gold transition-colors">
               Need a subcontractor? Work with us
             </Link>
-            <a href="tel:+18641234567" className="flex items-center gap-2 text-secondary-foreground/70 hover:text-gold transition-colors">
-              <Phone className="h-4 w-4 text-gold" />
-              (864) 123-4567
-            </a>
-            <span className="flex items-center gap-2 text-secondary-foreground/70">
-              <MapPin className="h-4 w-4 text-gold" />
-              Greenville, SC
-            </span>
           </div>
 
           {/* Social */}
