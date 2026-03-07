@@ -177,6 +177,15 @@ const Subcontractor = () => {
                 </p>
               </div>
             ))}
+
+            {/* Photo card for symmetry */}
+            <div className="rounded-lg overflow-hidden shadow-xl">
+              <img
+                src={processPhoto}
+                alt="Elevation Landscapes crew at work on a hardscape project"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
