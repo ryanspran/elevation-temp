@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
-import { Phone, Clock, Shield, Users, Gem, MessageSquare, CheckCircle } from "lucide-react";
+import { Phone, Clock, Shield, Users, Gem, MessageSquare, CheckCircle, Handshake } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import whyUsPhoto from "@/assets/why-us-photo.jpg";
 import processPhoto from "@/assets/process-photo.jpg";
