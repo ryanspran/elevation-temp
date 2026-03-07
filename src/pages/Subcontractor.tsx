@@ -108,8 +108,8 @@ const Subcontractor = () => {
       {/* Body Intro */}
       <section className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-5 gap-12 items-stretch">
-            <div className="lg:col-span-3">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
               <span className="text-primary font-sans uppercase tracking-widest text-sm">
                 A True Construction Partner
               </span>
@@ -134,11 +134,11 @@ const Subcontractor = () => {
                 documentation. We speak your language because we operate in your world.
               </p>
             </div>
-            <div className="lg:col-span-2">
+            <div>
               <img
                 src={subcontractorIntro}
                 alt="Elevation Landscapes hardscape construction in progress"
-                className="w-full h-full object-cover rounded-lg shadow-xl"
+                className="w-full object-cover rounded-lg shadow-xl max-h-[500px]"
               />
             </div>
           </div>
