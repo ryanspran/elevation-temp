@@ -134,11 +134,11 @@ const Subcontractor = () => {
                 documentation. We speak your language because we operate in your world.
               </p>
             </div>
-            <div className="lg:col-span-2">
+            <div>
               <img
                 src={subcontractorIntro}
                 alt="Elevation Landscapes hardscape construction in progress"
-                className="w-full h-full object-cover rounded-lg shadow-xl"
+                className="w-full object-cover rounded-lg shadow-xl max-h-[500px]"
               />
             </div>
           </div>
