@@ -1,16 +1,18 @@
 
 
-## Enable Mouse Drag Scrolling on Services Carousel
+## Problem
 
-Embla Carousel (which powers the `<Carousel>` component) supports drag/mouse scrolling natively — it just needs `dragFree: true` in the options. By default Embla already enables drag on touch devices, but adding `dragFree` makes the free-scroll drag behavior more natural on desktop with a mouse.
+The file `src/assets/why-us-photo.jpg` is shared between both `Index.tsx` (home page) and `Subcontractor.tsx`. When I overwrote it with the waterfall image, it changed both pages.
 
-### Changes
+## Plan
 
-**`src/pages/Index.tsx`** (line ~155): Add `dragFree: true` to the services carousel `opts`:
+1. **Restore the original home page photo** — Save the original `why-us-photo.jpg` back (need to recover it from git/previous state).
 
-```tsx
-<Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
-```
+2. **Create a separate asset for the subcontractor page** — Save the waterfall image as a new file, e.g. `src/assets/subcontractor-why-us.jpg`.
 
-This single prop change enables mouse drag scrolling. No other files need modification — Embla handles pointer events (mouse + touch) out of the box. The `dragFree` option allows momentum-based free scrolling rather than snapping strictly to slides, which feels more natural for a browsable services list.
+3. **Update `Subcontractor.tsx`** — Change the import from `why-us-photo.jpg` to `subcontractor-why-us.jpg`.
+
+4. **Leave `Index.tsx` untouched** — It will continue using the restored `why-us-photo.jpg`.
+
+This ensures each page has its own independent image asset.
 
