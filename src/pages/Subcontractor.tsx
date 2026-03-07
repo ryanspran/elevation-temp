@@ -4,7 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Phone, Clock, Shield, Users, Gem, MessageSquare, CheckCircle, Handshake } from "lucide-react";
 import heroBg from "@/assets/subcontractor-hero.png";
-import whyUsPhoto from "@/assets/why-us-photo.jpg";
+import whyUsPhoto from "@/assets/subcontractor-why-us.jpg";
 import subcontractorIntro from "@/assets/subcontractor-intro.png";
 
 const reasons = [
