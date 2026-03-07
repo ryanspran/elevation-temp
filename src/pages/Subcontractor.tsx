@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
-import { Phone, Clock, Shield, Users, Gem, MessageSquare, CheckCircle } from "lucide-react";
+import { Phone, Clock, Shield, Users, Gem, MessageSquare, CheckCircle, Handshake } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import whyUsPhoto from "@/assets/why-us-photo.jpg";
 import processPhoto from "@/assets/process-photo.jpg";
@@ -37,6 +37,11 @@ const reasons = [
     icon: CheckCircle,
     title: "Quality That Reflects Well on Your Business",
     body: "We know that when our work looks great, you look great — and when it falls short, that falls on you. Every project we subcontract goes through a structured quality control process that includes base compaction verification, pattern review, and a formal punch walk before we ever call the work complete. We deliver scopes that pass inspection the first time.",
+  },
+  {
+    icon: Handshake,
+    title: "Built for Repeat Partnerships",
+    body: "We don't chase one-off jobs — we build long-term relationships with contractors who need a reliable hardscape partner on every project. Our systems are designed for repeat collaboration: streamlined onboarding, consistent pricing structures, and a team that already knows how you operate. The more we work together, the smoother every project runs.",
   },
 ];
 
@@ -178,14 +183,6 @@ const Subcontractor = () => {
               </div>
             ))}
 
-            {/* Photo card for symmetry */}
-            <div className="rounded-lg overflow-hidden shadow-xl">
-              <img
-                src={processPhoto}
-                alt="Elevation Landscapes crew at work on a hardscape project"
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>
