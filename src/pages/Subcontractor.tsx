@@ -188,25 +188,30 @@ const Subcontractor = () => {
       </section>
 
       {/* CTA Band */}
-      <section className="py-16 bg-primary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl text-primary-foreground mb-4">
+      <section className="relative py-16 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        />
+        <div className="absolute inset-0 bg-navy/80" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">
             Ready to Partner?
           </h2>
-          <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8 text-lg">
+          <p className="text-secondary-foreground/80 max-w-2xl mx-auto mb-8 text-lg">
             Let's discuss your next project. We'll walk through your scope, timeline, and
             expectations — and show you why the best GCs in Upstate SC trust Elevation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-navy text-secondary-foreground px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-navy/90 transition-all"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-primary/90 transition-all"
             >
               Schedule a Consultation
             </Link>
             <a
               href="tel:+18641234567"
-              className="border border-navy text-navy px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-navy hover:text-secondary-foreground transition-all flex items-center justify-center gap-2"
+              className="border border-gold text-gold px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-gold hover:text-navy transition-all flex items-center justify-center gap-2"
             >
               <Phone className="h-4 w-4" />
               Call Now
