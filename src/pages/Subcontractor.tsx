@@ -72,20 +72,20 @@ const Subcontractor = () => {
           style={{ backgroundImage: `url(${heroBg})` }}
         />
         <div className="absolute inset-0 bg-navy/75" />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-secondary-foreground leading-tight mb-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left py-32">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-secondary-foreground leading-tight mb-6 max-w-4xl">
             Hardscape and Landscape Subcontractor in Greenville, SC{" "}
             <span className="block text-gold mt-2 text-2xl sm:text-3xl md:text-4xl font-sans tracking-wide">
               Built for General Contractors Who Can't Afford a Bad Sub
             </span>
           </h1>
-          <p className="text-secondary-foreground/80 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed mb-10">
+          <p className="text-secondary-foreground/80 text-base sm:text-lg max-w-3xl leading-relaxed mb-10">
             Elevation Landscapes partners with general contractors, custom home builders, and
             landscape companies across Upstate South Carolina as a trusted hardscape and landscape
             subcontractor — bringing licensed crews, full insurance, and the on-time performance your
             schedule depends on.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/contact"
               className="bg-primary text-primary-foreground px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-primary/90 transition-all"
