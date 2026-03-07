@@ -13,6 +13,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import AdminLogin from "./pages/AdminLogin";
 import Admin from "./pages/Admin";
+import Subcontractor from "./pages/Subcontractor";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
+            <Route path="/subcontractor" element={<Subcontractor />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin"

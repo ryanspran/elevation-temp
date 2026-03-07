@@ -23,6 +23,9 @@ const Footer = () => {
             <Link to="/contact" className="text-secondary-foreground/70 hover:text-gold transition-colors">
               Contact
             </Link>
+            <Link to="/subcontractor" className="text-secondary-foreground/70 hover:text-gold transition-colors">
+              Need a subcontractor? Work with us
+            </Link>
             <a href="tel:+18641234567" className="flex items-center gap-2 text-secondary-foreground/70 hover:text-gold transition-colors">
               <Phone className="h-4 w-4 text-gold" />
               (864) 123-4567
