@@ -108,7 +108,7 @@ const Subcontractor = () => {
       {/* Body Intro */}
       <section className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-5 gap-12 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="lg:col-span-3">
               <span className="text-primary font-sans uppercase tracking-widest text-sm">
                 A True Construction Partner
