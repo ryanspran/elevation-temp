@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Phone, Clock, Shield, Users, Gem, MessageSquare, CheckCircle, Handshake } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import whyUsPhoto from "@/assets/why-us-photo.jpg";
-import processPhoto from "@/assets/process-photo.jpg";
+import subcontractorIntro from "@/assets/subcontractor-intro.png";
 
 const reasons = [
   {
@@ -136,7 +136,7 @@ const Subcontractor = () => {
             </div>
             <div className="lg:col-span-2">
               <img
-                src={processPhoto}
+                src={subcontractorIntro}
                 alt="Elevation Landscapes hardscape construction in progress"
                 className="w-full aspect-[3/4] object-cover rounded-lg shadow-xl"
               />
