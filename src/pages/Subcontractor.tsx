@@ -136,7 +136,7 @@ const Subcontractor = () => {
             </div>
             <div className="lg:col-span-2">
               <img
-                src={processPhoto}
+                src={subcontractorIntro}
                 alt="Elevation Landscapes hardscape construction in progress"
                 className="w-full aspect-[3/4] object-cover rounded-lg shadow-xl"
               />
