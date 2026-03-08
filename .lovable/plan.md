@@ -1,16 +1,38 @@
 
 
-## Enable Mouse Drag Scrolling on Services Carousel
+## Build a Standalone FAQ / Knowledge Base Page
 
-Embla Carousel (which powers the `<Carousel>` component) supports drag/mouse scrolling natively — it just needs `dragFree: true` in the options. By default Embla already enables drag on touch devices, but adding `dragFree` makes the free-scroll drag behavior more natural on desktop with a mouse.
+### What We're Building
+A dedicated `/faq` page with an accordion layout covering common landscaping questions organized by category (Project Planning, Costs & Pricing, Materials, Maintenance, Permits & HOA). Includes FAQPage JSON-LD structured data for Google "People Also Ask" rich snippets, plus a CTA to the contact page.
 
-### Changes
+### Plan
 
-**`src/pages/Index.tsx`** (line ~155): Add `dragFree: true` to the services carousel `opts`:
+1. **Create `src/pages/FAQ.tsx`**
+   - Hero section matching the existing page pattern (Navbar, SEOHead, hero with title/subtitle)
+   - Category sections with questions grouped under headings (e.g., "Project Planning," "Costs & Pricing," "Materials & Design," "Maintenance," "Permits & HOA")
+   - Each category uses the existing `Accordion` component for expandable Q&A
+   - ~20-25 curated questions relevant to Upstate SC landscaping
+   - Bottom CTA section linking to `/contact`
+   - FAQPage + BreadcrumbList JSON-LD structured data
 
-```tsx
-<Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
-```
+2. **Update `src/App.tsx`**
+   - Add route: `/faq` → `<FAQ />`
 
-This single prop change enables mouse drag scrolling. No other files need modification — Embla handles pointer events (mouse + touch) out of the box. The `dragFree` option allows momentum-based free scrolling rather than snapping strictly to slides, which feels more natural for a browsable services list.
+3. **Update `src/components/Navbar.tsx`**
+   - Add "FAQ" link to both desktop and mobile navigation
+
+4. **Update `public/sitemap.xml`**
+   - Add `/faq` entry
+
+5. **Update `src/components/Footer.tsx`**
+   - Add FAQ link to the footer navigation
+
+### Sample FAQ Categories
+- **Project Planning**: Timelines, consultation process, best season to start
+- **Costs & Pricing**: Ballpark ranges, payment terms, what affects cost
+- **Materials & Design**: Stone vs pavers, drainage considerations, lighting options
+- **Maintenance**: Seasonal care, irrigation, plant health
+- **Permits & HOA**: When permits are needed, HOA navigation, setback requirements
+
+All FAQ content will be hardcoded with SEO-optimized answers specific to the Upstate SC market. The FAQPage schema will make these eligible for rich snippets in Google search results.
 
