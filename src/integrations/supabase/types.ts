@@ -14,6 +14,72 @@ export type Database = {
   }
   public: {
     Tables: {
+      plants: {
+        Row: {
+          bloom_time_color: string | null
+          botanical_name: string | null
+          common_name: string
+          fall_color: string | null
+          guide_category: string | null
+          id: number
+          landscape_use: string | null
+          maintenance_level: string | null
+          mature_size: string | null
+          photo_url: string | null
+          plant_type: string | null
+          sc_native: boolean | null
+          soil_preferences: string | null
+          special_features: string | null
+          sun_category: string | null
+          sun_requirements: string | null
+          water_category: string | null
+          water_needs: string | null
+          wildlife_value: string | null
+        }
+        Insert: {
+          bloom_time_color?: string | null
+          botanical_name?: string | null
+          common_name: string
+          fall_color?: string | null
+          guide_category?: string | null
+          id?: never
+          landscape_use?: string | null
+          maintenance_level?: string | null
+          mature_size?: string | null
+          photo_url?: string | null
+          plant_type?: string | null
+          sc_native?: boolean | null
+          soil_preferences?: string | null
+          special_features?: string | null
+          sun_category?: string | null
+          sun_requirements?: string | null
+          water_category?: string | null
+          water_needs?: string | null
+          wildlife_value?: string | null
+        }
+        Update: {
+          bloom_time_color?: string | null
+          botanical_name?: string | null
+          common_name?: string
+          fall_color?: string | null
+          guide_category?: string | null
+          id?: never
+          landscape_use?: string | null
+          maintenance_level?: string | null
+          mature_size?: string | null
+          photo_url?: string | null
+          plant_type?: string | null
+          sc_native?: boolean | null
+          soil_preferences?: string | null
+          special_features?: string | null
+          sun_category?: string | null
+          sun_requirements?: string | null
+          water_category?: string | null
+          water_needs?: string | null
+          wildlife_value?: string | null
+        }
+        Relationships: []
+      }
       seo_metadata: {
         Row: {
           description: string

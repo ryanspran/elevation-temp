@@ -17,6 +17,8 @@ import Subcontractor from "./pages/Subcontractor";
 import Articles from "./pages/Articles";
 import ArticlePage from "./pages/ArticlePage";
 import FAQ from "./pages/FAQ";
+import PlantGuide from "./pages/PlantGuide";
+import PlantDetail from "./pages/PlantDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +41,8 @@ const App = () => (
             <Route path="/articles" element={<Articles />} />
             <Route path="/articles/:slug" element={<ArticlePage />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/plant-guide" element={<PlantGuide />} />
+            <Route path="/plant-guide/:id" element={<PlantDetail />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin"

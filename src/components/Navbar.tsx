@@ -85,6 +85,16 @@ const Navbar = () => {
               About
             </Link>
             <Link
+              to="/plant-guide"
+              className={`font-sans text-sm tracking-wider transition-colors uppercase ${
+                location.pathname.startsWith("/plant-guide")
+                  ? "text-gold"
+                  : "text-secondary-foreground hover:text-gold"
+              }`}
+            >
+              Plant Guide
+            </Link>
+            <Link
               to="/contact"
               className="font-sans text-sm tracking-wider border border-gold text-gold px-5 py-2 rounded hover:bg-gold hover:text-navy transition-all uppercase"
             >
@@ -136,6 +146,16 @@ const Navbar = () => {
             </Link>
             <Link to="/about" className="block text-secondary-foreground hover:text-gold transition-colors uppercase text-sm tracking-wider">
               About
+            </Link>
+            <Link
+              to="/plant-guide"
+              className={`block text-sm tracking-wider uppercase transition-colors ${
+                location.pathname.startsWith("/plant-guide")
+                  ? "text-gold"
+                  : "text-secondary-foreground hover:text-gold"
+              }`}
+            >
+              Plant Guide
             </Link>
             <Link to="/contact" className="block border border-gold text-gold px-5 py-2 rounded text-center hover:bg-gold hover:text-navy transition-all uppercase text-sm tracking-wider">
               Contact

@@ -34,6 +34,9 @@ const Footer = () => {
               </span>
             </div>
             <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
+              <Link to="/plant-guide" className="text-secondary-foreground/70 hover:text-gold transition-colors">
+                Plant Guide
+              </Link>
               <Link to="/articles" className="text-secondary-foreground/70 hover:text-gold transition-colors">
                 Articles
               </Link>
