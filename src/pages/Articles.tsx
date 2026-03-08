@@ -151,7 +151,7 @@ const Articles = () => {
       </section>
 
       {/* Popular Articles — Bento */}
-      <section className="bg-cream-alt py-16 md:py-20">
+      <section className="bg-cream-alt py-10 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl text-navy mb-8">Popular Articles</h2>
           <div className="grid lg:grid-cols-5 gap-6">
@@ -170,7 +170,7 @@ const Articles = () => {
       </section>
 
       {/* Latest Articles */}
-      <section className="bg-background py-16 md:py-20">
+      <section className="bg-background py-10 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl text-navy mb-8">Latest Articles</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
