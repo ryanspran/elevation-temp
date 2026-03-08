@@ -271,8 +271,6 @@ const ArticlePage = () => {
 
   if (!article) return <Navigate to="/articles" replace />;
 
-  // Insert detail image after the 3rd section
-  const insertImageAfter = 3;
 
   return (
     <>
