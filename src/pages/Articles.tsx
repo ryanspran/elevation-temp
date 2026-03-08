@@ -2,17 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
-import {
-  Breadcrumb,
-  BreadcrumbList,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbSeparator,
-  BreadcrumbPage,
-} from "@/components/ui/breadcrumb";
 
-import heroImg from "@/assets/landscape-photo.jpg";
+import heroImg from "@/assets/articles-hero.jpg";
 import img1 from "@/assets/services/block-walls.jpg";
 import img2 from "@/assets/services/outdoor-kitchens.jpg";
 import img3 from "@/assets/services/sod-seeding.jpg";
@@ -146,26 +137,11 @@ const Articles = () => {
       {/* Hero */}
       <section className="relative h-[340px] md:h-[400px] flex items-end">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-navy/75" />
+          <img src={heroImg} alt="Luxury landscaped backyard" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-navy/70" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-12">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link to="/" className="text-gold-light/70 hover:text-gold">
-                    Home
-                  </Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator className="text-gold-light/40" />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="text-gold-light">Articles</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="font-serif text-4xl md:text-5xl text-secondary-foreground mt-4">
+          <h1 className="font-serif text-4xl md:text-5xl text-secondary-foreground">
             Landscape Insights
           </h1>
           <p className="text-gold-light/70 font-sans mt-2 max-w-lg">
