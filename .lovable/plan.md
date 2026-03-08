@@ -1,16 +1,18 @@
 
 
-## Enable Mouse Drag Scrolling on Services Carousel
+## Enable Mouse Drag Scrolling on Seasonal Picks
 
-Embla Carousel (which powers the `<Carousel>` component) supports drag/mouse scrolling natively — it just needs `dragFree: true` in the options. By default Embla already enables drag on touch devices, but adding `dragFree` makes the free-scroll drag behavior more natural on desktop with a mouse.
+The seasonal picks section uses a plain `overflow-x-auto` div, so dragging grabs the image instead of scrolling. Fix by adding mouse-drag-to-scroll behavior and preventing image drag.
 
 ### Changes
 
-**`src/pages/Index.tsx`** (line ~155): Add `dragFree: true` to the services carousel `opts`:
+**`src/pages/PlantGuide.tsx`** — `SeasonalPicks` component:
 
-```tsx
-<Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
-```
+1. Add `useRef` + mouse event handlers (`onMouseDown`, `onMouseMove`, `onMouseUp`, `onMouseLeave`) on the scroll container to implement click-and-drag horizontal scrolling
+2. Track `isDown`, `startX`, `scrollLeft` in a ref to calculate drag delta
+3. Add `select-none` and `cursor-grab` / `cursor-grabbing` classes
+4. Add `draggable={false}` and `pointer-events-none` on the `<img>` elements to prevent browser image drag
+5. Prevent navigation on drag: track if a drag occurred, and use `onClick` with `e.preventDefault()` on the `<Link>` elements when dragging (so clicking still works, but drag doesn't navigate)
 
-This single prop change enables mouse drag scrolling. No other files need modification — Embla handles pointer events (mouse + touch) out of the box. The `dragFree` option allows momentum-based free scrolling rather than snapping strictly to slides, which feels more natural for a browsable services list.
+No other files need changes.
 
