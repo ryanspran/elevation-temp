@@ -19,6 +19,7 @@ import ArticlePage from "./pages/ArticlePage";
 import FAQ from "./pages/FAQ";
 import PlantGuide from "./pages/PlantGuide";
 import PlantDetail from "./pages/PlantDetail";
+import PlantRedirect from "./pages/PlantRedirect";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,7 +43,9 @@ const App = () => (
             <Route path="/articles/:slug" element={<ArticlePage />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/plant-guide" element={<PlantGuide />} />
-            <Route path="/plant-guide/:id" element={<PlantDetail />} />
+            <Route path="/plants/:slug" element={<PlantDetail />} />
+            {/* Legacy redirect: /plant-guide/:id → /plants/:slug */}
+            <Route path="/plant-guide/:id" element={<PlantRedirect />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin"

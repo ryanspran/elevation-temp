@@ -4,20 +4,19 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { Skeleton } from "@/components/ui/skeleton";
-import { usePlant } from "@/hooks/usePlant";
+import { usePlantBySlug } from "@/hooks/usePlant";
 import { usePlants } from "@/hooks/usePlants";
 import { useState } from "react";
 import { toast } from "sonner";
 
 const PlantDetail = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const location = useLocation();
-  const plantId = id ? parseInt(id, 10) : undefined;
-  const { data: plant, isLoading, error } = usePlant(plantId);
+  const { data: plant, isLoading, error } = usePlantBySlug(slug);
   const { data: allPlants } = usePlants();
 
   const sortedPlants = allPlants ?? [];
-  const currentIndex = sortedPlants.findIndex((p) => p.id === plantId);
+  const currentIndex = sortedPlants.findIndex((p) => p.slug === slug);
   const prevPlant = currentIndex > 0 ? sortedPlants[currentIndex - 1] : null;
   const nextPlant = currentIndex >= 0 && currentIndex < sortedPlants.length - 1 ? sortedPlants[currentIndex + 1] : null;
 
@@ -65,23 +64,41 @@ const PlantDetail = () => {
     }
   };
 
+  // SEO
+  const seoTitle = plant
+    ? `${plant.common_name} — Growing Guide for Greenville SC | Elevation Landscapes`
+    : "Plant Guide — Elevation Landscapes";
+
+  const seoDescription = plant
+    ? `${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""}: ${plant.sun_requirements || "Various sun"}, ${plant.water_needs || "Moderate"} water, ${plant.mature_size || "Various sizes"}. Expert guide for Upstate SC Zones 7b-8a. View growing conditions, landscape uses, and seasonal interest.`
+    : "Plant details for Upstate SC landscapes.";
+
   const jsonLd = plant
     ? [
         {
           "@context": "https://schema.org",
-          "@type": "Article",
-          name: `${plant.common_name} — Plant Guide`,
-          description: `Learn about ${plant.common_name} (${plant.botanical_name}) for Upstate SC landscapes.`,
-          url: `https://elevationlandscapes.com/plant-guide/${plant.id}`,
+          "@type": "WebPage",
+          name: plant.common_name,
+          description: `${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""}. ${plant.special_features || ""} ${plant.landscape_use ? `Landscape use: ${plant.landscape_use}.` : ""}`.trim(),
+          url: `https://elevationlandscapes.com/plants/${plant.slug}`,
           image: plant.photo_url || undefined,
+          publisher: {
+            "@type": "LocalBusiness",
+            name: "Elevation Landscapes",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Greenville",
+              addressRegion: "SC",
+            },
+          },
         },
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "Home", item: "https://elevationlandscapes.com/" },
-            { "@type": "ListItem", position: 2, name: "Plant Guide", item: "https://elevationlandscapes.com/plant-guide" },
-            { "@type": "ListItem", position: 3, name: plant.common_name, item: `https://elevationlandscapes.com/plant-guide/${plant.id}` },
+            { "@type": "ListItem", position: 2, name: "Plant Directory", item: "https://elevationlandscapes.com/plant-guide" },
+            { "@type": "ListItem", position: 3, name: plant.common_name, item: `https://elevationlandscapes.com/plants/${plant.slug}` },
           ],
         },
       ]
@@ -94,10 +111,10 @@ const PlantDetail = () => {
   return (
     <>
       <SEOHead
-        page={`plant-${plantId}`}
-        fallbackTitle={plant ? `${plant.common_name} | Plant Guide — Elevation Landscapes` : "Plant Guide — Elevation Landscapes"}
-        fallbackDescription={plant ? `${plant.common_name} (${plant.botanical_name}) — ${plant.special_features}. Perfect for Upstate SC landscapes.` : "Plant details for Upstate SC landscapes."}
-        path={`/plant-guide/${plantId}`}
+        page={`plant-${slug}`}
+        fallbackTitle={seoTitle}
+        fallbackDescription={seoDescription}
+        path={`/plants/${slug}`}
         jsonLd={jsonLd}
         ogImageOverride={ogImageUrl}
       />
@@ -118,10 +135,8 @@ const PlantDetail = () => {
           <section className="bg-navy pb-10 pt-4">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid md:grid-cols-2 gap-8 items-start">
-                {/* Left — Photo */}
                 <PlantPhoto plant={plant} />
 
-                {/* Right — Info */}
                 <div className="flex flex-col justify-center">
                   <div className="flex flex-wrap gap-2 mb-3">
                     {plant.plant_type && (
@@ -198,13 +213,13 @@ const PlantDetail = () => {
           <section className="bg-navy py-8 border-t border-gold/10 print:hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
               {prevPlant ? (
-                <Link to={`/plant-guide/${prevPlant.id}${location.search}`} className="inline-flex items-center gap-2 border border-gold/40 text-gold px-5 py-2.5 rounded hover:bg-gold hover:text-primary-foreground transition-all text-sm uppercase tracking-wider font-sans">
+                <Link to={`/plants/${prevPlant.slug}${location.search}`} className="inline-flex items-center gap-2 border border-gold/40 text-gold px-5 py-2.5 rounded hover:bg-gold hover:text-primary-foreground transition-all text-sm uppercase tracking-wider font-sans">
                   <ChevronLeft className="h-4 w-4" />
                   {prevPlant.common_name}
                 </Link>
               ) : <div />}
               {nextPlant ? (
-                <Link to={`/plant-guide/${nextPlant.id}${location.search}`} className="inline-flex items-center gap-2 border border-gold/40 text-gold px-5 py-2.5 rounded hover:bg-gold hover:text-primary-foreground transition-all text-sm uppercase tracking-wider font-sans">
+                <Link to={`/plants/${nextPlant.slug}${location.search}`} className="inline-flex items-center gap-2 border border-gold/40 text-gold px-5 py-2.5 rounded hover:bg-gold hover:text-primary-foreground transition-all text-sm uppercase tracking-wider font-sans">
                   {nextPlant.common_name}
                   <ChevronRight className="h-4 w-4" />
                 </Link>
