@@ -87,6 +87,10 @@ const PlantDetail = () => {
       ]
     : undefined;
 
+  const ogImageUrl = plant
+    ? `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/generate-plant-og?id=${plant.id}`
+    : undefined;
+
   return (
     <>
       <SEOHead
@@ -95,6 +99,7 @@ const PlantDetail = () => {
         fallbackDescription={plant ? `${plant.common_name} (${plant.botanical_name}) — ${plant.special_features}. Perfect for Upstate SC landscapes.` : "Plant details for Upstate SC landscapes."}
         path={`/plant-guide/${plantId}`}
         jsonLd={jsonLd}
+        ogImageOverride={ogImageUrl}
       />
       <Navbar />
 
