@@ -91,7 +91,7 @@ function SeasonalPicks({ plants }: { plants: Plant[] }) {
           {picks.map((plant) => (
             <Link
               key={plant.id}
-              to={`/plant-guide/${plant.id}`}
+              to={`/plants/${plant.slug}`}
               onClick={onLinkClick}
               className="shrink-0 w-48 md:w-56 bg-card-dark rounded-lg overflow-hidden border border-gold/10 hover:border-gold/30 transition-all group"
             >
