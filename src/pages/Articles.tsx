@@ -34,12 +34,13 @@ const popularArticles: Article[] = [
     slug: "outdoor-kitchen-greenville",
   },
   {
-    id: 1,
-    title: "The Ultimate Guide to Retaining Wall Design",
+    id: 5,
+    title: "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Greenville, SC",
     excerpt:
-      "Discover how engineered retaining walls can transform sloped terrain into functional outdoor living space while adding lasting value to your property.",
-    category: "Hardscaping",
-    image: img1,
+      "Discover how professional landscape lighting can enhance curb appeal, increase security, and extend your outdoor living space in the Upstate.",
+    category: "Design Tips",
+    image: img5,
+    slug: "landscape-lighting-greenville",
   },
   {
     id: 3,
