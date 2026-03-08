@@ -12,6 +12,7 @@ import img3 from "@/assets/articles/retaining-walls-hero.jpg";
 import img4 from "@/assets/articles/outdoor-living-hero.jpg";
 import img5 from "@/assets/articles/landscape-lighting-hero.jpg";
 import img6 from "@/assets/articles/drainage-hero.jpg";
+import plantDirectoryImg from "@/assets/articles/plant-directory-hero.jpg";
 
 interface Article {
   id: number;
@@ -62,6 +63,15 @@ const latestArticles: Article[] = [
     category: "Outdoor Living",
     image: img4,
     slug: "outdoor-living-greenville",
+  },
+  {
+    id: 8,
+    title: "Transform Your Greenville Landscape with Our Comprehensive Plant & Tree Directory",
+    excerpt:
+      "Discover our 250-plant directory tailored for Upstate SC's climate — filter by sun, water, soil, and native status to plan your perfect yard.",
+    category: "Plant Guide",
+    image: plantDirectoryImg,
+    slug: "plant-directory-greenville",
   },
   {
     id: 1,
