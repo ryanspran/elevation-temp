@@ -23,12 +23,29 @@ const PlantDetail = () => {
 
   const backUrl = `/plant-guide${location.search}`;
 
-  const handleShare = () => {
-    navigator.clipboard.writeText(window.location.href).then(() => {
+  const handleShare = async () => {
+    const url = window.location.href;
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(url);
+      } else {
+        const textarea = document.createElement("textarea");
+        textarea.value = url;
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+      }
       toast("Link copied to clipboard", {
         style: { background: "hsl(225 24% 19%)", color: "hsl(40 33% 96%)", border: "1px solid hsl(40 50% 54% / 0.3)" },
       });
-    });
+    } catch {
+      toast("Could not copy link", {
+        style: { background: "hsl(225 24% 19%)", color: "hsl(40 33% 96%)", border: "1px solid hsl(0 60% 50% / 0.3)" },
+      });
+    }
   };
 
   const jsonLd = plant
