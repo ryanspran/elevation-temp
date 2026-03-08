@@ -1,6 +1,6 @@
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { Search, Leaf, TreePine, SlidersHorizontal } from "lucide-react";
+import { Search, Leaf, TreePine, SlidersHorizontal, X } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -15,13 +15,29 @@ import PlantCard from "@/components/PlantCard";
 
 const ITEMS_PER_PAGE = 24;
 
-/* ── helpers to read/write URL params ── */
+/* ── URL param helpers ── */
 function parseList(val: string | null): string[] {
   return val ? val.split(",").filter(Boolean) : [];
 }
-
 function serializeList(arr: string[]): string | undefined {
   return arr.length > 0 ? arr.join(",") : undefined;
+}
+
+/* ── Active filter count ── */
+function countActiveFilters(f: FilterState): number {
+  return (f.native ? 1 : 0) + f.categories.length + f.types.length + f.sun.length + f.water.length + f.maintenance.length;
+}
+
+/* ── Active filter pills data ── */
+function getActiveFilterPills(f: FilterState): { group: keyof Omit<FilterState, "native"> | "native"; value: string }[] {
+  const pills: { group: keyof Omit<FilterState, "native"> | "native"; value: string }[] = [];
+  if (f.native) pills.push({ group: "native", value: "SC Native" });
+  for (const v of f.categories) pills.push({ group: "categories", value: v });
+  for (const v of f.types) pills.push({ group: "types", value: v });
+  for (const v of f.sun) pills.push({ group: "sun", value: v });
+  for (const v of f.water) pills.push({ group: "water", value: v });
+  for (const v of f.maintenance) pills.push({ group: "maintenance", value: v });
+  return pills;
 }
 
 const PlantGuide = () => {
@@ -44,6 +60,27 @@ const PlantGuide = () => {
   const searchQuery = searchParams.get("q") || "";
   const sortBy = searchParams.get("sort") || "az";
 
+  // Debounced search
+  const [searchInput, setSearchInput] = useState(searchQuery);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSearchParams((prev) => {
+        const p = new URLSearchParams(prev);
+        if (searchInput.trim()) p.set("q", searchInput.trim());
+        else p.delete("q");
+        return p;
+      }, { replace: true });
+      setVisibleCount(ITEMS_PER_PAGE);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [searchInput, setSearchParams]);
+
+  // Sync searchInput when URL changes externally
+  useEffect(() => {
+    const urlQ = searchParams.get("q") || "";
+    setSearchInput((prev) => prev !== urlQ && document.activeElement?.tagName !== "INPUT" ? urlQ : prev);
+  }, [searchParams]);
+
   const updateParams = useCallback((updates: Record<string, string | undefined>) => {
     const params = new URLSearchParams(searchParams);
     for (const [key, val] of Object.entries(updates)) {
@@ -54,7 +91,6 @@ const PlantGuide = () => {
     setVisibleCount(ITEMS_PER_PAGE);
   }, [searchParams, setSearchParams]);
 
-  const setSearch = (q: string) => updateParams({ q: q || undefined });
   const setSort = (sort: string) => updateParams({ sort: sort === "az" ? undefined : sort });
 
   const handleToggle = useCallback((group: keyof Omit<FilterState, "native">, value: string) => {
@@ -74,12 +110,19 @@ const PlantGuide = () => {
     setVisibleCount(ITEMS_PER_PAGE);
   }, [searchQuery, setSearchParams]);
 
+  const handleRemovePill = useCallback((group: string, value: string) => {
+    if (group === "native") {
+      handleNativeToggle(false);
+    } else {
+      handleToggle(group as keyof Omit<FilterState, "native">, value);
+    }
+  }, [handleNativeToggle, handleToggle]);
+
   // Filter + sort
   const filtered = useMemo(() => {
     if (!plants) return [];
     let result = plants;
 
-    // Search
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
       result = result.filter((p) =>
@@ -91,10 +134,7 @@ const PlantGuide = () => {
       );
     }
 
-    // Native
     if (filters.native) result = result.filter((p) => p.sc_native);
-
-    // Multi-select filters (OR within group)
     if (filters.categories.length)
       result = result.filter((p) => p.guide_category && filters.categories.includes(p.guide_category));
     if (filters.types.length)
@@ -106,26 +146,20 @@ const PlantGuide = () => {
     if (filters.maintenance.length)
       result = result.filter((p) => p.maintenance_level && filters.maintenance.includes(p.maintenance_level));
 
-    // Sort
     const sorted = [...result];
     switch (sortBy) {
-      case "za":
-        sorted.sort((a, b) => b.common_name.localeCompare(a.common_name));
-        break;
-      case "category":
-        sorted.sort((a, b) => (a.guide_category || "").localeCompare(b.guide_category || ""));
-        break;
-      case "native":
-        sorted.sort((a, b) => (b.sc_native ? 1 : 0) - (a.sc_native ? 1 : 0));
-        break;
-      default:
-        sorted.sort((a, b) => a.common_name.localeCompare(b.common_name));
+      case "za": sorted.sort((a, b) => b.common_name.localeCompare(a.common_name)); break;
+      case "category": sorted.sort((a, b) => (a.guide_category || "").localeCompare(b.guide_category || "")); break;
+      case "native": sorted.sort((a, b) => (b.sc_native ? 1 : 0) - (a.sc_native ? 1 : 0)); break;
+      default: sorted.sort((a, b) => a.common_name.localeCompare(b.common_name));
     }
     return sorted;
   }, [plants, searchQuery, filters, sortBy]);
 
   const visiblePlants = filtered.slice(0, visibleCount);
   const hasMore = visibleCount < filtered.length;
+  const activeFilterCount = countActiveFilters(filters);
+  const activePills = getActiveFilterPills(filters);
 
   const jsonLd = [
     {
@@ -186,11 +220,21 @@ const PlantGuide = () => {
           <div className="max-w-lg mx-auto relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gold/60" />
             <Input
-              value={searchQuery}
-              onChange={(e) => setSearch(e.target.value)}
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
               placeholder="Search by name, type, or category…"
-              className="pl-12 h-12 bg-card-dark border-gold/20 text-secondary-foreground placeholder:text-secondary-foreground/40 focus-visible:ring-gold/50"
+              aria-label="Search plants"
+              className="pl-12 pr-10 h-12 bg-card-dark border-gold/20 text-secondary-foreground placeholder:text-secondary-foreground/40 focus-visible:ring-gold/50"
             />
+            {searchInput && (
+              <button
+                onClick={() => setSearchInput("")}
+                aria-label="Clear search"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-secondary-foreground/40 hover:text-gold transition-colors"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            )}
           </div>
         </div>
       </section>
@@ -202,7 +246,7 @@ const PlantGuide = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
               {Array.from({ length: 12 }).map((_, i) => (
                 <div key={i} className="bg-card-dark rounded-lg overflow-hidden border border-gold/10">
-                  <Skeleton className="aspect-[4/3] w-full bg-navy" />
+                  <div className="aspect-[4/3] shimmer-bg animate-shimmer" />
                   <div className="p-4 space-y-2">
                     <Skeleton className="h-3 w-16 bg-navy" />
                     <Skeleton className="h-5 w-3/4 bg-navy" />
@@ -233,32 +277,59 @@ const PlantGuide = () => {
               {/* Grid Area */}
               <div className="flex-1 min-w-0">
                 {/* Results bar */}
-                <div className="flex items-center justify-between mb-6 gap-4">
-                  <p className="text-secondary-foreground/50 text-sm font-sans">
-                    Showing {Math.min(visibleCount, filtered.length)} of {filtered.length} plants
-                    {searchQuery && (
-                      <> for "<span className="text-gold">{searchQuery}</span>"</>
-                    )}
-                  </p>
-                  <Select value={sortBy} onValueChange={setSort}>
-                    <SelectTrigger className="w-[160px] h-9 bg-card-dark border-gold/20 text-secondary-foreground text-xs font-sans">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent className="bg-card-dark border-gold/20">
-                      <SelectItem value="az" className="text-secondary-foreground text-xs">A → Z</SelectItem>
-                      <SelectItem value="za" className="text-secondary-foreground text-xs">Z → A</SelectItem>
-                      <SelectItem value="category" className="text-secondary-foreground text-xs">Category</SelectItem>
-                      <SelectItem value="native" className="text-secondary-foreground text-xs">Native First</SelectItem>
-                    </SelectContent>
-                  </Select>
+                <div className="mb-6 space-y-3">
+                  <div className="flex items-center justify-between gap-4">
+                    <p className="text-secondary-foreground/50 text-sm font-sans">
+                      Showing {Math.min(visibleCount, filtered.length)} of {filtered.length} plants
+                      {searchQuery && (
+                        <> for "<span className="text-gold">{searchQuery}</span>"</>
+                      )}
+                    </p>
+                    <Select value={sortBy} onValueChange={setSort}>
+                      <SelectTrigger aria-label="Sort plants" className="w-[160px] h-9 bg-card-dark border-gold/20 text-secondary-foreground text-xs font-sans">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent className="bg-card-dark border-gold/20">
+                        <SelectItem value="az" className="text-secondary-foreground text-xs focus:bg-navy focus:text-secondary-foreground">A → Z</SelectItem>
+                        <SelectItem value="za" className="text-secondary-foreground text-xs focus:bg-navy focus:text-secondary-foreground">Z → A</SelectItem>
+                        <SelectItem value="category" className="text-secondary-foreground text-xs focus:bg-navy focus:text-secondary-foreground">Category</SelectItem>
+                        <SelectItem value="native" className="text-secondary-foreground text-xs focus:bg-navy focus:text-secondary-foreground">Native First</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* Active filter pills */}
+                  {activePills.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5">
+                      {activePills.map((pill) => (
+                        <button
+                          key={`${pill.group}-${pill.value}`}
+                          onClick={() => handleRemovePill(pill.group, pill.value)}
+                          className="inline-flex items-center gap-1 text-xs border border-gold/40 text-gold px-2.5 py-1 rounded-full font-sans hover:bg-gold hover:text-primary-foreground transition-all"
+                        >
+                          {pill.value}
+                          <X className="h-3 w-3" />
+                        </button>
+                      ))}
+                      <button
+                        onClick={handleClear}
+                        className="text-xs text-secondary-foreground/40 hover:text-gold transition-colors font-sans px-2 py-1"
+                      >
+                        Clear all
+                      </button>
+                    </div>
+                  )}
                 </div>
 
                 {/* Grid */}
                 {filtered.length > 0 ? (
                   <>
-                    <div className={`grid gap-4 md:gap-6 grid-cols-2 ${isMobile ? "" : "lg:grid-cols-3 xl:grid-cols-3"}`}>
-                      {visiblePlants.map((plant) => (
-                        <PlantCard key={plant.id} plant={plant} />
+                    <div
+                      role="list"
+                      className={`grid gap-4 md:gap-6 grid-cols-2 ${isMobile ? "" : "lg:grid-cols-3 xl:grid-cols-3"}`}
+                    >
+                      {visiblePlants.map((plant, i) => (
+                        <PlantCard key={plant.id} plant={plant} index={i} searchQuery={searchQuery} />
                       ))}
                     </div>
 
@@ -266,7 +337,7 @@ const PlantGuide = () => {
                       <div className="text-center mt-10">
                         <button
                           onClick={() => setVisibleCount((c) => c + ITEMS_PER_PAGE)}
-                          className="inline-block border border-gold text-gold px-8 py-3 rounded hover:bg-gold hover:text-navy transition-all uppercase text-sm tracking-wider font-sans"
+                          className="inline-block border border-gold text-gold px-8 py-3 rounded hover:bg-gold hover:text-primary-foreground transition-all uppercase text-sm tracking-wider font-sans focus-gold"
                         >
                           Load More
                         </button>
@@ -293,10 +364,16 @@ const PlantGuide = () => {
         <>
           <button
             onClick={() => setDrawerOpen(true)}
-            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-gold text-navy px-6 py-3 rounded-full shadow-lg flex items-center gap-2 font-sans text-sm font-semibold uppercase tracking-wider"
+            aria-label={`Filters${activeFilterCount > 0 ? `, ${activeFilterCount} active` : ""}`}
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-gold text-primary-foreground px-6 py-3 rounded-full shadow-lg flex items-center gap-2 font-sans text-sm font-semibold uppercase tracking-wider"
           >
             <SlidersHorizontal className="h-4 w-4" />
             Filters
+            {activeFilterCount > 0 && (
+              <span className="ml-1 bg-primary-foreground text-gold text-[10px] font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                {activeFilterCount}
+              </span>
+            )}
           </button>
           <Drawer open={drawerOpen} onOpenChange={setDrawerOpen}>
             <DrawerContent className="bg-card-dark border-gold/10 max-h-[85vh]">
@@ -309,7 +386,7 @@ const PlantGuide = () => {
               <DrawerFooter>
                 <button
                   onClick={() => setDrawerOpen(false)}
-                  className="w-full bg-gold text-navy py-3 rounded font-sans text-sm font-semibold uppercase tracking-wider"
+                  className="w-full bg-gold text-primary-foreground py-3 rounded font-sans text-sm font-semibold uppercase tracking-wider"
                 >
                   Apply Filters
                 </button>
@@ -330,7 +407,7 @@ const PlantGuide = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-block border border-gold text-gold px-8 py-3 rounded hover:bg-gold hover:text-navy transition-all uppercase text-sm tracking-wider font-sans"
+            className="inline-block border border-gold text-gold px-8 py-3 rounded hover:bg-gold hover:text-primary-foreground transition-all uppercase text-sm tracking-wider font-sans focus-gold"
           >
             Schedule a Consultation
           </Link>

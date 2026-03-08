@@ -1,36 +1,73 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { Leaf } from "lucide-react";
 import type { Plant } from "@/hooks/usePlants";
 
-export default function PlantCard({ plant }: { plant: Plant }) {
+/* ── Search text highlight helper ── */
+function Highlight({ text, query }: { text: string; query?: string }) {
+  if (!query?.trim()) return <>{text}</>;
+  const idx = text.toLowerCase().indexOf(query.toLowerCase());
+  if (idx === -1) return <>{text}</>;
+  return (
+    <>
+      {text.slice(0, idx)}
+      <mark className="search-highlight">{text.slice(idx, idx + query.length)}</mark>
+      {text.slice(idx + query.length)}
+    </>
+  );
+}
+
+interface PlantCardProps {
+  plant: Plant;
+  index?: number;
+  searchQuery?: string;
+}
+
+export default function PlantCard({ plant, index = 0, searchQuery }: PlantCardProps) {
+  const [imgLoaded, setImgLoaded] = useState(false);
   const [imgError, setImgError] = useState(false);
+
+  const handleLoad = useCallback(() => setImgLoaded(true), []);
+  const handleError = useCallback(() => setImgError(true), []);
+
+  const showImage = plant.photo_url && !imgError;
+  const letter = plant.common_name.charAt(0).toUpperCase();
 
   return (
     <Link
       to={`/plant-guide/${plant.id}`}
-      className="group bg-card-dark rounded-lg overflow-hidden border border-gold/10 hover:border-gold/40 hover:shadow-[0_8px_30px_-12px_hsl(var(--gold)/0.15)] hover:-translate-y-1 transition-all duration-300"
+      role="listitem"
+      tabIndex={0}
+      aria-label={`${plant.common_name}${plant.botanical_name ? ` — ${plant.botanical_name}` : ""}`}
+      className="group bg-card-dark rounded-lg overflow-hidden border border-gold/10 hover:border-gold/40 hover:shadow-[0_4px_20px_-4px_hsl(var(--gold)/0.2)] hover:-translate-y-1 transition-all duration-300 opacity-0 animate-card-in focus-gold"
+      style={{ animationDelay: `${Math.min(index, 23) * 40}ms` }}
     >
       {/* Photo */}
-      <div className="aspect-[4/3] overflow-hidden bg-navy relative">
-        {plant.photo_url && !imgError ? (
-          <img
-            src={plant.photo_url}
-            alt={plant.common_name}
-            loading="lazy"
-            onError={() => setImgError(true)}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
+      <div className="aspect-[4/3] overflow-hidden bg-card-dark relative">
+        {showImage ? (
+          <>
+            {/* Shimmer placeholder */}
+            {!imgLoaded && (
+              <div className="absolute inset-0 shimmer-bg animate-shimmer" />
+            )}
+            <img
+              src={plant.photo_url!}
+              alt={plant.common_name}
+              loading="lazy"
+              onLoad={handleLoad}
+              onError={handleError}
+              className={`w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ${
+                imgLoaded ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          </>
         ) : (
-          <div className="w-full h-full bg-gradient-to-br from-navy to-card-dark flex items-center justify-center">
-            <span className="font-serif text-4xl text-gold/30">
-              {plant.common_name.charAt(0)}
-            </span>
+          <div className="w-full h-full bg-gradient-to-br from-card-dark to-navy flex items-center justify-center">
+            <span className="font-serif text-4xl text-gold/30">{letter}</span>
           </div>
         )}
         {/* SC Native Badge */}
         {plant.sc_native && (
-          <span className="absolute top-2 right-2 bg-gold text-navy text-[10px] font-sans font-semibold uppercase tracking-wider px-2 py-0.5 rounded">
+          <span className="absolute top-2 right-2 bg-gold text-primary-foreground text-[10px] font-sans font-semibold uppercase tracking-wider px-2 py-0.5 rounded">
             SC Native
           </span>
         )}
@@ -38,7 +75,6 @@ export default function PlantCard({ plant }: { plant: Plant }) {
 
       {/* Content */}
       <div className="p-4">
-        {/* Plant Type */}
         {plant.plant_type && (
           <p className="text-[10px] uppercase tracking-[0.15em] text-gold font-sans font-medium mb-1">
             {plant.plant_type}
@@ -46,12 +82,12 @@ export default function PlantCard({ plant }: { plant: Plant }) {
         )}
 
         <h3 className="font-serif text-base text-secondary-foreground group-hover:text-gold transition-colors leading-tight">
-          {plant.common_name}
+          <Highlight text={plant.common_name} query={searchQuery} />
         </h3>
 
         {plant.botanical_name && (
           <p className="text-secondary-foreground/40 text-xs italic mt-0.5 font-sans">
-            {plant.botanical_name}
+            <Highlight text={plant.botanical_name} query={searchQuery} />
           </p>
         )}
 
