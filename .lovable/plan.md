@@ -1,31 +1,16 @@
 
 
-## Remove Duplicate Plant Cards
+## Enable Mouse Drag Scrolling on Services Carousel
 
-### Problem
-35 plants appear multiple times in the database because they belong to multiple `guide_category` values. For example, "Cast Iron Plant" has 3 rows (Ground Covers, Deer Resistant, Shade-Loving Plants). This causes duplicate cards in the grid.
-
-### Solution
-Deduplicate in `src/hooks/usePlants.ts` at fetch time. Group rows by `common_name + botanical_name`, merge their `guide_category` values into an array, and return one plant per unique name. This way:
-- Each plant shows once in the grid
-- Category filtering still works (check if ANY of the plant's categories match)
-- All other fields stay the same (they're identical across duplicates)
+Embla Carousel (which powers the `<Carousel>` component) supports drag/mouse scrolling natively — it just needs `dragFree: true` in the options. By default Embla already enables drag on touch devices, but adding `dragFree` makes the free-scroll drag behavior more natural on desktop with a mouse.
 
 ### Changes
 
-**1. `src/hooks/usePlants.ts`**
-- Add `guide_categories: string[]` field to the `Plant` interface (array of all categories)
-- In `fetchAllPlants`, group rows by `common_name + botanical_name`, merge `guide_category` into the array, return deduplicated list
-- Keep `guide_category` as the first/primary category for display
+**`src/pages/Index.tsx`** (line ~155): Add `dragFree: true` to the services carousel `opts`:
 
-**2. `src/pages/PlantGuide.tsx`**
-- Update category filter logic: instead of `filters.categories.includes(p.guide_category)`, check if `p.guide_categories.some(c => filters.categories.includes(c))`
+```tsx
+<Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
+```
 
-**3. `src/components/PlantCard.tsx`**
-- No changes needed — it already displays `plant.guide_category` (primary) which stays as-is
-
-**4. `src/pages/PlantDetail.tsx`**
-- Show all categories if multiple exist (e.g., "Deer Resistant · Shade-Loving Plants")
-
-This reduces the ~285 rows to ~250 unique plants while keeping full category filtering intact.
+This single prop change enables mouse drag scrolling. No other files need modification — Embla handles pointer events (mouse + touch) out of the box. The `dragFree` option allows momentum-based free scrolling rather than snapping strictly to slides, which feels more natural for a browsable services list.
 

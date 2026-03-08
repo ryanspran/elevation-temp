@@ -136,7 +136,7 @@ const PlantGuide = () => {
 
     if (filters.native) result = result.filter((p) => p.sc_native);
     if (filters.categories.length)
-      result = result.filter((p) => p.guide_category && filters.categories.includes(p.guide_category));
+      result = result.filter((p) => p.guide_categories.some((c) => filters.categories.includes(c)));
     if (filters.types.length)
       result = result.filter((p) => p.plant_type && filters.types.includes(p.plant_type));
     if (filters.sun.length)

@@ -76,12 +76,12 @@ const PlantDetail = () => {
                 {plant.plant_type && (
                   <span className="text-xs text-gold uppercase tracking-[0.15em] font-sans">{plant.plant_type}</span>
                 )}
-                {plant.guide_category && plant.guide_category !== plant.plant_type && (
-                  <>
+                {plant.guide_categories?.filter((c) => c !== plant.plant_type).map((cat, i) => (
+                  <span key={cat} className="flex items-center gap-2">
                     <span className="text-gold/30">·</span>
-                    <span className="text-xs text-gold uppercase tracking-[0.15em] font-sans">{plant.guide_category}</span>
-                  </>
-                )}
+                    <span className="text-xs text-gold uppercase tracking-[0.15em] font-sans">{cat}</span>
+                  </span>
+                ))}
               </div>
               <h1 className="font-serif text-4xl md:text-5xl text-secondary-foreground mb-2">{plant.common_name}</h1>
               {plant.botanical_name && (

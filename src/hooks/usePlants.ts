@@ -18,6 +18,7 @@ export interface Plant {
   maintenance_level: string | null;
   sc_native: boolean;
   guide_category: string | null;
+  guide_categories: string[];
   photo_url: string | null;
   sun_category: string | null;
   water_category: string | null;
@@ -29,7 +30,29 @@ async function fetchAllPlants(): Promise<Plant[]> {
     .select("*")
     .order("common_name");
   if (error) throw error;
-  return data as Plant[];
+
+  // Deduplicate: plants with multiple guide_category rows share the same
+  // common_name + botanical_name. Group them and merge categories.
+  const map = new Map<string, Plant>();
+  for (const row of data as any[]) {
+    const key = `${row.common_name}|||${row.botanical_name ?? ""}`;
+    const existing = map.get(key);
+    if (existing) {
+      if (row.guide_category && !existing.guide_categories.includes(row.guide_category)) {
+        existing.guide_categories.push(row.guide_category);
+      }
+    } else {
+      map.set(key, {
+        ...row,
+        sc_native: row.sc_native ?? false,
+        guide_categories: row.guide_category ? [row.guide_category] : [],
+      });
+    }
+  }
+
+  return Array.from(map.values()).sort((a, b) =>
+    a.common_name.localeCompare(b.common_name)
+  );
 }
 
 export function usePlants() {
@@ -43,13 +66,19 @@ export function usePlants() {
 export function getUniqueValues(plants: Plant[], key: keyof Plant): string[] {
   const values = new Set<string>();
   for (const p of plants) {
-    const v = p[key];
-    if (typeof v === "string" && v.trim()) values.add(v.trim());
+    if (key === "guide_categories") {
+      for (const c of p.guide_categories) {
+        if (c.trim()) values.add(c.trim());
+      }
+    } else {
+      const v = p[key];
+      if (typeof v === "string" && v.trim()) values.add(v.trim());
+    }
   }
   return Array.from(values).sort();
 }
 
-export const getUniqueCategories = (plants: Plant[]) => getUniqueValues(plants, "guide_category");
+export const getUniqueCategories = (plants: Plant[]) => getUniqueValues(plants, "guide_categories");
 export const getUniquePlantTypes = (plants: Plant[]) => getUniqueValues(plants, "plant_type");
 export const getUniqueSunCategories = (plants: Plant[]) => getUniqueValues(plants, "sun_category");
 export const getUniqueWaterCategories = (plants: Plant[]) => getUniqueValues(plants, "water_category");
