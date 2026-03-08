@@ -17,6 +17,8 @@ import Subcontractor from "./pages/Subcontractor";
 import Articles from "./pages/Articles";
 import ArticlePage from "./pages/ArticlePage";
 import FAQ from "./pages/FAQ";
+import PlantGuide from "./pages/PlantGuide";
+import PlantDetail from "./pages/PlantDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
