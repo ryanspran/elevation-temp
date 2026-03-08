@@ -15,6 +15,7 @@ import AdminLogin from "./pages/AdminLogin";
 import Admin from "./pages/Admin";
 import Subcontractor from "./pages/Subcontractor";
 import Articles from "./pages/Articles";
+import ArticlePage from "./pages/ArticlePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
