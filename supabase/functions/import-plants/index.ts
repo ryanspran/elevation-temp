@@ -8,8 +8,9 @@ function computeSunCategory(sun: string): string {
   const hasShade = lower.includes("shade");
   const hasPart = lower.includes("part");
   const hasFiltered = lower.includes("filtered");
+  const hasMorning = lower.includes("morning sun");
 
-  if (hasPart || hasFiltered || (hasSun && hasShade)) return "Part Sun/Shade";
+  if (hasPart || hasFiltered || hasMorning || (hasSun && hasShade)) return "Part Sun/Shade";
   if (hasShade && !hasSun) return "Shade";
   return "Full Sun";
 }
@@ -32,17 +33,27 @@ function stripCategoryPrefix(cat: string): string {
   return cat.replace(/^\d+\.\s*/, "");
 }
 
-Deno.serve(async (req) => {
+Deno.serve(async () => {
   const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
   const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
   const supabase = createClient(supabaseUrl, supabaseKey);
 
-  const csvText = await req.text();
+  // Fetch CSV from storage
+  const csvUrl = `${supabaseUrl}/storage/v1/object/public/site-assets/import%2Fplants.csv`;
+  const res = await fetch(csvUrl);
+  if (!res.ok) {
+    return new Response(JSON.stringify({ error: "Failed to fetch CSV", status: res.status }), { status: 500 });
+  }
+  const csvText = await res.text();
 
   const parsed = Papa.parse(csvText, { header: true, skipEmptyLines: true });
 
+  if (parsed.errors.length > 0) {
+    return new Response(JSON.stringify({ parseErrors: parsed.errors.slice(0, 5) }), { status: 400 });
+  }
+
   const plants = parsed.data.map((row: Record<string, string>) => ({
-    common_name: row["Common Name"]?.trim() || "",
+    common_name: row["Common Name"]?.trim() || "Unknown",
     botanical_name: row["Botanical Name"]?.trim() || null,
     plant_type: row["Plant Type"]?.trim() || null,
     mature_size: row["Mature Size (H x W)"]?.trim() || null,
@@ -76,7 +87,7 @@ Deno.serve(async (req) => {
   }
 
   return new Response(
-    JSON.stringify({ total: plants.length, inserted, errors }),
+    JSON.stringify({ total: plants.length, inserted, errors, sampleFirst: plants[0], sampleLast: plants[plants.length - 1] }),
     { headers: { "Content-Type": "application/json" } }
   );
 });
