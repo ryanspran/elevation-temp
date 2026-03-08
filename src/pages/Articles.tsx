@@ -56,11 +56,12 @@ const popularArticles: Article[] = [
 const latestArticles: Article[] = [
   {
     id: 4,
-    title: "Paver Patio Maintenance: Protecting Your Investment",
+    title: "The Complete Guide to Outdoor Living Spaces in Greenville, SC",
     excerpt:
-      "Learn the essential steps to keep your paver patio looking pristine for decades, from sealing to joint sand replacement.",
-    category: "Maintenance",
+      "From patios and outdoor kitchens to fire pits, water features, and lighting — everything you need to create an exceptional outdoor living space.",
+    category: "Outdoor Living",
     image: img4,
+    slug: "outdoor-living-greenville",
   },
   {
     id: 1,
