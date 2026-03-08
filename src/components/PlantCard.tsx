@@ -34,7 +34,7 @@ export default function PlantCard({ plant, index = 0, searchQuery }: PlantCardPr
 
   return (
     <Link
-      to={`/plant-guide/${plant.id}`}
+      to={`/plants/${plant.slug}`}
       role="listitem"
       tabIndex={0}
       aria-label={`${plant.common_name}${plant.botanical_name ? ` — ${plant.botanical_name}` : ""}`}
