@@ -356,7 +356,7 @@ const Index = () => {
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Before */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
-              <img src={portfolioBefore} alt="Before landscaping" className="w-full h-full object-cover" />
+              <img src={portfolioBefore} alt="Before landscaping" className="w-full h-full object-cover" loading="lazy" />
               <span className="absolute bottom-4 left-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 Before
               </span>
