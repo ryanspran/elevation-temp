@@ -9,6 +9,8 @@ import outdoorKitchenHero from "@/assets/articles/outdoor-kitchen-hero.jpg";
 import outdoorKitchenDetail from "@/assets/articles/outdoor-kitchen-detail.jpg";
 import landscapeLightingHero from "@/assets/articles/landscape-lighting-hero.jpg";
 import landscapeLightingDetail from "@/assets/articles/landscape-lighting-detail.jpg";
+import retainingWallsHero from "@/assets/articles/retaining-walls-hero.jpg";
+import retainingWallsDetail from "@/assets/articles/retaining-walls-detail.jpg";
 
 interface ArticleData {
   title: string;
