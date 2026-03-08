@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge";
 
 import outdoorKitchenHero from "@/assets/articles/outdoor-kitchen-hero.jpg";
 import outdoorKitchenDetail from "@/assets/articles/outdoor-kitchen-detail.jpg";
+import landscapeLightingHero from "@/assets/articles/landscape-lighting-hero.jpg";
+import landscapeLightingDetail from "@/assets/articles/landscape-lighting-detail.jpg";
 
 interface ArticleData {
   title: string;

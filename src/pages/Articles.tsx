@@ -10,7 +10,7 @@ import outdoorKitchenImg from "@/assets/articles/outdoor-kitchen-hero.jpg";
 import img1 from "@/assets/services/block-walls.jpg";
 import img3 from "@/assets/services/sod-seeding.jpg";
 import img4 from "@/assets/services/paver-patios.jpg";
-import img5 from "@/assets/services/landscape-lighting.jpg";
+import img5 from "@/assets/articles/landscape-lighting-hero.jpg";
 import img6 from "@/assets/services/underground-drainage.jpg";
 
 interface Article {
