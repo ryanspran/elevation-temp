@@ -11,6 +11,8 @@ import landscapeLightingHero from "@/assets/articles/landscape-lighting-hero.jpg
 import landscapeLightingDetail from "@/assets/articles/landscape-lighting-detail.jpg";
 import retainingWallsHero from "@/assets/articles/retaining-walls-hero.jpg";
 import retainingWallsDetail from "@/assets/articles/retaining-walls-detail.jpg";
+import outdoorLivingHero from "@/assets/articles/outdoor-living-hero.jpg";
+import outdoorLivingDetail from "@/assets/articles/outdoor-living-detail.jpg";
 
 interface ArticleData {
   title: string;
