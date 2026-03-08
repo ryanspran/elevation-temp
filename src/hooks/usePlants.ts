@@ -1,0 +1,56 @@
+import { useQuery } from "@tanstack/react-query";
+import { supabase } from "@/integrations/supabase/client";
+
+export interface Plant {
+  id: number;
+  common_name: string;
+  botanical_name: string | null;
+  plant_type: string | null;
+  mature_size: string | null;
+  sun_requirements: string | null;
+  water_needs: string | null;
+  soil_preferences: string | null;
+  bloom_time_color: string | null;
+  fall_color: string | null;
+  wildlife_value: string | null;
+  special_features: string | null;
+  landscape_use: string | null;
+  maintenance_level: string | null;
+  sc_native: boolean;
+  guide_category: string | null;
+  photo_url: string | null;
+  sun_category: string | null;
+  water_category: string | null;
+}
+
+async function fetchAllPlants(): Promise<Plant[]> {
+  const { data, error } = await supabase
+    .from("plants")
+    .select("*")
+    .order("common_name");
+  if (error) throw error;
+  return data as Plant[];
+}
+
+export function usePlants() {
+  return useQuery({
+    queryKey: ["plants"],
+    queryFn: fetchAllPlants,
+    staleTime: 1000 * 60 * 10,
+  });
+}
+
+export function getUniqueValues(plants: Plant[], key: keyof Plant): string[] {
+  const values = new Set<string>();
+  for (const p of plants) {
+    const v = p[key];
+    if (typeof v === "string" && v.trim()) values.add(v.trim());
+  }
+  return Array.from(values).sort();
+}
+
+export const getUniqueCategories = (plants: Plant[]) => getUniqueValues(plants, "guide_category");
+export const getUniquePlantTypes = (plants: Plant[]) => getUniqueValues(plants, "plant_type");
+export const getUniqueSunCategories = (plants: Plant[]) => getUniqueValues(plants, "sun_category");
+export const getUniqueWaterCategories = (plants: Plant[]) => getUniqueValues(plants, "water_category");
+export const getUniqueMaintenanceLevels = (plants: Plant[]) => getUniqueValues(plants, "maintenance_level");
