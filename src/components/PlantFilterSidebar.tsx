@@ -49,7 +49,7 @@ function ChipGroup({
   onToggle: (group: keyof Omit<FilterState, "native">, value: string) => void;
 }) {
   return (
-    <div>
+    <div role="group" aria-label={`Filter by ${label}`}>
       <p className="text-[10px] uppercase tracking-[0.15em] text-secondary-foreground/50 font-sans font-medium mb-2">
         {label}
       </p>
@@ -60,9 +60,12 @@ function ChipGroup({
             <button
               key={opt}
               onClick={() => onToggle(groupKey, opt)}
-              className={`text-xs px-2.5 py-1 rounded-full border transition-all font-sans ${
+              role="checkbox"
+              aria-checked={active}
+              aria-label={opt}
+              className={`text-xs px-2.5 py-1 rounded-full border transition-all font-sans active:scale-95 focus-gold ${
                 active
-                  ? "bg-gold text-navy border-gold font-medium"
+                  ? "bg-gold text-primary-foreground border-gold font-medium"
                   : "border-gold/20 text-secondary-foreground/60 hover:border-gold/40 hover:text-secondary-foreground/80"
               }`}
             >
@@ -87,7 +90,7 @@ export default function PlantFilterSidebar({ filters, onToggle, onNativeToggle, 
         {hasActiveFilters(filters) && (
           <button
             onClick={onClear}
-            className="text-xs text-secondary-foreground/40 hover:text-gold transition-colors font-sans flex items-center gap-1"
+            className="text-xs text-secondary-foreground/40 hover:text-gold transition-colors font-sans flex items-center gap-1 focus-gold"
           >
             <X className="h-3 w-3" /> Clear All
           </button>
@@ -95,7 +98,7 @@ export default function PlantFilterSidebar({ filters, onToggle, onNativeToggle, 
       </div>
 
       {/* SC Native Toggle */}
-      <div>
+      <div role="radiogroup" aria-label="Filter by SC Native status">
         <p className="text-[10px] uppercase tracking-[0.15em] text-secondary-foreground/50 font-sans font-medium mb-2">
           SC Native
         </p>
@@ -104,9 +107,11 @@ export default function PlantFilterSidebar({ filters, onToggle, onNativeToggle, 
             <button
               key={String(val)}
               onClick={() => onNativeToggle(val)}
-              className={`flex-1 text-xs py-1.5 rounded border transition-all font-sans ${
+              role="radio"
+              aria-checked={filters.native === val}
+              className={`flex-1 text-xs py-1.5 rounded border transition-all font-sans active:scale-95 focus-gold ${
                 filters.native === val
-                  ? "bg-gold text-navy border-gold font-medium"
+                  ? "bg-gold text-primary-foreground border-gold font-medium"
                   : "border-gold/20 text-secondary-foreground/60 hover:border-gold/40"
               }`}
             >

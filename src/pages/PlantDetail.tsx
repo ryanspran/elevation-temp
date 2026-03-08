@@ -175,6 +175,7 @@ const PlantDetail = () => {
 
 function HeroImage({ plant }: { plant: { common_name: string; photo_url: string | null } }) {
   const [imgError, setImgError] = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
   const letter = plant.common_name.charAt(0).toUpperCase();
 
   if (!plant.photo_url || imgError) {
@@ -186,12 +187,16 @@ function HeroImage({ plant }: { plant: { common_name: string; photo_url: string 
   }
 
   return (
-    <img
-      src={plant.photo_url}
-      alt={plant.common_name}
-      className="w-full h-[340px] object-cover"
-      onError={() => setImgError(true)}
-    />
+    <div className="w-full h-[340px] relative overflow-hidden bg-card-dark">
+      {!imgLoaded && <div className="absolute inset-0 shimmer-bg animate-shimmer" />}
+      <img
+        src={plant.photo_url}
+        alt={plant.common_name}
+        className={`w-full h-full object-cover transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
+        onLoad={() => setImgLoaded(true)}
+        onError={() => setImgError(true)}
+      />
+    </div>
   );
 }
 
