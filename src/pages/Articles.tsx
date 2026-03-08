@@ -65,11 +65,12 @@ const latestArticles: Article[] = [
   },
   {
     id: 1,
-    title: "The Ultimate Guide to Retaining Wall Design",
+    title: "Natural Stone vs. Concrete Pavers: Which Is Right for Your Upstate SC Home?",
     excerpt:
-      "Discover how engineered retaining walls can transform sloped terrain into functional outdoor living space while adding lasting value to your property.",
+      "Compare aesthetics, durability, cost, and installation of natural stone and concrete pavers for pathways, patios, and pool decks.",
     category: "Hardscaping",
     image: img1,
+    slug: "natural-stone-vs-pavers",
   },
   {
     id: 6,
