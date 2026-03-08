@@ -12,8 +12,76 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { usePlants, type Plant } from "@/hooks/usePlants";
 import PlantFilterSidebar, { type FilterState } from "@/components/PlantFilterSidebar";
 import PlantCard from "@/components/PlantCard";
+import { useState as useStateR } from "react";
 
 const ITEMS_PER_PAGE = 24;
+
+/* ── Seasonal Picks Data ── */
+const SEASONAL_LABELS: Record<number, string> = {
+  0: "Winter Interest", 1: "Winter Interest",
+  2: "Spring Bloomers", 3: "Spring Bloomers", 4: "Spring Bloomers",
+  5: "Summer Bloomers", 6: "Summer Bloomers", 7: "Summer Bloomers",
+  8: "Fall Favorites", 9: "Fall Favorites",
+  10: "Winter Interest", 11: "Winter Interest",
+};
+
+const SEASONAL_PLANTS: Record<number, string[]> = {
+  0: ["Winter Jasmine", "Lenten Rose", "Witch Hazel", "Camellia"],
+  1: ["Winter Jasmine", "Lenten Rose", "Witch Hazel", "Camellia"],
+  2: ["Eastern Redbud", "Star Magnolia", "Piedmont Azalea", "Flowering Dogwood", "Serviceberry", "Creeping Phlox"],
+  3: ["Carolina Jessamine", "Virginia Sweetspire", "Oakleaf Hydrangea", "Black-Eyed Susan", "Coneflower", "Butterfly Weed"],
+  4: ["Carolina Jessamine", "Virginia Sweetspire", "Oakleaf Hydrangea", "Black-Eyed Susan", "Coneflower", "Butterfly Weed"],
+  5: ["Crape Myrtle", "Daylily", "Lantana", "Coreopsis", "Blanket Flower", "Joe Pye Weed"],
+  6: ["Crape Myrtle", "Daylily", "Lantana", "Coreopsis", "Blanket Flower", "Joe Pye Weed"],
+  7: ["Crape Myrtle", "Daylily", "Lantana", "Coreopsis", "Blanket Flower", "Joe Pye Weed"],
+  8: ["Aster", "Goldenrod", "Beautyberry", "Muhly Grass", "Switchgrass"],
+  9: ["Aster", "Goldenrod", "Beautyberry", "Muhly Grass", "Switchgrass"],
+  10: ["Winterberry", "Nandina", "Holly", "Ornamental Cabbage"],
+  11: ["Winterberry", "Nandina", "Holly", "Ornamental Cabbage"],
+};
+
+function SeasonalPicks({ plants }: { plants: Plant[] }) {
+  const month = new Date().getMonth();
+  const names = SEASONAL_PLANTS[month] || [];
+  const label = SEASONAL_LABELS[month] || "Seasonal Picks";
+  const lowerNames = names.map((n) => n.toLowerCase());
+  const picks = plants.filter((p) => lowerNames.includes(p.common_name.toLowerCase()));
+
+  if (picks.length === 0) return null;
+
+  return (
+    <section className="bg-navy py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="font-serif text-2xl text-gold mb-5">{label}</h2>
+        <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-thin">
+          {picks.map((plant) => (
+            <Link
+              key={plant.id}
+              to={`/plant-guide/${plant.id}`}
+              className="shrink-0 w-48 md:w-56 bg-card-dark rounded-lg overflow-hidden border border-gold/10 hover:border-gold/30 transition-all group"
+            >
+              <div className="aspect-[4/3] bg-navy overflow-hidden">
+                {plant.photo_url ? (
+                  <img src={plant.photo_url} alt={plant.common_name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <span className="text-4xl font-serif text-gold/20">{plant.common_name.charAt(0)}</span>
+                  </div>
+                )}
+              </div>
+              <div className="p-3">
+                <p className="font-serif text-secondary-foreground text-sm">{plant.common_name}</p>
+                {plant.botanical_name && (
+                  <p className="text-secondary-foreground/40 text-xs italic font-sans truncate">{plant.botanical_name}</p>
+                )}
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 /* ── URL param helpers ── */
 function parseList(val: string | null): string[] {
