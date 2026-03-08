@@ -57,6 +57,7 @@ export default {
         cream: "hsl(var(--cream))",
         "cream-alt": "hsl(var(--cream-alt))",
         "text-dark": "hsl(var(--text-dark))",
+        "card-dark": "hsl(var(--card-dark))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
