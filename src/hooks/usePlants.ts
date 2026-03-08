@@ -76,7 +76,7 @@ async function fetchAllPlants(): Promise<Plant[]> {
 
 export function usePlants() {
   return useQuery({
-    queryKey: ["plants"],
+    queryKey: ["plants", "dedup-v2"],
     queryFn: fetchAllPlants,
     staleTime: 1000 * 60 * 10,
   });
