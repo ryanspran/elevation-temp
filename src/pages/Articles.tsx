@@ -74,11 +74,12 @@ const latestArticles: Article[] = [
   },
   {
     id: 6,
-    title: "Drainage Solutions Every Homeowner Should Know",
+    title: "Why Upstate SC Homeowners Need a Proper Drainage System Before Any Landscaping Project",
     excerpt:
-      "Prevent costly water damage with proven drainage techniques, from French drains to grading adjustments.",
+      "Learn why addressing drainage first is crucial for protecting your landscape investment on Upstate SC's sloped terrain.",
     category: "Drainage",
     image: img6,
+    slug: "drainage-before-landscaping",
   },
 ];
 
