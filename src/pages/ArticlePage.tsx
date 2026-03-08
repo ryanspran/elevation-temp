@@ -13,6 +13,8 @@ import retainingWallsHero from "@/assets/articles/retaining-walls-hero.jpg";
 import retainingWallsDetail from "@/assets/articles/retaining-walls-detail.jpg";
 import outdoorLivingHero from "@/assets/articles/outdoor-living-hero.jpg";
 import outdoorLivingDetail from "@/assets/articles/outdoor-living-detail.jpg";
+import stoneVsPaversHero from "@/assets/articles/stone-vs-pavers-hero.jpg";
+import stoneVsPaversDetail from "@/assets/articles/stone-vs-pavers-detail.jpg";
 
 interface ArticleData {
   title: string;
