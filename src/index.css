@@ -114,3 +114,52 @@ mark.search-highlight {
   border-radius: 2px;
   padding: 0 1px;
 }
+
+/* Print stylesheet for plant detail pages */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  nav, footer, .print\\:hidden {
+    display: none !important;
+  }
+
+  section {
+    background: white !important;
+    color: black !important;
+  }
+
+  .bg-navy, .bg-card-dark, .bg-\\[\\#242938\\] {
+    background: white !important;
+  }
+
+  .text-secondary-foreground,
+  .text-secondary-foreground\\/90,
+  .text-secondary-foreground\\/50,
+  .text-secondary-foreground\\/60 {
+    color: #1a1a1a !important;
+  }
+
+  .text-gold {
+    color: #8a6d2b !important;
+  }
+
+  .text-muted-foreground {
+    color: #555 !important;
+  }
+
+  .border-gold\\/10 {
+    border-color: #ccc !important;
+  }
+
+  img {
+    max-height: 400px;
+    object-fit: contain;
+  }
+
+  @page {
+    margin: 1.5cm;
+  }
+}

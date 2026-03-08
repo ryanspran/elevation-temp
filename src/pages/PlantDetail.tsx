@@ -1,5 +1,5 @@
 import { useParams, Link, useLocation } from "react-router-dom";
-import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ChevronLeft, ChevronRight, Share2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -7,6 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { usePlant } from "@/hooks/usePlant";
 import { usePlants } from "@/hooks/usePlants";
 import { useState } from "react";
+import { toast } from "sonner";
 
 const PlantDetail = () => {
   const { id } = useParams();
@@ -21,6 +22,14 @@ const PlantDetail = () => {
   const nextPlant = currentIndex >= 0 && currentIndex < sortedPlants.length - 1 ? sortedPlants[currentIndex + 1] : null;
 
   const backUrl = `/plant-guide${location.search}`;
+
+  const handleShare = () => {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      toast("Link copied to clipboard", {
+        style: { background: "hsl(225 24% 19%)", color: "hsl(40 33% 96%)", border: "1px solid hsl(40 50% 54% / 0.3)" },
+      });
+    });
+  };
 
   const jsonLd = plant
     ? [
@@ -55,7 +64,7 @@ const PlantDetail = () => {
       />
       <Navbar />
 
-      <div className="bg-navy pt-28 pb-4">
+      <div className="bg-navy pt-28 pb-4 print:hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link to={backUrl} className="inline-flex items-center gap-2 text-gold hover:text-gold/80 transition-colors text-sm uppercase tracking-wider font-sans">
             <ArrowLeft className="h-4 w-4" />
@@ -94,13 +103,20 @@ const PlantDetail = () => {
 
                   <div className="border-t border-gold/10 pt-5 mb-5" />
 
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 items-center">
                     {plant.sc_native && (
                       <span className="text-xs bg-gold text-primary-foreground px-3 py-1 rounded font-sans font-medium uppercase tracking-wider">SC Native</span>
                     )}
                     {plant.maintenance_level && (
                       <span className="text-xs border border-gold/40 text-gold px-3 py-1 rounded font-sans uppercase tracking-wider">{plant.maintenance_level} Maintenance</span>
                     )}
+                    <button
+                      onClick={handleShare}
+                      className="print:hidden inline-flex items-center gap-1.5 text-xs border border-gold/40 text-gold px-3 py-1 rounded font-sans uppercase tracking-wider hover:bg-gold hover:text-primary-foreground transition-all ml-auto"
+                    >
+                      <Share2 className="h-3.5 w-3.5" />
+                      Share
+                    </button>
                   </div>
                 </div>
               </div>
@@ -140,7 +156,7 @@ const PlantDetail = () => {
           </section>
 
           {/* Prev / Next */}
-          <section className="bg-navy py-8 border-t border-gold/10">
+          <section className="bg-navy py-8 border-t border-gold/10 print:hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
               {prevPlant ? (
                 <Link to={`/plant-guide/${prevPlant.id}${location.search}`} className="inline-flex items-center gap-2 border border-gold/40 text-gold px-5 py-2.5 rounded hover:bg-gold hover:text-primary-foreground transition-all text-sm uppercase tracking-wider font-sans">
@@ -157,15 +173,19 @@ const PlantDetail = () => {
             </div>
           </section>
 
-          {/* CTA */}
-          <section className="bg-card-dark py-16">
-            <div className="max-w-3xl mx-auto px-4 text-center">
-              <h2 className="font-serif text-3xl text-secondary-foreground mb-4">
-                Want {plant.common_name} in your <span className="text-gold">landscape</span>?
-              </h2>
-              <p className="text-secondary-foreground/60 mb-8 font-sans">Our design team can incorporate this plant into a custom plan for your property.</p>
-              <Link to="/contact" className="inline-block border border-gold text-gold px-8 py-3 rounded hover:bg-gold hover:text-primary-foreground transition-all uppercase text-sm tracking-wider font-sans">
-                Schedule a Consultation
+          {/* CTA Bar */}
+          <section className="bg-[#242938] border-t border-gold/20 py-10 print:hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div>
+                <p className="text-secondary-foreground font-serif text-xl md:text-2xl">
+                  Love this plant for your property? <span className="text-gold">Let us design with it.</span>
+                </p>
+              </div>
+              <Link
+                to="/contact"
+                className="shrink-0 bg-gold text-primary-foreground px-8 py-3 rounded font-sans text-sm font-semibold uppercase tracking-wider hover:bg-gold/90 transition-colors"
+              >
+                Get a Consultation
               </Link>
             </div>
           </section>
@@ -241,11 +261,6 @@ function LoadingSkeleton() {
               <Skeleton className="h-7 w-36 rounded" />
             </div>
           </div>
-        </div>
-        <div className="grid md:grid-cols-2 gap-6 mt-8">
-          <Skeleton className="h-64 rounded-lg" />
-          <Skeleton className="h-64 rounded-lg" />
-          <Skeleton className="h-40 rounded-lg md:col-span-2" />
         </div>
       </div>
     </section>
