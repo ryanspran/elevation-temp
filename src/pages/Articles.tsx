@@ -67,6 +67,7 @@ const latestArticles: Article[] = [
       "Strategic lighting placement can dramatically enhance your home's exterior beauty and security after dark.",
     category: "Design Tips",
     image: img5,
+    slug: "landscape-lighting-greenville",
   },
   {
     id: 6,

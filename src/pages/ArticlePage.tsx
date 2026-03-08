@@ -64,6 +64,49 @@ const articles: Record<string, ArticleData> = {
       },
     ],
   },
+  "landscape-lighting-greenville": {
+    title:
+      "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Greenville, SC",
+    category: "Design Tips",
+    heroImage: landscapeLightingHero,
+    detailImage: landscapeLightingDetail,
+    seoTitle:
+      "Landscape Lighting Benefits in Greenville SC | Elevation Landscapes",
+    seoDescription:
+      "Discover the transformative benefits of professional landscape lighting for high-end homes in Greenville and Upstate South Carolina.",
+    sections: [
+      {
+        body: "In the picturesque region of Greenville and Upstate South Carolina, where stunning natural beauty meets elegant architecture, high-end homeowners are increasingly leveraging the power of landscape lighting. More than just an aesthetic enhancer, landscape lighting plays a pivotal role in redefining the allure and functionality of outdoor spaces.",
+      },
+      {
+        heading: "Enhanced Curb Appeal",
+        body: "For high-end homes, first impressions matter. Landscape lighting accentuates architectural features, showcases meticulously manicured gardens, and highlights sculptures or water features. Thoughtfully placed lights can transform a residence from ordinary to extraordinary, capturing the attention of passersby and visitors alike. The right lighting emphasizes the grandeur and elegance synonymous with upscale Greenville neighborhoods.",
+      },
+      {
+        heading: "Increased Security and Safety",
+        body: "Security is a prime concern for homeowners, and landscape lighting provides a practical solution. Strategically installed lights deter potential intruders by eliminating dark areas and shadows around the property. Well-lit gardens and pathways also ensure safety, reducing the risk of slips and falls. In Upstate SC, where properties often include expansive lawns and intricate designs, effective lighting becomes even more critical.",
+      },
+      {
+        heading: "Extended Living Space",
+        body: "In Greenville and the surrounding areas, the moderate climate encourages outdoor living. Landscape lighting extends the usability of outdoor spaces well into the evening. Whether hosting a dinner party on the patio or enjoying a quiet night in the garden, the right lighting transforms yards into inviting, usable spaces where homeowners can unwind or entertain.",
+      },
+      {
+        heading: "Increased Property Value",
+        body: "Landscape lighting is a wise investment that offers significant returns. High-end homes with well-designed lighting schemes often see increased property values and faster sales times. Potential buyers are drawn to homes that offer the perfect balance of form and function, where outdoor lighting plays a critical role.",
+      },
+      {
+        heading: "Energy Efficiency and Eco-Friendliness",
+        body: "Advancements in technology have made energy-efficient options like LED lights a popular choice. These lights consume less electricity and produce minimal heat, translating to cost savings and a reduced carbon footprint. For environmentally conscious homeowners in Upstate SC, LED landscape lighting is an attractive solution that blends luxury with sustainability.",
+      },
+      {
+        heading: "Customization and Personalization",
+        body: "Every homeowner has unique preferences, and landscape lighting allows for personalization. Whether opting for soft, ambient lights or bold, vibrant hues, homeowners can tailor their lighting to reflect their style. The lush landscapes of Greenville complemented by personalized lighting schemes make for a majestic sight that's as unique as its owner.",
+      },
+      {
+        body: "In the enchanting realm of high-end homes in Greenville and Upstate SC, landscape lighting is an art form that marries beauty with utility. At the forefront of this transformation is Elevation Landscapes. With extensive experience and a deep understanding of local aesthetics, we have established ourselves as leaders in creating captivating outdoor environments. Our commitment to innovation and excellence ensures that every lighting project not only enhances property value but also enriches the quality of life for homeowners across the region. Illuminate your home with us and experience the elevation of your outdoor living space.",
+      },
+    ],
+  },
 };
 
 const ArticlePage = () => {
