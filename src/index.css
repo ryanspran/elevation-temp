@@ -91,6 +91,18 @@ html {
   background: hsl(var(--gold) / 0.7);
 }
 
+/* Seasonal scroll thin scrollbar */
+.seasonal-scroll::-webkit-scrollbar {
+  height: 3px;
+}
+.seasonal-scroll::-webkit-scrollbar-track {
+  background: hsl(var(--navy));
+}
+.seasonal-scroll::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold) / 0.3);
+  border-radius: 2px;
+}
+
 /* Shimmer loading effect */
 .shimmer-bg {
   background: linear-gradient(
