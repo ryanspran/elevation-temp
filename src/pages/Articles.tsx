@@ -65,6 +65,15 @@ const latestArticles: Article[] = [
     slug: "outdoor-living-greenville",
   },
   {
+    id: 8,
+    title: "Transform Your Greenville Landscape with Our Comprehensive Plant & Tree Directory",
+    excerpt:
+      "Discover our 250-plant directory tailored for Upstate SC's climate — filter by sun, water, soil, and native status to plan your perfect yard.",
+    category: "Plant Guide",
+    image: plantDirectoryImg,
+    slug: "plant-directory-greenville",
+  },
+  {
     id: 1,
     title: "Natural Stone vs. Concrete Pavers: Which Is Right for Your Upstate SC Home?",
     excerpt:
