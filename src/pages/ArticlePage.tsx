@@ -402,9 +402,21 @@ const ArticlePage = () => {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-16 pt-10 border-t border-gold/10">
+            {slug === "plant-directory-greenville" && (
+              <Link
+                to="/plant-guide"
+                className="bg-gold text-navy font-sans text-sm uppercase tracking-wider px-8 py-3 rounded hover:bg-gold-light transition-colors"
+              >
+                Browse Our Directory
+              </Link>
+            )}
             <Link
               to="/contact"
-              className="bg-gold text-navy font-sans text-sm uppercase tracking-wider px-8 py-3 rounded hover:bg-gold-light transition-colors"
+              className={`font-sans text-sm uppercase tracking-wider px-8 py-3 rounded transition-colors ${
+                slug === "plant-directory-greenville"
+                  ? "border border-gold text-gold hover:bg-gold hover:text-navy"
+                  : "bg-gold text-navy hover:bg-gold-light"
+              }`}
             >
               Schedule a Consultation
             </Link>
