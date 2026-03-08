@@ -6,8 +6,8 @@ import SEOHead from "@/components/SEOHead";
 import { Badge } from "@/components/ui/badge";
 
 import heroImg from "@/assets/articles-hero.jpg";
+import outdoorKitchenImg from "@/assets/articles/outdoor-kitchen-hero.jpg";
 import img1 from "@/assets/services/block-walls.jpg";
-import img2 from "@/assets/services/outdoor-kitchens.jpg";
 import img3 from "@/assets/services/sod-seeding.jpg";
 import img4 from "@/assets/services/paver-patios.jpg";
 import img5 from "@/assets/services/landscape-lighting.jpg";
@@ -18,28 +18,28 @@ interface Article {
   title: string;
   excerpt: string;
   category: string;
-  date: string;
   image: string;
+  slug?: string;
 }
 
 const popularArticles: Article[] = [
+  {
+    id: 7,
+    title:
+      "Transform Your Backyard: Exploring the Benefits of Adding an Outdoor Kitchen in Greenville, SC",
+    excerpt:
+      "Discover how an outdoor kitchen can boost home value, enhance your lifestyle, and take full advantage of the Upstate's year-round climate.",
+    category: "Outdoor Living",
+    image: outdoorKitchenImg,
+    slug: "outdoor-kitchen-greenville",
+  },
   {
     id: 1,
     title: "The Ultimate Guide to Retaining Wall Design",
     excerpt:
       "Discover how engineered retaining walls can transform sloped terrain into functional outdoor living space while adding lasting value to your property.",
     category: "Hardscaping",
-    date: "Feb 18, 2026",
     image: img1,
-  },
-  {
-    id: 2,
-    title: "Outdoor Kitchen Trends for 2026",
-    excerpt:
-      "From built-in grills to full chef stations, explore the latest outdoor kitchen designs that elevate alfresco entertaining.",
-    category: "Outdoor Living",
-    date: "Jan 30, 2026",
-    image: img2,
   },
   {
     id: 3,
@@ -47,7 +47,6 @@ const popularArticles: Article[] = [
     excerpt:
       "Keep your Upstate SC lawn lush with our month-by-month maintenance guide tailored to the Piedmont climate.",
     category: "Lawn Care",
-    date: "Jan 12, 2026",
     image: img3,
   },
 ];
@@ -59,7 +58,6 @@ const latestArticles: Article[] = [
     excerpt:
       "Learn the essential steps to keep your paver patio looking pristine for decades, from sealing to joint sand replacement.",
     category: "Maintenance",
-    date: "Dec 28, 2025",
     image: img4,
   },
   {
@@ -68,7 +66,6 @@ const latestArticles: Article[] = [
     excerpt:
       "Strategic lighting placement can dramatically enhance your home's exterior beauty and security after dark.",
     category: "Design Tips",
-    date: "Dec 10, 2025",
     image: img5,
   },
   {
@@ -77,45 +74,61 @@ const latestArticles: Article[] = [
     excerpt:
       "Prevent costly water damage with proven drainage techniques, from French drains to grading adjustments.",
     category: "Drainage",
-    date: "Nov 22, 2025",
     image: img6,
   },
 ];
 
-const ArticleCard = ({ article, large = false }: { article: Article; large?: boolean }) => (
-  <div
-    className={`group bg-cream rounded-xl overflow-hidden border border-gold/10 hover:shadow-lg transition-shadow ${
-      large ? "flex flex-col h-full" : ""
-    }`}
-  >
-    <div className={`overflow-hidden ${large ? "aspect-[16/10]" : "aspect-[16/9]"}`}>
-      <img
-        src={article.image}
-        alt={article.title}
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        loading="lazy"
-      />
-    </div>
-    <div className={`p-5 ${large ? "flex-1 flex flex-col" : ""}`}>
-      <div className="flex items-center gap-3 mb-3">
-        <Badge className="bg-gold/15 text-gold border-gold/30 hover:bg-gold/25 text-xs font-sans uppercase tracking-wider">
-          {article.category}
-        </Badge>
-        <span className="text-xs text-muted-foreground font-sans">{article.date}</span>
-      </div>
-      <h3
-        className={`font-serif text-navy leading-snug mb-2 ${
-          large ? "text-2xl md:text-3xl" : "text-lg"
-        }`}
+const ArticleCard = ({
+  article,
+  large = false,
+}: {
+  article: Article;
+  large?: boolean;
+}) => {
+  const inner = (
+    <div
+      className={`group bg-cream rounded-xl overflow-hidden border border-gold/10 hover:shadow-lg transition-shadow ${
+        large ? "flex flex-col h-full" : ""
+      }`}
+    >
+      <div
+        className={`overflow-hidden ${large ? "aspect-[16/10]" : "aspect-[16/9]"}`}
       >
-        {article.title}
-      </h3>
-      <p className={`text-muted-foreground font-sans text-sm leading-relaxed ${large ? "flex-1" : "line-clamp-2"}`}>
-        {article.excerpt}
-      </p>
+        <img
+          src={article.image}
+          alt={article.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+        />
+      </div>
+      <div className={`p-5 ${large ? "flex-1 flex flex-col" : ""}`}>
+        <div className="mb-3">
+          <Badge className="bg-gold/15 text-gold border-gold/30 hover:bg-gold/25 text-xs font-sans uppercase tracking-wider">
+            {article.category}
+          </Badge>
+        </div>
+        <h3
+          className={`font-serif text-navy leading-snug mb-2 ${
+            large ? "text-2xl md:text-3xl" : "text-lg"
+          }`}
+        >
+          {article.title}
+        </h3>
+        <p
+          className={`text-muted-foreground font-sans text-sm leading-relaxed ${large ? "flex-1" : "line-clamp-2"}`}
+        >
+          {article.excerpt}
+        </p>
+      </div>
     </div>
-  </div>
-);
+  );
+
+  if (article.slug) {
+    return <Link to={`/articles/${article.slug}`}>{inner}</Link>;
+  }
+
+  return inner;
+};
 
 const Articles = () => {
   const jsonLd = {
@@ -139,7 +152,11 @@ const Articles = () => {
       {/* Hero */}
       <section className="relative h-[340px] md:h-[400px] flex items-end">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Luxury landscaped backyard" className="w-full h-full object-cover" />
+          <img
+            src={heroImg}
+            alt="Luxury landscaped backyard"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-navy/70" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-12">
@@ -147,7 +164,8 @@ const Articles = () => {
             Landscape Insights
           </h1>
           <p className="text-secondary-foreground/70 font-sans mt-2 max-w-lg">
-            Expert guidance on design, hardscaping, and outdoor living from our team.
+            Expert guidance on design, hardscaping, and outdoor living from our
+            team.
           </p>
         </div>
       </section>
@@ -155,7 +173,9 @@ const Articles = () => {
       {/* Popular Articles — Bento */}
       <section className="bg-cream-alt py-10 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl text-navy mb-8">Popular Articles</h2>
+          <h2 className="font-serif text-3xl text-navy mb-8">
+            Popular Articles
+          </h2>
           <div className="grid lg:grid-cols-5 gap-6">
             {/* Featured large card */}
             <div className="lg:col-span-3">
@@ -174,7 +194,9 @@ const Articles = () => {
       {/* Latest Articles */}
       <section className="bg-background py-10 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl text-navy mb-8">Latest Articles</h2>
+          <h2 className="font-serif text-3xl text-navy mb-8">
+            Latest Articles
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {latestArticles.map((a) => (
               <ArticleCard key={a.id} article={a} />
