@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { Search, Leaf, TreePine, SlidersHorizontal, X } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -47,22 +47,57 @@ function SeasonalPicks({ plants }: { plants: Plant[] }) {
   const lowerNames = names.map((n) => n.toLowerCase());
   const picks = plants.filter((p) => lowerNames.includes(p.common_name.toLowerCase()));
 
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const dragState = useRef({ isDown: false, startX: 0, scrollLeft: 0, dragged: false });
+
+  const onMouseDown = (e: React.MouseEvent) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    dragState.current = { isDown: true, startX: e.pageX - el.offsetLeft, scrollLeft: el.scrollLeft, dragged: false };
+    el.style.cursor = "grabbing";
+  };
+  const onMouseMove = (e: React.MouseEvent) => {
+    const s = dragState.current;
+    if (!s.isDown) return;
+    e.preventDefault();
+    const el = scrollRef.current!;
+    const x = e.pageX - el.offsetLeft;
+    const walk = x - s.startX;
+    if (Math.abs(walk) > 3) s.dragged = true;
+    el.scrollLeft = s.scrollLeft - walk;
+  };
+  const onMouseUp = () => {
+    dragState.current.isDown = false;
+    if (scrollRef.current) scrollRef.current.style.cursor = "grab";
+  };
+  const onLinkClick = (e: React.MouseEvent) => {
+    if (dragState.current.dragged) e.preventDefault();
+  };
+
   if (picks.length === 0) return null;
 
   return (
     <section className="bg-navy py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-serif text-2xl text-gold mb-5">{label}</h2>
-        <div className="seasonal-scroll flex gap-4 overflow-x-auto pb-3">
+        <div
+          ref={scrollRef}
+          onMouseDown={onMouseDown}
+          onMouseMove={onMouseMove}
+          onMouseUp={onMouseUp}
+          onMouseLeave={onMouseUp}
+          className="seasonal-scroll flex gap-4 overflow-x-auto pb-3 select-none cursor-grab"
+        >
           {picks.map((plant) => (
             <Link
               key={plant.id}
               to={`/plant-guide/${plant.id}`}
+              onClick={onLinkClick}
               className="shrink-0 w-48 md:w-56 bg-card-dark rounded-lg overflow-hidden border border-gold/10 hover:border-gold/30 transition-all group"
             >
               <div className="aspect-[4/3] bg-navy overflow-hidden">
                 {plant.photo_url ? (
-                  <img src={plant.photo_url} alt={plant.common_name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={plant.photo_url} alt={plant.common_name} draggable={false} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 pointer-events-none" />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
                     <span className="text-4xl font-serif text-gold/20">{plant.common_name.charAt(0)}</span>
