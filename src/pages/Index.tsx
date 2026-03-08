@@ -237,7 +237,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Large image on the left */}
             <div className="lg:row-span-2 rounded-xl overflow-hidden">
-              <img src={whyUsPhoto} alt="Luxury landscape design" className="w-full h-full object-cover" />
+              <img src={whyUsPhoto} alt="Luxury landscape design" className="w-full h-full object-cover" loading="lazy" />
             </div>
             {/* 4 cards in 2x2 grid on the right */}
             {whyUsItems.slice(0, 4).map((item, i) => (
