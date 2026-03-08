@@ -403,10 +403,10 @@ const PlantGuide = () => {
       <section className="bg-navy py-16">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-serif text-3xl text-secondary-foreground mb-4">
-            Ready to bring your landscape vision to <span className="text-gold">life</span>?
+            Need help <span className="text-gold">choosing</span>?
           </h2>
           <p className="text-secondary-foreground/60 mb-8">
-            Our team designs and installs luxury landscapes throughout Upstate South Carolina.
+            Our designers can create a custom plant palette for your property.
           </p>
           <Link
             to="/contact"
