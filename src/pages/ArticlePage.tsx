@@ -66,7 +66,7 @@ const articles: Record<string, ArticleData> = {
   },
   "landscape-lighting-greenville": {
     title:
-      "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Greenville, SC",
+      "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Greenville,\u00a0SC",
     category: "Design Tips",
     heroImage: landscapeLightingHero,
     detailImage: landscapeLightingDetail,
