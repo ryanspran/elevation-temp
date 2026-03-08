@@ -12,14 +12,14 @@ interface SEOHeadProps {
 
 const SITE_URL = "https://elevationlandscapes.com";
 
-const SEOHead = ({ page, fallbackTitle, fallbackDescription, path = "", jsonLd }: SEOHeadProps) => {
+const SEOHead = ({ page, fallbackTitle, fallbackDescription, path = "", jsonLd, ogImageOverride }: SEOHeadProps) => {
   const { data: seo } = usePageSEO(page);
 
   const title = seo?.title || fallbackTitle;
   const description = seo?.description || fallbackDescription;
   const ogTitle = seo?.og_title || title;
   const ogDescription = seo?.og_description || description;
-  const ogImage = seo?.og_image_path || "";
+  const ogImage = ogImageOverride || seo?.og_image_path || "";
   const canonical = `${SITE_URL}${path}`;
 
   return (
