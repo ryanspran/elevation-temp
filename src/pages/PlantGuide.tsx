@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { Search, Leaf, TreePine, SlidersHorizontal, X } from "lucide-react";
 import Navbar from "@/components/Navbar";
