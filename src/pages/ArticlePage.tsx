@@ -17,6 +17,8 @@ import stoneVsPaversHero from "@/assets/articles/stone-vs-pavers-hero.jpg";
 import stoneVsPaversDetail from "@/assets/articles/stone-vs-pavers-detail.jpg";
 import drainageHero from "@/assets/articles/drainage-hero.jpg";
 import drainageDetail from "@/assets/articles/drainage-detail.jpg";
+import plantDirectoryHero from "@/assets/articles/plant-directory-hero.jpg";
+import plantDirectoryDetail from "@/assets/articles/plant-directory-detail.jpg";
 
 interface ArticleData {
   title: string;
