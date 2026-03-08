@@ -15,6 +15,8 @@ import outdoorLivingHero from "@/assets/articles/outdoor-living-hero.jpg";
 import outdoorLivingDetail from "@/assets/articles/outdoor-living-detail.jpg";
 import stoneVsPaversHero from "@/assets/articles/stone-vs-pavers-hero.jpg";
 import stoneVsPaversDetail from "@/assets/articles/stone-vs-pavers-detail.jpg";
+import drainageHero from "@/assets/articles/drainage-hero.jpg";
+import drainageDetail from "@/assets/articles/drainage-detail.jpg";
 
 interface ArticleData {
   title: string;
