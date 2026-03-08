@@ -298,7 +298,7 @@ const Index = () => {
       <section className="relative py-24 md:py-32 overflow-hidden">
         {/* Background image with dark overlay */}
         <div className="absolute inset-0 z-0">
-          <img src={testimonialsBg} alt="" className="w-full h-full object-cover" />
+          <img src={testimonialsBg} alt="" className="w-full h-full object-cover" loading="lazy" />
           <div className="absolute inset-0 bg-navy/50" />
         </div>
 
