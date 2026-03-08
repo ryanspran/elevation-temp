@@ -15,6 +15,8 @@ import outdoorLivingHero from "@/assets/articles/outdoor-living-hero.jpg";
 import outdoorLivingDetail from "@/assets/articles/outdoor-living-detail.jpg";
 import stoneVsPaversHero from "@/assets/articles/stone-vs-pavers-hero.jpg";
 import stoneVsPaversDetail from "@/assets/articles/stone-vs-pavers-detail.jpg";
+import drainageHero from "@/assets/articles/drainage-hero.jpg";
+import drainageDetail from "@/assets/articles/drainage-detail.jpg";
 
 interface ArticleData {
   title: string;
@@ -229,6 +231,35 @@ const articles: Record<string, ArticleData> = {
       {
         heading: "Making Your Decision",
         body: "Ultimately, the choice between natural stone and concrete pavers will depend on your personal preferences, budget, and the specific demands of your outdoor project. Both materials offer significant advantages, and each can distinctly enhance the beauty and functionality of pathways, patios, and pool decks in your Upstate SC home.\n\nWhether you're drawn to the timeless elegance of natural stone or the versatility and affordability of concrete pavers, making an informed decision ensures that your outdoor spaces become lasting assets. For expert guidance, Elevation Landscapes can help you explore your options, bringing together beauty and practicality in your outdoor projects. Our commitment to quality service means your home is in experienced hands, creating landscapes that are as enduring as they are stunning.",
+      },
+    ],
+  },
+  "drainage-before-landscaping": {
+    title: "Why Upstate SC Homeowners Need a Proper Drainage System Before Any Landscaping Project",
+    category: "Drainage",
+    heroImage: drainageHero,
+    detailImage: drainageDetail,
+    seoTitle: "Proper Drainage Before Landscaping in Upstate SC | Elevation Landscapes",
+    seoDescription: "Learn why addressing drainage first is essential for protecting your landscape investment on Upstate SC's sloped terrain and heavy rainfall.",
+    sections: [
+      {
+        body: "Landscaping in beautiful Upstate South Carolina—particularly in areas like Greenville—is not without its challenges. The region is known for its picturesque sloped terrain and abundant rainfall, which can lead to significant drainage issues if not properly addressed. Before embarking on any landscaping project, ensuring a robust drainage system is crucial for protecting your investment and maximizing the longevity of your outdoor space. Here's why understanding and prioritizing proper drainage is essential for Upstate SC homeowners.",
+      },
+      {
+        heading: "The Challenges of Sloped Terrain and Heavy Rainfall",
+        body: "Upstate SC's sloped lots provide stunning views but also pose challenges for water management. Heavy rainfall common to the region can lead to water accumulation, soil erosion, and even flooding if not managed properly. Without effective drainage, your carefully planned landscaping projects can quickly become waterlogged, resulting in long-term damage or costly repairs.",
+      },
+      {
+        heading: "Why Proper Drainage is Essential",
+        body: "A well-designed drainage system safeguards your property from water damage. Excess water runoff can undermine structures, wash away soil, and damage plant roots. Implementing proper drainage protects both your home's foundation and landscape investment.\n\nSloped yards are particularly susceptible to erosion, which can wreak havoc on your lawn and garden beds. Effective drainage solutions channel rainwater away from vulnerable areas, maintaining your landscape's integrity and appearance.\n\nOverwatering can suffocate plants and invite disease, diminishing their vitality. Proper drainage ensures that water is directed away efficiently, providing plants with the optimal moisture level for growth.\n\nPoor drainage can render outdoor areas unusable, especially after heavy rains. By ensuring proper water flow and drainage, you can maintain dry and accessible paths, patios, and garden areas year-round.",
+      },
+      {
+        heading: "Key Components of an Effective Drainage System",
+        body: "Proper grading is critical to directing water away from structures and toward appropriate drainage areas. A subtle slope can be created to guide water flow without compromising the aesthetic of your landscape.\n\nSolutions such as French drains or pipe systems effectively manage water by collecting and redirecting it underground. These systems are particularly useful in areas prone to excessive surface water.\n\nRain gardens and swales are natural solutions that absorb and filter runoff, integrating seamlessly into your landscape design. They offer an eco-friendly approach to managing water flow, adding both beauty and functionality.",
+      },
+      {
+        heading: "How Elevation Landscapes Can Help",
+        body: "At Elevation Landscapes, our expertise in grading and underground drainage systems positions us as leaders in tackling the unique challenges of Upstate SC. Before you even begin selecting a contractor for your landscaping project, consulting with experts in drainage ensures a solid foundation and peace of mind. Our experienced team evaluates your property, designs tailored solutions, and executes plans that preserve your landscape's beauty while safeguarding your investments.\n\nChoosing Elevation Landscapes means partnering with professionals who understand the nuances of Upstate SC's terrain and weather patterns. We focus on creating sustainable, effective drainage systems that harmonize with your landscaping goals, allowing you to enjoy a beautiful, functional outdoor space no matter the weather. Reach out to us to ensure your home is equipped with the proper drainage infrastructure, setting the stage for a successful and enduring landscape project.",
       },
     ],
   },
