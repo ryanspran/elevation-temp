@@ -7,6 +7,7 @@ interface SEOHeadProps {
   fallbackDescription: string;
   path?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  ogImageOverride?: string;
 }
 
 const SITE_URL = "https://elevationlandscapes.com";
