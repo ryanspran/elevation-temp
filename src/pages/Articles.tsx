@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { Phone } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -177,6 +179,23 @@ const Articles = () => {
             {latestArticles.map((a) => (
               <ArticleCard key={a.id} article={a} />
             ))}
+          </div>
+
+          {/* CTA */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+            <Link
+              to="/contact"
+              className="bg-gold text-navy font-sans text-sm uppercase tracking-wider px-8 py-3 rounded hover:bg-gold-light transition-colors"
+            >
+              Schedule a Consultation
+            </Link>
+            <a
+              href="tel:+18641234567"
+              className="flex items-center gap-2 border border-gold text-gold font-sans text-sm uppercase tracking-wider px-8 py-3 rounded hover:bg-gold hover:text-navy transition-colors"
+            >
+              <Phone className="h-4 w-4" />
+              Call Now
+            </a>
           </div>
         </div>
       </section>
