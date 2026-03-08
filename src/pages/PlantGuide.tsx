@@ -53,7 +53,7 @@ function SeasonalPicks({ plants }: { plants: Plant[] }) {
     <section className="bg-navy py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-serif text-2xl text-gold mb-5">{label}</h2>
-        <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-thin">
+        <div className="seasonal-scroll flex gap-4 overflow-x-auto pb-3">
           {picks.map((plant) => (
             <Link
               key={plant.id}
