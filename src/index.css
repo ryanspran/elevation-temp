@@ -90,3 +90,27 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--gold) / 0.7);
 }
+
+/* Shimmer loading effect */
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--card-dark)) 25%,
+    hsl(var(--navy)) 50%,
+    hsl(var(--card-dark)) 75%
+  );
+  background-size: 200% 100%;
+}
+
+/* Gold focus ring utility */
+.focus-gold {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy;
+}
+
+/* Search highlight */
+mark.search-highlight {
+  background: hsl(var(--gold) / 0.3);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
