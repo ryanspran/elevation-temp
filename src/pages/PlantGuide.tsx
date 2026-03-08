@@ -12,7 +12,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { usePlants, type Plant } from "@/hooks/usePlants";
 import PlantFilterSidebar, { type FilterState } from "@/components/PlantFilterSidebar";
 import PlantCard from "@/components/PlantCard";
-import { useState as useStateR } from "react";
+
 
 const ITEMS_PER_PAGE = 24;
 
