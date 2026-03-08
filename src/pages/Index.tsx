@@ -363,7 +363,7 @@ const Index = () => {
             </div>
             {/* After */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
-              <img src={portfolioAfter} alt="After landscaping" className="w-full h-full object-cover" />
+              <img src={portfolioAfter} alt="After landscaping" className="w-full h-full object-cover" loading="lazy" />
               <span className="absolute top-4 right-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 After
               </span>
