@@ -11,6 +11,8 @@ import landscapeLightingHero from "@/assets/articles/landscape-lighting-hero.jpg
 import landscapeLightingDetail from "@/assets/articles/landscape-lighting-detail.jpg";
 import retainingWallsHero from "@/assets/articles/retaining-walls-hero.jpg";
 import retainingWallsDetail from "@/assets/articles/retaining-walls-detail.jpg";
+import outdoorLivingHero from "@/assets/articles/outdoor-living-hero.jpg";
+import outdoorLivingDetail from "@/assets/articles/outdoor-living-detail.jpg";
 
 interface ArticleData {
   title: string;
@@ -102,6 +104,49 @@ const articles: Record<string, ArticleData> = {
       },
       {
         body: "Choosing the right retaining wall for your sloped lot in Upstate SC is vital for addressing drainage and erosion while enhancing the overall appeal of your landscape. Whether you prefer the natural allure of boulders, the structured elegance of blocks, or the timeless sophistication of natural stone, there's a solution that suits your needs. By understanding the characteristics and advantages of each material, you can make a well-informed decision that reflects your personal style and meets functional requirements. Address your property's challenges head-on and transform your outdoor space into a functional, beautiful haven.",
+      },
+    ],
+  },
+  "outdoor-living-greenville": {
+    title:
+      "The Complete Guide to Outdoor Living Spaces in Greenville,\u00a0SC",
+    category: "Outdoor Living",
+    heroImage: outdoorLivingHero,
+    detailImage: outdoorLivingDetail,
+    seoTitle:
+      "Complete Guide to Outdoor Living Spaces in Greenville SC | Elevation Landscapes",
+    seoDescription:
+      "Explore every element of outdoor living — patios, kitchens, fire pits, water features, and lighting — for Greenville, SC homeowners.",
+    sections: [
+      {
+        body: "There's something uniquely captivating about outdoor living spaces, especially in the vibrant community of Greenville, SC. With the perfect blend of mild climate, picturesque landscapes, and an affinity for quality home life, Greenville is an ideal location for transforming your backyard into a haven of relaxation and entertainment. From patios and outdoor kitchens to fire pits, water features, and strategic lighting, this guide explores every element to help you create an exceptional outdoor living space.",
+      },
+      {
+        heading: "Patios: The Foundation of Outdoor Living",
+        body: "A well-designed patio serves as the foundation of your outdoor escape. It provides a versatile space for dining, lounging, and entertaining. When designing your patio in Greenville, consider materials such as stone, brick, or concrete pavers, each offering a unique aesthetic and level of durability. Focusing on cohesion with your home's architecture and landscape ensures that the patio enhances your overall property value and appeal.",
+      },
+      {
+        heading: "Outdoor Kitchens: Culinary Delight in Your Backyard",
+        body: "Outdoor kitchens have become a hallmark of luxury in Greenville's outdoor living spaces. Equip your kitchen with essentials like a high-quality grill, refrigerator, and sink to make cooking a breeze. Consider adding countertops made from durable materials such as granite or stainless steel that can withstand the elements. Personalizing your space with a bar area, pizza oven, or smoker can elevate your culinary endeavors, making your home the go-to spot for gatherings.",
+      },
+      {
+        heading: "Fire Pits: Warmth and Ambiance",
+        body: "Fire pits hold a special place in the hearts of those who enjoy spending evenings outdoors. They provide warmth, light, and an inviting atmosphere, perfect for cool Greenville nights. Whether you prefer a traditional wood-burning pit or a more convenient gas option, the design possibilities are endless. Pair your fire pit with comfortable seating to create a cozy nook where friends and family can gather for storytelling or marshmallow roasting.",
+      },
+      {
+        heading: "Water Features: Tranquility and Elegance",
+        body: "Introducing a water feature into your outdoor space can add a touch of elegance and tranquility. Whether you select a cascading waterfall, a serene pond, or a modern fountain, water features have the power to soothe and refresh. When implemented strategically, they not only enhance the aesthetic appeal but also serve as focal points in your landscape, attracting local wildlife and creating an oasis in your backyard.",
+      },
+      {
+        heading: "Lighting: Setting the Mood and Enhancing Safety",
+        body: "The finishing touch to any outdoor living space is thoughtful lighting. Beyond aesthetics, lighting plays a crucial role in safety and security. String lights, pathway markers, and wall sconces can illuminate your outdoor areas, highlighting key elements and creating an enchanting ambiance. In Greenville's temperate evenings, good lighting design allows you to enjoy your backyard long after the sun has set.",
+      },
+      {
+        heading: "Bringing It All Together: Planning Your Outdoor Space",
+        body: "When designing an outdoor living space, consider how each element works together to create a cohesive and functional environment. Sketch a layout that optimizes flow and accessibility, ensuring comfort and convenience. Whether you're starting from scratch or enhancing existing features, the integration of patios, kitchens, fire pits, water features, and lighting can transform your backyard into a personal paradise.",
+      },
+      {
+        body: "Elevating your outdoor experience requires expertise and vision, which is where teams like Elevation Landscapes come into play. As leading outdoor living contractors in Greenville, we specialize in bringing your outdoor dreams to life, offering comprehensive services that deliver enduring style and functionality. Our passion for creating bespoke outdoor spaces means every project is tailored to meet your specific needs and tastes, turning your backyard into an exceptional living area that complements your lifestyle. Let us guide you through your transformation, ensuring that your outdoor space becomes a cornerstone of enjoyment and a reflection of your personal style.",
       },
     ],
   },
