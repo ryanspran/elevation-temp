@@ -239,6 +239,9 @@ const PlantGuide = () => {
         </div>
       </section>
 
+      {/* Seasonal Picks */}
+      {!isLoading && !error && <SeasonalPicks plants={plants ?? []} />}
+
       {/* Main Content */}
       <section className="bg-navy py-8 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
