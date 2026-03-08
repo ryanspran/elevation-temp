@@ -85,12 +85,6 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              to="/faq"
-              className="font-sans text-sm tracking-wider text-secondary-foreground hover:text-gold transition-colors uppercase"
-            >
-              FAQ
-            </Link>
-            <Link
               to="/contact"
               className="font-sans text-sm tracking-wider border border-gold text-gold px-5 py-2 rounded hover:bg-gold hover:text-navy transition-all uppercase"
             >
