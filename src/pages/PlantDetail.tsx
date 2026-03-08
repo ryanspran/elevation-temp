@@ -25,6 +25,22 @@ const PlantDetail = () => {
 
   const handleShare = async () => {
     const url = window.location.href;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: plant ? `${plant.common_name} | Plant Guide` : "Plant Guide",
+          text: plant?.botanical_name ? `Check out ${plant.common_name} (${plant.botanical_name})` : undefined,
+          url,
+        });
+        return;
+      } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") {
+          return;
+        }
+      }
+    }
+
     try {
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(url);
@@ -35,16 +51,17 @@ const PlantDetail = () => {
         textarea.style.opacity = "0";
         document.body.appendChild(textarea);
         textarea.select();
-        document.execCommand("copy");
+        const copied = document.execCommand("copy");
         document.body.removeChild(textarea);
+
+        if (!copied) {
+          window.prompt("Copy this link:", url);
+          return;
+        }
       }
-      toast("Link copied to clipboard", {
-        style: { background: "hsl(225 24% 19%)", color: "hsl(40 33% 96%)", border: "1px solid hsl(40 50% 54% / 0.3)" },
-      });
+      toast.success("Link copied to clipboard");
     } catch {
-      toast("Could not copy link", {
-        style: { background: "hsl(225 24% 19%)", color: "hsl(40 33% 96%)", border: "1px solid hsl(0 60% 50% / 0.3)" },
-      });
+      window.prompt("Copy this link:", url);
     }
   };
 
