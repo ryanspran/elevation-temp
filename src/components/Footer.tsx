@@ -33,9 +33,14 @@ const Footer = () => {
                 Greenville, SC
               </span>
             </div>
-            <Link to="/subcontractor" className="text-secondary-foreground/70 hover:text-gold transition-colors">
-              Need a subcontractor? Work with us
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
+              <Link to="/articles" className="text-secondary-foreground/70 hover:text-gold transition-colors">
+                Articles
+              </Link>
+              <Link to="/subcontractor" className="text-secondary-foreground/70 hover:text-gold transition-colors">
+                Need a subcontractor? Work with us
+              </Link>
+            </div>
           </div>
 
           {/* Social */}
