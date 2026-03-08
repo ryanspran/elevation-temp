@@ -62,13 +62,12 @@ const latestArticles: Article[] = [
     image: img4,
   },
   {
-    id: 5,
-    title: "Landscape Lighting Tips for Curb Appeal",
+    id: 1,
+    title: "The Ultimate Guide to Retaining Wall Design",
     excerpt:
-      "Strategic lighting placement can dramatically enhance your home's exterior beauty and security after dark.",
-    category: "Design Tips",
-    image: img5,
-    slug: "landscape-lighting-greenville",
+      "Discover how engineered retaining walls can transform sloped terrain into functional outdoor living space while adding lasting value to your property.",
+    category: "Hardscaping",
+    image: img1,
   },
   {
     id: 6,
