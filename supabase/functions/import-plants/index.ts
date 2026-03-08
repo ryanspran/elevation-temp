@@ -32,14 +32,12 @@ function stripCategoryPrefix(cat: string): string {
   return cat.replace(/^\d+\.\s*/, "");
 }
 
-Deno.serve(async () => {
+Deno.serve(async (req) => {
   const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
   const supabaseKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
   const supabase = createClient(supabaseUrl, supabaseKey);
 
-  // Read embedded CSV
-  const csvUrl = new URL("./plants.csv", import.meta.url);
-  const csvText = await Deno.readTextFile(csvUrl.pathname);
+  const csvText = await req.text();
 
   const parsed = Papa.parse(csvText, { header: true, skipEmptyLines: true });
 
