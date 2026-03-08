@@ -42,6 +42,16 @@ const ServicePage = () => {
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://elevationlandscapes.com" },
+      { "@type": "ListItem", position: 2, name: "Services", item: "https://elevationlandscapes.com/services" },
+      { "@type": "ListItem", position: 3, name: service.name, item: `https://elevationlandscapes.com/services/${slug}` },
+    ],
+  };
+
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -49,7 +59,7 @@ const ServicePage = () => {
         fallbackTitle={service.seoTitle}
         fallbackDescription={service.subheadline}
         path={`/services/${slug}`}
-        jsonLd={[faqJsonLd, serviceJsonLd]}
+        jsonLd={[faqJsonLd, serviceJsonLd, breadcrumbJsonLd]}
       />
       <Navbar />
 

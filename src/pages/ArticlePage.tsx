@@ -271,8 +271,36 @@ const ArticlePage = () => {
 
   if (!article) return <Navigate to="/articles" replace />;
 
-  // Insert detail image after the 3rd section
   const insertImageAfter = 3;
+
+  const blogPostingJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.seoDescription,
+    image: article.heroImage,
+    author: {
+      "@type": "Organization",
+      name: "Elevation Landscapes",
+      url: "https://elevationlandscapes.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Elevation Landscapes",
+      url: "https://elevationlandscapes.com",
+    },
+    mainEntityOfPage: `https://elevationlandscapes.com/articles/${slug}`,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://elevationlandscapes.com" },
+      { "@type": "ListItem", position: 2, name: "Articles", item: "https://elevationlandscapes.com/articles" },
+      { "@type": "ListItem", position: 3, name: article.title, item: `https://elevationlandscapes.com/articles/${slug}` },
+    ],
+  };
 
   return (
     <>
@@ -281,6 +309,7 @@ const ArticlePage = () => {
         fallbackTitle={article.seoTitle}
         fallbackDescription={article.seoDescription}
         path={`/articles/${slug}`}
+        jsonLd={[blogPostingJsonLd, breadcrumbJsonLd]}
       />
       <Navbar />
 
