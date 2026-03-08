@@ -66,34 +66,43 @@ const PlantDetail = () => {
 
       {isLoading ? <LoadingSkeleton /> : error || !plant ? <NotFoundState backUrl={backUrl} /> : (
         <>
-          {/* Hero Image */}
-          <HeroImage plant={plant} />
-
-          {/* Header */}
-          <section className="bg-navy pb-8">
+          {/* Hero: side-by-side */}
+          <section className="bg-navy pb-10 pt-4">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex flex-wrap gap-2 mb-3">
-                {plant.plant_type && (
-                  <span className="text-xs text-gold uppercase tracking-[0.15em] font-sans">{plant.plant_type}</span>
-                )}
-                {plant.guide_categories?.filter((c) => c !== plant.plant_type).map((cat, i) => (
-                  <span key={cat} className="flex items-center gap-2">
-                    <span className="text-gold/30">·</span>
-                    <span className="text-xs text-gold uppercase tracking-[0.15em] font-sans">{cat}</span>
-                  </span>
-                ))}
-              </div>
-              <h1 className="font-serif text-4xl md:text-5xl text-secondary-foreground mb-2">{plant.common_name}</h1>
-              {plant.botanical_name && (
-                <p className="text-secondary-foreground/50 text-lg italic mb-5 font-sans">{plant.botanical_name}</p>
-              )}
-              <div className="flex flex-wrap gap-2">
-                {plant.sc_native && (
-                  <span className="text-xs bg-gold text-primary-foreground px-3 py-1 rounded font-sans font-medium uppercase tracking-wider">SC Native</span>
-                )}
-                {plant.maintenance_level && (
-                  <span className="text-xs border border-gold/40 text-gold px-3 py-1 rounded font-sans uppercase tracking-wider">{plant.maintenance_level} Maintenance</span>
-                )}
+              <div className="grid md:grid-cols-2 gap-8 items-start">
+                {/* Left — Photo */}
+                <PlantPhoto plant={plant} />
+
+                {/* Right — Info */}
+                <div className="flex flex-col justify-center">
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {plant.plant_type && (
+                      <span className="text-xs text-gold uppercase tracking-[0.15em] font-sans">{plant.plant_type}</span>
+                    )}
+                    {plant.guide_categories?.filter((c) => c !== plant.plant_type).map((cat) => (
+                      <span key={cat} className="flex items-center gap-2">
+                        <span className="text-gold/30">·</span>
+                        <span className="text-xs text-gold uppercase tracking-[0.15em] font-sans">{cat}</span>
+                      </span>
+                    ))}
+                  </div>
+
+                  <h1 className="font-serif text-4xl md:text-5xl text-secondary-foreground mb-2">{plant.common_name}</h1>
+                  {plant.botanical_name && (
+                    <p className="text-secondary-foreground/50 text-lg italic mb-5 font-sans">{plant.botanical_name}</p>
+                  )}
+
+                  <div className="border-t border-gold/10 pt-5 mb-5" />
+
+                  <div className="flex flex-wrap gap-2">
+                    {plant.sc_native && (
+                      <span className="text-xs bg-gold text-primary-foreground px-3 py-1 rounded font-sans font-medium uppercase tracking-wider">SC Native</span>
+                    )}
+                    {plant.maintenance_level && (
+                      <span className="text-xs border border-gold/40 text-gold px-3 py-1 rounded font-sans uppercase tracking-wider">{plant.maintenance_level} Maintenance</span>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -102,7 +111,6 @@ const PlantDetail = () => {
           <section className="bg-navy py-8 md:py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid md:grid-cols-2 gap-6">
-                {/* Growing Conditions */}
                 <DetailSection title="🌱 Growing Conditions">
                   <DetailRow label="Sun Requirements" value={plant.sun_requirements} />
                   <DetailRow label="Water Needs" value={plant.water_needs} />
@@ -110,14 +118,12 @@ const PlantDetail = () => {
                   <DetailRow label="Mature Size" value={plant.mature_size} />
                 </DetailSection>
 
-                {/* Seasonal Interest */}
                 <DetailSection title="🍂 Seasonal Interest">
                   <DetailRow label="Bloom Time & Color" value={plant.bloom_time_color} />
                   <DetailRow label="Fall Color" value={plant.fall_color} />
                   <DetailRow label="Wildlife Value" value={plant.wildlife_value} />
                 </DetailSection>
 
-                {/* Landscape Notes — full width */}
                 <div className="md:col-span-2">
                   <DetailSection title="🏡 Landscape Notes">
                     <DetailRow label="Landscape Use" value={plant.landscape_use} />
@@ -173,26 +179,26 @@ const PlantDetail = () => {
 
 /* ---- Sub-components ---- */
 
-function HeroImage({ plant }: { plant: { common_name: string; photo_url: string | null } }) {
+function PlantPhoto({ plant }: { plant: { common_name: string; photo_url: string | null } }) {
   const [imgError, setImgError] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
   const letter = plant.common_name.charAt(0).toUpperCase();
 
   if (!plant.photo_url || imgError) {
     return (
-      <div className="w-full h-[340px] bg-gradient-to-br from-card-dark to-navy flex items-center justify-center">
+      <div className="w-full aspect-[4/5] rounded-lg bg-gradient-to-br from-card-dark to-navy flex items-center justify-center">
         <span className="text-8xl font-serif text-gold/30">{letter}</span>
       </div>
     );
   }
 
   return (
-    <div className="w-full h-[340px] relative overflow-hidden bg-card-dark">
-      {!imgLoaded && <div className="absolute inset-0 shimmer-bg animate-shimmer" />}
+    <div className="w-full aspect-[4/5] relative overflow-hidden rounded-lg bg-card-dark">
+      {!imgLoaded && <div className="absolute inset-0 shimmer-bg animate-shimmer rounded-lg" />}
       <img
         src={plant.photo_url}
         alt={plant.common_name}
-        className={`w-full h-full object-cover transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
+        className={`w-full h-full object-cover rounded-lg transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
         onLoad={() => setImgLoaded(true)}
         onError={() => setImgError(true)}
       />
@@ -221,12 +227,21 @@ function DetailRow({ label, value }: { label: string; value: string | null }) {
 
 function LoadingSkeleton() {
   return (
-    <section className="bg-navy pb-16">
-      <Skeleton className="w-full h-[340px]" />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 space-y-4">
-        <Skeleton className="h-5 w-40" />
-        <Skeleton className="h-12 w-3/4" />
-        <Skeleton className="h-6 w-1/2" />
+    <section className="bg-navy pb-16 pt-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 gap-8">
+          <Skeleton className="w-full aspect-[4/5] rounded-lg" />
+          <div className="space-y-4 pt-4">
+            <Skeleton className="h-4 w-40" />
+            <Skeleton className="h-12 w-3/4" />
+            <Skeleton className="h-6 w-1/2" />
+            <Skeleton className="h-px w-full mt-4" />
+            <div className="flex gap-2 mt-4">
+              <Skeleton className="h-7 w-24 rounded" />
+              <Skeleton className="h-7 w-36 rounded" />
+            </div>
+          </div>
+        </div>
         <div className="grid md:grid-cols-2 gap-6 mt-8">
           <Skeleton className="h-64 rounded-lg" />
           <Skeleton className="h-64 rounded-lg" />

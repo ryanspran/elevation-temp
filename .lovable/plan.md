@@ -1,29 +1,16 @@
 
 
-## Redesign Plant Detail: Side-by-Side Layout
+## Enable Mouse Drag Scrolling on Services Carousel
 
-Replace the full-width hero image with a two-column layout inspired by the reference screenshot. Photo on the left, plant info on the right. All on navy background.
+Embla Carousel (which powers the `<Carousel>` component) supports drag/mouse scrolling natively — it just needs `dragFree: true` in the options. By default Embla already enables drag on touch devices, but adding `dragFree` makes the free-scroll drag behavior more natural on desktop with a mouse.
 
-### Layout Structure
+### Changes
 
-**Single file change: `src/pages/PlantDetail.tsx`**
+**`src/pages/Index.tsx`** (line ~155): Add `dragFree: true` to the services carousel `opts`:
 
-**New top section** (replaces HeroImage + Header):
-- Two-column grid (`md:grid-cols-2`) inside the navy section
-- **Left column**: Plant photo (square/tall aspect, rounded corners, shimmer + fade-in, same error fallback as before). Takes roughly half the width.
-- **Right column**: 
-  - Category tags (gold uppercase)
-  - Common name (large Playfair Display, white)
-  - Botanical name (italic, muted)
-  - Separator line (gold/10)
-  - Key details inline: Plant Type, SC Native badge, Maintenance badge
-- On mobile, stacks vertically (image on top, info below)
+```tsx
+<Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
+```
 
-**Remove**: The `HeroImage` component and the separate Header `<section>`. Merge into one unified section.
-
-**Detail cards section**: Stays the same (2-col grid of Growing Conditions, Seasonal Interest, full-width Landscape Notes).
-
-**Everything else unchanged**: Prev/Next nav, CTA, Footer.
-
-**Loading skeleton**: Update to show the two-column layout skeleton instead of full-width image.
+This single prop change enables mouse drag scrolling. No other files need modification — Embla handles pointer events (mouse + touch) out of the box. The `dragFree` option allows momentum-based free scrolling rather than snapping strictly to slides, which feels more natural for a browsable services list.
 
