@@ -59,7 +59,7 @@ const ServicePage = () => {
         fallbackTitle={service.seoTitle}
         fallbackDescription={service.subheadline}
         path={`/services/${slug}`}
-        jsonLd={[faqJsonLd, serviceJsonLd]}
+        jsonLd={[faqJsonLd, serviceJsonLd, breadcrumbJsonLd]}
       />
       <Navbar />
 
