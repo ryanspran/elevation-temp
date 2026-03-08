@@ -122,7 +122,7 @@ mark.search-highlight {
     color: black !important;
   }
 
-  nav, footer, .print\\:hidden {
+  nav, footer, [class*="print:hidden"] {
     display: none !important;
   }
 
@@ -131,26 +131,23 @@ mark.search-highlight {
     color: black !important;
   }
 
-  .bg-navy, .bg-card-dark, .bg-\\[\\#242938\\] {
+  [class*="bg-navy"], [class*="bg-card-dark"], [class*="bg-[#242938]"] {
     background: white !important;
   }
 
-  .text-secondary-foreground,
-  .text-secondary-foreground\\/90,
-  .text-secondary-foreground\\/50,
-  .text-secondary-foreground\\/60 {
+  [class*="text-secondary-foreground"] {
     color: #1a1a1a !important;
   }
 
-  .text-gold {
+  [class*="text-gold"] {
     color: #8a6d2b !important;
   }
 
-  .text-muted-foreground {
+  [class*="text-muted-foreground"] {
     color: #555 !important;
   }
 
-  .border-gold\\/10 {
+  [class*="border-gold"] {
     border-color: #ccc !important;
   }
 
