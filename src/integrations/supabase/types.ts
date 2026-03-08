@@ -28,6 +28,7 @@ export type Database = {
           photo_url: string | null
           plant_type: string | null
           sc_native: boolean | null
+          slug: string
           soil_preferences: string | null
           special_features: string | null
           sun_category: string | null
@@ -49,6 +50,7 @@ export type Database = {
           photo_url?: string | null
           plant_type?: string | null
           sc_native?: boolean | null
+          slug: string
           soil_preferences?: string | null
           special_features?: string | null
           sun_category?: string | null
@@ -70,6 +72,7 @@ export type Database = {
           photo_url?: string | null
           plant_type?: string | null
           sc_native?: boolean | null
+          slug?: string
           soil_preferences?: string | null
           special_features?: string | null
           sun_category?: string | null
