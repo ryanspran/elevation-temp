@@ -9,7 +9,7 @@ import heroImg from "@/assets/articles-hero.jpg";
 import outdoorKitchenImg from "@/assets/articles/outdoor-kitchen-hero.jpg";
 import img1 from "@/assets/services/block-walls.jpg";
 import img3 from "@/assets/articles/retaining-walls-hero.jpg";
-import img4 from "@/assets/services/paver-patios.jpg";
+import img4 from "@/assets/articles/outdoor-living-hero.jpg";
 import img5 from "@/assets/articles/landscape-lighting-hero.jpg";
 import img6 from "@/assets/services/underground-drainage.jpg";
 
