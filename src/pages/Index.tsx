@@ -278,7 +278,7 @@ const Index = () => {
             {/* Right — Photo with overlapping quote */}
             <div className="relative">
               <div className="rounded-xl overflow-hidden">
-                <img src={processPhoto} alt="Landscape design consultation" className="w-full h-auto object-cover" />
+                <img src={processPhoto} alt="Landscape design consultation" className="w-full h-auto object-cover" loading="lazy" />
               </div>
               <div className="relative lg:absolute lg:-bottom-8 lg:-left-12 bg-popover border border-border rounded-xl p-6 shadow-lg mt-6 lg:mt-0 max-w-sm">
                 <span className="font-serif text-gold text-4xl leading-none block mb-2">"</span>
