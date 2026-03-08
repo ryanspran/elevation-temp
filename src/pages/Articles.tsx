@@ -144,7 +144,7 @@ const Articles = () => {
           <h1 className="font-serif text-4xl md:text-5xl text-secondary-foreground">
             Landscape Insights
           </h1>
-          <p className="text-gold-light/70 font-sans mt-2 max-w-lg">
+          <p className="text-secondary-foreground/70 font-sans mt-2 max-w-lg">
             Expert guidance on design, hardscaping, and outdoor living from our team.
           </p>
         </div>
