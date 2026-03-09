@@ -325,7 +325,7 @@ const Identify = () => {
                   className="relative w-full bg-white/5 backdrop-blur-xl border-2 border-dashed border-gold/30 rounded-lg p-8 overflow-hidden min-h-[200px] flex flex-col items-center justify-center gap-4 hover:border-gold/50 transition-colors"
                   style={{ backgroundImage: `url('/src/assets/articles/plant-directory-hero.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                 >
-                  <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+                  <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
                   <Camera className="h-12 w-12 text-navy relative z-10" />
                   <div className="text-center relative z-10">
                     <p className="text-navy font-semibold mb-2 text-lg">Tap to Take Photo</p>
