@@ -339,6 +339,19 @@ const PlantGuide = () => {
               </button>
             )}
           </div>
+
+          {/* Mobile Plant Identifier CTA - Only visible on mobile */}
+          {isMobile && (
+            <div className="mt-4 mb-6 text-center">
+              <Link
+                to="/identify"
+                className="text-gold text-base font-sans hover:underline group transition-all duration-200"
+              >
+                See a plant you love but don't know what it is? Snap a photo and we'll identify it instantly{" "}
+                <span className="inline-block group-active:translate-x-0.5 transition-transform duration-200">→</span>
+              </Link>
+            </div>
+          )}
         </div>
       </section>
 
