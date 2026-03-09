@@ -369,15 +369,27 @@ const Identify = () => {
                 </div>
 
                 {!isLoading && (
-                  <Button
-                    onClick={resetIdentification}
-                    variant="outline"
-                    size="sm"
-                    className="w-full mt-3 border-gold/30 text-gold hover:bg-gold/10"
-                  >
-                    <RefreshCw className="h-4 w-4 mr-2" />
-                    Try Another Photo
-                  </Button>
+                  <div className="flex gap-2 w-full mt-3">
+                    <Button
+                      onClick={resetIdentification}
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 border-gold/30 text-gold hover:bg-gold/10"
+                    >
+                      <RefreshCw className="h-4 w-4 mr-2" />
+                      Try Another Photo
+                    </Button>
+                    {hasHighConfidence && (
+                      <Button
+                        onClick={shareResult}
+                        variant="outline"
+                        size="sm"
+                        className="border-gold/30 text-gold hover:bg-gold/10 px-3"
+                      >
+                        <Share className="h-4 w-4" />
+                      </Button>
+                    )}
+                  </div>
                 )}
               </div>
             )}
