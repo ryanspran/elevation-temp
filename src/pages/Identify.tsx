@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Camera, Loader2, AlertCircle, CheckCircle, ArrowRight, RefreshCw } from "lucide-react";
+import { Camera, Loader2, AlertCircle, CheckCircle, ArrowRight, RefreshCw, Share, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { useToast } from "@/hooks/use-toast";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { usePlants } from "@/hooks/usePlants";
