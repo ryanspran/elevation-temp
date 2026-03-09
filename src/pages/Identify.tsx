@@ -120,6 +120,18 @@ const Identify = () => {
         setMatchedPlant(match);
       }
 
+      // Add to history
+      if (result.identifications && result.identifications.length > 0) {
+        const historyEntry: HistoryEntry = {
+          image: imageData,
+          identifications: result.identifications,
+          matchedPlant: plants ? findPlantMatch(result.identifications, plants) : null,
+          timestamp: Date.now()
+        };
+        
+        setHistory(prev => [historyEntry, ...prev.slice(0, 2)]);
+      }
+
     } catch (error) {
       console.error('Plant identification error:', error);
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
