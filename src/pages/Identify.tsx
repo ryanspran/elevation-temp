@@ -267,9 +267,9 @@ const Identify = () => {
               See a Plant You <span className="text-gold">Love</span>?
             </h1>
             <p className="text-secondary-foreground/80 text-lg mb-2">
-              Take a photo and let AI identify it instantly
+              Take a photo and let us identify it instantly
             </p>
-            <p className="text-secondary-foreground/60 text-sm">
+            <p className="text-secondary-foreground/80 text-lg">
               Get expert identification + links to our growing guides
             </p>
               </div>
