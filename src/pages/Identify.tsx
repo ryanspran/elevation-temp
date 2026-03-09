@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Camera, Loader2, AlertCircle, CheckCircle, ArrowRight, RefreshCw } from "lucide-react";
+import { Camera, Loader2, AlertCircle, CheckCircle, ArrowRight, RefreshCw, Share, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { useToast } from "@/hooks/use-toast";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { usePlants } from "@/hooks/usePlants";
@@ -25,11 +26,21 @@ interface IdentifyResponse {
   error?: string;
 }
 
+interface HistoryEntry {
+  image: string;
+  identifications: PlantIdentification[];
+  matchedPlant: Plant | null;
+  timestamp: number;
+}
+
 const Identify = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [identifications, setIdentifications] = useState<PlantIdentification[]>([]);
   const [matchedPlant, setMatchedPlant] = useState<Plant | null>(null);
+  const [tipsExpanded, setTipsExpanded] = useState(false);
+  const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const [expandedHistoryIndex, setExpandedHistoryIndex] = useState<number | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -109,6 +120,18 @@ const Identify = () => {
         setMatchedPlant(match);
       }
 
+      // Add to history
+      if (result.identifications && result.identifications.length > 0) {
+        const historyEntry: HistoryEntry = {
+          image: imageData,
+          identifications: result.identifications,
+          matchedPlant: plants ? findPlantMatch(result.identifications, plants) : null,
+          timestamp: Date.now()
+        };
+        
+        setHistory(prev => [historyEntry, ...prev.slice(0, 2)]);
+      }
+
     } catch (error) {
       console.error('Plant identification error:', error);
       const errorMessage = error instanceof Error ? error.message : 'Unknown error';
@@ -161,6 +184,48 @@ const Identify = () => {
     return null;
   };
 
+  const shareResult = async () => {
+    const primaryResult = identifications.find(id => id.confidence >= 85);
+    if (!primaryResult) return;
+
+    const baseUrl = window.location.origin;
+    const shareUrl = matchedPlant 
+      ? `${baseUrl}/plants/${matchedPlant.slug}`
+      : `${baseUrl}/identify`;
+    
+    const shareText = `I just identified a ${primaryResult.commonName}${primaryResult.botanicalName ? ` (${primaryResult.botanicalName})` : ''} using the Elevation Landscapes plant identifier! ${shareUrl}`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Plant Identified!',
+          text: shareText,
+          url: shareUrl,
+        });
+      } catch (error) {
+        // User cancelled the share or error occurred
+        console.log('Share cancelled');
+      }
+    } else {
+      // Fallback to clipboard
+      try {
+        await navigator.clipboard.writeText(shareText);
+        toast({
+          title: "Copied to clipboard",
+          description: "Share text has been copied to your clipboard",
+          variant: "default",
+        });
+      } catch (error) {
+        console.error('Failed to copy to clipboard:', error);
+        toast({
+          title: "Share failed",
+          description: "Unable to share or copy to clipboard",
+          variant: "destructive",
+        });
+      }
+    }
+  };
+
   const resetIdentification = () => {
     setSelectedImage(null);
     setIdentifications([]);
@@ -188,8 +253,8 @@ const Identify = () => {
     <>
       <SEOHead 
         page="identify"
-        fallbackTitle="Plant Identifier | Elevation Landscapes" 
-        fallbackDescription="Identify plants instantly with AI. Take a photo and get expert plant identification with growing guide links for South Carolina plants."
+        fallbackTitle="AI Plant Identifier — Snap a Photo, Identify Any Plant | Elevation Landscapes" 
+        fallbackDescription="Take a photo of any plant, tree, or flower and our AI will identify it instantly. Free mobile plant identification tool from Elevation Landscapes, Greenville SC."
         path="/identify"
       />
       <div className="min-h-screen bg-navy text-secondary-foreground">
@@ -207,7 +272,41 @@ const Identify = () => {
             <p className="text-secondary-foreground/60 text-sm">
               Get expert identification + links to our growing guides
             </p>
-          </div>
+              </div>
+
+            {/* Photo Tips Section */}
+            {!selectedImage && (
+              <div className="mb-6">
+                <Collapsible open={tipsExpanded} onOpenChange={setTipsExpanded}>
+                  <CollapsibleTrigger className="w-full">
+                    <div className="flex items-center justify-center gap-2 text-secondary-foreground/60 text-sm">
+                      <span>Tips for best results</span>
+                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${tipsExpanded ? 'rotate-180' : ''}`} />
+                    </div>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <div className="mt-4 space-y-3 px-2">
+                      <div className="flex items-center gap-3 text-secondary-foreground/70 text-sm">
+                        <span className="text-lg">🍃</span>
+                        <span>Get a clear shot of the leaves</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-secondary-foreground/70 text-sm">
+                        <span className="text-lg">🌸</span>
+                        <span>Include flowers or fruit if present</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-secondary-foreground/70 text-sm">
+                        <span className="text-lg">🌳</span>
+                        <span>Capture the overall shape</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-secondary-foreground/70 text-sm">
+                        <span className="text-lg">💡</span>
+                        <span>Good lighting — avoid heavy shadows</span>
+                      </div>
+                    </div>
+                  </CollapsibleContent>
+                </Collapsible>
+              </div>
+            )}
 
           <div className="max-w-md mx-auto px-4">
             {/* Upload Area */}
@@ -270,15 +369,27 @@ const Identify = () => {
                 </div>
 
                 {!isLoading && (
-                  <Button
-                    onClick={resetIdentification}
-                    variant="outline"
-                    size="sm"
-                    className="w-full mt-3 border-gold/30 text-gold hover:bg-gold/10"
-                  >
-                    <RefreshCw className="h-4 w-4 mr-2" />
-                    Try Another Photo
-                  </Button>
+                  <div className="flex gap-2 w-full mt-3">
+                    <Button
+                      onClick={resetIdentification}
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 border-gold/30 text-gold hover:bg-gold/10"
+                    >
+                      <RefreshCw className="h-4 w-4 mr-2" />
+                      Try Another Photo
+                    </Button>
+                    {hasHighConfidence && (
+                      <Button
+                        onClick={shareResult}
+                        variant="outline"
+                        size="sm"
+                        className="border-gold/30 text-gold hover:bg-gold/10 px-3"
+                      >
+                        <Share className="h-4 w-4" />
+                      </Button>
+                    )}
+                  </div>
                 )}
               </div>
             )}
@@ -405,6 +516,82 @@ const Identify = () => {
                   <Camera className="h-4 w-4 mr-2" />
                   Try Again
                 </Button>
+              </div>
+            )}
+
+            {/* History Section */}
+            {!isLoading && history.length > 0 && (
+              <div className="mt-12 space-y-4">
+                <h3 className="text-white font-medium text-center mb-6">Recent Identifications</h3>
+                <div className="space-y-4">
+                  {history.map((entry, index) => {
+                    const primaryResult = entry.identifications.find(id => id.confidence >= 85);
+                    const displayResult = primaryResult || entry.identifications[0];
+                    const isExpanded = expandedHistoryIndex === index;
+                    
+                    if (!displayResult) return null;
+
+                    return (
+                      <div key={entry.timestamp} className="bg-card border border-secondary/20 rounded-lg overflow-hidden">
+                        <button
+                          onClick={() => setExpandedHistoryIndex(isExpanded ? null : index)}
+                          className="w-full p-4 flex items-center gap-4 hover:bg-secondary/5 transition-colors"
+                        >
+                          <img
+                            src={entry.image}
+                            alt="Plant identification"
+                            className="w-12 h-12 rounded-lg object-cover border border-gold/20"
+                          />
+                          <div className="flex-1 text-left">
+                            <h4 className="text-white font-medium text-sm">{displayResult.commonName}</h4>
+                            <div className="flex items-center gap-2 mt-1">
+                              <span className="text-gold text-xs">{displayResult.confidence}%</span>
+                              {entry.matchedPlant && (
+                                <span className="text-secondary-foreground/60 text-xs">• In our guide</span>
+                              )}
+                            </div>
+                          </div>
+                          <ChevronDown className={`h-4 w-4 text-secondary-foreground/60 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
+                        </button>
+                        
+                        {isExpanded && (
+                          <div className="px-4 pb-4 border-t border-secondary/10">
+                            <div className="pt-4">
+                              {displayResult.botanicalName && (
+                                <p className="text-secondary-foreground/70 italic text-sm mb-2">
+                                  {displayResult.botanicalName}
+                                </p>
+                              )}
+                              
+                              <p className="text-secondary-foreground/80 text-sm mb-3">
+                                {displayResult.description}
+                              </p>
+                              
+                              {displayResult.identificationNotes && (
+                                <p className="text-secondary-foreground/60 text-xs border-l-2 border-gold/30 pl-3 mb-4">
+                                  <strong>ID Notes:</strong> {displayResult.identificationNotes}
+                                </p>
+                              )}
+
+                              {entry.matchedPlant && (
+                                <div className="mt-4">
+                                  <PlantCard plant={entry.matchedPlant} />
+                                  <Button 
+                                    onClick={() => navigate(`/plants/${entry.matchedPlant!.slug}`)}
+                                    className="w-full mt-3 bg-gold text-navy hover:bg-gold/90"
+                                  >
+                                    View Full Growing Guide
+                                    <ArrowRight className="h-4 w-4 ml-2" />
+                                  </Button>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             )}
 
