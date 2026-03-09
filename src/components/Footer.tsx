@@ -58,18 +58,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Plant Data Credits */}
-      <div className="border-t border-gold/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center">
-          <p className="text-xs text-secondary-foreground/30 mb-1">
-            Plant data compiled from{" "}
-            <a href="https://hgic.clemson.edu" target="_blank" rel="noopener noreferrer" className="text-gold/60 hover:text-gold transition-colors">Clemson Cooperative Extension HGIC</a>,{" "}
-            <a href="https://scnps.org" target="_blank" rel="noopener noreferrer" className="text-gold/60 hover:text-gold transition-colors">SC Native Plant Society</a>, &{" "}
-            <a href="https://www.missouribotanicalgarden.org" target="_blank" rel="noopener noreferrer" className="text-gold/60 hover:text-gold transition-colors">Missouri Botanical Garden</a>
-          </p>
-          <p className="text-[11px] text-secondary-foreground/20">Compiled specifically for Upstate SC, Zones 7b–8a</p>
-        </div>
-      </div>
+
 
       {/* Copyright */}
       <div className="border-t border-gold/10">
