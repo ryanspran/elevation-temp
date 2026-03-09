@@ -519,6 +519,82 @@ const Identify = () => {
               </div>
             )}
 
+            {/* History Section */}
+            {!isLoading && history.length > 0 && (
+              <div className="mt-12 space-y-4">
+                <h3 className="text-white font-medium text-center mb-6">Recent Identifications</h3>
+                <div className="space-y-4">
+                  {history.map((entry, index) => {
+                    const primaryResult = entry.identifications.find(id => id.confidence >= 85);
+                    const displayResult = primaryResult || entry.identifications[0];
+                    const isExpanded = expandedHistoryIndex === index;
+                    
+                    if (!displayResult) return null;
+
+                    return (
+                      <div key={entry.timestamp} className="bg-card border border-secondary/20 rounded-lg overflow-hidden">
+                        <button
+                          onClick={() => setExpandedHistoryIndex(isExpanded ? null : index)}
+                          className="w-full p-4 flex items-center gap-4 hover:bg-secondary/5 transition-colors"
+                        >
+                          <img
+                            src={entry.image}
+                            alt="Plant identification"
+                            className="w-12 h-12 rounded-lg object-cover border border-gold/20"
+                          />
+                          <div className="flex-1 text-left">
+                            <h4 className="text-white font-medium text-sm">{displayResult.commonName}</h4>
+                            <div className="flex items-center gap-2 mt-1">
+                              <span className="text-gold text-xs">{displayResult.confidence}%</span>
+                              {entry.matchedPlant && (
+                                <span className="text-secondary-foreground/60 text-xs">• In our guide</span>
+                              )}
+                            </div>
+                          </div>
+                          <ChevronDown className={`h-4 w-4 text-secondary-foreground/60 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
+                        </button>
+                        
+                        {isExpanded && (
+                          <div className="px-4 pb-4 border-t border-secondary/10">
+                            <div className="pt-4">
+                              {displayResult.botanicalName && (
+                                <p className="text-secondary-foreground/70 italic text-sm mb-2">
+                                  {displayResult.botanicalName}
+                                </p>
+                              )}
+                              
+                              <p className="text-secondary-foreground/80 text-sm mb-3">
+                                {displayResult.description}
+                              </p>
+                              
+                              {displayResult.identificationNotes && (
+                                <p className="text-secondary-foreground/60 text-xs border-l-2 border-gold/30 pl-3 mb-4">
+                                  <strong>ID Notes:</strong> {displayResult.identificationNotes}
+                                </p>
+                              )}
+
+                              {entry.matchedPlant && (
+                                <div className="mt-4">
+                                  <PlantCard plant={entry.matchedPlant} />
+                                  <Button 
+                                    onClick={() => navigate(`/plants/${entry.matchedPlant!.slug}`)}
+                                    className="w-full mt-3 bg-gold text-navy hover:bg-gold/90"
+                                  >
+                                    View Full Growing Guide
+                                    <ArrowRight className="h-4 w-4 ml-2" />
+                                  </Button>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
             {/* Bottom CTAs */}
             {!isLoading && (
               <div className="mt-12 space-y-4 text-center">
