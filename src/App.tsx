@@ -20,6 +20,7 @@ import FAQ from "./pages/FAQ";
 import PlantGuide from "./pages/PlantGuide";
 import PlantDetail from "./pages/PlantDetail";
 import PlantRedirect from "./pages/PlantRedirect";
+import Identify from "./pages/Identify";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
