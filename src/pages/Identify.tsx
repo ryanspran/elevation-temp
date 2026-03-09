@@ -184,6 +184,48 @@ const Identify = () => {
     return null;
   };
 
+  const shareResult = async () => {
+    const primaryResult = identifications.find(id => id.confidence >= 85);
+    if (!primaryResult) return;
+
+    const baseUrl = window.location.origin;
+    const shareUrl = matchedPlant 
+      ? `${baseUrl}/plants/${matchedPlant.slug}`
+      : `${baseUrl}/identify`;
+    
+    const shareText = `I just identified a ${primaryResult.commonName}${primaryResult.botanicalName ? ` (${primaryResult.botanicalName})` : ''} using the Elevation Landscapes plant identifier! ${shareUrl}`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Plant Identified!',
+          text: shareText,
+          url: shareUrl,
+        });
+      } catch (error) {
+        // User cancelled the share or error occurred
+        console.log('Share cancelled');
+      }
+    } else {
+      // Fallback to clipboard
+      try {
+        await navigator.clipboard.writeText(shareText);
+        toast({
+          title: "Copied to clipboard",
+          description: "Share text has been copied to your clipboard",
+          variant: "default",
+        });
+      } catch (error) {
+        console.error('Failed to copy to clipboard:', error);
+        toast({
+          title: "Share failed",
+          description: "Unable to share or copy to clipboard",
+          variant: "destructive",
+        });
+      }
+    }
+  };
+
   const resetIdentification = () => {
     setSelectedImage(null);
     setIdentifications([]);
