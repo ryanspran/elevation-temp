@@ -157,16 +157,6 @@ const Navbar = () => {
             >
               Plant Guide
             </Link>
-            <Link
-              to="/identify"
-              className={`block lg:hidden text-sm tracking-wider uppercase transition-colors ${
-                location.pathname === "/identify"
-                  ? "text-gold"
-                  : "text-secondary-foreground hover:text-gold"
-              }`}
-            >
-              Identify a Plant
-            </Link>
             <Link to="/contact" className="block border border-gold text-gold px-5 py-2 rounded text-center hover:bg-gold hover:text-navy transition-all uppercase text-sm tracking-wider">
               Contact
             </Link>
