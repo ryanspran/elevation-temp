@@ -237,7 +237,7 @@ const Contact = () => {
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 bg-gold text-navy font-sans font-semibold px-10 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider"
+                  className="inline-flex items-center gap-2 bg-gold text-navy font-sans font-semibold px-10 py-4 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider"
                 >
                   <Send className="h-4 w-4" />
                   Submit Inquiry

@@ -54,6 +54,7 @@ export default {
         navy: "hsl(var(--navy))",
         gold: "hsl(var(--gold))",
         "gold-light": "hsl(var(--gold-light))",
+        "gold-hover": "hsl(var(--gold-hover))",
         cream: "hsl(var(--cream))",
         "cream-alt": "hsl(var(--cream-alt))",
         "text-dark": "hsl(var(--text-dark))",

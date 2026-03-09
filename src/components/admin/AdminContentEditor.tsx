@@ -156,7 +156,7 @@ const AdminContentEditor = ({ page }: { page: string }) => {
       </div>
 
       {editedRows.length > 0 && (
-        <Button onClick={saveAll} className="bg-gold text-navy hover:bg-gold-light gap-2 uppercase tracking-wider font-semibold">
+        <Button onClick={saveAll} className="bg-gold text-navy hover:bg-gold-hover hover:scale-105 hover:shadow-lg gap-2 uppercase tracking-wider font-semibold">
           <Save className="h-4 w-4" /> Save All Changes
         </Button>
       )}

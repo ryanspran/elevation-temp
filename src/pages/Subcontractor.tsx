@@ -90,7 +90,7 @@ const Subcontractor = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/contact"
-              className="bg-primary text-primary-foreground px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-primary/90 transition-all"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200"
             >
               Schedule a Consultation
             </Link>
@@ -205,7 +205,7 @@ const Subcontractor = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-primary text-primary-foreground px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-primary/90 transition-all"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200"
             >
               Schedule a Consultation
             </Link>
