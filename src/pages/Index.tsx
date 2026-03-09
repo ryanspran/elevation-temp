@@ -155,7 +155,7 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider text-center"
+                  className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
                 >
                   Schedule a Consultation
                 </Link>
