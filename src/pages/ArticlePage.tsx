@@ -412,10 +412,10 @@ const ArticlePage = () => {
             )}
             <Link
               to="/contact"
-              className={`font-sans text-sm uppercase tracking-wider px-8 py-3 rounded transition-colors ${
+              className={`font-sans text-sm uppercase tracking-wider px-8 py-3 rounded transition-all duration-200 hover:scale-105 hover:shadow-lg ${
                 slug === "plant-directory-greenville"
                   ? "border border-gold text-gold hover:bg-gold hover:text-navy"
-                  : "bg-gold text-navy hover:bg-gold-light"
+                  : "bg-gold text-navy hover:bg-gold-hover"
               }`}
             >
               Schedule a Consultation

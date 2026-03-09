@@ -22,7 +22,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
           <p className="text-secondary-foreground/60 mb-6">Your account does not have admin privileges.</p>
           <button
             onClick={() => window.location.reload()}
-            className="bg-gold text-navy font-semibold px-6 py-3 rounded hover:bg-gold-light transition-colors uppercase text-sm tracking-wider"
+            className="bg-gold text-navy font-semibold px-6 py-3 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider"
           >
             Retry
           </button>

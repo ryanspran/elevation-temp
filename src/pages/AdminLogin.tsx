@@ -86,7 +86,7 @@ const AdminLogin = () => {
           <Button
             type="submit"
             disabled={loading || authLoading}
-            className="w-full bg-gold text-navy hover:bg-gold-light font-semibold uppercase tracking-wider"
+            className="w-full bg-gold text-navy hover:bg-gold-hover hover:scale-105 hover:shadow-lg font-semibold uppercase tracking-wider"
           >
             {loading || authLoading ? "Please wait..." : isSignUp ? "Create Account" : "Sign In"}
           </Button>
