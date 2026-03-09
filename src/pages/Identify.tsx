@@ -1,13 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Camera, Upload, Loader2, AlertCircle, CheckCircle, ArrowRight, RefreshCw } from "lucide-react";
+import { Camera, Loader2, AlertCircle, CheckCircle, ArrowRight, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { useToast } from "@/hooks/use-toast";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { usePlants } from "@/hooks/usePlants";
-import { PlantCard } from "@/components/PlantCard";
-import { SEOHead } from "@/components/SEOHead";
+import PlantCard from "@/components/PlantCard";
+import SEOHead from "@/components/SEOHead";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import type { Plant } from "@/hooks/usePlants";
