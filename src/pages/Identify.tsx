@@ -26,6 +26,13 @@ interface IdentifyResponse {
   error?: string;
 }
 
+interface HistoryEntry {
+  image: string;
+  identifications: PlantIdentification[];
+  matchedPlant: Plant | null;
+  timestamp: number;
+}
+
 const Identify = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
