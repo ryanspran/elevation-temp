@@ -272,7 +272,41 @@ const Identify = () => {
             <p className="text-secondary-foreground/60 text-sm">
               Get expert identification + links to our growing guides
             </p>
-          </div>
+              </div>
+
+            {/* Photo Tips Section */}
+            {!selectedImage && (
+              <div className="mb-6">
+                <Collapsible open={tipsExpanded} onOpenChange={setTipsExpanded}>
+                  <CollapsibleTrigger className="w-full">
+                    <div className="flex items-center justify-center gap-2 text-secondary-foreground/60 text-sm">
+                      <span>Tips for best results</span>
+                      <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${tipsExpanded ? 'rotate-180' : ''}`} />
+                    </div>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <div className="mt-4 space-y-3 px-2">
+                      <div className="flex items-center gap-3 text-secondary-foreground/70 text-sm">
+                        <span className="text-lg">🍃</span>
+                        <span>Get a clear shot of the leaves</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-secondary-foreground/70 text-sm">
+                        <span className="text-lg">🌸</span>
+                        <span>Include flowers or fruit if present</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-secondary-foreground/70 text-sm">
+                        <span className="text-lg">🌳</span>
+                        <span>Capture the overall shape</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-secondary-foreground/70 text-sm">
+                        <span className="text-lg">💡</span>
+                        <span>Good lighting — avoid heavy shadows</span>
+                      </div>
+                    </div>
+                  </CollapsibleContent>
+                </Collapsible>
+              </div>
+            )}
 
           <div className="max-w-md mx-auto px-4">
             {/* Upload Area */}
