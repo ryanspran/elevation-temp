@@ -38,6 +38,9 @@ const Identify = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [identifications, setIdentifications] = useState<PlantIdentification[]>([]);
   const [matchedPlant, setMatchedPlant] = useState<Plant | null>(null);
+  const [tipsExpanded, setTipsExpanded] = useState(false);
+  const [history, setHistory] = useState<HistoryEntry[]>([]);
+  const [expandedHistoryIndex, setExpandedHistoryIndex] = useState<number | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
