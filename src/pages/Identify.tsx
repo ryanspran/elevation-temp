@@ -187,8 +187,10 @@ const Identify = () => {
   return (
     <>
       <SEOHead 
-        title="Plant Identifier | Elevation Landscapes" 
-        description="Identify plants instantly with AI. Take a photo and get expert plant identification with growing guide links for South Carolina plants."
+        page="identify"
+        fallbackTitle="Plant Identifier | Elevation Landscapes" 
+        fallbackDescription="Identify plants instantly with AI. Take a photo and get expert plant identification with growing guide links for South Carolina plants."
+        path="/identify"
       />
       <div className="min-h-screen bg-navy text-secondary-foreground">
         <Navbar />
