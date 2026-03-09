@@ -47,6 +47,7 @@ const App = () => (
             <Route path="/plants/:slug" element={<PlantDetail />} />
             {/* Legacy redirect: /plant-guide/:id → /plants/:slug */}
             <Route path="/plant-guide/:id" element={<PlantRedirect />} />
+            <Route path="/identify" element={<Identify />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin"
