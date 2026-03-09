@@ -5,3 +5,6 @@ verify_jwt = false
 
 [functions.generate-plant-og]
 verify_jwt = false
+
+[functions.identify-plant]
+verify_jwt = false
