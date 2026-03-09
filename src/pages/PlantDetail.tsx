@@ -142,7 +142,11 @@ const PlantDetail = () => {
                     {plant.plant_type && (
                       <span className="text-xs text-gold uppercase tracking-[0.15em] font-sans">{plant.plant_type}</span>
                     )}
-                    {plant.guide_categories?.filter((c) => c !== plant.plant_type).map((cat) => (
+                    {plant.guide_categories?.filter((c) => {
+                      const catLower = c.toLowerCase().replace(/s$/, '');
+                      const typeLower = (plant.plant_type || '').toLowerCase().replace(/s$/, '');
+                      return catLower !== typeLower;
+                    }).map((cat) => (
                       <span key={cat} className="flex items-center gap-2">
                         <span className="text-gold/30">·</span>
                         <span className="text-xs text-gold uppercase tracking-[0.15em] font-sans">{cat}</span>
