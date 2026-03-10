@@ -267,6 +267,62 @@ const articles: Record<string, ArticleData> = {
       },
     ],
   },
+  "hardscape-contractor-greenville": {
+    title: "How to Choose a Hardscape Contractor in Greenville, SC: 10 Questions to Ask",
+    category: "Hardscaping",
+    heroImage: hardscapeContractorHero,
+    detailImage: hardscapeContractorDetail,
+    seoTitle: "How to Choose a Hardscape Contractor in Greenville SC | Elevation Landscapes",
+    seoDescription: "Ten essential questions to ask before hiring a hardscape contractor in Greenville, SC. Ensure quality, transparency, and lasting results for your outdoor project.",
+    sections: [
+      {
+        body: "Finding the right hardscape contractor in Greenville, SC, is crucial for ensuring your outdoor project not only meets your expectations but also adds significant value to your property. At Elevation Landscapes, we understand that the decision can be daunting, especially when trust and expertise are at stake. To make the selection process easier and more efficient, we've compiled a list of ten essential questions to ask potential contractors. These questions will help you assess their qualifications, gauge compatibility, and ensure a successful collaboration.",
+      },
+      {
+        heading: "1. What Experience Do You Have in Hardscaping?",
+        body: "Experience is a significant factor when choosing a contractor. Inquire about the contractor's years in business and specific experience in hardscaping. A well-seasoned team will not only possess the necessary skills but will also have a portfolio of completed projects in Greenville that showcase their craftsmanship.",
+      },
+      {
+        heading: "2. Can You Provide References or Reviews?",
+        body: "Reputable contractors will have a list of satisfied clients willing to vouch for their services. Requesting references allows you to see how past projects have stood the test of time and understand customer satisfaction levels. Online reviews on platforms like Google and Yelp are additional resources that can provide insights into the contractor's reputation.",
+      },
+      {
+        heading: "3. Are You Licensed and Insured?",
+        body: "Licensing and insurance are non-negotiable when selecting a hardscape contractor. Ensure that your chosen professional is licensed to operate in South Carolina and carries adequate insurance coverage. This protects you from potential liabilities and ensures compliance with local regulations.",
+      },
+      {
+        heading: "4. What Is Your Design Process?",
+        body: "Understanding the design process is crucial for a successful project. Ask the contractor how they plan to bring your vision to life and how involved you'll be in the design stages. Contractors like Elevation Landscapes prioritize client input and use advanced technology to create accurate 3D renderings before the commencement of construction.",
+      },
+      {
+        heading: "5. Can You Show Me Examples of Similar Projects?",
+        body: "Seeing is believing. Request to view similar projects that match your vision. This not only gives you a clear idea of their style and quality of work but also provides inspiration and confidence in their ability to deliver.",
+      },
+      {
+        heading: "6. What Is Your Estimated Project Timeline?",
+        body: "Timeframes are an essential consideration in any construction project. Discuss the estimated timeline for completion and ask about potential delays. Contractors with efficient operations will provide reasonable timelines and communicate clearly about any unforeseen circumstances that might affect the schedule.",
+      },
+      {
+        heading: "7. How Do You Handle Permits and Regulations?",
+        body: "Construction often requires permits and adherence to local building codes. Ask whether the contractor will manage these aspects and ensure that all relevant permits are secured before work begins. Handling regulations efficiently is a mark of professionalism and can prevent project delays.",
+      },
+      {
+        heading: "8. What Materials Do You Recommend and Why?",
+        body: "The materials used in your hardscape have a significant impact on durability and aesthetics. A knowledgeable contractor will guide you through the selection of high-quality materials and explain their choices based on climate considerations and usage requirements in Greenville.",
+      },
+      {
+        heading: "9. How Do You Structure Your Pricing?",
+        body: "Understanding the pricing structure is crucial for managing your budget effectively. Ask for detailed estimates that break down costs for materials, labor, and any additional services. Transparent pricing allows you to plan financially and minimizes unexpected expenses.",
+      },
+      {
+        heading: "10. What Is Your Warranty and Maintenance Policy?",
+        body: "Finally, inquire about the warranty and post-project support. Reliable contractors stand behind their work and offer warranties on both materials and craftsmanship. Additionally, they should provide maintenance tips or services to ensure your hardscape maintains its beauty and functionality over time.",
+      },
+      {
+        body: "Choosing the right hardscape contractor requires thorough vetting. By asking these ten questions, you're not just selecting a contractor but a partner who understands your vision and is committed to excellence. At Elevation Landscapes, we pride ourselves on our ability to deliver exceptional results that transform outdoor spaces into stunning works of art. Contact us today to discuss your hardscape project and see how we can elevate your landscape.",
+      },
+    ],
+  },
   "plant-directory-greenville": {
     title: "Transform Your Greenville Landscape with Our Comprehensive Plant & Tree Directory",
     category: "Plant Guide",
