@@ -12,6 +12,7 @@ import img3 from "@/assets/articles/retaining-walls-hero.jpg";
 import img4 from "@/assets/articles/outdoor-living-hero.jpg";
 import img5 from "@/assets/articles/landscape-lighting-hero.jpg";
 import img6 from "@/assets/articles/drainage-hero.jpg";
+import hardscapeContractorImg from "@/assets/articles/hardscape-contractor-hero.jpg";
 import plantDirectoryImg from "@/assets/articles/plant-directory-hero.jpg";
 
 interface Article {
