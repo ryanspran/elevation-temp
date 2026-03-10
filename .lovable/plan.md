@@ -1,27 +1,16 @@
 
 
-## Add "How to Choose a Hardscape Contractor" Article
+## Enable Mouse Drag Scrolling on Services Carousel
 
-### Overview
-Add a new article with slug `hardscape-contractor-greenville` to the Articles listing page and the ArticlePage detail page. Generate two AI images (hero + detail) of high-end stonework on a luxury home using the existing edge function pipeline.
+Embla Carousel (which powers the `<Carousel>` component) supports drag/mouse scrolling natively — it just needs `dragFree: true` in the options. By default Embla already enables drag on touch devices, but adding `dragFree` makes the free-scroll drag behavior more natural on desktop with a mouse.
 
 ### Changes
 
-**1. Generate two images via the `generate-service-image` edge function**
-- Hero image: prompt for a high-end home exterior with professional stonework, stone veneer, and hardscape features in a Greenville SC setting
-- Detail image: close-up of quality stone craftsmanship on a luxury property
-- Save locally as `src/assets/articles/hardscape-contractor-hero.jpg` and `hardscape-contractor-detail.jpg`
+**`src/pages/Index.tsx`** (line ~155): Add `dragFree: true` to the services carousel `opts`:
 
-**2. `src/pages/Articles.tsx`**
-- Add the new article to the `latestArticles` array next to the drainage article:
-  - slug: `hardscape-contractor-greenville`
-  - title: "How to Choose a Hardscape Contractor in Greenville, SC: 10 Questions to Ask"
-  - excerpt: "Finding the right hardscape contractor is crucial — here are ten essential questions to ask before hiring."
-  - category: "Hardscaping"
-  - image: new hero image
+```tsx
+<Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
+```
 
-**3. `src/pages/ArticlePage.tsx`**
-- Import the two new images
-- Add the full article data to the `articles` record with all 10 questions as sections plus intro and closing paragraphs
-- slug key: `hardscape-contractor-greenville`
+This single prop change enables mouse drag scrolling. No other files need modification — Embla handles pointer events (mouse + touch) out of the box. The `dragFree` option allows momentum-based free scrolling rather than snapping strictly to slides, which feels more natural for a browsable services list.
 

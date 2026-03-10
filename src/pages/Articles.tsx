@@ -12,6 +12,7 @@ import img3 from "@/assets/articles/retaining-walls-hero.jpg";
 import img4 from "@/assets/articles/outdoor-living-hero.jpg";
 import img5 from "@/assets/articles/landscape-lighting-hero.jpg";
 import img6 from "@/assets/articles/drainage-hero.jpg";
+import hardscapeContractorImg from "@/assets/articles/hardscape-contractor-hero.jpg";
 import plantDirectoryImg from "@/assets/articles/plant-directory-hero.jpg";
 
 interface Article {
@@ -90,6 +91,15 @@ const latestArticles: Article[] = [
     category: "Drainage",
     image: img6,
     slug: "drainage-before-landscaping",
+  },
+  {
+    id: 9,
+    title: "How to Choose a Hardscape Contractor in Greenville, SC: 10 Questions to Ask",
+    excerpt:
+      "Finding the right hardscape contractor is crucial — here are ten essential questions to ask before hiring.",
+    category: "Hardscaping",
+    image: hardscapeContractorImg,
+    slug: "hardscape-contractor-greenville",
   },
 ];
 
