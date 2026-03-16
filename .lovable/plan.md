@@ -1,16 +1,37 @@
 
 
-## Enable Mouse Drag Scrolling on Services Carousel
+## Remove 18 Plants from the Database
 
-Embla Carousel (which powers the `<Carousel>` component) supports drag/mouse scrolling natively — it just needs `dragFree: true` in the options. By default Embla already enables drag on touch devices, but adding `dragFree` makes the free-scroll drag behavior more natural on desktop with a mouse.
+Once you confirm the "Black Waxberry" name (or tell me to skip it), I'll execute a single `DELETE` statement against the `plants` table to remove all matching rows.
 
-### Changes
+### SQL to execute (via data insert tool)
 
-**`src/pages/Index.tsx`** (line ~155): Add `dragFree: true` to the services carousel `opts`:
-
-```tsx
-<Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
+```sql
+DELETE FROM plants
+WHERE slug IN (
+  'american-sycamore',
+  'american-wisteria',
+  'begonia-waxdragon-wing',
+  'boxwood',
+  'chinese-holly',
+  'crabapple-disease-resistant',
+  'eastern-white-pine',
+  'foster-holly',
+  'holly-tea-olive',
+  'leyland-cypress',
+  'live-oak',
+  'pin-oak',
+  'prairie-dropseed',
+  'red-chokeberry',
+  'savannah-holly',
+  'sweetgum',
+  'tulip-poplar',
+  'virginia-creeper'
+);
 ```
 
-This single prop change enables mouse drag scrolling. No other files need modification — Embla handles pointer events (mouse + touch) out of the box. The `dragFree` option allows momentum-based free scrolling rather than snapping strictly to slides, which feels more natural for a browsable services list.
+Since some plants have multiple rows (one per `guide_category`), this deletes all rows for each slug. No code changes needed — the frontend already fetches from the database dynamically.
+
+### Pending clarification
+- **Black Waxberry**: not found in the database. Closest matches are Black Chokeberry, Black Oak, Black-Eyed Susan, Blackhaw Viburnum. Let me know which one (if any) to also remove.
 
