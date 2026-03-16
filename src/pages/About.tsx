@@ -48,7 +48,7 @@ const About = () => {
                 Built on Hard Work &amp; a Commitment to Excellence
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Elevation Landscapes was founded with a simple belief: every homeowner deserves an outdoor space 
+                Elevation Landscapes was founded with a simple belief: every client deserves an outdoor space 
                 they're proud of. What started as a one-man operation has grown into a trusted team of hardscaping 
                 and landscaping professionals serving the Upstate South Carolina community. We pour the same care 
                 into a backyard patio as we do into a full-scale outdoor living transformation—because the details 
