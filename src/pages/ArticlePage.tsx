@@ -40,9 +40,9 @@ const articles: Record<string, ArticleData> = {
     heroImage: outdoorKitchenHero,
     detailImage: outdoorKitchenDetail,
     seoTitle:
-      "Outdoor Kitchen Benefits in Greenville SC | Elevation Landscapes",
+      "Outdoor Kitchen Benefits in Upstate SC | Elevation Landscapes",
     seoDescription:
-      "Discover how an outdoor kitchen can boost home value, enhance entertaining, and take advantage of Greenville's year-round climate.",
+      "Discover how an outdoor kitchen can boost home value, enhance entertaining, and take advantage of Upstate SC's year-round climate.",
     sections: [
       {
         body: "As more homeowners in Greenville, SC, seek ways to enhance their living spaces, outdoor kitchens have emerged as a popular trend, bringing the joys of alfresco dining to the heart of their homes. With the Upstate's moderate climate, growing real estate market, and culture of community bonding, investing in an outdoor kitchen offers both aesthetic and functional benefits. Let's explore how this enticing upgrade could transform your living experience.",
