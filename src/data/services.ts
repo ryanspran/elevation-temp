@@ -632,7 +632,7 @@ export const services: ServiceData[] = ([
       "We do not install prefabricated or kit-based products. Every fire feature is custom and site-specific — ensuring design coherence with your architecture and a finished product that reads as a permanent, intentional part of the landscape rather than an afterthought."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Experience", description: "Exclusive high-end residential across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Experience", description: "High-end residential and commercial projects across Greenville and Upstate SC" },
       { title: "Code-Compliant Gas Work", description: "Licensed professionals, fully SC compliant" },
       { title: "Curated Portfolio", description: "Custom stone fire pits, integrated kitchen features, courtyard installations" },
       { title: "Premium Materials Only", description: "Bluestone, travertine, granite, weather-resistant systems" },
