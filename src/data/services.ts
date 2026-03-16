@@ -45,12 +45,12 @@ export const services: ServiceData[] = ([
     tagline: "Precision site engineering for exceptional estates",
     image: gradingSolutions,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/grading-solutions.png",
-    seoTitle: "Luxury Grading Services Greenville SC | Elevation Landscapes",
-    h1: "Luxury Grading Services in Greenville, SC — Precision Site Engineering for the Discerning Estate",
+    seoTitle: "Luxury Grading Services Upstate SC | Elevation Landscapes",
+    h1: "Luxury Grading Services in Upstate SC — Precision Site Engineering for the Discerning Estate",
     subheadline: "The landscape you envision begins beneath the surface. Professional grading solutions engineered to perform with the same exactitude your property reflects above ground.",
     bodyParagraphs: [
       "The foundation of every extraordinary landscape is invisible — it lives beneath the surface, in the deliberate shaping of the land. Our luxury grading services exist at the intersection of engineering precision and aesthetic vision, transforming raw or problematic terrain into the seamless canvas your property deserves.",
-      "Greenville and Upstate South Carolina present unique topographical realities. From rolling piedmont soils near Travelers Rest to clay-heavy terrain in neighborhoods like Augusta Road and Verdae, every estate carries its own challenges. Our team reads the land with fluency from years of work across this geography — designing grading solutions in harmony with it.",
+      "Upstate South Carolina presents unique topographical realities. From rolling piedmont soils near Travelers Rest to clay-heavy terrain in neighborhoods like Augusta Road and Verdae, every estate carries its own challenges. Our team reads the land with fluency from years of work across this geography — designing grading solutions in harmony with it.",
       "Professional landscape grading begins with thorough site assessment — drainage patterns, soil composition, slope ratios, and intended use of every zone. That informs a precise grading plan accounting for water behavior during heavy Upstate rainfall, how land settles, and how future hardscape or softscape will perform for decades.",
       "Our work encompasses soil stabilization, engineered drainage, and meticulous land leveling for pools, motor courts, outdoor living structures, and manicured lawns. We do not grade to code — we grade to the standard your property demands. Every slope calculated. Every transition refined.",
       "Working exclusively in luxury landscape construction, we bring intentionality to estate site preparation that general contractors rarely offer. We coordinate with your architect, civil engineer, and design team so the grading phase aligns with every downstream element. Nothing left to assumption.",
@@ -58,10 +58,10 @@ export const services: ServiceData[] = ([
     ],
     trustSignals: [
       { title: "Exclusive Luxury Focus", description: "Curated clientele committed to quality" },
-      { title: "Regional Soil Expertise", description: "Decades with Greenville's piedmont soils and topography" },
+      { title: "Regional Soil Expertise", description: "Decades with Upstate SC's piedmont soils and topography" },
       { title: "Senior-Led Projects", description: "Every project managed by a senior member accountable to the client" },
       { title: "Design Team Integration", description: "Seamless collaboration with architects, engineers, and designers" },
-      { title: "Proven Portfolio", description: "Luxury estates across Greenville's most distinguished neighborhoods" },
+      { title: "Proven Portfolio", description: "Luxury estates across Upstate SC's most distinguished neighborhoods" },
       { title: "Lasting Guarantee", description: "Compaction verification and comprehensive grade integrity warranty" }
     ],
     processSteps: [
@@ -76,7 +76,7 @@ export const services: ServiceData[] = ([
     },
     faqs: [
       { question: "How long does professional grading take on a luxury property?", answer: "Two to four days for single-zone land leveling. Several weeks for comprehensive estate site preparation with drainage engineering and multi-phase grading. Detailed schedule at consultation." },
-      { question: "Why does Greenville grading require specialized expertise?", answer: "Upstate SC's piedmont soils — especially red clay — are highly susceptible to erosion and compaction. Improper grading causes drainage failures, foundation movement, and instability. We design for how local soils behave through wet winters and dry summers." },
+      { question: "Why does Upstate SC grading require specialized expertise?", answer: "Upstate SC's piedmont soils — especially red clay — are highly susceptible to erosion and compaction. Improper grading causes drainage failures, foundation movement, and instability. We design for how local soils behave through wet winters and dry summers." },
       { question: "What warranty do you offer?", answer: "Compaction verification, erosion control measures, and project warranty covering grade integrity and drainage performance. Proven stabilization methods with clear terms in every agreement." },
       { question: "Can you coordinate with my architect or engineer?", answer: "Yes, and we recommend it. We regularly integrate grading plans with broader project documentation, eliminating redundant work and reducing change orders." },
       { question: "How does grading protect my foundation?", answer: "Correct slope ratios direct water away from structures. With subsurface drainage where warranted, we eliminate conditions causing foundation stress, erosion, and hardscape failure." },
@@ -93,12 +93,12 @@ export const services: ServiceData[] = ([
     tagline: "Engineering that protects what you've built",
     image: undergroundDrainage,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/underground-drainage.png",
-    seoTitle: "Underground Drainage Solutions Greenville SC | Elevation Landscapes",
-    seoDescription: "French drain installation and stormwater management for Greenville & Upstate SC luxury properties. Custom drainage engineering. Schedule a consultation.",
-    h1: "Underground Drainage Solutions in Greenville, SC — Engineering That Protects What You've Built",
-    subheadline: "Precision-engineered French drain systems and stormwater management for Greenville's most distinguished residential properties.",
+    seoTitle: "Underground Drainage Solutions Upstate SC | Elevation Landscapes",
+    seoDescription: "French drain installation and stormwater management for Upstate SC luxury properties. Custom drainage engineering. Schedule a consultation.",
+    h1: "Underground Drainage Solutions in Upstate SC — Engineering That Protects What You've Built",
+    subheadline: "Precision-engineered French drain systems and stormwater management for Upstate SC's most distinguished residential properties.",
     bodyParagraphs: [
-      "Your property is one of your most significant investments, and Greenville's Piedmont climate does not forgive poorly managed stormwater. Heavy rains, sloped terrain, and dense clay create chronic drainage failure — eroding landscapes, compromising foundations, and diminishing the value of even the most beautifully designed estates.",
+      "Your property is one of your most significant investments, and Upstate SC's Piedmont climate does not forgive poorly managed stormwater. Heavy rains, sloped terrain, and dense clay create chronic drainage failure — eroding landscapes, compromising foundations, and diminishing the value of even the most beautifully designed estates.",
       "We treat water management as a foundational design discipline. French drain systems, channel drainage, and custom water diversion infrastructure are integrated into the landscape plan invisibly and permanently. Our approach is architectural, matching the precision defining every other aspect of your home.",
       "Every project begins with thorough site analysis — topographic grade, soil composition, impervious surface ratios, and seasonal water flow evaluated before a trench is drawn. This rigor separates an Elevation installation from a commodity job. We solve the right problem, not the obvious one.",
       "Our French drain installations use schedule-rated perforated pipe in correctly specified aggregate and filter fabric — materials chosen for performance. We engineer fall, outlet, and collection points with civil infrastructure precision. The result functions as designed for decades without heaving, blockages, or backflow.",
@@ -106,7 +106,7 @@ export const services: ServiceData[] = ([
       "Underground drainage is invisible by design, but its absence is felt everywhere — saturated lawns, failed walls, eroded beds, water where it was never meant to go. We engineer solutions eliminating an entire category of concern from property ownership."
     ],
     trustSignals: [
-      { title: "Decade of Drainage Experience", description: "Residential and commercial projects across Greenville, Travelers Rest, Simpsonville, Upstate SC" },
+      { title: "Decade of Drainage Experience", description: "Residential and commercial projects across Upstate SC" },
       { title: "Professional-Grade Materials", description: "Schedule-rated pipe, commercial aggregate, high-performance filter fabric" },
       { title: "Custom Engineering", description: "Site analysis and design specific to your soil, grade, and volume" },
       { title: "Design-First Approach", description: "Drainage integrated seamlessly, preserving visual integrity" },
@@ -125,7 +125,7 @@ export const services: ServiceData[] = ([
     },
     faqs: [
       { question: "How long does French drain installation take?", answer: "One to three days for most properties. Larger estates with integrated stormwater systems may need more time. Detailed schedule at consultation." },
-      { question: "What drainage challenges are specific to Greenville?", answer: "Piedmont clay resists infiltration, causing rapid runoff and root zone saturation. Our systems are engineered for these conditions — aggregate specs, pipe sizing, and outlets designed for native Upstate soil." },
+      { question: "What drainage challenges are specific to Upstate SC?", answer: "Piedmont clay resists infiltration, causing rapid runoff and root zone saturation. Our systems are engineered for these conditions — aggregate specs, pipe sizing, and outlets designed for native Upstate soil." },
       { question: "How long will an underground system last?", answer: "Decades. Schedule-rated pipe, correct aggregate, and commercial filter fabric prevent sediment and root intrusion. Unlike commodity installations, ours require no routine intervention." },
       { question: "Will installation disrupt my landscape?", answer: "No — fully below grade. Surface elements like emitters, grates, or decorative dry creek beds are integrated into the design intentionally." },
       { question: "Can poor drainage affect my foundation?", answer: "Directly. Undiverted water builds hydrostatic pressure against walls and saturates soil compromising footings. Engineered drainage is one of the most consequential investments in structural preservation." },
@@ -142,19 +142,19 @@ export const services: ServiceData[] = ([
     tagline: "Engineered for the landscape you've built",
     image: irrigation,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/irrigation.png",
-    seoTitle: "Irrigation Installation Greenville SC | Elevation Landscapes",
-    h1: "Irrigation Installation in Greenville SC Engineered for the Landscape You Have Built",
+    seoTitle: "Irrigation Installation Upstate SC | Elevation Landscapes",
+    h1: "Irrigation Installation in Upstate SC Engineered for the Landscape You Have Built",
     subheadline: "Precision irrigation for discerning clients — because an extraordinary landscape demands water management built to the same exacting standard.",
     bodyParagraphs: [
-      "A beautifully designed landscape is only as enduring as the system sustaining it. Our irrigation installation services are engineered to protect that investment — delivering precision water management keeping every lawn, garden bed, and hardscape border in peak condition through every Greenville season.",
-      "Our approach begins with thorough site assessment — topography, soil composition, plant material, and sun exposure. Greenville's rolling terrain and varied microclimates demand more than a standard grid. We design custom zone management systems ensuring each area receives precisely the water it needs, no more, no less.",
+      "A beautifully designed landscape is only as enduring as the system sustaining it. Our irrigation installation services are engineered to protect that investment — delivering precision water management keeping every lawn, garden bed, and hardscape border in peak condition through every Upstate SC season.",
+      "Our approach begins with thorough site assessment — topography, soil composition, plant material, and sun exposure. Upstate SC's rolling terrain and varied microclimates demand more than a standard grid. We design custom zone management systems ensuring each area receives precisely the water it needs, no more, no less.",
       "For curated gardens, mature specimens, or newly established beds, we integrate custom drip irrigation delivering moisture directly to root zones with zero waste. Nearly invisible once installed, these systems preserve the clean aesthetic luxury landscapes demand while extending the life of your plantings.",
-      "Our smart irrigation systems bring intelligence older timers cannot match. Smart water controllers connect to local weather data, adjusting run times for rainfall, evapotranspiration, and seasonal shifts. Never over-watered after a Greenville thunderstorm or left dry in a summer drought — the system adapts on your behalf.",
+      "Our smart irrigation systems bring intelligence older timers cannot match. Smart water controllers connect to local weather data, adjusting run times for rainfall, evapotranspiration, and seasonal shifts. Never over-watered after an Upstate SC thunderstorm or left dry in a summer drought — the system adapts on your behalf.",
       "When existing systems underperform, our sprinkler repair services restore efficiency without full replacement disruption. We diagnose pressure issues, failed heads, cracked laterals, and controller malfunctions with the same rigor as new installations — a luxury property deserves a fully functional system at every stage.",
       "Every component is professional-grade — quiet operation, years of calibration, clean integration with any aesthetic. Our installation practices include precise trenching, exact head placement, and meticulous backfill restoring your lawn and beds to pristine condition."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Residential and commercial landscapes across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Focus", description: "Residential and commercial landscapes across Upstate SC" },
       { title: "Certified Professionals", description: "Systems designed for Upstate SC's specific climate and soil" },
       { title: "Professional-Grade Equipment", description: "Industry-leading manufacturers for durability and performance" },
       { title: "Pristine Restoration", description: "Lawns and gardens returned to pre-work condition" },
@@ -173,11 +173,11 @@ export const services: ServiceData[] = ([
     },
     faqs: [
       { question: "How do you approach irrigation design for a luxury property?", answer: "Comprehensive on-site assessment of layout, plants, soil, and sun patterns, then a custom zone management plan integrating with your landscape and hardscape." },
-      { question: "Why is smart irrigation important in Greenville?", answer: "Humid summers, periodic drought, and heavy rainfall demand adaptive systems. Smart water controllers auto-adjust to conditions, reducing waste and preventing disease-causing overwatering." },
+      { question: "Why is smart irrigation important in Upstate SC?", answer: "Humid summers, periodic drought, and heavy rainfall demand adaptive systems. Smart water controllers auto-adjust to conditions, reducing waste and preventing disease-causing overwatering." },
       { question: "Smart vs conventional sprinkler system?", answer: "Smart systems pull real-time weather data to adjust schedules automatically. Conventional runs fixed regardless of conditions. Result: healthier landscape, lower water use, hands-off confidence." },
       { question: "Is drip irrigation good for established gardens?", answer: "Ideal — delivers water directly to root zones through concealed low-flow emitters. Perfect for estate beds, ornamentals, and hedgerows with zero visual impact." },
       { question: "My system underperforms — do I need full replacement?", answer: "Often not. Pressure problems, broken heads, and controller issues frequently resolve through targeted repair. We diagnose thoroughly and present the most effective path first." },
-      { question: "Warranty and maintenance?", answer: "Workmanship warranty on every installation plus seasonal service programs for peak efficiency through Greenville's warm and cool transitions." }
+      { question: "Warranty and maintenance?", answer: "Workmanship warranty on every installation plus seasonal service programs for peak efficiency through Upstate SC's warm and cool transitions." }
     ],
     ctaHeading: "Ready for Irrigation That Matches Your Landscape's Standard?",
     ctaText: "Every irrigation system we design is engineered for the specific property it serves. Schedule a consultation to discuss what your landscape needs.",
@@ -190,19 +190,19 @@ export const services: ServiceData[] = ([
     tagline: "Restoring the standard your property deserves",
     image: landscapeRemediation,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/landscape-remediation.png",
-    seoTitle: "Landscape Remediation Greenville SC | Elevation Landscapes",
-    h1: "Landscape Remediation in Greenville, SC — Restoring the Standard Your Property Deserves",
-    subheadline: "When a landscape falls short, the right firm reimagines it. Surgical precision and refined design for every restoration across Greenville and Upstate South Carolina.",
+    seoTitle: "Landscape Remediation Upstate SC | Elevation Landscapes",
+    h1: "Landscape Remediation in Upstate SC — Restoring the Standard Your Property Deserves",
+    subheadline: "When a landscape falls short, the right firm reimagines it. Surgical precision and refined design for every restoration across Upstate South Carolina.",
     bodyParagraphs: [
       "Some landscapes are built once and forgotten. Others are built once and then entrusted to us. Our remediation service restores order, intention, and enduring beauty to outdoor spaces that time, weather, or previous contractors left behind.",
-      "Greenville and Upstate South Carolina's climate is both gift and challenge. The long growing season that makes this region lush also accelerates overgrowth, root encroachment, and soil degradation. We understand how this climate behaves — humid summers, unexpected Upstate frosts — and make remediation decisions that hold long after our trucks leave.",
+      "Upstate South Carolina's climate is both gift and challenge. The long growing season that makes this region lush also accelerates overgrowth, root encroachment, and soil degradation. We understand how this climate behaves — humid summers, unexpected Upstate frosts — and make remediation decisions that hold long after our trucks leave.",
       "Our process begins with comprehensive site assessment. We evaluate soil and amend where necessary, because no premium plantings perform on compromised ground. We identify what to preserve — mature trees, established hedgerows, solid hardscape — and remove what works against the property. This is not teardown. It is curatorial.",
       "Our design team develops a restoration plan respecting your architecture, neighborhood character, and vision. Plant replacement decisions are made for long-term performance, seasonal interest, and cohesion — not what a supplier has that week. We source from specialty growers and install with care reflecting your investment.",
       "Soil amendment is a cornerstone. Healthy soil is not incidental to a thriving landscape — it is the foundation. We conduct targeted amendments based on actual analysis and establish irrigation and drainage protecting that work for years.",
-      "The result is not a cleaner yard. It is a landscape that functions as it should, looks as it should, and reflects the home it surrounds. For luxury homeowners across Greenville, Travelers Rest, and Simpsonville, that standard is non-negotiable — and neither is ours."
+      "The result is not a cleaner yard. It is a landscape that functions as it should, looks as it should, and reflects the home it surrounds. For luxury homeowners across Upstate SC, that standard is non-negotiable — and neither is ours."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Experience", description: "Residential and commercial work across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Experience", description: "Residential and commercial work across Upstate SC" },
       { title: "Curated Portfolio", description: "High-end remediation on the region's most distinguished residences" },
       { title: "Certified Designers & Horticulturists", description: "Deep Upstate SC climate and soil knowledge" },
       { title: "Specialty Plant Sourcing", description: "Premium material from vetted growers with establishment warranty" },
@@ -238,15 +238,15 @@ export const services: ServiceData[] = ([
     tagline: "Designed for properties that demand something extraordinary",
     image: waterFeatures,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/water-features.png",
-    seoTitle: "Custom Water Features Greenville SC | Elevation Landscapes",
-    h1: "Custom Water Features Greenville SC — Designed for Properties That Demand Something Extraordinary",
-    subheadline: "Bespoke water features — from natural stone waterfalls to custom koi ponds — bringing enduring beauty, movement, and refinement to the finest properties in Greenville and Upstate South Carolina.",
+    seoTitle: "Custom Water Features Upstate SC | Elevation Landscapes",
+    h1: "Custom Water Features Upstate SC — Designed for Properties That Demand Something Extraordinary",
+    subheadline: "Bespoke water features — from natural stone waterfalls to custom koi ponds — bringing enduring beauty, movement, and refinement to the finest properties in Upstate South Carolina.",
     bodyParagraphs: [
       "The finest outdoor living spaces share a common element — the sound, movement, and visual depth of a masterfully designed water feature. At Elevation Landscapes, we design and build custom water features that are not simply installed but composed, with intentionality honoring both terrain and the aesthetic vision of each homeowner.",
       "Our approach begins long before the first stone is placed. We study how you live outdoors, how your property moves with light, and where water creates the greatest impact. Whether you envision a natural stone waterfall cascading into a recirculating pool, a custom fountain anchoring a formal garden, or a professionally designed koi pond, we bring the same depth of craft to every commission.",
       "Material selection separates our work from the ordinary. We source premium quartzite, bluestone, fieldstone, and locally sourced Upstate SC granite — chosen for visual character and structural integrity. Every recirculating system is engineered for efficiency, longevity, and near-silent operation, so the only sound is water moving precisely as intended.",
       "Our aquatic design process is comprehensive — site grading, structural basin construction, pump and filtration integration, water-adjacent planting design, and final hand-placement of every stone. Nothing templated. The water feature that emerges exists nowhere else in the world.",
-      "Greenville's four-season climate offers remarkable opportunity. Sloped properties become canvases for tiered waterfall sequences. Level lots suit reflecting pools and formal fountains commanding attention from every vantage. We design for your specific site so what we build looks as though it has always belonged there.",
+      "Upstate SC's four-season climate offers remarkable opportunity. Sloped properties become canvases for tiered waterfall sequences. Level lots suit reflecting pools and formal fountains commanding attention from every vantage. We design for your specific site so what we build looks as though it has always belonged there.",
       "A custom water feature is the finishing element that transforms a beautiful yard into a private retreat. Moving water softens ambient noise, draws the eye, and creates the sensation of remove that distinguishes a truly exceptional outdoor environment from one that simply photographs well."
     ],
     trustSignals: [
@@ -269,7 +269,7 @@ export const services: ServiceData[] = ([
     },
     faqs: [
       { question: "How long does it take to design and install a custom water feature?", answer: "Custom fountains or smaller features typically require four to eight weeks. Fully integrated koi ponds or multi-tier natural stone waterfalls may take ten to sixteen weeks." },
-      { question: "How does Greenville's climate affect a water feature?", answer: "We design all recirculating systems with freeze-resistant plumbing, properly specified pumps, and drainage provisions protecting your investment through Upstate SC's full seasonal range." },
+      { question: "How does Upstate SC's climate affect a water feature?", answer: "We design all recirculating systems with freeze-resistant plumbing, properly specified pumps, and drainage provisions protecting your investment through Upstate SC's full seasonal range." },
       { question: "What is the typical investment range?", answer: "Refined custom fountains typically begin in the mid five figures. Koi ponds, large-scale waterfalls, or multi-element installations may represent significantly more. Transparent pricing before work begins." },
       { question: "How much maintenance is required?", answer: "Minimal for properly designed systems — periodic filter cleaning, pump inspection, and water chemistry for ponds. We offer ongoing maintenance programs." },
       { question: "Do you design and install koi ponds?", answer: "Yes — with appropriate depth, biological filtration, UV clarification, and planting schemes supporting fish health and water clarity. A living ecosystem and one of the most dynamic outdoor features we create." },
@@ -286,20 +286,20 @@ export const services: ServiceData[] = ([
     tagline: "Crafted for the exceptional home",
     image: stoneStaircases,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/stone-staircases.png",
-    seoTitle: "Natural Stone Staircases Greenville SC | Elevation Landscapes",
-    h1: "Natural Stone Staircases in Greenville, SC Crafted for the Exceptional Home",
+    seoTitle: "Natural Stone Staircases Upstate SC | Elevation Landscapes",
+    h1: "Natural Stone Staircases in Upstate SC Crafted for the Exceptional Home",
     subheadline: "Custom stone staircases combining the permanence of master masonry with materials sourced for beauty, character, and longevity. Where landscape design becomes architecture.",
     bodyParagraphs: [
       "Few landscape elements carry the quiet authority of a natural stone staircase. Where concrete crumbles and wood weathers, stone endures — becoming the first impression your property makes, the feature guests pause to admire, and the detail distinguishing a designed landscape from a merely maintained one.",
       "Every project begins with conversation — how you move through your property, how you entertain, what the land asks for. Our designers study grades, sight lines, and architectural language before a stone is selected. This is bespoke craftsmanship applied to the outdoors.",
       "The materials are among the finest available. Bluestone treads bring timeless formality with dense surface and refined charcoal tones. Appalachian fieldstone carries raw Carolina foothills character. Flagstone — Pennsylvania blue, Crab Orchard, Tennessee sandstone — offers range from rustic woodland warmth to contemporary precision. We source selectively, rejecting material failing our standards for color, integrity, and Upstate climate performance.",
       "Our masonry crews are veterans, not subcontractors. They understand proper base depth, drainage management, and mortaring techniques moving with seasonal expansion rather than against it. The result holds form through decades of freeze-thaw, heavy rains, and daily use.",
-      "Greenville homeowners along Augusta Road, Paris Mountain, and the broader Upstate corridor recognize outdoor work that harmonizes with regional beauty. A flagstone staircase installation here is not an amenity — it is an investment in your property's coherence and the daily experience of living beautifully within it.",
+      "Upstate SC homeowners along Augusta Road, Paris Mountain, and the broader Upstate corridor recognize outdoor work that harmonizes with regional beauty. A flagstone staircase installation here is not an amenity — it is an investment in your property's coherence and the daily experience of living beautifully within it.",
       "From site assessment through final inspection, we manage completely, coordinate with your architect when relevant, and do not consider work finished until the outcome exceeds expectations. That is our reputation, and we protect it on every job site."
     ],
     trustSignals: [
-      { title: "15+ Years Luxury Hardscape", description: "Residential and commercial focus throughout Greenville and Upstate SC" },
-      { title: "Prestigious Portfolio", description: "Staircases across Augusta Road, Paris Mountain, and greater Greenville" },
+      { title: "15+ Years Luxury Hardscape", description: "Residential and commercial focus throughout Upstate SC" },
+      { title: "Prestigious Portfolio", description: "Staircases across Augusta Road, Paris Mountain, and greater Upstate SC" },
       { title: "Quarry-Direct Sourcing", description: "Domestic quarries, stones selected in person for integrity and performance" },
       { title: "In-House Masonry", description: "Veteran crews, zero subcontracting" },
       { title: "Installation Warranty", description: "Comprehensive coverage backed by referral-built reputation" },
@@ -317,7 +317,7 @@ export const services: ServiceData[] = ([
     },
     faqs: [
       { question: "How long does installation take?", answer: "One to three weeks on-site, plus two to four weeks for design and sourcing. We never rush masonry — the result is always worth proper time." },
-      { question: "What stone types do you recommend for Greenville?", answer: "Bluestone for formal entries. Flagstone varieties for versatility across traditional and contemporary architecture. Appalachian fieldstone for naturalistic settings integrating with Upstate SC's native landscape." },
+      { question: "What stone types do you recommend for Upstate SC?", answer: "Bluestone for formal entries. Flagstone varieties for versatility across traditional and contemporary architecture. Appalachian fieldstone for naturalistic settings integrating with Upstate SC's native landscape." },
       { question: "How much maintenance is required?", answer: "Very little — periodic inspection, light pressure washing, sealing every few years. We provide a care guide specific to your materials." },
       { question: "Are there climate considerations for Upstate SC?", answer: "Freeze-thaw cycles stress improperly installed stonework. We engineer deep compacted bases, incorporate drainage, and use flexible mortar formulations — a critical reason to choose a local stone stair contractor." },
       { question: "What does a custom stone staircase cost?", answer: "Varies by length, elevation, stone, and site complexity. Detailed transparent proposals after consultation." },
@@ -334,19 +334,19 @@ export const services: ServiceData[] = ([
     tagline: "Crafted for properties that demand more",
     image: stonePathways,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/stone-pathways.png",
-    seoTitle: "Custom Stone Pathways Greenville SC | Elevation Landscapes",
-    h1: "Custom Stone Pathways Greenville SC — Crafted for Properties That Demand More",
-    subheadline: "Bespoke natural stone pathways for Greenville and Upstate South Carolina's most distinguished residences — where every step reflects the character and quality of the home it serves.",
+    seoTitle: "Custom Stone Pathways Upstate SC | Elevation Landscapes",
+    h1: "Custom Stone Pathways Upstate SC — Crafted for Properties That Demand More",
+    subheadline: "Bespoke natural stone pathways for Upstate South Carolina's most distinguished residences — where every step reflects the character and quality of the home it serves.",
     bodyParagraphs: [
       "There is a certain language spoken by a beautifully crafted stone pathway — one that communicates intention, permanence, and refined taste. At Elevation Landscapes, our custom stone pathways are designed for homeowners who understand the journey through a property is just as important as the destination.",
-      "We work exclusively with luxury residential clients across Greenville and Upstate SC, so every project receives our full creative and technical attention. A custom stone pathway from us is not a catalog selection — it is a considered collaboration between your landscape, your home's aesthetic, and the natural character of the stone itself.",
+      "We work exclusively with luxury residential clients across Upstate SC, so every project receives our full creative and technical attention. A custom stone pathway from us is not a catalog selection — it is a considered collaboration between your landscape, your home's aesthetic, and the natural character of the stone itself.",
       "Our design process begins with an in-depth site consultation. We evaluate grade transitions, drainage patterns, natural sightlines, and pedestrian flow across your property. We study how morning light falls across stone, how traffic naturally moves, and where a slight curve or material change creates visual pause. This landscape connectivity is the foundation of every pathway we design.",
       "We source hand-selected flagstone, tumbled bluestone, Tennessee crab orchard, and locally sourced quartzite — chosen for texture, color depth, and durability in the Upstate climate. Whether you prefer rustic warmth of a dry-laid flagstone pathway through a naturalistic garden or precise geometry of cut bluestone in a formal entry, our team executes with exactness.",
       "Technical excellence is embedded in everything we build. Pathways are constructed with properly compacted base layers and finished using permeable jointing compounds or hand-packed polymeric sand — ensuring structural integrity, weed resistance, and natural drainage without compromising refinement.",
-      "The result elevates the entire property — extending curb presence, enriching outdoor living flow, and adding architectural sophistication no poured concrete can replicate. For homeowners across Greenville, Travelers Rest, and Simpsonville investing in properties reflecting their highest standards, a natural stone path installation is one of the most enduring improvements you can make."
+      "The result elevates the entire property — extending curb presence, enriching outdoor living flow, and adding architectural sophistication no poured concrete can replicate. For homeowners across Upstate SC investing in properties reflecting their highest standards, a natural stone path installation is one of the most enduring improvements you can make."
     ],
     trustSignals: [
-      { title: "15+ Years Luxury Hardscape", description: "Residential and commercial experience across Greenville and Upstate SC" },
+      { title: "15+ Years Luxury Hardscape", description: "Residential and commercial experience across Upstate SC" },
       { title: "Certified Professionals", description: "Trained in dry-laid stone and modern permeable jointing" },
       { title: "Curated Stone Sourcing", description: "Premier quarries with selections unavailable through standard contractors" },
       { title: "Prestigious Portfolio", description: "Projects spanning North Main, Augusta Road, and the Cliffs" },
@@ -366,7 +366,7 @@ export const services: ServiceData[] = ([
     faqs: [
       { question: "What types of natural stone do you use for custom pathways?", answer: "Hand-selected flagstone, Tennessee crab orchard, tumbled bluestone, and locally sourced quartzite. The right material depends on your architecture, landscape, and use — we guide you through options at consultation." },
       { question: "How long does a custom stone pathway installation take?", answer: "Most luxury installations range from three to ten business days depending on scope and complexity. We communicate timelines clearly before work begins." },
-      { question: "How do pathways hold up in Greenville's climate?", answer: "Engineered for summer heat, seasonal rain, and winter freezing — compacted gravel bases, appropriate stone thickness, and permeable jointing that allows drainage and resists frost movement." },
+      { question: "How do pathways hold up in Upstate SC's climate?", answer: "Engineered for summer heat, seasonal rain, and winter freezing — compacted gravel bases, appropriate stone thickness, and permeable jointing that allows drainage and resists frost movement." },
       { question: "What is the difference between dry-laid stone and permeable jointing?", answer: "Dry-laid stone sits on compacted gravel without mortar, allowing natural flex and drainage. Permeable jointing locks joints while still allowing water permeation. Both suit luxury installations depending on design goals." },
       { question: "How much maintenance does a stone pathway require?", answer: "Among the lowest-maintenance hardscape investments. Periodic sweeping, occasional rinsing, and jointing reapplication every several years." },
       { question: "Can a pathway integrate into a larger landscape design?", answer: "Our most compelling projects connect motor courts to gardens, pool terraces to guest structures, and residences to outbuildings. Pathways designed with lighting, planting, and hardscape always achieve the most cohesive result." }
@@ -382,15 +382,15 @@ export const services: ServiceData[] = ([
     tagline: "Engineered for the land, built to last generations",
     image: boulderWalls,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/boulder-walls.png",
-    seoTitle: "Boulder Retaining Walls Greenville SC | Elevation Landscapes",
-    h1: "Boulder Retaining Walls Greenville SC — Engineered for the Land, Built to Last Generations",
-    subheadline: "Natural boulder retaining walls for discerning clients across Greenville and Upstate South Carolina — where structural integrity and refined craftsmanship are never mutually exclusive.",
+    seoTitle: "Boulder Retaining Walls Upstate SC | Elevation Landscapes",
+    h1: "Boulder Retaining Walls Upstate SC — Engineered for the Land, Built to Last Generations",
+    subheadline: "Natural boulder retaining walls for discerning clients across Upstate South Carolina — where structural integrity and refined craftsmanship are never mutually exclusive.",
     bodyParagraphs: [
-      "In Greenville and across Upstate South Carolina, rolling grades, wooded slopes, and dramatic elevation changes define the area's most prestigious properties. But unmanaged terrain erodes, shifts, and quietly undermines the landscape investment you have worked to build.",
+      "In Upstate South Carolina, rolling grades, wooded slopes, and dramatic elevation changes define the area's most prestigious properties. But unmanaged terrain erodes, shifts, and quietly undermines the landscape investment you have worked to build.",
       "We engineer and install boulder retaining walls that become defining features of the property — massive, ancient-looking structures of carefully selected natural stone that speak to permanence and craftsmanship rarely seen in residential work.",
       "Every natural boulder wall installation begins with thorough site study — soil composition, drainage patterns, grade elevation, and visual landscape flow. Each is grounded in gravity wall engineering principles, ensuring the mass and placement of every stone contributes to a structure as functionally stable as it is visually striking.",
       "The boulders we source are chosen for character, scale, and geological integrity. Our teams read each stone — which face belongs forward, how weight distributes, where negative space adds to the composition. The result is a hillside boulder wall that looks less installed and more discovered.",
-      "Slope stabilization is often the catalyst, but rarely the only reason clients invest. A well-designed boulder wall creates usable terraced space from unusable slope, anchors surrounding plantings and outdoor living areas, and adds architectural permanence to Greenville's most sought-after estate communities.",
+      "Slope stabilization is often the catalyst, but rarely the only reason clients invest. A well-designed boulder wall creates usable terraced space from unusable slope, anchors surrounding plantings and outdoor living areas, and adds architectural permanence to Upstate SC's most sought-after estate communities.",
       "We take a limited number of projects annually, ensuring every installation receives our most experienced craftsmen from site evaluation through final stone placement. When we leave, the wall is finished — not nearly finished."
     ],
     trustSignals: [
@@ -416,7 +416,7 @@ export const services: ServiceData[] = ([
       { question: "How long will a natural boulder wall last?", answer: "Among the most durable residential landscape structures — routinely lasting decades. Sound gravity wall engineering, proper drainage, and quality stone are the keys, all central to our process." },
       { question: "Are there specific considerations for Upstate South Carolina?", answer: "Clay-heavy soils, variable rainfall, and freeze-thaw cycles require thoughtful drainage planning and proper stone bedding. Our methods are calibrated to these specific regional conditions." },
       { question: "What does a boulder retaining wall cost?", answer: "Varies by dimensions, stone sourcing, site conditions, and engineering. Clients should expect a meaningful investment reflecting premium materials and craftsmanship. Fully transparent pricing at consultation." },
-      { question: "Will it increase my property value?", answer: "Consistently adds measurable value. Beyond stabilization, these structures bring architectural quality and visual distinction that carry significant weight in Greenville's luxury market." },
+      { question: "Will it increase my property value?", answer: "Consistently adds measurable value. Beyond stabilization, these structures bring architectural quality and visual distinction that carry significant weight in Upstate SC's luxury market." },
       { question: "Can it integrate with other landscape features?", answer: "Absolutely — we regularly incorporate plantings, lighting, water features, and outdoor living elements into or adjacent to boulder walls as part of a cohesive landscape composition." }
     ],
     ctaHeading: "Ready to Transform Your Terrain into Something Extraordinary?",
@@ -431,11 +431,11 @@ export const services: ServiceData[] = ([
     image: blockWalls,
     heroImage: blockWallsHero,
     testimonialImage: blockWallsTestimonial,
-    seoTitle: "Block Retaining Walls Greenville SC | Elevation Landscapes",
-    h1: "Block Retaining Walls Greenville SC — Engineered Precision, Refined by Design",
-    subheadline: "Elevation Landscapes designs and installs block retaining walls across Greenville and Upstate South Carolina that resolve the land's challenges and redefine what your outdoor environment can become.",
+    seoTitle: "Block Retaining Walls Upstate SC | Elevation Landscapes",
+    h1: "Block Retaining Walls Upstate SC — Engineered Precision, Refined by Design",
+    subheadline: "Elevation Landscapes designs and installs block retaining walls across Upstate South Carolina that resolve the land's challenges and redefine what your outdoor environment can become.",
     bodyParagraphs: [
-      "Greenville and Upstate South Carolina's rolling terrain, mature hardwoods, and characteristic grade changes create both opportunity and complexity. When elevation shifts demand a structural solution, block retaining walls offer a seamless marriage of engineering precision and aesthetic intention.",
+      "Upstate South Carolina's rolling terrain, mature hardwoods, and characteristic grade changes create both opportunity and complexity. When elevation shifts demand a structural solution, block retaining walls offer a seamless marriage of engineering precision and aesthetic intention.",
       "We approach every retaining wall installation as a design problem first — not simply how to hold back earth, but how to shape land to elevate the entire property. We work exclusively with premium segmental block systems selected for consistency, durability, and design breadth — clean contemporary geometry or textured traditional warmth.",
       "Structural integrity is non-negotiable. We assess soil composition, drainage patterns, and load requirements before a single block is set. For walls of significant height or hydraulic pressure, we incorporate geogrid reinforcement layers creating a mechanically stabilized earth system that performs for decades.",
       "Terraced design is where our expertise creates genuine value. Rather than treating a sloped lot as a liability, we create layered outdoor living — planting beds framed with precision, level lawn panels, and stone-accented steps moving visitors gracefully through the landscape.",
@@ -451,14 +451,14 @@ export const services: ServiceData[] = ([
       { title: "Lasting Warranty", description: "Industry-leading warranty backed by our craftsmanship guarantee" }
     ],
     faqs: [
-      { question: "What does a block retaining wall cost in Greenville, SC?", answer: "Several thousand for smaller decorative walls to significantly higher for multi-tiered systems. Factors: wall height, footage, materials, site access, geogrid needs. Detailed proposals after site assessment." },
+      { question: "What does a block retaining wall cost in Upstate SC?", answer: "Several thousand for smaller decorative walls to significantly higher for multi-tiered systems. Factors: wall height, footage, materials, site access, geogrid needs. Detailed proposals after site assessment." },
       { question: "What is the difference between a segmental retaining wall and poured concrete?", answer: "Segmental walls use interlocking block with geogrid reinforcement, offering superior design flexibility and better clay-soil performance vs monolithic concrete. Best structure-plus-aesthetics combo for Upstate SC luxury properties." },
-      { question: "Are there specific challenges to retaining walls in Greenville and Upstate SC?", answer: "Expansive clay soils shifting with moisture, heavy rainfall, and freeze-thaw cycles stress improperly built walls. We incorporate drainage aggregate, weep systems, and geogrid reinforcement for long-term Greenville-climate integrity." },
+      { question: "Are there specific challenges to retaining walls in Upstate SC?", answer: "Expansive clay soils shifting with moisture, heavy rainfall, and freeze-thaw cycles stress improperly built walls. We incorporate drainage aggregate, weep systems, and geogrid reinforcement for long-term Upstate SC climate integrity." },
       { question: "How much maintenance does a block retaining wall require?", answer: "Minimal when properly installed. Periodic inspection of wall face and drainage outlets, clearing weep holes, monitoring for settlement. We provide care guidelines specific to your installation." },
-      { question: "Can a block retaining wall include built-in lighting, plantings, or steps?", answer: "Yes — our most compelling Greenville projects feature terraced systems with lighting along caps, planting beds at each tier, and natural stone steps through levels. All designed together, never as afterthoughts." },
-      { question: "Do I need a permit for a retaining wall in Greenville?", answer: "Walls over four feet of exposed height typically require a permit. Greenville County and City each have requirements. We navigate the full permitting process on your behalf." }
+      { question: "Can a block retaining wall include built-in lighting, plantings, or steps?", answer: "Yes — our most compelling projects feature terraced systems with lighting along caps, planting beds at each tier, and natural stone steps through levels. All designed together, never as afterthoughts." },
+      { question: "Do I need a permit for a retaining wall?", answer: "Walls over four feet of exposed height typically require a permit. Local municipalities each have requirements. We navigate the full permitting process on your behalf." }
     ],
-    ctaText: "Contact us today to schedule a private consultation and discover how a precision-engineered block retaining wall can transform your Greenville property.",
+    ctaText: "Contact us today to schedule a private consultation and discover how a precision-engineered block retaining wall can transform your property.",
     relatedSlugs: ["boulder-retaining-walls", "grading-solutions", "paver-patios"],
     processSteps: [
       { num: "01", title: "Site Assessment", desc: "Soil, grade, drainage, and vision — we evaluate every factor before recommending a solution." },
@@ -476,22 +476,22 @@ export const services: ServiceData[] = ([
     tagline: "Crafted for the way you live outdoors",
     image: paverPatios,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/paver-patios.png",
-    seoTitle: "Paver Patios Greenville SC | Elevation Landscapes",
-    h1: "Custom Paver Patios in Greenville, SC — Crafted for the Way You Live Outdoors",
+    seoTitle: "Paver Patios Upstate SC | Elevation Landscapes",
+    h1: "Custom Paver Patios in Upstate SC — Crafted for the Way You Live Outdoors",
     subheadline: "Bespoke paver patios where meticulous engineering and exceptional materials converge to create outdoor spaces that endure as beautifully as they are built.",
     bodyParagraphs: [
-      "In Greenville and across Upstate South Carolina, outdoor living has become as carefully considered as a fine home's interior. For homeowners who refuse to compromise, a custom paver patio is a statement about how you choose to live.",
+      "In Upstate South Carolina, outdoor living has become as carefully considered as a fine home's interior. For homeowners who refuse to compromise, a custom paver patio is a statement about how you choose to live.",
       "Every project begins with design consultation — how you use the space, your home's architecture, the grade and character of your land. Only then do we translate conversation into hardscape that feels inevitable, as though it was always meant to be there.",
-      "Material selection is where vision becomes physical. We work with natural travertine, Belgian block, tumbled bluestone, and high-definition concrete pavers. Each travertine paver patio carries timeless warmth complementing Greenville's traditional and contemporary architecture. For modern refinement, large-format concrete pavers offer striking, low-maintenance surfaces performing through Upstate temperature swings.",
+      "Material selection is where vision becomes physical. We work with natural travertine, Belgian block, tumbled bluestone, and high-definition concrete pavers. Each travertine paver patio carries timeless warmth complementing Upstate SC's traditional and contemporary architecture. For modern refinement, large-format concrete pavers offer striking, low-maintenance surfaces performing through Upstate temperature swings.",
       "What separates a patio that endures from one failing within seasons is invisible once complete. Installation begins with methodical excavation and a properly engineered compacted aggregate base matched to your soil and load. Interlocking pavers set with precision, every joint finished with polymeric sand resisting weeds, repelling moisture, and locking the surface into a unified whole.",
       "The result extends your home's luxury into the landscape. Whether a sprawling terrace, intimate courtyard, or multi-level hardscape cascading across a slope, the space reflects intention and craftsmanship your home deserves.",
-      "Greenville's outdoor season is long and beautiful. We have built our reputation project by project across Travelers Rest, Simpsonville, and the Upstate — earning trust from homeowners who understand their outdoor environment reflects the standards they hold for everything else."
+      "Upstate SC's outdoor season is long and beautiful. We have built our reputation project by project across Travelers Rest, Simpsonville, and the Upstate — earning trust from homeowners who understand their outdoor environment reflects the standards they hold for everything else."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Hardscape", description: "Residential and commercial projects across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Hardscape", description: "Residential and commercial projects across Upstate SC" },
       { title: "Premium Material Access", description: "Travertine, Belgian block, large-format pavers unavailable through standard suppliers" },
       { title: "Engineered Foundations", description: "Compacted aggregate base and polymeric sand on every project" },
-      { title: "Curated Portfolio", description: "High-end patios across Greenville's most prestigious neighborhoods" },
+      { title: "Curated Portfolio", description: "High-end patios across Upstate SC's most prestigious neighborhoods" },
       { title: "Workmanship Warranty", description: "Dedicated management from design through walkthrough" },
       { title: "Post-Install Support", description: "Sealing programs and maintenance guidance for lasting beauty" }
     ],
@@ -508,7 +508,7 @@ export const services: ServiceData[] = ([
     faqs: [
       { question: "How long does paver patio installation take?", answer: "One to three weeks for most residential projects. Multi-level or expansive designs may need more time. Detailed schedule at consultation." },
       { question: "Travertine vs concrete pavers?", answer: "Travertine offers classic European warmth and organic texture. Concrete provides uniformity, color range, and easier maintenance. Both perform well in Upstate SC over a proper compacted aggregate base. We guide you through options." },
-      { question: "How do patios hold up in Greenville's climate?", answer: "Properly engineered base is the key — adequate compaction, appropriate aggregate, correct drainage slope. We engineer for local soil and climate so your patio stays stable and beautiful for years." },
+      { question: "How do patios hold up in Upstate SC's climate?", answer: "Properly engineered base is the key — adequate compaction, appropriate aggregate, correct drainage slope. We engineer for local soil and climate so your patio stays stable and beautiful for years." },
       { question: "What is polymeric sand?", answer: "Specialty jointing material creating a firm, flexible bond between pavers. Resists rain washout, inhibits weeds, discourages insects. Standard on every installation." },
       { question: "What maintenance is required?", answer: "Minimal — periodic rinsing, occasional sweeping, professional sealer every few years for natural stone. Among the lowest-maintenance outdoor surfaces available." },
       { question: "What does a luxury paver patio cost?", answer: "Varies by size, design complexity, and materials. Detailed proposals after consultation so you understand every dollar of the investment." }
@@ -524,8 +524,8 @@ export const services: ServiceData[] = ([
     tagline: "Crafted for the exceptional home",
     image: poolDecks,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/pool-decks.png",
-    seoTitle: "Pool Deck Installation Greenville SC | Elevation Landscapes",
-    h1: "Pool Deck Installation in Greenville, SC — Crafted for the Exceptional Home",
+    seoTitle: "Pool Deck Installation Upstate SC | Elevation Landscapes",
+    h1: "Pool Deck Installation in Upstate SC — Crafted for the Exceptional Home",
     subheadline: "Luxury pool decks and pool coping transforming the space around your pool into an environment as refined as the home it surrounds.",
     bodyParagraphs: [
       "A pool is the centerpiece of outdoor living. The materials surrounding it — how they feel underfoot in July, how they age over a decade — define whether a pool environment feels exceptional or adequate. At Elevation Landscapes, we design and install pool decks and coping meeting the standard your property demands.",
@@ -533,14 +533,14 @@ export const services: ServiceData[] = ([
       "Pool coping is where we distinguish ourselves most clearly. Bullnose coping transitions pool shell to deck with a finished edge that is both functional and architectural. We work with natural stone, porcelain, and pre-cast concrete in profiles complementing your pool's geometry and home's design language. Our teams understand tolerances, drainage, and structural details determining whether coping stays flawless or shifts within seasons.",
       "Every project starts with site assessment and consultation — pool shell, architectural style, landscape, lifestyle. A family entertaining frequently needs different design than a client wanting a tranquil resort retreat. We build toward your specific vision.",
       "Upstate SC's climate means temperature fluctuation, occasional frost, and prolonged summer heat stressing materials and joints. We select grout systems, polymeric sands, and sealers rated for regional conditions, detailing expansion joints protecting the investment long-term.",
-      "We serve homeowners across Greenville, Travelers Rest, Simpsonville, and Spartanburg. Our portfolio includes estates, new builds, and full outdoor living renovations. We take on the right projects and execute each to a standard we are proud to stand behind."
+      "We serve homeowners across Upstate SC. Our portfolio includes estates, new builds, and full outdoor living renovations. We take on the right projects and execute each to a standard we are proud to stand behind."
     ],
     trustSignals: [
-      { title: "Luxury Residential & Commercial", description: "High-end projects only across Greenville and Upstate SC" },
+      { title: "Luxury Residential & Commercial", description: "High-end projects only across Upstate SC" },
       { title: "Premium Materials", description: "Travertine, natural stone, porcelain, engineered pavers meeting strict standards" },
       { title: "Regional Expertise", description: "Upstate SC climate, soil, and code knowledge" },
       { title: "Single Point of Contact", description: "Full project management from consultation through sealing" },
-      { title: "Proven Portfolio", description: "Completed projects across Greenville, Travelers Rest, Simpsonville, Spartanburg" },
+      { title: "Proven Portfolio", description: "Completed projects across Upstate South Carolina" },
       { title: "Safety-First Design", description: "Slip-resistant materials and heat-dissipating surfaces engineered for pool environments" }
     ],
     processSteps: [
@@ -554,9 +554,9 @@ export const services: ServiceData[] = ([
       attribution: "Nicole & Brian W., Travelers Rest"
     },
     faqs: [
-      { question: "What materials for luxury pool decks in Greenville?", answer: "Travertine most popular for heat dissipation and beauty. Also porcelain pavers, thermal bluestone, and cool deck pavers. We walk through samples and performance during consultation." },
+      { question: "What materials for luxury pool decks in Upstate SC?", answer: "Travertine most popular for heat dissipation and beauty. Also porcelain pavers, thermal bluestone, and cool deck pavers. We walk through samples and performance during consultation." },
       { question: "What is bullnose coping?", answer: "Rounded-edge profile overhanging the pool shell, directing splash water away while creating a finished architectural transition. We select profiles matching your pool geometry and design intent." },
-      { question: "How does Greenville's climate affect installation?", answer: "Temperature variation and frost stress hardscape. We specify freeze-thaw rated materials, appropriate setting systems, and expansion joints for natural movement without cracking." },
+      { question: "How does Upstate SC's climate affect installation?", answer: "Temperature variation and frost stress hardscape. We specify freeze-thaw rated materials, appropriate setting systems, and expansion joints for natural movement without cracking." },
       { question: "Travertine maintenance?", answer: "Resealing every two to three years, routine pH-neutral cleaning. We provide a tailored guide specific to your materials." },
       { question: "Timeline and planning?", answer: "Two to four weeks construction. Engage in late winter or early spring to secure scheduling and materials ahead of peak season demand." },
       { question: "How do you ensure slip resistance?", answer: "Textured travertine, brushed stone, and rated cool deck pavers providing traction when wet. We never install polished surfaces in pool applications. Slip resistance and refined aesthetics coexist." }
@@ -572,20 +572,20 @@ export const services: ServiceData[] = ([
     tagline: "Custom design and master craftsmanship",
     image: outdoorKitchens,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/outdoor-kitchens.png",
-    seoTitle: "Outdoor Kitchens Greenville SC | Elevation Landscapes",
-    h1: "Outdoor Kitchens Greenville SC — Custom Design and Master Craftsmanship",
+    seoTitle: "Outdoor Kitchens Upstate SC | Elevation Landscapes",
+    h1: "Outdoor Kitchens Upstate SC — Custom Design and Master Craftsmanship",
     subheadline: "From hand-selected natural stone to commercial-grade stainless steel appliances, outdoor kitchens that redefine what outdoor living means for your home.",
     bodyParagraphs: [
-      "There is a particular evening unique to Upstate South Carolina — warm air, Blue Ridge foothills fading to violet, and people you care about gathered in an extraordinary space. At Elevation Landscapes, we design and build outdoor kitchens in Greenville worthy of those evenings.",
+      "There is a particular evening unique to Upstate South Carolina — warm air, Blue Ridge foothills fading to violet, and people you care about gathered in an extraordinary space. At Elevation Landscapes, we design and build outdoor kitchens worthy of those evenings.",
       "Every project is conceived from scratch — tailored to your architecture, property flow, and how your family lives. No off-the-shelf solutions, no compromises. Our custom outdoor kitchen designs begin with one conviction: your outdoor space should match the refinement of the home it surrounds.",
       "Materials are selected with discernment. Natural stone veneer, hand-selected for color and character, gives structures permanence manufactured alternatives cannot replicate. Outdoor cabinetry is engineered for South Carolina's climate — humidity, temperature shifts, years of use. Every built-in grill island is anchored in a structural framework for longevity, not just aesthetics.",
       "We partner with manufacturers of commercial-grade stainless steel appliances — professional grills, refrigeration, side burners, smokers, pizza ovens, beverage centers. Each chosen for performance and design. All gas, electrical, and utility integration handled by licensed professionals to code.",
-      "Greenville and Upstate SC have seen remarkable growth in outdoor living. We understand North Main, Augusta Road, Travelers Rest, and the lake communities along Keowee and Hartwell. A well-designed outdoor kitchen transforms property value, curb appeal, and daily quality of life.",
+      "Upstate SC has seen remarkable growth in outdoor living. We understand North Main, Augusta Road, Travelers Rest, and the lake communities along Keowee and Hartwell. A well-designed outdoor kitchen transforms property value, curb appeal, and daily quality of life.",
       "Our process is collaborative. We walk your property, study sight lines, evaluate breezes and sun, and present a design feeling inevitable. The results are spaces homeowners describe not as additions but transformations."
     ],
     trustSignals: [
-      { title: "Two Decades Combined Experience", description: "Luxury hardscape across Greenville and Upstate SC" },
-      { title: "Exclusive Portfolio", description: "Projects across Greenville, Travelers Rest, and lake communities" },
+      { title: "Two Decades Combined Experience", description: "Luxury hardscape across Upstate SC" },
+      { title: "Exclusive Portfolio", description: "Projects across Upstate SC and lake communities" },
       { title: "Premium Partnerships", description: "Top suppliers of stone veneer, masonry, and commercial appliances" },
       { title: "Senior Design + Certified Artisans", description: "Dedicated specialist and craftsmen on every project" },
       { title: "Full Structural Warranty", description: "Masonry coverage plus licensed utility integration" },
@@ -602,7 +602,7 @@ export const services: ServiceData[] = ([
       attribution: "Greg & Michelle F., Lake Keowee"
     },
     faqs: [
-      { question: "What does a custom outdoor kitchen cost in Greenville?", answer: "$40,000 to well over $150,000 depending on size, complexity, appliances, and finishes. Fully itemized proposals after consultation — every line transparent." },
+      { question: "What does a custom outdoor kitchen cost in Upstate SC?", answer: "$40,000 to well over $150,000 depending on size, complexity, appliances, and finishes. Fully itemized proposals after consultation — every line transparent." },
       { question: "How long does the build take?", answer: "Six to fourteen weeks from groundbreaking to walkthrough. Detailed timeline at design phase with proactive communication throughout." },
       { question: "Year-round use in Upstate SC?", answer: "Yes — mild winters and long warm seasons are ideal. We design with climate in mind, specifying materials, covers, and orientations for all-season comfort." },
       { question: "Warranty?", answer: "Structural warranty on masonry plus manufacturer appliance warranties. We remain available long after completion for questions and future enhancements." },
@@ -620,19 +620,19 @@ export const services: ServiceData[] = ([
     tagline: "Designed for the way you live",
     image: firePits,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/fire-pits.png",
-    seoTitle: "Outdoor Gas Fire Pits Greenville SC | Elevation Landscapes",
-    h1: "Custom Outdoor Gas Fire Pits in Greenville, SC — Designed for the Way You Live",
+    seoTitle: "Outdoor Gas Fire Pits Upstate SC | Elevation Landscapes",
+    h1: "Custom Outdoor Gas Fire Pits in Upstate SC — Designed for the Way You Live",
     subheadline: "Bespoke gas fire features where master craftsmanship, enduring materials, and site-specific design define your outdoor living experience.",
     bodyParagraphs: [
       "There is a moment, as dusk settles over the Blue Ridge foothills, when a well-designed outdoor space transforms from beautiful to unforgettable. At Elevation Landscapes, we engineer that moment — and a custom outdoor gas fire pit is often at its center.",
-      "Greenville homeowners who expect excellence understand fire features are an architectural statement, not an accessory. A built-in fire pit extends your outdoor living season into cool Upstate South Carolina evenings, creates a natural gathering point, and elevates your entire exterior environment.",
+      "Upstate SC homeowners who expect excellence understand fire features are an architectural statement, not an accessory. A built-in fire pit extends your outdoor living season into cool Upstate South Carolina evenings, creates a natural gathering point, and elevates your entire exterior environment.",
       "What separates an exceptional gas fire pit from a manufactured product is the integrity behind it. Every built-in fire pit we install begins with site-specific consultation — your architecture, masonry palette, gas infrastructure, and how your family uses the space. Nothing templated. Everything considered.",
       "Our installations incorporate premium natural gas burners for consistent, clean flames responding immediately in any season. We work with natural bluestone, travertine, granite, and custom-blended mortars — sourced for refinement and durability in South Carolina's climate. For contemporary spaces, fire glass media in a range of hues produces a luminous, jewel-like effect striking in evening hours.",
       "All gas line work is coordinated with licensed professionals, and every stone fire pit installation meets or exceeds South Carolina code — no questions about safety, performance, or permitting.",
       "We do not install prefabricated or kit-based products. Every fire feature is custom and site-specific — ensuring design coherence with your architecture and a finished product that reads as a permanent, intentional part of the landscape rather than an afterthought."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Experience", description: "High-end residential and commercial projects across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Experience", description: "High-end residential and commercial projects across Upstate SC" },
       { title: "Code-Compliant Gas Work", description: "Licensed professionals, fully SC compliant" },
       { title: "Curated Portfolio", description: "Custom stone fire pits, integrated kitchen features, courtyard installations" },
       { title: "Premium Materials Only", description: "Bluestone, travertine, granite, weather-resistant systems" },
@@ -651,10 +651,10 @@ export const services: ServiceData[] = ([
     },
     faqs: [
       { question: "Why choose a gas fire pit over wood-burning?", answer: "No wood, smoke, or ash. Natural gas ignites at a valve turn or remote touch with consistent, clean flame. For frequent entertainers, gas offers unmatched convenience." },
-      { question: "How does a built-in fire pit hold up to Greenville's climate?", answer: "We use weather-resistant materials and sealers engineered for Upstate SC's humidity, temperature swings, and freezing. Properly built, it performs beautifully for decades." },
+      { question: "How does a built-in fire pit hold up to Upstate SC's climate?", answer: "We use weather-resistant materials and sealers engineered for Upstate SC's humidity, temperature swings, and freezing. Properly built, it performs beautifully for decades." },
       { question: "How long does design and installation take?", answer: "Six to twelve weeks from consultation to completion depending on complexity and material lead times. We recommend reaching out well ahead of your target season." },
       { question: "What is fire glass media?", answer: "Decorative tempered glass above the burner refracting light for a vivid dimensional flame effect. Does not degrade with heat, easy to clean, and can be refreshed as preferences change." },
-      { question: "Will a custom fire pit add value to my home?", answer: "Custom fire features consistently distinguish properties in Greenville's luxury market, contributing to perceived value and speed of sale." },
+      { question: "Will a custom fire pit add value to my home?", answer: "Custom fire features consistently distinguish properties in Upstate SC's luxury market, contributing to perceived value and speed of sale." },
       { question: "Can I buy a prefab fire pit and have you install it?", answer: "No — every feature we build is custom and site-specific, ensuring design coherence and a result that reads as permanent architecture, not an add-on." }
     ],
     ctaHeading: "Ready for a Fire Feature That Defines Your Evenings?",
@@ -668,19 +668,19 @@ export const services: ServiceData[] = ([
     tagline: "Crafted for the exceptional residential property",
     image: plantInstallation,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/plant-installation.png",
-    seoTitle: "New Plant Installation Greenville SC | Elevation Landscapes",
-    h1: "New Plant Installation in Greenville, SC — Crafted for the Exceptional Residential Property",
-    subheadline: "Horticultural precision and refined aesthetic vision transforming Greenville properties into landscapes of enduring distinction.",
+    seoTitle: "New Plant Installation Upstate SC | Elevation Landscapes",
+    h1: "New Plant Installation in Upstate SC — Crafted for the Exceptional Residential Property",
+    subheadline: "Horticultural precision and refined aesthetic vision transforming Upstate SC properties into landscapes of enduring distinction.",
     bodyParagraphs: [
       "We do not simply dig a hole and place a plant. Every installation begins with comprehensive site assessment — soil composition, drainage, sun exposure, and microclimate conditions specific to your property. This knowledge informs every decision, from species selection to root ball preparation to seasonal planting schedules ensuring year-round performance.",
       "Our luxury landscape planting centers on curating a palette that is visually extraordinary and ecologically intelligent. We source premium ornamental plant material from specialty growers — specimen trees with established canopies, rare ornamental shrubs, and refined native cultivars suited to the Piedmont climate. These are not retail plants. They are investment-grade selections chosen for form, scale, and enduring character.",
       "Specimen tree planting is among our most transformative services. A single well-chosen tree — a mature Japanese maple framing a motor court, a sculptural serviceberry anchoring a garden border — can redefine a property's character. Our crews handle precision root ball preparation and backfill protocols promoting establishment and long-term vitality.",
-      "For comprehensive custom garden design, our team collaborates through every phase. We understand Upstate SC's seasonal rhythms, the late-spring heat arriving earlier than anticipated, and the importance of material resilient enough to thrive in Greenville's distinctive climate.",
+      "For comprehensive custom garden design, our team collaborates through every phase. We understand Upstate SC's seasonal rhythms, the late-spring heat arriving earlier than anticipated, and the importance of material resilient enough to thrive in Upstate SC's distinctive climate.",
       "The landscape surrounding your home is a living extension of how you live and what you value. Every plant we install is a permanent architectural decision, not a temporary aesthetic choice. The result deepens in beauty each passing season.",
       "Our clients are not looking for a contractor — they want a trusted partner bringing expertise, aesthetic sensibility, and genuine investment in long-term success. That is precisely what we deliver on every project."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "High-end residential and commercial projects across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Focus", description: "High-end residential and commercial projects across Upstate SC" },
       { title: "Specialty Sourcing", description: "Rare specimens and native cultivars from wholesale growers unavailable at retail" },
       { title: "Rigorous Installation", description: "Professional root ball preparation, soil amendment, precision placement" },
       { title: "Seasonal Planning", description: "Dedicated schedules and post-installation care programs" },
@@ -700,9 +700,9 @@ export const services: ServiceData[] = ([
     faqs: [
       { question: "What does the installation process look like?", answer: "Site evaluation of soil, drainage, sun, and landscape character. Then curated selection with root ball preparation, soil amendment, and seasonal planting schedule for long-term success." },
       { question: "Where do you source plant material?", answer: "Specialty wholesale growers cultivating premium ornamentals, rare specimen trees, and refined native cultivars unavailable at retail. Every plant meets our standards for size, form, and quality." },
-      { question: "How does Greenville expertise benefit my project?", answer: "Piedmont clay, humidity, late frosts, and early summer heat are variables we design around. Material is selected specifically for these conditions so your landscape thrives year after year." },
+      { question: "How does Upstate SC expertise benefit my project?", answer: "Piedmont clay, humidity, late frosts, and early summer heat are variables we design around. Material is selected specifically for these conditions so your landscape thrives year after year." },
       { question: "Can you install large mature specimen trees?", answer: "Absolutely — one of our most requested services. A single properly placed mature tree can dramatically elevate a luxury property's presence and value." },
-      { question: "When is the best time for planting in Greenville?", answer: "Early spring or fall for moderate temperatures and root establishment before summer heat. We design schedules for successful installation across multiple seasonal windows." },
+      { question: "When is the best time for planting in Upstate SC?", answer: "Early spring or fall for moderate temperatures and root establishment before summer heat. We design schedules for successful installation across multiple seasonal windows." },
       { question: "Warranty and post-installation support?", answer: "Warranty coverage and care guidance on every project. We view each installation as the beginning of a relationship, not end of a transaction." }
     ],
     ctaHeading: "Ready for a Landscape That Reflects Everything Your Home Represents?",
@@ -716,20 +716,20 @@ export const services: ServiceData[] = ([
     tagline: "Precision turf craftsmanship for discerning clients",
     image: sodSeeding,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/sod-seeding.png",
-    seoTitle: "Sod Installation Greenville SC | Elevation Landscapes",
-    seoDescription: "Premium sod and seeding for Greenville & Upstate SC luxury properties. Bermuda, Zoysia, hydroseeding, expert soil preparation. Schedule a consultation.",
-    h1: "Sod Installation in Greenville, SC — Precision Turf Craftsmanship for Discerning Clients",
+    seoTitle: "Sod Installation Upstate SC | Elevation Landscapes",
+    seoDescription: "Premium sod and seeding for Upstate SC luxury properties. Bermuda, Zoysia, hydroseeding, expert soil preparation. Schedule a consultation.",
+    h1: "Sod Installation in Upstate SC — Precision Turf Craftsmanship for Discerning Clients",
     subheadline: "Uncompromising standards delivering lush, expertly established turf that transforms the entire character of your property.",
     bodyParagraphs: [
       "A truly exceptional lawn does not happen by chance. It results from deliberate decisions about soil chemistry, turf variety, grade, drainage, and timing. We approach sod installation and professional seeding with the same precision that goes into every element of a luxury property.",
       "Upstate South Carolina's climate presents distinct opportunities and demands. Long humid summers and mild winters create ideal conditions for warm-season grasses, but only when paired with the right soil profile and planted at the right moment. We begin every project with comprehensive soil analysis — compaction, pH, organic matter, and drainage — before a single roll arrives.",
-      "We select the turf variety best suited to your conditions, aesthetics, and maintenance expectations. Bermuda offers dense, resilient surface with outstanding drought tolerance for expansive open lawns. Zoysia delivers lush, carpet-like texture with deep green color holding exceptionally in Greenville's transition zone. Both are among the most sought-after varieties across Upstate SC.",
+      "We select the turf variety best suited to your conditions, aesthetics, and maintenance expectations. Bermuda offers dense, resilient surface with outstanding drought tolerance for expansive open lawns. Zoysia delivers lush, carpet-like texture with deep green color holding exceptionally in Upstate SC's transition zone. Both are among the most sought-after varieties across Upstate SC.",
       "For larger properties, slopes, or areas where conventional sod is less practical, our hydroseeding programs provide beautifully uniform results — a slurry of seed, mulch, and fertilizer promoting fast germination across irregular or expansive terrain.",
       "Installation is only as good as preparation. Our crews perform thorough grading and soil amendment prior to laying sod — proper drainage slope, even surface finish. Seams offset, edges cleanly cut, every roll firmed and irrigated with precision. This attention is not industry standard. It is our standard.",
-      "The outcome is a lawn serving as foundation for the entire landscape — enhancing architectural presence, framing hardscape, and creating an inviting environment reflecting your investment. Greenville homeowners choosing us are investing in lasting transformation by a team holding every detail to the highest standard."
+      "The outcome is a lawn serving as foundation for the entire landscape — enhancing architectural presence, framing hardscape, and creating an inviting environment reflecting your investment. Upstate SC homeowners choosing us are investing in lasting transformation by a team holding every detail to the highest standard."
     ],
     trustSignals: [
-      { title: "Luxury Residential & Commercial", description: "High-end landscapes across Greenville and Upstate SC" },
+      { title: "Luxury Residential & Commercial", description: "High-end landscapes across Upstate SC" },
       { title: "Soil Science First", description: "Comprehensive analysis and amendment on every project" },
       { title: "Premium Turf Sources", description: "Bermuda and Zoysia from vetted high-grade farms" },
       { title: "Full-Service Installation", description: "Soil prep through final edging and irrigation" },
@@ -747,7 +747,7 @@ export const services: ServiceData[] = ([
       attribution: "Kevin & Amy R., Greer"
     },
     faqs: [
-      { question: "What sod is best for Greenville properties?", answer: "Zoysia for dense refined texture and transition zone performance. Bermuda for sun-drenched lawns needing durability and rapid establishment. We recommend based on your specific site evaluation." },
+      { question: "What sod is best for Upstate SC properties?", answer: "Zoysia for dense refined texture and transition zone performance. Bermuda for sun-drenched lawns needing durability and rapid establishment. We recommend based on your specific site evaluation." },
       { question: "What does soil preparation involve?", answer: "Detailed analysis then amendment, grading, and compaction correction. Proper prep ensures root establishment, accurate drainage, and uniform appearance holding over time." },
       { question: "When is hydroseeding better than sod?", answer: "For larger properties, slopes, or irregular areas. Fast even germination across expansive terrain at a fraction of full sod cost." },
       { question: "Maintenance after installation?", answer: "Consistent watering for two to three weeks, then warm-season grasses are low-maintenance and well-adapted to Upstate SC. We provide a care schedule for your variety and season." },
@@ -765,21 +765,21 @@ export const services: ServiceData[] = ([
     tagline: "Architectural illumination for exceptional homes",
     image: landscapeLighting,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/landscape-lighting.png",
-    seoTitle: "Landscape Lighting Greenville SC | Elevation Landscapes",
-    h1: "Landscape Lighting Greenville SC — Architectural Illumination Designed for Exceptional Homes",
+    seoTitle: "Landscape Lighting Upstate SC | Elevation Landscapes",
+    h1: "Landscape Lighting Upstate SC — Architectural Illumination Designed for Exceptional Homes",
     subheadline: "Your property represents years of vision and investment. After dark, it should be no different. Luxury outdoor lighting revealing the full character of your home and grounds, night after night.",
     bodyParagraphs: [
-      "Just after dusk, a property either retreats into darkness or reveals itself in entirely new light. For Greenville and Upstate South Carolina homeowners who have invested in exceptional architecture and curated landscaping, that moment deserves to be extraordinary. Our architectural lighting design process ensures it is.",
+      "Just after dusk, a property either retreats into darkness or reveals itself in entirely new light. For Upstate South Carolina homeowners who have invested in exceptional architecture and curated landscaping, that moment deserves to be extraordinary. Our architectural lighting design process ensures it is.",
       "We approach landscape lighting as foundational, not afterthought. Every project begins with site evaluation — architectural character, plantings, hardscape, and the sightlines defining your property. From there we develop a layered lighting plan as deliberate as the landscape itself.",
       "Installations are built around professional-grade LED fixtures in solid brass and cast aluminum — architectural-grade luminaires unavailable at the consumer level. They resist corrosion and hold integrity through Upstate SC's full seasonal range. These are investments in permanence, not products from a home improvement store.",
       "The backbone is a properly engineered transformer and low-voltage infrastructure, sized and zoned for today with room for expansion. Our low-voltage expertise delivers peak efficiency without energy waste or the maintenance burden of undersized systems.",
-      "Technique matters as much as equipment. We employ moonlighting — fixtures high in mature canopies casting soft dappled light mirroring natural moonlight. Combined with uplighting on specimen trees and architecture, plus subtle pathway lighting guiding movement without harsh interruption, the result commands attention across Greenville's finest neighborhoods.",
+      "Technique matters as much as equipment. We employ moonlighting — fixtures high in mature canopies casting soft dappled light mirroring natural moonlight. Combined with uplighting on specimen trees and architecture, plus subtle pathway lighting guiding movement without harsh interruption, the result commands attention across Upstate SC's finest neighborhoods.",
       "Upstate SC's humidity, thunderstorms, and temperature swings require exacting weatherproofing at every component. The difference between a system lasting fifteen years and one failing in eighteen months lives entirely in installation quality — and our teams are trained to that detail."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Residential and commercial projects throughout Greenville and Upstate SC" },
+      { title: "Decade of Luxury Focus", description: "Residential and commercial projects throughout Upstate SC" },
       { title: "Trade-Only Fixtures", description: "Architectural-grade LED and transformers unavailable at retail" },
-      { title: "Prestigious Portfolio", description: "Installations across Greenville's most distinguished neighborhoods and lake communities" },
+      { title: "Prestigious Portfolio", description: "Installations across Upstate SC's most distinguished neighborhoods and lake communities" },
       { title: "Comprehensive Warranty", description: "Materials, workmanship, and structured maintenance programs" },
       { title: "Climate-Engineered", description: "Deep Upstate SC familiarity for lasting durability" },
       { title: "Future-Ready Design", description: "Transformer and wiring infrastructure sized for expansion as your landscape evolves" }
@@ -799,7 +799,7 @@ export const services: ServiceData[] = ([
       { question: "What LED fixtures do you use?", answer: "Solid brass, cast aluminum, and marine-grade from trade-only manufacturers. Superior color rendering, longer lifespans, and construction built for Upstate SC's humid climate. The gap from consumer-grade is visible within a few years." },
       { question: "How does low-voltage lighting work?", answer: "12-volt system via a transformer — more energy-efficient and safer than line voltage. We engineer capacity and wiring zones for your property with room for future expansion." },
       { question: "How does Upstate SC's climate affect installation?", answer: "Humidity, heavy rain, and temperature swings demand wet-location fixtures, direct-burial cable, and weatherproofing at every connection. This detail separates systems lasting decades from those needing constant repair." },
-      { question: "What is moonlighting?", answer: "Fixtures high in tree canopies aimed downward, recreating soft diffused light through branches. Adds depth and organic quality uplighting alone cannot. On properties with mature trees — common in Greenville — it is our most transformative technique." },
+      { question: "What is moonlighting?", answer: "Fixtures high in tree canopies aimed downward, recreating soft diffused light through branches. Adds depth and organic quality uplighting alone cannot. On properties with mature trees — common in Upstate SC — it is our most transformative technique." },
       { question: "Warranty and maintenance?", answer: "Warranty on materials and workmanship plus scheduled maintenance for seasonal adjustments as plantings grow. Prompt service calls between visits as needed." }
     ],
     ctaHeading: "Ready to Experience Your Property the Way It Was Meant to Be Seen?",
