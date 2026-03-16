@@ -58,7 +58,7 @@ const popularArticles: Article[] = [
 const latestArticles: Article[] = [
   {
     id: 4,
-    title: "The Complete Guide to Outdoor Living Spaces in Greenville, SC",
+    title: "The Complete Guide to Outdoor Living Spaces in Upstate SC",
     excerpt:
       "From patios and outdoor kitchens to fire pits, water features, and lighting — everything you need to create an exceptional outdoor living space.",
     category: "Outdoor Living",
