@@ -718,7 +718,7 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/sod-seeding.png",
     seoTitle: "Sod Installation Greenville SC | Elevation Landscapes",
     seoDescription: "Premium sod and seeding for Greenville & Upstate SC luxury properties. Bermuda, Zoysia, hydroseeding, expert soil preparation. Schedule a consultation.",
-    h1: "Sod Installation in Greenville, SC — Precision Turf Craftsmanship for the Discerning Homeowner",
+    h1: "Sod Installation in Greenville, SC — Precision Turf Craftsmanship for Discerning Clients",
     subheadline: "Uncompromising standards delivering lush, expertly established turf that transforms the entire character of your property.",
     bodyParagraphs: [
       "A truly exceptional lawn does not happen by chance. It results from deliberate decisions about soil chemistry, turf variety, grade, drainage, and timing. We approach sod installation and professional seeding with the same precision that goes into every element of a luxury property.",
