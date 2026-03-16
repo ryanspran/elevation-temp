@@ -90,7 +90,7 @@ const Index = () => {
       <SEOHead
         page="home"
         fallbackTitle="Elevation Landscapes | Luxury Landscape Design Greenville SC"
-        fallbackDescription="Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning homeowners."
+        fallbackDescription="Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential, builder, and commercial clients who demand the finest."
         path="/"
         jsonLd={localBusinessJsonLd}
       />
