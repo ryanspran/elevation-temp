@@ -117,7 +117,7 @@ const articles: Record<string, ArticleData> = {
   },
   "outdoor-living-greenville": {
     title:
-      "The Complete Guide to Outdoor Living Spaces in Greenville,\u00a0SC",
+      "The Complete Guide to Outdoor Living Spaces in Upstate\u00a0SC",
     category: "Outdoor Living",
     heroImage: outdoorLivingHero,
     detailImage: outdoorLivingDetail,
