@@ -145,7 +145,7 @@ const Index = () => {
               <p className="text-text-dark/70 text-lg leading-relaxed mb-6">
                 Elevation Landscapes exists for a singular purpose: to create outdoor environments that reflect the
                 same uncompromising quality as the homes they surround. We are not a lawn care company. We are a
-                luxury landscape design and hardscape firm serving exclusively residential clients across Greenville
+                luxury landscape design and hardscape firm serving homeowners, builders, and commercial clients across Greenville
                 and Upstate South Carolina.
               </p>
               <p className="text-text-dark/70 text-lg leading-relaxed mb-8">
