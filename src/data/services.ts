@@ -488,7 +488,7 @@ export const services: ServiceData[] = ([
       "Greenville's outdoor season is long and beautiful. We have built our reputation project by project across Travelers Rest, Simpsonville, and the Upstate — earning trust from homeowners who understand their outdoor environment reflects the standards they hold for everything else."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Hardscape", description: "Exclusive residential across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Hardscape", description: "Residential and commercial projects across Greenville and Upstate SC" },
       { title: "Premium Material Access", description: "Travertine, Belgian block, large-format pavers unavailable through standard suppliers" },
       { title: "Engineered Foundations", description: "Compacted aggregate base and polymeric sand on every project" },
       { title: "Curated Portfolio", description: "High-end patios across Greenville's most prestigious neighborhoods" },
