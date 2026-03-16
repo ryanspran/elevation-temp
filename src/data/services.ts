@@ -777,7 +777,7 @@ export const services: ServiceData[] = ([
       "Upstate SC's humidity, thunderstorms, and temperature swings require exacting weatherproofing at every component. The difference between a system lasting fifteen years and one failing in eighteen months lives entirely in installation quality — and our teams are trained to that detail."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Exclusive residential projects throughout Greenville and Upstate SC" },
+      { title: "Decade of Luxury Focus", description: "Residential and commercial projects throughout Greenville and Upstate SC" },
       { title: "Trade-Only Fixtures", description: "Architectural-grade LED and transformers unavailable at retail" },
       { title: "Prestigious Portfolio", description: "Installations across Greenville's most distinguished neighborhoods and lake communities" },
       { title: "Comprehensive Warranty", description: "Materials, workmanship, and structured maintenance programs" },
