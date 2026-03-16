@@ -54,7 +54,7 @@ const Index = () => {
     return () => { testimonialApi.off("select", onSelect); };
   }, [testimonialApi]);
   const whyUsItems = [
-    { icon: Gem, title: "Exclusive Luxury Focus", desc: "We serve only residential clients who demand the absolute finest in landscape design and craftsmanship." },
+    { icon: Gem, title: "Exclusive Luxury Focus", desc: "We serve clients who demand the absolute finest — from luxury homes to custom builds and commercial properties." },
     { icon: TreePine, title: "Deep Upstate SC Expertise", desc: "Decades of experience with Piedmont soils, regional climate, and the nuances that define successful landscapes here." },
     { icon: Users, title: "Principal-Led Management", desc: "Our principals are personally involved in every project — no hand-offs to junior teams or subcontractors." },
     { icon: Shield, title: "Premium Materials & Craftsmanship", desc: "We source the finest materials and employ master craftsmen who take pride in work that endures." },
