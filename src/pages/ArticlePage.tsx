@@ -272,8 +272,8 @@ const articles: Record<string, ArticleData> = {
     category: "Hardscaping",
     heroImage: hardscapeContractorHero,
     detailImage: hardscapeContractorDetail,
-    seoTitle: "How to Choose a Hardscape Contractor in Greenville SC | Elevation Landscapes",
-    seoDescription: "Ten essential questions to ask before hiring a hardscape contractor in Greenville, SC. Ensure quality, transparency, and lasting results for your outdoor project.",
+    seoTitle: "How to Choose a Hardscape Contractor in Upstate SC | Elevation Landscapes",
+    seoDescription: "Ten essential questions to ask before hiring a hardscape contractor in Upstate SC. Ensure quality, transparency, and lasting results for your outdoor project.",
     sections: [
       {
         body: "Finding the right hardscape contractor in Greenville, SC, is crucial for ensuring your outdoor project not only meets your expectations but also adds significant value to your property. At Elevation Landscapes, we understand that the decision can be daunting, especially when trust and expertise are at stake. To make the selection process easier and more efficient, we've compiled a list of ten essential questions to ask potential contractors. These questions will help you assess their qualifications, gauge compatibility, and ensure a successful collaboration.",
