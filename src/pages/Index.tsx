@@ -111,7 +111,7 @@ const Index = () => {
             </h1>
             <p className="text-lg md:text-xl text-secondary-foreground/80 mb-8 leading-relaxed">
               Bespoke landscape architecture, precision hardscaping, and premium outdoor living
-              for Upstate South Carolina's most discerning homeowners.
+              for Upstate South Carolina's most discerning residential, builder, and commercial clients who demand the finest.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
