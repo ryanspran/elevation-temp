@@ -713,7 +713,7 @@ export const services: ServiceData[] = ([
   {
     slug: "sod-and-seeding",
     name: "Sod & Seeding",
-    tagline: "Precision turf craftsmanship for the discerning homeowner",
+    tagline: "Precision turf craftsmanship for discerning clients",
     image: sodSeeding,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/sod-seeding.png",
     seoTitle: "Sod Installation Greenville SC | Elevation Landscapes",
