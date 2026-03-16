@@ -67,7 +67,7 @@ const latestArticles: Article[] = [
   },
   {
     id: 8,
-    title: "Transform Your Greenville Landscape with Our Comprehensive Plant & Tree Directory",
+    title: "Transform Your Upstate SC Landscape with Our Comprehensive Plant & Tree Directory",
     excerpt:
       "Discover our 250-plant directory tailored for Upstate SC's climate — filter by sun, water, soil, and native status to plan your perfect yard.",
     category: "Plant Guide",
