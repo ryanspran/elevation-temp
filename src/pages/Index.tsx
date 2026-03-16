@@ -21,7 +21,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LandscapingBusiness",
   name: "Elevation Landscapes",
-  description: "Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning homeowners.",
+  description: "Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential, builder, and commercial clients who demand the finest in outdoor design.",
   url: "https://elevationlandscapes.com",
   telephone: "+18641234567",
   address: {
