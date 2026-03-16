@@ -165,9 +165,9 @@ const articles: Record<string, ArticleData> = {
     heroImage: landscapeLightingHero,
     detailImage: landscapeLightingDetail,
     seoTitle:
-      "Landscape Lighting Benefits in Greenville SC | Elevation Landscapes",
+      "Landscape Lighting Benefits in Upstate SC | Elevation Landscapes",
     seoDescription:
-      "Discover the transformative benefits of professional landscape lighting for high-end homes in Greenville and Upstate South Carolina.",
+      "Discover the transformative benefits of professional landscape lighting for high-end homes in Upstate South Carolina.",
     sections: [
       {
         body: "In the picturesque region of Greenville and Upstate South Carolina, where stunning natural beauty meets elegant architecture, high-end homeowners are increasingly leveraging the power of landscape lighting. More than just an aesthetic enhancer, landscape lighting plays a pivotal role in redefining the allure and functionality of outdoor spaces.",
