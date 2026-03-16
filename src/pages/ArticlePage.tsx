@@ -68,7 +68,7 @@ const articles: Record<string, ArticleData> = {
         body: "Before diving into construction, be mindful of the local regulations. Many outdoor kitchen projects require permits for electrical, plumbing, and structural alterations. It's advisable to work with local professionals who are familiar with Greenville's building codes to streamline this process. When it comes to material selection, prioritize those that withstand the region's humidity and temperature variations, such as stainless steel appliances and granite countertops. Additionally, consider incorporating sustainable elements like solar lighting or rainwater harvesting systems to enhance your kitchen's eco-friendliness.",
       },
       {
-        heading: "Next Steps for Homeowners",
+        heading: "Next Steps for Property Owners",
         body: "Adding an outdoor kitchen is a significant, yet rewarding investment for homeowners in Greenville, SC. By increasing your home's value, enhancing your lifestyle, and taking advantage of the Upstate's climate, you can create a vibrant outdoor living space that meets your needs year-round. If you're considering this exciting upgrade, start by consulting with local designers and builders, get inspired by the latest trends, and ensure your design aligns with both your vision and practical requirements. Ultimately, an outdoor kitchen offers a way to enjoy the beauty of the outdoors while enhancing your home's entertaining potential.",
       },
       {
