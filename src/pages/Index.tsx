@@ -230,7 +230,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">
-              Why Greenville's Most Discerning Homeowners Choose Us
+              Why Greenville's Most Discerning Clients Choose Us
             </h2>
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
