@@ -53,7 +53,7 @@ const Subcontractor = () => {
     provider: {
       "@type": "LocalBusiness",
       name: "Elevation Landscapes",
-      areaServed: "Greenville, SC",
+      areaServed: "Upstate South Carolina",
     },
     description:
       "Licensed hardscape and landscape subcontractor serving general contractors, custom home builders, and landscape companies across Upstate South Carolina.",
