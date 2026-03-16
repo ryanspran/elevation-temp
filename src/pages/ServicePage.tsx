@@ -234,7 +234,7 @@ const ServicePage = () => {
             <p className="font-serif text-xl md:text-2xl text-secondary-foreground italic mb-6 leading-relaxed">
               "{service.testimonial?.quote ?? "Elevation Landscapes exceeded every expectation. Their professionalism, craftsmanship, and genuine care for our property made all the difference."}"
             </p>
-            <p className="text-secondary-foreground font-semibold">— {service.testimonial?.attribution ?? "Greenville Homeowner"}</p>
+            <p className="text-secondary-foreground font-semibold">— {service.testimonial?.attribution ?? "Upstate SC Client"}</p>
           </div>
         </div>
       </section>

@@ -267,7 +267,7 @@ const Contact = () => {
                       <MapPin className="h-4 w-4 text-gold" />
                     </div>
                     <span className="font-sans text-sm">
-                      Greenville, SC &amp; Upstate South Carolina
+                      Upstate South Carolina
                     </span>
                   </div>
                 </div>

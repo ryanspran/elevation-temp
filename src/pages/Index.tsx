@@ -322,7 +322,7 @@ const Index = () => {
                     <p className="text-white/90 italic mb-6 leading-relaxed text-base">"{t.text}"</p>
                     <div>
                       <p className="font-serif text-white font-semibold">{t.name}</p>
-                      <p className="text-sm text-white/60">{t.location}, Greenville</p>
+                      <p className="text-sm text-white/60">{t.location}, Upstate SC</p>
                     </div>
                   </div>
                 </CarouselItem>
