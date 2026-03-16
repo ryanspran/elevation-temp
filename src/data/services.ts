@@ -346,7 +346,7 @@ export const services: ServiceData[] = ([
       "The result elevates the entire property — extending curb presence, enriching outdoor living flow, and adding architectural sophistication no poured concrete can replicate. For homeowners across Greenville, Travelers Rest, and Simpsonville investing in properties reflecting their highest standards, a natural stone path installation is one of the most enduring improvements you can make."
     ],
     trustSignals: [
-      { title: "15+ Years Luxury Hardscape", description: "Exclusive residential experience across Greenville and Upstate SC" },
+      { title: "15+ Years Luxury Hardscape", description: "Residential and commercial experience across Greenville and Upstate SC" },
       { title: "Certified Professionals", description: "Trained in dry-laid stone and modern permeable jointing" },
       { title: "Curated Stone Sourcing", description: "Premier quarries with selections unavailable through standard contractors" },
       { title: "Prestigious Portfolio", description: "Projects spanning North Main, Augusta Road, and the Cliffs" },
