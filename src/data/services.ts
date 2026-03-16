@@ -443,7 +443,7 @@ export const services: ServiceData[] = ([
       "Every installation begins with detailed consultation and concludes with a finished product as considered as every detail on your property. We do not subcontract — the craftsmen who pour footings set the final capstone."
     ],
     trustSignals: [
-      { title: "Exclusive Luxury Focus", description: "High-end residential only" },
+      { title: "Exclusive Luxury Focus", description: "High-end residential and commercial" },
       { title: "Engineered to Your Site", description: "Soil assessment, drainage, geogrid where required" },
       { title: "Premium Materials", description: "Segmental block for integrity and refinement" },
       { title: "Zero Subcontracting", description: "Same craftsmen start to finish" },
