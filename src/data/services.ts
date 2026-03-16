@@ -298,7 +298,7 @@ export const services: ServiceData[] = ([
       "From site assessment through final inspection, we manage completely, coordinate with your architect when relevant, and do not consider work finished until the outcome exceeds expectations. That is our reputation, and we protect it on every job site."
     ],
     trustSignals: [
-      { title: "15+ Years Luxury Hardscape", description: "Exclusive residential focus throughout Greenville and Upstate SC" },
+      { title: "15+ Years Luxury Hardscape", description: "Residential and commercial focus throughout Greenville and Upstate SC" },
       { title: "Prestigious Portfolio", description: "Staircases across Augusta Road, Paris Mountain, and greater Greenville" },
       { title: "Quarry-Direct Sourcing", description: "Domestic quarries, stones selected in person for integrity and performance" },
       { title: "In-House Masonry", description: "Veteran crews, zero subcontracting" },
