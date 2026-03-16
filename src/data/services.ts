@@ -53,13 +53,13 @@ export const services: ServiceData[] = ([
       "Greenville and Upstate South Carolina present unique topographical realities. From rolling piedmont soils near Travelers Rest to clay-heavy terrain in neighborhoods like Augusta Road and Verdae, every estate carries its own challenges. Our team reads the land with fluency from years of work across this geography — designing grading solutions in harmony with it.",
       "Professional landscape grading begins with thorough site assessment — drainage patterns, soil composition, slope ratios, and intended use of every zone. That informs a precise grading plan accounting for water behavior during heavy Upstate rainfall, how land settles, and how future hardscape or softscape will perform for decades.",
       "Our work encompasses soil stabilization, engineered drainage, and meticulous land leveling for pools, motor courts, outdoor living structures, and manicured lawns. We do not grade to code — we grade to the standard your property demands. Every slope calculated. Every transition refined.",
-      "Working exclusively in luxury residential, we bring intentionality to estate site preparation that general contractors rarely offer. We coordinate with your architect, civil engineer, and design team so the grading phase aligns with every downstream element. Nothing left to assumption.",
+      "Working exclusively in luxury landscape construction, we bring intentionality to estate site preparation that general contractors rarely offer. We coordinate with your architect, civil engineer, and design team so the grading phase aligns with every downstream element. Nothing left to assumption.",
       "The value shows in the years that follow — retaining walls remain plumb, lawns drain without pooling, hardscape holds grade, and foundations stay protected from erosive forces compromising so many Upstate SC properties. The quiet confidence of getting the groundwork right."
     ],
     trustSignals: [
-      { title: "Exclusive Luxury Focus", description: "Curated clientele, no commercial or production work" },
+      { title: "Exclusive Luxury Focus", description: "Curated clientele committed to quality" },
       { title: "Regional Soil Expertise", description: "Decades with Greenville's piedmont soils and topography" },
-      { title: "Senior-Led Projects", description: "Every project managed by a senior member accountable to the homeowner" },
+      { title: "Senior-Led Projects", description: "Every project managed by a senior member accountable to the client" },
       { title: "Design Team Integration", description: "Seamless collaboration with architects, engineers, and designers" },
       { title: "Proven Portfolio", description: "Luxury estates across Greenville's most distinguished neighborhoods" },
       { title: "Lasting Guarantee", description: "Compaction verification and comprehensive grade integrity warranty" }
@@ -106,7 +106,7 @@ export const services: ServiceData[] = ([
       "Underground drainage is invisible by design, but its absence is felt everywhere — saturated lawns, failed walls, eroded beds, water where it was never meant to go. We engineer solutions eliminating an entire category of concern from property ownership."
     ],
     trustSignals: [
-      { title: "Decade of Drainage Experience", description: "Exclusive residential across Greenville, Travelers Rest, Simpsonville, Upstate SC" },
+      { title: "Decade of Drainage Experience", description: "Residential and commercial projects across Greenville, Travelers Rest, Simpsonville, Upstate SC" },
       { title: "Professional-Grade Materials", description: "Schedule-rated pipe, commercial aggregate, high-performance filter fabric" },
       { title: "Custom Engineering", description: "Site analysis and design specific to your soil, grade, and volume" },
       { title: "Design-First Approach", description: "Drainage integrated seamlessly, preserving visual integrity" },
@@ -144,7 +144,7 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/irrigation.png",
     seoTitle: "Irrigation Installation Greenville SC | Elevation Landscapes",
     h1: "Irrigation Installation in Greenville SC Engineered for the Landscape You Have Built",
-    subheadline: "Precision irrigation for discerning homeowners — because an extraordinary landscape demands water management built to the same exacting standard.",
+    subheadline: "Precision irrigation for discerning clients — because an extraordinary landscape demands water management built to the same exacting standard.",
     bodyParagraphs: [
       "A beautifully designed landscape is only as enduring as the system sustaining it. Our irrigation installation services are engineered to protect that investment — delivering precision water management keeping every lawn, garden bed, and hardscape border in peak condition through every Greenville season.",
       "Our approach begins with thorough site assessment — topography, soil composition, plant material, and sun exposure. Greenville's rolling terrain and varied microclimates demand more than a standard grid. We design custom zone management systems ensuring each area receives precisely the water it needs, no more, no less.",
@@ -154,7 +154,7 @@ export const services: ServiceData[] = ([
       "Every component is professional-grade — quiet operation, years of calibration, clean integration with any aesthetic. Our installation practices include precise trenching, exact head placement, and meticulous backfill restoring your lawn and beds to pristine condition."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Exclusive residential landscapes across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Focus", description: "Residential and commercial landscapes across Greenville and Upstate SC" },
       { title: "Certified Professionals", description: "Systems designed for Upstate SC's specific climate and soil" },
       { title: "Professional-Grade Equipment", description: "Industry-leading manufacturers for durability and performance" },
       { title: "Pristine Restoration", description: "Lawns and gardens returned to pre-work condition" },
@@ -202,7 +202,7 @@ export const services: ServiceData[] = ([
       "The result is not a cleaner yard. It is a landscape that functions as it should, looks as it should, and reflects the home it surrounds. For luxury homeowners across Greenville, Travelers Rest, and Simpsonville, that standard is non-negotiable — and neither is ours."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Experience", description: "Exclusive residential work across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Experience", description: "Residential and commercial work across Greenville and Upstate SC" },
       { title: "Curated Portfolio", description: "High-end remediation on the region's most distinguished residences" },
       { title: "Certified Designers & Horticulturists", description: "Deep Upstate SC climate and soil knowledge" },
       { title: "Specialty Plant Sourcing", description: "Premium material from vetted growers with establishment warranty" },
@@ -250,7 +250,7 @@ export const services: ServiceData[] = ([
       "A custom water feature is the finishing element that transforms a beautiful yard into a private retreat. Moving water softens ambient noise, draws the eye, and creates the sensation of remove that distinguishes a truly exceptional outdoor environment from one that simply photographs well."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Exclusive residential projects including the region's most distinguished estates" },
+      { title: "Decade of Luxury Focus", description: "Residential and commercial projects including the region's most distinguished estates" },
       { title: "Premium Stone & Systems", description: "Natural stone and high-performance recirculating systems for longevity" },
       { title: "Fully Integrated Build", description: "Site assessment through final stone placement under complete quality control" },
       { title: "Limited Project Model", description: "Only projects we can execute with full attention" },
@@ -298,7 +298,7 @@ export const services: ServiceData[] = ([
       "From site assessment through final inspection, we manage completely, coordinate with your architect when relevant, and do not consider work finished until the outcome exceeds expectations. That is our reputation, and we protect it on every job site."
     ],
     trustSignals: [
-      { title: "15+ Years Luxury Hardscape", description: "Exclusive residential focus throughout Greenville and Upstate SC" },
+      { title: "15+ Years Luxury Hardscape", description: "Residential and commercial focus throughout Greenville and Upstate SC" },
       { title: "Prestigious Portfolio", description: "Staircases across Augusta Road, Paris Mountain, and greater Greenville" },
       { title: "Quarry-Direct Sourcing", description: "Domestic quarries, stones selected in person for integrity and performance" },
       { title: "In-House Masonry", description: "Veteran crews, zero subcontracting" },
@@ -346,7 +346,7 @@ export const services: ServiceData[] = ([
       "The result elevates the entire property — extending curb presence, enriching outdoor living flow, and adding architectural sophistication no poured concrete can replicate. For homeowners across Greenville, Travelers Rest, and Simpsonville investing in properties reflecting their highest standards, a natural stone path installation is one of the most enduring improvements you can make."
     ],
     trustSignals: [
-      { title: "15+ Years Luxury Hardscape", description: "Exclusive residential experience across Greenville and Upstate SC" },
+      { title: "15+ Years Luxury Hardscape", description: "Residential and commercial experience across Greenville and Upstate SC" },
       { title: "Certified Professionals", description: "Trained in dry-laid stone and modern permeable jointing" },
       { title: "Curated Stone Sourcing", description: "Premier quarries with selections unavailable through standard contractors" },
       { title: "Prestigious Portfolio", description: "Projects spanning North Main, Augusta Road, and the Cliffs" },
@@ -384,7 +384,7 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/boulder-walls.png",
     seoTitle: "Boulder Retaining Walls Greenville SC | Elevation Landscapes",
     h1: "Boulder Retaining Walls Greenville SC — Engineered for the Land, Built to Last Generations",
-    subheadline: "Natural boulder retaining walls for discerning homeowners across Greenville and Upstate South Carolina — where structural integrity and refined craftsmanship are never mutually exclusive.",
+    subheadline: "Natural boulder retaining walls for discerning clients across Greenville and Upstate South Carolina — where structural integrity and refined craftsmanship are never mutually exclusive.",
     bodyParagraphs: [
       "In Greenville and across Upstate South Carolina, rolling grades, wooded slopes, and dramatic elevation changes define the area's most prestigious properties. But unmanaged terrain erodes, shifts, and quietly undermines the landscape investment you have worked to build.",
       "We engineer and install boulder retaining walls that become defining features of the property — massive, ancient-looking structures of carefully selected natural stone that speak to permanence and craftsmanship rarely seen in residential work.",
@@ -443,7 +443,7 @@ export const services: ServiceData[] = ([
       "Every installation begins with detailed consultation and concludes with a finished product as considered as every detail on your property. We do not subcontract — the craftsmen who pour footings set the final capstone."
     ],
     trustSignals: [
-      { title: "Exclusive Luxury Focus", description: "High-end residential only" },
+      { title: "Exclusive Luxury Focus", description: "High-end residential and commercial" },
       { title: "Engineered to Your Site", description: "Soil assessment, drainage, geogrid where required" },
       { title: "Premium Materials", description: "Segmental block for integrity and refinement" },
       { title: "Zero Subcontracting", description: "Same craftsmen start to finish" },
@@ -488,7 +488,7 @@ export const services: ServiceData[] = ([
       "Greenville's outdoor season is long and beautiful. We have built our reputation project by project across Travelers Rest, Simpsonville, and the Upstate — earning trust from homeowners who understand their outdoor environment reflects the standards they hold for everything else."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Hardscape", description: "Exclusive residential across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Hardscape", description: "Residential and commercial projects across Greenville and Upstate SC" },
       { title: "Premium Material Access", description: "Travertine, Belgian block, large-format pavers unavailable through standard suppliers" },
       { title: "Engineered Foundations", description: "Compacted aggregate base and polymeric sand on every project" },
       { title: "Curated Portfolio", description: "High-end patios across Greenville's most prestigious neighborhoods" },
@@ -536,7 +536,7 @@ export const services: ServiceData[] = ([
       "We serve homeowners across Greenville, Travelers Rest, Simpsonville, and Spartanburg. Our portfolio includes estates, new builds, and full outdoor living renovations. We take on the right projects and execute each to a standard we are proud to stand behind."
     ],
     trustSignals: [
-      { title: "Exclusively Luxury Residential", description: "High-end projects only across Greenville and Upstate SC" },
+      { title: "Luxury Residential & Commercial", description: "High-end projects only across Greenville and Upstate SC" },
       { title: "Premium Materials", description: "Travertine, natural stone, porcelain, engineered pavers meeting strict standards" },
       { title: "Regional Expertise", description: "Upstate SC climate, soil, and code knowledge" },
       { title: "Single Point of Contact", description: "Full project management from consultation through sealing" },
@@ -632,7 +632,7 @@ export const services: ServiceData[] = ([
       "We do not install prefabricated or kit-based products. Every fire feature is custom and site-specific — ensuring design coherence with your architecture and a finished product that reads as a permanent, intentional part of the landscape rather than an afterthought."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Experience", description: "Exclusive high-end residential across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Experience", description: "High-end residential and commercial projects across Greenville and Upstate SC" },
       { title: "Code-Compliant Gas Work", description: "Licensed professionals, fully SC compliant" },
       { title: "Curated Portfolio", description: "Custom stone fire pits, integrated kitchen features, courtyard installations" },
       { title: "Premium Materials Only", description: "Bluestone, travertine, granite, weather-resistant systems" },
@@ -680,7 +680,7 @@ export const services: ServiceData[] = ([
       "Our clients are not looking for a contractor — they want a trusted partner bringing expertise, aesthetic sensibility, and genuine investment in long-term success. That is precisely what we deliver on every project."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Exclusive high-end residential across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Focus", description: "High-end residential and commercial projects across Greenville and Upstate SC" },
       { title: "Specialty Sourcing", description: "Rare specimens and native cultivars from wholesale growers unavailable at retail" },
       { title: "Rigorous Installation", description: "Professional root ball preparation, soil amendment, precision placement" },
       { title: "Seasonal Planning", description: "Dedicated schedules and post-installation care programs" },
@@ -713,12 +713,12 @@ export const services: ServiceData[] = ([
   {
     slug: "sod-and-seeding",
     name: "Sod & Seeding",
-    tagline: "Precision turf craftsmanship for the discerning homeowner",
+    tagline: "Precision turf craftsmanship for discerning clients",
     image: sodSeeding,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/sod-seeding.png",
     seoTitle: "Sod Installation Greenville SC | Elevation Landscapes",
     seoDescription: "Premium sod and seeding for Greenville & Upstate SC luxury properties. Bermuda, Zoysia, hydroseeding, expert soil preparation. Schedule a consultation.",
-    h1: "Sod Installation in Greenville, SC — Precision Turf Craftsmanship for the Discerning Homeowner",
+    h1: "Sod Installation in Greenville, SC — Precision Turf Craftsmanship for Discerning Clients",
     subheadline: "Uncompromising standards delivering lush, expertly established turf that transforms the entire character of your property.",
     bodyParagraphs: [
       "A truly exceptional lawn does not happen by chance. It results from deliberate decisions about soil chemistry, turf variety, grade, drainage, and timing. We approach sod installation and professional seeding with the same precision that goes into every element of a luxury property.",
@@ -729,7 +729,7 @@ export const services: ServiceData[] = ([
       "The outcome is a lawn serving as foundation for the entire landscape — enhancing architectural presence, framing hardscape, and creating an inviting environment reflecting your investment. Greenville homeowners choosing us are investing in lasting transformation by a team holding every detail to the highest standard."
     ],
     trustSignals: [
-      { title: "Exclusively Luxury Residential", description: "High-end landscapes across Greenville and Upstate SC" },
+      { title: "Luxury Residential & Commercial", description: "High-end landscapes across Greenville and Upstate SC" },
       { title: "Soil Science First", description: "Comprehensive analysis and amendment on every project" },
       { title: "Premium Turf Sources", description: "Bermuda and Zoysia from vetted high-grade farms" },
       { title: "Full-Service Installation", description: "Soil prep through final edging and irrigation" },
@@ -777,7 +777,7 @@ export const services: ServiceData[] = ([
       "Upstate SC's humidity, thunderstorms, and temperature swings require exacting weatherproofing at every component. The difference between a system lasting fifteen years and one failing in eighteen months lives entirely in installation quality — and our teams are trained to that detail."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Exclusive residential projects throughout Greenville and Upstate SC" },
+      { title: "Decade of Luxury Focus", description: "Residential and commercial projects throughout Greenville and Upstate SC" },
       { title: "Trade-Only Fixtures", description: "Architectural-grade LED and transformers unavailable at retail" },
       { title: "Prestigious Portfolio", description: "Installations across Greenville's most distinguished neighborhoods and lake communities" },
       { title: "Comprehensive Warranty", description: "Materials, workmanship, and structured maintenance programs" },

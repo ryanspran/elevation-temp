@@ -21,7 +21,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LandscapingBusiness",
   name: "Elevation Landscapes",
-  description: "Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning homeowners.",
+  description: "Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential, builder, and commercial clients who demand the finest in outdoor design.",
   url: "https://elevationlandscapes.com",
   telephone: "+18641234567",
   address: {
@@ -54,7 +54,7 @@ const Index = () => {
     return () => { testimonialApi.off("select", onSelect); };
   }, [testimonialApi]);
   const whyUsItems = [
-    { icon: Gem, title: "Exclusive Luxury Focus", desc: "We serve only residential clients who demand the absolute finest in landscape design and craftsmanship." },
+    { icon: Gem, title: "Exclusive Luxury Focus", desc: "We serve clients who demand the absolute finest — from luxury homes to custom builds and commercial properties." },
     { icon: TreePine, title: "Deep Upstate SC Expertise", desc: "Decades of experience with Piedmont soils, regional climate, and the nuances that define successful landscapes here." },
     { icon: Users, title: "Principal-Led Management", desc: "Our principals are personally involved in every project — no hand-offs to junior teams or subcontractors." },
     { icon: Shield, title: "Premium Materials & Craftsmanship", desc: "We source the finest materials and employ master craftsmen who take pride in work that endures." },
@@ -90,7 +90,7 @@ const Index = () => {
       <SEOHead
         page="home"
         fallbackTitle="Elevation Landscapes | Luxury Landscape Design Greenville SC"
-        fallbackDescription="Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning homeowners."
+        fallbackDescription="Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential, builder, and commercial clients who demand the finest."
         path="/"
         jsonLd={localBusinessJsonLd}
       />
@@ -111,7 +111,7 @@ const Index = () => {
             </h1>
             <p className="text-lg md:text-xl text-secondary-foreground/80 mb-8 leading-relaxed">
               Bespoke landscape architecture, precision hardscaping, and premium outdoor living
-              for Upstate South Carolina's most discerning homeowners.
+              for Upstate South Carolina's most discerning residential, builder, and commercial clients who demand the finest.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -145,7 +145,7 @@ const Index = () => {
               <p className="text-text-dark/70 text-lg leading-relaxed mb-6">
                 Elevation Landscapes exists for a singular purpose: to create outdoor environments that reflect the
                 same uncompromising quality as the homes they surround. We are not a lawn care company. We are a
-                luxury landscape design and hardscape firm serving exclusively residential clients across Greenville
+                luxury landscape design and hardscape firm serving homeowners, builders, and commercial clients across Greenville
                 and Upstate South Carolina.
               </p>
               <p className="text-text-dark/70 text-lg leading-relaxed mb-8">
@@ -230,7 +230,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">
-              Why Greenville's Most Discerning Homeowners Choose Us
+              Why Greenville's Most Discerning Clients Choose Us
             </h2>
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
@@ -386,7 +386,7 @@ const Index = () => {
                 Areas We Cover
               </h2>
               <p className="text-text-dark/70 text-lg mb-10">
-                Elevation Landscapes proudly serves homeowners across Upstate South Carolina, including:
+                Elevation Landscapes proudly serves homeowners, builders, and commercial clients across Upstate South Carolina, including:
               </p>
               <div className="grid grid-cols-2 gap-x-8 gap-y-5 mb-10">
                 {serviceAreas.map((area) => (
@@ -397,10 +397,10 @@ const Index = () => {
                 ))}
               </div>
               <p className="text-text-dark/70 text-sm leading-relaxed mb-4">
-                From custom stone patios and retaining walls in Greenville to landscape lighting installations in Greer and full outdoor kitchen builds in Simpsonville, our team delivers premium hardscaping and softscaping solutions tailored to the unique terrain and climate of Upstate South Carolina. Whether you need expert grading, underground drainage, or a complete landscape transformation, Elevation Landscapes is the trusted residential landscape architect for discerning homeowners throughout the region.
+                From custom stone patios and retaining walls in Greenville to landscape lighting installations in Greer and full outdoor kitchen builds in Simpsonville, our team delivers premium hardscaping and softscaping solutions tailored to the unique terrain and climate of Upstate South Carolina. Whether you need expert grading, underground drainage, or a complete landscape transformation, Elevation Landscapes is the trusted landscape partner for discerning clients throughout the region.
               </p>
               <p className="text-text-dark/70 text-sm leading-relaxed mb-4">
-                As a high-end landscape contractor in Greenville, we specialize in custom stone work, paver patios in Travelers Rest, outdoor living spaces in Greer, and drainage solutions across Upstate SC. Our residential landscape architecture blends luxury design with lasting craftsmanship — from boulder retaining walls in Simpsonville to irrigation systems in Mauldin and beyond.
+                As a high-end landscape contractor in Greenville, we specialize in custom stone work, paver patios in Travelers Rest, outdoor living spaces in Greer, and drainage solutions across Upstate SC. Our landscape architecture blends luxury design with lasting craftsmanship — from boulder retaining walls in Simpsonville to irrigation systems in Mauldin and beyond.
               </p>
               <p className="text-text-dark/60 text-sm leading-relaxed">
                 If you have a project in mind and would like to know whether we cover your area, please{" "}
