@@ -28,7 +28,7 @@ const popularArticles: Article[] = [
   {
     id: 7,
     title:
-      "Transform Your Backyard: Exploring the Benefits of Adding an Outdoor Kitchen in Greenville, SC",
+      "Transform Your Backyard: Exploring the Benefits of Adding an Outdoor Kitchen in Upstate SC",
     excerpt:
       "Discover how an outdoor kitchen can boost home value, enhance your lifestyle, and take full advantage of the Upstate's year-round climate.",
     category: "Outdoor Living",
