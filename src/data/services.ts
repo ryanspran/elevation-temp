@@ -57,7 +57,7 @@ export const services: ServiceData[] = ([
       "The value shows in the years that follow — retaining walls remain plumb, lawns drain without pooling, hardscape holds grade, and foundations stay protected from erosive forces compromising so many Upstate SC properties. The quiet confidence of getting the groundwork right."
     ],
     trustSignals: [
-      { title: "Exclusive Luxury Focus", description: "Curated clientele, no commercial or production work" },
+      { title: "Exclusive Luxury Focus", description: "Curated clientele committed to quality" },
       { title: "Regional Soil Expertise", description: "Decades with Greenville's piedmont soils and topography" },
       { title: "Senior-Led Projects", description: "Every project managed by a senior member accountable to the homeowner" },
       { title: "Design Team Integration", description: "Seamless collaboration with architects, engineers, and designers" },
