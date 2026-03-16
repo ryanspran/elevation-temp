@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="Elevation Landscapes" className="w-auto mb-3" style={{ height: '4.24rem' }} />
             <p className="text-gold-light font-serif text-sm italic">
-              Luxury Landscape & Hardscape — Greenville, SC
+              Luxury Landscape & Hardscape — Upstate, SC
             </p>
           </div>
 
