@@ -94,7 +94,7 @@ const latestArticles: Article[] = [
   },
   {
     id: 9,
-    title: "How to Choose a Hardscape Contractor in Greenville, SC: 10 Questions to Ask",
+    title: "How to Choose a Hardscape Contractor in Upstate SC: 10 Questions to Ask",
     excerpt:
       "Finding the right hardscape contractor is crucial — here are ten essential questions to ask before hiring.",
     category: "Hardscaping",

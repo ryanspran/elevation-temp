@@ -121,8 +121,8 @@ const Subcontractor = () => {
                 home builders, and landscape companies operating across Upstate South Carolina.
               </p>
               <p className="text-foreground/80 leading-relaxed mt-4 text-base sm:text-lg">
-                We are a licensed, fully insured hardscape and landscape construction company based
-                in Greenville, SC, with the experienced crews, project management systems, and
+                 We are a licensed, fully insured hardscape and landscape construction company based
+                in Upstate, SC, with the experienced crews, project management systems, and
                 professional track record to function as a true construction partner — not just a
                 vendor you hope shows up. Whether you need a paver subcontractor for a luxury pool
                 deck, a retaining wall subcontractor for a hillside site, or a full outdoor living
