@@ -59,7 +59,7 @@ export const services: ServiceData[] = ([
     trustSignals: [
       { title: "Exclusive Luxury Focus", description: "Curated clientele committed to quality" },
       { title: "Regional Soil Expertise", description: "Decades with Greenville's piedmont soils and topography" },
-      { title: "Senior-Led Projects", description: "Every project managed by a senior member accountable to the homeowner" },
+      { title: "Senior-Led Projects", description: "Every project managed by a senior member accountable to the client" },
       { title: "Design Team Integration", description: "Seamless collaboration with architects, engineers, and designers" },
       { title: "Proven Portfolio", description: "Luxury estates across Greenville's most distinguished neighborhoods" },
       { title: "Lasting Guarantee", description: "Compaction verification and comprehensive grade integrity warranty" }
