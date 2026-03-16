@@ -98,7 +98,7 @@ const faqCategories = [
       },
       {
         q: "Do you offer ongoing maintenance services?",
-        a: "Our focus is on design and installation. However, we're happy to refer you to trusted maintenance partners in the Greenville area and can provide a customized care guide for your specific plantings and hardscape.",
+        a: "Our focus is on design and installation. However, we're happy to refer you to trusted maintenance partners in the Upstate SC area and can provide a customized care guide for your specific plantings and hardscape.",
       },
     ],
   },
