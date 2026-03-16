@@ -729,7 +729,7 @@ export const services: ServiceData[] = ([
       "The outcome is a lawn serving as foundation for the entire landscape — enhancing architectural presence, framing hardscape, and creating an inviting environment reflecting your investment. Greenville homeowners choosing us are investing in lasting transformation by a team holding every detail to the highest standard."
     ],
     trustSignals: [
-      { title: "Exclusively Luxury Residential", description: "High-end landscapes across Greenville and Upstate SC" },
+      { title: "Luxury Residential & Commercial", description: "High-end landscapes across Greenville and Upstate SC" },
       { title: "Soil Science First", description: "Comprehensive analysis and amendment on every project" },
       { title: "Premium Turf Sources", description: "Bermuda and Zoysia from vetted high-grade farms" },
       { title: "Full-Service Installation", description: "Soil prep through final edging and irrigation" },
