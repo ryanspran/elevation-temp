@@ -35,14 +35,14 @@ interface ArticleData {
 const articles: Record<string, ArticleData> = {
   "outdoor-kitchen-greenville": {
     title:
-      "Transform Your Backyard: Exploring the Benefits of Adding an Outdoor Kitchen in Greenville, SC",
+      "Transform Your Backyard: Exploring the Benefits of Adding an Outdoor Kitchen in Upstate SC",
     category: "Outdoor Living",
     heroImage: outdoorKitchenHero,
     detailImage: outdoorKitchenDetail,
     seoTitle:
-      "Outdoor Kitchen Benefits in Greenville SC | Elevation Landscapes",
+      "Outdoor Kitchen Benefits in Upstate SC | Elevation Landscapes",
     seoDescription:
-      "Discover how an outdoor kitchen can boost home value, enhance entertaining, and take advantage of Greenville's year-round climate.",
+      "Discover how an outdoor kitchen can boost home value, enhance entertaining, and take advantage of Upstate SC's year-round climate.",
     sections: [
       {
         body: "As more homeowners in Greenville, SC, seek ways to enhance their living spaces, outdoor kitchens have emerged as a popular trend, bringing the joys of alfresco dining to the heart of their homes. With the Upstate's moderate climate, growing real estate market, and culture of community bonding, investing in an outdoor kitchen offers both aesthetic and functional benefits. Let's explore how this enticing upgrade could transform your living experience.",
@@ -117,14 +117,14 @@ const articles: Record<string, ArticleData> = {
   },
   "outdoor-living-greenville": {
     title:
-      "The Complete Guide to Outdoor Living Spaces in Greenville,\u00a0SC",
+      "The Complete Guide to Outdoor Living Spaces in Upstate\u00a0SC",
     category: "Outdoor Living",
     heroImage: outdoorLivingHero,
     detailImage: outdoorLivingDetail,
     seoTitle:
-      "Complete Guide to Outdoor Living Spaces in Greenville SC | Elevation Landscapes",
+      "Complete Guide to Outdoor Living Spaces in Upstate SC | Elevation Landscapes",
     seoDescription:
-      "Explore every element of outdoor living — patios, kitchens, fire pits, water features, and lighting — for Greenville, SC homeowners.",
+      "Explore every element of outdoor living — patios, kitchens, fire pits, water features, and lighting — for Upstate SC homeowners.",
     sections: [
       {
         body: "There's something uniquely captivating about outdoor living spaces, especially in the vibrant community of Greenville, SC. With the perfect blend of mild climate, picturesque landscapes, and an affinity for quality home life, Greenville is an ideal location for transforming your backyard into a haven of relaxation and entertainment. From patios and outdoor kitchens to fire pits, water features, and strategic lighting, this guide explores every element to help you create an exceptional outdoor living space.",
@@ -160,14 +160,14 @@ const articles: Record<string, ArticleData> = {
   },
   "landscape-lighting-greenville": {
     title:
-      "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Greenville,\u00a0SC",
+      "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Upstate\u00a0SC",
     category: "Design Tips",
     heroImage: landscapeLightingHero,
     detailImage: landscapeLightingDetail,
     seoTitle:
-      "Landscape Lighting Benefits in Greenville SC | Elevation Landscapes",
+      "Landscape Lighting Benefits in Upstate SC | Elevation Landscapes",
     seoDescription:
-      "Discover the transformative benefits of professional landscape lighting for high-end homes in Greenville and Upstate South Carolina.",
+      "Discover the transformative benefits of professional landscape lighting for high-end homes in Upstate South Carolina.",
     sections: [
       {
         body: "In the picturesque region of Greenville and Upstate South Carolina, where stunning natural beauty meets elegant architecture, high-end homeowners are increasingly leveraging the power of landscape lighting. More than just an aesthetic enhancer, landscape lighting plays a pivotal role in redefining the allure and functionality of outdoor spaces.",
@@ -268,12 +268,12 @@ const articles: Record<string, ArticleData> = {
     ],
   },
   "hardscape-contractor-greenville": {
-    title: "How to Choose a Hardscape Contractor in Greenville, SC: 10 Questions to Ask",
+    title: "How to Choose a Hardscape Contractor in Upstate SC: 10 Questions to Ask",
     category: "Hardscaping",
     heroImage: hardscapeContractorHero,
     detailImage: hardscapeContractorDetail,
-    seoTitle: "How to Choose a Hardscape Contractor in Greenville SC | Elevation Landscapes",
-    seoDescription: "Ten essential questions to ask before hiring a hardscape contractor in Greenville, SC. Ensure quality, transparency, and lasting results for your outdoor project.",
+    seoTitle: "How to Choose a Hardscape Contractor in Upstate SC | Elevation Landscapes",
+    seoDescription: "Ten essential questions to ask before hiring a hardscape contractor in Upstate SC. Ensure quality, transparency, and lasting results for your outdoor project.",
     sections: [
       {
         body: "Finding the right hardscape contractor in Greenville, SC, is crucial for ensuring your outdoor project not only meets your expectations but also adds significant value to your property. At Elevation Landscapes, we understand that the decision can be daunting, especially when trust and expertise are at stake. To make the selection process easier and more efficient, we've compiled a list of ten essential questions to ask potential contractors. These questions will help you assess their qualifications, gauge compatibility, and ensure a successful collaboration.",
@@ -324,12 +324,12 @@ const articles: Record<string, ArticleData> = {
     ],
   },
   "plant-directory-greenville": {
-    title: "Transform Your Greenville Landscape with Our Comprehensive Plant & Tree Directory",
+    title: "Transform Your Upstate SC Landscape with Our Comprehensive Plant & Tree Directory",
     category: "Plant Guide",
     heroImage: plantDirectoryHero,
     detailImage: plantDirectoryDetail,
-    seoTitle: "Plant & Tree Directory for Greenville SC | Elevation Landscapes",
-    seoDescription: "Discover our 250-plant directory tailored for Upstate SC's USDA zones 7a-7b. Filter by sun, water, soil, and native status to plan your perfect Greenville landscape.",
+    seoTitle: "Plant & Tree Directory for Upstate SC | Elevation Landscapes",
+    seoDescription: "Discover our 250-plant directory tailored for Upstate SC's USDA zones 7a-7b. Filter by sun, water, soil, and native status to plan your perfect landscape.",
     sections: [
       {
         body: "If you're a homeowner in Greenville, SC, you know that choosing the right plants and trees for your yard isn't just about aesthetics—it's about selecting species that will thrive in the unique climate of Upstate South Carolina. With hot summers, occasional freezes, and clay-rich soils, plant selection can be daunting. Make an uninformed choice, and you might face disappointing growth, increased maintenance, or even tree loss. That's where Elevation Landscapes steps in with an innovative solution designed to take the guesswork out of landscape planning.",

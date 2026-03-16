@@ -63,8 +63,8 @@ const Contact = () => {
     <div className="min-h-screen">
       <SEOHead
         page="contact"
-        fallbackTitle="Contact Elevation Landscapes | Schedule a Consultation Greenville SC"
-        fallbackDescription="Schedule a private consultation with Greenville's premier luxury landscape design firm. Tell us about your vision and we'll craft a landscape that exceeds every expectation."
+        fallbackTitle="Contact Elevation Landscapes | Schedule a Consultation Upstate SC"
+        fallbackDescription="Schedule a private consultation with Upstate SC's premier luxury landscape design firm. Tell us about your vision and we'll craft a landscape that exceeds every expectation."
         path="/contact"
       />
       <Navbar />
@@ -267,7 +267,7 @@ const Contact = () => {
                       <MapPin className="h-4 w-4 text-gold" />
                     </div>
                     <span className="font-sans text-sm">
-                      Greenville, SC &amp; Upstate South Carolina
+                      Upstate South Carolina
                     </span>
                   </div>
                 </div>

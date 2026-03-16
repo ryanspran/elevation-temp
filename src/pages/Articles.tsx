@@ -28,7 +28,7 @@ const popularArticles: Article[] = [
   {
     id: 7,
     title:
-      "Transform Your Backyard: Exploring the Benefits of Adding an Outdoor Kitchen in Greenville, SC",
+      "Transform Your Backyard: Exploring the Benefits of Adding an Outdoor Kitchen in Upstate SC",
     excerpt:
       "Discover how an outdoor kitchen can boost home value, enhance your lifestyle, and take full advantage of the Upstate's year-round climate.",
     category: "Outdoor Living",
@@ -37,7 +37,7 @@ const popularArticles: Article[] = [
   },
   {
     id: 5,
-    title: "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Greenville, SC",
+    title: "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Upstate SC",
     excerpt:
       "Discover how professional landscape lighting can enhance curb appeal, increase security, and extend your outdoor living space in the Upstate.",
     category: "Design Tips",
@@ -58,7 +58,7 @@ const popularArticles: Article[] = [
 const latestArticles: Article[] = [
   {
     id: 4,
-    title: "The Complete Guide to Outdoor Living Spaces in Greenville, SC",
+    title: "The Complete Guide to Outdoor Living Spaces in Upstate SC",
     excerpt:
       "From patios and outdoor kitchens to fire pits, water features, and lighting — everything you need to create an exceptional outdoor living space.",
     category: "Outdoor Living",
@@ -67,7 +67,7 @@ const latestArticles: Article[] = [
   },
   {
     id: 8,
-    title: "Transform Your Greenville Landscape with Our Comprehensive Plant & Tree Directory",
+    title: "Transform Your Upstate SC Landscape with Our Comprehensive Plant & Tree Directory",
     excerpt:
       "Discover our 250-plant directory tailored for Upstate SC's climate — filter by sun, water, soil, and native status to plan your perfect yard.",
     category: "Plant Guide",
@@ -94,7 +94,7 @@ const latestArticles: Article[] = [
   },
   {
     id: 9,
-    title: "How to Choose a Hardscape Contractor in Greenville, SC: 10 Questions to Ask",
+    title: "How to Choose a Hardscape Contractor in Upstate SC: 10 Questions to Ask",
     excerpt:
       "Finding the right hardscape contractor is crucial — here are ten essential questions to ask before hiring.",
     category: "Hardscaping",

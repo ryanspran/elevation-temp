@@ -98,7 +98,7 @@ const faqCategories = [
       },
       {
         q: "Do you offer ongoing maintenance services?",
-        a: "Our focus is on design and installation. However, we're happy to refer you to trusted maintenance partners in the Greenville area and can provide a customized care guide for your specific plantings and hardscape.",
+        a: "Our focus is on design and installation. However, we're happy to refer you to trusted maintenance partners in the Upstate SC area and can provide a customized care guide for your specific plantings and hardscape.",
       },
     ],
   },
@@ -165,7 +165,7 @@ const FAQ = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         page="faq"
-        fallbackTitle="FAQ | Elevation Landscapes — Greenville SC Landscaping Questions"
+        fallbackTitle="FAQ | Elevation Landscapes — Upstate SC Landscaping Questions"
         fallbackDescription="Answers to common landscaping and hardscape questions for Upstate SC homeowners. Learn about timelines, costs, materials, maintenance, permits, and more."
         path="/faq"
         jsonLd={[faqJsonLd, breadcrumbJsonLd]}

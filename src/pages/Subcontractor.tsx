@@ -53,7 +53,7 @@ const Subcontractor = () => {
     provider: {
       "@type": "LocalBusiness",
       name: "Elevation Landscapes",
-      areaServed: "Greenville, SC",
+      areaServed: "Upstate South Carolina",
     },
     description:
       "Licensed hardscape and landscape subcontractor serving general contractors, custom home builders, and landscape companies across Upstate South Carolina.",
@@ -63,7 +63,7 @@ const Subcontractor = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         page="subcontractor"
-        fallbackTitle="Hardscape & Landscape Subcontractor in Greenville, SC | Elevation Landscapes"
+        fallbackTitle="Hardscape & Landscape Subcontractor in Upstate, SC | Elevation Landscapes"
         fallbackDescription="Elevation Landscapes partners with general contractors, custom home builders, and landscape companies across Upstate South Carolina as a trusted hardscape and landscape subcontractor."
         path="/subcontractor"
         jsonLd={jsonLd}
@@ -79,7 +79,7 @@ const Subcontractor = () => {
         <div className="absolute inset-0 bg-navy/75" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left py-32">
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-secondary-foreground leading-tight mb-6 max-w-4xl">
-            Hardscape and Landscape Subcontractor in Greenville, SC
+            Hardscape and Landscape Subcontractor in Upstate, SC
           </h1>
           <p className="text-secondary-foreground/80 text-base sm:text-lg max-w-3xl leading-relaxed mb-10">
             Elevation Landscapes partners with general contractors, custom home builders, and
@@ -121,8 +121,8 @@ const Subcontractor = () => {
                 home builders, and landscape companies operating across Upstate South Carolina.
               </p>
               <p className="text-foreground/80 leading-relaxed mt-4 text-base sm:text-lg">
-                We are a licensed, fully insured hardscape and landscape construction company based
-                in Greenville, SC, with the experienced crews, project management systems, and
+                 We are a licensed, fully insured hardscape and landscape construction company based
+                in Upstate, SC, with the experienced crews, project management systems, and
                 professional track record to function as a true construction partner — not just a
                 vendor you hope shows up. Whether you need a paver subcontractor for a luxury pool
                 deck, a retaining wall subcontractor for a hillside site, or a full outdoor living

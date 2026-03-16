@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="Elevation Landscapes" className="w-auto mb-3" style={{ height: '4.24rem' }} />
             <p className="text-gold-light font-serif text-sm italic">
-              Luxury Landscape & Hardscape — Greenville, SC
+              Luxury Landscape & Hardscape — Upstate, SC
             </p>
           </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
               </a>
               <span className="flex items-center gap-2 text-secondary-foreground/70">
                 <MapPin className="h-4 w-4 text-gold" />
-                Greenville, SC
+                Upstate, SC
               </span>
             </div>
             <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">

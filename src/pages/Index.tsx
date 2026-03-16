@@ -89,7 +89,7 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOHead
         page="home"
-        fallbackTitle="Elevation Landscapes | Luxury Landscape Design Greenville SC"
+        fallbackTitle="Elevation Landscapes | Luxury Landscape Design Upstate SC"
         fallbackDescription="Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential, builder, and commercial clients who demand the finest."
         path="/"
         jsonLd={localBusinessJsonLd}
@@ -107,7 +107,7 @@ const Index = () => {
           <div className="max-w-2xl">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-secondary-foreground leading-tight mb-6">
               Luxury Landscape Design & Master Craftsmanship in{" "}
-              <span className="text-gold">Greenville, SC</span>
+              <span className="text-gold">Upstate, SC</span>
             </h1>
             <p className="text-lg md:text-xl text-secondary-foreground/80 mb-8 leading-relaxed">
               Bespoke landscape architecture, precision hardscaping, and premium outdoor living
@@ -138,15 +138,15 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left — Text */}
             <div>
-              <p className="text-gold font-sans text-sm tracking-wider uppercase mb-4">Greenville's Premier Landscape Firm</p>
+              <p className="text-gold font-sans text-sm tracking-wider uppercase mb-4">Upstate SC's Premier Landscape Firm</p>
               <h2 className="font-serif text-3xl md:text-4xl text-text-dark leading-tight mb-8">
                 The Standard Your Property Deserves
               </h2>
               <p className="text-text-dark/70 text-lg leading-relaxed mb-6">
                 Elevation Landscapes exists for a singular purpose: to create outdoor environments that reflect the
                 same uncompromising quality as the homes they surround. We are not a lawn care company. We are a
-                luxury landscape design and hardscape firm serving homeowners, builders, and commercial clients across Greenville
-                and Upstate South Carolina.
+                luxury landscape design and hardscape firm serving homeowners, builders, and commercial clients across
+                Upstate South Carolina.
               </p>
               <p className="text-text-dark/70 text-lg leading-relaxed mb-8">
                 Our principals are personally involved in every project — from the initial consultation through
@@ -230,7 +230,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-4">
-              Why Greenville's Most Discerning Clients Choose Us
+              Why Upstate SC's Most Discerning Clients Choose Us
             </h2>
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
@@ -322,7 +322,7 @@ const Index = () => {
                     <p className="text-white/90 italic mb-6 leading-relaxed text-base">"{t.text}"</p>
                     <div>
                       <p className="font-serif text-white font-semibold">{t.name}</p>
-                      <p className="text-sm text-white/60">{t.location}, Greenville</p>
+                      <p className="text-sm text-white/60">{t.location}, Upstate SC</p>
                     </div>
                   </div>
                 </CarouselItem>
