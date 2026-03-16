@@ -268,7 +268,7 @@ const articles: Record<string, ArticleData> = {
     ],
   },
   "hardscape-contractor-greenville": {
-    title: "How to Choose a Hardscape Contractor in Greenville, SC: 10 Questions to Ask",
+    title: "How to Choose a Hardscape Contractor in Upstate SC: 10 Questions to Ask",
     category: "Hardscaping",
     heroImage: hardscapeContractorHero,
     detailImage: hardscapeContractorDetail,
