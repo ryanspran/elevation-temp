@@ -35,7 +35,7 @@ interface ArticleData {
 const articles: Record<string, ArticleData> = {
   "outdoor-kitchen-greenville": {
     title:
-      "Transform Your Backyard: Exploring the Benefits of Adding an Outdoor Kitchen in Greenville, SC",
+      "Transform Your Backyard: Exploring the Benefits of Adding an Outdoor Kitchen in Upstate SC",
     category: "Outdoor Living",
     heroImage: outdoorKitchenHero,
     detailImage: outdoorKitchenDetail,
