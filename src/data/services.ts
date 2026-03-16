@@ -384,7 +384,7 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/boulder-walls.png",
     seoTitle: "Boulder Retaining Walls Greenville SC | Elevation Landscapes",
     h1: "Boulder Retaining Walls Greenville SC — Engineered for the Land, Built to Last Generations",
-    subheadline: "Natural boulder retaining walls for discerning homeowners across Greenville and Upstate South Carolina — where structural integrity and refined craftsmanship are never mutually exclusive.",
+    subheadline: "Natural boulder retaining walls for discerning clients across Greenville and Upstate South Carolina — where structural integrity and refined craftsmanship are never mutually exclusive.",
     bodyParagraphs: [
       "In Greenville and across Upstate South Carolina, rolling grades, wooded slopes, and dramatic elevation changes define the area's most prestigious properties. But unmanaged terrain erodes, shifts, and quietly undermines the landscape investment you have worked to build.",
       "We engineer and install boulder retaining walls that become defining features of the property — massive, ancient-looking structures of carefully selected natural stone that speak to permanence and craftsmanship rarely seen in residential work.",
