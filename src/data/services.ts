@@ -154,7 +154,7 @@ export const services: ServiceData[] = ([
       "Every component is professional-grade — quiet operation, years of calibration, clean integration with any aesthetic. Our installation practices include precise trenching, exact head placement, and meticulous backfill restoring your lawn and beds to pristine condition."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Exclusive residential landscapes across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Focus", description: "Residential and commercial landscapes across Greenville and Upstate SC" },
       { title: "Certified Professionals", description: "Systems designed for Upstate SC's specific climate and soil" },
       { title: "Professional-Grade Equipment", description: "Industry-leading manufacturers for durability and performance" },
       { title: "Pristine Restoration", description: "Lawns and gardens returned to pre-work condition" },
