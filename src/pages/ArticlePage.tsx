@@ -324,7 +324,7 @@ const articles: Record<string, ArticleData> = {
     ],
   },
   "plant-directory-greenville": {
-    title: "Transform Your Greenville Landscape with Our Comprehensive Plant & Tree Directory",
+    title: "Transform Your Upstate SC Landscape with Our Comprehensive Plant & Tree Directory",
     category: "Plant Guide",
     heroImage: plantDirectoryHero,
     detailImage: plantDirectoryDetail,
