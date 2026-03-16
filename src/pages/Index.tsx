@@ -386,7 +386,7 @@ const Index = () => {
                 Areas We Cover
               </h2>
               <p className="text-text-dark/70 text-lg mb-10">
-                Elevation Landscapes proudly serves homeowners across Upstate South Carolina, including:
+                Elevation Landscapes proudly serves homeowners, builders, and commercial clients across Upstate South Carolina, including:
               </p>
               <div className="grid grid-cols-2 gap-x-8 gap-y-5 mb-10">
                 {serviceAreas.map((area) => (
