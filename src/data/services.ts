@@ -106,7 +106,7 @@ export const services: ServiceData[] = ([
       "Underground drainage is invisible by design, but its absence is felt everywhere — saturated lawns, failed walls, eroded beds, water where it was never meant to go. We engineer solutions eliminating an entire category of concern from property ownership."
     ],
     trustSignals: [
-      { title: "Decade of Drainage Experience", description: "Exclusive residential across Greenville, Travelers Rest, Simpsonville, Upstate SC" },
+      { title: "Decade of Drainage Experience", description: "Residential and commercial projects across Greenville, Travelers Rest, Simpsonville, Upstate SC" },
       { title: "Professional-Grade Materials", description: "Schedule-rated pipe, commercial aggregate, high-performance filter fabric" },
       { title: "Custom Engineering", description: "Site analysis and design specific to your soil, grade, and volume" },
       { title: "Design-First Approach", description: "Drainage integrated seamlessly, preserving visual integrity" },
