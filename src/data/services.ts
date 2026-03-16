@@ -202,7 +202,7 @@ export const services: ServiceData[] = ([
       "The result is not a cleaner yard. It is a landscape that functions as it should, looks as it should, and reflects the home it surrounds. For luxury homeowners across Greenville, Travelers Rest, and Simpsonville, that standard is non-negotiable — and neither is ours."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Experience", description: "Exclusive residential work across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Experience", description: "Residential and commercial work across Greenville and Upstate SC" },
       { title: "Curated Portfolio", description: "High-end remediation on the region's most distinguished residences" },
       { title: "Certified Designers & Horticulturists", description: "Deep Upstate SC climate and soil knowledge" },
       { title: "Specialty Plant Sourcing", description: "Premium material from vetted growers with establishment warranty" },
