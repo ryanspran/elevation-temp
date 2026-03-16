@@ -144,7 +144,7 @@ export const services: ServiceData[] = ([
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/irrigation.png",
     seoTitle: "Irrigation Installation Greenville SC | Elevation Landscapes",
     h1: "Irrigation Installation in Greenville SC Engineered for the Landscape You Have Built",
-    subheadline: "Precision irrigation for discerning homeowners — because an extraordinary landscape demands water management built to the same exacting standard.",
+    subheadline: "Precision irrigation for discerning clients — because an extraordinary landscape demands water management built to the same exacting standard.",
     bodyParagraphs: [
       "A beautifully designed landscape is only as enduring as the system sustaining it. Our irrigation installation services are engineered to protect that investment — delivering precision water management keeping every lawn, garden bed, and hardscape border in peak condition through every Greenville season.",
       "Our approach begins with thorough site assessment — topography, soil composition, plant material, and sun exposure. Greenville's rolling terrain and varied microclimates demand more than a standard grid. We design custom zone management systems ensuring each area receives precisely the water it needs, no more, no less.",
