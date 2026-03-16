@@ -250,7 +250,7 @@ export const services: ServiceData[] = ([
       "A custom water feature is the finishing element that transforms a beautiful yard into a private retreat. Moving water softens ambient noise, draws the eye, and creates the sensation of remove that distinguishes a truly exceptional outdoor environment from one that simply photographs well."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Exclusive residential projects including the region's most distinguished estates" },
+      { title: "Decade of Luxury Focus", description: "Residential and commercial projects including the region's most distinguished estates" },
       { title: "Premium Stone & Systems", description: "Natural stone and high-performance recirculating systems for longevity" },
       { title: "Fully Integrated Build", description: "Site assessment through final stone placement under complete quality control" },
       { title: "Limited Project Model", description: "Only projects we can execute with full attention" },
