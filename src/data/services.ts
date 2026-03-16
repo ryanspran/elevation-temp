@@ -536,7 +536,7 @@ export const services: ServiceData[] = ([
       "We serve homeowners across Greenville, Travelers Rest, Simpsonville, and Spartanburg. Our portfolio includes estates, new builds, and full outdoor living renovations. We take on the right projects and execute each to a standard we are proud to stand behind."
     ],
     trustSignals: [
-      { title: "Exclusively Luxury Residential", description: "High-end projects only across Greenville and Upstate SC" },
+      { title: "Luxury Residential & Commercial", description: "High-end projects only across Greenville and Upstate SC" },
       { title: "Premium Materials", description: "Travertine, natural stone, porcelain, engineered pavers meeting strict standards" },
       { title: "Regional Expertise", description: "Upstate SC climate, soil, and code knowledge" },
       { title: "Single Point of Contact", description: "Full project management from consultation through sealing" },
