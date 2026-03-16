@@ -107,7 +107,7 @@ const Index = () => {
           <div className="max-w-2xl">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-secondary-foreground leading-tight mb-6">
               Luxury Landscape Design & Master Craftsmanship in{" "}
-              <span className="text-gold">Greenville, SC</span>
+              <span className="text-gold">Upstate, SC</span>
             </h1>
             <p className="text-lg md:text-xl text-secondary-foreground/80 mb-8 leading-relaxed">
               Bespoke landscape architecture, precision hardscaping, and premium outdoor living
