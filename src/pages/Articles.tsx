@@ -37,7 +37,7 @@ const popularArticles: Article[] = [
   },
   {
     id: 5,
-    title: "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Greenville, SC",
+    title: "Illuminate Your Home: The Transformative Benefits of Landscape Lighting in Upstate SC",
     excerpt:
       "Discover how professional landscape lighting can enhance curb appeal, increase security, and extend your outdoor living space in the Upstate.",
     category: "Design Tips",
