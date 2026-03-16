@@ -122,9 +122,9 @@ const articles: Record<string, ArticleData> = {
     heroImage: outdoorLivingHero,
     detailImage: outdoorLivingDetail,
     seoTitle:
-      "Complete Guide to Outdoor Living Spaces in Greenville SC | Elevation Landscapes",
+      "Complete Guide to Outdoor Living Spaces in Upstate SC | Elevation Landscapes",
     seoDescription:
-      "Explore every element of outdoor living — patios, kitchens, fire pits, water features, and lighting — for Greenville, SC homeowners.",
+      "Explore every element of outdoor living — patios, kitchens, fire pits, water features, and lighting — for Upstate SC homeowners.",
     sections: [
       {
         body: "There's something uniquely captivating about outdoor living spaces, especially in the vibrant community of Greenville, SC. With the perfect blend of mild climate, picturesque landscapes, and an affinity for quality home life, Greenville is an ideal location for transforming your backyard into a haven of relaxation and entertainment. From patios and outdoor kitchens to fire pits, water features, and strategic lighting, this guide explores every element to help you create an exceptional outdoor living space.",
