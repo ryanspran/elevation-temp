@@ -680,7 +680,7 @@ export const services: ServiceData[] = ([
       "Our clients are not looking for a contractor — they want a trusted partner bringing expertise, aesthetic sensibility, and genuine investment in long-term success. That is precisely what we deliver on every project."
     ],
     trustSignals: [
-      { title: "Decade of Luxury Focus", description: "Exclusive high-end residential across Greenville and Upstate SC" },
+      { title: "Decade of Luxury Focus", description: "High-end residential and commercial projects across Greenville and Upstate SC" },
       { title: "Specialty Sourcing", description: "Rare specimens and native cultivars from wholesale growers unavailable at retail" },
       { title: "Rigorous Installation", description: "Professional root ball preparation, soil amendment, precision placement" },
       { title: "Seasonal Planning", description: "Dedicated schedules and post-installation care programs" },
