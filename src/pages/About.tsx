@@ -11,7 +11,7 @@ const About = () => {
       <SEOHead
         page="about"
         fallbackTitle="About Elevation Landscapes | Greenville SC Landscape Design"
-        fallbackDescription="Learn about Elevation Landscapes — Greenville's premier luxury landscape design firm serving Upstate South Carolina's most discerning homeowners."
+        fallbackDescription="Learn about Elevation Landscapes — Greenville's premier luxury landscape design firm serving Upstate South Carolina's most discerning residential and commercial clients."
         path="/about"
       />
       <Navbar />
