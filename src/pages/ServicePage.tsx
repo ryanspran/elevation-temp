@@ -38,7 +38,7 @@ const ServicePage = () => {
     },
     areaServed: {
       "@type": "Place",
-      name: "Greenville, SC and Upstate South Carolina",
+      name: "Upstate South Carolina",
     },
   };
 
