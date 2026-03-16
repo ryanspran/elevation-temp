@@ -79,7 +79,7 @@ const Subcontractor = () => {
         <div className="absolute inset-0 bg-navy/75" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left py-32">
           <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-secondary-foreground leading-tight mb-6 max-w-4xl">
-            Hardscape and Landscape Subcontractor in Greenville, SC
+            Hardscape and Landscape Subcontractor in Upstate, SC
           </h1>
           <p className="text-secondary-foreground/80 text-base sm:text-lg max-w-3xl leading-relaxed mb-10">
             Elevation Landscapes partners with general contractors, custom home builders, and
