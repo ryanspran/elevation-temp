@@ -15,11 +15,16 @@ Deno.serve(async (req) => {
   const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
   const supabase = createClient(supabaseUrl, serviceKey);
 
+  // Accept optional batch range via query params
+  const url = new URL(req.url);
+  const minId = parseInt(url.searchParams.get("min") || "282");
+  const maxId = parseInt(url.searchParams.get("max") || "310");
+
   const { data: plants, error: fetchErr } = await supabase
     .from("plants")
     .select("id, common_name, botanical_name, photo_url, slug")
-    .gte("id", 282)
-    .lte("id", 310)
+    .gte("id", minId)
+    .lte("id", maxId)
     .order("id");
 
   if (fetchErr) {
