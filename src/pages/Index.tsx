@@ -138,7 +138,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left — Text */}
             <div>
-              <p className="text-gold font-sans text-sm tracking-wider uppercase mb-4">Upstate SC's Premier Landscape Firm</p>
+              <p className="text-gold font-sans text-sm tracking-wider uppercase mb-4">The Upstate's Premier Landscape Installation Firm</p>
               <h2 className="font-serif text-3xl md:text-4xl text-text-dark leading-tight mb-8">
                 The Standard Your Property Deserves
               </h2>
