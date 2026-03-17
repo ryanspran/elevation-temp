@@ -432,7 +432,7 @@ export const services: ServiceData[] = ([
     heroImage: blockWallsHero,
     testimonialImage: blockWallsTestimonial,
     seoTitle: "Block Retaining Walls Upstate SC | Elevation Landscapes",
-    h1: "Block Retaining Walls Upstate SC — Engineered Precision, Refined by Design",
+    h1: "Block Retaining Walls in Upstate SC — Engineered Precision, Refined by Design",
     subheadline: "Elevation Landscapes designs and installs block retaining walls across Upstate South Carolina that resolve the land's challenges and redefine what your outdoor environment can become.",
     bodyParagraphs: [
       "Upstate South Carolina's rolling terrain, mature hardwoods, and characteristic grade changes create both opportunity and complexity. When elevation shifts demand a structural solution, block retaining walls offer a seamless marriage of engineering precision and aesthetic intention.",
