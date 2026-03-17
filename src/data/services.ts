@@ -766,7 +766,7 @@ export const services: ServiceData[] = ([
     image: landscapeLighting,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/landscape-lighting.png",
     seoTitle: "Landscape Lighting Upstate SC | Elevation Landscapes",
-    h1: "Landscape Lighting Upstate SC — Architectural Illumination Designed for Exceptional Homes",
+    h1: "Landscape Lighting in Upstate SC — Architectural Illumination Designed for Exceptional Homes",
     subheadline: "Your property represents years of vision and investment. After dark, it should be no different. Luxury outdoor lighting revealing the full character of your home and grounds, night after night.",
     bodyParagraphs: [
       "Just after dusk, a property either retreats into darkness or reveals itself in entirely new light. For Upstate South Carolina homeowners who have invested in exceptional architecture and curated landscaping, that moment deserves to be extraordinary. Our architectural lighting design process ensures it is.",
