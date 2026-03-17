@@ -316,7 +316,7 @@ const PlantGuide = () => {
             <span className="text-gold">Directory</span>
           </h1>
           <p className="text-secondary-foreground/60 max-w-2xl mx-auto mb-8 text-lg">
-            Explore our guide of over 200 plants — shade trees, flowering shrubs,
+            Explore our guide of over 250 plants — shade trees, flowering shrubs,
             perennials, grasses, and more — hand-selected for the Upstate SC
             region.
           </p>

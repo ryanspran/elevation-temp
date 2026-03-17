@@ -336,7 +336,7 @@ const articles: Record<string, ArticleData> = {
       },
       {
         heading: "Introducing the Essential Plant & Tree Directory for Upstate SC Homeowners",
-        body: "Our 250-plant and tree directory is not just a list; it's a meticulously curated guide tailored for Greenville's specific growing conditions. While general plant directories offer broad advice, our directory narrows it down to what truly works in Upstate SC's USDA zone 7a-7b, helping you make informed choices that yield stunning, enduring results. Whether you are starting fresh or enhancing your existing landscape, utilizing our directory is your first step toward a healthier, more beautiful yard.",
+        body: "Our 250+ plant and tree directory is not just a list; it's a meticulously curated guide tailored for Greenville's specific growing conditions. While general plant directories offer broad advice, our directory narrows it down to what truly works in Upstate SC's USDA zone 7a-7b, helping you make informed choices that yield stunning, enduring results. Whether you are starting fresh or enhancing your existing landscape, utilizing our directory is your first step toward a healthier, more beautiful yard.",
       },
       {
         heading: "Key Features of Our Directory",
