@@ -8,3 +8,6 @@ verify_jwt = false
 
 [functions.identify-plant]
 verify_jwt = false
+
+[functions.fix-plant-images]
+verify_jwt = false
