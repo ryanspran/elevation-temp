@@ -119,7 +119,7 @@ async function getWikimediaImageUrl(filename: string): Promise<string | null> {
 }
 
 async function searchWikimediaImage(query: string): Promise<string | null> {
-  const searchUrl = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url|mime&iiurlwidth=800&format=json`;
+  const searchUrl = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query + " plant")}&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url|mime&iiurlwidth=800&format=json`;
   const res = await fetch(searchUrl, { headers: { "User-Agent": "ElevationLandscapes/1.0" } });
   if (!res.ok) return null;
   const data = await res.json();
