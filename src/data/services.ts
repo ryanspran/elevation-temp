@@ -239,7 +239,7 @@ export const services: ServiceData[] = ([
     image: waterFeatures,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/water-features.png",
     seoTitle: "Custom Water Features Upstate SC | Elevation Landscapes",
-    h1: "Custom Water Features Upstate SC — Designed for Properties That Demand Something Extraordinary",
+    h1: "Custom Water Features in Upstate SC — Designed for Properties That Demand Something Extraordinary",
     subheadline: "Bespoke water features — from natural stone waterfalls to custom koi ponds — bringing enduring beauty, movement, and refinement to the finest properties in Upstate South Carolina.",
     bodyParagraphs: [
       "The finest outdoor living spaces share a common element — the sound, movement, and visual depth of a masterfully designed water feature. At Elevation Landscapes, we design and build custom water features that are not simply installed but composed, with intentionality honoring both terrain and the aesthetic vision of each homeowner.",
@@ -335,7 +335,7 @@ export const services: ServiceData[] = ([
     image: stonePathways,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/stone-pathways.png",
     seoTitle: "Custom Stone Pathways Upstate SC | Elevation Landscapes",
-    h1: "Custom Stone Pathways Upstate SC — Crafted for Properties That Demand More",
+    h1: "Custom Stone Pathways in Upstate SC — Crafted for Properties That Demand More",
     subheadline: "Bespoke natural stone pathways for Upstate South Carolina's most distinguished residences — where every step reflects the character and quality of the home it serves.",
     bodyParagraphs: [
       "There is a certain language spoken by a beautifully crafted stone pathway — one that communicates intention, permanence, and refined taste. At Elevation Landscapes, our custom stone pathways are designed for homeowners who understand the journey through a property is just as important as the destination.",
@@ -383,7 +383,7 @@ export const services: ServiceData[] = ([
     image: boulderWalls,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/boulder-walls.png",
     seoTitle: "Boulder Retaining Walls Upstate SC | Elevation Landscapes",
-    h1: "Boulder Retaining Walls Upstate SC — Engineered for the Land, Built to Last Generations",
+    h1: "Boulder Retaining Walls in Upstate SC — Engineered for the Land, Built to Last Generations",
     subheadline: "Natural boulder retaining walls for discerning clients across Upstate South Carolina — where structural integrity and refined craftsmanship are never mutually exclusive.",
     bodyParagraphs: [
       "In Upstate South Carolina, rolling grades, wooded slopes, and dramatic elevation changes define the area's most prestigious properties. But unmanaged terrain erodes, shifts, and quietly undermines the landscape investment you have worked to build.",
@@ -432,7 +432,7 @@ export const services: ServiceData[] = ([
     heroImage: blockWallsHero,
     testimonialImage: blockWallsTestimonial,
     seoTitle: "Block Retaining Walls Upstate SC | Elevation Landscapes",
-    h1: "Block Retaining Walls Upstate SC — Engineered Precision, Refined by Design",
+    h1: "Block Retaining Walls in Upstate SC — Engineered Precision, Refined by Design",
     subheadline: "Elevation Landscapes designs and installs block retaining walls across Upstate South Carolina that resolve the land's challenges and redefine what your outdoor environment can become.",
     bodyParagraphs: [
       "Upstate South Carolina's rolling terrain, mature hardwoods, and characteristic grade changes create both opportunity and complexity. When elevation shifts demand a structural solution, block retaining walls offer a seamless marriage of engineering precision and aesthetic intention.",
@@ -573,7 +573,7 @@ export const services: ServiceData[] = ([
     image: outdoorKitchens,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/outdoor-kitchens.png",
     seoTitle: "Outdoor Kitchens Upstate SC | Elevation Landscapes",
-    h1: "Outdoor Kitchens Upstate SC — Custom Design and Master Craftsmanship",
+    h1: "Outdoor Kitchens in Upstate SC — Custom Design and Master Craftsmanship",
     subheadline: "From hand-selected natural stone to commercial-grade stainless steel appliances, outdoor kitchens that redefine what outdoor living means for your home.",
     bodyParagraphs: [
       "There is a particular evening unique to Upstate South Carolina — warm air, Blue Ridge foothills fading to violet, and people you care about gathered in an extraordinary space. At Elevation Landscapes, we design and build outdoor kitchens worthy of those evenings.",
@@ -766,7 +766,7 @@ export const services: ServiceData[] = ([
     image: landscapeLighting,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/landscape-lighting.png",
     seoTitle: "Landscape Lighting Upstate SC | Elevation Landscapes",
-    h1: "Landscape Lighting Upstate SC — Architectural Illumination Designed for Exceptional Homes",
+    h1: "Landscape Lighting in Upstate SC — Architectural Illumination Designed for Exceptional Homes",
     subheadline: "Your property represents years of vision and investment. After dark, it should be no different. Luxury outdoor lighting revealing the full character of your home and grounds, night after night.",
     bodyParagraphs: [
       "Just after dusk, a property either retreats into darkness or reveals itself in entirely new light. For Upstate South Carolina homeowners who have invested in exceptional architecture and curated landscaping, that moment deserves to be extraordinary. Our architectural lighting design process ensures it is.",
