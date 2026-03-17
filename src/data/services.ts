@@ -239,7 +239,7 @@ export const services: ServiceData[] = ([
     image: waterFeatures,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/water-features.png",
     seoTitle: "Custom Water Features Upstate SC | Elevation Landscapes",
-    h1: "Custom Water Features Upstate SC — Designed for Properties That Demand Something Extraordinary",
+    h1: "Custom Water Features in Upstate SC — Designed for Properties That Demand Something Extraordinary",
     subheadline: "Bespoke water features — from natural stone waterfalls to custom koi ponds — bringing enduring beauty, movement, and refinement to the finest properties in Upstate South Carolina.",
     bodyParagraphs: [
       "The finest outdoor living spaces share a common element — the sound, movement, and visual depth of a masterfully designed water feature. At Elevation Landscapes, we design and build custom water features that are not simply installed but composed, with intentionality honoring both terrain and the aesthetic vision of each homeowner.",
