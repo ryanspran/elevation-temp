@@ -329,7 +329,7 @@ const articles: Record<string, ArticleData> = {
     heroImage: plantDirectoryHero,
     detailImage: plantDirectoryDetail,
     seoTitle: "Plant & Tree Directory for Upstate SC | Elevation Landscapes",
-    seoDescription: "Discover our 250-plant directory tailored for Upstate SC's USDA zones 7a-7b. Filter by sun, water, soil, and native status to plan your perfect landscape.",
+    seoDescription: "Discover our 250+ plant directory tailored for Upstate SC's USDA zones 7a-7b. Filter by sun, water, soil, and native status to plan your perfect landscape.",
     sections: [
       {
         body: "If you're a homeowner in Greenville, SC, you know that choosing the right plants and trees for your yard isn't just about aesthetics—it's about selecting species that will thrive in the unique climate of Upstate South Carolina. With hot summers, occasional freezes, and clay-rich soils, plant selection can be daunting. Make an uninformed choice, and you might face disappointing growth, increased maintenance, or even tree loss. That's where Elevation Landscapes steps in with an innovative solution designed to take the guesswork out of landscape planning.",
