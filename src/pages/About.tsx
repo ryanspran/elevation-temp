@@ -49,16 +49,24 @@ const About = () => {
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Elevation Landscapes was founded with a simple belief: every client deserves an outdoor space 
-                they're proud of. What started as a one-man operation has grown into a trusted team of hardscaping 
-                and landscaping professionals serving the Upstate South Carolina community. We pour the same care 
-                into a backyard patio as we do into a full-scale outdoor living transformation—because the details 
-                are what separate good work from great work.
+                they're proud of. We're a team of hardscaping and landscaping professionals serving the Upstate 
+                South Carolina community, and everything we do is guided by five core principals: Craftsmanship, 
+                Innovation, Integrity, Legacy, and Service.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                We approach every project with the kind of craftsmanship that turns a backyard patio into a 
+                full-scale outdoor living transformation, because the details are what separate good work from 
+                great work. We bring innovation to every design, finding smarter solutions that stand the test 
+                of time and become a lasting part of your property's legacy for years to come.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Our mission is straightforward: deliver an excellent product, every single time. We don't cut 
+                corners, we don't rush timelines, and we don't walk away until the job meets our standard. That's 
+                our integrity, and it's non-negotiable. From the first consultation to the final walkthrough, we 
+                pour genuine service into every interaction and treat your property like it's our own.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Our mission is straightforward: deliver an excellent product, every single time. We don't cut corners, 
-                we don't rush timelines, and we don't walk away until the job meets our standard. From the first 
-                consultation to the final walkthrough, we treat your property like it's our own. That's the Elevation 
-                difference—and it's why our clients keep coming back.
+                That's the Elevation difference, and it's why our clients keep coming back.
               </p>
               <Link
                 to="/contact"
