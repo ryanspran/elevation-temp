@@ -36,7 +36,10 @@ Deno.serve(async (req) => {
 
   const results: Array<{ id: number; name: string; status: string; detail?: string; newUrl?: string }> = [];
 
-  for (const plant of toFix) {
+  for (let i = 0; i < toFix.length; i++) {
+    const plant = toFix[i];
+    // Rate limit: wait 1.5s between plants to avoid Wikimedia 429s
+    if (i > 0) await new Promise((r) => setTimeout(r, 1500));
     try {
       // Strategy 1: extract filename from broken URL and look it up via API
       const filename = extractWikimediaFilename(plant.photo_url);
