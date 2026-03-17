@@ -1,16 +1,24 @@
 
 
-## Enable Mouse Drag Scrolling on Services Carousel
+## Insert 32 New Plants (31 after dedup)
 
-Embla Carousel (which powers the `<Carousel>` component) supports drag/mouse scrolling natively — it just needs `dragFree: true` in the options. By default Embla already enables drag on touch devices, but adding `dragFree` makes the free-scroll drag behavior more natural on desktop with a mouse.
+### Database state
+- Current: 229 plants, max ID = 250
+- Duplicate found: **Tea Olive** (id=51) — will be skipped
+- Common Yarrow: not found — will be inserted
+- **31 new rows** will be inserted, IDs 251–281
 
-### Changes
+### Approach
+Single SQL INSERT via the data insertion tool with all 31 rows. Each row will have:
+- `sun_category` computed from Sun Requirements using the established logic
+- `water_category` computed from Water Needs using the established logic
+- `slug` generated from common_name (lowercase, hyphens, strip apostrophes/parentheses)
+- `sc_native` mapped from Yes/No
 
-**`src/pages/Index.tsx`** (line ~155): Add `dragFree: true` to the services carousel `opts`:
+### No code changes needed
+The existing PlantCard, PlantDetail, PlantGuide, filters, search, and prev/next navigation all work dynamically from the `plants` table query. New plants will appear automatically.
 
-```tsx
-<Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
-```
-
-This single prop change enables mouse drag scrolling. No other files need modification — Embla handles pointer events (mouse + touch) out of the box. The `dragFree` option allows momentum-based free scrolling rather than snapping strictly to slides, which feels more natural for a browsable services list.
+### Post-insert verification
+- Confirm 260 total plants (229 + 31)
+- Spot-check a few slugs render on `/plants/[slug]`
 
