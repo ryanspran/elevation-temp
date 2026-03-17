@@ -329,14 +329,14 @@ const articles: Record<string, ArticleData> = {
     heroImage: plantDirectoryHero,
     detailImage: plantDirectoryDetail,
     seoTitle: "Plant & Tree Directory for Upstate SC | Elevation Landscapes",
-    seoDescription: "Discover our 250-plant directory tailored for Upstate SC's USDA zones 7a-7b. Filter by sun, water, soil, and native status to plan your perfect landscape.",
+    seoDescription: "Discover our 250+ plant directory tailored for Upstate SC's USDA zones 7a-7b. Filter by sun, water, soil, and native status to plan your perfect landscape.",
     sections: [
       {
         body: "If you're a homeowner in Greenville, SC, you know that choosing the right plants and trees for your yard isn't just about aesthetics—it's about selecting species that will thrive in the unique climate of Upstate South Carolina. With hot summers, occasional freezes, and clay-rich soils, plant selection can be daunting. Make an uninformed choice, and you might face disappointing growth, increased maintenance, or even tree loss. That's where Elevation Landscapes steps in with an innovative solution designed to take the guesswork out of landscape planning.",
       },
       {
         heading: "Introducing the Essential Plant & Tree Directory for Upstate SC Homeowners",
-        body: "Our 250-plant and tree directory is not just a list; it's a meticulously curated guide tailored for Greenville's specific growing conditions. While general plant directories offer broad advice, our directory narrows it down to what truly works in Upstate SC's USDA zone 7a-7b, helping you make informed choices that yield stunning, enduring results. Whether you are starting fresh or enhancing your existing landscape, utilizing our directory is your first step toward a healthier, more beautiful yard.",
+        body: "Our 250+ plant and tree directory is not just a list; it's a meticulously curated guide tailored for Greenville's specific growing conditions. While general plant directories offer broad advice, our directory narrows it down to what truly works in Upstate SC's USDA zone 7a-7b, helping you make informed choices that yield stunning, enduring results. Whether you are starting fresh or enhancing your existing landscape, utilizing our directory is your first step toward a healthier, more beautiful yard.",
       },
       {
         heading: "Key Features of Our Directory",

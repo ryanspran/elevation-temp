@@ -295,8 +295,8 @@ const PlantGuide = () => {
     <>
       <SEOHead
         page="plant-guide"
-        fallbackTitle="Plant & Tree Directory — Over 200 Plants for Upstate SC | Elevation Landscapes"
-        fallbackDescription="Browse over 200 trees, shrubs, perennials, and grasses curated for Upstate SC (Zones 7b-8a). Filter by sun, water, native status, and more."
+        fallbackTitle="Plant & Tree Directory — Over 250 Plants for Upstate SC | Elevation Landscapes"
+        fallbackDescription="Browse over 250 trees, shrubs, perennials, and grasses curated for Upstate SC (Zones 7b-8a). Filter by sun, water, native status, and more."
         path="/plant-guide"
         jsonLd={jsonLd}
       />
@@ -316,7 +316,7 @@ const PlantGuide = () => {
             <span className="text-gold">Directory</span>
           </h1>
           <p className="text-secondary-foreground/60 max-w-2xl mx-auto mb-8 text-lg">
-            Explore our guide of over 200 plants — shade trees, flowering shrubs,
+            Explore our guide of over 250 plants — shade trees, flowering shrubs,
             perennials, grasses, and more — hand-selected for the Upstate SC
             region.
           </p>
