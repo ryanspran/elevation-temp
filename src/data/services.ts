@@ -383,7 +383,7 @@ export const services: ServiceData[] = ([
     image: boulderWalls,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/boulder-walls.png",
     seoTitle: "Boulder Retaining Walls Upstate SC | Elevation Landscapes",
-    h1: "Boulder Retaining Walls Upstate SC — Engineered for the Land, Built to Last Generations",
+    h1: "Boulder Retaining Walls in Upstate SC — Engineered for the Land, Built to Last Generations",
     subheadline: "Natural boulder retaining walls for discerning clients across Upstate South Carolina — where structural integrity and refined craftsmanship are never mutually exclusive.",
     bodyParagraphs: [
       "In Upstate South Carolina, rolling grades, wooded slopes, and dramatic elevation changes define the area's most prestigious properties. But unmanaged terrain erodes, shifts, and quietly undermines the landscape investment you have worked to build.",
