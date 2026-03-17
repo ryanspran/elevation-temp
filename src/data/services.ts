@@ -573,7 +573,7 @@ export const services: ServiceData[] = ([
     image: outdoorKitchens,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/outdoor-kitchens.png",
     seoTitle: "Outdoor Kitchens Upstate SC | Elevation Landscapes",
-    h1: "Outdoor Kitchens Upstate SC — Custom Design and Master Craftsmanship",
+    h1: "Outdoor Kitchens in Upstate SC — Custom Design and Master Craftsmanship",
     subheadline: "From hand-selected natural stone to commercial-grade stainless steel appliances, outdoor kitchens that redefine what outdoor living means for your home.",
     bodyParagraphs: [
       "There is a particular evening unique to Upstate South Carolina — warm air, Blue Ridge foothills fading to violet, and people you care about gathered in an extraordinary space. At Elevation Landscapes, we design and build outdoor kitchens worthy of those evenings.",
