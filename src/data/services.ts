@@ -335,7 +335,7 @@ export const services: ServiceData[] = ([
     image: stonePathways,
     heroImage: "https://pccmxdlkaklgctldxznm.supabase.co/storage/v1/object/public/site-assets/heroes/stone-pathways.png",
     seoTitle: "Custom Stone Pathways Upstate SC | Elevation Landscapes",
-    h1: "Custom Stone Pathways Upstate SC — Crafted for Properties That Demand More",
+    h1: "Custom Stone Pathways in Upstate SC — Crafted for Properties That Demand More",
     subheadline: "Bespoke natural stone pathways for Upstate South Carolina's most distinguished residences — where every step reflects the character and quality of the home it serves.",
     bodyParagraphs: [
       "There is a certain language spoken by a beautifully crafted stone pathway — one that communicates intention, permanence, and refined taste. At Elevation Landscapes, our custom stone pathways are designed for homeowners who understand the journey through a property is just as important as the destination.",
