@@ -206,7 +206,8 @@ async function downloadAndUpload(
 
     const path = `plants/${slug}.${ext}`;
 
-    const { error: uploadErr } = await supabase.storage
+    // Try upload, if it fails try removing first then re-uploading
+    let { error: uploadErr } = await supabase.storage
       .from("site-assets")
       .upload(path, bytes, {
         contentType,
@@ -214,13 +215,12 @@ async function downloadAndUpload(
       });
 
     if (uploadErr) {
-      console.error(`Upload error for ${slug}:`, uploadErr.message);
-      return null;
+      // Return error detail for debugging
+      throw new Error(`upload: ${uploadErr.message} (path=${path}, size=${bytes.length}, type=${contentType})`);
     }
 
     return path;
   } catch (e) {
-    console.error(`Download error for ${slug}:`, e.message);
-    return null;
+    throw e; // propagate to caller for result tracking
   }
 }
