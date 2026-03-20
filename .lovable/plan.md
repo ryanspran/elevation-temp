@@ -1,16 +1,25 @@
 
 
-## Enable Mouse Drag Scrolling on Services Carousel
+## Plan: Add "Aaron Approved" Filter Category
 
-Embla Carousel (which powers the `<Carousel>` component) supports drag/mouse scrolling natively — it just needs `dragFree: true` in the options. By default Embla already enables drag on touch devices, but adding `dragFree` makes the free-scroll drag behavior more natural on desktop with a mouse.
+### Approach
+Add a boolean `aaron_approved` column to the `plants` table and a new filter chip at the top of the Category section in the sidebar. When selected, it filters to only plants where `aaron_approved = true`. This is cleaner than duplicating rows and lets you tag/untag plants independently of their existing categories.
 
-### Changes
+### Steps
 
-**`src/pages/Index.tsx`** (line ~155): Add `dragFree: true` to the services carousel `opts`:
+1. **Database migration** — Add `aaron_approved boolean default false` column to the `plants` table.
 
-```tsx
-<Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
-```
+2. **Update `usePlants.ts`** — Add `aaron_approved: boolean` to the `Plant` interface and map it from the query results (defaulting to `false`).
 
-This single prop change enables mouse drag scrolling. No other files need modification — Embla handles pointer events (mouse + touch) out of the box. The `dragFree` option allows momentum-based free scrolling rather than snapping strictly to slides, which feels more natural for a browsable services list.
+3. **Update `PlantFilterSidebar.tsx`** — Add an "Aaron Approved" toggle at the top of the Category chip group (styled distinctly, e.g. with a star or highlighted gold). Add `aaron_approved: boolean` to `FilterState`.
+
+4. **Update `PlantGuide.tsx`** — Wire the new filter into URL params and the filtering logic so `aaron_approved=true` filters plants where that column is true.
+
+5. **Wait for your plant list** — Once you provide the list of approved plants, I'll run an `UPDATE` to set `aaron_approved = true` on those rows.
+
+### Technical Details
+- New column: `ALTER TABLE plants ADD COLUMN aaron_approved boolean DEFAULT false;`
+- Filter state gets a new `aaron_approved` boolean alongside `native`
+- The chip appears first in the Category section, visually distinguished
+- No existing plants or data are modified beyond adding the new column
 
