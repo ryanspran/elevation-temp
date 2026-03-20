@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/logo.png";
+import aaronBadge from "@/assets/aaron-approved-badge.png";
 
 const Footer = () => {
   return (
