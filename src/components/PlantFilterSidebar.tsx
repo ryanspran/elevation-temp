@@ -80,9 +80,9 @@ function ChipGroup({
 }
 
 const hasActiveFilters = (f: FilterState) =>
-  f.native || f.categories.length > 0 || f.types.length > 0 || f.sun.length > 0 || f.water.length > 0 || f.maintenance.length > 0;
+  f.native || f.aaron_approved || f.categories.length > 0 || f.types.length > 0 || f.sun.length > 0 || f.water.length > 0 || f.maintenance.length > 0;
 
-export default function PlantFilterSidebar({ filters, onToggle, onNativeToggle, onClear }: PlantFilterSidebarProps) {
+export default function PlantFilterSidebar({ filters, onToggle, onNativeToggle, onAaronApprovedToggle, onClear }: PlantFilterSidebarProps) {
   return (
     <div className="space-y-5">
       {/* Header */}
