@@ -1,5 +1,6 @@
 import { useParams, Link, useLocation } from "react-router-dom";
 import { ArrowLeft, ChevronLeft, ChevronRight, Share2 } from "lucide-react";
+import aaronBadge from "@/assets/aaron-approved-badge.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";

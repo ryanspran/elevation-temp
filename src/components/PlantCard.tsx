@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
+import aaronBadge from "@/assets/aaron-approved-badge.png";
 import type { Plant } from "@/hooks/usePlants";
 
 /* ── Search text highlight helper ── */
