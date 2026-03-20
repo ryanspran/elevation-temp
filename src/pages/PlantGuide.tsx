@@ -154,6 +154,7 @@ const PlantGuide = () => {
   // Parse filter state from URL
   const filters: FilterState = useMemo(() => ({
     native: searchParams.get("native") === "true",
+    aaron_approved: searchParams.get("aaron_approved") === "true",
     categories: parseList(searchParams.get("categories")),
     types: parseList(searchParams.get("types")),
     sun: parseList(searchParams.get("sun")),
