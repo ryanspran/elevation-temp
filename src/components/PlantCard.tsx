@@ -75,24 +75,23 @@ export default function PlantCard({ plant, index = 0, searchQuery }: PlantCardPr
       </div>
 
       {/* Content */}
-      <div className="p-4">
+      <div className="p-4 relative">
+        {plant.aaron_approved && (
+          <img src={aaronBadge} alt="Aaron Approved" className="absolute top-3 right-3 h-14 w-auto object-contain" />
+        )}
+
         {plant.plant_type && (
           <p className="text-[10px] uppercase tracking-[0.15em] text-gold font-sans font-medium mb-1">
             {plant.plant_type}
           </p>
         )}
 
-        <div className="flex items-start gap-3 overflow-visible">
-          <h3 className="font-serif text-base text-secondary-foreground group-hover:text-gold transition-colors leading-tight min-w-0">
-            <Highlight text={plant.common_name} query={searchQuery} />
-          </h3>
-          {plant.aaron_approved && (
-            <img src={aaronBadge} alt="Aaron Approved" className="h-12 w-auto object-contain shrink-0 origin-top-left scale-[1.75]" />
-          )}
-        </div>
+        <h3 className="font-serif text-base text-secondary-foreground group-hover:text-gold transition-colors leading-tight pr-16">
+          <Highlight text={plant.common_name} query={searchQuery} />
+        </h3>
 
         {plant.botanical_name && (
-          <p className="text-secondary-foreground/40 text-xs italic mt-0.5 font-sans">
+          <p className="text-secondary-foreground/40 text-xs italic mt-0.5 font-sans pr-16">
             <Highlight text={plant.botanical_name} query={searchQuery} />
           </p>
         )}
