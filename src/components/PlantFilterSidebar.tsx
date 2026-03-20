@@ -47,8 +47,8 @@ function ChipGroup({
   label: string;
   options: string[];
   selected: string[];
-  groupKey: keyof Omit<FilterState, "native">;
-  onToggle: (group: keyof Omit<FilterState, "native">, value: string) => void;
+  groupKey: keyof Omit<FilterState, "native" | "aaron_approved">;
+  onToggle: (group: keyof Omit<FilterState, "native" | "aaron_approved">, value: string) => void;
 }) {
   return (
     <div role="group" aria-label={`Filter by ${label}`}>
