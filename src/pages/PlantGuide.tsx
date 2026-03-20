@@ -222,10 +222,12 @@ const PlantGuide = () => {
   const handleRemovePill = useCallback((group: string, value: string) => {
     if (group === "native") {
       handleNativeToggle(false);
+    } else if (group === "aaron_approved") {
+      handleAaronApprovedToggle(false);
     } else {
-      handleToggle(group as keyof Omit<FilterState, "native">, value);
+      handleToggle(group as keyof Omit<FilterState, "native" | "aaron_approved">, value);
     }
-  }, [handleNativeToggle, handleToggle]);
+  }, [handleNativeToggle, handleAaronApprovedToggle, handleToggle]);
 
   // Filter + sort
   const filtered = useMemo(() => {
