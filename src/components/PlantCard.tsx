@@ -77,11 +77,11 @@ export default function PlantCard({ plant, index = 0, searchQuery }: PlantCardPr
       {/* Content */}
       <div className="p-4 relative">
         {plant.aaron_approved && (
-          <img src={aaronBadge} alt="Aaron Approved" className="absolute top-3 right-3 h-14 w-auto object-contain" />
+          <img src={aaronBadge} alt="Aaron Approved" className="absolute top-3 right-3 h-10 sm:h-14 w-auto object-contain" />
         )}
 
         {plant.plant_type && (
-          <p className="text-[10px] uppercase tracking-[0.15em] text-gold font-sans font-medium mb-1">
+          <p className="text-[10px] uppercase tracking-[0.15em] text-gold font-sans font-medium mb-1 pr-12 sm:pr-16">
             {plant.plant_type}
           </p>
         )}
