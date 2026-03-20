@@ -16,6 +16,7 @@ export type Database = {
     Tables: {
       plants: {
         Row: {
+          aaron_approved: boolean | null
           bloom_time_color: string | null
           botanical_name: string | null
           common_name: string
@@ -38,6 +39,7 @@ export type Database = {
           wildlife_value: string | null
         }
         Insert: {
+          aaron_approved?: boolean | null
           bloom_time_color?: string | null
           botanical_name?: string | null
           common_name: string
@@ -60,6 +62,7 @@ export type Database = {
           wildlife_value?: string | null
         }
         Update: {
+          aaron_approved?: boolean | null
           bloom_time_color?: string | null
           botanical_name?: string | null
           common_name?: string

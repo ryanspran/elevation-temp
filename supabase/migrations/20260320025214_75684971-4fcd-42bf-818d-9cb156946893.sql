@@ -1,0 +1,1 @@
+ALTER TABLE public.plants ADD COLUMN aaron_approved boolean DEFAULT false;
