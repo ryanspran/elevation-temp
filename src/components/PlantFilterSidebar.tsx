@@ -1,7 +1,8 @@
-import { X } from "lucide-react";
+import { X, Star } from "lucide-react";
 
 interface FilterState {
   native: boolean;
+  aaron_approved: boolean;
   categories: string[];
   types: string[];
   sun: string[];
