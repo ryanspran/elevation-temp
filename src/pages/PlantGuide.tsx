@@ -128,12 +128,13 @@ function serializeList(arr: string[]): string | undefined {
 
 /* ── Active filter count ── */
 function countActiveFilters(f: FilterState): number {
-  return (f.native ? 1 : 0) + f.categories.length + f.types.length + f.sun.length + f.water.length + f.maintenance.length;
+  return (f.native ? 1 : 0) + (f.aaron_approved ? 1 : 0) + f.categories.length + f.types.length + f.sun.length + f.water.length + f.maintenance.length;
 }
 
 /* ── Active filter pills data ── */
-function getActiveFilterPills(f: FilterState): { group: keyof Omit<FilterState, "native"> | "native"; value: string }[] {
-  const pills: { group: keyof Omit<FilterState, "native"> | "native"; value: string }[] = [];
+function getActiveFilterPills(f: FilterState): { group: keyof Omit<FilterState, "native" | "aaron_approved"> | "native" | "aaron_approved"; value: string }[] {
+  const pills: { group: keyof Omit<FilterState, "native" | "aaron_approved"> | "native" | "aaron_approved"; value: string }[] = [];
+  if (f.aaron_approved) pills.push({ group: "aaron_approved", value: "Aaron Approved" });
   if (f.native) pills.push({ group: "native", value: "SC Native" });
   for (const v of f.categories) pills.push({ group: "categories", value: v });
   for (const v of f.types) pills.push({ group: "types", value: v });
@@ -153,6 +154,7 @@ const PlantGuide = () => {
   // Parse filter state from URL
   const filters: FilterState = useMemo(() => ({
     native: searchParams.get("native") === "true",
+    aaron_approved: searchParams.get("aaron_approved") === "true",
     categories: parseList(searchParams.get("categories")),
     types: parseList(searchParams.get("types")),
     sun: parseList(searchParams.get("sun")),
@@ -196,7 +198,7 @@ const PlantGuide = () => {
 
   const setSort = (sort: string) => updateParams({ sort: sort === "az" ? undefined : sort });
 
-  const handleToggle = useCallback((group: keyof Omit<FilterState, "native">, value: string) => {
+  const handleToggle = useCallback((group: keyof Omit<FilterState, "native" | "aaron_approved">, value: string) => {
     const current = filters[group];
     const next = current.includes(value) ? current.filter((v) => v !== value) : [...current, value];
     updateParams({ [group]: serializeList(next) });
@@ -204,6 +206,10 @@ const PlantGuide = () => {
 
   const handleNativeToggle = useCallback((native: boolean) => {
     updateParams({ native: native ? "true" : undefined });
+  }, [updateParams]);
+
+  const handleAaronApprovedToggle = useCallback((val: boolean) => {
+    updateParams({ aaron_approved: val ? "true" : undefined });
   }, [updateParams]);
 
   const handleClear = useCallback(() => {
@@ -216,10 +222,12 @@ const PlantGuide = () => {
   const handleRemovePill = useCallback((group: string, value: string) => {
     if (group === "native") {
       handleNativeToggle(false);
+    } else if (group === "aaron_approved") {
+      handleAaronApprovedToggle(false);
     } else {
-      handleToggle(group as keyof Omit<FilterState, "native">, value);
+      handleToggle(group as keyof Omit<FilterState, "native" | "aaron_approved">, value);
     }
-  }, [handleNativeToggle, handleToggle]);
+  }, [handleNativeToggle, handleAaronApprovedToggle, handleToggle]);
 
   // Filter + sort
   const filtered = useMemo(() => {
@@ -237,6 +245,7 @@ const PlantGuide = () => {
       );
     }
 
+    if (filters.aaron_approved) result = result.filter((p) => p.aaron_approved);
     if (filters.native) result = result.filter((p) => p.sc_native);
     if (filters.categories.length)
       result = result.filter((p) => p.guide_categories.some((c) => filters.categories.includes(c)));
@@ -287,6 +296,7 @@ const PlantGuide = () => {
       filters={filters}
       onToggle={handleToggle}
       onNativeToggle={handleNativeToggle}
+      onAaronApprovedToggle={handleAaronApprovedToggle}
       onClear={handleClear}
     />
   );

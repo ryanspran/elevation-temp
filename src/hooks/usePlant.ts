@@ -23,6 +23,7 @@ async function fetchPlantBySlug(slug: string): Promise<Plant> {
   return {
     ...(primary as any),
     sc_native: primary.sc_native ?? false,
+    aaron_approved: primary.aaron_approved ?? false,
     guide_categories: categories,
   };
 }

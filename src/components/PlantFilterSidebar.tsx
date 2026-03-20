@@ -1,7 +1,8 @@
-import { X } from "lucide-react";
+import { X, Star } from "lucide-react";
 
 interface FilterState {
   native: boolean;
+  aaron_approved: boolean;
   categories: string[];
   types: string[];
   sun: string[];
@@ -11,8 +12,9 @@ interface FilterState {
 
 interface PlantFilterSidebarProps {
   filters: FilterState;
-  onToggle: (group: keyof Omit<FilterState, "native">, value: string) => void;
+  onToggle: (group: keyof Omit<FilterState, "native" | "aaron_approved">, value: string) => void;
   onNativeToggle: (native: boolean) => void;
+  onAaronApprovedToggle: (val: boolean) => void;
   onClear: () => void;
   counts?: { total: number; filtered: number };
 }
@@ -45,8 +47,8 @@ function ChipGroup({
   label: string;
   options: string[];
   selected: string[];
-  groupKey: keyof Omit<FilterState, "native">;
-  onToggle: (group: keyof Omit<FilterState, "native">, value: string) => void;
+  groupKey: keyof Omit<FilterState, "native" | "aaron_approved">;
+  onToggle: (group: keyof Omit<FilterState, "native" | "aaron_approved">, value: string) => void;
 }) {
   return (
     <div role="group" aria-label={`Filter by ${label}`}>
@@ -79,9 +81,9 @@ function ChipGroup({
 }
 
 const hasActiveFilters = (f: FilterState) =>
-  f.native || f.categories.length > 0 || f.types.length > 0 || f.sun.length > 0 || f.water.length > 0 || f.maintenance.length > 0;
+  f.native || f.aaron_approved || f.categories.length > 0 || f.types.length > 0 || f.sun.length > 0 || f.water.length > 0 || f.maintenance.length > 0;
 
-export default function PlantFilterSidebar({ filters, onToggle, onNativeToggle, onClear }: PlantFilterSidebarProps) {
+export default function PlantFilterSidebar({ filters, onToggle, onNativeToggle, onAaronApprovedToggle, onClear }: PlantFilterSidebarProps) {
   return (
     <div className="space-y-5">
       {/* Header */}
@@ -95,6 +97,22 @@ export default function PlantFilterSidebar({ filters, onToggle, onNativeToggle, 
             <X className="h-3 w-3" /> Clear All
           </button>
         )}
+      </div>
+
+      {/* Aaron Approved Toggle */}
+      <div>
+        <button
+          onClick={() => onAaronApprovedToggle(!filters.aaron_approved)}
+          aria-pressed={filters.aaron_approved}
+          className={`w-full flex items-center justify-center gap-2 text-sm py-2.5 rounded-lg border transition-all font-sans active:scale-[0.98] focus-gold ${
+            filters.aaron_approved
+              ? "bg-gold text-primary-foreground border-gold font-semibold shadow-md"
+              : "border-gold/30 text-gold hover:border-gold/50 hover:bg-gold/5"
+          }`}
+        >
+          <Star className={`h-4 w-4 ${filters.aaron_approved ? "fill-current" : ""}`} />
+          Aaron Approved
+        </button>
       </div>
 
       {/* SC Native Toggle */}

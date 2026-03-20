@@ -23,6 +23,7 @@ export interface Plant {
   sun_category: string | null;
   water_category: string | null;
   slug: string;
+  aaron_approved: boolean;
 }
 
 function normalizeName(name: string) {
@@ -53,6 +54,7 @@ async function fetchAllPlants(): Promise<Plant[]> {
       map.set(key, {
         ...row,
         sc_native: row.sc_native ?? false,
+        aaron_approved: row.aaron_approved ?? false,
         guide_categories: row.guide_category ? [row.guide_category] : [],
       });
       continue;
