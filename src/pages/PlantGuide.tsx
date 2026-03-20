@@ -198,7 +198,7 @@ const PlantGuide = () => {
 
   const setSort = (sort: string) => updateParams({ sort: sort === "az" ? undefined : sort });
 
-  const handleToggle = useCallback((group: keyof Omit<FilterState, "native">, value: string) => {
+  const handleToggle = useCallback((group: keyof Omit<FilterState, "native" | "aaron_approved">, value: string) => {
     const current = filters[group];
     const next = current.includes(value) ? current.filter((v) => v !== value) : [...current, value];
     updateParams({ [group]: serializeList(next) });
