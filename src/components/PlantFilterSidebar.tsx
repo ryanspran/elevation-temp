@@ -12,8 +12,9 @@ interface FilterState {
 
 interface PlantFilterSidebarProps {
   filters: FilterState;
-  onToggle: (group: keyof Omit<FilterState, "native">, value: string) => void;
+  onToggle: (group: keyof Omit<FilterState, "native" | "aaron_approved">, value: string) => void;
   onNativeToggle: (native: boolean) => void;
+  onAaronApprovedToggle: (val: boolean) => void;
   onClear: () => void;
   counts?: { total: number; filtered: number };
 }
