@@ -1,25 +1,21 @@
 
 
-## Plan: Add "Aaron Approved" Filter Category
+## Plan: Add Aaron Approved Badge to Plant Cards and Detail Pages
 
-### Approach
-Add a boolean `aaron_approved` column to the `plants` table and a new filter chip at the top of the Category section in the sidebar. When selected, it filters to only plants where `aaron_approved = true`. This is cleaner than duplicating rows and lets you tag/untag plants independently of their existing categories.
+### What You'll See
+- On plant cards in the directory grid: a small "Aaron Approved" badge (the uploaded logo) displayed to the right of the plant name
+- On the plant detail page: the same badge shown next to the plant name in the hero section
 
 ### Steps
 
-1. **Database migration** — Add `aaron_approved boolean default false` column to the `plants` table.
+1. **Copy the badge image** into `src/assets/aaron-approved-badge.png`
 
-2. **Update `usePlants.ts`** — Add `aaron_approved: boolean` to the `Plant` interface and map it from the query results (defaulting to `false`).
+2. **Update `PlantCard.tsx`** — Import the badge and display it as a small inline image (roughly 20-24px tall) next to the `<h3>` plant name, only when `plant.aaron_approved` is true. Wrap the name and badge in a flex row.
 
-3. **Update `PlantFilterSidebar.tsx`** — Add an "Aaron Approved" toggle at the top of the Category chip group (styled distinctly, e.g. with a star or highlighted gold). Add `aaron_approved: boolean` to `FilterState`.
-
-4. **Update `PlantGuide.tsx`** — Wire the new filter into URL params and the filtering logic so `aaron_approved=true` filters plants where that column is true.
-
-5. **Wait for your plant list** — Once you provide the list of approved plants, I'll run an `UPDATE` to set `aaron_approved = true` on those rows.
+3. **Update `PlantDetail.tsx`** — Import the badge and display it next to the `<h1>` plant name (roughly 36-40px tall) in the hero section, only when `plant.aaron_approved` is true. Use a flex row with alignment.
 
 ### Technical Details
-- New column: `ALTER TABLE plants ADD COLUMN aaron_approved boolean DEFAULT false;`
-- Filter state gets a new `aaron_approved` boolean alongside `native`
-- The chip appears first in the Category section, visually distinguished
-- No existing plants or data are modified beyond adding the new column
+- Badge rendered as `<img>` with fixed height, `object-contain`, and appropriate alt text
+- Conditionally shown only for `aaron_approved === true` plants
+- No database or schema changes needed — the `aaron_approved` column already exists
 
