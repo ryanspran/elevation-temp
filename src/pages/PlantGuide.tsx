@@ -208,6 +208,10 @@ const PlantGuide = () => {
     updateParams({ native: native ? "true" : undefined });
   }, [updateParams]);
 
+  const handleAaronApprovedToggle = useCallback((val: boolean) => {
+    updateParams({ aaron_approved: val ? "true" : undefined });
+  }, [updateParams]);
+
   const handleClear = useCallback(() => {
     const params = new URLSearchParams();
     if (searchQuery) params.set("q", searchQuery);
