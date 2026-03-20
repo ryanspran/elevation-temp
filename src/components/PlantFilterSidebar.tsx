@@ -99,6 +99,22 @@ export default function PlantFilterSidebar({ filters, onToggle, onNativeToggle, 
         )}
       </div>
 
+      {/* Aaron Approved Toggle */}
+      <div>
+        <button
+          onClick={() => onAaronApprovedToggle(!filters.aaron_approved)}
+          aria-pressed={filters.aaron_approved}
+          className={`w-full flex items-center justify-center gap-2 text-sm py-2.5 rounded-lg border transition-all font-sans active:scale-[0.98] focus-gold ${
+            filters.aaron_approved
+              ? "bg-gold text-primary-foreground border-gold font-semibold shadow-md"
+              : "border-gold/30 text-gold hover:border-gold/50 hover:bg-gold/5"
+          }`}
+        >
+          <Star className={`h-4 w-4 ${filters.aaron_approved ? "fill-current" : ""}`} />
+          Aaron Approved
+        </button>
+      </div>
+
       {/* SC Native Toggle */}
       <div role="radiogroup" aria-label="Filter by SC Native status">
         <p className="text-[10px] uppercase tracking-[0.15em] text-secondary-foreground/50 font-sans font-medium mb-2">
