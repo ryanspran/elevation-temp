@@ -23,6 +23,7 @@ export interface Plant {
   sun_category: string | null;
   water_category: string | null;
   slug: string;
+  aaron_approved: boolean;
 }
 
 function normalizeName(name: string) {
