@@ -128,7 +128,7 @@ function serializeList(arr: string[]): string | undefined {
 
 /* ── Active filter count ── */
 function countActiveFilters(f: FilterState): number {
-  return (f.native ? 1 : 0) + f.categories.length + f.types.length + f.sun.length + f.water.length + f.maintenance.length;
+  return (f.native ? 1 : 0) + (f.aaron_approved ? 1 : 0) + f.categories.length + f.types.length + f.sun.length + f.water.length + f.maintenance.length;
 }
 
 /* ── Active filter pills data ── */
