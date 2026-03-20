@@ -155,10 +155,10 @@ const PlantDetail = () => {
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-3 mb-2">
+                  <div className="flex items-center gap-4 mb-2">
                     <h1 className="font-serif text-4xl md:text-5xl text-secondary-foreground">{plant.common_name}</h1>
                     {plant.aaron_approved && (
-                      <img src={aaronBadge} alt="Aaron Approved" className="h-9 md:h-10 w-auto object-contain shrink-0" />
+                      <img src={aaronBadge} alt="Aaron Approved" className="h-14 md:h-16 w-auto object-contain shrink-0" />
                     )}
                   </div>
                   {plant.botanical_name && (
