@@ -82,12 +82,12 @@ export default function PlantCard({ plant, index = 0, searchQuery }: PlantCardPr
           </p>
         )}
 
-        <div className="flex items-start gap-2">
+        <div className="flex items-start gap-3 overflow-visible">
           <h3 className="font-serif text-base text-secondary-foreground group-hover:text-gold transition-colors leading-tight min-w-0">
             <Highlight text={plant.common_name} query={searchQuery} />
           </h3>
           {plant.aaron_approved && (
-            <img src={aaronBadge} alt="Aaron Approved" className="h-12 w-auto object-contain shrink-0 -mt-1" />
+            <img src={aaronBadge} alt="Aaron Approved" className="h-12 w-auto object-contain shrink-0 origin-top-left scale-[1.75]" />
           )}
         </div>
 
