@@ -132,8 +132,9 @@ function countActiveFilters(f: FilterState): number {
 }
 
 /* ── Active filter pills data ── */
-function getActiveFilterPills(f: FilterState): { group: keyof Omit<FilterState, "native"> | "native"; value: string }[] {
-  const pills: { group: keyof Omit<FilterState, "native"> | "native"; value: string }[] = [];
+function getActiveFilterPills(f: FilterState): { group: keyof Omit<FilterState, "native" | "aaron_approved"> | "native" | "aaron_approved"; value: string }[] {
+  const pills: { group: keyof Omit<FilterState, "native" | "aaron_approved"> | "native" | "aaron_approved"; value: string }[] = [];
+  if (f.aaron_approved) pills.push({ group: "aaron_approved", value: "Aaron Approved" });
   if (f.native) pills.push({ group: "native", value: "SC Native" });
   for (const v of f.categories) pills.push({ group: "categories", value: v });
   for (const v of f.types) pills.push({ group: "types", value: v });
