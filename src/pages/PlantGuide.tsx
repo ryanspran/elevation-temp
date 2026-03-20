@@ -296,6 +296,7 @@ const PlantGuide = () => {
       filters={filters}
       onToggle={handleToggle}
       onNativeToggle={handleNativeToggle}
+      onAaronApprovedToggle={handleAaronApprovedToggle}
       onClear={handleClear}
     />
   );
