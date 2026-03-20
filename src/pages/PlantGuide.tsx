@@ -245,6 +245,7 @@ const PlantGuide = () => {
       );
     }
 
+    if (filters.aaron_approved) result = result.filter((p) => p.aaron_approved);
     if (filters.native) result = result.filter((p) => p.sc_native);
     if (filters.categories.length)
       result = result.filter((p) => p.guide_categories.some((c) => filters.categories.includes(c)));
