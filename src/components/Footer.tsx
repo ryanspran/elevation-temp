@@ -50,11 +50,13 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social */}
-          <div className="flex gap-3">
-            <a href="#" className="text-secondary-foreground/50 hover:text-gold transition-colors"><Facebook className="h-5 w-5" /></a>
-            <a href="#" className="text-secondary-foreground/50 hover:text-gold transition-colors"><Instagram className="h-5 w-5" /></a>
-            
+          {/* Aaron Badge + Social */}
+          <div className="flex flex-col items-end gap-3">
+            <img src={aaronBadge} alt="Aaron Approved" className="w-auto" style={{ height: '4.24rem' }} />
+            <div className="flex gap-3">
+              <a href="#" className="text-secondary-foreground/50 hover:text-gold transition-colors"><Facebook className="h-5 w-5" /></a>
+              <a href="#" className="text-secondary-foreground/50 hover:text-gold transition-colors"><Instagram className="h-5 w-5" /></a>
+            </div>
           </div>
         </div>
       </div>
