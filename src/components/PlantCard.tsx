@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { Link } from "react-router-dom";
+import aaronBadge from "@/assets/aaron-approved-badge.png";
 import type { Plant } from "@/hooks/usePlants";
 
 /* ── Search text highlight helper ── */
@@ -81,8 +82,13 @@ export default function PlantCard({ plant, index = 0, searchQuery }: PlantCardPr
           </p>
         )}
 
-        <h3 className="font-serif text-base text-secondary-foreground group-hover:text-gold transition-colors leading-tight">
-          <Highlight text={plant.common_name} query={searchQuery} />
+        <h3 className="font-serif text-base text-secondary-foreground group-hover:text-gold transition-colors leading-tight flex items-center gap-1.5">
+          <span className="min-w-0">
+            <Highlight text={plant.common_name} query={searchQuery} />
+          </span>
+          {plant.aaron_approved && (
+            <img src={aaronBadge} alt="Aaron Approved" className="h-5 w-auto object-contain shrink-0" />
+          )}
         </h3>
 
         {plant.botanical_name && (
