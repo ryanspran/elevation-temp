@@ -53,6 +53,15 @@ const popularArticles: Article[] = [
     image: img5,
     slug: "landscape-lighting-greenville",
   },
+  {
+    id: 3,
+    title: "Retaining Walls on Sloped Lots in Upstate SC: Boulder, Block, or Natural Stone?",
+    excerpt:
+      "Discover the best retaining wall materials for sloped properties in Greenville, Simpsonville, and Greer — from boulders to block to natural stone.",
+    category: "Hardscaping",
+    image: img3,
+    slug: "retaining-walls-upstate-sc",
+  },
 ];
 
 const latestArticles: Article[] = [
