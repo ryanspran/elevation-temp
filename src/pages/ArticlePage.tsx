@@ -370,6 +370,7 @@ const articles: Record<string, ArticleData> = {
     category: "Plant Guide",
     heroImage: aaronApprovedHero,
     detailImage: aaronApprovedDetail,
+    secondImage: aaronApprovedMidbreak,
     seoTitle: "Aaron Approved Plant Collection | 45 Plants for Upstate SC | Elevation Landscapes",
     seoDescription: "Discover the 45 trees, shrubs, perennials, and grasses handpicked by our lead designer for proven performance in Greenville, Spartanburg, and Anderson, SC.",
     sections: [
