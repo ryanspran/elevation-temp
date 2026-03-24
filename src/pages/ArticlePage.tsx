@@ -529,6 +529,13 @@ const ArticlePage = () => {
       {/* Article Body */}
       <section className="bg-background py-12 md:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Aaron Approved badge for that article */}
+          {slug === "aaron-approved-collection" && (
+            <div className="flex justify-center mb-10">
+              <img src={aaronBadge} alt="Aaron Approved" className="h-28 md:h-36 w-auto object-contain" />
+            </div>
+          )}
+
           {article.sections.map((section, i) => (
             <div key={i}>
               {section.heading && (
