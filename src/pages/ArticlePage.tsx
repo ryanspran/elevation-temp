@@ -563,12 +563,12 @@ const ArticlePage = () => {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-16 pt-10 border-t border-gold/10">
-            {slug === "plant-directory-greenville" && (
+            {(slug === "plant-directory-greenville" || slug === "aaron-approved-collection") && (
               <Link
-                to="/plant-guide"
+                to={slug === "aaron-approved-collection" ? "/plant-guide?aaron_approved=true" : "/plant-guide"}
                 className="bg-gold text-navy font-sans text-sm uppercase tracking-wider px-8 py-3 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200"
               >
-                Browse Our Directory
+                {slug === "aaron-approved-collection" ? "Browse Aaron Approved Collection" : "Browse Our Directory"}
               </Link>
             )}
             <Link
