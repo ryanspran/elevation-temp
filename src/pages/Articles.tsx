@@ -14,6 +14,7 @@ import img5 from "@/assets/articles/landscape-lighting-hero.jpg";
 import img6 from "@/assets/articles/drainage-hero.jpg";
 import hardscapeContractorImg from "@/assets/articles/hardscape-contractor-hero.jpg";
 import plantDirectoryImg from "@/assets/articles/plant-directory-hero.jpg";
+import aaronApprovedImg from "@/assets/articles/aaron-approved-hero.jpg";
 
 interface Article {
   id: number;
