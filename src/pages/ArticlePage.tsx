@@ -21,6 +21,9 @@ import hardscapeContractorHero from "@/assets/articles/hardscape-contractor-hero
 import hardscapeContractorDetail from "@/assets/articles/hardscape-contractor-detail.jpg";
 import plantDirectoryHero from "@/assets/articles/plant-directory-hero.jpg";
 import plantDirectoryDetail from "@/assets/articles/plant-directory-detail.jpg";
+import aaronApprovedHero from "@/assets/articles/aaron-approved-hero.jpg";
+import aaronApprovedDetail from "@/assets/articles/aaron-approved-detail.jpg";
+import aaronBadge from "@/assets/aaron-approved-badge.png";
 
 interface ArticleData {
   title: string;
