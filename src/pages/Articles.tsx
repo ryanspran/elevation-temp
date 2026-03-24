@@ -14,6 +14,7 @@ import img5 from "@/assets/articles/landscape-lighting-hero.jpg";
 import img6 from "@/assets/articles/drainage-hero.jpg";
 import hardscapeContractorImg from "@/assets/articles/hardscape-contractor-hero.jpg";
 import plantDirectoryImg from "@/assets/articles/plant-directory-hero.jpg";
+import aaronApprovedImg from "@/assets/articles/aaron-approved-hero.jpg";
 
 interface Article {
   id: number;
@@ -25,6 +26,14 @@ interface Article {
 }
 
 const popularArticles: Article[] = [
+  {
+    id: 10,
+    title: "Introducing the Aaron Approved Collection: 45 Plants Proven to Thrive in Upstate South Carolina",
+    excerpt: "Discover the 45 trees, shrubs, perennials, and grasses handpicked by our lead designer for proven performance in Greenville, Spartanburg, and Anderson.",
+    category: "Plant Guide",
+    image: aaronApprovedImg,
+    slug: "aaron-approved-collection",
+  },
   {
     id: 7,
     title:
@@ -43,15 +52,6 @@ const popularArticles: Article[] = [
     category: "Design Tips",
     image: img5,
     slug: "landscape-lighting-greenville",
-  },
-  {
-    id: 3,
-    title: "Retaining Walls on Sloped Lots in Upstate SC: Boulder, Block, or Natural Stone?",
-    excerpt:
-      "Discover the best retaining wall materials for sloped properties in Greenville, Simpsonville, and Greer — from boulders to block to natural stone.",
-    category: "Hardscaping",
-    image: img3,
-    slug: "retaining-walls-upstate-sc",
   },
 ];
 

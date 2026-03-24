@@ -21,6 +21,9 @@ import hardscapeContractorHero from "@/assets/articles/hardscape-contractor-hero
 import hardscapeContractorDetail from "@/assets/articles/hardscape-contractor-detail.jpg";
 import plantDirectoryHero from "@/assets/articles/plant-directory-hero.jpg";
 import plantDirectoryDetail from "@/assets/articles/plant-directory-detail.jpg";
+import aaronApprovedHero from "@/assets/articles/aaron-approved-hero.jpg";
+import aaronApprovedDetail from "@/assets/articles/aaron-approved-detail.jpg";
+import aaronBadge from "@/assets/aaron-approved-badge.png";
 
 interface ArticleData {
   title: string;
@@ -360,6 +363,99 @@ const articles: Record<string, ArticleData> = {
       },
     ],
   },
+  "aaron-approved-collection": {
+    title: "Introducing the Aaron Approved Collection: 45 Plants Proven to Thrive in Upstate South Carolina",
+    category: "Plant Guide",
+    heroImage: aaronApprovedHero,
+    detailImage: aaronApprovedDetail,
+    seoTitle: "Aaron Approved Plant Collection | 45 Plants for Upstate SC | Elevation Landscapes",
+    seoDescription: "Discover the 45 trees, shrubs, perennials, and grasses handpicked by our lead designer for proven performance in Greenville, Spartanburg, and Anderson, SC.",
+    sections: [
+      {
+        body: "There's a trip to the garden center happening somewhere in Upstate South Carolina right now. A homeowner is loading a cart with Bradford pears, Leyland cypresses, and knockout roses — plants that look stunning on the tag and in the nursery display — that are quietly setting themselves up for failure. In three to five years, that Bradford pear will be splitting at the crotch in an ice storm. The Leyland will be showing brown patches from Seiridium canker. The roses will need a spray program just to stay alive in our heavy clay soil.",
+      },
+      {
+        body: "It's not the homeowner's fault. The landscaping industry has been selling plants by their photos for decades, with little regard for what actually performs in our specific corner of South Carolina. At Elevation Landscapes, we got tired of watching beautiful projects underperform because of the wrong plant decisions. So we did something about it.",
+      },
+      {
+        heading: "Why We Built the Aaron Approved Plant Collection",
+        body: "When we launched Elevation Landscapes to serve the luxury residential and commercial market in Greenville, Spartanburg, and Anderson, we knew from day one that plant selection would be our differentiator. Our mission is luxury landscape design with master craftsmanship, and that standard has to extend all the way to the individual plant. Anyone can install a landscape. Not everyone can design one that looks as good in year ten as it does on installation day.",
+      },
+      {
+        body: "Our lead designer, Aaron, has spent years installing and maintaining high-end landscapes across Upstate South Carolina. In that time, he's seen thousands of plants succeed and fail in our specific growing conditions. He's worked in the acidic clay soils that drain poorly and compact under foot traffic. He's pushed plants through hot, humid summers where fungal pressure is relentless and afternoon heat is punishing. He's seen what happens when a beautifully designed plan is built on plants that weren't built for our zone.",
+      },
+      {
+        body: "The Aaron Approved Plant Collection is the result of all of that hands-on experience, distilled into 45 trees, shrubs, perennials, and grasses that Aaron reaches for first when designing for our most discerning clients. This isn't a list assembled from gardening magazines or sourced from a national trend report. It's a list built on what actually works in the Greenville, Spartanburg, and Anderson region, year after year.",
+      },
+      {
+        heading: "What Makes a Plant Aaron Approved?",
+        body: "The standard isn't arbitrary, and it isn't just about aesthetics. Every plant on the list had to earn its place by meeting three specific criteria.",
+      },
+      {
+        body: "It has to perform reliably in our climate. Upstate South Carolina sits in USDA Hardiness Zones 7b to 8a, which sounds simple until you factor in the acidic clay soils, the hot and humid summers, the occasional hard freezes in January, and the wide microclimatic variation between a sun-baked southern slope in Anderson and a sheltered, shaded garden in a Greenville neighborhood. Plants that thrive in a Durham nursery or look great in a Charlotte design blog don't automatically belong here. Every plant on this list has been proven in our soil and our seasons.",
+      },
+      {
+        body: "It has to deliver genuine visual impact across multiple seasons. In luxury landscape design, we're not planting for one good week in May. We're designing for the neighbor who walks by in February, the owner who looks out the window in October, and the guests who pull into the driveway in July. Every Aaron Approved plant earns its place through at least two distinct seasons of interest: fall color, winter structure, spring bloom, summer texture, or year-round evergreen presence.",
+      },
+      {
+        body: "It has to be low enough maintenance to remain beautiful without excessive intervention. A luxury landscape shouldn't become a burden. The plants Aaron selected stay looking intentional without demanding constant attention. Where invasiveness is a concern, we specify sterile cultivars. Where deer pressure is a reality, we prioritize resistant varieties. Where a plant needs a watchful eye, we flag it so our clients go in with eyes open rather than discovering a problem two seasons later.",
+      },
+      {
+        heading: "A Look Inside the Collection",
+        body: "The 45 plants in the Aaron Approved collection span nine categories: shade trees, ornamental and flowering trees, evergreen trees, evergreen shrubs, flowering shrubs, native shrubs, ornamental grasses, perennials, and ground covers. The full collection is available in our plant guide — just use the Aaron Approved filter to browse all 45 plants with complete details on mature sizing, sun and water requirements, seasonal highlights, and Aaron's personal notes on why each one made the cut. Here's a glimpse at what you'll find.",
+      },
+      {
+        heading: "The Trees That Anchor a Property",
+        body: "For shade trees, Aaron's first calls are the Autumn Blaze Maple and the October Glory Maple, both fast-growing, consistently colorful, and proven for Upstate conditions. The October Glory is a South Carolina native cultivar whose crimson fall color holds later into the season than nearly any other red maple in our zone, making it an exceptional choice for estates and large residential properties.",
+      },
+      {
+        body: "For ornamental and flowering trees, the Laceleaf Japanese Maple brings graceful, cascading form to courtyard settings and water feature surrounds, while the Trident Maple offers outstanding urban toughness, exfoliating bark, and three-season interest in a smaller footprint. Two SC native trees round out the category: the Eastern Redbud, which delivers some of the most vivid early spring color available when planted to contrast against a dark evergreen backdrop, and the Sweetbay Magnolia, a fragrant, nearly-evergreen native that tolerates the wet sites that challenge most trees.",
+      },
+      {
+        body: "Among evergreen trees, the Blue Atlas Cedar stands apart. Its spectacular silvery-blue needles and dramatic architectural form make it one of Aaron's top choices for large estate properties where a statement specimen is warranted. For privacy screening, Japanese Cryptomeria has earned its place as a far superior alternative to the overused, disease-prone Leyland cypress.",
+      },
+      {
+        heading: "The Shrubs That Define a Planting Bed",
+        body: "The evergreen shrub category contains some of Aaron's most-used design tools for Upstate landscapes. Purple Diamond Loropetalum earns its place with rich purple foliage year-round and showy hot pink flowers in late winter and spring, making it one of the most reliable four-season color plants available in our zone. Vintage Jade Distylium has quietly become his preferred boxwood substitute: ultra-compact, disease-free, deer resistant, and genuinely low maintenance in a way that boxwood simply isn't anymore. Rainbow Leucothoe, an SC native cultivar, brings stunning multi-colored variegated foliage to the shaded conditions under large trees where many shrubs decline.",
+      },
+      {
+        body: "Among flowering shrubs, the hydrangea family is well represented, and rightly so. Limelight Hydrangea earns its spot with massive cone-shaped flower heads that shift from lime green to white to soft pink across the season, with strong stems that stay upright even after summer storms. Oakleaf Hydrangea, an SC native, delivers four-season interest: white flowers in early summer, burgundy-red fall color, and striking exfoliating bark through winter. For something with year-round presence and serious pollinator value, Wine and Roses Weigela, with its dark wine-burgundy foliage and hot pink tubular flowers, is a consistent hummingbird magnet from May through June with sporadic rebloom.",
+      },
+      {
+        heading: "The Detail Plants That Bring a Design to Life",
+        body: "Ornamental grasses are where Elevation Landscapes designs often come most alive in late summer and fall. Pink Muhly Grass, a South Carolina native, produces billowing plumes of deep pink in September and October that are genuinely show-stopping in mass plantings. It's one of the most spectacular fall performers available for Upstate gardens. Everillo Carex brightens shaded areas year-round with chartreuse-gold foliage and a well-behaved clumping habit, and it's one of the few truly evergreen options that performs reliably in part-shade conditions.",
+      },
+      {
+        body: "In the perennial category, Cheyenne Spirit Coneflower, an AAS award winner, delivers a vibrant multi-color bloom mix from June through September with strong drought tolerance and excellent deer resistance. Black-Eyed Susan, another SC native, provides reliable late summer and fall color in massing situations and is practically indestructible once established, making it a natural choice for rain gardens and naturalistic perennial borders.",
+      },
+      {
+        heading: "Why Plant Selection Is a Design Decision, Not a Shopping Decision",
+        body: "Most homeowners think of plant selection as something that happens near the end of the design process, as the shopping list that gets assembled after the plan is drawn. In luxury landscape design, the opposite is true. Plant selection is woven into the design from the very beginning, because the plants are the design.",
+      },
+      {
+        body: "The mature size of a shade tree determines how a driveway feels in fifteen years. The texture of an evergreen shrub determines how a foundation planting reads from the street in January. The bloom timing of a perennial determines whether a garden has one spectacular week or twelve good months. The root system of the wrong tree determines how a patio retaining wall holds up a decade from now.",
+      },
+      {
+        body: "When we design with the Aaron Approved collection as our foundation, we're working from a palette that we know inside and out, not just in theory but in practice, in our zone, in our soils. We know which hydrangea cultivars hold their flower heads upright after a late-July thunderstorm. We know which plants need afternoon shade protection in a west-facing bed and which ones will scorch without it. We know how a Blue Atlas Cedar reads against a limestone retaining wall in December and what it will look like in twenty years when it develops its signature flat-topped silhouette.",
+      },
+      {
+        body: "That working knowledge, accumulated over years of designing, installing, and maintaining luxury landscapes across Upstate South Carolina, is what separates a landscape that photographs well on opening day from one that grows more beautiful over time.",
+      },
+      {
+        heading: "Explore the Plant Guide and Give Us a Call",
+        body: "If you want to dig into the full collection, head to our plant guide and use the Aaron Approved filter. Every one of the 45 plants is listed with complete details: mature sizing, sun and water requirements, seasonal highlights, native status, and Aaron's notes on why it made the list. It's the most honest plant resource we know of for the Greenville, Spartanburg, and Anderson region, and we offer it because we believe informed clients make better landscape investments.",
+      },
+      {
+        body: "If you're thinking about a landscape project in Upstate South Carolina, whether that's a complete estate design, a new construction installation, or a targeted refresh of an underperforming planting bed, we'd love to start a conversation.",
+      },
+      {
+        body: "At Elevation Landscapes, every project begins with a design consultation. We'll walk your property, understand how you live in your outdoor spaces, and start building a custom plant palette rooted in what actually works here. The Aaron Approved list isn't a formula. It's a foundation. Every plan we build from it is entirely your own.",
+      },
+      {
+        body: "Ready to bring your landscape to life? Contact Elevation Landscapes to schedule your consultation. Serving Greenville, Spartanburg, Anderson, and the surrounding Upstate South Carolina area.",
+      },
+    ],
+  },
 };
 
 const ArticlePage = () => {
@@ -433,6 +529,13 @@ const ArticlePage = () => {
       {/* Article Body */}
       <section className="bg-background py-12 md:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Aaron Approved badge for that article */}
+          {slug === "aaron-approved-collection" && (
+            <div className="flex justify-center mb-10">
+              <img src={aaronBadge} alt="Aaron Approved" className="h-28 md:h-36 w-auto object-contain" />
+            </div>
+          )}
+
           {article.sections.map((section, i) => (
             <div key={i}>
               {section.heading && (
@@ -460,12 +563,12 @@ const ArticlePage = () => {
 
           {/* CTA */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-16 pt-10 border-t border-gold/10">
-            {slug === "plant-directory-greenville" && (
+            {(slug === "plant-directory-greenville" || slug === "aaron-approved-collection") && (
               <Link
-                to="/plant-guide"
+                to={slug === "aaron-approved-collection" ? "/plant-guide?aaron_approved=true" : "/plant-guide"}
                 className="bg-gold text-navy font-sans text-sm uppercase tracking-wider px-8 py-3 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200"
               >
-                Browse Our Directory
+                {slug === "aaron-approved-collection" ? "Browse Aaron Approved Collection" : "Browse Our Directory"}
               </Link>
             )}
             <Link
