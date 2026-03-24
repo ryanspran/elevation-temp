@@ -24,12 +24,14 @@ import plantDirectoryDetail from "@/assets/articles/plant-directory-detail.jpg";
 import aaronApprovedHero from "@/assets/articles/aaron-approved-hero.jpg";
 import aaronApprovedDetail from "@/assets/articles/aaron-approved-detail.jpg";
 import aaronBadge from "@/assets/aaron-approved-badge.png";
+import aaronApprovedMidbreak from "@/assets/articles/aaron-approved-midbreak.jpg";
 
 interface ArticleData {
   title: string;
   category: string;
   heroImage: string;
   detailImage: string;
+  secondImage?: string;
   seoTitle: string;
   seoDescription: string;
   sections: { heading?: string; body: string }[];
