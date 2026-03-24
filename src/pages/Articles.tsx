@@ -53,6 +53,9 @@ const popularArticles: Article[] = [
     image: img5,
     slug: "landscape-lighting-greenville",
   },
+];
+
+const latestArticles: Article[] = [
   {
     id: 3,
     title: "Retaining Walls on Sloped Lots in Upstate SC: Boulder, Block, or Natural Stone?",
@@ -62,9 +65,6 @@ const popularArticles: Article[] = [
     image: img3,
     slug: "retaining-walls-upstate-sc",
   },
-];
-
-const latestArticles: Article[] = [
   {
     id: 4,
     title: "The Complete Guide to Outdoor Living Spaces in Upstate SC",
