@@ -24,12 +24,14 @@ import plantDirectoryDetail from "@/assets/articles/plant-directory-detail.jpg";
 import aaronApprovedHero from "@/assets/articles/aaron-approved-hero.jpg";
 import aaronApprovedDetail from "@/assets/articles/aaron-approved-detail.jpg";
 import aaronBadge from "@/assets/aaron-approved-badge.png";
+import aaronApprovedMidbreak from "@/assets/articles/aaron-approved-midbreak.jpg";
 
 interface ArticleData {
   title: string;
   category: string;
   heroImage: string;
   detailImage: string;
+  secondImage?: string;
   seoTitle: string;
   seoDescription: string;
   sections: { heading?: string; body: string }[];
@@ -368,6 +370,7 @@ const articles: Record<string, ArticleData> = {
     category: "Plant Guide",
     heroImage: aaronApprovedHero,
     detailImage: aaronApprovedDetail,
+    secondImage: aaronApprovedMidbreak,
     seoTitle: "Aaron Approved Plant Collection | 45 Plants for Upstate SC | Elevation Landscapes",
     seoDescription: "Discover the 45 trees, shrubs, perennials, and grasses handpicked by our lead designer for proven performance in Greenville, Spartanburg, and Anderson, SC.",
     sections: [
@@ -553,6 +556,18 @@ const ArticlePage = () => {
                   <img
                     src={article.detailImage}
                     alt={`${article.title} — detail`}
+                    className="w-full rounded-2xl shadow-lg"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+
+              {/* Second image break for longer articles */}
+              {i === 14 && article.secondImage && (
+                <div className="my-10">
+                  <img
+                    src={article.secondImage}
+                    alt={`${article.title} — landscape`}
                     className="w-full rounded-2xl shadow-lg"
                     loading="lazy"
                   />
