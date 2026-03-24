@@ -561,6 +561,18 @@ const ArticlePage = () => {
                   />
                 </div>
               )}
+
+              {/* Second image break for longer articles */}
+              {i === 14 && article.secondImage && (
+                <div className="my-10">
+                  <img
+                    src={article.secondImage}
+                    alt={`${article.title} — landscape`}
+                    className="w-full rounded-2xl shadow-lg"
+                    loading="lazy"
+                  />
+                </div>
+              )}
             </div>
           ))}
 
