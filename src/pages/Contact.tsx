@@ -78,7 +78,16 @@ const Contact = () => {
               <div className="w-16 h-0.5 bg-gold mb-8" />
 
               {/* Jobber Embedded Form */}
-              <div id={JOBBER_CLIENT_HUB_ID}></div>
+              {!formLoaded && (
+                <div className="space-y-4 animate-pulse">
+                  <div className="h-10 bg-muted rounded w-full" />
+                  <div className="h-10 bg-muted rounded w-full" />
+                  <div className="h-10 bg-muted rounded w-3/4" />
+                  <div className="h-24 bg-muted rounded w-full" />
+                  <div className="h-10 bg-muted rounded w-1/3" />
+                </div>
+              )}
+              <div id={JOBBER_CLIENT_HUB_ID} className={formLoaded ? "" : "hidden"}></div>
             </div>
 
             {/* Right sidebar — image + contact info */}
