@@ -10,6 +10,8 @@ const JOBBER_CLIENT_HUB_ID = "3572b14d-90ae-44ae-a1fa-521130ecb4d1-2540855";
 const JOBBER_FORM_URL = "https://clienthub.getjobber.com/client_hubs/3572b14d-90ae-44ae-a1fa-521130ecb4d1/public/work_request/embedded_work_request_form?form_id=2540855";
 
 const Contact = () => {
+  const [formLoaded, setFormLoaded] = useState(false);
+
   useEffect(() => {
     const link = document.createElement("link");
     link.rel = "stylesheet";
@@ -21,6 +23,10 @@ const Contact = () => {
     script.src = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
     script.setAttribute("clienthub_id", JOBBER_CLIENT_HUB_ID);
     script.setAttribute("form_url", JOBBER_FORM_URL);
+    script.onload = () => {
+      // Give Jobber a moment to render after script loads
+      setTimeout(() => setFormLoaded(true), 1500);
+    };
     document.body.appendChild(script);
 
     return () => {
