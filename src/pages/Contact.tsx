@@ -1,63 +1,33 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { useEffect } from "react";
+import { Phone, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
-import { services } from "@/data/services";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
-import { toast } from "@/hooks/use-toast";
 import contactSidebar from "@/assets/contact-sidebar.jpg";
 import contactHero from "@/assets/contact-hero.jpg";
 
-const budgetOptions = [
-  "Under $10,000",
-  "$10,000 – $25,000",
-  "$25,000 – $50,000",
-  "$50,000 – $100,000",
-  "$100,000+",
-];
-
-const timeframeOptions = [
-  "As soon as possible",
-  "Within 1–3 months",
-  "3–6 months",
-  "6–12 months",
-  "Just exploring options",
-];
+const JOBBER_CLIENT_HUB_ID = "3572b14d-90ae-44ae-a1fa-521130ecb4d1-2363681";
+const JOBBER_FORM_URL = "https://clienthub.getjobber.com/client_hubs/3572b14d-90ae-44ae-a1fa-521130ecb4d1/public/work_request/embedded_work_request_form?form_id=2363681";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [selectedServices, setSelectedServices] = useState<string[]>([]);
-  const [budget, setBudget] = useState("");
-  const [timeframe, setTimeframe] = useState("");
-  const [message, setMessage] = useState("");
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css";
+    link.media = "screen";
+    document.head.appendChild(link);
 
-  const toggleService = (serviceName: string) => {
-    setSelectedServices((prev) =>
-      prev.includes(serviceName)
-        ? prev.filter((s) => s !== serviceName)
-        : [...prev, serviceName]
-    );
-  };
+    const script = document.createElement("script");
+    script.src = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
+    script.setAttribute("clienthub_id", JOBBER_CLIENT_HUB_ID);
+    script.setAttribute("form_url", JOBBER_FORM_URL);
+    document.body.appendChild(script);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Inquiry Submitted",
-      description: "Thank you for reaching out. We'll be in touch within 24 hours.",
-    });
-    setName("");
-    setEmail("");
-    setPhone("");
-    setSelectedServices([]);
-    setBudget("");
-    setTimeframe("");
-    setMessage("");
-  };
+    return () => {
+      document.head.removeChild(link);
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen">
@@ -101,153 +71,12 @@ const Contact = () => {
               </h2>
               <div className="w-16 h-0.5 bg-gold mb-8" />
 
-              <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Name / Email / Phone */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <Label className="text-text-dark font-sans text-sm mb-2 block">
-                      Full Name *
-                    </Label>
-                    <input
-                      type="text"
-                      required
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      placeholder="John Smith"
-                      className="w-full bg-popover border border-border rounded px-4 py-3 text-text-dark placeholder:text-muted-foreground focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <Label className="text-text-dark font-sans text-sm mb-2 block">
-                      Email Address *
-                    </Label>
-                    <input
-                      type="email"
-                      required
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="john@example.com"
-                      className="w-full bg-popover border border-border rounded px-4 py-3 text-text-dark placeholder:text-muted-foreground focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <Label className="text-text-dark font-sans text-sm mb-2 block">
-                    Phone Number
-                  </Label>
-                  <input
-                    type="tel"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    placeholder="(864) 555-0123"
-                    className="w-full bg-popover border border-border rounded px-4 py-3 text-text-dark placeholder:text-muted-foreground focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors"
-                  />
-                </div>
-
-                {/* Services checkboxes */}
-                <div>
-                  <Label className="text-text-dark font-sans text-sm mb-3 block">
-                    Services Interested In
-                  </Label>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {services.map((s) => (
-                      <label
-                        key={s.slug}
-                        className="flex items-center gap-3 cursor-pointer group"
-                      >
-                        <Checkbox
-                          checked={selectedServices.includes(s.name)}
-                          onCheckedChange={() => toggleService(s.name)}
-                          className="border-border data-[state=checked]:bg-gold data-[state=checked]:border-gold"
-                        />
-                        <span className="text-text-dark/80 text-sm group-hover:text-text-dark transition-colors">
-                          {s.name}
-                        </span>
-                      </label>
-                    ))}
-                    <label className="flex items-center gap-3 cursor-pointer group">
-                      <Checkbox
-                        checked={selectedServices.includes("Other")}
-                        onCheckedChange={() => toggleService("Other")}
-                        className="border-border data-[state=checked]:bg-gold data-[state=checked]:border-gold"
-                      />
-                      <span className="text-text-dark/80 text-sm group-hover:text-text-dark transition-colors">
-                        Other
-                      </span>
-                    </label>
-                  </div>
-                </div>
-
-                {/* Budget & Timeframe dropdowns */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <Label className="text-text-dark font-sans text-sm mb-2 block">
-                      Budget Range
-                    </Label>
-                    <select
-                      value={budget}
-                      onChange={(e) => setBudget(e.target.value)}
-                      className="w-full bg-popover border border-border rounded px-4 py-3 text-text-dark focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors appearance-none"
-                    >
-                      <option value="" className="text-muted-foreground">
-                        Select a range
-                      </option>
-                      {budgetOptions.map((opt) => (
-                        <option key={opt} value={opt}>
-                          {opt}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                  <div>
-                    <Label className="text-text-dark font-sans text-sm mb-2 block">
-                      Timeframe
-                    </Label>
-                    <select
-                      value={timeframe}
-                      onChange={(e) => setTimeframe(e.target.value)}
-                      className="w-full bg-popover border border-border rounded px-4 py-3 text-text-dark focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors appearance-none"
-                    >
-                      <option value="" className="text-muted-foreground">
-                        Select a timeframe
-                      </option>
-                      {timeframeOptions.map((opt) => (
-                        <option key={opt} value={opt}>
-                          {opt}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
-
-                {/* Message */}
-                <div>
-                  <Label className="text-text-dark font-sans text-sm mb-2 block">
-                    Tell Us About Your Project
-                  </Label>
-                  <textarea
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    rows={5}
-                    placeholder="Describe your vision, property details, or any questions you have..."
-                    className="w-full bg-popover border border-border rounded px-4 py-3 text-text-dark placeholder:text-muted-foreground focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors resize-none"
-                  />
-                </div>
-
-                {/* Submit */}
-                <button
-                  type="submit"
-                  className="inline-flex items-center gap-2 bg-gold text-navy font-sans font-semibold px-10 py-4 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider"
-                >
-                  <Send className="h-4 w-4" />
-                  Submit Inquiry
-                </button>
-              </form>
+              {/* Jobber Embedded Form */}
+              <div id={JOBBER_CLIENT_HUB_ID}></div>
             </div>
 
             {/* Right sidebar — image + contact info */}
             <div className="lg:col-span-2 space-y-8">
-
               <div className="bg-navy rounded-xl p-8">
                 <h3 className="font-serif text-xl text-secondary-foreground mb-6">
                   Contact Information
