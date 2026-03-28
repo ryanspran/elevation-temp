@@ -55,10 +55,7 @@ const Footer = () => {
             <Link to="/articles/aaron-approved-collection">
               <img src={aaronBadge} alt="Aaron Approved" className="w-auto hover:opacity-80 transition-opacity" style={{ height: '4.24rem' }} />
             </Link>
-            <div className="flex gap-3">
-              <a href="#" className="text-secondary-foreground/50 hover:text-gold transition-colors"><Facebook className="h-5 w-5" /></a>
-              <a href="#" className="text-secondary-foreground/50 hover:text-gold transition-colors"><Instagram className="h-5 w-5" /></a>
-            </div>
+            {/* Social icons disabled for now */}
           </div>
         </div>
       </div>
