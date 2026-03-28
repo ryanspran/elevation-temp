@@ -46,7 +46,7 @@ const Portfolio = () => {
             {/* Overlay */}
             <div className="absolute inset-0 bg-background/75 z-10 flex items-center justify-center rounded-lg">
               <div className="max-w-2xl text-center px-6 py-10">
-                <p className="font-serif text-xl md:text-2xl text-secondary-foreground leading-relaxed">
+                <p className="font-serif text-xl md:text-2xl text-foreground leading-relaxed">
                   We're a new team with seasoned hands. Our portfolio is being built in real time. Come back soon to see what we've been creating across Upstate, South Carolina.
                 </p>
               </div>
