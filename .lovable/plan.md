@@ -1,19 +1,14 @@
 
 
-## Update Sitemap with All Plant Pages
+## Fix: Sitemap XML Structure
 
-The current `public/sitemap.xml` has ~30 URLs but is missing 100+ plant detail pages. We need to add them all.
+The `</urlset>` closing tag was placed before the plant URLs instead of after them. Google only parses URLs inside the `<urlset>...</urlset>` block, so all plant pages are being ignored.
 
-### Changes
+### Change
 
-**1. Update `public/sitemap.xml`**
-- Add all plant slugs as `/plants/{slug}` entries with priority 0.6 and monthly changefreq
-- Remove duplicate slugs (the database has some duplicates like `astilbe`, `autumn-fern`, etc.)
-- Keep all existing URLs intact
+**`public/sitemap.xml`** — Move the `</urlset>` closing tag from line 33 to the very end of the file (after the last plant URL on line 311).
 
-**2. Update `public/robots.txt`** (if needed)
-- Ensure sitemap URL points to `https://elevationlandscapes.com/sitemap.xml`
+This is a one-line fix: remove `</urlset>` from line 33 and append it after line 311.
 
-### After Implementation
-Submit `https://elevationlandscapes.com/sitemap.xml` to Google Search Console under **Sitemaps → Add a new sitemap**.
+After deploying, resubmit the sitemap in Google Search Console so it re-reads the corrected file.
 
