@@ -174,7 +174,7 @@ const ServicePage = () => {
                   {service.testimonial?.quote ?? "Every great landscape begins with listening. We don't impose a style — we reveal what your property is meant to become."}
                 </p>
                 <p className="text-text-dark font-semibold text-xs uppercase tracking-wider mt-3">
-                  — {service.testimonial?.attribution ?? "Principal, Elevation Landscapes"}
+                  — {service.testimonial?.attribution ?? "Aaron Hord, Elevation Landscapes"}
                 </p>
               </div>
             </div>
