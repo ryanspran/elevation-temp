@@ -1,7 +1,10 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { preview } from "vite";
-import { PlaywrightCrawler } from "crawlee";
+import { Configuration, PlaywrightCrawler } from "crawlee";
+
+Configuration.set("systemInfoV2", true);
+Configuration.set("memoryMbytes", 4096);
 
 const server = await preview({ preview: { port: 4174, strictPort: true }, logLevel: "silent" });
 
