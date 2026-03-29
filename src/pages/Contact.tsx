@@ -98,13 +98,13 @@ const Contact = () => {
                 </h3>
                 <div className="space-y-5">
                   <a
-                    href="tel:+18641234567"
+                    href="tel:+18643251623"
                     className="flex items-center gap-4 text-secondary-foreground/80 hover:text-gold transition-colors"
                   >
                     <div className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center flex-shrink-0">
                       <Phone className="h-4 w-4 text-gold" />
                     </div>
-                    <span className="font-sans text-sm">(864) 123-4567</span>
+                    <span className="font-sans text-sm">(864) 325-1623</span>
                   </a>
                   <div className="flex items-center gap-4 text-secondary-foreground/80">
                     <div className="w-10 h-10 rounded-full border border-gold/30 flex items-center justify-center flex-shrink-0">
