@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
-import ownerPhoto from "@/assets/about-owner.jpg";
+
 import teamPhoto from "@/assets/about-team.jpg";
 
 const About = () => {
