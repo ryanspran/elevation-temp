@@ -8,38 +8,101 @@ import contactHero from "@/assets/contact-hero.jpg";
 
 const JOBBER_CLIENT_HUB_ID = "3572b14d-90ae-44ae-a1fa-521130ecb4d1-2540855";
 const JOBBER_FORM_URL = "https://clienthub.getjobber.com/client_hubs/3572b14d-90ae-44ae-a1fa-521130ecb4d1/public/work_request/embedded_work_request_form?form_id=2540855";
+const JOBBER_SCRIPT_URL = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
+const JOBBER_STYLES_URL = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css";
+const JOBBER_PRECONNECT_ORIGINS = [
+  "https://d3ey4dbjkt2f6s.cloudfront.net",
+  "https://clienthub.getjobber.com",
+];
+
+const ensureHeadLink = (id: string, rel: string, href: string, crossOrigin = false) => {
+  const existing = document.getElementById(id) as HTMLLinkElement | null;
+  if (existing) return existing;
+
+  const link = document.createElement("link");
+  link.id = id;
+  link.rel = rel;
+  link.href = href;
+  if (crossOrigin) {
+    link.crossOrigin = "anonymous";
+  }
+  document.head.appendChild(link);
+  return link;
+};
 
 const Contact = () => {
   const [formLoaded, setFormLoaded] = useState(false);
 
   useEffect(() => {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css";
-    link.media = "screen";
-    document.head.appendChild(link);
+    let isMounted = true;
+
+    const markLoaded = () => {
+      if (isMounted) {
+        setFormLoaded(true);
+      }
+    };
+
+    JOBBER_PRECONNECT_ORIGINS.forEach((origin, index) => {
+      ensureHeadLink(`jobber-preconnect-${index}`, "preconnect", origin, true);
+    });
+    ensureHeadLink("jobber-work-request-styles", "stylesheet", JOBBER_STYLES_URL);
+
+    const attachIframeListener = () => {
+      const container = document.getElementById(JOBBER_CLIENT_HUB_ID);
+      const iframe = container?.querySelector("iframe");
+
+      if (!(iframe instanceof HTMLIFrameElement)) {
+        return false;
+      }
+
+      if (iframe.dataset.loaded === "true") {
+        markLoaded();
+        return true;
+      }
+
+      const handleLoad = () => {
+        iframe.dataset.loaded = "true";
+        markLoaded();
+      };
+
+      iframe.addEventListener("load", handleLoad, { once: true });
+
+      if (iframe.src && iframe.clientHeight > 0) {
+        handleLoad();
+      }
+
+      return true;
+    };
+
+    const container = document.getElementById(JOBBER_CLIENT_HUB_ID);
+    const observer = new MutationObserver(() => {
+      attachIframeListener();
+    });
+
+    if (container) {
+      observer.observe(container, { childList: true, subtree: true });
+    }
 
     const script = document.createElement("script");
-    script.src = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
+    script.src = JOBBER_SCRIPT_URL;
+    script.async = true;
     script.setAttribute("clienthub_id", JOBBER_CLIENT_HUB_ID);
     script.setAttribute("form_url", JOBBER_FORM_URL);
-    script.onload = () => {
-      // Poll for the Jobber form to actually render instead of a fixed delay
-      const check = setInterval(() => {
-        const container = document.getElementById(JOBBER_CLIENT_HUB_ID);
-        if (container && container.children.length > 0) {
-          setFormLoaded(true);
-          clearInterval(check);
-        }
-      }, 200);
-      // Fallback: show after 4s even if not detected
-      setTimeout(() => { setFormLoaded(true); clearInterval(check); }, 4000);
-    };
+    script.addEventListener("load", attachIframeListener, { once: true });
     document.body.appendChild(script);
 
+    const fallbackTimeout = window.setTimeout(() => {
+      const target = document.getElementById(JOBBER_CLIENT_HUB_ID);
+      if (target?.children.length) {
+        markLoaded();
+      }
+    }, 2000);
+
     return () => {
-      document.head.removeChild(link);
-      document.body.removeChild(script);
+      isMounted = false;
+      observer.disconnect();
+      window.clearTimeout(fallbackTimeout);
+      script.remove();
     };
   }, []);
 
