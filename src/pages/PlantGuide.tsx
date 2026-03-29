@@ -325,11 +325,29 @@ const PlantGuide = () => {
             Plant & Tree{" "}
             <span className="text-gold">Directory</span>
           </h1>
-          <p className="text-secondary-foreground/60 max-w-2xl mx-auto mb-8 text-lg">
+          <p className="text-secondary-foreground/60 max-w-2xl mx-auto mb-6 text-lg">
             Explore our guide of over 250 plants — shade trees, flowering shrubs,
             perennials, grasses, and more — hand-selected for the Upstate SC
             region.
           </p>
+          <Link
+            to="/articles/aaron-approved-collection"
+            className="flex items-center gap-3 max-w-xl mx-auto mb-8 px-5 py-3 rounded-lg bg-gold/10 border border-gold/20 hover:bg-gold/15 transition-colors group"
+          >
+            <img
+              src="/aaron-approved-badge.png"
+              alt="Aaron Approved"
+              className="h-10 w-auto flex-shrink-0"
+            />
+            <p className="text-sm text-secondary-foreground/70 text-left">
+              Looking for a sure thing? Explore our{" "}
+              <span className="text-gold font-semibold group-hover:underline">
+                Aaron Approved Collection
+              </span>{" "}
+              — 47 plants hand-picked by our owner, Aaron, for proven performance
+              in Upstate SC's clay soils and climate.
+            </p>
+          </Link>
           <div className="max-w-lg mx-auto relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gold/60" />
             <Input
