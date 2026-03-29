@@ -1,4 +1,5 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from "react";
+import aaronApprovedBadge from "@/assets/aaron-approved-badge.png";
 import { Link, useSearchParams } from "react-router-dom";
 import { Search, Leaf, TreePine, SlidersHorizontal, X } from "lucide-react";
 import Navbar from "@/components/Navbar";
