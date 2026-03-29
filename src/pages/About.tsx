@@ -31,18 +31,7 @@ const About = () => {
       {/* Story Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Photo */}
-            <div>
-              <img
-                src={ownerPhoto}
-                alt="Owner of Elevation Landscapes"
-                className="w-full aspect-[3/4] object-cover rounded-lg shadow-xl"
-              />
-            </div>
-
-            {/* Copy */}
-            <div className="lg:pl-8">
+        <div className="max-w-3xl mx-auto text-center">
               <span className="text-primary font-sans uppercase tracking-widest text-sm">Our Story</span>
               <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-3 mb-6">
                 Built on Hard Work &amp; a Commitment to Excellence
@@ -74,8 +63,7 @@ const About = () => {
               >
                 Get in Touch
               </Link>
-            </div>
-          </div>
+        </div>
         </div>
       </section>
 
