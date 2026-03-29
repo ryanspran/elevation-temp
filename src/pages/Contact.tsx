@@ -24,8 +24,16 @@ const Contact = () => {
     script.setAttribute("clienthub_id", JOBBER_CLIENT_HUB_ID);
     script.setAttribute("form_url", JOBBER_FORM_URL);
     script.onload = () => {
-      // Give Jobber a moment to render after script loads
-      setTimeout(() => setFormLoaded(true), 1500);
+      // Poll for the Jobber form to actually render instead of a fixed delay
+      const check = setInterval(() => {
+        const container = document.getElementById(JOBBER_CLIENT_HUB_ID);
+        if (container && container.children.length > 0) {
+          setFormLoaded(true);
+          clearInterval(check);
+        }
+      }, 200);
+      // Fallback: show after 4s even if not detected
+      setTimeout(() => { setFormLoaded(true); clearInterval(check); }, 4000);
     };
     document.body.appendChild(script);
 
