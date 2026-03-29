@@ -72,7 +72,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "We had drainage issues for years. Elevation regraded our property and the difference is night and day — no pooling, no erosion. They understood exactly what our land needed.",
-      attribution: "Robert & Anne M., Verdae"
+      attribution: "Robert & Anne, Verdae"
     },
     faqs: [
       { question: "How long does professional grading take on a luxury property?", answer: "Two to four days for single-zone land leveling. Several weeks for comprehensive estate site preparation with drainage engineering and multi-phase grading. Detailed schedule at consultation." },
@@ -121,7 +121,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "Standing water after every rain for years. Elevation's French drain system solved it completely — invisible and flawless.",
-      attribution: "Jonathan & Rebecca M., Augusta Road"
+      attribution: "Jonathan & Rebecca, Augusta Road"
     },
     faqs: [
       { question: "How long does French drain installation take?", answer: "One to three days for most properties. Larger estates with integrated stormwater systems may need more time. Detailed schedule at consultation." },
@@ -169,7 +169,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "Elevation redesigned our irrigation with smart controllers and drip zones. Water bill dropped and the landscape has never looked better.",
-      attribution: "Jennifer & Mark H., North Main"
+      attribution: "Jennifer & Mark, North Main"
     },
     faqs: [
       { question: "How do you approach irrigation design for a luxury property?", answer: "Comprehensive on-site assessment of layout, plants, soil, and sun patterns, then a custom zone management plan integrating with your landscape and hardscape." },
@@ -217,7 +217,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "Our yard was neglected for years. Elevation identified what was worth saving and completely transformed it. It finally matches the house.",
-      attribution: "Thomas & Sarah K., Chanticleer"
+      attribution: "Thomas & Sarah, Chanticleer"
     },
     faqs: [
       { question: "How long does landscape remediation take?", answer: "Most projects range one to four weeks of active work. Thorough assessment first so you have a detailed schedule before anything begins." },
@@ -265,7 +265,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "The waterfall is the centerpiece of our backyard. The stone work, the sound, the way it catches evening light — genuinely extraordinary.",
-      attribution: "Michael & Karen S., Travelers Rest"
+      attribution: "Michael & Karen, Travelers Rest"
     },
     faqs: [
       { question: "How long does it take to design and install a custom water feature?", answer: "Custom fountains or smaller features typically require four to eight weeks. Fully integrated koi ponds or multi-tier natural stone waterfalls may take ten to sixteen weeks." },
@@ -313,7 +313,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "The bluestone staircase from our motor court to the garden is the most commented-on feature of our property. Craftsmanship is extraordinary.",
-      attribution: "William & Diana P., Augusta Road"
+      attribution: "William & Diana, Augusta Road"
     },
     faqs: [
       { question: "How long does installation take?", answer: "One to three weeks on-site, plus two to four weeks for design and sourcing. We never rush masonry — the result is always worth proper time." },
@@ -361,7 +361,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "The flagstone pathway completely changed how we experience our property. Every curve and stone feels deliberate and beautiful.",
-      attribution: "Catherine L., Augusta Road"
+      attribution: "Catherine, Augusta Road"
     },
     faqs: [
       { question: "What types of natural stone do you use for custom pathways?", answer: "Hand-selected flagstone, Tennessee crab orchard, tumbled bluestone, and locally sourced quartzite. The right material depends on your architecture, landscape, and use — we guide you through options at consultation." },
@@ -409,7 +409,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "The boulder wall looks like it has been part of our hillside forever. Scale and craftsmanship are extraordinary.",
-      attribution: "Patricia W., Paris Mountain"
+      attribution: "Patricia, Paris Mountain"
     },
     faqs: [
       { question: "How long does boulder retaining wall installation take?", answer: "Most residential projects run one to three weeks. Larger estates with multiple tiers may extend further. Detailed schedule provided during consultation." },
@@ -466,7 +466,7 @@ export const services: ServiceData[] = ([
       { num: "03", title: "Precision Installation", desc: "In-house crews execute from foundation to capstone with meticulous attention to detail." },
       { num: "04", title: "Final Walkthrough", desc: "We inspect every detail together, ensuring the finished product meets our shared standard." }
     ],
-    testimonial: { quote: "The terraced wall system transformed our slope into usable outdoor living space. Engineering expertise and detail were evident from day one.", attribution: "James R., Thornblade" },
+    testimonial: { quote: "The terraced wall system transformed our slope into usable outdoor living space. Engineering expertise and detail were evident from day one.", attribution: "James, Thornblade" },
     ctaHeading: "Ready for a Retaining Wall That Performs and Elevates?",
     urgencyText: "Spring and summer slots filling — reach out today."
   },
@@ -503,7 +503,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "The travertine patio transformed our backyard into something rivaling any resort. Two years in, still flawless.",
-      attribution: "Andrew & Lisa C., Simpsonville"
+      attribution: "Andrew & Lisa, Simpsonville"
     },
     faqs: [
       { question: "How long does paver patio installation take?", answer: "One to three weeks for most residential projects. Multi-level or expansive designs may need more time. Detailed schedule at consultation." },
@@ -551,7 +551,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "Travertine deck and coping are stunning. Stays cool, looks incredible, craftsmanship evident in every edge.",
-      attribution: "Nicole & Brian W., Travelers Rest"
+      attribution: "Nicole & Brian, Travelers Rest"
     },
     faqs: [
       { question: "What materials for luxury pool decks in Upstate SC?", answer: "Travertine most popular for heat dissipation and beauty. Also porcelain pavers, thermal bluestone, and cool deck pavers. We walk through samples and performance during consultation." },
@@ -599,7 +599,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "Our outdoor kitchen is where we spend every weekend. Stone work, appliance layout, the flow from the pool deck — Elevation thought of everything.",
-      attribution: "Greg & Michelle F., Lake Keowee"
+      attribution: "Greg & Michelle, Lake Keowee"
     },
     faqs: [
       { question: "What does a custom outdoor kitchen cost in Upstate SC?", answer: "$40,000 to well over $150,000 depending on size, complexity, appliances, and finishes. Fully itemized proposals after consultation — every line transparent." },
@@ -647,7 +647,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "The fire pit is where every evening ends now. Stone work matches our patio perfectly and the flame is stunning.",
-      attribution: "David & Laura T., Alta Vista"
+      attribution: "David & Laura, Alta Vista"
     },
     faqs: [
       { question: "Why choose a gas fire pit over wood-burning?", answer: "No wood, smoke, or ash. Natural gas ignites at a valve turn or remote touch with consistent, clean flame. For frequent entertainers, gas offers unmatched convenience." },
@@ -695,7 +695,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "Elevation sourced specimen Japanese maples we couldn't find anywhere. Two years later they're thriving and the garden looks better every season.",
-      attribution: "Elizabeth & Richard G., North Main"
+      attribution: "Elizabeth & Richard, North Main"
     },
     faqs: [
       { question: "What does the installation process look like?", answer: "Site evaluation of soil, drainage, sun, and landscape character. Then curated selection with root ball preparation, soil amendment, and seasonal planting schedule for long-term success." },
@@ -744,7 +744,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "Elevation prepped our soil meticulously before laying Zoysia across the property. Six months later it looks like it has been there for years.",
-      attribution: "Kevin & Amy R., Greer"
+      attribution: "Kevin & Amy, Greer"
     },
     faqs: [
       { question: "What sod is best for Upstate SC properties?", answer: "Zoysia for dense refined texture and transition zone performance. Bermuda for sun-drenched lawns needing durability and rapid establishment. We recommend based on your specific site evaluation." },
@@ -792,7 +792,7 @@ export const services: ServiceData[] = ([
     ],
     testimonial: {
       quote: "Our property looks like a different place after dark. The moonlighting through our oaks is breathtaking. Elevation's detail is unmatched.",
-      attribution: "Stephen & Claire D., Lake Keowee"
+      attribution: "Stephen & Claire, Lake Keowee"
     },
     faqs: [
       { question: "What does your lighting design process look like?", answer: "On-site consultation assessing architecture, landscape, and evening use. A layered plan with uplighting, moonlighting, and pathway techniques, fixture selections, and detailed proposal. Nothing installed until you approve every element." },

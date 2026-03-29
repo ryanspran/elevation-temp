@@ -71,8 +71,8 @@ const Index = () => {
 
   const testimonials = [
     { name: "Katherine M.", location: "Thornblade", text: "Elevation Landscapes transformed our property into something we never imagined possible. Their attention to detail is unmatched." },
-    { name: "Robert & Lisa T.", location: "Augusta Road", text: "From the initial consultation to the final walkthrough, every interaction reflected professionalism and genuine care for our vision." },
-    { name: "James W.", location: "The Cliffs", text: "We've worked with landscape companies before. Elevation is in a different category entirely. The craftsmanship speaks for itself." },
+    { name: "Robert & Lisa", location: "Augusta Road", text: "From the initial consultation to the final walkthrough, every interaction reflected professionalism and genuine care for our vision." },
+    { name: "James", location: "The Cliffs", text: "We've worked with landscape companies before. Elevation is in a different category entirely. The craftsmanship speaks for itself." },
   ];
 
   const portfolioItems = [
