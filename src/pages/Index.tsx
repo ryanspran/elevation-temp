@@ -179,7 +179,7 @@ const Index = () => {
                 <p className="text-text-dark/80 italic text-sm leading-relaxed mb-3">
                   We take the time to understand each property's unique character and our clients' vision to ensure the finished landscape exceeds every expectation.
                 </p>
-                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Principal, Elevation Landscapes</p>
+                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Aaron Hord, Elevation Landscapes</p>
               </div>
             </div>
           </div>
@@ -285,7 +285,7 @@ const Index = () => {
                 <p className="text-text-dark/80 italic text-sm leading-relaxed mb-3">
                   Every great landscape begins with listening. We don't impose a style — we reveal what your property is meant to become.
                 </p>
-                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Principal, Elevation Landscapes</p>
+                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Aaron Hord, Elevation Landscapes</p>
               </div>
             </div>
           </div>
