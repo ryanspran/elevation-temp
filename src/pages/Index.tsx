@@ -23,7 +23,7 @@ const localBusinessJsonLd = {
   name: "Elevation Landscapes",
   description: "Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential, builder, and commercial clients who demand the finest in outdoor design.",
   url: "https://elevationlandscapes.com",
-  telephone: "+18641234567",
+  telephone: "+18643251623",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Greenville",
@@ -121,7 +121,7 @@ const Index = () => {
                 Schedule a Consultation
               </Link>
               <a
-                href="tel:+18641234567"
+                href="tel:+18643251623"
                 className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
               >
                 <Phone className="h-4 w-4" />
@@ -160,7 +160,7 @@ const Index = () => {
                   Schedule a Consultation
                 </Link>
                 <a
-                  href="tel:+18641234567"
+                  href="tel:+18643251623"
                   className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider"
                 >
                   <Phone className="h-4 w-4" />
@@ -417,7 +417,7 @@ const Index = () => {
                   Schedule a Consultation
                 </Link>
                 <a
-                  href="tel:+18641234567"
+                  href="tel:+18643251623"
                   className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider"
                 >
                   <Phone className="h-4 w-4" />

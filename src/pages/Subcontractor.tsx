@@ -95,11 +95,11 @@ const Subcontractor = () => {
               Schedule a Consultation
             </Link>
             <a
-              href="tel:+18641234567"
+              href="tel:+18643251623"
               className="border border-gold text-gold px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-gold hover:text-navy transition-all flex items-center justify-center gap-2"
             >
               <Phone className="h-4 w-4" />
-              (864) 123-4567
+              (864) 325-1623
             </a>
           </div>
         </div>
@@ -210,7 +210,7 @@ const Subcontractor = () => {
               Schedule a Consultation
             </Link>
             <a
-              href="tel:+18641234567"
+              href="tel:+18643251623"
               className="border border-gold text-gold px-8 py-4 rounded font-sans uppercase text-sm tracking-wider hover:bg-gold hover:text-navy transition-all flex items-center justify-center gap-2"
             >
               <Phone className="h-4 w-4" />

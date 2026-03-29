@@ -246,7 +246,7 @@ const Articles = () => {
               Schedule a Consultation
             </Link>
             <a
-              href="tel:+18641234567"
+              href="tel:+18643251623"
               className="flex items-center gap-2 border border-gold text-gold font-sans text-sm uppercase tracking-wider px-8 py-3 rounded hover:bg-gold hover:text-navy transition-colors"
             >
               <Phone className="h-4 w-4" />
