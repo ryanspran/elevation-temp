@@ -336,7 +336,7 @@ const PlantGuide = () => {
             className="flex items-center gap-3 max-w-xl mx-auto mb-8 px-5 py-3 rounded-lg bg-gold/10 border border-gold/20 hover:bg-gold/15 transition-colors group"
           >
             <img
-              src="/aaron-approved-badge.png"
+              src={aaronApprovedBadge}
               alt="Aaron Approved"
               className="h-10 w-auto flex-shrink-0"
             />
