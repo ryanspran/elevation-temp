@@ -54,6 +54,7 @@ export default function PlantCard({ plant, index = 0, searchQuery }: PlantCardPr
               src={plant.photo_url!}
               alt={`${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""} — ${plant.plant_type || "plant"} for Upstate SC landscapes`}
               loading="lazy"
+              decoding="async"
               onLoad={handleLoad}
               onError={handleError}
               className={`w-full h-full object-cover group-hover:scale-105 transition-all duration-500 ${
