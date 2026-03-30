@@ -109,6 +109,8 @@ const ServicePage = () => {
                 src={service.heroImage ?? heroBg}
                 alt={`${service.name} by Elevation Landscapes in Upstate South Carolina`}
                 className="w-full h-80 lg:h-full lg:min-h-[500px] object-cover rounded-2xl"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
             {/* Right: Cards */}
@@ -167,6 +169,8 @@ const ServicePage = () => {
                 src={service.heroImage ?? heroBg}
                 alt={`${service.name} installation process by Elevation Landscapes Greenville SC`}
                 className="w-full h-[500px] object-cover rounded-2xl"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute -bottom-4 left-4 right-4 md:left-8 md:right-8 bg-popover rounded-xl p-6 shadow-lg">
                 <span className="text-gold font-serif text-2xl leading-none">"</span>

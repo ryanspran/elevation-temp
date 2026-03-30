@@ -291,6 +291,8 @@ function PlantPhoto({ plant }: { plant: { common_name: string; botanical_name?: 
         src={plant.photo_url}
         alt={`${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""} growing in Upstate South Carolina`}
         className={`w-full h-full object-cover rounded-lg transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
+        fetchPriority="high"
+        decoding="async"
         onLoad={() => setImgLoaded(true)}
         onError={() => setImgError(true)}
       />

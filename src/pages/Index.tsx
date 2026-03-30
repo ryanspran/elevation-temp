@@ -98,10 +98,15 @@ const Index = () => {
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        />
+        <div className="absolute inset-0">
+          <img
+            src={heroBg}
+            alt="Luxury landscape design in Upstate South Carolina by Elevation Landscapes"
+            className="w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/70 to-navy/30" />
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="max-w-2xl">
@@ -171,7 +176,7 @@ const Index = () => {
             {/* Right — Photo with overlapping quote */}
             <div className="relative">
               <div className="rounded-xl overflow-hidden">
-                <img src={introPhoto} alt="Expert landscape craftsman at work" className="w-full h-auto object-cover" loading="lazy" />
+                <img src={introPhoto} alt="Expert landscape craftsman at work" className="w-full h-auto object-cover" loading="lazy" decoding="async" />
               </div>
               {/* Overlapping quote card */}
               <div className="relative lg:absolute lg:-bottom-8 lg:-left-12 bg-popover border border-border rounded-xl p-6 shadow-lg mt-6 lg:mt-0 max-w-sm">
@@ -206,6 +211,8 @@ const Index = () => {
                         src={service.image}
                         alt={`${service.name} service by Elevation Landscapes in Greenville SC`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <h3 className="font-serif text-xl text-secondary-foreground group-hover:text-gold transition-colors mb-2">
@@ -237,7 +244,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Large image on the left */}
             <div className="lg:row-span-2 rounded-xl overflow-hidden">
-              <img src={whyUsPhoto} alt="Premium hardscape and landscape design by Elevation Landscapes Greenville SC" className="w-full h-full object-cover" loading="lazy" />
+              <img src={whyUsPhoto} alt="Premium hardscape and landscape design by Elevation Landscapes Greenville SC" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
             {/* 4 cards in 2x2 grid on the right */}
             {whyUsItems.slice(0, 4).map((item, i) => (
@@ -278,7 +285,7 @@ const Index = () => {
             {/* Right — Photo with overlapping quote */}
             <div className="relative">
               <div className="rounded-xl overflow-hidden">
-                <img src={processPhoto} alt="Landscape design consultation with Elevation Landscapes in Upstate South Carolina" className="w-full h-auto object-cover" loading="lazy" />
+                <img src={processPhoto} alt="Landscape design consultation with Elevation Landscapes in Upstate South Carolina" className="w-full h-auto object-cover" loading="lazy" decoding="async" />
               </div>
               <div className="relative lg:absolute lg:-bottom-8 lg:-left-12 bg-popover border border-border rounded-xl p-6 shadow-lg mt-6 lg:mt-0 max-w-sm">
                 <span className="font-serif text-gold text-4xl leading-none block mb-2">"</span>
@@ -298,7 +305,7 @@ const Index = () => {
       <section className="relative py-24 md:py-32 overflow-hidden">
         {/* Background image with dark overlay */}
         <div className="absolute inset-0 z-0">
-          <img src={testimonialsBg} alt="" className="w-full h-full object-cover" loading="lazy" />
+          <img src={testimonialsBg} alt="" className="w-full h-full object-cover" loading="lazy" decoding="async" />
           <div className="absolute inset-0 bg-navy/50" />
         </div>
 
@@ -356,14 +363,14 @@ const Index = () => {
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Before */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
-              <img src={portfolioBefore} alt="Upstate SC yard before professional landscape design by Elevation Landscapes" className="w-full h-full object-cover" loading="lazy" />
+              <img src={portfolioBefore} alt="Upstate SC yard before professional landscape design by Elevation Landscapes" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               <span className="absolute bottom-4 left-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 Before
               </span>
             </div>
             {/* After */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
-              <img src={portfolioAfter} alt="Completed luxury landscape transformation by Elevation Landscapes in Greenville SC" className="w-full h-full object-cover" loading="lazy" />
+              <img src={portfolioAfter} alt="Completed luxury landscape transformation by Elevation Landscapes in Greenville SC" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               <span className="absolute top-4 right-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 After
               </span>
