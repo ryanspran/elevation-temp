@@ -10,7 +10,7 @@ import { usePlantBySlug } from "@/hooks/usePlant";
 import { usePlants } from "@/hooks/usePlants";
 import RelatedPlants from "@/components/plant-detail/RelatedPlants";
 import RelatedServices from "@/components/plant-detail/RelatedServices";
-import { useState } from "react";
+import React, { useState } from "react";
 import { toast } from "sonner";
 
 const PlantDetail = () => {
