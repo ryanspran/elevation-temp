@@ -63,8 +63,8 @@ const Subcontractor = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         page="subcontractor"
-        fallbackTitle="Hardscape & Landscape Subcontractor in Upstate, SC | Elevation Landscapes"
-        fallbackDescription="Elevation Landscapes partners with general contractors, custom home builders, and landscape companies across Upstate South Carolina as a trusted hardscape and landscape subcontractor."
+        fallbackTitle="Hardscape Subcontractor Upstate SC | Elevation Landscapes"
+        fallbackDescription="Elevation Landscapes partners with general contractors, builders, and landscape companies across Upstate SC as a trusted hardscape and landscape subcontractor."
         path="/subcontractor"
         jsonLd={jsonLd}
       />
