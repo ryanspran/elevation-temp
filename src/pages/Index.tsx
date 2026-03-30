@@ -211,6 +211,8 @@ const Index = () => {
                         src={service.image}
                         alt={`${service.name} service by Elevation Landscapes in Greenville SC`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <h3 className="font-serif text-xl text-secondary-foreground group-hover:text-gold transition-colors mb-2">
