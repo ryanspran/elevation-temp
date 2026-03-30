@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { Skeleton } from "@/components/ui/skeleton";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { usePlantBySlug } from "@/hooks/usePlant";
 import { usePlants } from "@/hooks/usePlants";
 import RelatedPlants from "@/components/plant-detail/RelatedPlants";

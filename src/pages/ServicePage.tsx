@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import heroBg from "@/assets/hero-bg.jpg";
 import NotFound from "./NotFound";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -68,6 +69,14 @@ const ServicePage = () => {
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${service.heroImage ?? heroBg})` }} />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/50" />
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Services" },
+              { label: service.name },
+            ]}
+            className="mb-6"
+          />
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-secondary-foreground leading-tight mb-6">
             {service.h1}
           </h1>
