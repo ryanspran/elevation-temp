@@ -69,7 +69,7 @@ const PlantDetail = () => {
 
   // SEO
   const seoTitle = plant
-    ? `${plant.common_name} — Growing Guide for Upstate SC | Elevation Landscapes`
+    ? `${plant.common_name} — Upstate SC Growing Guide | Elevation`
     : "Plant Guide — Elevation Landscapes";
 
   const seoDescription = plant

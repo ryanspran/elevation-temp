@@ -253,8 +253,8 @@ const Identify = () => {
     <>
       <SEOHead 
         page="identify"
-        fallbackTitle="AI Plant Identifier — Snap a Photo, Identify Any Plant | Elevation Landscapes" 
-        fallbackDescription="Take a photo of any plant, tree, or flower and our AI will identify it instantly. Free mobile plant identification tool from Elevation Landscapes, Upstate SC."
+        fallbackTitle="AI Plant Identifier — Free Photo Tool | Elevation Landscapes" 
+        fallbackDescription="Snap a photo of any plant, tree, or flower and get an instant AI identification. Free mobile plant ID tool from Elevation Landscapes in Upstate SC."
         path="/identify"
       />
       <div className="min-h-screen bg-navy text-secondary-foreground">

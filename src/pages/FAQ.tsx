@@ -165,8 +165,8 @@ const FAQ = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         page="faq"
-        fallbackTitle="FAQ | Elevation Landscapes — Upstate SC Landscaping Questions"
-        fallbackDescription="Answers to common landscaping and hardscape questions for Upstate SC homeowners. Learn about timelines, costs, materials, maintenance, permits, and more."
+        fallbackTitle="Landscaping FAQ — Upstate SC | Elevation Landscapes"
+        fallbackDescription="Answers to common landscaping and hardscape questions for Upstate SC homeowners — timelines, costs, materials, maintenance, permits, and more."
         path="/faq"
         jsonLd={[faqJsonLd, breadcrumbJsonLd]}
       />
