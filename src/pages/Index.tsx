@@ -98,10 +98,15 @@ const Index = () => {
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        />
+        <div className="absolute inset-0">
+          <img
+            src={heroBg}
+            alt="Luxury landscape design in Upstate South Carolina by Elevation Landscapes"
+            className="w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/70 to-navy/30" />
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="max-w-2xl">
@@ -171,7 +176,7 @@ const Index = () => {
             {/* Right — Photo with overlapping quote */}
             <div className="relative">
               <div className="rounded-xl overflow-hidden">
-                <img src={introPhoto} alt="Expert landscape craftsman at work" className="w-full h-auto object-cover" loading="lazy" />
+                <img src={introPhoto} alt="Expert landscape craftsman at work" className="w-full h-auto object-cover" loading="lazy" decoding="async" />
               </div>
               {/* Overlapping quote card */}
               <div className="relative lg:absolute lg:-bottom-8 lg:-left-12 bg-popover border border-border rounded-xl p-6 shadow-lg mt-6 lg:mt-0 max-w-sm">
