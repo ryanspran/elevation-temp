@@ -126,10 +126,13 @@ const PlantDetail = () => {
 
       <div className="bg-navy pt-28 pb-4 print:hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to={backUrl} className="inline-flex items-center gap-2 text-gold hover:text-gold/80 transition-colors text-sm uppercase tracking-wider font-sans">
-            <ArrowLeft className="h-4 w-4" />
-            Back to Directory
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Plant Directory", href: "/plant-guide" },
+              { label: plant?.common_name || "Plant" },
+            ]}
+          />
         </div>
       </div>
 
