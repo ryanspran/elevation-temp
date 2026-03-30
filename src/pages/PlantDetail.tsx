@@ -289,7 +289,7 @@ function PlantPhoto({ plant }: { plant: { common_name: string; photo_url: string
       {!imgLoaded && <div className="absolute inset-0 shimmer-bg animate-shimmer rounded-lg" />}
       <img
         src={plant.photo_url}
-        alt={plant.common_name}
+        alt={`${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""} growing in Upstate South Carolina`}
         className={`w-full h-full object-cover rounded-lg transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
         onLoad={() => setImgLoaded(true)}
         onError={() => setImgError(true)}

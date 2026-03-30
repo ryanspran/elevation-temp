@@ -10,12 +10,12 @@ import firePit from "@/assets/portfolio/fire-pit-project.jpg";
 import poolDeck from "@/assets/portfolio/pool-deck-project.jpg";
 
 const photos = [
-  { src: paverPatio, alt: "Paver Patio with Fire Feature" },
-  { src: stoneWall, alt: "Stone Retaining Wall with Lighting" },
-  { src: firePit, alt: "Custom Fire Pit Area" },
-  { src: stonePathway, alt: "Natural Stone Pathway" },
-  { src: outdoorKitchen, alt: "Outdoor Kitchen" },
-  { src: poolDeck, alt: "Pool Deck with Stone Coping" },
+  { src: paverPatio, alt: "Custom paver patio with fire feature by Elevation Landscapes in Greenville SC" },
+  { src: stoneWall, alt: "Natural stone retaining wall with landscape lighting in Upstate South Carolina" },
+  { src: firePit, alt: "Custom outdoor fire pit area designed by Elevation Landscapes" },
+  { src: stonePathway, alt: "Hand-laid natural stone pathway through residential garden in Greenville SC" },
+  { src: outdoorKitchen, alt: "Luxury outdoor kitchen installation by Elevation Landscapes Upstate SC" },
+  { src: poolDeck, alt: "Pool deck with stone coping and paver surround in Greenville South Carolina" },
 ];
 
 const Portfolio = () => {
