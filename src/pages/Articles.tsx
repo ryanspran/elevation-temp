@@ -188,8 +188,10 @@ const Articles = () => {
         <div className="absolute inset-0">
           <img
             src={heroImg}
-            alt="Luxury landscaped backyard"
+            alt="Luxury landscaped backyard in Upstate South Carolina"
             className="w-full h-full object-cover"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-navy/70" />
         </div>
