@@ -204,7 +204,7 @@ const Index = () => {
                     <div className="w-full aspect-[3/4] bg-secondary-foreground/5 rounded-lg mb-4 overflow-hidden">
                       <img
                         src={service.image}
-                        alt={service.name}
+                        alt={`${service.name} service by Elevation Landscapes in Greenville SC`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
@@ -237,7 +237,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Large image on the left */}
             <div className="lg:row-span-2 rounded-xl overflow-hidden">
-              <img src={whyUsPhoto} alt="Luxury landscape design" className="w-full h-full object-cover" loading="lazy" />
+              <img src={whyUsPhoto} alt="Premium hardscape and landscape design by Elevation Landscapes Greenville SC" className="w-full h-full object-cover" loading="lazy" />
             </div>
             {/* 4 cards in 2x2 grid on the right */}
             {whyUsItems.slice(0, 4).map((item, i) => (
@@ -278,7 +278,7 @@ const Index = () => {
             {/* Right — Photo with overlapping quote */}
             <div className="relative">
               <div className="rounded-xl overflow-hidden">
-                <img src={processPhoto} alt="Landscape design consultation" className="w-full h-auto object-cover" loading="lazy" />
+                <img src={processPhoto} alt="Landscape design consultation with Elevation Landscapes in Upstate South Carolina" className="w-full h-auto object-cover" loading="lazy" />
               </div>
               <div className="relative lg:absolute lg:-bottom-8 lg:-left-12 bg-popover border border-border rounded-xl p-6 shadow-lg mt-6 lg:mt-0 max-w-sm">
                 <span className="font-serif text-gold text-4xl leading-none block mb-2">"</span>
@@ -356,14 +356,14 @@ const Index = () => {
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Before */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
-              <img src={portfolioBefore} alt="Before landscaping" className="w-full h-full object-cover" loading="lazy" />
+              <img src={portfolioBefore} alt="Upstate SC yard before professional landscape design by Elevation Landscapes" className="w-full h-full object-cover" loading="lazy" />
               <span className="absolute bottom-4 left-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 Before
               </span>
             </div>
             {/* After */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
-              <img src={portfolioAfter} alt="After landscaping" className="w-full h-full object-cover" loading="lazy" />
+              <img src={portfolioAfter} alt="Completed luxury landscape transformation by Elevation Landscapes in Greenville SC" className="w-full h-full object-cover" loading="lazy" />
               <span className="absolute top-4 right-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 After
               </span>

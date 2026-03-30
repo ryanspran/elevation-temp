@@ -52,7 +52,7 @@ export default function PlantCard({ plant, index = 0, searchQuery }: PlantCardPr
             )}
             <img
               src={plant.photo_url!}
-              alt={plant.common_name}
+              alt={`${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""} — ${plant.plant_type || "plant"} for Upstate SC landscapes`}
               loading="lazy"
               onLoad={handleLoad}
               onError={handleError}

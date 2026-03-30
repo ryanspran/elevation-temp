@@ -63,7 +63,7 @@ function CompactPlantCard({ plant }: { plant: Plant }) {
         {plant.photo_url ? (
           <img
             src={plant.photo_url}
-            alt={plant.common_name}
+            alt={`${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""} — ${plant.plant_type || "plant"} for Upstate SC`}
             loading="lazy"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
