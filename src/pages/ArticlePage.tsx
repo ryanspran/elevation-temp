@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { Badge } from "@/components/ui/badge";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 import outdoorKitchenHero from "@/assets/articles/outdoor-kitchen-hero.jpg";
 import outdoorKitchenDetail from "@/assets/articles/outdoor-kitchen-detail.jpg";
@@ -520,6 +521,14 @@ const ArticlePage = () => {
           <div className="absolute inset-0 bg-navy/70" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-12">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Articles", href: "/articles" },
+              { label: article.title },
+            ]}
+            className="mb-4"
+          />
           <Badge className="bg-gold/15 text-gold border-gold/30 hover:bg-gold/25 text-xs font-sans uppercase tracking-wider mb-4">
             {article.category}
           </Badge>
