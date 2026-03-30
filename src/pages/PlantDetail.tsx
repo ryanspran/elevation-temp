@@ -271,7 +271,7 @@ const PlantDetail = () => {
 
 /* ---- Sub-components ---- */
 
-function PlantPhoto({ plant }: { plant: { common_name: string; photo_url: string | null } }) {
+function PlantPhoto({ plant }: { plant: { common_name: string; botanical_name?: string | null; photo_url: string | null } }) {
   const [imgError, setImgError] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
   const letter = plant.common_name.charAt(0).toUpperCase();
