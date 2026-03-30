@@ -176,8 +176,8 @@ const Articles = () => {
     <>
       <SEOHead
         page="articles"
-        fallbackTitle="Landscape Insights | Elevation Landscapes"
-        fallbackDescription="Expert articles on hardscaping, landscape design, and outdoor living from the Upstate SC luxury landscape professionals."
+        fallbackTitle="Landscaping Tips & Guides Upstate SC | Elevation Landscapes"
+        fallbackDescription="Expert articles on hardscaping, landscape design, outdoor kitchens, and lighting from Upstate SC's premier luxury landscape professionals."
         path="/articles"
         jsonLd={jsonLd}
       />

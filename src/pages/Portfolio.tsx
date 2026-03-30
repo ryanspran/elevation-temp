@@ -23,8 +23,8 @@ const Portfolio = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         page="portfolio"
-        fallbackTitle="Portfolio | Elevation Landscapes Upstate SC"
-        fallbackDescription="Explore our luxury landscape design portfolio — paver patios, stone walls, outdoor kitchens, fire pits, and more across Upstate South Carolina."
+        fallbackTitle="Our Work — Landscape & Hardscape Portfolio | Elevation Landscapes"
+        fallbackDescription="See our luxury landscape design portfolio — paver patios, stone walls, outdoor kitchens, fire pits, and more across Upstate South Carolina."
         path="/portfolio"
       />
       <Navbar />
