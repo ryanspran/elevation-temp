@@ -10,7 +10,7 @@ import { usePlantBySlug } from "@/hooks/usePlant";
 import { usePlants } from "@/hooks/usePlants";
 import RelatedPlants from "@/components/plant-detail/RelatedPlants";
 import RelatedServices from "@/components/plant-detail/RelatedServices";
-import { useState } from "react";
+import React, { useState } from "react";
 import { toast } from "sonner";
 
 const PlantDetail = () => {
@@ -278,7 +278,14 @@ const PlantDetail = () => {
 function PlantPhoto({ plant }: { plant: { common_name: string; botanical_name?: string | null; photo_url: string | null } }) {
   const [imgError, setImgError] = useState(false);
   const [imgLoaded, setImgLoaded] = useState(false);
+  const imgRef = React.useRef<HTMLImageElement>(null);
   const letter = plant.common_name.charAt(0).toUpperCase();
+
+  React.useEffect(() => {
+    if (imgRef.current?.complete && imgRef.current.naturalWidth > 0) {
+      setImgLoaded(true);
+    }
+  }, [plant.photo_url]);
 
   if (!plant.photo_url || imgError) {
     return (
@@ -292,6 +299,7 @@ function PlantPhoto({ plant }: { plant: { common_name: string; botanical_name?: 
     <div className="w-full aspect-[4/5] relative overflow-hidden rounded-lg bg-card-dark">
       {!imgLoaded && <div className="absolute inset-0 shimmer-bg animate-shimmer rounded-lg" />}
       <img
+        ref={imgRef}
         src={plant.photo_url}
         alt={`${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""} growing in Upstate South Carolina`}
         className={`w-full h-full object-cover rounded-lg transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
