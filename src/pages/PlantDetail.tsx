@@ -7,6 +7,8 @@ import SEOHead from "@/components/SEOHead";
 import { Skeleton } from "@/components/ui/skeleton";
 import { usePlantBySlug } from "@/hooks/usePlant";
 import { usePlants } from "@/hooks/usePlants";
+import RelatedPlants from "@/components/plant-detail/RelatedPlants";
+import RelatedServices from "@/components/plant-detail/RelatedServices";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -218,6 +220,12 @@ const PlantDetail = () => {
               </div>
             </div>
           </section>
+
+          {/* Related Plants & Services */}
+          {sortedPlants.length > 0 && (
+            <RelatedPlants current={plant} allPlants={sortedPlants} />
+          )}
+          <RelatedServices plant={plant} />
 
           {/* Prev / Next */}
           <section className="bg-navy py-8 border-t border-gold/10 print:hidden">
