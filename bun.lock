@@ -89,19 +89,19 @@
 
     "@alloc/quick-lru": ["@alloc/quick-lru@5.2.0", "", {}, "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="],
 
-    "@apify/consts": ["@apify/consts@2.51.1", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/consts/-/consts-2.51.1.tgz", {}, "sha512-QV16f41BjmE7uYQgB+JeS5bhbEdFvP8eF1R5LiKlvGkERckSlMl1JIIaW1b/XwJdp3bEBKBGPtNlvYa06wyhwg=="],
+    "@apify/consts": ["@apify/consts@2.52.0", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/consts/-/consts-2.52.0.tgz", {}, "sha512-qFktl5YUPSpJBOk+MpH1MMnWmLBp1ZudpcPilbteXVBjXmr4LeX+JaKEjVtUS1VaH6RPDoKFZAU4en9TO2QKSg=="],
 
     "@apify/datastructures": ["@apify/datastructures@2.0.3", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/datastructures/-/datastructures-2.0.3.tgz", {}, "sha512-E6yQyc/XZDqJopbaGmhzZXMJqwGf96ELtDANZa0t68jcOAJZS+pF7YUfQOLszXq6JQAdnRvTH2caotL6urX7HA=="],
 
-    "@apify/log": ["@apify/log@2.5.33", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/log/-/log-2.5.33.tgz", { "dependencies": { "@apify/consts": "^2.51.1", "ansi-colors": "^4.1.1" } }, "sha512-rD+RY/Lvgy2ZAQD6QHbzoGHKvqILSXHZggTv2PN80ZZl7JMVQ22pYpoysYITHl4eGuievCiwrhkvdbNqTHqoPQ=="],
+    "@apify/log": ["@apify/log@2.5.34", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/log/-/log-2.5.34.tgz", { "dependencies": { "@apify/consts": "^2.52.0", "ansi-colors": "^4.1.1" } }, "sha512-H6vGSvH9lgchpaKkTMtlhF1BI+FaFOyumBox2dEH84oGJpHYVdhj3065ZpvIVcOODntrrrY9176OTURnUvgG7A=="],
 
     "@apify/ps-tree": ["@apify/ps-tree@1.2.0", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/ps-tree/-/ps-tree-1.2.0.tgz", { "dependencies": { "event-stream": "3.3.4" }, "bin": { "ps-tree": "bin/ps-tree.js" } }, "sha512-VHIswI7rD/R4bToeIDuJ9WJXt+qr5SdhfoZ9RzdjmCs9mgy7l0P4RugQEUCcU+WB4sfImbd4CKwzXcn0uYx1yw=="],
 
-    "@apify/pseudo_url": ["@apify/pseudo_url@2.0.74", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/pseudo_url/-/pseudo_url-2.0.74.tgz", { "dependencies": { "@apify/log": "^2.5.33" } }, "sha512-iMa7MzKn/5dWwSmOj3jZ+33NCRUdbyKsOTZytlowQgblV3yL8YFLziWcA1GlH6spIHG8073gIQMOecXvQYpvNA=="],
+    "@apify/pseudo_url": ["@apify/pseudo_url@2.0.75", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/pseudo_url/-/pseudo_url-2.0.75.tgz", { "dependencies": { "@apify/log": "^2.5.34" } }, "sha512-dSP/ikQQJhokoOUlNmX9M3HaCgIjpO2deDHhgNkZgs0xyCL0HJVGD9pdRThT0kITY73DCLu8MPc1jaTpRJ+NOg=="],
 
     "@apify/timeout": ["@apify/timeout@0.3.2", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/timeout/-/timeout-0.3.2.tgz", {}, "sha512-JnOLIOpqfm366q7opKrA6HrL0iYRpYYDn8Mi77sMR2GZ1fPbwMWCVzN23LJWfJV7izetZbCMrqRUXsR1etZ7dA=="],
 
-    "@apify/utilities": ["@apify/utilities@2.25.5", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/utilities/-/utilities-2.25.5.tgz", { "dependencies": { "@apify/consts": "^2.51.1", "@apify/log": "^2.5.33" } }, "sha512-I53XgSbNw2mYHPbPTIM7CjooHBHapWzvW6eKxpzt5IO9zB3OIzWOk2xRCodi1pAt3+A+BGiJJyddF/cQYGJenA=="],
+    "@apify/utilities": ["@apify/utilities@2.25.6", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@apify/utilities/-/utilities-2.25.6.tgz", { "dependencies": { "@apify/consts": "^2.52.0", "@apify/log": "^2.5.34" } }, "sha512-pCANZm6kZ631PCpzBcICESU850Jn2L7hqpOl1zuAR1Q7U7g8b2JYtnvIH3mDFfP/yWbCrse6algH5dRPqWXAqw=="],
 
     "@asamuzakjp/css-color": ["@asamuzakjp/css-color@3.2.0", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/@asamuzakjp/css-color/-/css-color-3.2.0.tgz", { "dependencies": { "@csstools/css-calc": "^2.1.3", "@csstools/css-color-parser": "^3.0.9", "@csstools/css-parser-algorithms": "^3.0.4", "@csstools/css-tokenizer": "^3.0.3", "lru-cache": "^10.4.3" } }, "sha512-K1A6z8tS3XsmCMM86xoWdn7Fkdn9m6RSVtocUrJYIwZnFVkng/PvkEoWtOWmP+Scc6saYWHWZYbndEEXxl24jw=="],
 
