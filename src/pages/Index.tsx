@@ -19,7 +19,7 @@ import testimonialsBg from "@/assets/testimonials-bg.jpg";
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
-  "@type": "LandscapingBusiness",
+  "@type": "LocalBusiness",
   name: "Elevation Landscapes",
   description: "Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential, builder, and commercial clients who demand the finest in outdoor design.",
   url: "https://elevationlandscapes.com",
@@ -31,14 +31,21 @@ const localBusinessJsonLd = {
     addressCountry: "US",
   },
   areaServed: [
-    "Greenville, SC", "Travelers Rest, SC", "Greer, SC", "Simpsonville, SC",
-    "Mauldin, SC", "Easley, SC", "Taylors, SC", "Spartanburg, SC", "Anderson, SC",
+    { "@type": "AdministrativeArea", name: "Greenville, SC" },
+    { "@type": "AdministrativeArea", name: "Travelers Rest, SC" },
+    { "@type": "AdministrativeArea", name: "Greer, SC" },
+    { "@type": "AdministrativeArea", name: "Simpsonville, SC" },
+    { "@type": "AdministrativeArea", name: "Mauldin, SC" },
+    { "@type": "AdministrativeArea", name: "Easley, SC" },
+    { "@type": "AdministrativeArea", name: "Taylors, SC" },
+    { "@type": "AdministrativeArea", name: "Spartanburg, SC" },
+    { "@type": "AdministrativeArea", name: "Anderson, SC" },
   ],
   priceRange: "$$$",
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "5",
-    reviewCount: "3",
+    ratingValue: 5,
+    reviewCount: 3,
   },
 };
 
