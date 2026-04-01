@@ -853,9 +853,9 @@
 
     "find-up": ["find-up@5.0.0", "", { "dependencies": { "locate-path": "^6.0.0", "path-exists": "^4.0.0" } }, "sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng=="],
 
-    "fingerprint-generator": ["fingerprint-generator@2.1.81", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/fingerprint-generator/-/fingerprint-generator-2.1.81.tgz", { "dependencies": { "generative-bayesian-network": "^2.1.81", "header-generator": "^2.1.81", "tslib": "^2.4.0" } }, "sha512-R8Cgnv9AhsTG8MN+DCuFolq2cJPdTNDKOM11EaRSCfRBnBGsPWTTm9e3INld1rzU+bMITvqAcghlCjXOVCrYUA=="],
+    "fingerprint-generator": ["fingerprint-generator@2.1.82", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/fingerprint-generator/-/fingerprint-generator-2.1.82.tgz", { "dependencies": { "generative-bayesian-network": "^2.1.82", "header-generator": "^2.1.82", "tslib": "^2.4.0" } }, "sha512-5Z/yCKW324pMyMarpIKe/QPdkrFWKNJv3ktdU+fXHri80+HAwNE6QhMvEvsMkK9Q8DeCXZlpPHV77UBa1nFb4A=="],
 
-    "fingerprint-injector": ["fingerprint-injector@2.1.81", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/fingerprint-injector/-/fingerprint-injector-2.1.81.tgz", { "dependencies": { "fingerprint-generator": "^2.1.81", "tslib": "^2.4.0" }, "peerDependencies": { "playwright": "^1.22.2", "puppeteer": ">= 9.x" }, "optionalPeers": ["playwright", "puppeteer"] }, "sha512-/HlE+pDTety9ygiYHdlh+7lDhrm5sxOB7ThWdhDwDVqSr7zI4D/Ruqhg7iDmxMLVWTcUCXsiA9h9tgQgSiPolw=="],
+    "fingerprint-injector": ["fingerprint-injector@2.1.82", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/fingerprint-injector/-/fingerprint-injector-2.1.82.tgz", { "dependencies": { "fingerprint-generator": "^2.1.82", "tslib": "^2.4.0" }, "peerDependencies": { "playwright": "^1.22.2", "puppeteer": ">= 9.x" }, "optionalPeers": ["playwright", "puppeteer"] }, "sha512-FN7W1wbhHk2PBCF6wpBEcFnmOdGUItZnbpVBtYVcQ1/iGM0skNUDqJyH1YOjmpQiqEl2Rhh7qWNXYsivjsT+tg=="],
 
     "flat-cache": ["flat-cache@4.0.1", "", { "dependencies": { "flatted": "^3.2.9", "keyv": "^4.5.4" } }, "sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw=="],
 
@@ -877,7 +877,7 @@
 
     "function-bind": ["function-bind@1.1.2", "", {}, "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA=="],
 
-    "generative-bayesian-network": ["generative-bayesian-network@2.1.81", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/generative-bayesian-network/-/generative-bayesian-network-2.1.81.tgz", { "dependencies": { "adm-zip": "^0.5.9", "tslib": "^2.4.0" } }, "sha512-LrYK+CY5n21p437oahz8jRqTgw0i+S08H+ypag1sgZilfCj33k8Tp8kcFtPiWKsEEJ6niN9gRFP12+r06xB4rQ=="],
+    "generative-bayesian-network": ["generative-bayesian-network@2.1.82", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/generative-bayesian-network/-/generative-bayesian-network-2.1.82.tgz", { "dependencies": { "adm-zip": "^0.5.9", "tslib": "^2.4.0" } }, "sha512-DH4NrmQheoMaJErdVv2IzaqkbOYSDQZmiZTV6UPDJYRDK2EyPpIQ88XRcYdPeFrUjS1N0Jj25H3HUywoJ1dbow=="],
 
     "get-caller-file": ["get-caller-file@2.0.5", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/get-caller-file/-/get-caller-file-2.0.5.tgz", {}, "sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg=="],
 
@@ -915,7 +915,7 @@
 
     "hasown": ["hasown@2.0.2", "", { "dependencies": { "function-bind": "^1.1.2" } }, "sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ=="],
 
-    "header-generator": ["header-generator@2.1.81", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/header-generator/-/header-generator-2.1.81.tgz", { "dependencies": { "browserslist": "^4.21.1", "generative-bayesian-network": "^2.1.81", "ow": "^0.28.1", "tslib": "^2.4.0" } }, "sha512-6+27UuqCHFx4xrTWIgcSF/x2WJ+PuVLxziXfPaVLRXi1lXIbTkXO+ffHJefVrdRT5/XEeWfJHrSIE2m1hAdWxw=="],
+    "header-generator": ["header-generator@2.1.82", "https://europe-west4-npm.pkg.dev/lovable-core-prod/sandbox-npm-cache/header-generator/-/header-generator-2.1.82.tgz", { "dependencies": { "browserslist": "^4.21.1", "generative-bayesian-network": "^2.1.82", "ow": "^0.28.1", "tslib": "^2.4.0" } }, "sha512-4NjPB0+bAKjPoponSmTOkK58IEF2W22sOJA5O48k/MxbCZgOm+jrU4WVR53Z2I6xFgIPkVrQmKtt1LAbWtfqXw=="],
 
     "html-encoding-sniffer": ["html-encoding-sniffer@3.0.0", "", { "dependencies": { "whatwg-encoding": "^2.0.0" } }, "sha512-oWv4T4yJ52iKrufjnyZPkrN0CH3QnrUqdB6In1g5Fe1mia8GmF36gnfNySxoZtxD5+NmYw1EElVXiBk93UeskA=="],
 
