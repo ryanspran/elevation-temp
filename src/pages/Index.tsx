@@ -205,7 +205,7 @@ const Index = () => {
             <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Our Services</h2>
             <div className="w-16 h-0.5 bg-gold mx-auto" />
           </div>
-          <Carousel opts={{ align: "start", loop: true, dragFree: true }} className="w-full">
+          <Carousel opts={{ align: "start", loop: true }} className="w-full">
             <CarouselContent className="-ml-4">
               {services.map((service) => (
                 <CarouselItem key={service.slug} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
