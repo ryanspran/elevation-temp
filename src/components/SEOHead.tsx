@@ -11,7 +11,7 @@ interface SEOHeadProps {
 
 const SITE_URL = "https://elevationlandscapes.com";
 
-const SEOHead = ({ page, fallbackTitle, fallbackDescription, path = "", jsonLd, ogImageOverride }: SEOHeadProps) => {
+const SEOHead = ({ page, fallbackTitle, fallbackDescription, path = "", ogImageOverride }: SEOHeadProps) => {
   const { data: seo } = usePageSEO(page);
 
   const title = seo?.title || fallbackTitle;
