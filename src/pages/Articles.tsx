@@ -165,13 +165,6 @@ const ArticleCard = ({
 };
 
 const Articles = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    name: "Elevation Landscapes Insights",
-    url: "https://elevationlandscapes.com/articles",
-  };
-
   return (
     <>
       <SEOHead
