@@ -1,32 +1,43 @@
 
 
-## Fix: Invalid object type for field "parent_node"
+## Create 7 City-Specific Service Area Landing Pages
 
-Google Search Console is reporting this error because the site outputs multiple JSON-LD objects (e.g. FAQPage + BreadcrumbList) as a single JSON array in one `<script>` tag. Google's validator sometimes misinterprets array-based JSON-LD, treating one object as a parent of another.
+Add city landing pages under `/areas/` for local SEO, plus an index page, and link them from the homepage.
 
-**Root cause**: In `SEOHead.tsx`, when `jsonLd` is an array, it serializes the entire array into one `<script>` block.
+### Files to Create
 
-**Fix**: Render each JSON-LD object in its own separate `<script type="application/ld+json">` tag.
+1. **`src/data/cityPages.ts`** — Central data file containing all 7 city configurations (hero text, intro paragraphs, neighborhoods, emphasized service slugs, meta titles/descriptions). Single source of truth.
 
-### Change
+2. **`src/pages/CityPage.tsx`** — Dynamic page component (uses `useParams` for city slug). Sections:
+   - Breadcrumbs (Home > Areas > City, SC)
+   - Hero with H1, subheadline, dual CTA buttons
+   - Unique 2-3 paragraph city introduction
+   - Services grid (6-8 cards linking to `/services/[slug]`, reusing service card design)
+   - "Why [City] Homeowners Choose Us" differentiators
+   - Featured Neighborhoods list
+   - Bottom CTA section
+   - SEOHead with unique meta per city
 
-**`src/components/SEOHead.tsx`** — Replace the single JSON-LD script block with a loop that outputs one `<script>` per object:
+3. **`src/pages/Areas.tsx`** — Index page at `/areas` with grid of city cards, intro text, SC map, and bottom CTA.
 
-```tsx
-{jsonLd && (
-  Array.isArray(jsonLd)
-    ? jsonLd.map((item, i) => (
-        <script key={i} type="application/ld+json">
-          {JSON.stringify(item)}
-        </script>
-      ))
-    : (
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
-        </script>
-      )
-)}
-```
+### Files to Modify
 
-One file, ~10 lines changed. This affects all pages (FAQ, ServicePage, PlantDetail, ArticlePage, PlantGuide) that pass JSON-LD arrays — no changes needed in those files.
+4. **`src/App.tsx`** — Add 3 routes:
+   - `/areas` → Areas index
+   - `/areas/:citySlug` → CityPage
+   
+5. **`src/pages/Index.tsx`** — In the "Areas We Cover" section (~line 372-378), wrap each city name in a `<Link>` to its `/areas/` page. Only the 7 cities with pages get links; the other 3 (Spartanburg, Anderson, Fountain Inn) remain plain text.
+
+### Design Approach
+
+- Reuse existing patterns: navy/gold palette, Playfair Display headings, same CTA button styles, Breadcrumbs component, SEOHead component
+- Pull service images and names from `src/data/services.ts` for the service grid cards
+- Use the existing hero background image for city pages
+- No JSON-LD schema on these pages
+- No navigation menu changes
+- All unique content (intros, neighborhoods, differentiators) hardcoded in the data file per the user's specifications
+
+### Content Summary
+
+Each city gets genuinely unique intro paragraphs, 4-6 featured neighborhoods with descriptions, city-specific service emphasis, and unique meta descriptions — all as specified in the request.
 
