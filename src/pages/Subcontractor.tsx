@@ -46,19 +46,6 @@ const reasons = [
 ];
 
 const Subcontractor = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: "Hardscape & Landscape Subcontractor Services",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "Elevation Landscapes",
-      areaServed: "Upstate South Carolina",
-    },
-    description:
-      "Licensed hardscape and landscape subcontractor serving general contractors, custom home builders, and landscape companies across Upstate South Carolina.",
-  };
-
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
