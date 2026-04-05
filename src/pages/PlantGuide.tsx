@@ -291,7 +291,6 @@ const PlantGuide = () => {
         fallbackTitle="Plant Directory for Upstate SC | Elevation Landscapes"
         fallbackDescription="Browse 250+ trees, shrubs, perennials, and grasses curated for Upstate SC Zones 7b-8a. Filter by sun, water, maintenance, and native status."
         path="/plant-guide"
-        jsonLd={jsonLd}
       />
       <Navbar />
 

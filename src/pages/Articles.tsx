@@ -172,7 +172,6 @@ const Articles = () => {
         fallbackTitle="Landscaping Tips & Guides Upstate SC | Elevation Landscapes"
         fallbackDescription="Expert articles on hardscaping, landscape design, outdoor kitchens, and lighting from Upstate SC's premier luxury landscape professionals."
         path="/articles"
-        jsonLd={jsonLd}
       />
       <Navbar />
 

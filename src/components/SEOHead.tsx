@@ -34,19 +34,6 @@ const SEOHead = ({ page, fallbackTitle, fallbackDescription, path = "", ogImageO
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
-      {jsonLd && (
-        Array.isArray(jsonLd)
-          ? jsonLd.map((item, i) => (
-              <script key={i} type="application/ld+json">
-                {JSON.stringify(item)}
-              </script>
-            ))
-          : (
-              <script type="application/ld+json">
-                {JSON.stringify(jsonLd)}
-              </script>
-            )
-      )}
     </Helmet>
   );
 };

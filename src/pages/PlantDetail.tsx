@@ -88,7 +88,6 @@ const PlantDetail = () => {
         fallbackTitle={seoTitle}
         fallbackDescription={seoDescription}
         path={`/plants/${slug}`}
-        jsonLd={jsonLd}
         ogImageOverride={ogImageUrl}
       />
       <Navbar />

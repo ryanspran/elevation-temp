@@ -477,7 +477,6 @@ const ArticlePage = () => {
         fallbackTitle={article.seoTitle}
         fallbackDescription={article.seoDescription}
         path={`/articles/${slug}`}
-        jsonLd={[blogPostingJsonLd, breadcrumbJsonLd]}
       />
       <Navbar />
 

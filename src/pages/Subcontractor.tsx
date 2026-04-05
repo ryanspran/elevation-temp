@@ -53,7 +53,6 @@ const Subcontractor = () => {
         fallbackTitle="Hardscape Subcontractor Upstate SC | Elevation Landscapes"
         fallbackDescription="Elevation Landscapes partners with general contractors, builders, and landscape companies across Upstate SC as a trusted hardscape and landscape subcontractor."
         path="/subcontractor"
-        jsonLd={jsonLd}
       />
       <Navbar />
 

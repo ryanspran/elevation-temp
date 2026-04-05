@@ -133,7 +133,6 @@ const FAQ = () => {
         fallbackTitle="Landscaping FAQ — Upstate SC | Elevation Landscapes"
         fallbackDescription="Answers to common landscaping and hardscape questions for Upstate SC homeowners — timelines, costs, materials, maintenance, permits, and more."
         path="/faq"
-        jsonLd={[faqJsonLd, breadcrumbJsonLd]}
       />
       <Navbar />
 

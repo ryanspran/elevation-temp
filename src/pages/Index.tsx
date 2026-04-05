@@ -67,7 +67,6 @@ const Index = () => {
         fallbackTitle="Luxury Landscape Design Upstate SC | Elevation Landscapes"
         fallbackDescription="Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential and commercial clients."
         path="/"
-        jsonLd={localBusinessJsonLd}
       />
       <Navbar />
 
