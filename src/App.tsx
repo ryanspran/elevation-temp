@@ -21,6 +21,8 @@ import PlantGuide from "./pages/PlantGuide";
 import PlantDetail from "./pages/PlantDetail";
 import PlantRedirect from "./pages/PlantRedirect";
 import Identify from "./pages/Identify";
+import Areas from "./pages/Areas";
+import CityPage from "./pages/CityPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +50,8 @@ const App = () => (
             {/* Legacy redirect: /plant-guide/:id → /plants/:slug */}
             <Route path="/plant-guide/:id" element={<PlantRedirect />} />
             <Route path="/identify" element={<Identify />} />
+            <Route path="/areas" element={<Areas />} />
+            <Route path="/areas/:citySlug" element={<CityPage />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin"
