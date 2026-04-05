@@ -17,59 +17,6 @@ import processPhoto from "@/assets/process-photo.jpg";
 import landscapePhoto from "@/assets/landscape-photo.jpg";
 import testimonialsBg from "@/assets/testimonials-bg.jpg";
 
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LandscapingService",
-  "@id": "https://elevationlandscapes.com/#organization",
-  name: "Elevation Landscapes",
-  url: "https://elevationlandscapes.com",
-  logo: "https://elevationlandscapes.com/assets/logo-B8-mHE4m.png",
-  image: "https://elevationlandscapes.com/assets/hero-bg-Df_2m8JU.jpg",
-  telephone: "+1-864-325-1623",
-  description: "Luxury hardscaping and landscaping company serving Greenville and Upstate South Carolina. We specialize in custom patio design, retaining walls, outdoor kitchens, landscape lighting, and premium outdoor living spaces.",
-  priceRange: "$$$$",
-  areaServed: [
-    { "@type": "City", name: "Greenville", addressRegion: "SC", addressCountry: "US" },
-    { "@type": "City", name: "Simpsonville", addressRegion: "SC", addressCountry: "US" },
-    { "@type": "City", name: "Greer", addressRegion: "SC", addressCountry: "US" },
-    { "@type": "City", name: "Travelers Rest", addressRegion: "SC", addressCountry: "US" },
-    { "@type": "City", name: "Mauldin", addressRegion: "SC", addressCountry: "US" },
-    { "@type": "City", name: "Taylors", addressRegion: "SC", addressCountry: "US" },
-    { "@type": "City", name: "Easley", addressRegion: "SC", addressCountry: "US" },
-    { "@type": "City", name: "Spartanburg", addressRegion: "SC", addressCountry: "US" },
-    { "@type": "City", name: "Anderson", addressRegion: "SC", addressCountry: "US" },
-    { "@type": "City", name: "Fountain Inn", addressRegion: "SC", addressCountry: "US" },
-  ],
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: "34.8526",
-    longitude: "-82.3940",
-  },
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Landscaping & Hardscaping Services",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Paver Patios", url: "https://elevationlandscapes.com/services/paver-patios" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Block Retaining Walls", url: "https://elevationlandscapes.com/services/block-retaining-walls" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Boulder Retaining Walls", url: "https://elevationlandscapes.com/services/boulder-retaining-walls" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Custom Stone Pathways", url: "https://elevationlandscapes.com/services/custom-stone-pathways" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Custom Water Features", url: "https://elevationlandscapes.com/services/custom-water-features" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gas Fire Pits", url: "https://elevationlandscapes.com/services/outdoor-gas-fire-pits" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Grading Solutions", url: "https://elevationlandscapes.com/services/grading-solutions" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Irrigation Install & Repair", url: "https://elevationlandscapes.com/services/irrigation-installation-repair" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Landscape Lighting", url: "https://elevationlandscapes.com/services/landscape-lighting" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Landscape Remediation", url: "https://elevationlandscapes.com/services/landscape-remediation" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Natural Stone Staircases", url: "https://elevationlandscapes.com/services/natural-stone-staircases" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "New Plant Installation", url: "https://elevationlandscapes.com/services/new-plant-installation" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Outdoor Kitchens", url: "https://elevationlandscapes.com/services/outdoor-kitchens" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pool Decks & Coping", url: "https://elevationlandscapes.com/services/pool-decks-pool-coping" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sod & Seeding", url: "https://elevationlandscapes.com/services/sod-and-seeding" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Underground Drainage Solutions", url: "https://elevationlandscapes.com/services/underground-drainage-solutions" } },
-    ],
-  },
-  sameAs: [],
-};
-
 const Index = () => {
   const [testimonialApi, setTestimonialApi] = useState<CarouselApi>();
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -120,7 +67,6 @@ const Index = () => {
         fallbackTitle="Luxury Landscape Design Upstate SC | Elevation Landscapes"
         fallbackDescription="Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential and commercial clients."
         path="/"
-        jsonLd={localBusinessJsonLd}
       />
       <Navbar />
 

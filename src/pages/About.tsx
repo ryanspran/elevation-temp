@@ -13,27 +13,6 @@ const About = () => {
         fallbackTitle="About Elevation Landscapes | Upstate SC Landscape Design"
         fallbackDescription="Learn about Elevation Landscapes — Upstate South Carolina's premier luxury landscape design firm serving the region's most discerning residential and commercial clients."
         path="/about"
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          name: "Elevation Landscapes",
-          url: "https://elevationlandscapes.com",
-          logo: "https://elevationlandscapes.com/assets/logo-B8-mHE4m.png",
-          description: "Luxury hardscaping and landscaping company serving Greenville and Upstate South Carolina.",
-          telephone: "+1-864-325-1623",
-          areaServed: "Upstate South Carolina",
-          knowsAbout: [
-            "Hardscaping",
-            "Landscape Design",
-            "Paver Patios",
-            "Retaining Walls",
-            "Outdoor Kitchens",
-            "Landscape Lighting",
-            "Irrigation Systems",
-            "Drainage Solutions",
-          ],
-          sameAs: [],
-        }}
       />
       <Navbar />
 

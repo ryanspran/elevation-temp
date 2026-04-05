@@ -6,13 +6,12 @@ interface SEOHeadProps {
   fallbackTitle: string;
   fallbackDescription: string;
   path?: string;
-  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   ogImageOverride?: string;
 }
 
 const SITE_URL = "https://elevationlandscapes.com";
 
-const SEOHead = ({ page, fallbackTitle, fallbackDescription, path = "", jsonLd, ogImageOverride }: SEOHeadProps) => {
+const SEOHead = ({ page, fallbackTitle, fallbackDescription, path = "", ogImageOverride }: SEOHeadProps) => {
   const { data: seo } = usePageSEO(page);
 
   const title = seo?.title || fallbackTitle;
@@ -35,19 +34,6 @@ const SEOHead = ({ page, fallbackTitle, fallbackDescription, path = "", jsonLd, 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={ogTitle} />
       <meta name="twitter:description" content={ogDescription} />
-      {jsonLd && (
-        Array.isArray(jsonLd)
-          ? jsonLd.map((item, i) => (
-              <script key={i} type="application/ld+json">
-                {JSON.stringify(item)}
-              </script>
-            ))
-          : (
-              <script type="application/ld+json">
-                {JSON.stringify(jsonLd)}
-              </script>
-            )
-      )}
     </Helmet>
   );
 };

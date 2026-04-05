@@ -274,24 +274,6 @@ const PlantGuide = () => {
   const activeFilterCount = countActiveFilters(filters);
   const activePills = getActiveFilterPills(filters);
 
-  const jsonLd = [
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      name: "Plant & Tree Directory — Elevation Landscapes",
-      description: "Browse 250+ plants and trees curated for Upstate South Carolina landscapes. USDA Zones 7b-8a.",
-      url: "https://elevationlandscapes.com/plant-guide",
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://elevationlandscapes.com/" },
-        { "@type": "ListItem", position: 2, name: "Plant Guide", item: "https://elevationlandscapes.com/plant-guide" },
-      ],
-    },
-  ];
-
   const sidebarContent = (
     <PlantFilterSidebar
       filters={filters}
@@ -309,7 +291,6 @@ const PlantGuide = () => {
         fallbackTitle="Plant Directory for Upstate SC | Elevation Landscapes"
         fallbackDescription="Browse 250+ trees, shrubs, perennials, and grasses curated for Upstate SC Zones 7b-8a. Filter by sun, water, maintenance, and native status."
         path="/plant-guide"
-        jsonLd={jsonLd}
       />
       <Navbar />
 

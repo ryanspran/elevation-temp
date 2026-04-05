@@ -125,41 +125,6 @@ const faqCategories = [
   },
 ];
 
-// Build JSON-LD
-const allQuestions = faqCategories.flatMap((cat) => cat.questions);
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: allQuestions.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.a,
-    },
-  })),
-};
-
-const breadcrumbJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: "https://elevationlandscapes.com/",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "FAQ",
-      item: "https://elevationlandscapes.com/faq",
-    },
-  ],
-};
-
 const FAQ = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -168,7 +133,6 @@ const FAQ = () => {
         fallbackTitle="Landscaping FAQ — Upstate SC | Elevation Landscapes"
         fallbackDescription="Answers to common landscaping and hardscape questions for Upstate SC homeowners — timelines, costs, materials, maintenance, permits, and more."
         path="/faq"
-        jsonLd={[faqJsonLd, breadcrumbJsonLd]}
       />
       <Navbar />
 
