@@ -31,15 +31,28 @@ const ServicePage = () => {
     "@context": "https://schema.org",
     "@type": "Service",
     name: service.name,
-    description: service.subheadline,
+    description: service.subheadline.slice(0, 160),
+    url: `https://elevationlandscapes.com/services/${slug}`,
     provider: {
-      "@type": "LandscapingBusiness",
+      "@type": "LandscapingService",
+      "@id": "https://elevationlandscapes.com/#organization",
       name: "Elevation Landscapes",
+      telephone: "+1-864-325-1623",
       url: "https://elevationlandscapes.com",
     },
-    areaServed: {
-      "@type": "Place",
-      name: "Upstate South Carolina",
+    areaServed: [
+      { "@type": "City", name: "Greenville", addressRegion: "SC" },
+      { "@type": "City", name: "Simpsonville", addressRegion: "SC" },
+      { "@type": "City", name: "Greer", addressRegion: "SC" },
+      { "@type": "City", name: "Travelers Rest", addressRegion: "SC" },
+      { "@type": "City", name: "Mauldin", addressRegion: "SC" },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: service.name,
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: service.name } },
+      ],
     },
   };
 
