@@ -61,8 +61,11 @@ const Index = () => {
     "Mauldin", "Easley", "Taylors", "Spartanburg", "Anderson", "Fountain Inn"
   ];
 
+  const websiteSchema = {"@context":"https://schema.org","@type":"WebSite","name":"Elevation Landscapes","url":"https://elevationlandscapes.com"};
+
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <SEOHead
         page="home"
         fallbackTitle="Luxury Landscape Design Upstate SC | Elevation Landscapes"
