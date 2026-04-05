@@ -20,6 +20,7 @@ const ServicePage = () => {
 
   return (
     <div className="min-h-screen">
+      <FaqSchema faqs={service.faqs} />
       <SEOHead
         page={`service-${slug}`}
         fallbackTitle={service.seoTitle}

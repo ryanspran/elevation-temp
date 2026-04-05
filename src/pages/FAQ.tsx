@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import FaqSchema from "@/components/FaqSchema";
 
 const faqCategories = [
   {
