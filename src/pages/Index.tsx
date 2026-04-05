@@ -10,6 +10,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 import introBg from "@/assets/intro-bg.jpg";
 import introPhoto from "@/assets/intro-photo.jpg";
 import SCMap from "@/components/SCMap";
+import { citySlugMap } from "@/data/cityPages";
 import portfolioBefore from "@/assets/portfolio-before.jpg";
 import portfolioAfter from "@/assets/portfolio-after.jpg";
 import whyUsPhoto from "@/assets/why-us-photo.jpg";
