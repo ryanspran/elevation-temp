@@ -6,7 +6,6 @@ interface SEOHeadProps {
   fallbackTitle: string;
   fallbackDescription: string;
   path?: string;
-  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   ogImageOverride?: string;
 }
 
