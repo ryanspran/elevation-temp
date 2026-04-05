@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Phone, MapPin } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -6,103 +6,61 @@ import SEOHead from "@/components/SEOHead";
 import contactSidebar from "@/assets/contact-sidebar.jpg";
 import contactHero from "@/assets/contact-hero.jpg";
 
-const JOBBER_CLIENT_HUB_ID = "3572b14d-90ae-44ae-a1fa-521130ecb4d1-2540855";
-const JOBBER_FORM_URL = "https://clienthub.getjobber.com/client_hubs/3572b14d-90ae-44ae-a1fa-521130ecb4d1/public/work_request/embedded_work_request_form?form_id=2540855";
-const JOBBER_SCRIPT_URL = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
-const JOBBER_STYLES_URL = "https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css";
-const JOBBER_PRECONNECT_ORIGINS = [
-  "https://d3ey4dbjkt2f6s.cloudfront.net",
-  "https://clienthub.getjobber.com",
-];
-
-const ensureHeadLink = (id: string, rel: string, href: string, crossOrigin = false) => {
-  const existing = document.getElementById(id) as HTMLLinkElement | null;
-  if (existing) return existing;
-
-  const link = document.createElement("link");
-  link.id = id;
-  link.rel = rel;
-  link.href = href;
-  if (crossOrigin) {
-    link.crossOrigin = "anonymous";
-  }
-  document.head.appendChild(link);
-  return link;
-};
+const JOBBER_CONTAINER_ID = "3572b14d-90ae-44ae-a1fa-521130ecb4d1-2540855";
 
 const Contact = () => {
   const [formLoaded, setFormLoaded] = useState(false);
+  const slotRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let isMounted = true;
+    const source = document.getElementById(JOBBER_CONTAINER_ID);
+    const slot = slotRef.current;
+
+    if (!source || !slot) return;
+
+    // Move the pre-loaded Jobber container into our component
+    source.style.display = "";
+    slot.appendChild(source);
 
     const markLoaded = () => {
-      if (isMounted) {
-        setFormLoaded(true);
-      }
+      if (isMounted) setFormLoaded(true);
     };
 
-    JOBBER_PRECONNECT_ORIGINS.forEach((origin, index) => {
-      ensureHeadLink(`jobber-preconnect-${index}`, "preconnect", origin, true);
-    });
-    ensureHeadLink("jobber-work-request-styles", "stylesheet", JOBBER_STYLES_URL);
-
-    const attachIframeListener = () => {
-      const container = document.getElementById(JOBBER_CLIENT_HUB_ID);
-      const iframe = container?.querySelector("iframe");
-
-      if (!(iframe instanceof HTMLIFrameElement)) {
-        return false;
-      }
-
-      if (iframe.dataset.loaded === "true") {
+    // Check if iframe is already loaded
+    const iframe = source.querySelector("iframe");
+    if (iframe instanceof HTMLIFrameElement) {
+      if (iframe.clientHeight > 0) {
         markLoaded();
-        return true;
+      } else {
+        iframe.addEventListener("load", markLoaded, { once: true });
       }
-
-      const handleLoad = () => {
-        iframe.dataset.loaded = "true";
-        markLoaded();
-      };
-
-      iframe.addEventListener("load", handleLoad, { once: true });
-
-      if (iframe.src && iframe.clientHeight > 0) {
-        handleLoad();
-      }
-
-      return true;
-    };
-
-    const container = document.getElementById(JOBBER_CLIENT_HUB_ID);
-    const observer = new MutationObserver(() => {
-      attachIframeListener();
-    });
-
-    if (container) {
-      observer.observe(container, { childList: true, subtree: true });
     }
 
-    const script = document.createElement("script");
-    script.src = JOBBER_SCRIPT_URL;
-    script.async = true;
-    script.setAttribute("clienthub_id", JOBBER_CLIENT_HUB_ID);
-    script.setAttribute("form_url", JOBBER_FORM_URL);
-    script.addEventListener("load", attachIframeListener, { once: true });
-    document.body.appendChild(script);
-
-    const fallbackTimeout = window.setTimeout(() => {
-      const target = document.getElementById(JOBBER_CLIENT_HUB_ID);
-      if (target?.children.length) {
-        markLoaded();
+    // Watch for iframe injection
+    const observer = new MutationObserver(() => {
+      const el = source.querySelector("iframe");
+      if (el instanceof HTMLIFrameElement) {
+        if (el.clientHeight > 0) {
+          markLoaded();
+        } else {
+          el.addEventListener("load", markLoaded, { once: true });
+        }
       }
+    });
+    observer.observe(source, { childList: true, subtree: true });
+
+    const fallback = window.setTimeout(() => {
+      if (source.children.length) markLoaded();
     }, 2000);
 
     return () => {
       isMounted = false;
       observer.disconnect();
-      window.clearTimeout(fallbackTimeout);
-      script.remove();
+      window.clearTimeout(fallback);
+      // Move container back to body so it persists across navigations
+      source.style.display = "none";
+      document.body.appendChild(source);
     };
   }, []);
 
@@ -141,14 +99,12 @@ const Contact = () => {
       <section className="bg-cream py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
-            {/* Form — left 3 cols */}
             <div className="lg:col-span-3">
               <h2 className="font-serif text-3xl md:text-4xl text-text-dark mb-2">
                 Schedule Your Consultation
               </h2>
               <div className="w-16 h-0.5 bg-gold mb-8" />
 
-              {/* Jobber Embedded Form */}
               {!formLoaded && (
                 <div className="space-y-4 animate-pulse">
                   <div className="h-10 bg-muted rounded w-full" />
@@ -158,10 +114,9 @@ const Contact = () => {
                   <div className="h-10 bg-muted rounded w-1/3" />
                 </div>
               )}
-              <div id={JOBBER_CLIENT_HUB_ID} className={formLoaded ? "" : "hidden"}></div>
+              <div ref={slotRef} className={formLoaded ? "" : "hidden"} />
             </div>
 
-            {/* Right sidebar — image + contact info */}
             <div className="lg:col-span-2 space-y-8">
               <div className="bg-navy rounded-xl p-8">
                 <h3 className="font-serif text-xl text-secondary-foreground mb-6">
@@ -188,7 +143,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Vertical image */}
               <div className="rounded-xl overflow-hidden">
                 <img
                   src={contactSidebar}
