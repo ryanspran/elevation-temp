@@ -8,6 +8,7 @@ import SEOHead from "@/components/SEOHead";
 import heroBg from "@/assets/hero-bg.jpg";
 import NotFound from "./NotFound";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import FaqSchema from "@/components/FaqSchema";
 
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
