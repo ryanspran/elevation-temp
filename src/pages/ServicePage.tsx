@@ -17,55 +17,6 @@ const ServicePage = () => {
 
   const relatedServices = getRelatedServices(service.relatedSlugs);
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: service.faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
-    })),
-  };
-
-  const serviceJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: service.name,
-    description: service.subheadline.slice(0, 160),
-    url: `https://elevationlandscapes.com/services/${slug}`,
-    provider: {
-      "@type": "LandscapingService",
-      "@id": "https://elevationlandscapes.com/#organization",
-      name: "Elevation Landscapes",
-      telephone: "+1-864-325-1623",
-      url: "https://elevationlandscapes.com",
-    },
-    areaServed: [
-      { "@type": "City", name: "Greenville", addressRegion: "SC" },
-      { "@type": "City", name: "Simpsonville", addressRegion: "SC" },
-      { "@type": "City", name: "Greer", addressRegion: "SC" },
-      { "@type": "City", name: "Travelers Rest", addressRegion: "SC" },
-      { "@type": "City", name: "Mauldin", addressRegion: "SC" },
-    ],
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: service.name,
-      itemListElement: [
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: service.name } },
-      ],
-    },
-  };
-
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://elevationlandscapes.com" },
-      { "@type": "ListItem", position: 2, name: "Services", item: "https://elevationlandscapes.com/services" },
-      { "@type": "ListItem", position: 3, name: service.name, item: `https://elevationlandscapes.com/services/${slug}` },
-    ],
-  };
-
   return (
     <div className="min-h-screen">
       <SEOHead
