@@ -129,6 +129,7 @@ const faqCategories = [
 const FAQ = () => {
   return (
     <div className="min-h-screen bg-background">
+      <FaqSchema faqs={faqCategories.flatMap(cat => cat.questions.map(q => ({ question: q.q, answer: q.a })))} />
       <SEOHead
         page="faq"
         fallbackTitle="Landscaping FAQ — Upstate SC | Elevation Landscapes"
