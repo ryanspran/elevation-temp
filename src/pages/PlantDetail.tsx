@@ -77,37 +77,6 @@ const PlantDetail = () => {
     ? `${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""}: ${plant.sun_requirements || "Various sun"}, ${plant.water_needs || "Moderate"} water, ${plant.mature_size || "Various sizes"}. Expert guide for Upstate SC Zones 7b-8a. View growing conditions, landscape uses, and seasonal interest.`
     : "Plant details for Upstate SC landscapes.";
 
-  const jsonLd = plant
-    ? [
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          name: plant.common_name,
-          description: `${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""}. ${plant.special_features || ""} ${plant.landscape_use ? `Landscape use: ${plant.landscape_use}.` : ""}`.trim(),
-          url: `https://elevationlandscapes.com/plants/${plant.slug}`,
-          image: plant.photo_url || undefined,
-          publisher: {
-            "@type": "LocalBusiness",
-            name: "Elevation Landscapes",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Greenville",
-              addressRegion: "SC",
-            },
-          },
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://elevationlandscapes.com/" },
-            { "@type": "ListItem", position: 2, name: "Plant Directory", item: "https://elevationlandscapes.com/plant-guide" },
-            { "@type": "ListItem", position: 3, name: plant.common_name, item: `https://elevationlandscapes.com/plants/${plant.slug}` },
-          ],
-        },
-      ]
-    : undefined;
-
   const ogImageUrl = plant
     ? `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/generate-plant-og?id=${plant.id}`
     : undefined;
