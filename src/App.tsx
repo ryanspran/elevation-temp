@@ -50,6 +50,8 @@ const App = () => (
             {/* Legacy redirect: /plant-guide/:id → /plants/:slug */}
             <Route path="/plant-guide/:id" element={<PlantRedirect />} />
             <Route path="/identify" element={<Identify />} />
+            <Route path="/areas" element={<Areas />} />
+            <Route path="/areas/:citySlug" element={<CityPage />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin"

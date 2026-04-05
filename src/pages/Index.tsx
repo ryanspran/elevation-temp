@@ -374,7 +374,13 @@ const Index = () => {
                 {serviceAreas.map((area) => (
                   <div key={area} className="flex items-center gap-3">
                     <MapPin className="h-5 w-5 text-gold flex-shrink-0" />
-                    <span className="text-text-dark font-sans text-base">{area}</span>
+                    {citySlugMap[area] ? (
+                      <Link to={`/areas/${citySlugMap[area]}`} className="text-text-dark font-sans text-base hover:text-gold transition-colors">
+                        {area}
+                      </Link>
+                    ) : (
+                      <span className="text-text-dark font-sans text-base">{area}</span>
+                    )}
                   </div>
                 ))}
               </div>
