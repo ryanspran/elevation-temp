@@ -319,7 +319,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* PORTFOLIO — Before & After */}
+      {/* PORTFOLIO — Before & After (temporarily hidden) */}
+      {false && (
       <section className="bg-navy py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start mb-12">
@@ -361,6 +362,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      )}
 
       {/* SERVICE AREA */}
       <section className="bg-cream py-20 md:py-28">
