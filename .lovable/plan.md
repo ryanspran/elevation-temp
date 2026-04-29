@@ -1,43 +1,56 @@
+## Problem
 
+Google Search Console shows `elevationlandscapes.com` is excluded by a `noindex` tag. Confirmed via curl: the live homepage HTML contains `<meta name="robots" content="noindex, nofollow">`.
 
-## Create 7 City-Specific Service Area Landing Pages
+**Root cause:** The conditional `noindex` script in `index.html` was meant to keep the Lovable staging domain out of Google. But our prerender pipeline (`lovable-agency-prerender.js`) uses Playwright to crawl `http://localhost:4174/` and saves the rendered HTML. At crawl time, `location.hostname === "localhost"`, so the script injects the `noindex` tag — and that tag gets baked into every static page deployed to GitHub Pages at `elevationlandscapes.com`.
 
-Add city landing pages under `/areas/` for local SEO, plus an index page, and link them from the homepage.
+## Fix
 
-### Files to Create
+Replace the runtime hostname check with a build-time approach that the prerenderer can recognize as production.
 
-1. **`src/data/cityPages.ts`** — Central data file containing all 7 city configurations (hero text, intro paragraphs, neighborhoods, emphasized service slugs, meta titles/descriptions). Single source of truth.
+### Change 1: `index.html`
 
-2. **`src/pages/CityPage.tsx`** — Dynamic page component (uses `useParams` for city slug). Sections:
-   - Breadcrumbs (Home > Areas > City, SC)
-   - Hero with H1, subheadline, dual CTA buttons
-   - Unique 2-3 paragraph city introduction
-   - Services grid (6-8 cards linking to `/services/[slug]`, reusing service card design)
-   - "Why [City] Homeowners Choose Us" differentiators
-   - Featured Neighborhoods list
-   - Bottom CTA section
-   - SEOHead with unique meta per city
+Update the conditional so it treats the prerender crawler as production. The prerender hits `localhost:4174`, but the **final deployed URL** is `elevationlandscapes.com`. We need the script to NOT inject noindex during prerendering.
 
-3. **`src/pages/Areas.tsx`** — Index page at `/areas` with grid of city cards, intro text, SC map, and bottom CTA.
+Two options, ordered by simplicity:
 
-### Files to Modify
+**Option A (recommended):** Allowlist both `elevationlandscapes.com` AND `localhost` (the prerender host). The Lovable preview domains (`*.lovable.app`, `*.lovableproject.com`) will still get noindex correctly at runtime.
 
-4. **`src/App.tsx`** — Add 3 routes:
-   - `/areas` → Areas index
-   - `/areas/:citySlug` → CityPage
-   
-5. **`src/pages/Index.tsx`** — In the "Areas We Cover" section (~line 372-378), wrap each city name in a `<Link>` to its `/areas/` page. Only the 7 cities with pages get links; the other 3 (Spartanburg, Anderson, Fountain Inn) remain plain text.
+```html
+<script>
+  var h = location.hostname;
+  if (h !== 'elevationlandscapes.com' && h !== 'localhost' && h !== '127.0.0.1') {
+    var m = document.createElement('meta');
+    m.name = 'robots';
+    m.content = 'noindex, nofollow';
+    document.head.appendChild(m);
+  }
+</script>
+```
 
-### Design Approach
+This keeps the staging-noindex memory rule intact (Lovable preview domain still gets noindex) and removes it from production.
 
-- Reuse existing patterns: navy/gold palette, Playfair Display headings, same CTA button styles, Breadcrumbs component, SEOHead component
-- Pull service images and names from `src/data/services.ts` for the service grid cards
-- Use the existing hero background image for city pages
-- No JSON-LD schema on these pages
-- No navigation menu changes
-- All unique content (intros, neighborhoods, differentiators) hardcoded in the data file per the user's specifications
+### Change 2: Force a fresh Google recrawl
 
-### Content Summary
+After deploy, in Search Console:
+1. URL Inspection → enter `https://elevationlandscapes.com/` → **Request Indexing**
+2. Repeat for a few key pages (e.g. `/services/outdoor-kitchens`, `/plant-guide`, `/about`).
+3. The full site will recrawl naturally over the following days.
 
-Each city gets genuinely unique intro paragraphs, 4-6 featured neighborhoods with descriptions, city-specific service emphasis, and unique meta descriptions — all as specified in the request.
+### Verification (after deploy completes)
 
+```bash
+curl -s https://elevationlandscapes.com/ | grep -i robots
+# Expected: no output (no robots meta tag present)
+```
+
+Spot check a few prerendered subpages too (`/about`, `/services/paver-patios`, `/plants/caladium`).
+
+## Files Changed
+
+- `index.html` — update hostname allowlist in the noindex script
+
+## Out of Scope
+
+- The "URL is not on Google" referring page from `__media__/js/netsoltrademark.php?d=...sexiitrina.com` is a spammy backlink farm scraping your URL — ignore it, it's not something on your site.
+- Sitemap is fine; pages are discoverable. The only blocker is the noindex tag.
