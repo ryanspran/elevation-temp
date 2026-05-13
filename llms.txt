@@ -1,0 +1,50 @@
+# Elevation Landscapes
+
+> Luxury landscape architecture, hardscaping, and outdoor living for Upstate South Carolina's most discerning homeowners. Based in Greenville, SC.
+
+Elevation Landscapes is a high-end design-build firm led by owner Aaron Hord, serving Greenville and the surrounding Upstate SC region. We specialize in custom patios, retaining walls, outdoor kitchens, landscape lighting, water features, and full property transformations.
+
+## Pages
+
+- [Home](/): Overview of services, portfolio, and approach.
+- [About](/about): Company story, leadership, and core principles.
+- [Portfolio](/portfolio): Featured before-and-after projects.
+- [Areas We Serve](/areas): Cities and communities across Upstate SC.
+- [Articles](/articles): Guides on hardscaping, outdoor living, and landscape design.
+- [Plant Guide](/plant-guide): Curated directory of 300+ plants suited for Zones 7b–8a.
+- [Plant Identifier](/identify): AI-powered plant identification tool.
+- [FAQ](/faq): Common questions about our process, pricing, and timelines.
+- [Contact](/contact): Schedule a consultation or call 864-325-1623.
+
+## Services
+
+- [Paver Patios](/services/paver-patios)
+- [Block Retaining Walls](/services/block-retaining-walls)
+- [Boulder Retaining Walls](/services/boulder-retaining-walls)
+- [Custom Stone Pathways](/services/custom-stone-pathways)
+- [Custom Water Features](/services/custom-water-features)
+- [Outdoor Gas Fire Pits](/services/outdoor-gas-fire-pits)
+- [Outdoor Kitchens](/services/outdoor-kitchens)
+- [Pool Decks & Coping](/services/pool-decks-pool-coping)
+- [Natural Stone Staircases](/services/natural-stone-staircases)
+- [Landscape Lighting](/services/landscape-lighting)
+- [Landscape Remediation](/services/landscape-remediation)
+- [New Plant Installation](/services/new-plant-installation)
+- [Sod and Seeding](/services/sod-and-seeding)
+- [Irrigation Installation & Repair](/services/irrigation-installation-repair)
+- [Underground Drainage Solutions](/services/underground-drainage-solutions)
+- [Grading Solutions](/services/grading-solutions)
+
+## Service Areas
+
+- [Greenville, SC](/areas/greenville-sc)
+- [Simpsonville, SC](/areas/simpsonville-sc)
+- [Greer, SC](/areas/greer-sc)
+- [Travelers Rest, SC](/areas/travelers-rest-sc)
+- [Mauldin, SC](/areas/mauldin-sc)
+- [Taylors, SC](/areas/taylors-sc)
+- [Easley, SC](/areas/easley-sc)
+
+## Optional
+
+- [Subcontractor Partnership](/subcontractor): B2B partnership info for builders and contractors.
