@@ -1,5 +1,5 @@
-import { useEffect, useState, useRef } from "react";
-import { Phone, MapPin } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Phone, MapPin, ExternalLink } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
@@ -7,60 +7,82 @@ import contactSidebar from "@/assets/contact-sidebar.jpg";
 import contactHero from "@/assets/contact-hero.jpg";
 
 const JOBBER_CONTAINER_ID = "3572b14d-90ae-44ae-a1fa-521130ecb4d1-2540855";
+const JOBBER_SNIPPET_SRC =
+  "https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js";
+const JOBBER_FORM_URL =
+  "https://clienthub.getjobber.com/client_hubs/3572b14d-90ae-44ae-a1fa-521130ecb4d1/public/work_request/embedded_work_request_form?form_id=2540855";
 
 const Contact = () => {
   const [formLoaded, setFormLoaded] = useState(false);
-  const slotRef = useRef<HTMLDivElement>(null);
+  const [showFallback, setShowFallback] = useState(false);
 
   useEffect(() => {
     let isMounted = true;
-    const source = document.getElementById(JOBBER_CONTAINER_ID);
-    const slot = slotRef.current;
-
-    if (!source || !slot) return;
-
-    // Move the pre-loaded Jobber container into our component
-    source.style.display = "";
-    slot.appendChild(source);
+    const container = document.getElementById(JOBBER_CONTAINER_ID);
+    if (!container) return;
 
     const markLoaded = () => {
-      if (isMounted) setFormLoaded(true);
+      if (isMounted) {
+        setFormLoaded(true);
+        setShowFallback(false);
+      }
     };
 
-    // Check if iframe is already loaded
-    const iframe = source.querySelector("iframe");
-    if (iframe instanceof HTMLIFrameElement) {
-      if (iframe.clientHeight > 0) {
+    const watchIframe = (el: HTMLIFrameElement) => {
+      if (el.clientHeight > 0) {
         markLoaded();
       } else {
-        iframe.addEventListener("load", markLoaded, { once: true });
+        el.addEventListener("load", markLoaded, { once: true });
       }
-    }
+    };
 
-    // Watch for iframe injection
+    const existing = container.querySelector("iframe");
+    if (existing instanceof HTMLIFrameElement) watchIframe(existing);
+
     const observer = new MutationObserver(() => {
-      const el = source.querySelector("iframe");
-      if (el instanceof HTMLIFrameElement) {
-        if (el.clientHeight > 0) {
-          markLoaded();
-        } else {
-          el.addEventListener("load", markLoaded, { once: true });
-        }
-      }
+      const el = container.querySelector("iframe");
+      if (el instanceof HTMLIFrameElement) watchIframe(el);
     });
-    observer.observe(source, { childList: true, subtree: true });
+    observer.observe(container, { childList: true, subtree: true });
 
-    const fallback = window.setTimeout(() => {
-      if (source.children.length) markLoaded();
-    }, 2000);
+    // Inject the Jobber snippet AFTER the container exists in the DOM.
+    // Remove any prior instance so re-mounts re-run the embed.
+    document
+      .querySelectorAll(`script[data-jobber-embed="${JOBBER_CONTAINER_ID}"]`)
+      .forEach((s) => s.remove());
+
+    const script = document.createElement("script");
+    script.src = JOBBER_SNIPPET_SRC;
+    script.async = true;
+    script.setAttribute("clienthub_id", JOBBER_CONTAINER_ID);
+    script.setAttribute("form_url", JOBBER_FORM_URL);
+    script.setAttribute("data-jobber-embed", JOBBER_CONTAINER_ID);
+    script.addEventListener("error", () => {
+      if (isMounted) setShowFallback(true);
+    });
+    document.body.appendChild(script);
+
+    // Safety net: give slow mobile connections plenty of time, then reveal
+    // a direct link so visitors never dead-end on a skeleton.
+    const softTimer = window.setTimeout(() => {
+      const el = container.querySelector("iframe");
+      if (el instanceof HTMLIFrameElement && el.clientHeight > 0) markLoaded();
+    }, 4000);
+
+    const fallbackTimer = window.setTimeout(() => {
+      if (!isMounted) return;
+      const el = container.querySelector("iframe");
+      if (!(el instanceof HTMLIFrameElement) || el.clientHeight === 0) {
+        setShowFallback(true);
+      }
+    }, 8000);
 
     return () => {
       isMounted = false;
       observer.disconnect();
-      window.clearTimeout(fallback);
-      // Move container back to body so it persists across navigations
-      source.style.display = "none";
-      document.body.appendChild(source);
+      window.clearTimeout(softTimer);
+      window.clearTimeout(fallbackTimer);
+      script.remove();
     };
   }, []);
 
@@ -105,16 +127,52 @@ const Contact = () => {
               </h2>
               <div className="w-16 h-0.5 bg-gold mb-8" />
 
-              {!formLoaded && (
-                <div className="space-y-4 animate-pulse">
-                  <div className="h-10 bg-muted rounded w-full" />
-                  <div className="h-10 bg-muted rounded w-full" />
-                  <div className="h-10 bg-muted rounded w-3/4" />
-                  <div className="h-24 bg-muted rounded w-full" />
-                  <div className="h-10 bg-muted rounded w-1/3" />
-                </div>
-              )}
-              <div ref={slotRef} className={formLoaded ? "" : "hidden"} />
+              <div className="relative min-h-[320px]">
+                {/* Jobber embed target — always mounted */}
+                <div id={JOBBER_CONTAINER_ID} />
+
+                {!formLoaded && (
+                  <div className="absolute inset-0 bg-cream">
+                    {!showFallback ? (
+                      <div className="space-y-4 animate-pulse">
+                        <div className="h-10 bg-muted rounded w-full" />
+                        <div className="h-10 bg-muted rounded w-full" />
+                        <div className="h-10 bg-muted rounded w-3/4" />
+                        <div className="h-24 bg-muted rounded w-full" />
+                        <div className="h-10 bg-muted rounded w-1/3" />
+                      </div>
+                    ) : (
+                      <div className="border border-gold/30 rounded-xl p-8 bg-cream-alt">
+                        <h3 className="font-serif text-2xl text-text-dark mb-3">
+                          Request Your Consultation
+                        </h3>
+                        <p className="font-sans text-sm text-muted-foreground mb-6 leading-relaxed">
+                          Our request form couldn't load in this browser. Open it directly
+                          or give us a call — we'll get right back to you.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4">
+                          <a
+                            href={JOBBER_FORM_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-2 bg-gold text-primary-foreground font-sans text-sm font-semibold tracking-wide px-6 py-3 rounded-md transition-all duration-300 hover:bg-gold-hover hover:scale-105 hover:shadow-lg"
+                          >
+                            Open Our Request Form
+                            <ExternalLink className="h-4 w-4" />
+                          </a>
+                          <a
+                            href="tel:+18643251623"
+                            className="inline-flex items-center justify-center gap-2 border border-gold text-text-dark font-sans text-sm font-semibold tracking-wide px-6 py-3 rounded-md transition-all duration-300 hover:bg-gold hover:text-primary-foreground hover:scale-105 hover:shadow-lg"
+                          >
+                            <Phone className="h-4 w-4" />
+                            Call (864) 325-1623
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
             </div>
 
             <div className="lg:col-span-2 space-y-8">
