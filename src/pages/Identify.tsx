@@ -93,10 +93,11 @@ const Identify = () => {
       // Extract base64 data (remove data:image/...;base64, prefix)
       const base64Data = imageData.split(',')[1];
 
-      const response = await fetch('/supabase/functions/v1/identify-plant', {
+      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/identify-plant`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'apikey': import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
         },
         body: JSON.stringify({ image: base64Data }),
       });
