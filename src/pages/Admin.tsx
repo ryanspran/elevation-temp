@@ -33,7 +33,7 @@ const Admin = () => {
       {/* Sidebar */}
       <aside className="w-64 bg-navy flex flex-col flex-shrink-0">
         <div className="p-5 border-b border-gold/10">
-          <img src={logo} alt="Elevation Landscapes" className="h-10" />
+          <img src={logo} alt="Oakline Landscapes" className="h-10" />
           <p className="text-secondary-foreground/40 text-xs mt-2 font-sans">Content Manager</p>
         </div>
         <nav className="flex-1 p-3 space-y-1">

@@ -46,7 +46,7 @@ const articles: Record<string, ArticleData> = {
     heroImage: outdoorKitchenHero,
     detailImage: outdoorKitchenDetail,
     seoTitle:
-      "Outdoor Kitchen Benefits in Upstate SC | Elevation Landscapes",
+      "Outdoor Kitchen Benefits in Upstate SC | Oakline Landscapes",
     seoDescription:
       "Discover how an outdoor kitchen can boost home value, enhance entertaining, and take advantage of Upstate SC's year-round climate.",
     sections: [
@@ -78,7 +78,7 @@ const articles: Record<string, ArticleData> = {
         body: "Adding an outdoor kitchen is a significant, yet rewarding investment for homeowners in Greenville, SC. By increasing your home's value, enhancing your lifestyle, and taking advantage of the Upstate's climate, you can create a vibrant outdoor living space that meets your needs year-round. If you're considering this exciting upgrade, start by consulting with local designers and builders, get inspired by the latest trends, and ensure your design aligns with both your vision and practical requirements. Ultimately, an outdoor kitchen offers a way to enjoy the beauty of the outdoors while enhancing your home's entertaining potential.",
       },
       {
-        body: "For Greenville homeowners considering an outdoor kitchen project, Elevation Landscapes exemplifies quality and personalization in crafting unique outdoor environments. Specializing in custom designs, this local company prides itself on delivering seamless indoor-outdoor transitions, ensuring your new space is practical and beautifully integrated with your existing home. With a strong local presence and a full-service design/build approach, Elevation Landscapes manages every aspect of your project, from initial concept to final installation, providing peace of mind with their commitment to quality craftsmanship and personalized service. Their expertise in creating cohesive, year-round outdoor environments makes them a trusted partner for bringing your dream backyard to life. Engaging Elevation Landscapes means investing in a vibrant outdoor living space perfectly tailored to enjoy the Upstate's pleasant climate while enhancing your home's value and lifestyle.",
+        body: "For Greenville homeowners considering an outdoor kitchen project, Oakline Landscapes exemplifies quality and personalization in crafting unique outdoor environments. Specializing in custom designs, this local company prides itself on delivering seamless indoor-outdoor transitions, ensuring your new space is practical and beautifully integrated with your existing home. With a strong local presence and a full-service design/build approach, Oakline Landscapes manages every aspect of your project, from initial concept to final installation, providing peace of mind with their commitment to quality craftsmanship and personalized service. Their expertise in creating cohesive, year-round outdoor environments makes them a trusted partner for bringing your dream backyard to life. Engaging Oakline Landscapes means investing in a vibrant outdoor living space perfectly tailored to enjoy the Upstate's pleasant climate while enhancing your home's value and lifestyle.",
       },
     ],
   },
@@ -89,7 +89,7 @@ const articles: Record<string, ArticleData> = {
     heroImage: retainingWallsHero,
     detailImage: retainingWallsDetail,
     seoTitle:
-      "Retaining Walls on Sloped Lots in Upstate SC | Elevation Landscapes",
+      "Retaining Walls on Sloped Lots in Upstate SC | Oakline Landscapes",
     seoDescription:
       "Learn the pros and cons of boulder, block, and natural stone retaining walls for sloped lots in Greenville, Simpsonville, and Greer, SC.",
     sections: [
@@ -128,7 +128,7 @@ const articles: Record<string, ArticleData> = {
     heroImage: outdoorLivingHero,
     detailImage: outdoorLivingDetail,
     seoTitle:
-      "Complete Guide to Outdoor Living Spaces in Upstate SC | Elevation Landscapes",
+      "Complete Guide to Outdoor Living Spaces in Upstate SC | Oakline Landscapes",
     seoDescription:
       "Explore every element of outdoor living — patios, kitchens, fire pits, water features, and lighting — for Upstate SC homeowners.",
     sections: [
@@ -160,7 +160,7 @@ const articles: Record<string, ArticleData> = {
         body: "When designing an outdoor living space, consider how each element works together to create a cohesive and functional environment. Sketch a layout that optimizes flow and accessibility, ensuring comfort and convenience. Whether you're starting from scratch or enhancing existing features, the integration of patios, kitchens, fire pits, water features, and lighting can transform your backyard into a personal paradise.",
       },
       {
-        body: "Elevating your outdoor experience requires expertise and vision, which is where teams like Elevation Landscapes come into play. As leading outdoor living contractors in Greenville, we specialize in bringing your outdoor dreams to life, offering comprehensive services that deliver enduring style and functionality. Our passion for creating bespoke outdoor spaces means every project is tailored to meet your specific needs and tastes, turning your backyard into an exceptional living area that complements your lifestyle. Let us guide you through your transformation, ensuring that your outdoor space becomes a cornerstone of enjoyment and a reflection of your personal style.",
+        body: "Elevating your outdoor experience requires expertise and vision, which is where teams like Oakline Landscapes come into play. As leading outdoor living contractors in Greenville, we specialize in bringing your outdoor dreams to life, offering comprehensive services that deliver enduring style and functionality. Our passion for creating bespoke outdoor spaces means every project is tailored to meet your specific needs and tastes, turning your backyard into an exceptional living area that complements your lifestyle. Let us guide you through your transformation, ensuring that your outdoor space becomes a cornerstone of enjoyment and a reflection of your personal style.",
       },
     ],
   },
@@ -171,7 +171,7 @@ const articles: Record<string, ArticleData> = {
     heroImage: landscapeLightingHero,
     detailImage: landscapeLightingDetail,
     seoTitle:
-      "Landscape Lighting Benefits in Upstate SC | Elevation Landscapes",
+      "Landscape Lighting Benefits in Upstate SC | Oakline Landscapes",
     seoDescription:
       "Discover the transformative benefits of professional landscape lighting for high-end homes in Upstate South Carolina.",
     sections: [
@@ -203,7 +203,7 @@ const articles: Record<string, ArticleData> = {
         body: "Every homeowner has unique preferences, and landscape lighting allows for personalization. Whether opting for soft, ambient lights or bold, vibrant hues, homeowners can tailor their lighting to reflect their style. The lush landscapes of Greenville complemented by personalized lighting schemes make for a majestic sight that's as unique as its owner.",
       },
       {
-        body: "In the enchanting realm of high-end homes in Greenville and Upstate SC, landscape lighting is an art form that marries beauty with utility. At the forefront of this transformation is Elevation Landscapes. With extensive experience and a deep understanding of local aesthetics, we have established ourselves as leaders in creating captivating outdoor environments. Our commitment to innovation and excellence ensures that every lighting project not only enhances property value but also enriches the quality of life for homeowners across the region. Illuminate your home with us and experience the elevation of your outdoor living space.",
+        body: "In the enchanting realm of high-end homes in Greenville and Upstate SC, landscape lighting is an art form that marries beauty with utility. At the forefront of this transformation is Oakline Landscapes. With extensive experience and a deep understanding of local aesthetics, we have established ourselves as leaders in creating captivating outdoor environments. Our commitment to innovation and excellence ensures that every lighting project not only enhances property value but also enriches the quality of life for homeowners across the region. Illuminate your home with us and experience the elevation of your outdoor living space.",
       },
     ],
   },
@@ -212,7 +212,7 @@ const articles: Record<string, ArticleData> = {
     category: "Hardscaping",
     heroImage: stoneVsPaversHero,
     detailImage: stoneVsPaversDetail,
-    seoTitle: "Natural Stone vs Concrete Pavers Upstate SC | Elevation Landscapes",
+    seoTitle: "Natural Stone vs Concrete Pavers Upstate SC | Oakline Landscapes",
     seoDescription: "Compare natural stone and concrete pavers for pathways, patios, and pool decks. Learn which material suits your Upstate SC home best.",
     sections: [
       {
@@ -240,7 +240,7 @@ const articles: Record<string, ArticleData> = {
       },
       {
         heading: "Making Your Decision",
-        body: "Ultimately, the choice between natural stone and concrete pavers will depend on your personal preferences, budget, and the specific demands of your outdoor project. Both materials offer significant advantages, and each can distinctly enhance the beauty and functionality of pathways, patios, and pool decks in your Upstate SC home.\n\nWhether you're drawn to the timeless elegance of natural stone or the versatility and affordability of concrete pavers, making an informed decision ensures that your outdoor spaces become lasting assets. For expert guidance, Elevation Landscapes can help you explore your options, bringing together beauty and practicality in your outdoor projects. Our commitment to quality service means your home is in experienced hands, creating landscapes that are as enduring as they are stunning.",
+        body: "Ultimately, the choice between natural stone and concrete pavers will depend on your personal preferences, budget, and the specific demands of your outdoor project. Both materials offer significant advantages, and each can distinctly enhance the beauty and functionality of pathways, patios, and pool decks in your Upstate SC home.\n\nWhether you're drawn to the timeless elegance of natural stone or the versatility and affordability of concrete pavers, making an informed decision ensures that your outdoor spaces become lasting assets. For expert guidance, Oakline Landscapes can help you explore your options, bringing together beauty and practicality in your outdoor projects. Our commitment to quality service means your home is in experienced hands, creating landscapes that are as enduring as they are stunning.",
       },
     ],
   },
@@ -249,7 +249,7 @@ const articles: Record<string, ArticleData> = {
     category: "Drainage",
     heroImage: drainageHero,
     detailImage: drainageDetail,
-    seoTitle: "Proper Drainage Before Landscaping in Upstate SC | Elevation Landscapes",
+    seoTitle: "Proper Drainage Before Landscaping in Upstate SC | Oakline Landscapes",
     seoDescription: "Learn why addressing drainage first is essential for protecting your landscape investment on Upstate SC's sloped terrain and heavy rainfall.",
     sections: [
       {
@@ -268,8 +268,8 @@ const articles: Record<string, ArticleData> = {
         body: "Proper grading is critical to directing water away from structures and toward appropriate drainage areas. A subtle slope can be created to guide water flow without compromising the aesthetic of your landscape.\n\nSolutions such as French drains or pipe systems effectively manage water by collecting and redirecting it underground. These systems are particularly useful in areas prone to excessive surface water.\n\nRain gardens and swales are natural solutions that absorb and filter runoff, integrating seamlessly into your landscape design. They offer an eco-friendly approach to managing water flow, adding both beauty and functionality.",
       },
       {
-        heading: "How Elevation Landscapes Can Help",
-        body: "At Elevation Landscapes, our expertise in grading and underground drainage systems positions us as leaders in tackling the unique challenges of Upstate SC. Before you even begin selecting a contractor for your landscaping project, consulting with experts in drainage ensures a solid foundation and peace of mind. Our experienced team evaluates your property, designs tailored solutions, and executes plans that preserve your landscape's beauty while safeguarding your investments.\n\nChoosing Elevation Landscapes means partnering with professionals who understand the nuances of Upstate SC's terrain and weather patterns. We focus on creating sustainable, effective drainage systems that harmonize with your landscaping goals, allowing you to enjoy a beautiful, functional outdoor space no matter the weather. Reach out to us to ensure your home is equipped with the proper drainage infrastructure, setting the stage for a successful and enduring landscape project.",
+        heading: "How Oakline Landscapes Can Help",
+        body: "At Oakline Landscapes, our expertise in grading and underground drainage systems positions us as leaders in tackling the unique challenges of Upstate SC. Before you even begin selecting a contractor for your landscaping project, consulting with experts in drainage ensures a solid foundation and peace of mind. Our experienced team evaluates your property, designs tailored solutions, and executes plans that preserve your landscape's beauty while safeguarding your investments.\n\nChoosing Oakline Landscapes means partnering with professionals who understand the nuances of Upstate SC's terrain and weather patterns. We focus on creating sustainable, effective drainage systems that harmonize with your landscaping goals, allowing you to enjoy a beautiful, functional outdoor space no matter the weather. Reach out to us to ensure your home is equipped with the proper drainage infrastructure, setting the stage for a successful and enduring landscape project.",
       },
     ],
   },
@@ -278,11 +278,11 @@ const articles: Record<string, ArticleData> = {
     category: "Hardscaping",
     heroImage: hardscapeContractorHero,
     detailImage: hardscapeContractorDetail,
-    seoTitle: "How to Choose a Hardscape Contractor in Upstate SC | Elevation Landscapes",
+    seoTitle: "How to Choose a Hardscape Contractor in Upstate SC | Oakline Landscapes",
     seoDescription: "Ten essential questions to ask before hiring a hardscape contractor in Upstate SC. Ensure quality, transparency, and lasting results for your outdoor project.",
     sections: [
       {
-        body: "Finding the right hardscape contractor in Greenville, SC, is crucial for ensuring your outdoor project not only meets your expectations but also adds significant value to your property. At Elevation Landscapes, we understand that the decision can be daunting, especially when trust and expertise are at stake. To make the selection process easier and more efficient, we've compiled a list of ten essential questions to ask potential contractors. These questions will help you assess their qualifications, gauge compatibility, and ensure a successful collaboration.",
+        body: "Finding the right hardscape contractor in Greenville, SC, is crucial for ensuring your outdoor project not only meets your expectations but also adds significant value to your property. At Oakline Landscapes, we understand that the decision can be daunting, especially when trust and expertise are at stake. To make the selection process easier and more efficient, we've compiled a list of ten essential questions to ask potential contractors. These questions will help you assess their qualifications, gauge compatibility, and ensure a successful collaboration.",
       },
       {
         heading: "1. What Experience Do You Have in Hardscaping?",
@@ -298,7 +298,7 @@ const articles: Record<string, ArticleData> = {
       },
       {
         heading: "4. What Is Your Design Process?",
-        body: "Understanding the design process is crucial for a successful project. Ask the contractor how they plan to bring your vision to life and how involved you'll be in the design stages. Contractors like Elevation Landscapes prioritize client input and use advanced technology to create accurate 3D renderings before the commencement of construction.",
+        body: "Understanding the design process is crucial for a successful project. Ask the contractor how they plan to bring your vision to life and how involved you'll be in the design stages. Contractors like Oakline Landscapes prioritize client input and use advanced technology to create accurate 3D renderings before the commencement of construction.",
       },
       {
         heading: "5. Can You Show Me Examples of Similar Projects?",
@@ -325,7 +325,7 @@ const articles: Record<string, ArticleData> = {
         body: "Finally, inquire about the warranty and post-project support. Reliable contractors stand behind their work and offer warranties on both materials and craftsmanship. Additionally, they should provide maintenance tips or services to ensure your hardscape maintains its beauty and functionality over time.",
       },
       {
-        body: "Choosing the right hardscape contractor requires thorough vetting. By asking these ten questions, you're not just selecting a contractor but a partner who understands your vision and is committed to excellence. At Elevation Landscapes, we pride ourselves on our ability to deliver exceptional results that transform outdoor spaces into stunning works of art. Contact us today to discuss your hardscape project and see how we can elevate your landscape.",
+        body: "Choosing the right hardscape contractor requires thorough vetting. By asking these ten questions, you're not just selecting a contractor but a partner who understands your vision and is committed to excellence. At Oakline Landscapes, we pride ourselves on our ability to deliver exceptional results that transform outdoor spaces into stunning works of art. Contact us today to discuss your hardscape project and see how we can elevate your landscape.",
       },
     ],
   },
@@ -334,11 +334,11 @@ const articles: Record<string, ArticleData> = {
     category: "Plant Guide",
     heroImage: plantDirectoryHero,
     detailImage: plantDirectoryDetail,
-    seoTitle: "Plant & Tree Directory for Upstate SC | Elevation Landscapes",
+    seoTitle: "Plant & Tree Directory for Upstate SC | Oakline Landscapes",
     seoDescription: "Discover our 250+ plant directory tailored for Upstate SC's USDA zones 7a-7b. Filter by sun, water, soil, and native status to plan your perfect landscape.",
     sections: [
       {
-        body: "If you're a homeowner in Greenville, SC, you know that choosing the right plants and trees for your yard isn't just about aesthetics—it's about selecting species that will thrive in the unique climate of Upstate South Carolina. With hot summers, occasional freezes, and clay-rich soils, plant selection can be daunting. Make an uninformed choice, and you might face disappointing growth, increased maintenance, or even tree loss. That's where Elevation Landscapes steps in with an innovative solution designed to take the guesswork out of landscape planning.",
+        body: "If you're a homeowner in Greenville, SC, you know that choosing the right plants and trees for your yard isn't just about aesthetics—it's about selecting species that will thrive in the unique climate of Upstate South Carolina. With hot summers, occasional freezes, and clay-rich soils, plant selection can be daunting. Make an uninformed choice, and you might face disappointing growth, increased maintenance, or even tree loss. That's where Oakline Landscapes steps in with an innovative solution designed to take the guesswork out of landscape planning.",
       },
       {
         heading: "Introducing the Essential Plant & Tree Directory for Upstate SC Homeowners",
@@ -354,11 +354,11 @@ const articles: Record<string, ArticleData> = {
       },
       {
         heading: "Success Story: Achieving a Dream Yard in Greenville",
-        body: "Consider a Greenville homeowner who wanted a lush backyard retreat with minimal maintenance. Using our directory, they selected deer-resistant native serviceberries and shade-loving ferns for their north-facing garden. Elevation Landscapes ensured proper soil amendments and spacing during installation, which resulted in a thriving landscape that required 30% less water and maintenance. This transformation not only enhanced their property's curb appeal but also increased its value—demonstrating the collaborative power of our directory with professional installation.",
+        body: "Consider a Greenville homeowner who wanted a lush backyard retreat with minimal maintenance. Using our directory, they selected deer-resistant native serviceberries and shade-loving ferns for their north-facing garden. Oakline Landscapes ensured proper soil amendments and spacing during installation, which resulted in a thriving landscape that required 30% less water and maintenance. This transformation not only enhanced their property's curb appeal but also increased its value—demonstrating the collaborative power of our directory with professional installation.",
       },
       {
         heading: "The Professional Edge: Why Installation by Experts Matters",
-        body: "Even with a well-thought-out plan, professional installation is crucial. Our team at Elevation Landscapes brings expertise in:\n\nCorrect Soil Preparation: Ensuring optimal nutrient availability and drainage for robust plant growth.\n\nAccurate Spacing: Avoiding future complications from overcrowding and ensuring adequate sunlight exposure.\n\nAfter-Care Guidance: Providing you with tailored advice on maintaining your new plants and trees, ensuring your landscape remains vibrant and healthy.\n\nWith our proven track record as a leading landscape construction company in Greenville, SC, we guarantee that your vision is realized to the fullest.",
+        body: "Even with a well-thought-out plan, professional installation is crucial. Our team at Oakline Landscapes brings expertise in:\n\nCorrect Soil Preparation: Ensuring optimal nutrient availability and drainage for robust plant growth.\n\nAccurate Spacing: Avoiding future complications from overcrowding and ensuring adequate sunlight exposure.\n\nAfter-Care Guidance: Providing you with tailored advice on maintaining your new plants and trees, ensuring your landscape remains vibrant and healthy.\n\nWith our proven track record as a leading landscape construction company in Greenville, SC, we guarantee that your vision is realized to the fullest.",
       },
       {
         heading: "Unlock Your Dream Yard Today",
@@ -372,18 +372,18 @@ const articles: Record<string, ArticleData> = {
     heroImage: aaronApprovedHero,
     detailImage: aaronApprovedDetail,
     secondImage: aaronApprovedMidbreak,
-    seoTitle: "Aaron Approved Plant Collection | 45 Plants for Upstate SC | Elevation Landscapes",
+    seoTitle: "Aaron Approved Plant Collection | 45 Plants for Upstate SC | Oakline Landscapes",
     seoDescription: "Discover the 45 trees, shrubs, perennials, and grasses handpicked by our lead designer for proven performance in Greenville, Spartanburg, and Anderson, SC.",
     sections: [
       {
         body: "There's a trip to the garden center happening somewhere in Upstate South Carolina right now. A homeowner is loading a cart with Bradford pears, Leyland cypresses, and knockout roses — plants that look stunning on the tag and in the nursery display — that are quietly setting themselves up for failure. In three to five years, that Bradford pear will be splitting at the crotch in an ice storm. The Leyland will be showing brown patches from Seiridium canker. The roses will need a spray program just to stay alive in our heavy clay soil.",
       },
       {
-        body: "It's not the homeowner's fault. The landscaping industry has been selling plants by their photos for decades, with little regard for what actually performs in our specific corner of South Carolina. At Elevation Landscapes, we got tired of watching beautiful projects underperform because of the wrong plant decisions. So we did something about it.",
+        body: "It's not the homeowner's fault. The landscaping industry has been selling plants by their photos for decades, with little regard for what actually performs in our specific corner of South Carolina. At Oakline Landscapes, we got tired of watching beautiful projects underperform because of the wrong plant decisions. So we did something about it.",
       },
       {
         heading: "Why We Built the Aaron Approved Plant Collection",
-        body: "When we launched Elevation Landscapes to serve the luxury residential and commercial market in Greenville, Spartanburg, and Anderson, we knew from day one that plant selection would be our differentiator. Our mission is luxury landscape design with master craftsmanship, and that standard has to extend all the way to the individual plant. Anyone can install a landscape. Not everyone can design one that looks as good in year ten as it does on installation day.",
+        body: "When we launched Oakline Landscapes to serve the luxury residential and commercial market in Greenville, Spartanburg, and Anderson, we knew from day one that plant selection would be our differentiator. Our mission is luxury landscape design with master craftsmanship, and that standard has to extend all the way to the individual plant. Anyone can install a landscape. Not everyone can design one that looks as good in year ten as it does on installation day.",
       },
       {
         body: "Our Owner, Aaron, has spent years installing and maintaining high-end landscapes across Upstate South Carolina. In that time, he's seen thousands of plants succeed and fail in our specific growing conditions. He's worked in the acidic clay soils that drain poorly and compact under foot traffic. He's pushed plants through hot, humid summers where fungal pressure is relentless and afternoon heat is punishing. He's seen what happens when a beautifully designed plan is built on plants that weren't built for our zone.",
@@ -427,7 +427,7 @@ const articles: Record<string, ArticleData> = {
       },
       {
         heading: "The Detail Plants That Bring a Design to Life",
-        body: "Ornamental grasses are where Elevation Landscapes designs often come most alive in late summer and fall. Pink Muhly Grass, a South Carolina native, produces billowing plumes of deep pink in September and October that are genuinely show-stopping in mass plantings. It's one of the most spectacular fall performers available for Upstate gardens. Everillo Carex brightens shaded areas year-round with chartreuse-gold foliage and a well-behaved clumping habit, and it's one of the few truly evergreen options that performs reliably in part-shade conditions.",
+        body: "Ornamental grasses are where Oakline Landscapes designs often come most alive in late summer and fall. Pink Muhly Grass, a South Carolina native, produces billowing plumes of deep pink in September and October that are genuinely show-stopping in mass plantings. It's one of the most spectacular fall performers available for Upstate gardens. Everillo Carex brightens shaded areas year-round with chartreuse-gold foliage and a well-behaved clumping habit, and it's one of the few truly evergreen options that performs reliably in part-shade conditions.",
       },
       {
         body: "In the perennial category, Cheyenne Spirit Coneflower, an AAS award winner, delivers a vibrant multi-color bloom mix from June through September with strong drought tolerance and excellent deer resistance. Black-Eyed Susan, another SC native, provides reliable late summer and fall color in massing situations and is practically indestructible once established, making it a natural choice for rain gardens and naturalistic perennial borders.",
@@ -453,10 +453,10 @@ const articles: Record<string, ArticleData> = {
         body: "If you're thinking about a landscape project in Upstate South Carolina, whether that's a complete estate design, a new construction installation, or a targeted refresh of an underperforming planting bed, we'd love to start a conversation.",
       },
       {
-        body: "At Elevation Landscapes, every project begins with a design consultation. We'll walk your property, understand how you live in your outdoor spaces, and start building a custom plant palette rooted in what actually works here. The Aaron Approved list isn't a formula. It's a foundation. Every plan we build from it is entirely your own.",
+        body: "At Oakline Landscapes, every project begins with a design consultation. We'll walk your property, understand how you live in your outdoor spaces, and start building a custom plant palette rooted in what actually works here. The Aaron Approved list isn't a formula. It's a foundation. Every plan we build from it is entirely your own.",
       },
       {
-        body: "Ready to bring your landscape to life? Contact Elevation Landscapes to schedule your consultation. Serving Greenville, Spartanburg, Anderson, and the surrounding Upstate South Carolina area.",
+        body: "Ready to bring your landscape to life? Contact Oakline Landscapes to schedule your consultation. Serving Greenville, Spartanburg, Anderson, and the surrounding Upstate South Carolina area.",
       },
     ],
   },

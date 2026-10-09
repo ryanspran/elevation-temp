@@ -120,7 +120,7 @@ const faqCategories = [
       },
       {
         q: "Do you carry insurance and licensing?",
-        a: "Yes. Elevation Landscapes is fully licensed and insured, carrying both general liability and workers' compensation coverage. We're happy to provide certificates of insurance upon request.",
+        a: "Yes. Oakline Landscapes is fully licensed and insured, carrying both general liability and workers' compensation coverage. We're happy to provide certificates of insurance upon request.",
       },
     ],
   },
@@ -132,7 +132,7 @@ const FAQ = () => {
       <FaqSchema faqs={faqCategories.flatMap(cat => cat.questions.map(q => ({ question: q.q, answer: q.a })))} />
       <SEOHead
         page="faq"
-        fallbackTitle="Landscaping FAQ — Upstate SC | Elevation Landscapes"
+        fallbackTitle="Landscaping FAQ — Upstate SC | Oakline Landscapes"
         fallbackDescription="Answers to common landscaping and hardscape questions for Upstate SC homeowners — timelines, costs, materials, maintenance, permits, and more."
         path="/faq"
       />

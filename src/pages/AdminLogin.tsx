@@ -55,7 +55,7 @@ const AdminLogin = () => {
     <div className="min-h-screen bg-navy flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <img src={logo} alt="Elevation Landscapes" className="h-16 mx-auto mb-4" />
+          <img src={logo} alt="Oakline Landscapes" className="h-16 mx-auto mb-4" />
           <h1 className="font-serif text-2xl text-secondary-foreground">
             {isSignUp ? "Create Account" : "Admin Login"}
           </h1>

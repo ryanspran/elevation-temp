@@ -16,7 +16,7 @@ const reasons = [
   {
     icon: Shield,
     title: "Fully Licensed, Insured, and Bonded",
-    body: "Elevation Landscapes carries full general liability insurance and workers compensation coverage sized for commercial and high-value residential scopes. We are properly licensed in South Carolina and can provide certificates of insurance, additional insured endorsements, and documentation packages that meet your procurement and closeout requirements without the administrative back-and-forth.",
+    body: "Oakline Landscapes carries full general liability insurance and workers compensation coverage sized for commercial and high-value residential scopes. We are properly licensed in South Carolina and can provide certificates of insurance, additional insured endorsements, and documentation packages that meet your procurement and closeout requirements without the administrative back-and-forth.",
   },
   {
     icon: Users,
@@ -31,7 +31,7 @@ const reasons = [
   {
     icon: MessageSquare,
     title: "Responsive Communication, Every Step",
-    body: "You will have a direct point of contact at Elevation Landscapes throughout the project — not a rotating answering service or a crew foreman who doesn't check email. We respond to RFIs promptly, flag issues before they become change orders, and communicate proactively when site conditions shift so you can make informed decisions in real time.",
+    body: "You will have a direct point of contact at Oakline Landscapes throughout the project — not a rotating answering service or a crew foreman who doesn't check email. We respond to RFIs promptly, flag issues before they become change orders, and communicate proactively when site conditions shift so you can make informed decisions in real time.",
   },
   {
     icon: CheckCircle,
@@ -50,8 +50,8 @@ const Subcontractor = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         page="subcontractor"
-        fallbackTitle="Hardscape Subcontractor Upstate SC | Elevation Landscapes"
-        fallbackDescription="Elevation Landscapes partners with general contractors, builders, and landscape companies across Upstate SC as a trusted hardscape and landscape subcontractor."
+        fallbackTitle="Hardscape Subcontractor Upstate SC | Oakline Landscapes"
+        fallbackDescription="Oakline Landscapes partners with general contractors, builders, and landscape companies across Upstate SC as a trusted hardscape and landscape subcontractor."
         path="/subcontractor"
       />
       <Navbar />
@@ -68,7 +68,7 @@ const Subcontractor = () => {
             Hardscape and Landscape Subcontractor in Upstate, SC
           </h1>
           <p className="text-secondary-foreground/80 text-base sm:text-lg max-w-3xl leading-relaxed mb-10">
-            Elevation Landscapes partners with general contractors, custom home builders, and
+            Oakline Landscapes partners with general contractors, custom home builders, and
             landscape companies across Upstate South Carolina as a trusted hardscape and landscape
             subcontractor — bringing licensed crews, full insurance, and the on-time performance your
             schedule depends on.
@@ -103,7 +103,7 @@ const Subcontractor = () => {
                 Your reputation rides on every sub you bring onto a job. When a hardscape or
                 landscape scope goes sideways — wrong materials, missed mobilization, poor quality on
                 a high-visibility finish — you're the one standing in front of the owner explaining
-                it. Elevation Landscapes exists to eliminate that risk for general contractors, custom
+                it. Oakline Landscapes exists to eliminate that risk for general contractors, custom
                 home builders, and landscape companies operating across Upstate South Carolina.
               </p>
               <p className="text-foreground/80 leading-relaxed mt-4 text-base sm:text-lg">
@@ -123,7 +123,7 @@ const Subcontractor = () => {
             <div>
               <img
                 src={subcontractorIntro}
-                alt="Elevation Landscapes hardscape construction in progress"
+                alt="Oakline Landscapes hardscape construction in progress"
                 className="w-full object-cover rounded-lg shadow-xl max-h-[500px]"
               />
             </div>
@@ -136,10 +136,10 @@ const Subcontractor = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-primary font-sans uppercase tracking-widest text-sm">
-              The Elevation Difference
+              The Oakline Difference
             </span>
             <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mt-3">
-              Why Partner With Elevation Landscapes
+              Why Partner With Oakline Landscapes
             </h2>
           </div>
 
@@ -148,7 +148,7 @@ const Subcontractor = () => {
             <div className="lg:row-span-2 rounded-lg overflow-hidden shadow-xl hidden lg:block">
               <img
                 src={whyUsPhoto}
-                alt="Premium hardscape installation by Elevation Landscapes"
+                alt="Premium hardscape installation by Oakline Landscapes"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -186,7 +186,7 @@ const Subcontractor = () => {
           </h2>
           <p className="text-secondary-foreground/80 max-w-2xl mx-auto mb-8 text-lg">
             Let's discuss your next project. We'll walk through your scope, timeline, and
-            expectations — and show you why the best GCs in Upstate SC trust Elevation.
+            expectations — and show you why the best GCs in Upstate SC trust Oakline.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

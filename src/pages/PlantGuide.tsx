@@ -288,7 +288,7 @@ const PlantGuide = () => {
     <>
       <SEOHead
         page="plant-guide"
-        fallbackTitle="Plant Directory for Upstate SC | Elevation Landscapes"
+        fallbackTitle="Plant Directory for Upstate SC | Oakline Landscapes"
         fallbackDescription="Browse 250+ trees, shrubs, perennials, and grasses curated for Upstate SC Zones 7b-8a. Filter by sun, water, maintenance, and native status."
         path="/plant-guide"
       />

@@ -30,11 +30,11 @@ export const cityPages: CityPageData[] = [
     state: "SC",
     h1: "Luxury Landscaping & Hardscaping in Greenville, SC",
     subheadline: "The Upstate's premier landscape firm for Greenville's most distinguished properties",
-    metaTitle: "Luxury Landscaping & Hardscaping in Greenville, SC | Elevation Landscapes",
+    metaTitle: "Luxury Landscaping & Hardscaping in Greenville, SC | Oakline Landscapes",
     metaDescription: "Premium hardscaping, paver patios, retaining walls, and landscape design for Greenville's most distinguished properties. Schedule your private consultation today.",
     introParagraphs: [
       "Greenville is the heart of Upstate South Carolina and home to some of the region's most prestigious properties. From historic estates along Augusta Road to modern luxury builds in Montebello, Greenville homeowners expect outdoor spaces that match the caliber of their homes. The city's booming growth has created a landscape where classic Southern elegance meets contemporary design — and outdoor living is central to both.",
-      "The Piedmont clay soil that underlies much of Greenville presents unique challenges that only experienced landscape professionals can navigate. Proper grading, engineered drainage solutions, and foundation preparation are essential before any hardscaping project can begin. At Elevation Landscapes, we bring deep knowledge of Greenville's specific soil conditions, elevation changes, and micro-climates to every project we undertake.",
+      "The Piedmont clay soil that underlies much of Greenville presents unique challenges that only experienced landscape professionals can navigate. Proper grading, engineered drainage solutions, and foundation preparation are essential before any hardscaping project can begin. At Oakline Landscapes, we bring deep knowledge of Greenville's specific soil conditions, elevation changes, and micro-climates to every project we undertake.",
       "Whether you're envisioning an expansive paver patio overlooking your pool, a custom outdoor kitchen for entertaining, or landscape lighting that transforms your property after dark, our team designs and builds outdoor spaces worthy of Greenville's finest addresses."
     ],
     serviceSlugs: ["paver-patios", "outdoor-kitchens", "landscape-lighting", "custom-water-features", "block-retaining-walls", "new-plant-installation"],
@@ -60,11 +60,11 @@ export const cityPages: CityPageData[] = [
     state: "SC",
     h1: "Luxury Landscaping & Hardscaping in Simpsonville, SC",
     subheadline: "Premium outdoor living for Simpsonville's growing luxury market",
-    metaTitle: "Premium Hardscaping & Landscaping Simpsonville, SC | Elevation Landscapes",
+    metaTitle: "Premium Hardscaping & Landscaping Simpsonville, SC | Oakline Landscapes",
     metaDescription: "Expert paver patios, retaining walls, grading, and drainage solutions for Simpsonville properties. Trusted by homeowners across Five Forks and beyond.",
     introParagraphs: [
       "Simpsonville has become one of the fastest-growing communities in the Upstate, with new luxury developments and established neighborhoods driving demand for high-end outdoor spaces. The Five Forks corridor alone has seen explosive growth, bringing custom-built homes that deserve equally custom-designed landscapes. Homeowners here understand that a well-designed outdoor space isn't a luxury — it's an expectation.",
-      "The area's rolling terrain and red clay soil create unique hardscaping challenges that require engineered foundations and proper drainage — specialties that define Elevation Landscapes. Many Simpsonville properties sit on slopes that need retaining walls, graded bases, and underground drainage systems before any patio or outdoor kitchen can be installed. We've built our reputation solving exactly these problems.",
+      "The area's rolling terrain and red clay soil create unique hardscaping challenges that require engineered foundations and proper drainage — specialties that define Oakline Landscapes. Many Simpsonville properties sit on slopes that need retaining walls, graded bases, and underground drainage systems before any patio or outdoor kitchen can be installed. We've built our reputation solving exactly these problems.",
       "From expansive entertainer's patios in Five Forks to complete landscape transformations in Cobblestone, we bring the same precision engineering and luxury craftsmanship to every Simpsonville project. The Southern entertaining season is long here, and our outdoor living designs help you make the most of every month."
     ],
     serviceSlugs: ["paver-patios", "block-retaining-walls", "grading-solutions", "underground-drainage-solutions", "sod-and-seeding", "outdoor-kitchens"],
@@ -89,12 +89,12 @@ export const cityPages: CityPageData[] = [
     state: "SC",
     h1: "Luxury Landscaping & Hardscaping in Greer, SC",
     subheadline: "Where Upstate craftsmanship meets Greer's distinctive properties",
-    metaTitle: "Expert Landscaping & Hardscaping in Greer, SC | Elevation Landscapes",
+    metaTitle: "Expert Landscaping & Hardscaping in Greer, SC | Oakline Landscapes",
     metaDescription: "Custom retaining walls, landscape lighting, stone pathways, and paver patios for Greer homeowners. Serving estates from Thornblade to Pelham Falls.",
     introParagraphs: [
       "Greer sits at the crossroads of Greenville and Spartanburg counties, offering a unique blend of suburban luxury and rural estate properties that few Upstate communities can match. From the prestigious homes carrying a Greer address in Thornblade to custom builds along the Highway 14 corridor, Greer homeowners invest thoughtfully in outdoor spaces that reflect the area's distinctive character — a place where convenience and open space coexist.",
       "The rolling Piedmont terrain that defines much of Greer makes retaining walls and expert grading essential components of nearly every significant landscape project. Elevation changes of several feet across a single property are common, and these slopes create both dramatic design opportunities and engineering challenges. Our team excels at transforming challenging grades into stunning terraced patios, boulder walls, and stone pathways that work with the land rather than fighting it.",
-      "Proximity to GSP International Airport and I-85 has fueled Greer's growth, attracting homeowners who demand the same caliber of craftsmanship in their outdoor spaces as they experience in their travels. Whether you're looking to illuminate a winding stone pathway or install a complete irrigation system for your estate grounds, Elevation Landscapes brings world-class execution to every Greer project."
+      "Proximity to GSP International Airport and I-85 has fueled Greer's growth, attracting homeowners who demand the same caliber of craftsmanship in their outdoor spaces as they experience in their travels. Whether you're looking to illuminate a winding stone pathway or install a complete irrigation system for your estate grounds, Oakline Landscapes brings world-class execution to every Greer project."
     ],
     serviceSlugs: ["boulder-retaining-walls", "landscape-lighting", "custom-stone-pathways", "irrigation-installation-repair", "paver-patios", "grading-solutions"],
     differentiators: [
@@ -118,7 +118,7 @@ export const cityPages: CityPageData[] = [
     state: "SC",
     h1: "Luxury Landscaping & Hardscaping in Travelers Rest, SC",
     subheadline: "Landscape design that honors Travelers Rest's natural mountain beauty",
-    metaTitle: "Landscaping & Hardscaping Travelers Rest, SC | Elevation Landscapes",
+    metaTitle: "Landscaping & Hardscaping Travelers Rest, SC | Oakline Landscapes",
     metaDescription: "Boulder retaining walls, natural stone staircases, and mountain-inspired landscape design for Travelers Rest properties. Blending hardscape with nature.",
     introParagraphs: [
       "Travelers Rest has transformed from a quiet mountain gateway into one of the Upstate's most desirable communities, where natural beauty meets refined living. The Swamp Rabbit Trail has elevated property values and drawn discerning homeowners who appreciate the town's artisan culture, farm-to-table dining, and proximity to the Blue Ridge foothills. Here, outdoor living isn't just an amenity — it's a way of life.",
@@ -147,7 +147,7 @@ export const cityPages: CityPageData[] = [
     state: "SC",
     h1: "Luxury Landscaping & Hardscaping in Mauldin, SC",
     subheadline: "Elevating outdoor spaces in one of the Upstate's most connected communities",
-    metaTitle: "Hardscaping & Outdoor Living in Mauldin, SC | Elevation Landscapes",
+    metaTitle: "Hardscaping & Outdoor Living in Mauldin, SC | Oakline Landscapes",
     metaDescription: "Paver patios, fire pits, outdoor kitchens, and landscape lighting for Mauldin homeowners. Transform your backyard into a luxury outdoor living space.",
     introParagraphs: [
       "Mauldin's central location between Greenville and Simpsonville makes it one of the Upstate's most sought-after communities for families and professionals who want convenience without compromising on quality of life. The city's well-maintained neighborhoods, excellent schools, and vibrant community events create a setting where investing in your outdoor space pays dividends in both daily enjoyment and long-term property value.",
@@ -176,7 +176,7 @@ export const cityPages: CityPageData[] = [
     state: "SC",
     h1: "Luxury Landscaping & Hardscaping in Taylors, SC",
     subheadline: "Premium landscape solutions for Taylors' established and emerging luxury market",
-    metaTitle: "Landscaping & Hardscaping in Taylors, SC | Elevation Landscapes",
+    metaTitle: "Landscaping & Hardscaping in Taylors, SC | Oakline Landscapes",
     metaDescription: "Landscape remediation, retaining walls, stone pathways, and drainage solutions for Taylors properties. Serving Paris Mountain to Wade Hampton corridor.",
     introParagraphs: [
       "Taylors occupies a unique position in the Upstate landscape — close enough to downtown Greenville for convenient access to restaurants, shops, and cultural venues, yet with enough space and community character to feel distinctly its own. This combination has attracted homeowners who value both accessibility and the generous lot sizes that define Taylors' most desirable neighborhoods.",
@@ -205,11 +205,11 @@ export const cityPages: CityPageData[] = [
     state: "SC",
     h1: "Luxury Landscaping & Hardscaping in Easley, SC",
     subheadline: "Craftsmanship that matches Easley's growing luxury landscape",
-    metaTitle: "Landscaping & Hardscaping in Easley, SC | Elevation Landscapes",
+    metaTitle: "Landscaping & Hardscaping in Easley, SC | Oakline Landscapes",
     metaDescription: "Professional grading, retaining walls, plant installation, and irrigation for Easley and Pickens County properties. Comprehensive landscape design and build.",
     introParagraphs: [
       "Easley has emerged as an attractive destination for homeowners seeking more space, greater value, and the charm of a smaller Upstate community — all without sacrificing easy access to Greenville. Properties here tend toward larger lots and rural estates, creating opportunities for comprehensive landscape projects that encompass everything from expansive hardscaping to fully designed planting beds that showcase the region's natural beauty.",
-      "The western Upstate's proximity to Lake Keowee and the Blue Ridge foothills gives Easley a landscape character distinct from communities closer to Greenville. The terrain is more varied, the soils range from red clay to rocky loam, and the growing conditions shift as you move toward the mountains. This diversity requires a landscape firm that can adapt its approach to each property's unique conditions — exactly the kind of site-specific expertise Elevation Landscapes brings to every project.",
+      "The western Upstate's proximity to Lake Keowee and the Blue Ridge foothills gives Easley a landscape character distinct from communities closer to Greenville. The terrain is more varied, the soils range from red clay to rocky loam, and the growing conditions shift as you move toward the mountains. This diversity requires a landscape firm that can adapt its approach to each property's unique conditions — exactly the kind of site-specific expertise Oakline Landscapes brings to every project.",
       "Pickens County's growing luxury market has brought new custom builds alongside Easley's established neighborhoods, creating demand for master-planned landscape designs that can transform raw lots into finished outdoor environments. From engineered grading on new construction sites to comprehensive irrigation systems for estate-sized properties, we deliver the same precision and quality our Greenville clients have come to expect."
     ],
     serviceSlugs: ["grading-solutions", "boulder-retaining-walls", "new-plant-installation", "irrigation-installation-repair", "sod-and-seeding", "custom-stone-pathways"],

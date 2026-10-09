@@ -74,14 +74,14 @@ const ServicePage = () => {
       {/* Trust Signals */}
       <section className="bg-navy py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Why Choose Elevation Landscapes</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-secondary-foreground mb-4">Why Choose Oakline Landscapes</h2>
           <div className="w-16 h-0.5 bg-gold mb-12" />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-stretch">
             {/* Left: Photo */}
             <div className="lg:col-span-2">
               <img
                 src={service.heroImage ?? heroBg}
-                alt={`${service.name} by Elevation Landscapes in Upstate South Carolina`}
+                alt={`${service.name} by Oakline Landscapes in Upstate South Carolina`}
                 className="w-full h-80 lg:h-full lg:min-h-[500px] object-cover rounded-2xl"
                 fetchPriority="high"
                 decoding="async"
@@ -141,7 +141,7 @@ const ServicePage = () => {
             <div className="relative pb-8">
               <img
                 src={service.heroImage ?? heroBg}
-                alt={`${service.name} installation process by Elevation Landscapes Greenville SC`}
+                alt={`${service.name} installation process by Oakline Landscapes Greenville SC`}
                 className="w-full h-[500px] object-cover rounded-2xl"
                 loading="lazy"
                 decoding="async"
@@ -152,7 +152,7 @@ const ServicePage = () => {
                   {service.testimonial?.quote ?? "Every great landscape begins with listening. We don't impose a style — we reveal what your property is meant to become."}
                 </p>
                 <p className="text-text-dark font-semibold text-xs uppercase tracking-wider mt-3">
-                  — {service.testimonial?.attribution ?? "Aaron Hord, Elevation Landscapes"}
+                  — {service.testimonial?.attribution ?? "Aaron Hord, Oakline Landscapes"}
                 </p>
               </div>
             </div>
@@ -210,7 +210,7 @@ const ServicePage = () => {
               ))}
             </div>
             <p className="font-serif text-xl md:text-2xl text-secondary-foreground italic mb-6 leading-relaxed">
-              "{service.testimonial?.quote ?? "Elevation Landscapes exceeded every expectation. Their professionalism, craftsmanship, and genuine care for our property made all the difference."}"
+              "{service.testimonial?.quote ?? "Oakline Landscapes exceeded every expectation. Their professionalism, craftsmanship, and genuine care for our property made all the difference."}"
             </p>
             <p className="text-secondary-foreground font-semibold">— {service.testimonial?.attribution ?? "Upstate SC Client"}</p>
           </div>

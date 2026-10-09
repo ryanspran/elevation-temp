@@ -46,9 +46,9 @@ const Index = () => {
   ];
 
   const testimonials = [
-    { name: "Katherine M.", location: "Thornblade", text: "Elevation Landscapes transformed our property into something we never imagined possible. Their attention to detail is unmatched." },
+    { name: "Katherine M.", location: "Thornblade", text: "Oakline Landscapes transformed our property into something we never imagined possible. Their attention to detail is unmatched." },
     { name: "Robert & Lisa", location: "Augusta Road", text: "From the initial consultation to the final walkthrough, every interaction reflected professionalism and genuine care for our vision." },
-    { name: "James", location: "The Cliffs", text: "We've worked with landscape companies before. Elevation is in a different category entirely. The craftsmanship speaks for itself." },
+    { name: "James", location: "The Cliffs", text: "We've worked with landscape companies before. Oakline is in a different category entirely. The craftsmanship speaks for itself." },
   ];
 
   const portfolioItems = [
@@ -61,14 +61,14 @@ const Index = () => {
     "Mauldin", "Easley", "Taylors", "Spartanburg", "Anderson", "Fountain Inn"
   ];
 
-  const websiteSchema = {"@context":"https://schema.org","@type":"WebSite","name":"Elevation Landscapes","url":"https://elevationlandscapes.com"};
+  const websiteSchema = {"@context":"https://schema.org","@type":"WebSite","name":"Oakline Landscapes","url":"https://elevationlandscapes.com"};
 
   return (
     <div className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <SEOHead
         page="home"
-        fallbackTitle="Luxury Landscape Design Upstate SC | Elevation Landscapes"
+        fallbackTitle="Luxury Landscape Design Upstate SC | Oakline Landscapes"
         fallbackDescription="Bespoke landscape architecture, precision hardscaping, and premium outdoor living for Upstate South Carolina's most discerning residential and commercial clients."
         path="/"
       />
@@ -79,7 +79,7 @@ const Index = () => {
         <div className="absolute inset-0">
           <img
             src={heroBg}
-            alt="Luxury landscape design in Upstate South Carolina by Elevation Landscapes"
+            alt="Luxury landscape design in Upstate South Carolina by Oakline Landscapes"
             className="w-full h-full object-cover"
             fetchPriority="high"
             decoding="async"
@@ -126,7 +126,7 @@ const Index = () => {
                 The Standard Your Property Deserves
               </h2>
               <p className="text-text-dark/70 text-lg leading-relaxed mb-6">
-                Elevation Landscapes exists for a singular purpose: to create outdoor environments that reflect the
+                Oakline Landscapes exists for a singular purpose: to create outdoor environments that reflect the
                 same uncompromising quality as the homes they surround. We are not a lawn care company. We are a
                 luxury landscape design and hardscape firm serving homeowners, builders, and commercial clients across
                 Upstate South Carolina.
@@ -162,7 +162,7 @@ const Index = () => {
                 <p className="text-text-dark/80 italic text-sm leading-relaxed mb-3">
                   We take the time to understand each property's unique character and our clients' vision to ensure the finished landscape exceeds every expectation.
                 </p>
-                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Aaron Hord, Elevation Landscapes</p>
+                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Aaron Hord, Oakline Landscapes</p>
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@ const Index = () => {
                     <div className="w-full aspect-[3/4] bg-secondary-foreground/5 rounded-lg mb-4 overflow-hidden">
                       <img
                         src={service.image}
-                        alt={`${service.name} service by Elevation Landscapes in Greenville SC`}
+                        alt={`${service.name} service by Oakline Landscapes in Greenville SC`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         decoding="async"
@@ -222,7 +222,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Large image on the left */}
             <div className="lg:row-span-2 rounded-xl overflow-hidden">
-              <img src={whyUsPhoto} alt="Premium hardscape and landscape design by Elevation Landscapes Greenville SC" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src={whyUsPhoto} alt="Premium hardscape and landscape design by Oakline Landscapes Greenville SC" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
             {/* 4 cards in 2x2 grid on the right */}
             {whyUsItems.slice(0, 4).map((item, i) => (
@@ -263,14 +263,14 @@ const Index = () => {
             {/* Right — Photo with overlapping quote */}
             <div className="relative">
               <div className="rounded-xl overflow-hidden">
-                <img src={processPhoto} alt="Landscape design consultation with Elevation Landscapes in Upstate South Carolina" className="w-full h-auto object-cover" loading="lazy" decoding="async" />
+                <img src={processPhoto} alt="Landscape design consultation with Oakline Landscapes in Upstate South Carolina" className="w-full h-auto object-cover" loading="lazy" decoding="async" />
               </div>
               <div className="relative lg:absolute lg:-bottom-8 lg:-left-12 bg-popover border border-border rounded-xl p-6 shadow-lg mt-6 lg:mt-0 max-w-sm">
                 <span className="font-serif text-gold text-4xl leading-none block mb-2">"</span>
                 <p className="text-text-dark/80 italic text-sm leading-relaxed mb-3">
                   Every great landscape begins with listening. We don't impose a style — we reveal what your property is meant to become.
                 </p>
-                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Aaron Hord, Elevation Landscapes</p>
+                <p className="text-text-dark font-sans text-xs tracking-wider uppercase font-semibold">— Aaron Hord, Oakline Landscapes</p>
               </div>
             </div>
           </div>
@@ -342,14 +342,14 @@ const Index = () => {
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Before */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
-              <img src={portfolioBefore} alt="Upstate SC yard before professional landscape design by Elevation Landscapes" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src={portfolioBefore} alt="Upstate SC yard before professional landscape design by Oakline Landscapes" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               <span className="absolute bottom-4 left-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 Before
               </span>
             </div>
             {/* After */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
-              <img src={portfolioAfter} alt="Completed luxury landscape transformation by Elevation Landscapes in Greenville SC" className="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <img src={portfolioAfter} alt="Completed luxury landscape transformation by Oakline Landscapes in Greenville SC" className="w-full h-full object-cover" loading="lazy" decoding="async" />
               <span className="absolute top-4 right-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 After
               </span>
@@ -373,7 +373,7 @@ const Index = () => {
                 Areas We Cover
               </h2>
               <p className="text-text-dark/70 text-lg mb-10">
-                Elevation Landscapes proudly serves homeowners, builders, and commercial clients across Upstate South Carolina, including:
+                Oakline Landscapes proudly serves homeowners, builders, and commercial clients across Upstate South Carolina, including:
               </p>
               <div className="grid grid-cols-2 gap-x-8 gap-y-5 mb-10">
                 {serviceAreas.map((area) => (
@@ -390,7 +390,7 @@ const Index = () => {
                 ))}
               </div>
               <p className="text-text-dark/70 text-sm leading-relaxed mb-4">
-                From custom stone patios and retaining walls in Greenville to landscape lighting installations in Greer and full outdoor kitchen builds in Simpsonville, our team delivers premium hardscaping and softscaping solutions tailored to the unique terrain and climate of Upstate South Carolina. Whether you need expert grading, underground drainage, or a complete landscape transformation, Elevation Landscapes is the trusted landscape partner for discerning clients throughout the region.
+                From custom stone patios and retaining walls in Greenville to landscape lighting installations in Greer and full outdoor kitchen builds in Simpsonville, our team delivers premium hardscaping and softscaping solutions tailored to the unique terrain and climate of Upstate South Carolina. Whether you need expert grading, underground drainage, or a complete landscape transformation, Oakline Landscapes is the trusted landscape partner for discerning clients throughout the region.
               </p>
               <p className="text-text-dark/70 text-sm leading-relaxed mb-4">
                 As a high-end landscape contractor in Greenville, we specialize in custom stone work, paver patios in Travelers Rest, outdoor living spaces in Greer, and drainage solutions across Upstate SC. Our landscape architecture blends luxury design with lasting craftsmanship — from boulder retaining walls in Simpsonville to irrigation systems in Mauldin and beyond.
