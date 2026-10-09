@@ -1,4 +1,4 @@
 # Company-name update
-- [ ] Replace company-name mentions in page copy, metadata, image descriptions, and guides.
-- [ ] Update saved site copy and SEO text without changing website addresses or the logo.
-- [ ] Verify page rendering and check for old company-name mentions.
+- [x] Replace company-name mentions in page copy, metadata, image descriptions, and guides.
+- [x] Check saved site copy and SEO text (no old-name entries found); preserve website addresses and the logo.
+- [x] Verify 42 page views and check for old company-name mentions; existing branding inside logos/photos remains unchanged.
