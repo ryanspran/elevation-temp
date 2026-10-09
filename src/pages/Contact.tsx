@@ -90,7 +90,7 @@ const Contact = () => {
     <div className="min-h-screen">
       <SEOHead
         page="contact"
-        fallbackTitle="Contact Us — Free Consultation | Elevation Landscapes"
+        fallbackTitle="Contact Us — Free Consultation | Oakline Landscapes"
         fallbackDescription="Schedule a private consultation with Upstate SC's premier luxury landscape design firm. Share your vision and we'll craft a landscape that exceeds expectations."
         path="/contact"
       />

@@ -169,7 +169,7 @@ const Articles = () => {
     <>
       <SEOHead
         page="articles"
-        fallbackTitle="Landscaping Tips & Guides Upstate SC | Elevation Landscapes"
+        fallbackTitle="Landscaping Tips & Guides Upstate SC | Oakline Landscapes"
         fallbackDescription="Expert articles on hardscaping, landscape design, outdoor kitchens, and lighting from Upstate SC's premier luxury landscape professionals."
         path="/articles"
       />

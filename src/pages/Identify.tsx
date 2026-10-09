@@ -194,7 +194,7 @@ const Identify = () => {
       ? `${baseUrl}/plants/${matchedPlant.slug}`
       : `${baseUrl}/identify`;
     
-    const shareText = `I just identified a ${primaryResult.commonName}${primaryResult.botanicalName ? ` (${primaryResult.botanicalName})` : ''} using the Elevation Landscapes plant identifier! ${shareUrl}`;
+    const shareText = `I just identified a ${primaryResult.commonName}${primaryResult.botanicalName ? ` (${primaryResult.botanicalName})` : ''} using the Oakline Landscapes plant identifier! ${shareUrl}`;
 
     if (navigator.share) {
       try {
@@ -254,8 +254,8 @@ const Identify = () => {
     <>
       <SEOHead 
         page="identify"
-        fallbackTitle="AI Plant Identifier — Free Photo Tool | Elevation Landscapes" 
-        fallbackDescription="Snap a photo of any plant, tree, or flower and get an instant AI identification. Free mobile plant ID tool from Elevation Landscapes in Upstate SC."
+        fallbackTitle="AI Plant Identifier — Free Photo Tool | Oakline Landscapes" 
+        fallbackDescription="Snap a photo of any plant, tree, or flower and get an instant AI identification. Free mobile plant ID tool from Oakline Landscapes in Upstate SC."
         path="/identify"
       />
       <div className="min-h-screen bg-navy text-secondary-foreground">

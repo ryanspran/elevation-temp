@@ -10,8 +10,8 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         page="about"
-        fallbackTitle="About Elevation Landscapes | Upstate SC Landscape Design"
-        fallbackDescription="Learn about Elevation Landscapes — Upstate South Carolina's premier luxury landscape design firm serving the region's most discerning residential and commercial clients."
+        fallbackTitle="About Oakline Landscapes | Upstate SC Landscape Design"
+        fallbackDescription="Learn about Oakline Landscapes — Upstate South Carolina's premier luxury landscape design firm serving the region's most discerning residential and commercial clients."
         path="/about"
       />
       <Navbar />
@@ -20,7 +20,7 @@ const About = () => {
       <section className="relative pt-32 pb-20 bg-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-secondary-foreground mb-4">
-            About <span className="text-primary">Elevation</span>
+            About <span className="text-primary">Oakline</span>
           </h1>
           <p className="text-secondary-foreground/70 max-w-xl mx-auto text-lg">
             Crafting outdoor spaces that stand the test of time.
@@ -37,7 +37,7 @@ const About = () => {
                 Built on Hard Work &amp; a Commitment to Excellence
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Elevation Landscapes was founded with a simple belief: every client deserves an outdoor space 
+                Oakline Landscapes was founded with a simple belief: every client deserves an outdoor space 
                 they're proud of. We're a team of hardscaping and landscaping professionals serving the Upstate 
                 South Carolina community, and everything we do is guided by five core principals: Craftsmanship, 
                 Innovation, Integrity, Legacy, and Service.
@@ -55,7 +55,7 @@ const About = () => {
                 pour genuine service into every interaction and treat your property like it's our own.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                That's the Elevation difference, and it's why our clients keep coming back.
+                That's the Oakline difference, and it's why our clients keep coming back.
               </p>
               <Link
                 to="/contact"
@@ -76,7 +76,7 @@ const About = () => {
           </h2>
           <img
             src={teamPhoto}
-            alt="The Elevation Landscapes team at work"
+            alt="The Oakline Landscapes team at work"
             className="w-full rounded-lg shadow-xl"
           />
         </div>

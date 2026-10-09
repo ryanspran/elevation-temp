@@ -10,11 +10,11 @@ import firePit from "@/assets/portfolio/fire-pit-project.jpg";
 import poolDeck from "@/assets/portfolio/pool-deck-project.jpg";
 
 const photos = [
-  { src: paverPatio, alt: "Custom paver patio with fire feature by Elevation Landscapes in Greenville SC" },
+  { src: paverPatio, alt: "Custom paver patio with fire feature by Oakline Landscapes in Greenville SC" },
   { src: stoneWall, alt: "Natural stone retaining wall with landscape lighting in Upstate South Carolina" },
-  { src: firePit, alt: "Custom outdoor fire pit area designed by Elevation Landscapes" },
+  { src: firePit, alt: "Custom outdoor fire pit area designed by Oakline Landscapes" },
   { src: stonePathway, alt: "Hand-laid natural stone pathway through residential garden in Greenville SC" },
-  { src: outdoorKitchen, alt: "Luxury outdoor kitchen installation by Elevation Landscapes Upstate SC" },
+  { src: outdoorKitchen, alt: "Luxury outdoor kitchen installation by Oakline Landscapes Upstate SC" },
   { src: poolDeck, alt: "Pool deck with stone coping and paver surround in Greenville South Carolina" },
 ];
 
@@ -23,7 +23,7 @@ const Portfolio = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         page="portfolio"
-        fallbackTitle="Our Work — Landscape & Hardscape Portfolio | Elevation Landscapes"
+        fallbackTitle="Our Work — Landscape & Hardscape Portfolio | Oakline Landscapes"
         fallbackDescription="See our luxury landscape design portfolio — paver patios, stone walls, outdoor kitchens, fire pits, and more across Upstate South Carolina."
         path="/portfolio"
       />

@@ -17,8 +17,8 @@ const Areas = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         page="areas"
-        fallbackTitle="Areas We Serve — Upstate South Carolina | Elevation Landscapes"
-        fallbackDescription="Elevation Landscapes serves Greenville, Simpsonville, Greer, Travelers Rest, Mauldin, Taylors, and Easley with premium landscaping and hardscaping services."
+        fallbackTitle="Areas We Serve — Upstate South Carolina | Oakline Landscapes"
+        fallbackDescription="Oakline Landscapes serves Greenville, Simpsonville, Greer, Travelers Rest, Mauldin, Taylors, and Easley with premium landscaping and hardscaping services."
         path="/areas"
       />
       <Navbar />
@@ -49,7 +49,7 @@ const Areas = () => {
                 Serving the Entire Upstate Region
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                Elevation Landscapes proudly serves homeowners, builders, and commercial clients across the Upstate South Carolina region. From the bustling streets of downtown Greenville to the mountain-adjacent communities of Travelers Rest, we bring the same precision craftsmanship and luxury design to every project.
+                Oakline Landscapes proudly serves homeowners, builders, and commercial clients across the Upstate South Carolina region. From the bustling streets of downtown Greenville to the mountain-adjacent communities of Travelers Rest, we bring the same precision craftsmanship and luxury design to every project.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Each community we serve has its own character, terrain, and landscape challenges. That's why we take a site-specific approach to every property — understanding the local soil conditions, elevation, HOA requirements, and design aesthetic that define each neighborhood. Explore our city-specific pages below to learn how we serve your area.

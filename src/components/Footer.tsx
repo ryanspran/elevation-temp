@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Elevation Landscapes" className="w-auto mb-3" style={{ height: '4.24rem' }} />
+            <img src={logo} alt="Oakline Landscapes" className="w-auto mb-3" style={{ height: '4.24rem' }} />
             <p className="text-gold-light font-serif text-sm italic">
               Luxury Landscape & Hardscape — Upstate, SC
             </p>
@@ -65,7 +65,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="border-t border-gold/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-center text-sm text-secondary-foreground/40">
-          © {new Date().getFullYear()} Elevation Landscapes. All rights reserved.
+          © {new Date().getFullYear()} Oakline Landscapes. All rights reserved.
         </div>
       </div>
     </footer>

@@ -70,8 +70,8 @@ const PlantDetail = () => {
 
   // SEO
   const seoTitle = plant
-    ? `${plant.common_name} — Upstate SC Growing Guide | Elevation`
-    : "Plant Guide — Elevation Landscapes";
+    ? `${plant.common_name} — Upstate SC Growing Guide | Oakline`
+    : "Plant Guide — Oakline Landscapes";
 
   const seoDescription = plant
     ? `${plant.common_name}${plant.botanical_name ? ` (${plant.botanical_name})` : ""}: ${plant.sun_requirements || "Various sun"}, ${plant.water_needs || "Moderate"} water, ${plant.mature_size || "Various sizes"}. Expert guide for Upstate SC Zones 7b-8a. View growing conditions, landscape uses, and seasonal interest.`
