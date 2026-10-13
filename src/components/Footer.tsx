@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Facebook, Instagram } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/logos/oakline-logo-white-green.png.asset.json";
+const logo = logoAsset.url;
 import aaronBadge from "@/assets/aaron-approved-badge.png";
 
 const Footer = () => {
@@ -10,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Oakline Landscapes" className="w-auto mb-3" style={{ height: '4.24rem' }} />
+            <img src={logo} alt="Oakline Landscapes" className="w-auto mb-3" style={{ height: '5rem' }} />
             <p className="text-gold-light font-serif text-sm italic">
               Luxury Landscape & Hardscape — Upstate, SC
             </p>
@@ -53,7 +54,7 @@ const Footer = () => {
           {/* Aaron Badge + Social */}
           <div className="flex flex-col items-end gap-3">
             <Link to="/articles/aaron-approved-collection">
-              <img src={aaronBadge} alt="Aaron Approved" className="w-auto hover:opacity-80 transition-opacity" style={{ height: '4.24rem' }} />
+              <img src={aaronBadge} alt="Aaron Approved" className="w-auto hover:opacity-80 transition-opacity" style={{ height: '5rem' }} />
             </Link>
             {/* Social icons disabled for now */}
           </div>

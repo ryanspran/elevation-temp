@@ -155,7 +155,7 @@ const Contact = () => {
                             href={JOBBER_FORM_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center gap-2 bg-gold text-primary-foreground font-sans text-sm font-semibold tracking-wide px-6 py-3 rounded-md transition-all duration-300 hover:bg-gold-hover hover:scale-105 hover:shadow-lg"
+                            className="inline-flex items-center justify-center gap-2 bg-gold text-primary-foreground font-sans text-sm font-semibold tracking-wide px-6 py-3 rounded-md transition-all duration-300 hover:bg-green-hover hover:scale-105 hover:shadow-lg"
                           >
                             Open Our Request Form
                             <ExternalLink className="h-4 w-4" />

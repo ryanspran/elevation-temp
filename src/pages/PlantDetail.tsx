@@ -218,7 +218,7 @@ const PlantDetail = () => {
           </section>
 
           {/* CTA Bar */}
-          <section className="bg-[#242938] border-t border-gold/20 py-10 print:hidden">
+          <section className="bg-card-dark border-t border-gold/20 py-10 print:hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
                 <p className="text-secondary-foreground font-serif text-xl md:text-2xl">
