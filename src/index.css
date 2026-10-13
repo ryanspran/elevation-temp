@@ -77,10 +77,10 @@
 }
 
 /* Oakline accents: leaf green on dark, oakline green on light surfaces */
-.bg-cream .text-gold, .bg-cream-alt .text-gold, .bg-background .text-gold, .bg-white .text-gold { color: hsl(var(--green)); }
-.bg-cream .border-gold, .bg-cream-alt .border-gold, .bg-background .border-gold { border-color: hsl(var(--green)); }
-.bg-cream .bg-gold, .bg-cream-alt .bg-gold, .bg-background .bg-gold { background-color: hsl(var(--green)); }
-.bg-cream .bg-navy .text-gold, .bg-cream .bg-card-dark .text-gold, .bg-background .bg-navy .text-gold, .bg-background .bg-card-dark .text-gold { color: hsl(var(--leaf)); }
+.bg-cream .text-gold, .bg-cream-alt .text-gold, .bg-white .text-gold { color: hsl(var(--green)); }
+.bg-cream .border-gold, .bg-cream-alt .border-gold { border-color: hsl(var(--green)); }
+.bg-cream .bg-gold, .bg-cream-alt .bg-gold { background-color: hsl(var(--green)); }
+.bg-cream .bg-navy .text-gold, .bg-cream .bg-card-dark .text-gold { color: hsl(var(--leaf)); }
 
 /* Smooth scrolling */
 html {
