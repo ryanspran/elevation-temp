@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { services } from "@/data/services";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logos/oakline-logo-white-green.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,10 +30,10 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Oakline Landscapes" className="w-auto" style={{ height: '4.17rem' }} />
+            <img src={logo} alt="Oakline Landscapes" className="w-auto h-12 lg:h-16 object-contain" />
           </Link>
 
           {/* Desktop Nav */}

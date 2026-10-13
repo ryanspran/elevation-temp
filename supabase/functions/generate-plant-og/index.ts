@@ -63,7 +63,7 @@ Design requirements:
 - Dark navy blue background (#1a1f2e)
 - The plant name "${plant.common_name}" in large elegant gold (#c9a96e) serif text
 ${plant.botanical_name ? `- The botanical name "${plant.botanical_name}" in smaller italic gold text below` : ""}
-- "ELEVATION LANDSCAPES" in gold text at the bottom as branding
+- "OAKLINE LANDSCAPES" in leaf green text at the bottom as branding
 - Professional, elegant landscape company aesthetic
 - Clean composition suitable for social media sharing`;
 

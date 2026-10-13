@@ -450,7 +450,7 @@ const Identify = () => {
                     
                     <Button 
                       onClick={() => navigate(`/plants/${matchedPlant.slug}`)}
-                      className="w-full mt-4 bg-gold text-navy hover:bg-gold/90"
+                      className="w-full mt-4 bg-green text-primary-foreground hover:bg-gold/90"
                     >
                       View Full Growing Guide
                       <ArrowRight className="h-4 w-4 ml-2" />
@@ -514,7 +514,7 @@ const Identify = () => {
                 </p>
                 <Button 
                   onClick={resetIdentification}
-                  className="bg-gold text-navy hover:bg-gold/90"
+                  className="bg-green text-primary-foreground hover:bg-gold/90"
                 >
                   <Camera className="h-4 w-4 mr-2" />
                   Try Again
@@ -581,7 +581,7 @@ const Identify = () => {
                                   <PlantCard plant={entry.matchedPlant} />
                                   <Button 
                                     onClick={() => navigate(`/plants/${entry.matchedPlant!.slug}`)}
-                                    className="w-full mt-3 bg-gold text-navy hover:bg-gold/90"
+                                    className="w-full mt-3 bg-green text-primary-foreground hover:bg-gold/90"
                                   >
                                     View Full Growing Guide
                                     <ArrowRight className="h-4 w-4 ml-2" />
@@ -608,7 +608,7 @@ const Identify = () => {
                 <div className="space-y-3">
                   <Button 
                     onClick={() => navigate("/contact")}
-                    className="w-full bg-gold text-navy hover:bg-gold/90"
+                    className="w-full bg-green text-primary-foreground hover:bg-gold/90"
                   >
                     Schedule a Consultation
                   </Button>

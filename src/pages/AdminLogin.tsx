@@ -5,7 +5,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logos/oakline-logo-white-green.png";
 
 const AdminLogin = () => {
   const [email, setEmail] = useState("");
@@ -86,7 +86,7 @@ const AdminLogin = () => {
           <Button
             type="submit"
             disabled={loading || authLoading}
-            className="w-full bg-gold text-navy hover:bg-gold-hover hover:scale-105 hover:shadow-lg font-semibold uppercase tracking-wider"
+            className="w-full bg-green text-primary-foreground hover:bg-green-hover hover:scale-105 hover:shadow-lg font-semibold uppercase tracking-wider"
           >
             {loading || authLoading ? "Please wait..." : isSignUp ? "Create Account" : "Sign In"}
           </Button>

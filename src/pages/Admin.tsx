@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import AdminContentEditor from "@/components/admin/AdminContentEditor";
 import AdminSEOEditor from "@/components/admin/AdminSEOEditor";
 import AdminImageEditor from "@/components/admin/AdminImageEditor";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logos/oakline-logo-white-green.png";
 
 const pages = [
   { id: "home", label: "Home", icon: Home },

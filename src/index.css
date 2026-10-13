@@ -6,45 +6,49 @@
 
 @layer base {
   :root {
-    --background: 40 33% 96%;
-    --foreground: 240 20% 13%;
+    --background: 100 18% 96%;
+    --foreground: 222 60% 14%;
 
-    --card: 40 33% 96%;
+    --card: 100 18% 96%;
     --card-foreground: 240 20% 13%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 240 20% 13%;
 
-    --primary: 40 50% 54%;
-    --primary-foreground: 216 50% 12%;
+    --primary: 110 35% 32%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 216 50% 12%;
-    --secondary-foreground: 40 33% 96%;
+    --secondary: 222 88% 13%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 40 20% 93%;
+    --muted: 100 12% 92%;
     --muted-foreground: 216 15% 45%;
 
-    --accent: 40 50% 54%;
-    --accent-foreground: 216 50% 12%;
+    --accent: 110 35% 32%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 20% 85%;
-    --input: 40 20% 85%;
-    --ring: 40 50% 54%;
+    --border: 100 10% 85%;
+    --input: 100 10% 85%;
+    --ring: 105 36% 63%;
 
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --navy: 216 50% 12%;
-    --gold: 40 50% 54%;
-    --gold-light: 43 65% 73%;
-    --gold-hover: 40 55% 60%;
-    --cream: 40 33% 96%;
-    --cream-alt: 40 38% 97%;
-    --text-dark: 240 20% 13%;
-    --card-dark: 225 24% 19%;
+    --navy: 222 88% 13%;
+    --sapphire: 222 86% 22%;
+    --green: 110 35% 32%;
+    --green-hover: 110 37% 26%;
+    --leaf: 105 36% 63%;
+    --gold: 105 36% 63%;
+    --gold-light: 105 40% 76%;
+    --gold-hover: 105 40% 70%;
+    --cream: 100 18% 96%;
+    --cream-alt: 100 20% 98%;
+    --text-dark: 222 60% 14%;
+    --card-dark: 222 55% 20%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -71,6 +75,12 @@
     font-family: 'Playfair Display', serif;
   }
 }
+
+/* Oakline accents: leaf green on dark, oakline green on light surfaces */
+.bg-cream .text-gold, .bg-cream-alt .text-gold, .bg-white .text-gold { color: hsl(var(--green)); }
+.bg-cream .border-gold, .bg-cream-alt .border-gold { border-color: hsl(var(--green)); }
+.bg-cream .bg-gold, .bg-cream-alt .bg-gold { background-color: hsl(var(--green)); }
+.bg-cream .bg-navy .text-gold, .bg-cream .bg-card-dark .text-gold { color: hsl(var(--leaf)); }
 
 /* Smooth scrolling */
 html {
@@ -144,7 +154,7 @@ mark.search-highlight {
     color: black !important;
   }
 
-  [class*="bg-navy"], [class*="bg-card-dark"], [class*="bg-[#242938]"] {
+  [class*="bg-navy"], [class*="bg-card-dark"] {
     background: white !important;
   }
 
@@ -153,7 +163,7 @@ mark.search-highlight {
   }
 
   [class*="text-gold"] {
-    color: #8a6d2b !important;
+    color: #3F6E35 !important;
   }
 
   [class*="text-muted-foreground"] {

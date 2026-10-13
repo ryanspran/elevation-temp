@@ -104,7 +104,7 @@ function extractWikimediaFilename(url: string | null): string | null {
 async function getWikimediaImageUrl(filename: string): Promise<string | null> {
   const title = `File:${filename}`;
   const apiUrl = `https://commons.wikimedia.org/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=imageinfo&iiprop=url&iiurlwidth=800&format=json`;
-  const res = await fetch(apiUrl, { headers: { "User-Agent": "ElevationLandscapes/1.0" } });
+  const res = await fetch(apiUrl, { headers: { "User-Agent": "OaklineLandscapes/1.0" } });
   if (!res.ok) return null;
   const data = await res.json();
   const pages = data?.query?.pages;
@@ -120,7 +120,7 @@ async function getWikimediaImageUrl(filename: string): Promise<string | null> {
 
 async function searchWikimediaImage(query: string): Promise<string | null> {
   const searchUrl = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query + " plant")}&gsrnamespace=6&gsrlimit=5&prop=imageinfo&iiprop=url|mime&iiurlwidth=800&format=json`;
-  const res = await fetch(searchUrl, { headers: { "User-Agent": "ElevationLandscapes/1.0" } });
+  const res = await fetch(searchUrl, { headers: { "User-Agent": "OaklineLandscapes/1.0" } });
   if (!res.ok) return null;
   const data = await res.json();
   const pages = data?.query?.pages;
@@ -138,7 +138,7 @@ async function searchWikimediaImage(query: string): Promise<string | null> {
 }
 
 async function downloadAndUpload(supabase: any, imageUrl: string, slug: string): Promise<string> {
-  const imgRes = await fetch(imageUrl, { headers: { "User-Agent": "ElevationLandscapes/1.0" } });
+  const imgRes = await fetch(imageUrl, { headers: { "User-Agent": "OaklineLandscapes/1.0" } });
   if (!imgRes.ok) throw new Error(`download failed: ${imgRes.status} ${imgRes.statusText} for ${imageUrl}`);
 
   const contentType = imgRes.headers.get("content-type") || "image/jpeg";

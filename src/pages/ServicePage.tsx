@@ -49,7 +49,7 @@ const ServicePage = () => {
             {service.subheadline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link to="/contact" className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center">
+            <Link to="/contact" className="inline-block bg-green text-primary-foreground font-sans font-semibold px-8 py-4 rounded hover:bg-green-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center">
               Schedule a Consultation
             </Link>
             <a href="tel:+18643251623" className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center">
@@ -163,7 +163,7 @@ const ServicePage = () => {
       {/* Mid-page CTA */}
       <section className="bg-cream py-12">
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link to="/contact" className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center">
+          <Link to="/contact" className="inline-block bg-green text-primary-foreground font-sans font-semibold px-8 py-4 rounded hover:bg-green-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center">
             Schedule a Consultation
           </Link>
           <a href="tel:+18643251623" className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center">
@@ -228,7 +228,7 @@ const ServicePage = () => {
             {service.ctaText}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="inline-block bg-gold text-navy font-sans font-semibold px-10 py-4 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center">
+            <Link to="/contact" className="inline-block bg-green text-primary-foreground font-sans font-semibold px-10 py-4 rounded hover:bg-green-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center">
               Schedule a Consultation
             </Link>
             <a href="tel:+18643251623" className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-10 py-4 rounded hover:bg-gold/10 hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center">

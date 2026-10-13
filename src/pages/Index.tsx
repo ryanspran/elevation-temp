@@ -99,13 +99,13 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
+                className="inline-block bg-green text-primary-foreground font-sans font-semibold px-8 py-4 rounded hover:bg-green-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
               >
                 Schedule a Consultation
               </Link>
               <a
                 href="tel:+18643251623"
-                className="inline-flex items-center justify-center gap-2 border-2 border-gold text-gold font-sans font-semibold px-8 py-4 rounded hover:bg-gold/10 hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
+                className="inline-flex items-center justify-center gap-2 border-2 border-secondary-foreground text-secondary-foreground font-sans font-semibold px-8 py-4 rounded hover:bg-secondary-foreground/10 hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
               >
                 <Phone className="h-4 w-4" />
                 Call Now
@@ -138,7 +138,7 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/contact"
-                  className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
+                  className="inline-block bg-green text-primary-foreground font-sans font-semibold px-8 py-4 rounded hover:bg-green-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
                 >
                   Schedule a Consultation
                 </Link>
@@ -343,14 +343,14 @@ const Index = () => {
             {/* Before */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
               <img src={portfolioBefore} alt="Upstate SC yard before professional landscape design by Oakline Landscapes" className="w-full h-full object-cover" loading="lazy" decoding="async" />
-              <span className="absolute bottom-4 left-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
+              <span className="absolute bottom-4 left-4 bg-green text-primary-foreground font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 Before
               </span>
             </div>
             {/* After */}
             <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
               <img src={portfolioAfter} alt="Completed luxury landscape transformation by Oakline Landscapes in Greenville SC" className="w-full h-full object-cover" loading="lazy" decoding="async" />
-              <span className="absolute top-4 right-4 bg-gold text-navy font-sans font-semibold text-sm px-5 py-2 rounded-full">
+              <span className="absolute top-4 right-4 bg-green text-primary-foreground font-sans font-semibold text-sm px-5 py-2 rounded-full">
                 After
               </span>
             </div>
@@ -405,7 +405,7 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Link
                   to="/contact"
-                  className="inline-block bg-gold text-navy font-sans font-semibold px-8 py-4 rounded hover:bg-gold-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
+                  className="inline-block bg-green text-primary-foreground font-sans font-semibold px-8 py-4 rounded hover:bg-green-hover hover:scale-105 hover:shadow-lg transition-all duration-200 uppercase text-sm tracking-wider text-center"
                 >
                   Schedule a Consultation
                 </Link>
