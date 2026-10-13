@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, MapPin, Facebook, Instagram } from "lucide-react";
-import logoAsset from "@/assets/logos/oakline-logo-white-green.png.asset.json";
-const logo = logoAsset.url;
+import logo from "@/assets/logos/oakline-logo-white-green.png";
 import aaronBadge from "@/assets/aaron-approved-badge.png";
 
 const Footer = () => {

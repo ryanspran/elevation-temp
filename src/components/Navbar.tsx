@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { services } from "@/data/services";
-import logoAsset from "@/assets/logos/oakline-logo-white-green.png.asset.json";
-const logo = logoAsset.url;
+import logo from "@/assets/logos/oakline-logo-white-green.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
