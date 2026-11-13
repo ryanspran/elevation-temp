@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 
-import teamPhoto from "@/assets/about-team.jpg";
+import teamPhoto from "@/assets/about-oakline-work.jpg";
 
 const About = () => {
   return (
@@ -76,7 +76,7 @@ const About = () => {
           </h2>
           <img
             src={teamPhoto}
-            alt="The Oakline Landscapes team at work"
+            alt="Oakline Landscapes craftsman in branded uniform setting stone pavers on an Upstate SC patio project"
             className="w-full rounded-lg shadow-xl"
           />
         </div>
